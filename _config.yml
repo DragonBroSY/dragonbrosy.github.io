@@ -29,9 +29,9 @@ linkedin: https://www.linkedin.com/in/hkreuk3/
 github_username:  dragonbrosy
 
 # Build settings
-theme: jekyll-theme-merlot
+remote_theme: pages-themes/merlot@v0.2.0
 plugins:
-  - jekyll-feed
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # Exclude from processing.
 # The following items will not be processed, by default.
