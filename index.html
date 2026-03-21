@@ -1,1 +1,251 @@
-Helllo Worllldls!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DragonBroSY</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #070a0f;
+      color: #c8d8e8;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 500px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://dragonbrosy.github.io/Elevate-Courses/cockpit.jpg');
+      background-size: cover;
+      background-position: center 40%;
+      filter: brightness(0.4);
+      transform: scale(1.03);
+      transition: transform 8s ease-out;
+    }
+    .hero-bg.loaded { transform: scale(1); }
+    .hero-grad {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(7,10,15,0.1) 0%,
+        rgba(7,10,15,0.0) 40%,
+        rgba(7,10,15,0.95) 100%
+      );
+    }
+
+    /* scan-line texture */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0,0,0,0.08) 2px,
+        rgba(0,0,0,0.08) 4px
+      );
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 2rem 4rem;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #4a9eff;
+      border: 1px solid #1a4a7a;
+      border-radius: 4px;
+      padding: 0.2rem 0.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 8vw, 5rem);
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.03em;
+      line-height: 1.0;
+      margin-bottom: 1rem;
+    }
+    h1 span { color: #4a9eff; }
+
+    .subtitle {
+      font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+      color: #5a7a9a;
+      max-width: 480px;
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ── Nav links ── */
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      transition: all 0.15s;
+      letter-spacing: 0.02em;
+    }
+    .link-btn.primary {
+      background: #1a4a8a;
+      color: #fff;
+      border: 1px solid #2a6abf;
+    }
+    .link-btn.primary:hover { background: #2a5aaa; border-color: #4a9eff; }
+    .link-btn.secondary {
+      background: transparent;
+      color: #8aaccc;
+      border: 1px solid #1a2a3a;
+    }
+    .link-btn.secondary:hover { border-color: #2a4a6a; color: #c0d8f0; }
+
+    /* ── HUD strip ── */
+    .hud {
+      background: #0a0e15;
+      border-top: 1px solid #0f1e2e;
+      border-bottom: 1px solid #0f1e2e;
+      padding: 0.7rem 2rem;
+      display: flex;
+      gap: 2rem;
+      font-size: 0.68rem;
+      color: #4a9eff;
+      letter-spacing: 0.12em;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .hud-item span { color: #1e3a5a; margin-right: 0.35rem; }
+
+    /* ── Cards ── */
+    .cards {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: #0b1018;
+      border: 1px solid #141f2e;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, transform 0.2s;
+      display: block;
+    }
+    .card:hover { border-color: #2a5a8a; transform: translateY(-2px); }
+    .card-icon { font-size: 1.6rem; margin-bottom: 0.8rem; }
+    .card-title { font-size: 0.95rem; font-weight: 700; color: #e0eaf8; margin-bottom: 0.4rem; }
+    .card-desc { font-size: 0.78rem; color: #3a5a7a; line-height: 1.5; }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: 0.62rem;
+      color: #151f2a;
+      padding: 1.5rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-grad"></div>
+    <div class="hero-content">
+      <div class="tag">Pilot in Training</div>
+      <h1>Dragon<span>Bro</span>SY</h1>
+      <p class="subtitle">
+        Building altitude one lesson at a time.<br>
+        Flight training notes, recordings, and resources.
+      </p>
+      <div class="links">
+        <a class="link-btn primary" href="https://dragonbrosy.github.io/Elevate-Courses/">
+          ✈ Elevate Courses
+        </a>
+        <a class="link-btn secondary" href="https://dragonbrosy.github.io/Elevate-Courses/feed.xml">
+          📡 Podcast Feed
+        </a>
+        <a class="link-btn secondary" href="https://github.com/DragonBroSY">
+          ⌥ GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hud">
+    <div class="hud-item"><span>ACFT</span>Piper Archer</div>
+    <div class="hud-item"><span>PHASE</span>Private Pilot</div>
+    <div class="hud-item"><span>BASE</span>On Field</div>
+    <div class="hud-item"><span>STATUS</span>Training Active</div>
+    <div class="hud-item"><span>CALLSIGN</span>DragonBroSY</div>
+  </div>
+
+  <div class="cards">
+    <a class="card" href="https://dragonbrosy.github.io/Elevate-Courses/">
+      <div class="card-icon">🎙</div>
+      <div class="card-title">Elevate Courses</div>
+      <div class="card-desc">Flight training voice recordings. Listen in the browser or subscribe in any podcast app.</div>
+    </a>
+    <a class="card" href="https://dragonbrosy.github.io/Elevate-Courses/feed.xml">
+      <div class="card-icon">📡</div>
+      <div class="card-title">Podcast Feed</div>
+      <div class="card-desc">RSS 2.0 feed compatible with Spotify, Apple Podcasts, Overcast, and Pocket Casts.</div>
+    </a>
+    <a class="card" href="https://github.com/DragonBroSY">
+      <div class="card-icon">⌥</div>
+      <div class="card-title">GitHub</div>
+      <div class="card-desc">Notes, tools, and projects. All course materials version-controlled and open.</div>
+    </a>
+  </div>
+
+  <footer>DragonBroSY &nbsp;·&nbsp; All Altitudes Reserved</footer>
+
+  <script>
+    // Subtle parallax on hero bg
+    const bg = document.getElementById('heroBg');
+    setTimeout(() => bg.classList.add('loaded'), 100);
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      bg.style.transform = `scale(1) translateY(${y * 0.3}px)`;
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
