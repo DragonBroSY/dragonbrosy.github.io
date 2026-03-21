@@ -6,205 +6,68 @@
   <title>DragonBroSY</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      background: #070a0f;
-      color: #c8d8e8;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* ── Hero ── */
-    .hero {
-      position: relative;
-      height: 100vh;
-      min-height: 500px;
-      overflow: hidden;
-      display: flex;
-      align-items: flex-end;
-    }
-    .hero-bg {
-      position: absolute;
-      inset: 0;
-      background-image: url('https://dragonbrosy.github.io/Elevate-Courses/cockpit.jpg');
-      background-size: cover;
-      background-position: center 40%;
-      filter: brightness(0.4);
-      transform: scale(1.03);
-      transition: transform 8s ease-out;
-    }
+    body { background: #070a0f; color: #c8d8e8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+    .hero { position: relative; height: 100vh; min-height: 500px; overflow: hidden; display: flex; align-items: flex-end; }
+    .hero-bg { position: absolute; inset: 0; background-image: url('https://dragonbrosy.github.io/Elevate-Courses/cockpit.jpg'); background-size: cover; background-position: center 40%; filter: brightness(0.4); transform: scale(1.03); transition: transform 8s ease-out; }
     .hero-bg.loaded { transform: scale(1); }
-    .hero-grad {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(7,10,15,0.1) 0%,
-        rgba(7,10,15,0.0) 40%,
-        rgba(7,10,15,0.95) 100%
-      );
-    }
-
-    /* scan-line texture */
-    .hero::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 2px,
-        rgba(0,0,0,0.08) 2px,
-        rgba(0,0,0,0.08) 4px
-      );
-      pointer-events: none;
-    }
-
-    .hero-content {
-      position: relative;
-      width: 100%;
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 3rem 2rem 4rem;
-    }
-
-    .tag {
-      display: inline-block;
-      font-size: 0.65rem;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: #4a9eff;
-      border: 1px solid #1a4a7a;
-      border-radius: 4px;
-      padding: 0.2rem 0.6rem;
-      margin-bottom: 1.2rem;
-    }
-
-    h1 {
-      font-size: clamp(2.8rem, 8vw, 5rem);
-      font-weight: 800;
-      color: #ffffff;
-      letter-spacing: -0.03em;
-      line-height: 1.0;
-      margin-bottom: 1rem;
-    }
+    .hero-grad { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(7,10,15,0.1) 0%, rgba(7,10,15,0.0) 40%, rgba(7,10,15,0.97) 100%); }
+    .hero::after { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.07) 2px, rgba(0,0,0,0.07) 4px); pointer-events: none; }
+    .hero-content { position: relative; width: 100%; max-width: 860px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+    .tag { display: inline-block; font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: #4a9eff; border: 1px solid #1a4a7a; border-radius: 4px; padding: 0.2rem 0.6rem; margin-bottom: 1.2rem; }
+    h1 { font-size: clamp(2.8rem, 8vw, 5rem); font-weight: 800; color: #fff; letter-spacing: -0.03em; line-height: 1.0; margin-bottom: 1rem; }
     h1 span { color: #4a9eff; }
-
-    .subtitle {
-      font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-      color: #5a7a9a;
-      max-width: 480px;
-      line-height: 1.6;
-      margin-bottom: 2.5rem;
-    }
-
-    /* ── Nav links ── */
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }
-    .link-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 600;
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
-      transition: all 0.15s;
-      letter-spacing: 0.02em;
-    }
-    .link-btn.primary {
-      background: #1a4a8a;
-      color: #fff;
-      border: 1px solid #2a6abf;
-    }
+    .subtitle { font-size: clamp(0.9rem, 2.5vw, 1.05rem); color: #5a7a9a; max-width: 480px; line-height: 1.6; margin-bottom: 0.9rem; }
+    .quote-block { max-width: 460px; margin-bottom: 2rem; padding-left: 0.9rem; border-left: 2px solid #1a4a7a; }
+    .quote-text { font-size: 0.82rem; color: #4a7aaa; font-style: italic; line-height: 1.5; }
+    .quote-author { font-size: 0.68rem; color: #2a4a6a; margin-top: 0.3rem; letter-spacing: 0.05em; }
+    .links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .link-btn { display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; font-size: 0.85rem; font-weight: 600; padding: 0.6rem 1.2rem; border-radius: 6px; transition: all 0.15s; }
+    .link-btn.primary { background: #1a4a8a; color: #fff; border: 1px solid #2a6abf; }
     .link-btn.primary:hover { background: #2a5aaa; border-color: #4a9eff; }
-    .link-btn.secondary {
-      background: transparent;
-      color: #8aaccc;
-      border: 1px solid #1a2a3a;
-    }
+    .link-btn.secondary { background: transparent; color: #8aaccc; border: 1px solid #1a2a3a; }
     .link-btn.secondary:hover { border-color: #2a4a6a; color: #c0d8f0; }
-
-    /* ── HUD strip ── */
-    .hud {
-      background: #0a0e15;
-      border-top: 1px solid #0f1e2e;
-      border-bottom: 1px solid #0f1e2e;
-      padding: 0.7rem 2rem;
-      display: flex;
-      gap: 2rem;
-      font-size: 0.68rem;
-      color: #4a9eff;
-      letter-spacing: 0.12em;
-      overflow-x: auto;
-      white-space: nowrap;
-    }
+    .hud { background: #060911; border-top: 1px solid #0d1a26; border-bottom: 1px solid #0d1a26; padding: 0.7rem 2rem; display: flex; gap: 2rem; font-size: 0.68rem; color: #4a9eff; letter-spacing: 0.12em; overflow-x: auto; white-space: nowrap; align-items: center; }
     .hud-item span { color: #1e3a5a; margin-right: 0.35rem; }
-
-    /* ── Cards ── */
-    .cards {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 3rem 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1rem;
-    }
-    .card {
-      background: #0b1018;
-      border: 1px solid #141f2e;
-      border-radius: 10px;
-      padding: 1.5rem;
-      text-decoration: none;
-      color: inherit;
-      transition: border-color 0.2s, transform 0.2s;
-      display: block;
-    }
+    .blink { animation: blink 1.2s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .section { max-width: 860px; margin: 0 auto; padding: 2.5rem 2rem 0; }
+    .section-label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: #1e3a5a; margin-bottom: 1.2rem; padding-bottom: 0.5rem; border-bottom: 1px solid #0d1a26; }
+    .cards { max-width: 860px; margin: 0 auto; padding: 1.2rem 2rem 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+    .card { background: #0b1018; border: 1px solid #101a26; border-radius: 10px; padding: 1.5rem; text-decoration: none; color: inherit; transition: border-color 0.2s, transform 0.2s; display: block; }
     .card:hover { border-color: #2a5a8a; transform: translateY(-2px); }
-    .card-icon { font-size: 1.6rem; margin-bottom: 0.8rem; }
-    .card-title { font-size: 0.95rem; font-weight: 700; color: #e0eaf8; margin-bottom: 0.4rem; }
-    .card-desc { font-size: 0.78rem; color: #3a5a7a; line-height: 1.5; }
-
-    /* ── Footer ── */
-    footer {
-      margin-top: auto;
-      text-align: center;
-      font-size: 0.62rem;
-      color: #151f2a;
-      padding: 1.5rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-    }
+    .card-icon { font-size: 1.5rem; margin-bottom: 0.8rem; }
+    .card-title { font-size: 0.92rem; font-weight: 700; color: #e0eaf8; margin-bottom: 0.35rem; }
+    .card-desc { font-size: 0.76rem; color: #2e4a62; line-height: 1.5; }
+    .logbook { width: 100%; border-collapse: collapse; font-size: 0.76rem; }
+    .logbook th { text-align: left; padding: 0.4rem 0.8rem; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: #1e3a5a; border-bottom: 1px solid #0d1a26; }
+    .logbook td { padding: 0.55rem 0.8rem; color: #3a6a9a; border-bottom: 1px solid #0a1520; }
+    .logbook td.hi { color: #4a9eff; }
+    .logbook tr:hover td { background: #0a1018; }
+    .phonetic { max-width: 860px; margin: 1.5rem auto 0; padding: 0 2rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .ph-card { background: #080d14; border: 1px solid #0d1a26; border-radius: 5px; padding: 0.35rem 0.6rem; text-align: center; min-width: 52px; cursor: default; transition: background 0.15s; }
+    .ph-card:hover { background: #0f1e30; }
+    .ph-letter { font-size: 0.95rem; font-weight: 700; color: #4a9eff; display: block; }
+    .ph-word { font-size: 0.55rem; color: #1e3a5a; letter-spacing: 0.05em; text-transform: uppercase; }
+    footer { margin-top: 3rem; text-align: center; font-size: 0.6rem; color: #0f1e2e; padding: 1.5rem; letter-spacing: 0.15em; text-transform: uppercase; border-top: 1px solid #0a1520; }
+    .freq { color: #1a3a5a; }
   </style>
 </head>
 <body>
-
   <div class="hero">
     <div class="hero-bg" id="heroBg"></div>
     <div class="hero-grad"></div>
     <div class="hero-content">
-      <div class="tag">Pilot in Training</div>
+      <div class="tag">Pilot in Training &middot; VFR</div>
       <h1>Dragon<span>Bro</span>SY</h1>
-      <p class="subtitle">
-        Building altitude one lesson at a time.<br>
-        Flight training notes, recordings, and resources.
-      </p>
+      <p class="subtitle">Building altitude one lesson at a time.<br>Flight training notes, recordings &amp; resources.</p>
+      <div class="quote-block">
+        <div class="quote-text" id="quoteText"></div>
+        <div class="quote-author" id="quoteAuthor"></div>
+      </div>
       <div class="links">
-        <a class="link-btn primary" href="https://dragonbrosy.github.io/Elevate-Courses/">
-          ✈ Elevate Courses
-        </a>
-        <a class="link-btn secondary" href="https://dragonbrosy.github.io/Elevate-Courses/feed.xml">
-          📡 Podcast Feed
-        </a>
-        <a class="link-btn secondary" href="https://github.com/DragonBroSY">
-          ⌥ GitHub
-        </a>
+        <a class="link-btn primary" href="https://dragonbrosy.github.io/Elevate-Courses/">&#9992; Elevate Courses</a>
+        <a class="link-btn secondary" href="https://dragonbrosy.github.io/Elevate-Courses/feed.xml">&#128225; Podcast Feed</a>
+        <a class="link-btn secondary" href="https://github.com/DragonBroSY">&#8997; GitHub</a>
       </div>
     </div>
   </div>
@@ -212,40 +75,107 @@
   <div class="hud">
     <div class="hud-item"><span>ACFT</span>Piper Archer</div>
     <div class="hud-item"><span>PHASE</span>Private Pilot</div>
-    <div class="hud-item"><span>BASE</span>On Field</div>
-    <div class="hud-item"><span>STATUS</span>Training Active</div>
     <div class="hud-item"><span>CALLSIGN</span>DragonBroSY</div>
+    <div class="hud-item"><span>STATUS</span>Training Active <span class="blink">&#9646;</span></div>
+    <div class="hud-item"><span>ZULU</span><span id="zuluClock">--:--:--Z</span></div>
   </div>
 
   <div class="cards">
     <a class="card" href="https://dragonbrosy.github.io/Elevate-Courses/">
-      <div class="card-icon">🎙</div>
+      <div class="card-icon">&#127897;</div>
       <div class="card-title">Elevate Courses</div>
-      <div class="card-desc">Flight training voice recordings. Listen in the browser or subscribe in any podcast app.</div>
+      <div class="card-desc">Flight training voice recordings. Listen in browser or subscribe in any podcast app.</div>
     </a>
     <a class="card" href="https://dragonbrosy.github.io/Elevate-Courses/feed.xml">
-      <div class="card-icon">📡</div>
+      <div class="card-icon">&#128225;</div>
       <div class="card-title">Podcast Feed</div>
-      <div class="card-desc">RSS 2.0 feed compatible with Spotify, Apple Podcasts, Overcast, and Pocket Casts.</div>
+      <div class="card-desc">RSS 2.0 compatible with Spotify, Apple Podcasts, Overcast and Pocket Casts.</div>
     </a>
     <a class="card" href="https://github.com/DragonBroSY">
-      <div class="card-icon">⌥</div>
+      <div class="card-icon">&#8997;</div>
       <div class="card-title">GitHub</div>
-      <div class="card-desc">Notes, tools, and projects. All course materials version-controlled and open.</div>
+      <div class="card-desc">Notes, tools and projects. All course materials version-controlled and open.</div>
     </a>
   </div>
 
-  <footer>DragonBroSY &nbsp;·&nbsp; All Altitudes Reserved</footer>
+  <div class="section">
+    <div class="section-label">Logbook &mdash; Recent Entries</div>
+    <table class="logbook">
+      <thead><tr><th>Date</th><th>Route</th><th>Conditions</th><th>Remarks</th><th>Dual</th></tr></thead>
+      <tbody id="logbookBody"></tbody>
+    </table>
+  </div>
+
+  <div class="section" style="padding-bottom:0.5rem">
+    <div class="section-label">NATO Phonetic Alphabet</div>
+  </div>
+  <div class="phonetic" id="phonetic"></div>
+
+  <footer>
+    DragonBroSY &nbsp;&middot;&nbsp; All Altitudes Reserved &nbsp;&middot;&nbsp;
+    <span class="freq">CTAF 122.8 &nbsp;&middot;&nbsp; ATIS 135.275</span>
+  </footer>
 
   <script>
-    // Subtle parallax on hero bg
-    const bg = document.getElementById('heroBg');
-    setTimeout(() => bg.classList.add('loaded'), 100);
-    window.addEventListener('scroll', () => {
-      const y = window.scrollY;
-      bg.style.transform = `scale(1) translateY(${y * 0.3}px)`;
-    }, { passive: true });
-  </script>
+    // Zulu clock
+    function tick() {
+      var n = new Date();
+      document.getElementById('zuluClock').textContent =
+        String(n.getUTCHours()).padStart(2,'0') + ':' +
+        String(n.getUTCMinutes()).padStart(2,'0') + ':' +
+        String(n.getUTCSeconds()).padStart(2,'0') + 'Z';
+    }
+    tick(); setInterval(tick, 1000);
 
+    // Parallax
+    var bg = document.getElementById('heroBg');
+    setTimeout(function(){ bg.classList.add('loaded'); }, 100);
+    window.addEventListener('scroll', function(){
+      bg.style.transform = 'scale(1) translateY(' + (window.scrollY * 0.3) + 'px)';
+    }, { passive: true });
+
+    // Quotes
+    var quotes = [
+      { t: "Aviation in itself is not inherently dangerous. But to an even greater degree than the sea, it is terribly unforgiving of any carelessness, incapacity or neglect.", a: "Capt. A. G. Lamplugh" },
+      { t: "Once you have tasted flight, you will forever walk the earth with your eyes turned skyward.", a: "Leonardo da Vinci" },
+      { t: "Aviate, navigate, communicate &mdash; in that order.", a: "Pilot axiom" },
+      { t: "There are old pilots and bold pilots, but no old, bold pilots.", a: "E. Hamilton Lee" },
+      { t: "The desire to fly is an idea handed down to us by our ancestors who looked enviously on the birds soaring freely through space.", a: "Wilbur Wright" },
+      { t: "Flying is not dangerous; crashing is dangerous.", a: "Pilot axiom" },
+      { t: "A good landing is one you can walk away from. A great landing is one after which you can use the plane again.", a: "Pilot axiom" }
+    ];
+    var q = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementById('quoteText').innerHTML = '&ldquo;' + q.t + '&rdquo;';
+    document.getElementById('quoteAuthor').textContent = '— ' + q.a;
+
+    // Logbook
+    var entries = [
+      { d: "20 MAR 26", r: "Local pattern", w: "VMC / Clear", m: "Touch-and-go practice, crosswind work", h: "1.2" },
+      { d: "19 MAR 26", r: "Cross-country nav", w: "VMC / Scattered", m: "VOR tracking, pilotage", h: "2.1" },
+      { d: "17 MAR 26", r: "Ground school", w: "N/A", m: "Weather theory, METAR/TAF reading", h: "—" },
+      { d: "14 MAR 26", r: "Local area", w: "VMC / Haze", m: "Emergency procedures, forced landing", h: "1.4" },
+      { d: "13 MAR 26", r: "Pattern work", w: "VMC / Clear", m: "Short field, soft field landings", h: "0.9" }
+    ];
+    var tb = document.getElementById('logbookBody');
+    entries.forEach(function(e){
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td>' + e.d + '</td><td class="hi">' + e.r + '</td><td>' + e.w + '</td><td>' + e.m + '</td><td>' + e.h + '</td>';
+      tb.appendChild(tr);
+    });
+
+    // NATO phonetic
+    var nato = [['A','Alpha'],['B','Bravo'],['C','Charlie'],['D','Delta'],['E','Echo'],
+      ['F','Foxtrot'],['G','Golf'],['H','Hotel'],['I','India'],['J','Juliet'],
+      ['K','Kilo'],['L','Lima'],['M','Mike'],['N','November'],['O','Oscar'],
+      ['P','Papa'],['Q','Quebec'],['R','Romeo'],['S','Sierra'],['T','Tango'],
+      ['U','Uniform'],['V','Victor'],['W','Whiskey'],['X','X-ray'],['Y','Yankee'],['Z','Zulu']];
+    var pd = document.getElementById('phonetic');
+    nato.forEach(function(n){
+      var d = document.createElement('div');
+      d.className = 'ph-card';
+      d.innerHTML = '<span class="ph-letter">' + n[0] + '</span><span class="ph-word">' + n[1] + '</span>';
+      pd.appendChild(d);
+    });
+  </script>
 </body>
 </html>
