@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Start Guide — DragonBroSY</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #070a0f; color: #c8d8e8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; min-height: 100vh; }
+    .topbar { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 2rem; background: #060911; border-bottom: 1px solid #0d1a26; font-size: 0.72rem; letter-spacing: 0.08em; }
+    .topbar a { color: #4a9eff; text-decoration: none; }
+    .topbar a:hover { text-decoration: underline; }
+    .topbar-sep { color: #1e3a5a; }
+    .main { max-width: 720px; margin: 0 auto; padding: 2.5rem 2rem; }
+    h1 { font-size: 1.8rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; margin-bottom: 0.4rem; }
+    .subtitle { font-size: 0.85rem; color: #2e4a62; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #0d1a26; }
+    h2 { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: #1e3a5a; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #0d1a26; }
+    .step { background: #0b1018; border: 1px solid #101a26; border-left: 3px solid #1a4a7a; border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 0.75rem; }
+    .step-num { font-size: 0.62rem; color: #4a9eff; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.3rem; }
+    .step-title { font-size: 0.92rem; font-weight: 600; color: #e0eaf8; margin-bottom: 0.4rem; }
+    .step p { font-size: 0.8rem; color: #2e4a62; line-height: 1.6; }
+    .step code { font-size: 0.78rem; background: #060d18; color: #4a9eff; border: 1px solid #0d1a26; border-radius: 3px; padding: 0.1em 0.4em; }
+    .step pre { background: #060d18; border: 1px solid #0d1a26; border-radius: 6px; padding: 0.8rem 1rem; margin-top: 0.6rem; overflow-x: auto; }
+    .step pre code { background: none; border: none; padding: 0; color: #3a6a9a; font-size: 0.76rem; }
+    a { color: #4a9eff; }
+    footer { text-align: center; font-size: 0.6rem; color: #0f1e2e; padding: 2rem; letter-spacing: 0.15em; text-transform: uppercase; border-top: 1px solid #0a1520; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <a href="/">&#8592; DragonBroSY</a>
+    <span class="topbar-sep">/</span>
+    <span style="color:#3a5a7a;">Quick Start Guide</span>
+  </div>
+
+  <div class="main">
+    <h1>Quick Start Guide</h1>
+    <p class="subtitle">Get up and running with the Elevate Courses site and notes workflow.</p>
+
+    <h2>Listening to Episodes</h2>
+
+    <div class="step">
+      <div class="step-num">Option 1</div>
+      <div class="step-title">In-browser</div>
+      <p>Visit <a href="https://dragonbrosy.github.io/Elevate-Courses/">Elevate Courses</a> and hit play on any episode directly.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">Option 2</div>
+      <div class="step-title">Podcast app</div>
+      <p>Subscribe with any podcast app using the RSS feed URL:</p>
+      <pre><code>https://dragonbrosy.github.io/Elevate-Courses/feed.xml</code></pre>
+      <p style="margin-top:0.5rem;">Works with Apple Podcasts, Spotify, Overcast, Pocket Casts, and any RSS-compatible app.</p>
+    </div>
+
+    <h2>Reading Notes</h2>
+
+    <div class="step">
+      <div class="step-num">Step 1</div>
+      <div class="step-title">Browse the notes index</div>
+      <p>All ground school notes are at <a href="https://dragonbrosy.github.io/Elevate-Courses/notes/">Elevate Courses / Notes</a>.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">Step 2</div>
+      <div class="step-title">Reference pages</div>
+      <p>See <a href="https://dragonbrosy.github.io/Elevate-Courses/notes/syntax">Syntax Reference</a> for Markdown and LaTeX math syntax, and <a href="https://dragonbrosy.github.io/Elevate-Courses/notes/resources">Resources</a> for FAA references and study links.</p>
+    </div>
+
+    <h2>Publishing Your Own Notes</h2>
+
+    <div class="step">
+      <div class="step-num">Step 1</div>
+      <div class="step-title">Add frontmatter to a note</div>
+      <p>In Obsidian, add this to the top of any <code>.md</code> file:</p>
+      <pre><code>---
+publish: true
+title: "Day 7 — Navigation"
+date: 2026-03-24
+topics: "VOR, GPS, pilotage"
+---</code></pre>
+    </div>
+    <div class="step">
+      <div class="step-num">Step 2</div>
+      <div class="step-title">Push</div>
+      <p>Run <code>push.sh</code> or use the Obsidian Git plugin. GitHub Actions handles the rest automatically.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">Step 3</div>
+      <div class="step-title">Start sessions with a pull</div>
+      <p>Run <code>start.sh</code> before writing to sync any changes made on GitHub.</p>
+    </div>
+
+    <h2>Full Workflow Reference</h2>
+    <div class="step">
+      <div class="step-title">Workflows page</div>
+      <p>See <a href="https://dragonbrosy.github.io/Elevate-Courses/notes/workflows">Workflows</a> for a complete breakdown of every workflow used to run this site.</p>
+    </div>
+  </div>
+
+  <footer>DragonBroSY &nbsp;&middot;&nbsp; All Altitudes Reserved</footer>
+</body>
+</html>
