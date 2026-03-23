@@ -107,9 +107,24 @@
   </div>
 
   <div class="section" style="padding-bottom:0.5rem">
-    <div class="section-label">NATO Phonetic Alphabet</div>
+    <div class="section-label">Weather &mdash; KPDK</div>
+    <div style="background:#0b1018;border:1px solid #101a26;border-radius:10px;padding:1.2rem 1.4rem;margin-bottom:0.75rem;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6rem;">
+        <span style="font-size:0.78rem;font-weight:700;color:#e0eaf8;">METAR</span>
+        <button onclick="toggleDecode('metar')" style="font-size:0.6rem;letter-spacing:0.1em;background:#060d18;color:#4a9eff;border:1px solid #1a4a7a;border-radius:4px;padding:0.2rem 0.7rem;cursor:pointer;">DECODE</button>
+      </div>
+      <div id="metar-raw" style="font-family:monospace;font-size:0.74rem;color:#3a6a9a;line-height:1.6;">Loading...</div>
+      <div id="metar-decoded" style="display:none;margin-top:0.8rem;border-top:1px solid #0d1a26;padding-top:0.8rem;"></div>
+    </div>
+    <div style="background:#0b1018;border:1px solid #101a26;border-radius:10px;padding:1.2rem 1.4rem;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6rem;">
+        <span style="font-size:0.78rem;font-weight:700;color:#e0eaf8;">TAF</span>
+        <button onclick="toggleDecode('taf')" style="font-size:0.6rem;letter-spacing:0.1em;background:#060d18;color:#4a9eff;border:1px solid #1a4a7a;border-radius:4px;padding:0.2rem 0.7rem;cursor:pointer;">DECODE</button>
+      </div>
+      <div id="taf-raw" style="font-family:monospace;font-size:0.74rem;color:#3a6a9a;line-height:1.6;">Loading...</div>
+      <div id="taf-decoded" style="display:none;margin-top:0.8rem;border-top:1px solid #0d1a26;padding-top:0.8rem;"></div>
+    </div>
   </div>
-  <div class="phonetic" id="phonetic"></div>
 
   <footer>
     DragonBroSY &nbsp;&middot;&nbsp; All Altitudes Reserved &nbsp;&middot;&nbsp;
@@ -163,19 +178,70 @@
       tb.appendChild(tr);
     });
 
-    // NATO phonetic
-    var nato = [['A','Alpha'],['B','Bravo'],['C','Charlie'],['D','Delta'],['E','Echo'],
-      ['F','Foxtrot'],['G','Golf'],['H','Hotel'],['I','India'],['J','Juliet'],
-      ['K','Kilo'],['L','Lima'],['M','Mike'],['N','November'],['O','Oscar'],
-      ['P','Papa'],['Q','Quebec'],['R','Romeo'],['S','Sierra'],['T','Tango'],
-      ['U','Uniform'],['V','Victor'],['W','Whiskey'],['X','X-ray'],['Y','Yankee'],['Z','Zulu']];
-    var pd = document.getElementById('phonetic');
-    nato.forEach(function(n){
-      var d = document.createElement('div');
-      d.className = 'ph-card';
-      d.innerHTML = '<span class="ph-letter">' + n[0] + '</span><span class="ph-word">' + n[1] + '</span>';
-      pd.appendChild(d);
-    });
+    // Weather — KPDK
+    var SKY = { SKC:'Clear', CLR:'Clear', FEW:'Few', SCT:'Scattered', BKN:'Broken', OVC:'Overcast', VV:'Vert. Vis.' };
+    var FCAT = { VFR:'#2ecc71', MVFR:'#3498db', IFR:'#e74c3c', LIFR:'#9b59b6' };
+
+    function wxRow(label, value) {
+      return '<div style="display:flex;gap:0.5rem;padding:0.18rem 0;font-size:0.72rem;">' +
+        '<span style="color:#1e3a5a;min-width:120px;">' + label + '</span>' +
+        '<span style="color:#3a6a9a;">' + value + '</span></div>';
+    }
+
+    function decodeMETAR(m) {
+      var wdir = m.wdir === 0 ? 'Calm' : m.wdir + '&deg;';
+      var wspd = m.wspd != null ? m.wspd + ' kt' + (m.wgst ? ' gusting ' + m.wgst + ' kt' : '') : '&mdash;';
+      var clouds = (m.clouds || []).map(function(c){ return (SKY[c.cover]||c.cover) + ' at ' + (c.base*100).toLocaleString() + ' ft'; }).join(', ') || 'Clear';
+      var cat = m.fltcat ? '<span style="color:' + (FCAT[m.fltcat]||'#c4d4e4') + ';font-weight:700;">' + m.fltcat + '</span>' : '&mdash;';
+      var altHg = m.altim ? (m.altim / 33.8639).toFixed(2) : '&mdash;';
+      return wxRow('Flight Category', cat) +
+        wxRow('Time (Z)', m.reportTime || '&mdash;') +
+        wxRow('Wind', wdir + ' at ' + wspd) +
+        wxRow('Visibility', m.visib != null ? m.visib + ' SM' : '&mdash;') +
+        wxRow('Weather', m.wxString || 'None') +
+        wxRow('Sky', clouds) +
+        wxRow('Temperature', m.temp != null ? m.temp + '&deg;C / ' + Math.round(m.temp*9/5+32) + '&deg;F' : '&mdash;') +
+        wxRow('Dewpoint', m.dewp != null ? m.dewp + '&deg;C' : '&mdash;') +
+        wxRow('Altimeter', altHg + ' inHg');
+    }
+
+    function decodeTAF(t) {
+      return (t.fcsts || []).map(function(f) {
+        var wdir = f.wdir === 0 ? 'Calm' : f.wdir + '&deg;';
+        var wspd = f.wspd != null ? f.wspd + ' kt' + (f.wgst ? ' gusting ' + f.wgst + ' kt' : '') : '&mdash;';
+        var clouds = (f.clouds || []).map(function(c){ return (SKY[c.cover]||c.cover) + ' at ' + (c.base*100).toLocaleString() + ' ft'; }).join(', ') || 'Clear';
+        var timeStr = f.timeFrom ? new Date(f.timeFrom).toUTCString().slice(5,22) + 'Z' : '';
+        return '<div style="padding:0.35rem 0;border-bottom:1px solid #0d1a26;">' +
+          '<div style="color:#4a9eff;font-size:0.68rem;margin-bottom:0.2rem;">' + timeStr + ' ' + (f.fcstType||'') + '</div>' +
+          wxRow('Wind', wdir + ' at ' + wspd) +
+          wxRow('Visibility', f.visib != null ? f.visib + ' SM' : '&mdash;') +
+          wxRow('Weather', f.wxString || 'None') +
+          wxRow('Sky', clouds) + '</div>';
+      }).join('') || 'No forecast periods.';
+    }
+
+    function toggleDecode(type) {
+      var el = document.getElementById(type + '-decoded');
+      el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+
+    (async function loadWeather() {
+      try {
+        var BASE = 'https://aviationweather.gov/api/data';
+        var r = await Promise.all([
+          fetch(BASE + '/metar?ids=KPDK&format=json').then(function(r){ return r.json(); }),
+          fetch(BASE + '/taf?ids=KPDK&format=json').then(function(r){ return r.json(); })
+        ]);
+        var m = r[0][0], t = r[1][0];
+        document.getElementById('metar-raw').textContent = m ? m.rawOb : 'N/A';
+        if (m) document.getElementById('metar-decoded').innerHTML = decodeMETAR(m);
+        document.getElementById('taf-raw').textContent = t ? t.rawTAF.replace(/\n/g,' ') : 'N/A';
+        if (t) document.getElementById('taf-decoded').innerHTML = decodeTAF(t);
+      } catch(e) {
+        document.getElementById('metar-raw').textContent = 'Unable to load weather.';
+        document.getElementById('taf-raw').textContent = 'Unable to load weather.';
+      }
+    })();
   </script>
 </body>
 </html>
