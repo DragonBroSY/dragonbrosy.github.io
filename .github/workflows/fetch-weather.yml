@@ -1,0 +1,42 @@
+name: Fetch Weather
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # every 15 minutes
+  workflow_dispatch:          # manual trigger
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch METAR and TAF for KPDK
+        run: |
+          python3 - <<'EOF'
+          import json, urllib.request
+
+          BASE = "https://aviationweather.gov/api/data"
+
+          def fetch(url):
+              with urllib.request.urlopen(url, timeout=10) as r:
+                  return json.loads(r.read())
+
+          metar = fetch(f"{BASE}/metar?ids=KPDK&format=json")
+          taf   = fetch(f"{BASE}/taf?ids=KPDK&format=json")
+
+          with open("weather.json", "w") as f:
+              json.dump({"metar": metar, "taf": taf}, f)
+
+          print(f"Saved: {len(metar)} METAR, {len(taf)} TAF records")
+          EOF
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add weather.json
+          git diff --staged --quiet || git commit -m "auto: update weather data [skip ci]" && git push

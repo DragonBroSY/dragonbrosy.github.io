@@ -232,19 +232,15 @@
 
     (async function loadWeather() {
       try {
-        var BASE = 'https://aviationweather.gov/api/data';
-        var r = await Promise.all([
-          fetch(BASE + '/metar?ids=KPDK&format=json').then(function(r){ return r.json(); }),
-          fetch(BASE + '/taf?ids=KPDK&format=json').then(function(r){ return r.json(); })
-        ]);
-        var m = r[0][0], t = r[1][0];
+        var data = await fetch('weather.json?_=' + Date.now()).then(function(r){ return r.json(); });
+        var m = data.metar[0], t = data.taf[0];
         document.getElementById('metar-raw').textContent = m ? m.rawOb : 'N/A';
         if (m) document.getElementById('metar-decoded').innerHTML = decodeMETAR(m);
         document.getElementById('taf-raw').textContent = t ? t.rawTAF.replace(/\n/g,' ') : 'N/A';
         if (t) document.getElementById('taf-decoded').innerHTML = decodeTAF(t);
       } catch(e) {
-        document.getElementById('metar-raw').textContent = 'Unable to load weather.';
-        document.getElementById('taf-raw').textContent = 'Unable to load weather.';
+        document.getElementById('metar-raw').textContent = 'Weather data not yet available — updates every 15 min.';
+        document.getElementById('taf-raw').textContent = 'Weather data not yet available — updates every 15 min.';
       }
     })();
   </script>
