@@ -115,7 +115,10 @@
     <div class="section-label">Weather &mdash; KPDK</div>
     <div style="background:#0b1018;border:1px solid #101a26;border-radius:10px;padding:1.2rem 1.4rem;margin-bottom:0.75rem;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6rem;">
-        <span style="font-size:0.78rem;font-weight:700;color:#e0eaf8;">METAR</span>
+        <div>
+          <span style="font-size:0.78rem;font-weight:700;color:#e0eaf8;">METAR</span>
+          <div id="metar-time" style="font-size:0.62rem;color:#2a4a6a;margin-top:0.15rem;letter-spacing:0.03em;"></div>
+        </div>
         <button onclick="toggleDecode('metar')" style="font-size:0.6rem;letter-spacing:0.1em;background:#060d18;color:#4a9eff;border:1px solid #1a4a7a;border-radius:4px;padding:0.2rem 0.7rem;cursor:pointer;">DECODE</button>
       </div>
       <div id="metar-raw" style="font-family:monospace;font-size:0.74rem;color:#3a6a9a;line-height:1.6;">Loading...</div>
@@ -235,7 +238,20 @@
         var data = await fetch('weather.json?_=' + Date.now()).then(function(r){ return r.json(); });
         var m = data.metar[0], t = data.taf[0];
         document.getElementById('metar-raw').textContent = m ? m.rawOb : 'N/A';
-        if (m) document.getElementById('metar-decoded').innerHTML = decodeMETAR(m);
+        if (m) {
+          document.getElementById('metar-decoded').innerHTML = decodeMETAR(m);
+          if (m.reportTime) {
+            var od = new Date(m.reportTime);
+            var zu = String(od.getUTCFullYear()) + '-' +
+                     String(od.getUTCMonth()+1).padStart(2,'0') + '-' +
+                     String(od.getUTCDate()).padStart(2,'0') + ' ' +
+                     String(od.getUTCHours()).padStart(2,'0') + ':' +
+                     String(od.getUTCMinutes()).padStart(2,'0') + 'Z';
+            var lo = od.toLocaleDateString([], {month:'short', day:'numeric'}) + ' ' +
+                     od.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit'});
+            document.getElementById('metar-time').textContent = zu + '\u2002\u00b7\u2002' + lo + ' local';
+          }
+        }
         document.getElementById('taf-raw').textContent = t ? t.rawTAF.replace(/\n/g,' ') : 'N/A';
         if (t) document.getElementById('taf-decoded').innerHTML = decodeTAF(t);
       } catch(e) {
