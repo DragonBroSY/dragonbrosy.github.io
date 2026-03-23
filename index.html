@@ -6,11 +6,11 @@
   <title>DragonBroSY</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #070a0f; color: #c8d8e8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+    body { background: #ffffff; color: #1a2a3a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
     .hero { position: relative; height: 100vh; min-height: 500px; overflow: hidden; display: flex; align-items: flex-end; }
     .hero-bg { position: absolute; inset: 0; background-image: url('https://dragonbrosy.github.io/Elevate-Courses/cockpit.jpg'); background-size: cover; background-position: center 40%; filter: brightness(0.4); transform: scale(1.03); transition: transform 8s ease-out; }
     .hero-bg.loaded { transform: scale(1); }
-    .hero-grad { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(7,10,15,0.1) 0%, rgba(7,10,15,0.0) 40%, rgba(7,10,15,0.97) 100%); }
+    .hero-grad { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(7,10,15,0.1) 0%, rgba(7,10,15,0.0) 40%, rgba(255,255,255,0.97) 100%); }
     .hero::after { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.07) 2px, rgba(0,0,0,0.07) 4px); pointer-events: none; }
     .hero-content { position: relative; width: 100%; max-width: 860px; margin: 0 auto; padding: 3rem 2rem 4rem; }
     .tag { display: inline-block; font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: #4a9eff; border: 1px solid #1a4a7a; border-radius: 4px; padding: 0.2rem 0.6rem; margin-bottom: 1.2rem; }
@@ -26,30 +26,30 @@
     .link-btn.primary:hover { background: #2a5aaa; border-color: #4a9eff; }
     .link-btn.secondary { background: transparent; color: #8aaccc; border: 1px solid #1a2a3a; }
     .link-btn.secondary:hover { border-color: #2a4a6a; color: #c0d8f0; }
-    .hud { background: #060911; border-top: 1px solid #0d1a26; border-bottom: 1px solid #0d1a26; padding: 0.7rem 2rem; display: flex; gap: 2rem; font-size: 0.68rem; color: #4a9eff; letter-spacing: 0.12em; overflow-x: auto; white-space: nowrap; align-items: center; }
-    .hud-item span { color: #1e3a5a; margin-right: 0.35rem; }
+    .hud { background: #f4f7fb; border-top: 1px solid #dce6f0; border-bottom: 1px solid #dce6f0; padding: 0.7rem 2rem; display: flex; gap: 2rem; font-size: 0.68rem; color: #2a6abf; letter-spacing: 0.12em; overflow-x: auto; white-space: nowrap; align-items: center; }
+    .hud-item span { color: #9ab0c8; margin-right: 0.35rem; }
     .blink { animation: blink 1.2s step-end infinite; }
     @keyframes blink { 50% { opacity: 0; } }
     .section { max-width: 860px; margin: 0 auto; padding: 2.5rem 2rem 0; }
-    .section-label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: #1e3a5a; margin-bottom: 1.2rem; padding-bottom: 0.5rem; border-bottom: 1px solid #0d1a26; }
+    .section-label { font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: #9ab0c8; margin-bottom: 1.2rem; padding-bottom: 0.5rem; border-bottom: 1px solid #dce6f0; }
     .cards { max-width: 860px; margin: 0 auto; padding: 1.2rem 2rem 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
-    .card { background: #0b1018; border: 1px solid #101a26; border-radius: 10px; padding: 1.5rem; text-decoration: none; color: inherit; transition: border-color 0.2s, transform 0.2s; display: block; }
-    .card:hover { border-color: #2a5a8a; transform: translateY(-2px); }
+    .card { background: #f8fafc; border: 1px solid #dce6f0; border-radius: 10px; padding: 1.5rem; text-decoration: none; color: inherit; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; display: block; }
+    .card:hover { border-color: #4a9eff; transform: translateY(-2px); box-shadow: 0 4px 16px rgba(74,158,255,0.1); }
     .card-icon { font-size: 1.5rem; margin-bottom: 0.8rem; }
-    .card-title { font-size: 0.92rem; font-weight: 700; color: #e0eaf8; margin-bottom: 0.35rem; }
-    .card-desc { font-size: 0.76rem; color: #2e4a62; line-height: 1.5; }
+    .card-title { font-size: 0.92rem; font-weight: 700; color: #1a2a3a; margin-bottom: 0.35rem; }
+    .card-desc { font-size: 0.76rem; color: #6a8aaa; line-height: 1.5; }
     .logbook { width: 100%; border-collapse: collapse; font-size: 0.76rem; }
-    .logbook th { text-align: left; padding: 0.4rem 0.8rem; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: #1e3a5a; border-bottom: 1px solid #0d1a26; }
-    .logbook td { padding: 0.55rem 0.8rem; color: #3a6a9a; border-bottom: 1px solid #0a1520; }
-    .logbook td.hi { color: #4a9eff; }
-    .logbook tr:hover td { background: #0a1018; }
+    .logbook th { text-align: left; padding: 0.4rem 0.8rem; font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: #9ab0c8; border-bottom: 1px solid #dce6f0; }
+    .logbook td { padding: 0.55rem 0.8rem; color: #4a6a8a; border-bottom: 1px solid #eef2f7; }
+    .logbook td.hi { color: #2a6abf; }
+    .logbook tr:hover td { background: #f4f7fb; }
     .phonetic { max-width: 860px; margin: 1.5rem auto 0; padding: 0 2rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
-    .ph-card { background: #080d14; border: 1px solid #0d1a26; border-radius: 5px; padding: 0.35rem 0.6rem; text-align: center; min-width: 52px; cursor: default; transition: background 0.15s; }
-    .ph-card:hover { background: #0f1e30; }
-    .ph-letter { font-size: 0.95rem; font-weight: 700; color: #4a9eff; display: block; }
-    .ph-word { font-size: 0.55rem; color: #1e3a5a; letter-spacing: 0.05em; text-transform: uppercase; }
-    footer { margin-top: 3rem; text-align: center; font-size: 0.6rem; color: #0f1e2e; padding: 1.5rem; letter-spacing: 0.15em; text-transform: uppercase; border-top: 1px solid #0a1520; }
-    .freq { color: #1a3a5a; }
+    .ph-card { background: #f8fafc; border: 1px solid #dce6f0; border-radius: 5px; padding: 0.35rem 0.6rem; text-align: center; min-width: 52px; cursor: default; transition: background 0.15s; }
+    .ph-card:hover { background: #eef4ff; }
+    .ph-letter { font-size: 0.95rem; font-weight: 700; color: #2a6abf; display: block; }
+    .ph-word { font-size: 0.55rem; color: #9ab0c8; letter-spacing: 0.05em; text-transform: uppercase; }
+    footer { margin-top: 3rem; text-align: center; font-size: 0.6rem; color: #9ab0c8; padding: 1.5rem; letter-spacing: 0.15em; text-transform: uppercase; border-top: 1px solid #dce6f0; }
+    .freq { color: #b0c4d8; }
   </style>
 </head>
 <body>
@@ -113,24 +113,24 @@
 
   <div class="section" style="padding-bottom:0.5rem">
     <div class="section-label">Weather &mdash; KPDK</div>
-    <div style="background:#0b1018;border:1px solid #101a26;border-radius:10px;padding:1.2rem 1.4rem;margin-bottom:0.75rem;">
+    <div style="background:#f8fafc;border:1px solid #dce6f0;border-radius:10px;padding:1.2rem 1.4rem;margin-bottom:0.75rem;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6rem;">
         <div>
-          <span style="font-size:0.78rem;font-weight:700;color:#e0eaf8;">METAR</span>
-          <div id="metar-time" style="font-size:0.62rem;color:#2a4a6a;margin-top:0.15rem;letter-spacing:0.03em;"></div>
+          <span style="font-size:0.78rem;font-weight:700;color:#1a2a3a;">METAR</span>
+          <div id="metar-time" style="font-size:0.62rem;color:#9ab0c8;margin-top:0.15rem;letter-spacing:0.03em;"></div>
         </div>
-        <button onclick="toggleDecode('metar')" style="font-size:0.6rem;letter-spacing:0.1em;background:#060d18;color:#4a9eff;border:1px solid #1a4a7a;border-radius:4px;padding:0.2rem 0.7rem;cursor:pointer;">DECODE</button>
+        <button onclick="toggleDecode('metar')" style="font-size:0.6rem;letter-spacing:0.1em;background:#eef4ff;color:#2a6abf;border:1px solid #b0caea;border-radius:4px;padding:0.2rem 0.7rem;cursor:pointer;">DECODE</button>
       </div>
-      <div id="metar-raw" style="font-family:monospace;font-size:0.74rem;color:#3a6a9a;line-height:1.6;">Loading...</div>
-      <div id="metar-decoded" style="display:none;margin-top:0.8rem;border-top:1px solid #0d1a26;padding-top:0.8rem;"></div>
+      <div id="metar-raw" style="font-family:monospace;font-size:0.74rem;color:#4a6a8a;line-height:1.6;">Loading...</div>
+      <div id="metar-decoded" style="display:none;margin-top:0.8rem;border-top:1px solid #dce6f0;padding-top:0.8rem;"></div>
     </div>
-    <div style="background:#0b1018;border:1px solid #101a26;border-radius:10px;padding:1.2rem 1.4rem;">
+    <div style="background:#f8fafc;border:1px solid #dce6f0;border-radius:10px;padding:1.2rem 1.4rem;">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6rem;">
-        <span style="font-size:0.78rem;font-weight:700;color:#e0eaf8;">TAF</span>
-        <button onclick="toggleDecode('taf')" style="font-size:0.6rem;letter-spacing:0.1em;background:#060d18;color:#4a9eff;border:1px solid #1a4a7a;border-radius:4px;padding:0.2rem 0.7rem;cursor:pointer;">DECODE</button>
+        <span style="font-size:0.78rem;font-weight:700;color:#1a2a3a;">TAF</span>
+        <button onclick="toggleDecode('taf')" style="font-size:0.6rem;letter-spacing:0.1em;background:#eef4ff;color:#2a6abf;border:1px solid #b0caea;border-radius:4px;padding:0.2rem 0.7rem;cursor:pointer;">DECODE</button>
       </div>
-      <div id="taf-raw" style="font-family:monospace;font-size:0.74rem;color:#3a6a9a;line-height:1.6;">Loading...</div>
-      <div id="taf-decoded" style="display:none;margin-top:0.8rem;border-top:1px solid #0d1a26;padding-top:0.8rem;"></div>
+      <div id="taf-raw" style="font-family:monospace;font-size:0.74rem;color:#4a6a8a;line-height:1.6;">Loading...</div>
+      <div id="taf-decoded" style="display:none;margin-top:0.8rem;border-top:1px solid #dce6f0;padding-top:0.8rem;"></div>
     </div>
   </div>
 
@@ -192,8 +192,8 @@
 
     function wxRow(label, value) {
       return '<div style="display:flex;gap:0.5rem;padding:0.18rem 0;font-size:0.72rem;">' +
-        '<span style="color:#1e3a5a;min-width:120px;">' + label + '</span>' +
-        '<span style="color:#3a6a9a;">' + value + '</span></div>';
+        '<span style="color:#9ab0c8;min-width:120px;">' + label + '</span>' +
+        '<span style="color:#4a6a8a;">' + value + '</span></div>';
     }
 
     function decodeMETAR(m) {
@@ -219,8 +219,8 @@
         var wspd = f.wspd != null ? f.wspd + ' kt' + (f.wgst ? ' gusting ' + f.wgst + ' kt' : '') : '&mdash;';
         var clouds = (f.clouds || []).map(function(c){ return (SKY[c.cover]||c.cover) + ' at ' + (c.base*100).toLocaleString() + ' ft'; }).join(', ') || 'Clear';
         var timeStr = f.timeFrom ? new Date(f.timeFrom).toUTCString().slice(5,22) + 'Z' : '';
-        return '<div style="padding:0.35rem 0;border-bottom:1px solid #0d1a26;">' +
-          '<div style="color:#4a9eff;font-size:0.68rem;margin-bottom:0.2rem;">' + timeStr + ' ' + (f.fcstType||'') + '</div>' +
+        return '<div style="padding:0.35rem 0;border-bottom:1px solid #dce6f0;">' +
+          '<div style="color:#2a6abf;font-size:0.68rem;margin-bottom:0.2rem;">' + timeStr + ' ' + (f.fcstType||'') + '</div>' +
           wxRow('Wind', wdir + ' at ' + wspd) +
           wxRow('Visibility', f.visib != null ? f.visib + ' SM' : '&mdash;') +
           wxRow('Weather', f.wxString || 'None') +
