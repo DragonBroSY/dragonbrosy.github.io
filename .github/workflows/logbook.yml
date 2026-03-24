@@ -1,0 +1,138 @@
+name: Convert Logbook CSV
+
+on:
+  push:
+    paths:
+      - 'logbook.csv'
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Convert logbook.csv to logbook.json
+        run: |
+          python3 - <<'EOF'
+          import csv, json, re
+          from datetime import datetime
+
+          # ── Column name aliases (LogTen Pro variations) ──────────────────
+          COL_DATE    = ['flight date', 'date']
+          COL_FROM    = ['from', 'departure', 'dep']
+          COL_TO      = ['to', 'destination', 'dest', 'arr']
+          COL_ROUTE   = ['route']
+          COL_DUAL    = ['dual received', "dual rec'd", 'dual recvd', 'dual', 'dual received (h)']
+          COL_TOTAL   = ['total time', 'total', 'flt time', 'flight time', 'total time (h)']
+          COL_NIGHT   = ['night', 'night (h)', 'night time']
+          COL_IMC     = ['actual instrument', 'imc', 'actual inst', 'instrument', 'actual instrument (h)']
+          COL_REMARKS = ['remarks', 'comments', 'notes']
+
+          def find_col(headers, aliases):
+              for alias in aliases:
+                  for h in headers:
+                      if h.strip().lower() == alias:
+                          return h
+              return None
+
+          def parse_hours(val):
+              if not val or not val.strip():
+                  return 0.0
+              # Handle H:MM format
+              m = re.match(r'^(\d+):(\d{2})$', val.strip())
+              if m:
+                  return int(m.group(1)) + int(m.group(2)) / 60
+              try:
+                  return float(val.strip())
+              except ValueError:
+                  return 0.0
+
+          def fmt_date(raw):
+              raw = raw.strip()
+              for fmt in ('%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y', '%d/%m/%Y', '%d-%b-%Y', '%Y/%m/%d'):
+                  try:
+                      return datetime.strptime(raw, fmt)
+                  except ValueError:
+                      pass
+              return None
+
+          with open('logbook.csv', newline='', encoding='utf-8-sig') as f:
+              reader = csv.DictReader(f)
+              headers = reader.fieldnames or []
+
+              c_date    = find_col(headers, COL_DATE)
+              c_from    = find_col(headers, COL_FROM)
+              c_to      = find_col(headers, COL_TO)
+              c_route   = find_col(headers, COL_ROUTE)
+              c_dual    = find_col(headers, COL_DUAL)
+              c_total   = find_col(headers, COL_TOTAL)
+              c_night   = find_col(headers, COL_NIGHT)
+              c_imc     = find_col(headers, COL_IMC)
+              c_remarks = find_col(headers, COL_REMARKS)
+
+              rows = list(reader)
+
+          entries = []
+          for row in rows:
+              raw_date = row.get(c_date, '').strip() if c_date else ''
+              dt = fmt_date(raw_date)
+              if not dt:
+                  continue  # skip rows with no parseable date
+
+              # Route: prefer explicit route col, fall back to From→To
+              if c_route and row.get(c_route, '').strip():
+                  route = row[c_route].strip()
+              else:
+                  frm = row.get(c_from, '').strip() if c_from else ''
+                  to  = row.get(c_to,   '').strip() if c_to   else ''
+                  route = (frm + ' \u2192 ' + to).strip(' \u2192') if (frm or to) else '—'
+
+              # Conditions: IMC > Night > VMC
+              night = parse_hours(row.get(c_night, '') if c_night else '')
+              imc   = parse_hours(row.get(c_imc,   '') if c_imc   else '')
+              if imc > 0:
+                  conditions = 'IMC'
+              elif night > 0:
+                  conditions = 'Night / VMC'
+              else:
+                  conditions = 'VMC'
+
+              # Hours: prefer dual, fall back to total
+              dual_h  = parse_hours(row.get(c_dual,  '') if c_dual  else '')
+              total_h = parse_hours(row.get(c_total, '') if c_total else '')
+              hours = dual_h if dual_h > 0 else total_h
+              hours_str = f'{hours:.1f}' if hours > 0 else '—'
+
+              remarks = row.get(c_remarks, '').strip() if c_remarks else ''
+
+              entries.append({
+                  '_dt': dt,
+                  'd': dt.strftime('%-d %b %y').upper(),
+                  'r': route,
+                  'w': conditions,
+                  'm': remarks,
+                  'h': hours_str
+              })
+
+          # Sort newest first, keep last 15
+          entries.sort(key=lambda x: x['_dt'], reverse=True)
+          entries = entries[:15]
+          for e in entries:
+              del e['_dt']
+
+          with open('logbook.json', 'w') as f:
+              json.dump(entries, f, indent=2)
+
+          print(f'Wrote {len(entries)} entries to logbook.json')
+          EOF
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add logbook.json
+          git diff --staged --quiet || git commit -m "auto: update logbook.json from CSV [skip ci]" && git push

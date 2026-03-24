@@ -171,20 +171,24 @@
     document.getElementById('quoteText').innerHTML = '&ldquo;' + q.t + '&rdquo;';
     document.getElementById('quoteAuthor').textContent = '— ' + q.a;
 
-    // Logbook
-    var entries = [
-      { d: "20 MAR 26", r: "Local pattern", w: "VMC / Clear", m: "Touch-and-go practice, crosswind work", h: "1.2" },
-      { d: "19 MAR 26", r: "Cross-country nav", w: "VMC / Scattered", m: "VOR tracking, pilotage", h: "2.1" },
-      { d: "17 MAR 26", r: "Ground school", w: "N/A", m: "Weather theory, METAR/TAF reading", h: "—" },
-      { d: "14 MAR 26", r: "Local area", w: "VMC / Haze", m: "Emergency procedures, forced landing", h: "1.4" },
-      { d: "13 MAR 26", r: "Pattern work", w: "VMC / Clear", m: "Short field, soft field landings", h: "0.9" }
-    ];
-    var tb = document.getElementById('logbookBody');
-    entries.forEach(function(e){
-      var tr = document.createElement('tr');
-      tr.innerHTML = '<td>' + e.d + '</td><td class="hi">' + e.r + '</td><td>' + e.w + '</td><td>' + e.m + '</td><td>' + e.h + '</td>';
-      tb.appendChild(tr);
-    });
+    // Logbook — load from logbook.json (generated from LogTen CSV by GitHub Actions)
+    (async function loadLogbook() {
+      var tb = document.getElementById('logbookBody');
+      try {
+        var entries = await fetch('logbook.json?_=' + Date.now()).then(function(r){ return r.json(); });
+        if (!entries.length) {
+          tb.innerHTML = '<tr><td colspan="5" style="color:#9ab0c8;padding:0.8rem;text-align:center;">No entries yet — push a LogTen CSV to populate.</td></tr>';
+          return;
+        }
+        entries.forEach(function(e){
+          var tr = document.createElement('tr');
+          tr.innerHTML = '<td>' + e.d + '</td><td class="hi">' + e.r + '</td><td>' + e.w + '</td><td>' + e.m + '</td><td>' + e.h + '</td>';
+          tb.appendChild(tr);
+        });
+      } catch(err) {
+        tb.innerHTML = '<tr><td colspan="5" style="color:#9ab0c8;padding:0.8rem;text-align:center;">No logbook data yet.</td></tr>';
+      }
+    })();
 
     // Weather — KPDK
     var SKY = { SKC:'Clear', CLR:'Clear', FEW:'Few', SCT:'Scattered', BKN:'Broken', OVC:'Overcast', VV:'Vert. Vis.' };
