@@ -190,6 +190,46 @@
     var SKY = { SKC:'Clear', CLR:'Clear', FEW:'Few', SCT:'Scattered', BKN:'Broken', OVC:'Overcast', VV:'Vert. Vis.' };
     var FCAT = { VFR:'#2ecc71', MVFR:'#3498db', IFR:'#e74c3c', LIFR:'#9b59b6' };
 
+    // Weather phenomenon decoder (FAR/AIM 7-1-30, Table 7-1-8)
+    var WX_DESC  = { MI:'Shallow', PR:'Partial', BC:'Patches', DR:'Low Drifting', BL:'Blowing', SH:'Shower', FZ:'Freezing', TS:'Thunderstorm' };
+    var WX_PRECIP= { DZ:'Drizzle', RA:'Rain', SN:'Snow', SG:'Snow Grains', IC:'Ice Crystals', PL:'Ice Pellets', GR:'Hail', GS:'Snow Pellets', UP:'Unknown Precip' };
+    var WX_OBSC  = { BR:'Mist', FG:'Fog', FU:'Smoke', VA:'Volcanic Ash', DU:'Dust', SA:'Sand', HZ:'Haze', PY:'Spray' };
+    var WX_OTHER = { PO:'Dust Devil', SQ:'Squall', FC:'Funnel Cloud', SS:'Sandstorm', DS:'Duststorm' };
+
+    function decodeWxString(raw) {
+      if (!raw) return 'None';
+      var tokens = raw.split(' ');
+      return tokens.map(function(tok) {
+        var intensity = '';
+        if (tok[0] === '+') { intensity = 'Heavy '; tok = tok.slice(1); }
+        else if (tok[0] === '-') { intensity = 'Light '; tok = tok.slice(1); }
+        else if (tok.slice(0,2) === 'VC') { intensity = 'Vicinity '; tok = tok.slice(2); }
+        var parts = [];
+        // Try to match descriptor + precip/obscuration combos
+        for (var d in WX_DESC) { if (tok.slice(0,d.length) === d) { parts.push(WX_DESC[d]); tok = tok.slice(d.length); break; } }
+        for (var p in WX_PRECIP) { if (tok.slice(0,p.length) === p) { parts.push(WX_PRECIP[p]); tok = tok.slice(p.length); } }
+        for (var o in WX_OBSC)   { if (tok.slice(0,o.length) === o) { parts.push(WX_OBSC[o]); tok = tok.slice(o.length); } }
+        for (var x in WX_OTHER)  { if (tok.slice(0,x.length) === x) { parts.push(WX_OTHER[x]); tok = tok.slice(x.length); } }
+        return parts.length ? intensity + parts.join(' ') : intensity + raw.split(' ').join('');
+      }).join('; ') || raw;
+    }
+
+    function windStr(wdir, wspd, wgst) {
+      if (wspd === 0 || wspd == null) return 'Calm';
+      var dir = (wdir === 0 || wdir == null) ? 'Variable' : wdir + '&deg;';
+      return dir + ' at ' + wspd + ' kt' + (wgst ? ', gusting ' + wgst + ' kt' : '');
+    }
+
+    function cloudStr(clouds) {
+      if (!clouds || !clouds.length) return 'Clear';
+      return clouds.map(function(c) {
+        var cov = SKY[c.cover] || c.cover;
+        var alt = (c.base * 100).toLocaleString() + ' ft';
+        var type = c.type ? ' <strong style="color:#e74c3c;">' + c.type + '</strong>' : '';
+        return cov + ' at ' + alt + type;
+      }).join(', ');
+    }
+
     function wxRow(label, value) {
       return '<div style="display:flex;gap:0.5rem;padding:0.18rem 0;font-size:0.72rem;">' +
         '<span style="color:#9ab0c8;min-width:120px;">' + label + '</span>' +
@@ -197,33 +237,29 @@
     }
 
     function decodeMETAR(m) {
-      var wdir = m.wdir === 0 ? 'Calm' : m.wdir + '&deg;';
-      var wspd = m.wspd != null ? m.wspd + ' kt' + (m.wgst ? ' gusting ' + m.wgst + ' kt' : '') : '&mdash;';
-      var clouds = (m.clouds || []).map(function(c){ return (SKY[c.cover]||c.cover) + ' at ' + (c.base*100).toLocaleString() + ' ft'; }).join(', ') || 'Clear';
-      var cat = m.fltcat ? '<span style="color:' + (FCAT[m.fltcat]||'#c4d4e4') + ';font-weight:700;">' + m.fltcat + '</span>' : '&mdash;';
+      var cat = m.fltcat ? '<span style="color:' + (FCAT[m.fltcat]||'#4a6a8a') + ';font-weight:700;">' + m.fltcat + '</span>' : '&mdash;';
       var altHg = m.altim ? (m.altim / 33.8639).toFixed(2) : '&mdash;';
+      var altStr = altHg + ' inHg' + (m.altim ? ' (' + Math.round(m.altim) + ' hPa)' : '');
       return wxRow('Flight Category', cat) +
         wxRow('Time (Z)', m.reportTime || '&mdash;') +
-        wxRow('Wind', wdir + ' at ' + wspd) +
+        wxRow('Wind', windStr(m.wdir, m.wspd, m.wgst)) +
         wxRow('Visibility', m.visib != null ? m.visib + ' SM' : '&mdash;') +
-        wxRow('Weather', m.wxString || 'None') +
-        wxRow('Sky', clouds) +
+        wxRow('Weather', decodeWxString(m.wxString)) +
+        wxRow('Sky', cloudStr(m.clouds)) +
         wxRow('Temperature', m.temp != null ? m.temp + '&deg;C / ' + Math.round(m.temp*9/5+32) + '&deg;F' : '&mdash;') +
         wxRow('Dewpoint', m.dewp != null ? m.dewp + '&deg;C' : '&mdash;') +
-        wxRow('Altimeter', altHg + ' inHg');
+        wxRow('Altimeter', altStr);
     }
 
     function decodeTAF(t) {
       return (t.fcsts || []).map(function(f) {
-        var wdir = f.wdir === 0 ? 'Calm' : f.wdir + '&deg;';
-        var wspd = f.wspd != null ? f.wspd + ' kt' + (f.wgst ? ' gusting ' + f.wgst + ' kt' : '') : '&mdash;';
-        var clouds = (f.clouds || []).map(function(c){ return (SKY[c.cover]||c.cover) + ' at ' + (c.base*100).toLocaleString() + ' ft'; }).join(', ') || 'Clear';
+        var clouds = cloudStr(f.clouds);
         var timeStr = f.timeFrom ? new Date(f.timeFrom).toUTCString().slice(5,22) + 'Z' : '';
         return '<div style="padding:0.35rem 0;border-bottom:1px solid #dce6f0;">' +
           '<div style="color:#2a6abf;font-size:0.68rem;margin-bottom:0.2rem;">' + timeStr + ' ' + (f.fcstType||'') + '</div>' +
-          wxRow('Wind', wdir + ' at ' + wspd) +
+          wxRow('Wind', windStr(f.wdir, f.wspd, f.wgst)) +
           wxRow('Visibility', f.visib != null ? f.visib + ' SM' : '&mdash;') +
-          wxRow('Weather', f.wxString || 'None') +
+          wxRow('Weather', decodeWxString(f.wxString)) +
           wxRow('Sky', clouds) + '</div>';
       }).join('') || 'No forecast periods.';
     }
