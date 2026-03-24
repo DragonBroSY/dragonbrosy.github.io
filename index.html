@@ -243,7 +243,7 @@
     function decodeMETAR(m) {
       var cat = m.fltcat ? '<span style="color:' + (FCAT[m.fltcat]||'#4a6a8a') + ';font-weight:700;">' + m.fltcat + '</span>' : '&mdash;';
       var altHg = m.altim ? (m.altim / 33.8639).toFixed(2) : '&mdash;';
-      var altStr = altHg + ' inHg' + (m.altim ? ' (' + Math.round(m.altim) + ' hPa)' : '');
+      var altStr = altHg + ' inHg';
       return wxRow('Flight Category', cat) +
         wxRow('Time (Z)', m.reportTime || '&mdash;') +
         wxRow('Wind', windStr(m.wdir, m.wspd, m.wgst)) +
