@@ -12,7 +12,7 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.2.2
 
       - name: Fetch METAR and TAF for KPDK
         run: |
@@ -22,7 +22,7 @@ jobs:
           BASE = "https://aviationweather.gov/api/data"
 
           def fetch(url):
-              with urllib.request.urlopen(url, timeout=10) as r:
+              with urllib.request.urlopen(url, timeout=30) as r:
                   return json.loads(r.read())
 
           metar = fetch(f"{BASE}/metar?ids=KPDK&format=json")
