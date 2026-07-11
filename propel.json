@@ -124,5 +124,16 @@
       "last_flown": "2023-06",
       "source": "logbook"
     }
-  ]
+  ],
+  "minimums_raw": {
+    "total_time": 488.7,
+    "multi_engine_land": 13.8,
+    "night": 44.6,
+    "instrument": 43.2,
+    "cross_country": 308.6,
+    "pic_strict": 15.6,
+    "pic_plus_qualifying_sic": 314.9,
+    "pic_cross_country": 0.0,
+    "pic_night": 0.0
+  }
 }
