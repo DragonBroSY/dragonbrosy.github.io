@@ -1,0 +1,104 @@
+{
+  "generated": "2026-07-11",
+  "source_rows": 277,
+  "total_time": 488.7,
+  "airplane": {
+    "total": 183.6,
+    "pic": 10.5,
+    "turbine": 0
+  },
+  "category_class": {
+    "airplane_sel": 169.8,
+    "airplane_ses": 0,
+    "airplane_mel": 13.8,
+    "airplane_mes": 0,
+    "helicopter_rotor": 305.1
+  },
+  "type_of_time": {
+    "pic": 10.5,
+    "instructor": 1.6,
+    "sic": 299.3,
+    "dual": 49.2,
+    "other": 0,
+    "fe": 0
+  },
+  "flight_conditions": {
+    "night_airplane": 0.3,
+    "night_rotor": 40.2,
+    "actual_instrument_airplane": 0.0,
+    "actual_instrument_rotor": 2.1,
+    "simulated_instrument_airplane": 4.9,
+    "simulated_instrument_rotor": 30.3,
+    "cross_country_airplane": 27.0,
+    "cross_country_rotor": 299.6
+  },
+  "last_bfr_or_checkride": "2026-07-07",
+  "last_flown_aircraft": "PA-28-181",
+  "total_flight_hours_last_6mo": 79.4,
+  "total_flight_hours_last_12mo": 79.4,
+  "aircraft_flown": [
+    {
+      "type": "UH-60M",
+      "category": "rotor",
+      "total": 207.0,
+      "last_flown": "2019-10",
+      "source": "logbook"
+    },
+    {
+      "type": "PA-28-181",
+      "category": "sel",
+      "total": 79.4,
+      "last_flown": "2026-06",
+      "source": "logbook"
+    },
+    {
+      "type": "TH-67A",
+      "category": "rotor",
+      "total": 73.3,
+      "last_flown": "2018-04",
+      "source": "logbook"
+    },
+    {
+      "type": "CE-172-S G1000",
+      "category": "sel",
+      "total": 56.7,
+      "last_flown": "2025-09",
+      "source": "gap (manual)"
+    },
+    {
+      "type": "PA-28-161",
+      "category": "sel",
+      "total": 33.7,
+      "last_flown": "2024-06",
+      "source": "logbook"
+    },
+    {
+      "type": "OH-58C",
+      "category": "rotor",
+      "total": 22.6,
+      "last_flown": "2018-05",
+      "source": "logbook"
+    },
+    {
+      "type": "DA-42",
+      "category": "mel",
+      "total": 13.8,
+      "last_flown": "2025-06",
+      "source": "gap (manual)"
+    },
+    {
+      "type": "R22 BETA II",
+      "category": "rotor",
+      "total": 1.5,
+      "last_flown": "2023-06",
+      "source": "logbook"
+    },
+    {
+      "type": "R44 RAVEN II",
+      "category": "rotor",
+      "total": 0.7,
+      "last_flown": "2023-06",
+      "source": "logbook"
+    }
+  ]
+}
