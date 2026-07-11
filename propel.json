@@ -1,10 +1,27 @@
 {
   "generated": "2026-07-11",
-  "source_rows": 277,
+  "source_rows": 326,
+  "sources": [
+    {
+      "file": "logbook.txt",
+      "rows": 44,
+      "used": 43
+    },
+    {
+      "file": "logbook-historical.csv",
+      "rows": 233,
+      "used": 186
+    },
+    {
+      "file": "logbook-sfs.csv",
+      "rows": 49,
+      "used": 48
+    }
+  ],
   "total_time": 488.7,
   "airplane": {
     "total": 183.6,
-    "pic": 10.5,
+    "pic": 15.6,
     "turbine": 0
   },
   "category_class": {
@@ -15,27 +32,27 @@
     "helicopter_rotor": 305.1
   },
   "type_of_time": {
-    "pic": 10.5,
+    "pic": 15.6,
     "instructor": 1.6,
     "sic": 299.3,
-    "dual": 49.2,
+    "dual": 105.9,
     "other": 0,
     "fe": 0
   },
   "flight_conditions": {
-    "night_airplane": 0.3,
+    "night_airplane": 4.4,
     "night_rotor": 40.2,
-    "actual_instrument_airplane": 0.0,
+    "actual_instrument_airplane": 1.4,
     "actual_instrument_rotor": 2.1,
-    "simulated_instrument_airplane": 4.9,
+    "simulated_instrument_airplane": 9.4,
     "simulated_instrument_rotor": 30.3,
-    "cross_country_airplane": 27.0,
+    "cross_country_airplane": 9.0,
     "cross_country_rotor": 299.6
   },
   "last_bfr_or_checkride": "2026-07-07",
   "last_flown_aircraft": "PA-28-181",
   "total_flight_hours_last_6mo": 79.4,
-  "total_flight_hours_last_12mo": 79.4,
+  "total_flight_hours_last_12mo": 109.1,
   "aircraft_flown": [
     {
       "type": "UH-60M",
@@ -61,9 +78,9 @@
     {
       "type": "CE-172-S G1000",
       "category": "sel",
-      "total": 56.7,
-      "last_flown": "2025-09",
-      "source": "gap (manual)"
+      "total": 42.0,
+      "last_flown": "2025-11",
+      "source": "logbook"
     },
     {
       "type": "PA-28-161",
@@ -80,11 +97,18 @@
       "source": "logbook"
     },
     {
+      "type": "CE-172-S G650",
+      "category": "sel",
+      "total": 14.7,
+      "last_flown": "2025-09",
+      "source": "logbook"
+    },
+    {
       "type": "DA-42",
       "category": "mel",
       "total": 13.8,
       "last_flown": "2025-06",
-      "source": "gap (manual)"
+      "source": "logbook"
     },
     {
       "type": "R22 BETA II",
