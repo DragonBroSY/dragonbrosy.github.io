@@ -65,7 +65,7 @@
 
   <div class="main">
     <div class="page-title">Propel Application &mdash; Progress Summary</div>
-    <div class="page-sub">Auto-compiled monthly progress-eval totals, in the same fields Delta&rsquo;s Propel application asks for. Historical time (military + pre-ATP aircraft) is a frozen baseline; everything from the current PA-28-181 program updates automatically whenever <code>logbook.txt</code> is pushed from LogTen Pro.</div>
+    <div class="page-sub">Auto-compiled monthly progress-eval totals, in the same fields Delta&rsquo;s Propel application asks for. Every source file (<code>logbook.txt</code> plus any <code>logbook-*.csv</code> archive) is merged and re-summed automatically whenever one is pushed &mdash; see <a href="#adding-a-source" style="color:#1a3a6b;">Adding a New Source</a> below.</div>
 
     <div class="meta-row" id="metaRow"></div>
 
@@ -75,7 +75,7 @@
     <div class="panel">
       <div class="panel-head">All Aircraft <span class="accent">Sorted by total time</span></div>
       <div class="hist-list" id="histList"></div>
-      <div class="note">Sourced from your full LogTen archive + current logbook.txt, excluding simulator sessions. Two aircraft (CE-172-S, DA-42) are manually-entered totals &mdash; no export covers them.</div>
+      <div class="note" id="sourcesNote">Sourced from every logbook-*.csv archive plus current logbook.txt, excluding simulator sessions.</div>
     </div>
 
     <div class="slabel">Category &amp; Class</div>
@@ -107,9 +107,20 @@
     <div class="panel">
       <div class="panel-head">Discrepancies vs. Last Propel Submission</div>
       <div class="note warn" style="border-top:none;">
-        <p style="margin-bottom:0.6rem;"><b>Dual:</b> computes to ~49 hrs from LogTen&rsquo;s raw &ldquo;Dual Received (Student)&rdquo; column, vs. 167.2 hrs on your last actual Propel submission. Delta&rsquo;s system likely applies its own military-to-civilian conversion rules for flight-school hours that don&rsquo;t map 1:1 to that column &mdash; confirm the correct definition with Propel/your recruiter before using this number.</p>
+        <p style="margin-bottom:0.6rem;"><b>Dual:</b> computes to ~106 hrs from raw &ldquo;Dual Received&rdquo; columns across all sources, vs. 167.2 hrs on your last actual Propel submission (before CE-172-S/DA-42 had real data, this was ~49 hrs, so the gap has narrowed but not closed). Delta&rsquo;s system likely applies its own military-to-civilian conversion rules for flight-school hours that don&rsquo;t map 1:1 to raw logbook columns &mdash; confirm the correct definition with Propel/your recruiter before using this number.</p>
         <p style="margin-bottom:0.6rem;"><b>SIC:</b> computes to ~299 hrs (now correctly includes 22.6 hrs of OH-58C time), vs. 276.7 hrs previously submitted, which appears to have omitted it.</p>
         <p>R22 BETA II total shows 1.5 hrs here vs. 0.5 hrs on the last submission &mdash; a minor data difference, worth a quick check against your paper logbook if it matters for your SEL total.</p>
+      </div>
+    </div>
+
+    <a id="adding-a-source"></a>
+    <div class="slabel">Adding a New Source</div>
+    <div class="panel">
+      <div class="panel-head">How This Stays Current</div>
+      <div class="note" style="border-top:none;">
+        <p style="margin-bottom:0.6rem;"><b>New LogTen export (any time):</b> re-export <code>logbook.txt</code> from LogTen Pro (all columns checked) and push it. The site rebuilds <code>propel.json</code> automatically &mdash; nothing else to do.</p>
+        <p style="margin-bottom:0.6rem;"><b>A different school/system's CSV export:</b> drop it in the repo root as <code>logbook-&lt;name&gt;.csv</code> (e.g. <code>logbook-sfs.csv</code>). Any file matching that pattern is picked up and merged automatically on push, as long as it has recognizable column headers (Date, Aircraft, Category, Total Time, PIC, Dual Received, Night, Act Inst, Sim Inst, X-Country, etc. &mdash; common aliases are matched loosely). Mark simulator sessions with <code>Category = Simulator</code> so they're excluded from real aircraft totals, same as everywhere else on this page.</p>
+        <p>A <b>PDF log</b> (like a school's printed pilot log): every vendor so far &mdash; Delta Propel, LogTen's own print, and Superior SFS/ETA &mdash; uses a completely different table layout, so there&rsquo;s no safe generic PDF parser here; a wrong auto-read could feed bad numbers into a real application. Instead, send the PDF to Claude Code and ask it to convert it into a new <code>logbook-&lt;name&gt;.csv</code> following this same convention &mdash; a one-time, few-minute conversion that then becomes a permanent, fully automatic part of this pipeline.</p>
       </div>
     </div>
 
@@ -142,7 +153,13 @@
           '<div class="meta-chip">Last BFR/checkride <b>' + p.last_bfr_or_checkride + '</b></div>';
 
         document.getElementById('warnBanner').innerHTML =
-          '<div class="panel"><div class="note warn">Historical data (2017&ndash;2023, from your full LogTen archive) has real Night/Dual/Instrument/XC breakdowns. Your <em>current</em> program (logbook.txt, PA-28-181) still only exports Total Time / PIC / Solo &mdash; re-export logbook.txt with all columns included so Night/Dual/Instrument/XC keep growing during this program too.</div></div>';
+          '<div class="panel"><div class="note warn">Historical sources (logbook-*.csv) have real Night/Dual/Instrument/XC breakdowns. Your <em>current</em> program (logbook.txt, PA-28-181) still only exports Total Time / PIC / Solo &mdash; re-export logbook.txt with all columns included so Night/Dual/Instrument/XC keep growing during this program too.</div></div>';
+
+        var srcs = p.sources || [];
+        if (srcs.length) {
+          document.getElementById('sourcesNote').innerHTML =
+            'Sourced from ' + srcs.map(function(s){ return '<code>' + s.file + '</code> (' + s.used + '/' + s.rows + ' rows)'; }).join(', ') + ', excluding simulator sessions.';
+        }
 
         var cc = p.category_class;
         document.getElementById('catClassTable').innerHTML =

@@ -5,7 +5,7 @@ on:
     paths:
       - 'logbook.csv'
       - 'logbook.txt'
-      - 'logbook-historical.csv'
+      - 'logbook-*.csv'
       - 'propel-baseline.json'
   workflow_dispatch:
 
@@ -21,10 +21,13 @@ jobs:
       - name: Convert logbook to logbook.json + propel.json
         run: |
           python3 - <<'EOF'
-          import csv, json, re, os, io
+          import csv, json, re, os, io, glob
           from datetime import datetime, timedelta, timezone
 
-          # ── Column name aliases (LogTen Pro variations) ──────────────────
+          # ── Column name aliases — covers LogTen Pro's various export
+          # formats plus other schools' SIS exports (e.g. ETA/Superior SFS).
+          # Any CSV whose headers loosely match these will be picked up
+          # automatically; no code changes needed for a same-shaped file. ──
           COL_DATE     = ['flight date', 'date']
           COL_FROM     = ['from', 'departure', 'dep']
           COL_TO       = ['to', 'destination', 'dest', 'arr']
@@ -32,13 +35,13 @@ jobs:
           COL_ACTYPE   = ['aircraft type', 'aircraft model', 'type', 'aircraft']
           COL_DUAL     = ['dual received', "dual rec'd", 'dual recvd', 'dual rcvd', 'dual', 'dual received (h)', 'dual received (student)']
           COL_TOTAL    = ['total time', 'total', 'flt time', 'flight time', 'total time (h)', 'total w/ other']
-          COL_NIGHT    = ['night', 'night (h)', 'night time']
+          COL_NIGHT    = ['night', 'night (h)', 'night time', 'nt']
           COL_IMC      = ['actual instrument', 'imc', 'actual inst', 'instrument', 'actual instrument (h)', 'act inst']
           COL_SIMINST  = ['sim inst', 'simulated instrument', 'hood', 'simulated inst']
           COL_XC       = ['xc', 'cross country', 'x-country', 'xctry']
           COL_SOLO     = ['solo']
           COL_PIC      = ['pic']
-          COL_INSTR    = ['instructor']
+          COL_INSTR    = ['instructor', 'flight inst']
           COL_SIC      = ['sic']
           COL_CATEGORY = ['category']
           COL_FLTREV   = ['flight review']
@@ -104,7 +107,7 @@ jobs:
                   rows = list(reader)
               return headers, rows
 
-          # ── Source 1: logbook.txt/csv — current LogTen-tracked program ──
+          # ── Source: logbook.txt/csv — current LogTen-tracked program ──
           src = 'logbook.csv' if os.path.exists('logbook.csv') else 'logbook.txt'
           headers, rows = load_rows(src)
           headers = headers or []
@@ -113,19 +116,10 @@ jobs:
           c_from    = find_col(headers, COL_FROM)
           c_to      = find_col(headers, COL_TO)
           c_route   = find_col(headers, COL_ROUTE)
-          c_actype  = find_col(headers, COL_ACTYPE)
           c_dual    = find_col(headers, COL_DUAL)
           c_total   = find_col(headers, COL_TOTAL)
           c_night   = find_col(headers, COL_NIGHT)
           c_imc     = find_col(headers, COL_IMC)
-          c_siminst = find_col(headers, COL_SIMINST)
-          c_xc      = find_col(headers, COL_XC)
-          c_solo    = find_col(headers, COL_SOLO)
-          c_pic     = find_col(headers, COL_PIC)
-          c_instr   = find_col(headers, COL_INSTR)
-          c_sic     = find_col(headers, COL_SIC)
-          c_category= find_col(headers, COL_CATEGORY)
-          c_fltrev  = find_col(headers, COL_FLTREV)
           c_remarks = find_col(headers, COL_REMARKS)
 
           # ── logbook.json (last 15 entries, for the site's recent-flights table) ──
@@ -175,7 +169,7 @@ jobs:
               json.dump(entries_out, f, indent=2)
           print(f'Wrote {len(entries_out)} entries to logbook.json')
 
-          # ── Aggregate one source of dated rows into the running totals ──
+          # ── Aggregate every source file into the running Propel totals ──
           now = datetime.now(timezone.utc).replace(tzinfo=None)
           agg = {
               'sel': 0.0, 'mel': 0.0, 'rotor': 0.0, 'total': 0.0,
@@ -189,7 +183,8 @@ jobs:
           last_flown_aircraft = [None]
           last_flown_dt = [None]
           last_bfr_dt = [None]
-          ac_totals = {}  # ac_type -> {'total': float, 'category': str, 'last_dt': datetime|None}
+          ac_totals = {}  # ac_type -> {'total', 'category', 'last_dt'}
+          source_summary = []
 
           def track_aircraft(ac_type, cat, total_h, dt):
               if not ac_type:
@@ -199,7 +194,7 @@ jobs:
               if dt is not None and (rec['last_dt'] is None or dt > rec['last_dt']):
                   rec['last_dt'] = dt
 
-          def add_row(dt, ac_type, cat, total_h, pic_h, instr_h, sic_h, dual_h, night_h, act_inst_h, sim_inst_h, xc_h, is_pic_solo_source):
+          def add_row(dt, ac_type, cat, total_h, pic_h, instr_h, sic_h, dual_h, night_h, act_inst_h, sim_inst_h, xc_h):
               track_aircraft(ac_type, cat, total_h, dt)
               agg['total'] += total_h
               if cat == 'rotor':
@@ -235,75 +230,72 @@ jobs:
                       last_flown_dt[0] = dt
                       last_flown_aircraft[0] = ac_type or None
 
-          # Source 1 rows → current program. Propel's "PIC" for a student pilot
-          # is sole-manipulator (Solo) time, not LogTen's PIC column (which this
-          # export mislabels as always equal to Total Time).
-          for row in rows:
-              dt = fmt_date(row.get(c_date, '') if c_date else '')
-              total_h = parse_hours(row.get(c_total, '') if c_total else '')
-              if total_h == 0 and dt is None:
-                  continue
-              ac_type = row.get(c_actype, '').strip() if c_actype else ''
-              cat_field = row.get(c_category, '') if c_category else ''
-              cat = classify_category(ac_type, cat_field)
-              pic_h   = parse_hours(row.get(c_solo, '') if c_solo else '')
-              instr_h = parse_hours(row.get(c_instr, '') if c_instr else '')
-              sic_h   = parse_hours(row.get(c_sic, '') if c_sic else '')
-              dual_h  = parse_hours(row.get(c_dual, '') if c_dual else '')
-              night_h = parse_hours(row.get(c_night, '') if c_night else '')
-              act_h   = parse_hours(row.get(c_imc, '') if c_imc else '')
-              sim_h   = parse_hours(row.get(c_siminst, '') if c_siminst else '')
-              xc_h    = parse_hours(row.get(c_xc, '') if c_xc else '')
+          def process_source(path, file_headers, file_rows, pic_aliases, track_bfr):
+              """Aggregate one already-loaded CSV/TSV into the running totals.
+              Rows whose Category is 'Simulator' are excluded — Propel only
+              counts real aircraft time. pic_aliases lets the current-program
+              file substitute Solo for PIC (see note below)."""
+              if not file_headers:
+                  return 0
+              c_ac    = find_col(file_headers, COL_ACTYPE)
+              c_cat   = find_col(file_headers, COL_CATEGORY)
+              c_total = find_col(file_headers, COL_TOTAL)
+              c_pic   = find_col(file_headers, pic_aliases)
+              c_instr = find_col(file_headers, COL_INSTR)
+              c_sic   = find_col(file_headers, COL_SIC)
+              c_dual  = find_col(file_headers, COL_DUAL)
+              c_night = find_col(file_headers, COL_NIGHT)
+              c_imc   = find_col(file_headers, COL_IMC)
+              c_sim   = find_col(file_headers, COL_SIMINST)
+              c_xc    = find_col(file_headers, COL_XC)
+              c_date_ = find_col(file_headers, COL_DATE)
+              c_fltrv = find_col(file_headers, COL_FLTREV)
 
-              add_row(dt, ac_type, cat, total_h, pic_h, instr_h, sic_h, dual_h, night_h, act_h, sim_h, xc_h, True)
-
-              fltrev = row.get(c_fltrev, '').strip() if c_fltrev else ''
-              if fltrev and dt is not None and (last_bfr_dt[0] is None or dt > last_bfr_dt[0]):
-                  last_bfr_dt[0] = dt
-
-          # ── Source 2: logbook-historical.csv — full LogTen archive, real
-          #    per-flight breakdowns. Simulator-category rows are excluded
-          #    (Propel's totals only count real aircraft time). ──
-          hist_headers, hist_rows = load_rows('logbook-historical.csv')
-          if hist_headers:
-              h_date  = find_col(hist_headers, COL_DATE)
-              h_ac    = find_col(hist_headers, COL_ACTYPE)
-              h_cat   = find_col(hist_headers, COL_CATEGORY)
-              h_total = find_col(hist_headers, ['total w/ other', 'total time'])
-              h_pic   = find_col(hist_headers, COL_PIC)
-              h_sic   = find_col(hist_headers, COL_SIC)
-              h_instr = find_col(hist_headers, COL_INSTR)
-              h_dual  = find_col(hist_headers, COL_DUAL)
-              h_night = find_col(hist_headers, COL_NIGHT)
-              h_imc   = find_col(hist_headers, ['act inst'])
-              h_sim   = find_col(hist_headers, ['sim inst'])
-              h_xc    = find_col(hist_headers, ['x-country'])
-
-              for row in hist_rows:
-                  if h_cat and row.get(h_cat, '').strip().lower() == 'simulator':
-                      continue  # not real aircraft time
-                  dt = fmt_date(row.get(h_date, '') if h_date else '')
-                  total_h = parse_hours(row.get(h_total, '') if h_total else '')
+              used = 0
+              for row in file_rows:
+                  if c_cat and row.get(c_cat, '').strip().lower() == 'simulator':
+                      continue
+                  dt = fmt_date(row.get(c_date_, '') if c_date_ else '')
+                  total_h = parse_hours(row.get(c_total, '') if c_total else '')
                   if total_h == 0 and dt is None:
                       continue
-                  ac_type = row.get(h_ac, '').strip() if h_ac else ''
-                  cat = classify_category(ac_type, row.get(h_cat, '') if h_cat else '')
+                  ac_type = row.get(c_ac, '').strip() if c_ac else ''
+                  cat = classify_category(ac_type, row.get(c_cat, '') if c_cat else '')
                   add_row(
                       dt, ac_type, cat, total_h,
-                      parse_hours(row.get(h_pic, '')   if h_pic   else ''),
-                      parse_hours(row.get(h_instr, '') if h_instr else ''),
-                      parse_hours(row.get(h_sic, '')   if h_sic   else ''),
-                      parse_hours(row.get(h_dual, '')  if h_dual  else ''),
-                      parse_hours(row.get(h_night, '') if h_night else ''),
-                      parse_hours(row.get(h_imc, '')   if h_imc   else ''),
-                      parse_hours(row.get(h_sim, '')   if h_sim   else ''),
-                      parse_hours(row.get(h_xc, '')    if h_xc    else ''),
-                      False,
+                      parse_hours(row.get(c_pic, '')   if c_pic   else ''),
+                      parse_hours(row.get(c_instr, '') if c_instr else ''),
+                      parse_hours(row.get(c_sic, '')   if c_sic   else ''),
+                      parse_hours(row.get(c_dual, '')  if c_dual  else ''),
+                      parse_hours(row.get(c_night, '') if c_night else ''),
+                      parse_hours(row.get(c_imc, '')   if c_imc   else ''),
+                      parse_hours(row.get(c_sim, '')   if c_sim   else ''),
+                      parse_hours(row.get(c_xc, '')    if c_xc    else ''),
                   )
+                  used += 1
+                  if track_bfr:
+                      fltrev = row.get(c_fltrv, '').strip() if c_fltrv else ''
+                      if fltrev and dt is not None and (last_bfr_dt[0] is None or dt > last_bfr_dt[0]):
+                          last_bfr_dt[0] = dt
+              return used
 
-          # ── Source 3: propel-baseline.json — small manual gap (aircraft
-          #    flown but never exported to either CSV). No per-row dates, so
-          #    excluded from the last-6/12-month currency calculation. ──
+          # Current program: Propel's "PIC" for a student pilot is
+          # sole-manipulator (Solo) time, not LogTen's PIC column (which this
+          # particular export mislabels as always equal to Total Time).
+          used = process_source(src, headers, rows, COL_SOLO, track_bfr=True)
+          source_summary.append({'file': src, 'rows': len(rows), 'used': used})
+
+          # Every other logbook-*.csv is a full historical/other-school
+          # archive with real per-flight breakdowns — drop a new one in and
+          # it's picked up automatically next push, no code changes needed.
+          for path in sorted(glob.glob('logbook-*.csv')):
+              h, r = load_rows(path)
+              used = process_source(path, h, r, COL_PIC, track_bfr=False)
+              source_summary.append({'file': path, 'rows': len(r), 'used': used})
+
+          # ── propel-baseline.json — small manual gap for any aircraft with
+          # no export at all (currently empty; kept for forward-compat). No
+          # per-row dates, so excluded from 6/12-month currency calc. ──
           with open('propel-baseline.json') as f:
               base = json.load(f)
 
@@ -339,7 +331,8 @@ jobs:
 
           propel = {
               'generated': now.strftime('%Y-%m-%d'),
-              'source_rows': len(rows) + len(hist_rows),
+              'source_rows': sum(s['rows'] for s in source_summary),
+              'sources': source_summary,
               'total_time': round(agg['total'], 1),
               'airplane': {
                   'total': round(agg['sel'] + agg['mel'], 1),
@@ -380,7 +373,7 @@ jobs:
 
           with open('propel.json', 'w') as f:
               json.dump(propel, f, indent=2)
-          print(f'Wrote propel.json (total_time={propel["total_time"]})')
+          print(f'Wrote propel.json (total_time={propel["total_time"]}, sources={source_summary})')
           EOF
 
       - name: Commit if changed

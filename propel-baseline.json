@@ -1,18 +1,5 @@
 {
-  "_readme": "Only the true data gap: aircraft flown between logbook-historical.csv's coverage (2017-2023) and the current LogTen-tracked program in logbook.txt (Mar 2026+). CE-172-S and DA-42 were flown in 2024-2025 but never exported to either file. Sub-category fields (xc/dual/etc) are best-effort reads from a Propel Application PDF print, not verified against raw LogTen data like everything else in propel.json — treat with lower confidence. Remove an aircraft from here if you add a fuller export that covers it.",
-
-  "gap_aircraft": [
-    {
-      "type": "CE-172-S G1000", "name": "C172 SE", "category": "sel",
-      "total": 56.7, "last_flown": "2025-09",
-      "xc": 27.0
-    },
-    {
-      "type": "DA-42", "name": "N607PA", "category": "mel",
-      "total": 13.8, "last_flown": "2025-06",
-      "dual": 13.8
-    }
-  ],
+  "_readme": "Only used for currency/manual fields that no export can provide. As of Jul 2026, every historical aircraft (2017-2025) has a real per-flight source file (logbook-historical.csv, logbook-sfs.csv) — there is no more manual gap_aircraft data. If a new gap ever appears (a school/period with no export), add a 'gap_aircraft' array back here; the workflow still supports it.",
 
   "last_bfr_or_checkride": "2026-07-07"
 }
