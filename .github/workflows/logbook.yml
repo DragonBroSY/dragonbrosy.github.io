@@ -178,6 +178,7 @@ jobs:
               'act_inst_air': 0.0, 'act_inst_rotor': 0.0,
               'sim_inst_air': 0.0, 'sim_inst_rotor': 0.0,
               'xc_air': 0.0, 'xc_rotor': 0.0,
+              'pic_xc': 0.0, 'pic_night': 0.0,
               'last6mo': 0.0, 'last12mo': 0.0,
           }
           last_flown_aircraft = [None]
@@ -220,6 +221,13 @@ jobs:
               agg['instructor'] += instr_h
               agg['sic'] += sic_h
               agg['dual'] += dual_h
+
+              # PIC-qualified Night/XC: approximated as "this flight's Night/XC
+              # hours count if any PIC time was logged on it" (single-pilot
+              # light aircraft — PIC status normally covers the whole flight).
+              if pic_h > 0:
+                  agg['pic_xc'] += xc_h
+                  agg['pic_night'] += night_h
 
               if dt is not None:
                   if now - dt <= timedelta(days=182):
@@ -369,6 +377,17 @@ jobs:
               'total_flight_hours_last_6mo': round(agg['last6mo'], 1),
               'total_flight_hours_last_12mo': round(agg['last12mo'], 1),
               'aircraft_flown': aircraft_flown,
+              'minimums_raw': {
+                  'total_time': round(agg['total'], 1),
+                  'multi_engine_land': round(agg['mel'], 1),
+                  'night': round(agg['night_air'] + agg['night_rotor'], 1),
+                  'instrument': round(agg['act_inst_air'] + agg['act_inst_rotor'] + agg['sim_inst_air'] + agg['sim_inst_rotor'], 1),
+                  'cross_country': round(agg['xc_air'] + agg['xc_rotor'], 1),
+                  'pic_strict': round(agg['pic'], 1),
+                  'pic_plus_qualifying_sic': round(agg['pic'] + agg['sic'], 1),
+                  'pic_cross_country': round(agg['pic_xc'], 1),
+                  'pic_night': round(agg['pic_night'], 1),
+              },
           }
 
           with open('propel.json', 'w') as f:

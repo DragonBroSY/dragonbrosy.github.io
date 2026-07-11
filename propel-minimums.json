@@ -1,0 +1,23 @@
+{
+  "_readme": "Endeavor Air First Officer minimums, from the Job Qualifications table on the airlineapps.com posting (pasted by Hans 2026-07-11). Edit if Endeavor republishes updated numbers.",
+  "program": "Endeavor Air First Officer (Delta Propel pathway)",
+
+  "total_time": {
+    "target": 750,
+    "note": "750 hrs applies via the military-trained-and-qualified R-ATP pathway. Standard is 1500 hrs; 1250 hrs with an aviation associate's degree; 1000 hrs with an aviation bachelor's degree."
+  },
+  "multi_engine_land": { "target": 25 },
+  "night": { "target": 100, "note": "Not broken out by category on the posting — tracked as airplane + rotor combined." },
+  "instrument": { "target": 75, "note": "Tracked as Actual + Simulated Instrument combined, airplane + rotor." },
+  "cross_country": {
+    "target": 500,
+    "restricted_atp_floor": 200,
+    "note": "Reducible to 200 hrs, but under 500 a Restricted ATP is issued instead of a full ATP."
+  },
+  "pic": {
+    "target": 250,
+    "note": "May combine SIC time if that SIC was acquired in operations that required a SIC under FAR. Shown here as both strict PIC and PIC+qualifying-SIC — confirm with Propel/your recruiter whether your military SIC time qualifies before relying on the combined number."
+  },
+  "pic_cross_country": { "target": 100 },
+  "pic_night": { "target": 25 }
+}

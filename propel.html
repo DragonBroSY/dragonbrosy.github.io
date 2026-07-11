@@ -47,6 +47,41 @@
     .hist-list .h-type { color: #1a3a6b; font-weight: 600; }
     .hist-list .h-total { font-weight: 700; font-variant-numeric: tabular-nums; }
 
+    .drop-zone { margin: 1rem; border: 2px dashed #c3d3e5; border-radius: 8px; padding: 2.2rem 1.5rem; text-align: center; cursor: pointer; transition: border-color 0.15s, background 0.15s; }
+    .drop-zone:hover, .drop-zone.dragover { border-color: #1a3a6b; background: #f5f7fa; }
+    .drop-icon { font-size: 1.6rem; margin-bottom: 0.5rem; color: #9ab0c8; }
+    .drop-text { font-size: 0.8rem; color: #4a6a8a; font-weight: 600; }
+    .drop-sub { font-size: 0.68rem; color: #9ab0c8; margin-top: 0.3rem; }
+
+    .drop-result { padding: 0 1.1rem 1.1rem; }
+    .drop-stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.6rem; margin-bottom: 0.9rem; }
+    .drop-stat { background: #f5f7fa; border: 1px solid #dde5ef; border-radius: 6px; padding: 0.6rem 0.8rem; }
+    .drop-stat .k { font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; color: #6a8aaa; margin-bottom: 0.2rem; }
+    .drop-stat .v { font-size: 1rem; font-weight: 700; color: #1a3a6b; font-variant-numeric: tabular-nums; }
+
+    .col-map { font-size: 0.72rem; color: #4a6a8a; margin-bottom: 0.9rem; }
+    .col-map div { display: flex; justify-content: space-between; padding: 0.22rem 0; border-bottom: 1px solid #eef2f7; }
+    .col-map .found { color: #1a7a3a; }
+    .col-map .missing { color: #c8a400; }
+
+    .drop-btn { display: inline-flex; align-items: center; gap: 0.4rem; background: #1a3a6b; color: #fff; border: none; border-radius: 5px; padding: 0.55rem 1.1rem; font-size: 0.76rem; font-weight: 700; cursor: pointer; letter-spacing: 0.02em; }
+    .drop-btn:hover { background: #244c8a; }
+
+    .pdf-note { background: #fff8e6; border: 1px solid #f0dca0; border-radius: 6px; padding: 0.9rem 1rem; font-size: 0.75rem; color: #7a5c00; line-height: 1.6; }
+    .pdf-prompt { background: #1a2a3a; color: #cfe0f5; border-radius: 6px; padding: 0.7rem 0.9rem; font-size: 0.68rem; font-family: "SF Mono", "Fira Code", monospace; margin-top: 0.6rem; white-space: pre-wrap; word-break: break-word; }
+
+    .mins-row { padding: 0.85rem 1.1rem; border-bottom: 1px solid #eef2f7; }
+    .mins-row:last-child { border-bottom: none; }
+    .mins-label { display: flex; justify-content: space-between; align-items: baseline; font-size: 0.78rem; color: #1a3a6b; font-weight: 700; margin-bottom: 0.4rem; }
+    .mins-label .pct { color: #6a8aaa; font-weight: 600; font-variant-numeric: tabular-nums; font-size: 0.72rem; }
+    .mins-bar-track { height: 8px; background: #eef2f7; border-radius: 4px; overflow: hidden; }
+    .mins-bar-fill { height: 100%; background: linear-gradient(90deg, #1a3a6b, #2a5a9b); border-radius: 4px; }
+    .mins-bar-fill.done { background: linear-gradient(90deg, #1a7a3a, #2a9a4a); }
+    .mins-note { font-size: 0.68rem; color: #9ab0c8; margin-top: 0.35rem; line-height: 1.5; }
+    .mins-badge { display: inline-block; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.12rem 0.5rem; border-radius: 999px; margin-left: 0.5rem; }
+    .mins-badge.met { background: #e3f5e8; color: #1a7a3a; }
+    .mins-badge.open { background: #fff3d6; color: #9a6b00; }
+
     footer { background: #1a3a6b; border-top: 3px solid #c8a400; text-align: center; font-size: 0.6rem; color: rgba(255,255,255,0.45); padding: 1.4rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 2rem; }
   </style>
 </head>
@@ -70,6 +105,13 @@
     <div class="meta-row" id="metaRow"></div>
 
     <div id="warnBanner"></div>
+
+    <div class="slabel">Endeavor Air First Officer Minimums</div>
+    <div class="panel">
+      <div class="panel-head">Progress to Eligibility <span class="accent">Military R-ATP pathway (750 hr total time)</span></div>
+      <div id="minsBody"></div>
+      <div class="note">Targets from Endeavor&rsquo;s published Job Qualifications table (airlineapps.com), entered manually in <code>propel-minimums.json</code> &mdash; update that file if Endeavor republishes new numbers.</div>
+    </div>
 
     <div class="slabel">By Aircraft Flown</div>
     <div class="panel">
@@ -114,13 +156,22 @@
     </div>
 
     <a id="adding-a-source"></a>
-    <div class="slabel">Adding a New Source</div>
+    <div class="slabel">Drop A New Log</div>
     <div class="panel">
-      <div class="panel-head">How This Stays Current</div>
+      <div class="panel-head">Convert &amp; Preview <span class="accent">Runs in your browser &mdash; nothing uploaded anywhere</span></div>
+
+      <div class="drop-zone" id="dropZone">
+        <div class="drop-icon">&#8681;</div>
+        <div class="drop-text">Drag a CSV log here, or click to choose a file</div>
+        <div class="drop-sub">PDF also accepted &mdash; you'll get conversion instructions instead of a parse.</div>
+        <input type="file" id="fileInput" accept=".csv,.txt,.pdf" style="display:none;" />
+      </div>
+
+      <div class="drop-result" id="dropResult"></div>
+
       <div class="note" style="border-top:none;">
-        <p style="margin-bottom:0.6rem;"><b>New LogTen export (any time):</b> re-export <code>logbook.txt</code> from LogTen Pro (all columns checked) and push it. The site rebuilds <code>propel.json</code> automatically &mdash; nothing else to do.</p>
-        <p style="margin-bottom:0.6rem;"><b>A different school/system's CSV export:</b> drop it in the repo root as <code>logbook-&lt;name&gt;.csv</code> (e.g. <code>logbook-sfs.csv</code>). Any file matching that pattern is picked up and merged automatically on push, as long as it has recognizable column headers (Date, Aircraft, Category, Total Time, PIC, Dual Received, Night, Act Inst, Sim Inst, X-Country, etc. &mdash; common aliases are matched loosely). Mark simulator sessions with <code>Category = Simulator</code> so they're excluded from real aircraft totals, same as everywhere else on this page.</p>
-        <p>A <b>PDF log</b> (like a school's printed pilot log): every vendor so far &mdash; Delta Propel, LogTen's own print, and Superior SFS/ETA &mdash; uses a completely different table layout, so there&rsquo;s no safe generic PDF parser here; a wrong auto-read could feed bad numbers into a real application. Instead, send the PDF to Claude Code and ask it to convert it into a new <code>logbook-&lt;name&gt;.csv</code> following this same convention &mdash; a one-time, few-minute conversion that then becomes a permanent, fully automatic part of this pipeline.</p>
+        <p style="margin-bottom:0.6rem;"><b>New LogTen export (any time):</b> re-export <code>logbook.txt</code> from LogTen Pro (all columns checked) and push it. The site rebuilds <code>propel.json</code> automatically &mdash; nothing else to do, no need to drop it above.</p>
+        <p><b>A different school/system's CSV export:</b> drop it above first to preview what it would contribute and catch any column-mapping issues, then save it into the repo root as <code>logbook-&lt;name&gt;.csv</code> and push &mdash; any file matching that pattern merges automatically. Mark simulator sessions with <code>Category = Simulator</code> so they're excluded from real aircraft totals, same as everywhere else on this page.</p>
       </div>
     </div>
 
@@ -206,11 +257,356 @@
             '<span class="h-total">' + a.total.toFixed(1) + ' hrs <span style="color:#9ab0c8;font-weight:400;">&middot; ' + a.last_flown + tag + '</span></span></div>';
         }).join('');
 
+        await renderMinimums(p.minimums_raw);
+
       } catch (err) {
         document.getElementById('metaRow').innerHTML =
           '<div class="meta-chip">No propel.json yet &mdash; push a logbook.txt update to generate it.</div>';
         document.getElementById('histList').innerHTML = '<div>Not available.</div>';
       }
+    })();
+
+    // ── Endeavor FO minimums dashboard ──
+    async function renderMinimums(raw) {
+      var body = document.getElementById('minsBody');
+      if (!raw) { body.innerHTML = '<div class="note">No minimums_raw in propel.json yet &mdash; push a logbook update to generate it.</div>'; return; }
+      var targets;
+      try {
+        targets = await fetch('propel-minimums.json?_=' + Date.now()).then(function(r){ return r.json(); });
+      } catch (e) {
+        body.innerHTML = '<div class="note">propel-minimums.json not found.</div>';
+        return;
+      }
+
+      function bar(label, cur, target, note) {
+        var pct = target > 0 ? Math.min(100, (cur / target) * 100) : 0;
+        var met = cur >= target;
+        var badge = met
+          ? '<span class="mins-badge met">Met</span>'
+          : '<span class="mins-badge open">' + (target - cur).toFixed(1) + ' to go</span>';
+        return '<div class="mins-row">' +
+          '<div class="mins-label"><span>' + label + badge + '</span><span class="pct">' + cur.toFixed(1) + ' / ' + target + ' hrs &middot; ' + pct.toFixed(0) + '%</span></div>' +
+          '<div class="mins-bar-track"><div class="mins-bar-fill' + (met ? ' done' : '') + '" style="width:' + pct.toFixed(1) + '%;"></div></div>' +
+          (note ? '<div class="mins-note">' + note + '</div>' : '') +
+          '</div>';
+      }
+
+      body.innerHTML =
+        bar('Total Time', raw.total_time, targets.total_time.target, targets.total_time.note) +
+        bar('Multi Engine Land', raw.multi_engine_land, targets.multi_engine_land.target) +
+        bar('Night', raw.night, targets.night.target, targets.night.note) +
+        bar('Instrument', raw.instrument, targets.instrument.target, targets.instrument.note) +
+        bar('Cross Country', raw.cross_country, targets.cross_country.target,
+          'Restricted ATP floor: ' + targets.cross_country.restricted_atp_floor + ' hrs. ' + targets.cross_country.note) +
+        bar('PIC (strict)', raw.pic_strict, targets.pic.target) +
+        bar('PIC + Qualifying SIC', raw.pic_plus_qualifying_sic, targets.pic.target, targets.pic.note) +
+        bar('PIC Cross Country', raw.pic_cross_country, targets.pic_cross_country.target) +
+        bar('PIC Night', raw.pic_night, targets.pic_night.target);
+    }
+
+    // ── Drop-zone: client-side CSV preview/conversion, PDF guidance ──
+    var COL_ALIASES = {
+      date: ['flight date', 'date'],
+      aircraft: ['aircraft type', 'aircraft model', 'type', 'aircraft'],
+      category: ['category'],
+      total: ['total time', 'total', 'flt time', 'flight time', 'total time (h)', 'total w/ other'],
+      pic: ['pic'],
+      sic: ['sic'],
+      instructor: ['instructor', 'flight inst'],
+      dual: ['dual received', "dual rec'd", 'dual recvd', 'dual rcvd', 'dual', 'dual received (h)', 'dual received (student)'],
+      night: ['night', 'night (h)', 'night time', 'nt'],
+      actinst: ['actual instrument', 'imc', 'actual inst', 'instrument', 'actual instrument (h)', 'act inst'],
+      siminst: ['sim inst', 'simulated instrument', 'hood', 'simulated inst'],
+      xc: ['xc', 'cross country', 'x-country', 'xctry']
+    };
+
+    function findCol(headers, aliases) {
+      for (var i = 0; i < aliases.length; i++) {
+        for (var j = 0; j < headers.length; j++) {
+          if (headers[j].trim().toLowerCase() === aliases[i]) return headers[j];
+        }
+      }
+      return null;
+    }
+
+    function parseHours(v) {
+      if (!v) return 0;
+      v = String(v).trim();
+      if (!v) return 0;
+      var m = v.match(/^(\d+):(\d{2})$/);
+      if (m) return parseInt(m[1], 10) + parseInt(m[2], 10) / 60;
+      var f = parseFloat(v);
+      return isNaN(f) ? 0 : f;
+    }
+
+    function classifyCategory(acType, catField) {
+      var rotorKw = ['rotorcraft', 'helicopter', 'rotor'];
+      var c = (catField || '').trim().toLowerCase();
+      if (rotorKw.some(function(k){ return c.indexOf(k) >= 0; })) return 'rotor';
+      var t = (acType || '').trim().toLowerCase();
+      var knownRotor = ['uh-60m', 'uh-60l', 'th-67a', 'th-67f', 'oh-58c', 'r22 beta ii', 'r44 raven ii'];
+      if (rotorKw.some(function(k){ return t.indexOf(k) >= 0; }) || knownRotor.indexOf(t) >= 0) return 'rotor';
+      var melKw = ['da-42', 'da42', 'seminole', 'baron', 'duchess', 'multi'];
+      if (melKw.some(function(k){ return t.indexOf(k) >= 0; })) return 'mel';
+      return 'sel';
+    }
+
+    function parseDateFlexible(raw) {
+      if (!raw) return null;
+      raw = raw.trim();
+      var m;
+      if ((m = raw.match(/^(\d{4})-(\d{2})-(\d{2})$/))) return new Date(+m[1], +m[2] - 1, +m[3]);
+      if ((m = raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/))) return new Date(+m[3], +m[1] - 1, +m[2]);
+      if ((m = raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2})$/))) return new Date(2000 + (+m[3]), +m[1] - 1, +m[2]);
+      if ((m = raw.match(/^(\d{2}) (\w{3}) (\d{4})$/))) {
+        var months = { Jan:0, Feb:1, Mar:2, Apr:3, May:4, Jun:5, Jul:6, Aug:7, Sep:8, Oct:9, Nov:10, Dec:11 };
+        if (months[m[2]] !== undefined) return new Date(+m[3], months[m[2]], +m[1]);
+      }
+      return null;
+    }
+
+    function parseCSVText(text) {
+      var sample = text.slice(0, 2000);
+      var delim = (sample.split('\t').length > sample.split(',').length) ? '\t' : ',';
+      var rows = [];
+      var row = [];
+      var field = '';
+      var inQuotes = false;
+      for (var i = 0; i < text.length; i++) {
+        var ch = text[i];
+        if (inQuotes) {
+          if (ch === '"') {
+            if (text[i + 1] === '"') { field += '"'; i++; }
+            else inQuotes = false;
+          } else field += ch;
+        } else {
+          if (ch === '"') inQuotes = true;
+          else if (ch === delim) { row.push(field); field = ''; }
+          else if (ch === '\n' || ch === '\r') {
+            if (ch === '\r' && text[i + 1] === '\n') i++;
+            row.push(field); field = '';
+            rows.push(row); row = [];
+          } else field += ch;
+        }
+      }
+      if (field.length || row.length) { row.push(field); rows.push(row); }
+      rows = rows.filter(function(r){ return r.length > 1 || (r.length === 1 && r[0] !== ''); });
+      if (!rows.length) return { headers: [], records: [] };
+      var headers = rows[0];
+      var records = rows.slice(1).map(function(r) {
+        var obj = {};
+        headers.forEach(function(h, idx) { obj[h] = r[idx] !== undefined ? r[idx] : ''; });
+        return obj;
+      });
+      return { headers: headers, records: records };
+    }
+
+    function analyzeLog(headers, records) {
+      var c = {
+        date: findCol(headers, COL_ALIASES.date),
+        ac: findCol(headers, COL_ALIASES.aircraft),
+        cat: findCol(headers, COL_ALIASES.category),
+        total: findCol(headers, COL_ALIASES.total),
+        pic: findCol(headers, COL_ALIASES.pic),
+        sic: findCol(headers, COL_ALIASES.sic),
+        instr: findCol(headers, COL_ALIASES.instructor),
+        dual: findCol(headers, COL_ALIASES.dual),
+        night: findCol(headers, COL_ALIASES.night),
+        actinst: findCol(headers, COL_ALIASES.actinst),
+        siminst: findCol(headers, COL_ALIASES.siminst),
+        xc: findCol(headers, COL_ALIASES.xc)
+      };
+      var stats = { total: 0, pic: 0, sic: 0, instr: 0, dual: 0, night: 0, actinst: 0, siminst: 0, xc: 0 };
+      var acTypes = {}, simRows = 0, usedRows = 0, minDate = null, maxDate = null;
+
+      records.forEach(function(r) {
+        var catVal = c.cat ? (r[c.cat] || '').trim() : '';
+        if (catVal.toLowerCase() === 'simulator') { simRows++; return; }
+        var totalH = parseHours(c.total ? r[c.total] : '');
+        var dateStr = c.date ? (r[c.date] || '').trim() : '';
+        var dt = parseDateFlexible(dateStr);
+        if (totalH === 0 && !dt) return;
+        usedRows++;
+        stats.total += totalH;
+        stats.pic += parseHours(c.pic ? r[c.pic] : '');
+        stats.sic += parseHours(c.sic ? r[c.sic] : '');
+        stats.instr += parseHours(c.instr ? r[c.instr] : '');
+        stats.dual += parseHours(c.dual ? r[c.dual] : '');
+        stats.night += parseHours(c.night ? r[c.night] : '');
+        stats.actinst += parseHours(c.actinst ? r[c.actinst] : '');
+        stats.siminst += parseHours(c.siminst ? r[c.siminst] : '');
+        stats.xc += parseHours(c.xc ? r[c.xc] : '');
+        var ac = c.ac ? (r[c.ac] || '').trim() || '(unknown)' : '(unknown)';
+        acTypes[ac] = (acTypes[ac] || 0) + totalH;
+        if (dt) {
+          if (!minDate || dt < minDate) minDate = dt;
+          if (!maxDate || dt > maxDate) maxDate = dt;
+        }
+      });
+
+      return { cols: c, stats: stats, acTypes: acTypes, simRows: simRows, usedRows: usedRows,
+                totalRows: records.length, minDate: minDate, maxDate: maxDate };
+    }
+
+    function fmtDate(d) {
+      if (!d) return null;
+      return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+    }
+
+    function slugify(name) {
+      return name.replace(/\.[^.]+$/, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '') || 'source';
+    }
+
+    function buildCanonicalCSV(headers, records, cols) {
+      var out = [['Date','Aircraft','Category','Total Time','PIC','SIC','Instructor','Dual Received','Night','Act Inst','Sim Inst','X-Country']];
+      records.forEach(function(r) {
+        var catVal = cols.cat ? (r[cols.cat] || '').trim() : '';
+        if (catVal.toLowerCase() === 'simulator') return;
+        var dt = parseDateFlexible(cols.date ? (r[cols.date] || '').trim() : '');
+        var totalH = parseHours(cols.total ? r[cols.total] : '');
+        if (totalH === 0 && !dt) return;
+        out.push([
+          dt ? fmtDate(dt) : (cols.date ? r[cols.date] : ''),
+          cols.ac ? r[cols.ac] : '',
+          catVal,
+          totalH,
+          parseHours(cols.pic ? r[cols.pic] : ''),
+          parseHours(cols.sic ? r[cols.sic] : ''),
+          parseHours(cols.instr ? r[cols.instr] : ''),
+          parseHours(cols.dual ? r[cols.dual] : ''),
+          parseHours(cols.night ? r[cols.night] : ''),
+          parseHours(cols.actinst ? r[cols.actinst] : ''),
+          parseHours(cols.siminst ? r[cols.siminst] : ''),
+          parseHours(cols.xc ? r[cols.xc] : '')
+        ]);
+      });
+      return out.map(function(row) {
+        return row.map(function(v) {
+          v = String(v);
+          return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+        }).join(',');
+      }).join('\n');
+    }
+
+    function stat(k, v) { return '<div class="drop-stat"><div class="k">' + k + '</div><div class="v">' + v + '</div></div>'; }
+    function mapRow(label, col) {
+      return '<div class="' + (col ? 'found' : 'missing') + '"><span>' + label + '</span><span>' + (col ? '✓ "' + col + '"' : '✗ not found') + '</span></div>';
+    }
+
+    function renderCSVPreview(file, headers, records) {
+      var a = analyzeLog(headers, records);
+      var el = document.getElementById('dropResult');
+      var s = a.stats;
+
+      var criticalMissing = [];
+      if (!a.cols.date) criticalMissing.push('Date');
+      if (!a.cols.total) criticalMissing.push('Total Time');
+
+      var warnHtml = criticalMissing.length
+        ? '<div class="note warn" style="margin:0 0 0.9rem;border-radius:6px;border-top:none;">Missing critical column(s): <b>' + criticalMissing.join(', ') + '</b> &mdash; this file can\'t be summed correctly as-is. Rename the header or pick a file with a recognizable Date/Total Time column.</div>'
+        : '';
+
+      var acListHtml = Object.keys(a.acTypes).sort(function(x,y){ return a.acTypes[y]-a.acTypes[x]; }).map(function(ac){
+        return '<div><span class="h-type">' + ac + '</span><span class="h-total">' + a.acTypes[ac].toFixed(1) + ' hrs</span></div>';
+      }).join('') || '<div>No aircraft rows found.</div>';
+
+      var dateRange = (a.minDate && a.maxDate) ? (fmtDate(a.minDate) + ' &rarr; ' + fmtDate(a.maxDate)) : '&mdash;';
+      var slug = slugify(file.name);
+      var outName = slug.indexOf('logbook-') === 0 ? slug + '.csv' : 'logbook-' + slug + '.csv';
+
+      el.innerHTML =
+        warnHtml +
+        '<div class="drop-stat-grid">' +
+          stat('Rows parsed', a.totalRows) +
+          stat('Rows used', a.usedRows) +
+          stat('Simulator excluded', a.simRows) +
+          stat('Date range', dateRange) +
+          stat('Total Time', s.total.toFixed(1) + ' hrs') +
+          stat('PIC', s.pic.toFixed(1)) +
+          stat('Dual Received', s.dual.toFixed(1)) +
+          stat('Night', s.night.toFixed(1)) +
+          stat('Instrument (Act+Sim)', (s.actinst + s.siminst).toFixed(1)) +
+          stat('Cross Country', s.xc.toFixed(1)) +
+        '</div>' +
+        '<div class="col-map">' +
+          mapRow('Date', a.cols.date) + mapRow('Aircraft', a.cols.ac) + mapRow('Category', a.cols.cat) +
+          mapRow('Total Time', a.cols.total) + mapRow('PIC', a.cols.pic) + mapRow('SIC', a.cols.sic) +
+          mapRow('Instructor', a.cols.instr) + mapRow('Dual Received', a.cols.dual) + mapRow('Night', a.cols.night) +
+          mapRow('Actual Instrument', a.cols.actinst) + mapRow('Simulated Instrument', a.cols.siminst) + mapRow('X-Country', a.cols.xc) +
+        '</div>' +
+        '<div class="hist-list" style="padding:0 0 0.9rem;">' + acListHtml + '</div>' +
+        '<button class="drop-btn" id="downloadBtn">&#8681; Download as ' + outName + '</button>' +
+        '<div class="mins-note" style="margin-top:0.5rem;">Review the numbers above, then save the download into the repo root and push &mdash; it merges automatically next build.</div>';
+
+      document.getElementById('downloadBtn').addEventListener('click', function() {
+        var csv = buildCanonicalCSV(headers, records, a.cols);
+        var blob = new Blob([csv], { type: 'text/csv' });
+        var url = URL.createObjectURL(blob);
+        var link = document.createElement('a');
+        link.href = url;
+        link.download = outName;
+        link.click();
+        URL.revokeObjectURL(url);
+      });
+    }
+
+    function renderPDFGuidance(file) {
+      var el = document.getElementById('dropResult');
+      var prompt = 'Convert /path/to/' + file.name + ' into a new logbook-<name>.csv for dragonbrosy.github.io, following the site\'s logbook-*.csv convention: columns Date, Aircraft, Category, Total Time, PIC, SIC, Instructor, Dual Received, Night, Act Inst, Sim Inst, X-Country. Mark simulator sessions with Category = Simulator so they get excluded from real aircraft totals. Validate the totals against any summary/totals row printed in the PDF before committing.';
+      el.innerHTML =
+        '<div class="pdf-note">' +
+          '<b>PDF detected: ' + file.name + '</b><br/>' +
+          'Every school/vendor PDF seen so far uses a different table layout, so this page won\'t guess at parsing it automatically — a wrong auto-read could feed bad numbers into a real application. Instead, save the file somewhere accessible and give Claude Code this prompt:' +
+          '<div class="pdf-prompt" id="pdfPromptText">' + prompt + '</div>' +
+          '<button class="drop-btn" style="margin-top:0.6rem;" id="copyPromptBtn">Copy Prompt</button>' +
+        '</div>';
+      document.getElementById('copyPromptBtn').addEventListener('click', function() {
+        navigator.clipboard.writeText(prompt).then(function() {
+          var btn = document.getElementById('copyPromptBtn');
+          var orig = btn.textContent;
+          btn.textContent = 'Copied!';
+          setTimeout(function(){ btn.textContent = orig; }, 1500);
+        });
+      });
+    }
+
+    function handleDroppedFile(file) {
+      var isPDF = file.type === 'application/pdf' || /\.pdf$/i.test(file.name);
+      if (isPDF) { renderPDFGuidance(file); return; }
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          var parsed = parseCSVText(e.target.result);
+          if (!parsed.headers.length) {
+            document.getElementById('dropResult').innerHTML = '<div class="note warn" style="border-top:none;">Couldn\'t find any columns in this file &mdash; is it a valid CSV/TSV?</div>';
+            return;
+          }
+          renderCSVPreview(file, parsed.headers, parsed.records);
+        } catch (err) {
+          document.getElementById('dropResult').innerHTML = '<div class="note warn" style="border-top:none;">Failed to parse file: ' + err.message + '</div>';
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    (function initDropZone() {
+      var zone = document.getElementById('dropZone');
+      var input = document.getElementById('fileInput');
+      if (!zone || !input) return;
+
+      zone.addEventListener('click', function() { input.click(); });
+      input.addEventListener('change', function() {
+        if (input.files && input.files[0]) handleDroppedFile(input.files[0]);
+      });
+      ['dragenter', 'dragover'].forEach(function(evt) {
+        zone.addEventListener(evt, function(e) { e.preventDefault(); zone.classList.add('dragover'); });
+      });
+      ['dragleave', 'drop'].forEach(function(evt) {
+        zone.addEventListener(evt, function(e) { e.preventDefault(); zone.classList.remove('dragover'); });
+      });
+      zone.addEventListener('drop', function(e) {
+        if (e.dataTransfer.files && e.dataTransfer.files[0]) handleDroppedFile(e.dataTransfer.files[0]);
+      });
     })();
   </script>
 </body>
