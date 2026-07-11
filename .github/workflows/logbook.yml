@@ -5,6 +5,8 @@ on:
     paths:
       - 'logbook.csv'
       - 'logbook.txt'
+      - 'logbook-historical.csv'
+      - 'propel-baseline.json'
   workflow_dispatch:
 
 jobs:
@@ -16,22 +18,31 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Convert logbook to logbook.json
+      - name: Convert logbook to logbook.json + propel.json
         run: |
           python3 - <<'EOF'
           import csv, json, re, os, io
-          from datetime import datetime
+          from datetime import datetime, timedelta, timezone
 
           # ── Column name aliases (LogTen Pro variations) ──────────────────
-          COL_DATE    = ['flight date', 'date']
-          COL_FROM    = ['from', 'departure', 'dep']
-          COL_TO      = ['to', 'destination', 'dest', 'arr']
-          COL_ROUTE   = ['route']
-          COL_DUAL    = ['dual received', "dual rec'd", 'dual recvd', 'dual rcvd', 'dual', 'dual received (h)']
-          COL_TOTAL   = ['total time', 'total', 'flt time', 'flight time', 'total time (h)']
-          COL_NIGHT   = ['night', 'night (h)', 'night time']
-          COL_IMC     = ['actual instrument', 'imc', 'actual inst', 'instrument', 'actual instrument (h)']
-          COL_REMARKS = ['remarks', 'comments', 'notes']
+          COL_DATE     = ['flight date', 'date']
+          COL_FROM     = ['from', 'departure', 'dep']
+          COL_TO       = ['to', 'destination', 'dest', 'arr']
+          COL_ROUTE    = ['route']
+          COL_ACTYPE   = ['aircraft type', 'aircraft model', 'type', 'aircraft']
+          COL_DUAL     = ['dual received', "dual rec'd", 'dual recvd', 'dual rcvd', 'dual', 'dual received (h)', 'dual received (student)']
+          COL_TOTAL    = ['total time', 'total', 'flt time', 'flight time', 'total time (h)', 'total w/ other']
+          COL_NIGHT    = ['night', 'night (h)', 'night time']
+          COL_IMC      = ['actual instrument', 'imc', 'actual inst', 'instrument', 'actual instrument (h)', 'act inst']
+          COL_SIMINST  = ['sim inst', 'simulated instrument', 'hood', 'simulated inst']
+          COL_XC       = ['xc', 'cross country', 'x-country', 'xctry']
+          COL_SOLO     = ['solo']
+          COL_PIC      = ['pic']
+          COL_INSTR    = ['instructor']
+          COL_SIC      = ['sic']
+          COL_CATEGORY = ['category']
+          COL_FLTREV   = ['flight review']
+          COL_REMARKS  = ['remarks', 'comments', 'notes']
 
           def find_col(headers, aliases):
               for alias in aliases:
@@ -52,7 +63,7 @@ jobs:
                   return 0.0
 
           def fmt_date(raw):
-              raw = raw.strip()
+              raw = (raw or '').strip()
               for fmt in ('%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y', '%d/%m/%Y', '%d-%b-%Y', '%Y/%m/%d'):
                   try:
                       return datetime.strptime(raw, fmt)
@@ -63,46 +74,74 @@ jobs:
           def clean_remarks(text):
               # LogTen prepends student name — strip "Hans Kreuk" or any leading word-run before first whitespace+dash
               text = re.sub(r'^[A-Za-z ]{2,30}(?=[A-Z][a-z])', '', text.strip())
-              # Collapse internal newlines to spaces
               return re.sub(r'\s*\n\s*', ' ', text).strip()
 
-          # Accept both logbook.csv (comma) and logbook.txt (tab)
+          # Aircraft types that count as Multi Engine Land. Everything else
+          # (and anything unrecognized) defaults to Single Engine Land.
+          MEL_KEYWORDS = ['da-42', 'da42', 'seminole', 'baron', 'duchess', 'multi']
+          ROTOR_KEYWORDS = ['rotorcraft', 'helicopter', 'rotor']
+
+          def classify_category(ac_type, category_field=''):
+              c = (category_field or '').strip().lower()
+              if any(k in c for k in ROTOR_KEYWORDS):
+                  return 'rotor'
+              t = (ac_type or '').strip().lower()
+              if any(k in t for k in ROTOR_KEYWORDS) or t in ('uh-60m','uh-60l','th-67a','th-67f','oh-58c','r22 beta ii','r44 raven ii'):
+                  return 'rotor'
+              if any(k in t for k in MEL_KEYWORDS):
+                  return 'mel'
+              return 'sel'
+
+          def load_rows(path):
+              if not os.path.exists(path):
+                  return None, []
+              with open(path, newline='', encoding='utf-8-sig') as f:
+                  sample = f.read(4096)
+                  f.seek(0)
+                  delimiter = '\t' if sample.count('\t') > sample.count(',') else ','
+                  reader = csv.DictReader(f, delimiter=delimiter)
+                  headers = reader.fieldnames or []
+                  rows = list(reader)
+              return headers, rows
+
+          # ── Source 1: logbook.txt/csv — current LogTen-tracked program ──
           src = 'logbook.csv' if os.path.exists('logbook.csv') else 'logbook.txt'
-          with open(src, newline='', encoding='utf-8-sig') as f:
-              sample = f.read(4096)
-              f.seek(0)
-              delimiter = '\t' if sample.count('\t') > sample.count(',') else ','
-              reader = csv.DictReader(f, delimiter=delimiter)
-              headers = reader.fieldnames or []
+          headers, rows = load_rows(src)
+          headers = headers or []
 
-              c_date    = find_col(headers, COL_DATE)
-              c_from    = find_col(headers, COL_FROM)
-              c_to      = find_col(headers, COL_TO)
-              c_route   = find_col(headers, COL_ROUTE)
-              c_dual    = find_col(headers, COL_DUAL)
-              c_total   = find_col(headers, COL_TOTAL)
-              c_night   = find_col(headers, COL_NIGHT)
-              c_imc     = find_col(headers, COL_IMC)
-              c_remarks = find_col(headers, COL_REMARKS)
+          c_date    = find_col(headers, COL_DATE)
+          c_from    = find_col(headers, COL_FROM)
+          c_to      = find_col(headers, COL_TO)
+          c_route   = find_col(headers, COL_ROUTE)
+          c_actype  = find_col(headers, COL_ACTYPE)
+          c_dual    = find_col(headers, COL_DUAL)
+          c_total   = find_col(headers, COL_TOTAL)
+          c_night   = find_col(headers, COL_NIGHT)
+          c_imc     = find_col(headers, COL_IMC)
+          c_siminst = find_col(headers, COL_SIMINST)
+          c_xc      = find_col(headers, COL_XC)
+          c_solo    = find_col(headers, COL_SOLO)
+          c_pic     = find_col(headers, COL_PIC)
+          c_instr   = find_col(headers, COL_INSTR)
+          c_sic     = find_col(headers, COL_SIC)
+          c_category= find_col(headers, COL_CATEGORY)
+          c_fltrev  = find_col(headers, COL_FLTREV)
+          c_remarks = find_col(headers, COL_REMARKS)
 
-              rows = list(reader)
-
+          # ── logbook.json (last 15 entries, for the site's recent-flights table) ──
           entries = []
           for row in rows:
-              raw_date = row.get(c_date, '').strip() if c_date else ''
-              dt = fmt_date(raw_date)
+              dt = fmt_date(row.get(c_date, '') if c_date else '')
               if not dt:
-                  continue  # skip rows with no parseable date
+                  continue
 
-              # Route: prefer explicit route col, fall back to From→To
               if c_route and row.get(c_route, '').strip():
                   route = row[c_route].strip()
               else:
                   frm = row.get(c_from, '').strip() if c_from else ''
                   to  = row.get(c_to,   '').strip() if c_to   else ''
-                  route = (frm + ' \u2192 ' + to).strip(' \u2192') if (frm or to) else '—'
+                  route = (frm + ' → ' + to).strip(' →') if (frm or to) else '—'
 
-              # Conditions: IMC > Night > VMC
               night = parse_hours(row.get(c_night, '') if c_night else '')
               imc   = parse_hours(row.get(c_imc,   '') if c_imc   else '')
               if imc > 0:
@@ -112,7 +151,6 @@ jobs:
               else:
                   conditions = 'VMC'
 
-              # Hours: prefer dual, fall back to total
               dual_h  = parse_hours(row.get(c_dual,  '') if c_dual  else '')
               total_h = parse_hours(row.get(c_total, '') if c_total else '')
               hours = dual_h if dual_h > 0 else total_h
@@ -130,21 +168,224 @@ jobs:
                   'h': hours_str
               })
 
-          # Sort newest first, keep last 15
           entries.sort(key=lambda x: x['_dt'], reverse=True)
-          entries = entries[:15]
-          for e in entries:
-              del e['_dt']
+          entries_out = [{k: v for k, v in e.items() if k != '_dt'} for e in entries[:15]]
 
           with open('logbook.json', 'w') as f:
-              json.dump(entries, f, indent=2)
+              json.dump(entries_out, f, indent=2)
+          print(f'Wrote {len(entries_out)} entries to logbook.json')
 
-          print(f'Wrote {len(entries)} entries to logbook.json')
+          # ── Aggregate one source of dated rows into the running totals ──
+          now = datetime.now(timezone.utc).replace(tzinfo=None)
+          agg = {
+              'sel': 0.0, 'mel': 0.0, 'rotor': 0.0, 'total': 0.0,
+              'pic': 0.0, 'instructor': 0.0, 'sic': 0.0, 'dual': 0.0,
+              'night_air': 0.0, 'night_rotor': 0.0,
+              'act_inst_air': 0.0, 'act_inst_rotor': 0.0,
+              'sim_inst_air': 0.0, 'sim_inst_rotor': 0.0,
+              'xc_air': 0.0, 'xc_rotor': 0.0,
+              'last6mo': 0.0, 'last12mo': 0.0,
+          }
+          last_flown_aircraft = [None]
+          last_flown_dt = [None]
+          last_bfr_dt = [None]
+          ac_totals = {}  # ac_type -> {'total': float, 'category': str, 'last_dt': datetime|None}
+
+          def track_aircraft(ac_type, cat, total_h, dt):
+              if not ac_type:
+                  return
+              rec = ac_totals.setdefault(ac_type, {'total': 0.0, 'category': cat, 'last_dt': None})
+              rec['total'] += total_h
+              if dt is not None and (rec['last_dt'] is None or dt > rec['last_dt']):
+                  rec['last_dt'] = dt
+
+          def add_row(dt, ac_type, cat, total_h, pic_h, instr_h, sic_h, dual_h, night_h, act_inst_h, sim_inst_h, xc_h, is_pic_solo_source):
+              track_aircraft(ac_type, cat, total_h, dt)
+              agg['total'] += total_h
+              if cat == 'rotor':
+                  agg['rotor'] += total_h
+                  agg['night_rotor'] += night_h
+                  agg['act_inst_rotor'] += act_inst_h
+                  agg['sim_inst_rotor'] += sim_inst_h
+                  agg['xc_rotor'] += xc_h
+              elif cat == 'mel':
+                  agg['mel'] += total_h
+                  agg['night_air'] += night_h
+                  agg['act_inst_air'] += act_inst_h
+                  agg['sim_inst_air'] += sim_inst_h
+                  agg['xc_air'] += xc_h
+              else:
+                  agg['sel'] += total_h
+                  agg['night_air'] += night_h
+                  agg['act_inst_air'] += act_inst_h
+                  agg['sim_inst_air'] += sim_inst_h
+                  agg['xc_air'] += xc_h
+
+              agg['pic'] += pic_h
+              agg['instructor'] += instr_h
+              agg['sic'] += sic_h
+              agg['dual'] += dual_h
+
+              if dt is not None:
+                  if now - dt <= timedelta(days=182):
+                      agg['last6mo'] += total_h
+                  if now - dt <= timedelta(days=365):
+                      agg['last12mo'] += total_h
+                  if last_flown_dt[0] is None or dt > last_flown_dt[0]:
+                      last_flown_dt[0] = dt
+                      last_flown_aircraft[0] = ac_type or None
+
+          # Source 1 rows → current program. Propel's "PIC" for a student pilot
+          # is sole-manipulator (Solo) time, not LogTen's PIC column (which this
+          # export mislabels as always equal to Total Time).
+          for row in rows:
+              dt = fmt_date(row.get(c_date, '') if c_date else '')
+              total_h = parse_hours(row.get(c_total, '') if c_total else '')
+              if total_h == 0 and dt is None:
+                  continue
+              ac_type = row.get(c_actype, '').strip() if c_actype else ''
+              cat_field = row.get(c_category, '') if c_category else ''
+              cat = classify_category(ac_type, cat_field)
+              pic_h   = parse_hours(row.get(c_solo, '') if c_solo else '')
+              instr_h = parse_hours(row.get(c_instr, '') if c_instr else '')
+              sic_h   = parse_hours(row.get(c_sic, '') if c_sic else '')
+              dual_h  = parse_hours(row.get(c_dual, '') if c_dual else '')
+              night_h = parse_hours(row.get(c_night, '') if c_night else '')
+              act_h   = parse_hours(row.get(c_imc, '') if c_imc else '')
+              sim_h   = parse_hours(row.get(c_siminst, '') if c_siminst else '')
+              xc_h    = parse_hours(row.get(c_xc, '') if c_xc else '')
+
+              add_row(dt, ac_type, cat, total_h, pic_h, instr_h, sic_h, dual_h, night_h, act_h, sim_h, xc_h, True)
+
+              fltrev = row.get(c_fltrev, '').strip() if c_fltrev else ''
+              if fltrev and dt is not None and (last_bfr_dt[0] is None or dt > last_bfr_dt[0]):
+                  last_bfr_dt[0] = dt
+
+          # ── Source 2: logbook-historical.csv — full LogTen archive, real
+          #    per-flight breakdowns. Simulator-category rows are excluded
+          #    (Propel's totals only count real aircraft time). ──
+          hist_headers, hist_rows = load_rows('logbook-historical.csv')
+          if hist_headers:
+              h_date  = find_col(hist_headers, COL_DATE)
+              h_ac    = find_col(hist_headers, COL_ACTYPE)
+              h_cat   = find_col(hist_headers, COL_CATEGORY)
+              h_total = find_col(hist_headers, ['total w/ other', 'total time'])
+              h_pic   = find_col(hist_headers, COL_PIC)
+              h_sic   = find_col(hist_headers, COL_SIC)
+              h_instr = find_col(hist_headers, COL_INSTR)
+              h_dual  = find_col(hist_headers, COL_DUAL)
+              h_night = find_col(hist_headers, COL_NIGHT)
+              h_imc   = find_col(hist_headers, ['act inst'])
+              h_sim   = find_col(hist_headers, ['sim inst'])
+              h_xc    = find_col(hist_headers, ['x-country'])
+
+              for row in hist_rows:
+                  if h_cat and row.get(h_cat, '').strip().lower() == 'simulator':
+                      continue  # not real aircraft time
+                  dt = fmt_date(row.get(h_date, '') if h_date else '')
+                  total_h = parse_hours(row.get(h_total, '') if h_total else '')
+                  if total_h == 0 and dt is None:
+                      continue
+                  ac_type = row.get(h_ac, '').strip() if h_ac else ''
+                  cat = classify_category(ac_type, row.get(h_cat, '') if h_cat else '')
+                  add_row(
+                      dt, ac_type, cat, total_h,
+                      parse_hours(row.get(h_pic, '')   if h_pic   else ''),
+                      parse_hours(row.get(h_instr, '') if h_instr else ''),
+                      parse_hours(row.get(h_sic, '')   if h_sic   else ''),
+                      parse_hours(row.get(h_dual, '')  if h_dual  else ''),
+                      parse_hours(row.get(h_night, '') if h_night else ''),
+                      parse_hours(row.get(h_imc, '')   if h_imc   else ''),
+                      parse_hours(row.get(h_sim, '')   if h_sim   else ''),
+                      parse_hours(row.get(h_xc, '')    if h_xc    else ''),
+                      False,
+                  )
+
+          # ── Source 3: propel-baseline.json — small manual gap (aircraft
+          #    flown but never exported to either CSV). No per-row dates, so
+          #    excluded from the last-6/12-month currency calculation. ──
+          with open('propel-baseline.json') as f:
+              base = json.load(f)
+
+          for ac in base.get('gap_aircraft', []):
+              cat = ac.get('category', 'sel')
+              total_h = ac.get('total', 0.0)
+              agg['total'] += total_h
+              agg[cat] += total_h
+              agg['xc_air']   += ac.get('xc', 0.0) if cat != 'rotor' else 0.0
+              agg['xc_rotor'] += ac.get('xc', 0.0) if cat == 'rotor' else 0.0
+              agg['dual']     += ac.get('dual', 0.0)
+              rec = ac_totals.setdefault(ac['type'], {'total': 0.0, 'category': cat, 'last_dt': None, 'name': ac.get('name', '')})
+              rec['total'] += total_h
+              rec['is_gap'] = True
+              rec['last_flown_label'] = ac.get('last_flown', '')
+
+          if last_bfr_dt[0] is None:
+              last_bfr = base.get('last_bfr_or_checkride', '')
+          else:
+              last_bfr = last_bfr_dt[0].strftime('%Y-%m-%d')
+
+          aircraft_flown = []
+          for ac_type, rec in ac_totals.items():
+              last_flown_label = rec.get('last_flown_label') or (rec['last_dt'].strftime('%Y-%m') if rec['last_dt'] else '—')
+              aircraft_flown.append({
+                  'type': ac_type,
+                  'category': rec['category'],
+                  'total': round(rec['total'], 1),
+                  'last_flown': last_flown_label,
+                  'source': 'gap (manual)' if rec.get('is_gap') else 'logbook',
+              })
+          aircraft_flown.sort(key=lambda a: -a['total'])
+
+          propel = {
+              'generated': now.strftime('%Y-%m-%d'),
+              'source_rows': len(rows) + len(hist_rows),
+              'total_time': round(agg['total'], 1),
+              'airplane': {
+                  'total': round(agg['sel'] + agg['mel'], 1),
+                  'pic': round(agg['pic'], 1),
+                  'turbine': 0,
+              },
+              'category_class': {
+                  'airplane_sel': round(agg['sel'], 1),
+                  'airplane_ses': 0,
+                  'airplane_mel': round(agg['mel'], 1),
+                  'airplane_mes': 0,
+                  'helicopter_rotor': round(agg['rotor'], 1),
+              },
+              'type_of_time': {
+                  'pic': round(agg['pic'], 1),
+                  'instructor': round(agg['instructor'], 1),
+                  'sic': round(agg['sic'], 1),
+                  'dual': round(agg['dual'], 1),
+                  'other': 0,
+                  'fe': 0,
+              },
+              'flight_conditions': {
+                  'night_airplane': round(agg['night_air'], 1),
+                  'night_rotor': round(agg['night_rotor'], 1),
+                  'actual_instrument_airplane': round(agg['act_inst_air'], 1),
+                  'actual_instrument_rotor': round(agg['act_inst_rotor'], 1),
+                  'simulated_instrument_airplane': round(agg['sim_inst_air'], 1),
+                  'simulated_instrument_rotor': round(agg['sim_inst_rotor'], 1),
+                  'cross_country_airplane': round(agg['xc_air'], 1),
+                  'cross_country_rotor': round(agg['xc_rotor'], 1),
+              },
+              'last_bfr_or_checkride': last_bfr,
+              'last_flown_aircraft': last_flown_aircraft[0],
+              'total_flight_hours_last_6mo': round(agg['last6mo'], 1),
+              'total_flight_hours_last_12mo': round(agg['last12mo'], 1),
+              'aircraft_flown': aircraft_flown,
+          }
+
+          with open('propel.json', 'w') as f:
+              json.dump(propel, f, indent=2)
+          print(f'Wrote propel.json (total_time={propel["total_time"]})')
           EOF
 
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add logbook.json
-          git diff --staged --quiet || git commit -m "auto: update logbook.json from logbook [skip ci]" && git push
+          git add logbook.json propel.json
+          git diff --staged --quiet || git commit -m "auto: update logbook.json + propel.json [skip ci]" && git push
