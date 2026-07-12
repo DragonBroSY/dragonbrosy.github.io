@@ -1,5 +1,26 @@
 [
   {
+    "d": "7 JUL 26",
+    "r": "KJZP \u2192 KJZP",
+    "w": "VMC",
+    "m": "Kreuk\rCheckride Proficiency Flight\r\r- Soft field takeoff: SAT - Power on stall: SAT - Power off stall: ST - - Soft field landing: more flare, don't let nose land. - Short field landing: SAT - Short field takeoff: SAT",
+    "h": "1.5"
+  },
+  {
+    "d": "7 JUL 26",
+    "r": "KJZP \u2192 KJZP",
+    "w": "VMC",
+    "m": "Kreuk\rPrivate SE Initial Checkride\r\r- Congratulations on your checkride pass! It has been a pleasure flying with you and being your instructor. I wish you the best going forward. I hope to share a flight deck with you one day!",
+    "h": "1.4"
+  },
+  {
+    "d": "7 JUL 26",
+    "r": "KPDK \u2192 KPDK",
+    "w": "VMC",
+    "m": "Kreuk\rInstrument Basics & Procedures\r\r- Flight back from checkride. - Congrats on your private checkride!",
+    "h": "0.6"
+  },
+  {
     "d": "6 JUN 26",
     "r": "KPDK \u2192 KPDK",
     "w": "VMC",
@@ -82,26 +103,5 @@
     "w": "VMC",
     "m": "Kreuk\rDual XC 1\r\r- Dual XC (attempt 1) - - NavLog: Time is on the G500. We will start it before takeoff for the first leg. - Watch altitude and heading. The first 1/3 of the PDK to AND leg we kept getting off. However, once the workload was reduced after leveling off and establishing flight following, you did well with this. - Flight following: just keep practicing to make the calls smoother. Its good to practice with other students if you need to. Once you get the flow down it becomes a lot easier. - Dont forget to write down the GS and minutes passing every leg - One leg was 24 miles. You were able to find it but aim for a 15 mile max between points so you dont get lost - Once we were close to AND we were about 6 miles south from the direct path from PDK to AND. Part of this was slightly drifting right consistently at the beginning, but also because the wind and velocity that was forecasted was slightly off from what we experienced, and what we dealt with pushed us south of course. You were still able to easily find all your point and AND so its good to see how the difference in the forecast and actual winds are! - - AND entry SAT - VOR usage: SAT. You did great flying inbound to the ELW VOR on the 360 radial. We also triangulated our position with the AHN VOR. Practice tuning and IDing VORs so its a little more fluid. - Engine failure scenario: I recommend spending time memorizing the emergency checklist and flows. ABCDE. Dont forget to do the shutdown checklist where all fuel items are shut down before touch down. Also, if youre right near an airport, go to their CTAF instead of Guard since you need to communicate with pattern traffic. You were able to land safely at KEBA which was great! - - We then noticed the oil pressure was fully high in the red. We diverted to AHN. We monitored oil temp as that would be an indication that we may need to shut the engine down to prevent a fire.",
     "h": "2.2"
-  },
-  {
-    "d": "11 MAY 26",
-    "r": "KPDK \u2192 KPDK",
-    "w": "VMC",
-    "m": "Kreuk\rLine Oriented Flight Training (LOFT)\r\r- Repo flight LZU to PDK",
-    "h": "0.6"
-  },
-  {
-    "d": "8 MAY 26",
-    "r": "KPDK \u2192 KPDK",
-    "w": "VMC",
-    "m": "Kreuk\rSolo TOLs\r\r- Good job on your solo. You did great in the warm up.",
-    "h": "2.6"
-  },
-  {
-    "d": "5 MAY 26",
-    "r": "KPDK \u2192 KPDK",
-    "w": "VMC",
-    "m": "Kreuk\rSolo TOLs\r\r- unfortunately you didnt get to solo today - when receiving taxi instructions make sure you are 100% certain you know what you were told to do. Verify with you airport diagram to make sure it makes sense. If there is any doubt, ask. You can also ask for progressive taxi as well. - We will try again later this week",
-    "h": "0.8"
   }
 ]
