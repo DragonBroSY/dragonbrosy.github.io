@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log Flight — DragonBroSY</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { overflow-x: hidden; }
+    body { background: #f5f7fa; color: #1a2a3a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; max-width: 100vw; }
+
+    .nav { background: #1a3a6b; border-bottom: 3px solid #c8a400; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 100; }
+    .nav-brand { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: #fff; font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
+    .nav-brand .wing { font-size: 1.2rem; }
+    .nav-links { display: flex; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.73rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; padding: 0 0.9rem; height: 56px; display: flex; align-items: center; border-bottom: 3px solid transparent; margin-bottom: -3px; transition: color 0.15s, border-color 0.15s; }
+    .nav-links a:hover { color: #fff; border-bottom-color: #c8a400; }
+    .nav-links a.active { color: #fff; border-bottom-color: #c8a400; }
+
+    @media (max-width: 640px) {
+      .nav { padding: 0 1rem; }
+      .nav-brand { font-size: 0.9rem; flex-shrink: 0; }
+      .nav-links { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; max-width: 58vw; }
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links a { padding: 0 0.55rem; font-size: 0.64rem; flex-shrink: 0; }
+      .page-title { font-size: 1.35rem; }
+      .form-grid { grid-template-columns: 1fr !important; }
+    }
+
+    .main { max-width: 860px; margin: 0 auto; padding: 2.4rem 1.1rem 0; width: 100%; flex: 1; min-width: 0; }
+
+    .page-title { font-size: 1.7rem; font-weight: 800; color: #1a3a6b; letter-spacing: -0.01em; margin-bottom: 0.35rem; }
+    .page-sub { font-size: 0.82rem; color: #6a8aaa; line-height: 1.6; margin-bottom: 1.6rem; max-width: 620px; }
+
+    .slabel { font-size: 0.6rem; letter-spacing: 0.28em; text-transform: uppercase; color: #1a3a6b; font-weight: 700; display: inline-block; padding-bottom: 0.45rem; border-bottom: 2px solid #c8a400; margin-bottom: 1rem; }
+
+    .panel { background: #fff; border: 1px solid #dde5ef; border-radius: 8px; overflow: hidden; margin-bottom: 1.6rem; }
+    .panel-head { background: #1a3a6b; color: #fff; padding: 0.65rem 1.1rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; display: flex; align-items: center; justify-content: space-between; }
+    .panel-head .accent { color: #c8a400; margin-left: 0.4rem; font-weight: 400; text-transform: none; letter-spacing: normal; }
+    .panel-body { padding: 1.1rem; }
+
+    .status-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 0.4rem; }
+    .status-dot.ok { background: #2ecc71; }
+    .status-dot.bad { background: #e74c3c; }
+    .status-dot.unknown { background: #9ab0c8; }
+
+    label { display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #6a8aaa; margin-bottom: 0.3rem; }
+    input, select, textarea { width: 100%; border: 1px solid #dde5ef; border-radius: 5px; padding: 0.5rem 0.6rem; font-size: 0.82rem; font-family: inherit; color: #1a2a3a; background: #fff; }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: #1a3a6b; }
+    textarea { resize: vertical; min-height: 60px; }
+
+    .field { margin-bottom: 0.9rem; }
+    .form-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; }
+    .form-grid.two { grid-template-columns: repeat(2, 1fr); }
+
+    .btn { display: inline-flex; align-items: center; gap: 0.4rem; border: none; border-radius: 5px; padding: 0.6rem 1.2rem; font-size: 0.78rem; font-weight: 700; cursor: pointer; letter-spacing: 0.02em; }
+    .btn-primary { background: #1a3a6b; color: #fff; }
+    .btn-primary:hover { background: #244c8a; }
+    .btn-primary:disabled { background: #9ab0c8; cursor: not-allowed; }
+    .btn-ghost { background: #f5f7fa; color: #6a8aaa; border: 1px solid #dde5ef; }
+    .btn-ghost:hover { background: #eef2f7; }
+    .btn-danger { background: #fff; color: #c0392b; border: 1px solid #f0c0b8; }
+    .btn-danger:hover { background: #fdf0ee; }
+    .btn-row { display: flex; gap: 0.6rem; margin-top: 1rem; flex-wrap: wrap; }
+
+    .entry-table { width: 100%; border-collapse: collapse; font-size: 0.78rem; }
+    .entry-table th { text-align: left; padding: 0.5rem 0.9rem; font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: #6a8aaa; border-bottom: 1px solid #dde5ef; background: #f5f7fa; }
+    .entry-table td { padding: 0.55rem 0.9rem; color: #4a6a8a; border-bottom: 1px solid #eef2f7; vertical-align: top; }
+    .entry-table tr:hover td { background: #f9fafc; }
+    .entry-table .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .entry-actions { white-space: nowrap; }
+    .entry-actions button { font-size: 0.68rem; padding: 0.25rem 0.5rem; margin-right: 0.3rem; }
+
+    .note { font-size: 0.72rem; color: #8098b4; line-height: 1.6; padding: 0.9rem 1.1rem; background: #f9fafc; border-top: 1px solid #eef2f7; }
+    .note.warn { color: #9a6b00; background: #fff8e6; }
+    .note.ok { color: #1a7a3a; background: #eafaf0; }
+
+    footer { background: #1a3a6b; border-top: 3px solid #c8a400; text-align: center; font-size: 0.6rem; color: rgba(255,255,255,0.45); padding: 1.4rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav-brand" href="/"><span class="wing">&#9992;</span> DragonBroSY</a>
+    <div class="nav-links">
+      <a href="https://dragonbrosy.github.io/Elevate-Courses/">Courses</a>
+      <a href="index.html#logbook">Logbook</a>
+      <a href="propel.html">Propel</a>
+      <a href="log.html" class="active">Log Flight</a>
+      <a href="index.html#weather">Weather</a>
+      <a href="https://github.com/DragonBroSY">GitHub</a>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="page-title">Log a Flight</div>
+    <div class="page-sub">Writes directly to <code>logbook-current.csv</code> in the site repo via the GitHub API &mdash; no LogTen export needed. The site rebuilds automatically after each save (usually within ~30 seconds).</div>
+
+    <div class="slabel">Connection</div>
+    <div class="panel">
+      <div class="panel-head">GitHub Access Token</div>
+      <div class="panel-body">
+        <div class="field">
+          <label>Personal Access Token</label>
+          <input type="password" id="tokenInput" placeholder="github_pat_..." autocomplete="off" />
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-primary" id="saveTokenBtn">Save Token</button>
+          <button class="btn btn-ghost" id="clearTokenBtn">Clear</button>
+          <span id="tokenStatus" style="align-self:center;font-size:0.75rem;color:#6a8aaa;"><span class="status-dot unknown"></span>Not checked</span>
+        </div>
+      </div>
+      <div class="note">Stored only in this browser's local storage &mdash; never committed to the repo, never leaves your device except to call GitHub's API directly. Use a <b>fine-grained</b> token scoped to only the <code>dragonbrosy.github.io</code> repo with <b>Contents: Read and write</b> permission (create one at github.com &rarr; Settings &rarr; Developer settings &rarr; Personal access tokens &rarr; Fine-grained tokens).</div>
+    </div>
+
+    <div class="slabel" id="formLabel">New Flight</div>
+    <div class="panel">
+      <div class="panel-head">Flight Details</div>
+      <div class="panel-body">
+        <div class="form-grid two">
+          <div class="field">
+            <label>Date</label>
+            <input type="date" id="f_date" />
+          </div>
+          <div class="field">
+            <label>Route</label>
+            <input type="text" id="f_route" placeholder="KPDK &rarr; KPDK" />
+          </div>
+        </div>
+        <div class="form-grid two">
+          <div class="field">
+            <label>Aircraft</label>
+            <input type="text" id="f_aircraft" list="aircraftList" placeholder="PA-28-181" />
+            <datalist id="aircraftList"></datalist>
+          </div>
+          <div class="field">
+            <label>Category &amp; Class</label>
+            <select id="f_category">
+              <option value="ASEL, Piston">ASEL, Piston</option>
+              <option value="AMEL, Piston">AMEL, Piston</option>
+              <option value="Rotorcraft">Rotorcraft</option>
+              <option value="Simulator">Simulator (excluded from totals)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="field"><label>Total Time</label><input type="number" step="0.1" min="0" id="f_total" value="0.0" /></div>
+          <div class="field"><label>PIC</label><input type="number" step="0.1" min="0" id="f_pic" value="0.0" /></div>
+          <div class="field"><label>SIC</label><input type="number" step="0.1" min="0" id="f_sic" value="0.0" /></div>
+          <div class="field"><label>Instructor</label><input type="number" step="0.1" min="0" id="f_instructor" value="0.0" /></div>
+        </div>
+        <div class="form-grid">
+          <div class="field"><label>Dual Received</label><input type="number" step="0.1" min="0" id="f_dual" value="0.0" /></div>
+          <div class="field"><label>Night</label><input type="number" step="0.1" min="0" id="f_night" value="0.0" /></div>
+          <div class="field"><label>Actual Instrument</label><input type="number" step="0.1" min="0" id="f_actinst" value="0.0" /></div>
+          <div class="field"><label>Simulated Instrument</label><input type="number" step="0.1" min="0" id="f_siminst" value="0.0" /></div>
+        </div>
+        <div class="form-grid two">
+          <div class="field"><label>Cross Country</label><input type="number" step="0.1" min="0" id="f_xc" value="0.0" /></div>
+          <div class="field"></div>
+        </div>
+
+        <div class="field">
+          <label>Remarks</label>
+          <textarea id="f_remarks" placeholder="Maneuvers, instructor notes, anything worth remembering..."></textarea>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn btn-primary" id="saveFlightBtn">Save Flight</button>
+          <button class="btn btn-ghost" id="cancelEditBtn" style="display:none;">Cancel Edit</button>
+        </div>
+        <div id="saveStatus"></div>
+      </div>
+    </div>
+
+    <div class="slabel">Logged Flights</div>
+    <div class="panel">
+      <div class="panel-head">logbook-current.csv <span class="accent" id="entryCount"></span></div>
+      <div style="overflow-x:auto;">
+        <table class="entry-table" id="entryTable">
+          <thead><tr><th>Date</th><th>Aircraft</th><th>Route</th><th class="num">Total</th><th>Remarks</th><th>Actions</th></tr></thead>
+          <tbody id="entryBody"><tr><td colspan="6" style="padding:1.5rem;text-align:center;color:#9ab0c8;">Enter a token above to load entries.</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    DragonBroSY &nbsp;&middot;&nbsp; All Altitudes Reserved
+  </footer>
+
+  <script>
+    var GH_OWNER = 'DragonBroSY';
+    var GH_REPO = 'dragonbrosy.github.io';
+    var GH_BRANCH = 'main';
+    var GH_FILE_PATH = 'logbook-current.csv';
+    var TOKEN_KEY = 'dragonbrosy_gh_token';
+
+    var CSV_FIELDS = ['Date','Aircraft','Category','Total Time','PIC','SIC','Instructor','Dual Received','Night','Act Inst','Sim Inst','X-Country','Route','Remarks'];
+
+    var state = { sha: null, rows: [], editingIndex: null };
+
+    function getToken() { return localStorage.getItem(TOKEN_KEY) || ''; }
+    function setToken(t) { localStorage.setItem(TOKEN_KEY, t); }
+    function clearToken() { localStorage.removeItem(TOKEN_KEY); }
+
+    function utf8ToBase64(str) { return btoa(unescape(encodeURIComponent(str))); }
+    function base64ToUtf8(str) { return decodeURIComponent(escape(atob(str))); }
+
+    function apiHeaders() {
+      return {
+        'Authorization': 'Bearer ' + getToken(),
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28'
+      };
+    }
+
+    async function ghGetFile() {
+      var url = 'https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/' + GH_FILE_PATH + '?ref=' + GH_BRANCH;
+      var res = await fetch(url, { headers: apiHeaders() });
+      if (!res.ok) throw new Error('GET failed: ' + res.status + ' ' + (await res.text()).slice(0, 200));
+      var data = await res.json();
+      return { sha: data.sha, content: base64ToUtf8(data.content) };
+    }
+
+    async function ghPutFile(newContent, sha, message) {
+      var url = 'https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/' + GH_FILE_PATH;
+      var body = { message: message, content: utf8ToBase64(newContent), sha: sha, branch: GH_BRANCH };
+      var res = await fetch(url, { method: 'PUT', headers: Object.assign({'Content-Type':'application/json'}, apiHeaders()), body: JSON.stringify(body) });
+      if (!res.ok) throw new Error('PUT failed: ' + res.status + ' ' + (await res.text()).slice(0, 300));
+      return await res.json();
+    }
+
+    function csvEscape(v) {
+      v = String(v == null ? '' : v);
+      return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+    }
+
+    function parseCSV(text) {
+      var rows = [];
+      var row = [], field = '', inQuotes = false;
+      for (var i = 0; i < text.length; i++) {
+        var ch = text[i];
+        if (inQuotes) {
+          if (ch === '"') { if (text[i+1] === '"') { field += '"'; i++; } else inQuotes = false; }
+          else field += ch;
+        } else {
+          if (ch === '"') inQuotes = true;
+          else if (ch === ',') { row.push(field); field = ''; }
+          else if (ch === '\n' || ch === '\r') {
+            if (ch === '\r' && text[i+1] === '\n') i++;
+            row.push(field); field = ''; rows.push(row); row = [];
+          } else field += ch;
+        }
+      }
+      if (field.length || row.length) { row.push(field); rows.push(row); }
+      rows = rows.filter(function(r){ return r.length > 1 || (r.length === 1 && r[0] !== ''); });
+      if (!rows.length) return { headers: [], records: [] };
+      var headers = rows[0];
+      var records = rows.slice(1).map(function(r) {
+        var obj = {};
+        headers.forEach(function(h, idx) { obj[h] = r[idx] !== undefined ? r[idx] : ''; });
+        return obj;
+      });
+      return { headers: headers, records: records };
+    }
+
+    function stringifyCSV(records) {
+      var lines = [CSV_FIELDS.join(',')];
+      records.forEach(function(r) {
+        lines.push(CSV_FIELDS.map(function(f) { return csvEscape(r[f]); }).join(','));
+      });
+      return lines.join('\n') + '\n';
+    }
+
+    function setStatus(el, msg, cls) {
+      el.innerHTML = '<div class="note' + (cls ? ' ' + cls : '') + '" style="margin-top:0.8rem;border-radius:6px;border-top:none;">' + msg + '</div>';
+    }
+
+    async function checkConnection() {
+      var statusEl = document.getElementById('tokenStatus');
+      var token = getToken();
+      if (!token) {
+        statusEl.innerHTML = '<span class="status-dot unknown"></span>Not checked';
+        return;
+      }
+      statusEl.innerHTML = '<span class="status-dot unknown"></span>Checking...';
+      try {
+        var res = await fetch('https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO, { headers: apiHeaders() });
+        if (res.ok) {
+          statusEl.innerHTML = '<span class="status-dot ok"></span>Connected';
+          return true;
+        }
+        statusEl.innerHTML = '<span class="status-dot bad"></span>Failed (' + res.status + ')';
+        return false;
+      } catch (e) {
+        statusEl.innerHTML = '<span class="status-dot bad"></span>Network error';
+        return false;
+      }
+    }
+
+    function clearForm() {
+      document.getElementById('f_date').value = new Date().toISOString().slice(0, 10);
+      document.getElementById('f_route').value = '';
+      document.getElementById('f_aircraft').value = '';
+      document.getElementById('f_category').value = 'ASEL, Piston';
+      ['total','pic','sic','instructor','dual','night','actinst','siminst','xc'].forEach(function(k) {
+        document.getElementById('f_' + k).value = '0.0';
+      });
+      document.getElementById('f_remarks').value = '';
+      state.editingIndex = null;
+      document.getElementById('formLabel').textContent = 'New Flight';
+      document.getElementById('cancelEditBtn').style.display = 'none';
+    }
+
+    function fillFormFromRecord(rec) {
+      document.getElementById('f_date').value = rec['Date'] || '';
+      document.getElementById('f_route').value = rec['Route'] || '';
+      document.getElementById('f_aircraft').value = rec['Aircraft'] || '';
+      document.getElementById('f_category').value = rec['Category'] || 'ASEL, Piston';
+      document.getElementById('f_total').value = rec['Total Time'] || '0.0';
+      document.getElementById('f_pic').value = rec['PIC'] || '0.0';
+      document.getElementById('f_sic').value = rec['SIC'] || '0.0';
+      document.getElementById('f_instructor').value = rec['Instructor'] || '0.0';
+      document.getElementById('f_dual').value = rec['Dual Received'] || '0.0';
+      document.getElementById('f_night').value = rec['Night'] || '0.0';
+      document.getElementById('f_actinst').value = rec['Act Inst'] || '0.0';
+      document.getElementById('f_siminst').value = rec['Sim Inst'] || '0.0';
+      document.getElementById('f_xc').value = rec['X-Country'] || '0.0';
+      document.getElementById('f_remarks').value = rec['Remarks'] || '';
+    }
+
+    function formToRecord() {
+      return {
+        'Date': document.getElementById('f_date').value,
+        'Aircraft': document.getElementById('f_aircraft').value.trim(),
+        'Category': document.getElementById('f_category').value,
+        'Total Time': document.getElementById('f_total').value || '0',
+        'PIC': document.getElementById('f_pic').value || '0',
+        'SIC': document.getElementById('f_sic').value || '0',
+        'Instructor': document.getElementById('f_instructor').value || '0',
+        'Dual Received': document.getElementById('f_dual').value || '0',
+        'Night': document.getElementById('f_night').value || '0',
+        'Act Inst': document.getElementById('f_actinst').value || '0',
+        'Sim Inst': document.getElementById('f_siminst').value || '0',
+        'X-Country': document.getElementById('f_xc').value || '0',
+        'Route': document.getElementById('f_route').value.trim(),
+        'Remarks': document.getElementById('f_remarks').value.trim(),
+      };
+    }
+
+    function renderEntries() {
+      var body = document.getElementById('entryBody');
+      var count = document.getElementById('entryCount');
+      count.textContent = state.rows.length + ' flight' + (state.rows.length === 1 ? '' : 's');
+      if (!state.rows.length) {
+        body.innerHTML = '<tr><td colspan="6" style="padding:1.5rem;text-align:center;color:#9ab0c8;">No flights logged yet &mdash; use the form above.</td></tr>';
+        return;
+      }
+      var indexed = state.rows.map(function(r, i) { return { r: r, i: i }; });
+      indexed.sort(function(a, b) { return (b.r['Date']||'').localeCompare(a.r['Date']||''); });
+      body.innerHTML = indexed.map(function(item) {
+        var r = item.r, i = item.i;
+        var remarks = (r['Remarks'] || '').slice(0, 60);
+        return '<tr>' +
+          '<td>' + (r['Date']||'') + '</td>' +
+          '<td>' + (r['Aircraft']||'') + '</td>' +
+          '<td>' + (r['Route']||'&mdash;') + '</td>' +
+          '<td class="num">' + (r['Total Time']||'0') + '</td>' +
+          '<td>' + remarks + (remarks.length === 60 ? '…' : '') + '</td>' +
+          '<td class="entry-actions">' +
+            '<button class="btn btn-ghost" data-edit="' + i + '">Edit</button>' +
+            '<button class="btn btn-danger" data-del="' + i + '">Delete</button>' +
+          '</td></tr>';
+      }).join('');
+
+      body.querySelectorAll('[data-edit]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var idx = parseInt(btn.getAttribute('data-edit'), 10);
+          state.editingIndex = idx;
+          fillFormFromRecord(state.rows[idx]);
+          document.getElementById('formLabel').textContent = 'Editing Flight';
+          document.getElementById('cancelEditBtn').style.display = 'inline-flex';
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      });
+      body.querySelectorAll('[data-del]').forEach(function(btn) {
+        btn.addEventListener('click', async function() {
+          var idx = parseInt(btn.getAttribute('data-del'), 10);
+          if (!confirm('Delete this flight (' + state.rows[idx]['Date'] + ', ' + state.rows[idx]['Aircraft'] + ')?')) return;
+          await deleteEntry(idx);
+        });
+      });
+    }
+
+    async function loadEntries(showStatus) {
+      var statusEl = document.getElementById('saveStatus');
+      if (!getToken()) return;
+      try {
+        var file = await ghGetFile();
+        state.sha = file.sha;
+        var parsed = parseCSV(file.content);
+        state.rows = parsed.records;
+        renderEntries();
+
+        var aircraftSet = {};
+        state.rows.forEach(function(r) { if (r['Aircraft']) aircraftSet[r['Aircraft']] = true; });
+        document.getElementById('aircraftList').innerHTML = Object.keys(aircraftSet).map(function(a) {
+          return '<option value="' + a + '">';
+        }).join('');
+
+        if (showStatus) setStatus(statusEl, 'Loaded ' + state.rows.length + ' flights.', 'ok');
+      } catch (e) {
+        document.getElementById('entryBody').innerHTML = '<tr><td colspan="6" style="padding:1.5rem;text-align:center;color:#c0392b;">Couldn\'t load: ' + e.message + '</td></tr>';
+      }
+    }
+
+    async function saveEntry() {
+      var statusEl = document.getElementById('saveStatus');
+      var btn = document.getElementById('saveFlightBtn');
+      if (!getToken()) { setStatus(statusEl, 'Save a GitHub token above first.', 'warn'); return; }
+
+      var rec = formToRecord();
+      if (!rec['Date'] || !rec['Aircraft']) { setStatus(statusEl, 'Date and Aircraft are required.', 'warn'); return; }
+
+      btn.disabled = true;
+      setStatus(statusEl, 'Saving...', '');
+      try {
+        var file = await ghGetFile();  // re-fetch fresh sha right before writing
+        var parsed = parseCSV(file.content);
+        var rows = parsed.records;
+
+        var isEdit = state.editingIndex !== null;
+        var message;
+        if (isEdit) {
+          rows[state.editingIndex] = rec;
+          message = 'Edit flight: ' + rec['Date'] + ' ' + rec['Aircraft'];
+        } else {
+          rows.push(rec);
+          message = 'Log flight: ' + rec['Date'] + ' ' + rec['Aircraft'] + ' (' + rec['Total Time'] + ' hrs)';
+        }
+
+        var newContent = stringifyCSV(rows);
+        await ghPutFile(newContent, file.sha, message);
+
+        state.rows = rows;
+        renderEntries();
+        setStatus(statusEl, (isEdit ? 'Updated.' : 'Saved.') + ' The site will rebuild automatically in ~30s.', 'ok');
+        clearForm();
+      } catch (e) {
+        setStatus(statusEl, 'Save failed: ' + e.message, 'warn');
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
+    async function deleteEntry(idx) {
+      var statusEl = document.getElementById('saveStatus');
+      try {
+        var file = await ghGetFile();
+        var parsed = parseCSV(file.content);
+        var rows = parsed.records;
+        var removed = rows.splice(idx, 1)[0];
+        var newContent = stringifyCSV(rows);
+        await ghPutFile(newContent, file.sha, 'Delete flight: ' + (removed ? removed['Date'] + ' ' + removed['Aircraft'] : idx));
+        state.rows = rows;
+        renderEntries();
+        setStatus(statusEl, 'Deleted.', 'ok');
+      } catch (e) {
+        setStatus(statusEl, 'Delete failed: ' + e.message, 'warn');
+      }
+    }
+
+    document.getElementById('saveTokenBtn').addEventListener('click', async function() {
+      setToken(document.getElementById('tokenInput').value.trim());
+      document.getElementById('tokenInput').value = '';
+      var ok = await checkConnection();
+      if (ok) await loadEntries(true);
+    });
+    document.getElementById('clearTokenBtn').addEventListener('click', function() {
+      clearToken();
+      document.getElementById('tokenStatus').innerHTML = '<span class="status-dot unknown"></span>Not checked';
+      document.getElementById('entryBody').innerHTML = '<tr><td colspan="6" style="padding:1.5rem;text-align:center;color:#9ab0c8;">Enter a token above to load entries.</td></tr>';
+      state.rows = []; state.sha = null;
+    });
+    document.getElementById('saveFlightBtn').addEventListener('click', saveEntry);
+    document.getElementById('cancelEditBtn').addEventListener('click', clearForm);
+
+    clearForm();
+    if (getToken()) {
+      checkConnection().then(function(ok) { if (ok) loadEntries(false); });
+    }
+  </script>
+</body>
+</html>

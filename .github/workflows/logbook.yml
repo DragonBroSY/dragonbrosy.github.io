@@ -112,55 +112,69 @@ jobs:
           headers, rows = load_rows(src)
           headers = headers or []
 
-          c_date    = find_col(headers, COL_DATE)
-          c_from    = find_col(headers, COL_FROM)
-          c_to      = find_col(headers, COL_TO)
-          c_route   = find_col(headers, COL_ROUTE)
-          c_dual    = find_col(headers, COL_DUAL)
-          c_total   = find_col(headers, COL_TOTAL)
-          c_night   = find_col(headers, COL_NIGHT)
-          c_imc     = find_col(headers, COL_IMC)
-          c_remarks = find_col(headers, COL_REMARKS)
+          # ── logbook.json (last 15 entries across ALL sources, for the
+          # site's recent-flights table — not just the LogTen file, so
+          # manually-entered flights in any logbook-*.csv show up too). ──
+          def collect_entries(file_headers, file_rows):
+              if not file_headers:
+                  return []
+              c_date    = find_col(file_headers, COL_DATE)
+              c_from    = find_col(file_headers, COL_FROM)
+              c_to      = find_col(file_headers, COL_TO)
+              c_route   = find_col(file_headers, COL_ROUTE)
+              c_dual    = find_col(file_headers, COL_DUAL)
+              c_total   = find_col(file_headers, COL_TOTAL)
+              c_night   = find_col(file_headers, COL_NIGHT)
+              c_imc     = find_col(file_headers, COL_IMC)
+              c_remarks = find_col(file_headers, COL_REMARKS)
+              c_cat     = find_col(file_headers, COL_CATEGORY)
 
-          # ── logbook.json (last 15 entries, for the site's recent-flights table) ──
-          entries = []
-          for row in rows:
-              dt = fmt_date(row.get(c_date, '') if c_date else '')
-              if not dt:
-                  continue
+              out = []
+              for row in file_rows:
+                  if c_cat and row.get(c_cat, '').strip().lower() == 'simulator':
+                      continue
+                  dt = fmt_date(row.get(c_date, '') if c_date else '')
+                  if not dt:
+                      continue
 
-              if c_route and row.get(c_route, '').strip():
-                  route = row[c_route].strip()
-              else:
-                  frm = row.get(c_from, '').strip() if c_from else ''
-                  to  = row.get(c_to,   '').strip() if c_to   else ''
-                  route = (frm + ' → ' + to).strip(' →') if (frm or to) else '—'
+                  if c_route and row.get(c_route, '').strip():
+                      route = row[c_route].strip()
+                  else:
+                      frm = row.get(c_from, '').strip() if c_from else ''
+                      to  = row.get(c_to,   '').strip() if c_to   else ''
+                      route = (frm + ' → ' + to).strip(' →') if (frm or to) else '—'
 
-              night = parse_hours(row.get(c_night, '') if c_night else '')
-              imc   = parse_hours(row.get(c_imc,   '') if c_imc   else '')
-              if imc > 0:
-                  conditions = 'IMC'
-              elif night > 0:
-                  conditions = 'Night / VMC'
-              else:
-                  conditions = 'VMC'
+                  night = parse_hours(row.get(c_night, '') if c_night else '')
+                  imc   = parse_hours(row.get(c_imc,   '') if c_imc   else '')
+                  if imc > 0:
+                      conditions = 'IMC'
+                  elif night > 0:
+                      conditions = 'Night / VMC'
+                  else:
+                      conditions = 'VMC'
 
-              dual_h  = parse_hours(row.get(c_dual,  '') if c_dual  else '')
-              total_h = parse_hours(row.get(c_total, '') if c_total else '')
-              hours = dual_h if dual_h > 0 else total_h
-              hours_str = f'{hours:.1f}' if hours > 0 else '—'
+                  dual_h  = parse_hours(row.get(c_dual,  '') if c_dual  else '')
+                  total_h = parse_hours(row.get(c_total, '') if c_total else '')
+                  hours = dual_h if dual_h > 0 else total_h
+                  hours_str = f'{hours:.1f}' if hours > 0 else '—'
 
-              raw_remarks = row.get(c_remarks, '').strip() if c_remarks else ''
-              remarks = clean_remarks(raw_remarks) if raw_remarks else ''
+                  raw_remarks = row.get(c_remarks, '').strip() if c_remarks else ''
+                  remarks = clean_remarks(raw_remarks) if raw_remarks else ''
 
-              entries.append({
-                  '_dt': dt,
-                  'd': dt.strftime('%-d %b %y').upper(),
-                  'r': route,
-                  'w': conditions,
-                  'm': remarks,
-                  'h': hours_str
-              })
+                  out.append({
+                      '_dt': dt,
+                      'd': dt.strftime('%-d %b %y').upper(),
+                      'r': route,
+                      'w': conditions,
+                      'm': remarks,
+                      'h': hours_str
+                  })
+              return out
+
+          entries = collect_entries(headers, rows)
+          for path in sorted(glob.glob('logbook-*.csv')):
+              h, r = load_rows(path)
+              entries.extend(collect_entries(h, r))
 
           entries.sort(key=lambda x: x['_dt'], reverse=True)
           entries_out = [{k: v for k, v in e.items() if k != '_dt'} for e in entries[:15]]

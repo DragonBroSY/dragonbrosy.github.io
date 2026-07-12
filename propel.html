@@ -108,6 +108,7 @@
       <a href="https://dragonbrosy.github.io/Elevate-Courses/">Courses</a>
       <a href="index.html#logbook">Logbook</a>
       <a href="propel.html" class="active">Propel</a>
+      <a href="log.html">Log Flight</a>
       <a href="index.html#weather">Weather</a>
       <a href="https://github.com/DragonBroSY">GitHub</a>
     </div>
@@ -118,8 +119,6 @@
     <div class="page-sub">Auto-compiled monthly progress-eval totals, in the same fields Delta&rsquo;s Propel application asks for. Every source file (<code>logbook.txt</code> plus any <code>logbook-*.csv</code> archive) is merged and re-summed automatically whenever one is pushed &mdash; see <a href="#adding-a-source" style="color:#1a3a6b;">Adding a New Source</a> below.</div>
 
     <div class="meta-row" id="metaRow"></div>
-
-    <div id="warnBanner"></div>
 
     <div class="slabel">Endeavor Air First Officer Minimums</div>
     <div class="panel">
@@ -207,9 +206,6 @@
           '<div class="meta-chip">From <b>' + p.source_rows + '</b> logbook rows</div>' +
           '<div class="meta-chip">Last flown <b>' + (p.last_flown_aircraft || '&mdash;') + '</b></div>' +
           '<div class="meta-chip">Last BFR/checkride <b>' + p.last_bfr_or_checkride + '</b></div>';
-
-        document.getElementById('warnBanner').innerHTML =
-          '<div class="panel"><div class="note warn">Only your <em>current</em> PA-28-181 flights (logbook.txt) are missing detail &mdash; that file only carries Total Time, PIC and Solo, so Night/Dual/Instrument/XC won\'t grow until you re-export it with all columns checked. Everything else on this page (2017&ndash;2025 history) already has full per-flight breakdowns.</div></div>';
 
         var srcs = p.sources || [];
         if (srcs.length) {
