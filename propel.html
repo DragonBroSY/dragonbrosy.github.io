@@ -6,7 +6,8 @@
   <title>Propel Progress — DragonBroSY</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #f5f7fa; color: #1a2a3a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+    html { overflow-x: hidden; }
+    body { background: #f5f7fa; color: #1a2a3a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; max-width: 100vw; }
 
     .nav { background: #1a3a6b; border-bottom: 3px solid #c8a400; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; position: sticky; top: 0; z-index: 100; }
     .nav-brand { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: #fff; font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em; }
@@ -16,7 +17,21 @@
     .nav-links a:hover { color: #fff; border-bottom-color: #c8a400; }
     .nav-links a.active { color: #fff; border-bottom-color: #c8a400; }
 
-    .main { max-width: 860px; margin: 0 auto; padding: 2.4rem 2rem 0; width: 100%; flex: 1; }
+    @media (max-width: 640px) {
+      .nav { padding: 0 1rem; }
+      .nav-brand { font-size: 0.9rem; flex-shrink: 0; }
+      .nav-links { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; max-width: 58vw; }
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links a { padding: 0 0.55rem; font-size: 0.64rem; flex-shrink: 0; }
+      .page-title { font-size: 1.35rem; }
+      .hist-list div { flex-direction: column; align-items: flex-start; gap: 0.15rem; }
+      .hist-list .h-total { text-align: left; }
+      .mins-label { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+      .col-map div { flex-direction: column; align-items: flex-start; gap: 0.1rem; }
+      .drop-zone { margin: 0.7rem; padding: 1.6rem 1rem; }
+    }
+
+    .main { max-width: 860px; margin: 0 auto; padding: 2.4rem 1.1rem 0; width: 100%; flex: 1; }
 
     .page-title { font-size: 1.7rem; font-weight: 800; color: #1a3a6b; letter-spacing: -0.01em; margin-bottom: 0.35rem; }
     .page-sub { font-size: 0.82rem; color: #6a8aaa; line-height: 1.6; margin-bottom: 1.6rem; max-width: 620px; }
@@ -145,14 +160,11 @@
       <table class="field-table" id="summaryTable"></table>
     </div>
 
-    <div class="slabel">Verify Before Submitting</div>
+    <div class="slabel">Compared to Your Last Manual Propel Entry</div>
     <div class="panel">
-      <div class="panel-head">Discrepancies vs. Last Propel Submission</div>
-      <div class="note warn" style="border-top:none;">
-        <p style="margin-bottom:0.6rem;"><b>Dual:</b> computes to ~106 hrs from raw &ldquo;Dual Received&rdquo; columns across all sources, vs. 167.2 hrs on your last actual Propel submission (before CE-172-S/DA-42 had real data, this was ~49 hrs, so the gap has narrowed but not closed). Delta&rsquo;s system likely applies its own military-to-civilian conversion rules for flight-school hours that don&rsquo;t map 1:1 to raw logbook columns &mdash; confirm the correct definition with Propel/your recruiter before using this number.</p>
-        <p style="margin-bottom:0.6rem;"><b>SIC:</b> computes to ~299 hrs (now correctly includes 22.6 hrs of OH-58C time), vs. 276.7 hrs previously submitted, which appears to have omitted it.</p>
-        <p>R22 BETA II total shows 1.5 hrs here vs. 0.5 hrs on the last submission &mdash; a minor data difference, worth a quick check against your paper logbook if it matters for your SEL total.</p>
-      </div>
+      <div class="panel-head">Logs vs. Manual Entry <span class="accent">Logs are the source of truth</span></div>
+      <table class="field-table" id="compareTable"></table>
+      <div class="note">Most deltas are gaps in the old manual entry that the real per-flight logs now fill in. <b>Dual</b> and <b>Cross Country (Airplane)</b> go the other way &mdash; logs show <em>less</em> than what was manually entered, so those two are worth a second look against your paper logbook rather than assumed correct.</div>
     </div>
 
     <a id="adding-a-source"></a>
@@ -204,7 +216,7 @@
           '<div class="meta-chip">Last BFR/checkride <b>' + p.last_bfr_or_checkride + '</b></div>';
 
         document.getElementById('warnBanner').innerHTML =
-          '<div class="panel"><div class="note warn">Historical sources (logbook-*.csv) have real Night/Dual/Instrument/XC breakdowns. Your <em>current</em> program (logbook.txt, PA-28-181) still only exports Total Time / PIC / Solo &mdash; re-export logbook.txt with all columns included so Night/Dual/Instrument/XC keep growing during this program too.</div></div>';
+          '<div class="panel"><div class="note warn">Only your <em>current</em> PA-28-181 flights (logbook.txt) are missing detail &mdash; that file only carries Total Time, PIC and Solo, so Night/Dual/Instrument/XC won\'t grow until you re-export it with all columns checked. Everything else on this page (2017&ndash;2025 history) already has full per-flight breakdowns.</div></div>';
 
         var srcs = p.sources || [];
         if (srcs.length) {
@@ -258,6 +270,7 @@
         }).join('');
 
         await renderMinimums(p.minimums_raw);
+        renderComparison(p);
 
       } catch (err) {
         document.getElementById('metaRow').innerHTML =
@@ -302,6 +315,61 @@
         bar('PIC + Qualifying SIC', raw.pic_plus_qualifying_sic, targets.pic.target, targets.pic.note) +
         bar('PIC Cross Country', raw.pic_cross_country, targets.pic_cross_country.target) +
         bar('PIC Night', raw.pic_night, targets.pic_night.target);
+    }
+
+    // ── Compared to the last manually-typed Propel entry (a one-time PDF
+    // read, not a data file — these numbers are frozen at that snapshot). ──
+    var PROPEL_MANUAL = {
+      total_time: 487.7,
+      airplane_sel: 169.8,
+      airplane_mel: 13.8,
+      helicopter_rotor: 304.1,
+      pic: 10.5,
+      sic: 276.7,
+      instructor: 0,
+      dual: 167.2,
+      night: 40.5,
+      actual_instrument: 2.1,
+      simulated_instrument: 35.2,
+      cross_country_airplane: 33.7,
+      cross_country_rotor: 301.1
+    };
+
+    function renderComparison(p) {
+      var cc = p.category_class, tt = p.type_of_time, fc = p.flight_conditions;
+      var computed = {
+        total_time: p.total_time,
+        airplane_sel: cc.airplane_sel,
+        airplane_mel: cc.airplane_mel,
+        helicopter_rotor: cc.helicopter_rotor,
+        pic: tt.pic,
+        sic: tt.sic,
+        instructor: tt.instructor,
+        dual: tt.dual,
+        night: fc.night_airplane + fc.night_rotor,
+        actual_instrument: fc.actual_instrument_airplane + fc.actual_instrument_rotor,
+        simulated_instrument: fc.simulated_instrument_airplane + fc.simulated_instrument_rotor,
+        cross_country_airplane: fc.cross_country_airplane,
+        cross_country_rotor: fc.cross_country_rotor
+      };
+      var labels = {
+        total_time: 'Total Time', airplane_sel: 'Airplane SEL', airplane_mel: 'Airplane MEL',
+        helicopter_rotor: 'Helicopter Rotor', pic: 'PIC', sic: 'SIC', instructor: 'Instructor',
+        dual: 'Dual', night: 'Night', actual_instrument: 'Actual Instrument',
+        simulated_instrument: 'Simulated Instrument', cross_country_airplane: 'Cross Country (Airplane)',
+        cross_country_rotor: 'Cross Country (Rotor)'
+      };
+      var html = '<tr><td class="label" style="font-weight:700;color:#1a3a6b;">Field</td><td class="val" style="color:#6a8aaa;font-weight:600;">Propel &rarr; Logs (&Delta;)</td></tr>';
+      Object.keys(labels).forEach(function(k) {
+        var manual = PROPEL_MANUAL[k], comp = computed[k];
+        var delta = comp - manual;
+        var sign = delta > 0.05 ? '+' : (delta < -0.05 ? '' : '±');
+        var color = Math.abs(delta) < 0.05 ? '#6a8aaa' : (delta > 0 ? '#1a7a3a' : '#c0392b');
+        html += '<tr><td class="label">' + labels[k] + '</td><td class="val">' +
+          manual.toFixed(1) + ' &rarr; ' + comp.toFixed(1) +
+          ' <span style="color:' + color + ';">(' + sign + delta.toFixed(1) + ')</span></td></tr>';
+      });
+      document.getElementById('compareTable').innerHTML = html;
     }
 
     // ── Drop-zone: client-side CSV preview/conversion, PDF guidance ──

@@ -6,14 +6,22 @@
   <title>Quick Start Guide — DragonBroSY</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #f5f7fa; color: #1a2a3a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+    html { overflow-x: hidden; }
+    body { background: #f5f7fa; color: #1a2a3a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; max-width: 100vw; }
     .nav { background: #1a3a6b; border-bottom: 3px solid #c8a400; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
     .nav-brand { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: #fff; font-size: 1.05rem; font-weight: 800; }
     .nav-brand .wing { font-size: 1.2rem; }
     .nav-links { display: flex; }
     .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.73rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; padding: 0 0.9rem; height: 56px; display: flex; align-items: center; border-bottom: 3px solid transparent; margin-bottom: -3px; transition: color 0.15s, border-color 0.15s; }
     .nav-links a:hover { color: #fff; border-bottom-color: #c8a400; }
-    .main { max-width: 740px; margin: 2.5rem auto; padding: 0 2rem; flex: 1; }
+    @media (max-width: 640px) {
+      .nav { padding: 0 1rem; }
+      .nav-brand { font-size: 0.9rem; flex-shrink: 0; }
+      .nav-links { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; max-width: 58vw; }
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links a { padding: 0 0.55rem; font-size: 0.64rem; flex-shrink: 0; }
+    }
+    .main { max-width: 740px; margin: 2.5rem auto; padding: 0 1.1rem; flex: 1; min-width: 0; }
     h1 { font-size: 1.8rem; font-weight: 800; color: #1a2a3a; letter-spacing: -0.02em; margin-bottom: 0.4rem; }
     .subtitle { font-size: 0.84rem; color: #6a8aaa; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid #c8a400; }
     h2 { font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase; color: #1a3a6b; font-weight: 700; margin: 2rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 1px solid #dde5ef; }
