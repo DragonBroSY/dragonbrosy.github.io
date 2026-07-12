@@ -8,6 +8,11 @@
       "used": 46
     },
     {
+      "file": "logbook-current.csv",
+      "rows": 0,
+      "used": 0
+    },
+    {
       "file": "logbook-milkeep.csv",
       "rows": 186,
       "used": 186
