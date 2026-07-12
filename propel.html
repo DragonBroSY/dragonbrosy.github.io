@@ -160,13 +160,6 @@
       <table class="field-table" id="summaryTable"></table>
     </div>
 
-    <div class="slabel">Compared to Your Last Manual Propel Entry</div>
-    <div class="panel">
-      <div class="panel-head">Logs vs. Manual Entry <span class="accent">Logs are the source of truth</span></div>
-      <table class="field-table" id="compareTable"></table>
-      <div class="note">Most deltas are gaps in the old manual entry that the real per-flight logs now fill in. <b>Dual</b> and <b>Cross Country (Airplane)</b> go the other way &mdash; logs show <em>less</em> than what was manually entered, so those two are worth a second look against your paper logbook rather than assumed correct.</div>
-    </div>
-
     <a id="adding-a-source"></a>
     <div class="slabel">Drop A New Log</div>
     <div class="panel">
@@ -270,7 +263,6 @@
         }).join('');
 
         await renderMinimums(p.minimums_raw);
-        renderComparison(p);
 
       } catch (err) {
         document.getElementById('metaRow').innerHTML =
@@ -315,61 +307,6 @@
         bar('PIC + Qualifying SIC', raw.pic_plus_qualifying_sic, targets.pic.target, targets.pic.note) +
         bar('PIC Cross Country', raw.pic_cross_country, targets.pic_cross_country.target) +
         bar('PIC Night', raw.pic_night, targets.pic_night.target);
-    }
-
-    // ── Compared to the last manually-typed Propel entry (a one-time PDF
-    // read, not a data file — these numbers are frozen at that snapshot). ──
-    var PROPEL_MANUAL = {
-      total_time: 487.7,
-      airplane_sel: 169.8,
-      airplane_mel: 13.8,
-      helicopter_rotor: 304.1,
-      pic: 10.5,
-      sic: 276.7,
-      instructor: 0,
-      dual: 167.2,
-      night: 40.5,
-      actual_instrument: 2.1,
-      simulated_instrument: 35.2,
-      cross_country_airplane: 33.7,
-      cross_country_rotor: 301.1
-    };
-
-    function renderComparison(p) {
-      var cc = p.category_class, tt = p.type_of_time, fc = p.flight_conditions;
-      var computed = {
-        total_time: p.total_time,
-        airplane_sel: cc.airplane_sel,
-        airplane_mel: cc.airplane_mel,
-        helicopter_rotor: cc.helicopter_rotor,
-        pic: tt.pic,
-        sic: tt.sic,
-        instructor: tt.instructor,
-        dual: tt.dual,
-        night: fc.night_airplane + fc.night_rotor,
-        actual_instrument: fc.actual_instrument_airplane + fc.actual_instrument_rotor,
-        simulated_instrument: fc.simulated_instrument_airplane + fc.simulated_instrument_rotor,
-        cross_country_airplane: fc.cross_country_airplane,
-        cross_country_rotor: fc.cross_country_rotor
-      };
-      var labels = {
-        total_time: 'Total Time', airplane_sel: 'Airplane SEL', airplane_mel: 'Airplane MEL',
-        helicopter_rotor: 'Helicopter Rotor', pic: 'PIC', sic: 'SIC', instructor: 'Instructor',
-        dual: 'Dual', night: 'Night', actual_instrument: 'Actual Instrument',
-        simulated_instrument: 'Simulated Instrument', cross_country_airplane: 'Cross Country (Airplane)',
-        cross_country_rotor: 'Cross Country (Rotor)'
-      };
-      var html = '<tr><td class="label" style="font-weight:700;color:#1a3a6b;">Field</td><td class="val" style="color:#6a8aaa;font-weight:600;">Propel &rarr; Logs (&Delta;)</td></tr>';
-      Object.keys(labels).forEach(function(k) {
-        var manual = PROPEL_MANUAL[k], comp = computed[k];
-        var delta = comp - manual;
-        var sign = delta > 0.05 ? '+' : (delta < -0.05 ? '' : '±');
-        var color = Math.abs(delta) < 0.05 ? '#6a8aaa' : (delta > 0 ? '#1a7a3a' : '#c0392b');
-        html += '<tr><td class="label">' + labels[k] + '</td><td class="val">' +
-          manual.toFixed(1) + ' &rarr; ' + comp.toFixed(1) +
-          ' <span style="color:' + color + ';">(' + sign + delta.toFixed(1) + ')</span></td></tr>';
-      });
-      document.getElementById('compareTable').innerHTML = html;
     }
 
     // ── Drop-zone: client-side CSV preview/conversion, PDF guidance ──

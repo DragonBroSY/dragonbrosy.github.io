@@ -374,4 +374,14 @@ Power off landing- make sure to pay attention to winds. Also keep in mind there 
 2026-06-06	N542K	PA-28-181	KPDK		KPDK					1.10		1.10																		"Hans KreukPrivate Checkride Prep- Soft Field TO: SAT. Best one yet
 - Soft Field Landings: 4/5. The one that was unsat we just didnt hold the plane in ground effect so we just landed a little firm.
 - Congrats on your endorsement!"		
+2026-07-07	N598A	PA-28-181	KJZP		KJZP					1.50		1.50																		"Hans KreukCheckride Proficiency Flight- Soft field takeoff: SAT
+- Power on stall: SAT
+- Power off stall: ST
+- 
+- Soft field landing: more flare, don't let nose land.
+- Short field landing: SAT
+- Short field takeoff: SAT"		
+2026-07-07	N598A	PA-28-181	KJZP		KJZP					1.40		1.40																		"Hans KreukPrivate SE Initial Checkride- Congratulations on your checkride pass! It has been a pleasure flying with you and being your instructor. I wish you the best going forward. I hope to share a flight deck with you one day!"		
+2026-07-07	N598A	PA-28-181	KPDK		KPDK					0.60		0.60																		"Hans KreukInstrument Basics & Procedures- Flight back from checkride. 
+- Congrats on your private checkride!"		
 																																

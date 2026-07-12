@@ -238,11 +238,14 @@ jobs:
                       last_flown_dt[0] = dt
                       last_flown_aircraft[0] = ac_type or None
 
-          def process_source(path, file_headers, file_rows, pic_aliases, track_bfr):
+          def process_source(path, file_headers, file_rows, pic_aliases, track_bfr, dual_fallback=False):
               """Aggregate one already-loaded CSV/TSV into the running totals.
               Rows whose Category is 'Simulator' are excluded — Propel only
               counts real aircraft time. pic_aliases lets the current-program
-              file substitute Solo for PIC (see note below)."""
+              file substitute Solo for PIC (see note below). dual_fallback lets
+              that same file infer Dual as Total-PIC when its own Dual column
+              is blank — single-pilot trainer flying is either solo or dual
+              instruction, no third option."""
               if not file_headers:
                   return 0
               c_ac    = find_col(file_headers, COL_ACTYPE)
@@ -269,12 +272,16 @@ jobs:
                       continue
                   ac_type = row.get(c_ac, '').strip() if c_ac else ''
                   cat = classify_category(ac_type, row.get(c_cat, '') if c_cat else '')
+                  pic_h = parse_hours(row.get(c_pic, '') if c_pic else '')
+                  dual_h = parse_hours(row.get(c_dual, '') if c_dual else '')
+                  if dual_fallback and dual_h == 0:
+                      dual_h = max(total_h - pic_h, 0)
                   add_row(
                       dt, ac_type, cat, total_h,
-                      parse_hours(row.get(c_pic, '')   if c_pic   else ''),
+                      pic_h,
                       parse_hours(row.get(c_instr, '') if c_instr else ''),
                       parse_hours(row.get(c_sic, '')   if c_sic   else ''),
-                      parse_hours(row.get(c_dual, '')  if c_dual  else ''),
+                      dual_h,
                       parse_hours(row.get(c_night, '') if c_night else ''),
                       parse_hours(row.get(c_imc, '')   if c_imc   else ''),
                       parse_hours(row.get(c_sim, '')   if c_sim   else ''),
@@ -289,8 +296,9 @@ jobs:
 
           # Current program: Propel's "PIC" for a student pilot is
           # sole-manipulator (Solo) time, not LogTen's PIC column (which this
-          # particular export mislabels as always equal to Total Time).
-          used = process_source(src, headers, rows, COL_SOLO, track_bfr=True)
+          # particular export mislabels as always equal to Total Time). Dual
+          # falls back to Total-Solo since this export's Dual column is blank.
+          used = process_source(src, headers, rows, COL_SOLO, track_bfr=True, dual_fallback=True)
           source_summary.append({'file': src, 'rows': len(rows), 'used': used})
 
           # Every other logbook-*.csv is a full historical/other-school
