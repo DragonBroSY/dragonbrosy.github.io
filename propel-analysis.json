@@ -1,0 +1,30 @@
+{
+  "generated": "2026-07-13",
+  "generated_note": "Written by Claude Code during a review session, not auto-generated on a timer — ask Claude to refresh this after logging a batch of new flights or if a minimum crosses a milestone.",
+  "as_of_total_time": 492.2,
+
+  "verify_first": {
+    "label": "Resolve this before anything else",
+    "body": "Whether Endeavor's SIC-combination rule (the asterisk on PIC / PIC Cross Country / PIC Night) covers your military SIC time. If it does: PIC (318.5/250), PIC Night (40.2/25), and PIC Cross Country (297.6/100) are all already met. If it doesn't: PIC sits at 17.2/250 (7%) — by far the hardest number on this page to move through personal flying alone. This one answer determines whether your three biggest categories are done or are your entire remaining bottleneck."
+  },
+
+  "stalled": {
+    "label": "Stalled — needs a deliberate decision",
+    "body": "Multi-Engine Land: 13.8/25 (55%), unchanged since your last DA-42 session in June 2025. Nothing in your current single-engine training path touches this — it will not self-resolve. Needs booking more multi-engine time specifically."
+  },
+
+  "resolving_naturally": {
+    "label": "Resolving on its own — don't force it",
+    "body": "Instrument (43.2/75) and the rest of Cross Country (already past the 200-hr Restricted-ATP floor at 306.6/500) will move through the normal Instrument rating syllabus. No need to chase these separately."
+  },
+
+  "highest_leverage": {
+    "label": "Highest-leverage move for total hours",
+    "body": "Commercial → CFI. Current pace is roughly 83 hrs in 4 months (~20 hrs/month); at that rate 750 total time is over a year out. Instructing accumulates PIC and total hours several times faster than personal rental flying — and pays you instead of costing you. If speed to Endeavor matters, this is the path, not more solo XC in a rented 172."
+  },
+
+  "lagging": {
+    "label": "Lagging without a natural fix",
+    "body": "Night: 44.6/100 (45%). Unlike Instrument, no certificate specifically forces night cross-country time — it only accumulates incidentally. Worth scheduling a couple of dedicated night XC legs rather than waiting for it."
+  }
+}

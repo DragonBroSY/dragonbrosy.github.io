@@ -95,6 +95,13 @@ jobs:
                   return 'mel'
               return 'sel'
 
+          # Turbine-powered aircraft — Propel's per-aircraft entry form asks
+          # for "Turbine SIC Time" specifically (distinct from piston SIC).
+          TURBINE_TYPES = ('uh-60m', 'uh-60l', 'th-67a', 'th-67f', 'oh-58c')
+
+          def is_turbine(ac_type):
+              return (ac_type or '').strip().lower() in TURBINE_TYPES
+
           def load_rows(path):
               if not os.path.exists(path):
                   return None, []
@@ -201,16 +208,24 @@ jobs:
           ac_totals = {}  # ac_type -> {'total', 'category', 'last_dt'}
           source_summary = []
 
-          def track_aircraft(ac_type, cat, total_h, dt):
+          def track_aircraft(ac_type, cat, total_h, dt, pic_h, instr_h, sic_h, dual_h):
               if not ac_type:
                   return
-              rec = ac_totals.setdefault(ac_type, {'total': 0.0, 'category': cat, 'last_dt': None})
+              rec = ac_totals.setdefault(ac_type, {
+                  'total': 0.0, 'category': cat, 'last_dt': None,
+                  'pic': 0.0, 'instructor': 0.0, 'turbine_sic': 0.0, 'dual': 0.0,
+              })
               rec['total'] += total_h
+              rec['pic'] += pic_h
+              rec['instructor'] += instr_h
+              rec['dual'] += dual_h
+              if is_turbine(ac_type):
+                  rec['turbine_sic'] += sic_h
               if dt is not None and (rec['last_dt'] is None or dt > rec['last_dt']):
                   rec['last_dt'] = dt
 
           def add_row(dt, ac_type, cat, total_h, pic_h, instr_h, sic_h, dual_h, night_h, act_inst_h, sim_inst_h, xc_h):
-              track_aircraft(ac_type, cat, total_h, dt)
+              track_aircraft(ac_type, cat, total_h, dt, pic_h, instr_h, sic_h, dual_h)
               agg['total'] += total_h
               if cat == 'rotor':
                   agg['rotor'] += total_h
@@ -337,7 +352,10 @@ jobs:
               agg['xc_air']   += ac.get('xc', 0.0) if cat != 'rotor' else 0.0
               agg['xc_rotor'] += ac.get('xc', 0.0) if cat == 'rotor' else 0.0
               agg['dual']     += ac.get('dual', 0.0)
-              rec = ac_totals.setdefault(ac['type'], {'total': 0.0, 'category': cat, 'last_dt': None, 'name': ac.get('name', '')})
+              rec = ac_totals.setdefault(ac['type'], {
+                  'total': 0.0, 'category': cat, 'last_dt': None, 'name': ac.get('name', ''),
+                  'pic': 0.0, 'instructor': 0.0, 'turbine_sic': 0.0, 'dual': 0.0,
+              })
               rec['total'] += total_h
               rec['is_gap'] = True
               rec['last_flown_label'] = ac.get('last_flown', '')
@@ -350,10 +368,30 @@ jobs:
           aircraft_flown = []
           for ac_type, rec in ac_totals.items():
               last_flown_label = rec.get('last_flown_label') or (rec['last_dt'].strftime('%Y-%m') if rec['last_dt'] else '—')
+              # Propel's per-aircraft form: PIC + Dual Given + Turbine SIC +
+              # Dual Received + Other Time (military-only) should sum to
+              # Total. "Other" is whatever's left over — e.g. non-turbine
+              # military duty time that isn't PIC/instructor/dual.
+              pic = rec['pic']
+              instructor = rec['instructor']
+              turbine_sic = rec['turbine_sic']
+              # Some source rows log a flight as both PIC and Dual Received
+              # simultaneously (e.g. Superior SFS's own convention) — cap
+              # Dual Received so the breakdown always sums to Total, giving
+              # PIC priority since it's the more specific categorization.
+              dual = min(rec['dual'], max(rec['total'] - pic - instructor - turbine_sic, 0))
+              other = round(rec['total'] - pic - instructor - turbine_sic - dual, 1)
+              if other < 0.05:
+                  other = 0.0
               aircraft_flown.append({
                   'type': ac_type,
                   'category': rec['category'],
                   'total': round(rec['total'], 1),
+                  'pic': round(pic, 1),
+                  'dual_given': round(instructor, 1),
+                  'turbine_sic': round(turbine_sic, 1),
+                  'dual_received': round(dual, 1),
+                  'other': other,
                   'last_flown': last_flown_label,
                   'source': 'gap (manual)' if rec.get('is_gap') else 'logbook',
               })

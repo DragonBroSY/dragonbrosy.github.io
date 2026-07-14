@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Propel Progress — DragonBroSY</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { overflow-x: hidden; }
@@ -53,6 +57,16 @@
     .field-table td.val { text-align: right; font-weight: 700; color: #1a3a6b; font-variant-numeric: tabular-nums; }
     .field-table tr:hover td { background: #f5f7fa; }
 
+    .entry-table { width: 100%; border-collapse: collapse; font-size: 0.76rem; }
+    .entry-table th { text-align: left; padding: 0.5rem 0.9rem; font-size: 0.58rem; letter-spacing: 0.09em; text-transform: uppercase; color: #6a8aaa; border-bottom: 1px solid #dde5ef; background: #f5f7fa; white-space: nowrap; }
+    .entry-table td { padding: 0.55rem 0.9rem; color: #4a6a8a; border-bottom: 1px solid #eef2f7; white-space: nowrap; }
+    .entry-table tr:last-child td { border-bottom: none; }
+    .entry-table tr:hover td { background: #f9fafc; }
+    .entry-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .entry-table td.h-type { color: #1a3a6b; font-weight: 600; }
+    .entry-table td.h-total { font-weight: 700; color: #1a3a6b; }
+    .entry-table .manual-tag { color: #c8a400; font-weight: 600; }
+
     .note { font-size: 0.72rem; color: #8098b4; line-height: 1.6; padding: 0.9rem 1.1rem; background: #f9fafc; border-top: 1px solid #eef2f7; }
     .note.warn { color: #9a6b00; background: #fff8e6; }
 
@@ -97,6 +111,16 @@
     .mins-badge.met { background: #e3f5e8; color: #1a7a3a; }
     .mins-badge.open { background: #fff3d6; color: #9a6b00; }
 
+    .analysis-row { padding: 0.9rem 1.1rem; border-bottom: 1px solid #eef2f7; border-left: 4px solid #dde5ef; }
+    .analysis-row:last-child { border-bottom: none; }
+    .analysis-row.verify { border-left-color: #c8a400; }
+    .analysis-row.stalled { border-left-color: #c0392b; }
+    .analysis-row.resolving { border-left-color: #6a8aaa; }
+    .analysis-row.leverage { border-left-color: #1a7a3a; }
+    .analysis-row.lagging { border-left-color: #9a6b00; }
+    .analysis-label { font-size: 0.72rem; font-weight: 700; color: #1a3a6b; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.35rem; }
+    .analysis-body { font-size: 0.8rem; color: #4a6a8a; line-height: 1.6; }
+
     footer { background: #1a3a6b; border-top: 3px solid #c8a400; text-align: center; font-size: 0.6rem; color: rgba(255,255,255,0.45); padding: 1.4rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 2rem; }
   </style>
 </head>
@@ -127,10 +151,22 @@
       <div class="note">Targets from Endeavor&rsquo;s published Job Qualifications table (airlineapps.com), entered manually in <code>propel-minimums.json</code> &mdash; update that file if Endeavor republishes new numbers.</div>
     </div>
 
+    <div class="slabel">On Track To Endeavor</div>
+    <div class="panel">
+      <div class="panel-head">Where To Focus <span class="accent" id="analysisDate"></span></div>
+      <div id="analysisBody"></div>
+      <div class="note">Written by Claude during a review session, not auto-generated on a timer &mdash; refresh by asking Claude to re-run this after logging a batch of new flights or when a minimum crosses a milestone.</div>
+    </div>
+
     <div class="slabel">By Aircraft Flown</div>
     <div class="panel">
-      <div class="panel-head">All Aircraft <span class="accent">Sorted by total time</span></div>
-      <div class="hist-list" id="histList"></div>
+      <div class="panel-head">All Aircraft <span class="accent">Matches Propel's per-aircraft entry form</span></div>
+      <div style="overflow-x:auto;">
+        <table class="entry-table" id="aircraftTable">
+          <thead><tr><th>Aircraft</th><th>Category</th><th class="num">PIC</th><th class="num">Dual Given</th><th class="num">Turbine SIC</th><th class="num">Dual Rec&rsquo;d</th><th class="num">Other</th><th class="num">Total</th><th>Last Flown</th></tr></thead>
+          <tbody id="histList"></tbody>
+        </table>
+      </div>
       <div class="note" id="sourcesNote">Sourced from every logbook-*.csv archive plus current logbook.txt, excluding simulator sessions.</div>
     </div>
 
@@ -253,17 +289,27 @@
         var CAT_LABEL = { sel: 'Airplane SEL', mel: 'Airplane MEL', rotor: 'Helicopter Rotor' };
         var list = p.aircraft_flown || [];
         document.getElementById('histList').innerHTML = list.map(function(a){
-          var tag = a.source === 'gap (manual)' ? ' <span style="color:#c8a400;font-weight:600;">&middot; manual</span>' : '';
-          return '<div><span class="h-type">' + a.type + ' <span style="color:#9ab0c8;font-weight:400;">(' + (CAT_LABEL[a.category] || a.category) + ')</span></span>' +
-            '<span class="h-total">' + a.total.toFixed(1) + ' hrs <span style="color:#9ab0c8;font-weight:400;">&middot; ' + a.last_flown + tag + '</span></span></div>';
+          var tag = a.source === 'gap (manual)' ? ' <span class="manual-tag">&middot; manual</span>' : '';
+          return '<tr>' +
+            '<td class="h-type">' + a.type + '</td>' +
+            '<td>' + (CAT_LABEL[a.category] || a.category) + '</td>' +
+            '<td class="num">' + hrs(a.pic) + '</td>' +
+            '<td class="num">' + hrs(a.dual_given) + '</td>' +
+            '<td class="num">' + hrs(a.turbine_sic) + '</td>' +
+            '<td class="num">' + hrs(a.dual_received) + '</td>' +
+            '<td class="num">' + hrs(a.other) + '</td>' +
+            '<td class="num h-total">' + hrs(a.total) + '</td>' +
+            '<td>' + a.last_flown + tag + '</td>' +
+          '</tr>';
         }).join('');
 
         await renderMinimums(p.minimums_raw);
+        await renderAnalysis();
 
       } catch (err) {
         document.getElementById('metaRow').innerHTML =
           '<div class="meta-chip">No propel.json yet &mdash; push a logbook.txt update to generate it.</div>';
-        document.getElementById('histList').innerHTML = '<div>Not available.</div>';
+        document.getElementById('histList').innerHTML = '<tr><td colspan="9" style="text-align:center;color:#9ab0c8;">Not available.</td></tr>';
       }
     })();
 
@@ -303,6 +349,34 @@
         bar('PIC + Qualifying SIC', raw.pic_plus_qualifying_sic, targets.pic.target, targets.pic.note) +
         bar('PIC Cross Country', raw.pic_cross_country, targets.pic_cross_country.target) +
         bar('PIC Night', raw.pic_night, targets.pic_night.target);
+    }
+
+    // ── Claude's written analysis — refreshed manually, not on a timer ──
+    async function renderAnalysis() {
+      var body = document.getElementById('analysisBody');
+      var dateEl = document.getElementById('analysisDate');
+      var a;
+      try {
+        a = await fetch('propel-analysis.json?_=' + Date.now()).then(function(r){ return r.json(); });
+      } catch (e) {
+        body.innerHTML = '<div class="note">propel-analysis.json not found yet.</div>';
+        return;
+      }
+      dateEl.textContent = 'Written ' + a.generated;
+
+      function row(cls, item) {
+        return '<div class="analysis-row ' + cls + '">' +
+          '<div class="analysis-label">' + item.label + '</div>' +
+          '<div class="analysis-body">' + item.body + '</div>' +
+        '</div>';
+      }
+
+      body.innerHTML =
+        row('verify', a.verify_first) +
+        row('stalled', a.stalled) +
+        row('resolving', a.resolving_naturally) +
+        row('leverage', a.highest_leverage) +
+        row('lagging', a.lagging);
     }
 
     // ── Drop-zone: client-side CSV preview/conversion, PDF guidance ──
