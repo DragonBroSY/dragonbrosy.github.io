@@ -1,0 +1,34 @@
+Standard Terminal Arrival and Climb, Descent, and Cruise Clearances.
+
+STANDARD TERMINAL ARRIVAL, or STAR. A STAR is an ATC-coded arrival procedure that serves as a transition between the enroute structure and a point from which an approach to landing can be made. Transition routes connect enroute fixes to the basic STAR procedure. STARs are usually named after the fix at which the basic procedure begins. As with a SID, pilots can state "NO STARs" in the remarks section of the flight plan to avoid getting a clearance containing a STAR. You do not have to accept a STAR, but once accepted, you must comply with it.
+
+STARs may be based on conventional navaids or RNAV capability. RNAV STARs are normally designed with RNAV 1, RNP 1, or Advanced RNP navigation specifications, and are identified by "RNAV" in the title.
+
+STARs help to reduce pilot/controller workload, minimize radio communications, and simplify clearance delivery.
+
+Flying a STAR: comply with lateral routing and published speed restrictions on the procedure, unless otherwise instructed by ATC. Do not descend until authorized by ATC.
+
+"Descend via [the STAR's name]" authorizes pilots to, per AIM 5-4-1: descend at the pilot's discretion to meet published restrictions and laterally navigate on a STAR; when cleared to a waypoint depicted on a STAR, descend from a previously assigned altitude at the pilot's discretion to the altitude depicted at that waypoint; and once established on the depicted arrival, descend and meet all published or assigned altitude and/or speed restrictions. A climb or descend via clearance deletes previously assigned speed restrictions — pilots must still comply with speed restrictions published in the procedure.
+
+"Expect [altitude or Flight Level]": not a clearance, used for planning purposes only. Pilots must not descend to an "expect" altitude without additional ATC clearance.
+
+"Maintain [altitude]": normally preceded by the phrase "climb and" or "descend and." The pilot should begin the climb or descent to the assigned altitude upon receipt of the clearance. In the US, any published restrictions on a STAR above the assigned altitude are cancelled.
+
+"Cross [fix] at [altitude]," or "at or above/below [altitude]": start the climb or descent at the pilot's discretion and comply with the crossing restriction.
+
+CRUISE CLEARANCE. A "cruise clearance" can be issued by ATC to allocate a block of airspace to the flight. This airspace begins at the minimum IFR altitude and extends to, and includes, the altitude specified in the clearance. Within this block, you are free to climb and descend; however, once you start descending and verbally report leaving an altitude, you may not return to it without additional ATC clearance. A cruise clearance also allows you to begin an approach at the destination without receiving an additional "cleared for approach" clearance. However, this clearance does not allow the pilot to descend under IMC below the applicable minimum IFR altitudes, nor does it imply ATC is exercising control over aircraft in Class G airspace. Example phraseology: "November 1-2-3-4-5, cruise 6 thousand." Reference: Pilot/Controller Glossary.
+
+IFR ALTITUDES. Minimum IFR Altitudes, Section 91.177: except for takeoff or landing, or otherwise authorized by the FAA, no person may operate an aircraft under IFR below the minimum altitude prescribed for the segment being flown, or if none: in mountainous areas, 2,000 feet above the highest obstacle within a horizontal distance of 4 nautical miles from the course; in non-mountainous areas, 1,000 feet above the highest obstacle within 4 nautical miles from the course.
+
+IFR altitude definitions, Section 91.177 and the Pilot/Controller Glossary:
+- DA/H, Decision Altitude/Height: the altitude, MSL, or height above the runway threshold, on a vertically guided instrument approach procedure such as ILS, LNAV/VNAV, or LPV, at which the pilot must decide whether to continue the approach or go around.
+- MAA, Maximum Authorized Altitude: annotated, for example, "MAA-17000" on IFR charts.
+- MCA, Minimum Crossing Altitude: the lowest altitude at certain fixes that an airplane must cross when flying in the direction of a higher MEA.
+- MDA/H, Minimum Descent Altitude/Height: the lowest altitude, MSL, or height above the runway threshold, to which descent is authorized on a non-precision approach until the pilot sees the visual references required for landing.
+- MEA, Minimum Enroute Altitude: the lowest published altitude between radio fixes which assures acceptable navigational signal coverage and meets obstacle clearance requirements. An MEA gap establishes an area of loss in navigational coverage, annotated "MEA GAP" on IFR charts.
+- MOCA, Minimum Obstruction Clearance Altitude: the lowest published altitude in effect between radio fixes on VOR airways, off-airway routes, or route segments, which meets obstacle clearance requirements for the entire route segment and assures acceptable navigational signal coverage only within 22 nautical miles of a VOR. If both an MEA and a MOCA are prescribed for a route segment, a person may operate an aircraft lower than the MEA, down to but not below the MOCA, provided the applicable navigation signals are available — for aircraft using VOR navigation, this applies only within 22 nautical miles of the VOR. Section 91.177.
+- MORA, Minimum Off Route Altitude, a Jeppesen chart value: Route MORA provides obstruction clearance within 10 nautical miles to either side of airway centerlines and within a 10 nautical mile radius at the ends of airways. Grid MORA provides obstruction clearance within a latitude/longitude grid block.
+- MRA, Minimum Reception Altitude: the lowest altitude on an airway segment where an intersection can be determined using radio navigational aids.
+- MTA, Minimum Turning Altitude: provides vertical and lateral obstacle clearance in turns over certain fixes, annotated with the MCA "X" icon and a note describing the restriction.
+- MVA, Minimum Vectoring Altitude: the lowest altitude at which an IFR aircraft will be vectored by a radar controller, except as otherwise authorized for radar approaches, departures, and missed approaches. MVAs may be lower than the minimum altitudes depicted on aeronautical charts, such as MEAs or MOCAs.
+- OROCA, Off Route Obstruction Clearance Altitude: provides obstruction clearance with a 1,000 foot buffer in non-mountainous terrain and 2,000 feet in mountainous areas. OROCA may not provide navigation or communication signal coverage. Designated mountainous areas are defined in 14 CFR Part 95 by latitude/longitude coordinates.

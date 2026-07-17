@@ -1,0 +1,48 @@
+Pilot Qualifications.
+
+WHEN IS AN INSTRUMENT RATING REQUIRED? Section 61.3.
+- When acting as PIC under IFR, or in weather conditions less than prescribed for VFR.
+- When carrying passengers for compensation or hire on cross-country flights in excess of 50 nautical miles, or at night. Section 61.133.
+- For flight in Class A airspace. Section 91.135.
+- For Special VFR between sunset and sunrise. Section 91.157.
+
+LOGGING INSTRUMENT TIME, Section 61.51. A person may log instrument time only for that flight time when the person operates the aircraft solely by reference to instruments, under actual or simulated instrument flight conditions. An authorized instructor may log instrument time when conducting instrument flight instruction in actual instrument flight conditions.
+
+A flight simulator or FTD may be used to meet flight review requirements as long as it is used in an approved course by a training center under Part 142, and represents an aircraft for which the pilot is rated.
+
+MINIMUM AERONAUTICAL EXPERIENCE, Section 61.65:
+- 50 hours cross-country PIC time, of which 10 hours must be in airplanes.
+- 40 hours actual or simulated instrument time, of which 15 hours must be with a CFII, including one cross-country flight of: 250 nautical miles along airways or by directed ATC routing; an instrument approach at each airport; 3 different kinds of approaches using navigation systems; and conducted with a filed IFR flight plan.
+- 3 hours of instrument flight training in the last 2 calendar months prior to the practical test.
+
+TO CARRY PASSENGERS AS PIC, Section 61.57: 3 takeoffs and landings in category, class, and type if a type rating is required, in the last 90 days. For periods between 1 hour after sunset and 1 hour before sunrise: 3 takeoffs and landings to a full stop within that same window. The takeoffs and landings may be accomplished in a full flight simulator or FTD if approved for landings and used in a Part 142 training center. See exceptions in 61.57(e) for pilots operating under Part 121, 125, 135, and PIC of turbine-powered airplanes with more than one flight crewmember.
+
+TO ACT AS PIC UNDER IFR, or in weather conditions less than VFR minimums, the "6 HITS" rule, Section 61.57(c). Within the 6 calendar months preceding the month of flight, you performed and logged, in actual or simulated conditions: 6 instrument approaches, holding procedures and tasks, and intercepting and tracking courses through the use of navigational electronic systems. These tasks can be completed in a full flight simulator, ATD, or FTD, provided the device represents the category of aircraft for the instrument rating privileges to be maintained, and the pilot performs the tasks and iterations in simulated instrument conditions — a flight instructor is not needed. Use of an approved full flight simulator or FTD, if trained by an authorized instructor: maximum 30 hours if instrument time was completed under Part 142, maximum 20 hours if not. Use of an FAA-approved Aviation Training Device, if trained by an authorized instructor: maximum 10 hours of instrument time if a Basic ATD, maximum 20 hours if an Advanced ATD. No more than 20 hours of total instrument time can be credited in a full flight simulator, FTD, or ATD, except for the 30 hour exception under Part 142.
+
+RECENCY OF EXPERIENCE.
+
+TO ACT AS PIC, Section 61.56: a flight review is required since the beginning of the 24 calendar months before the month of flight, in an aircraft for which the pilot is rated. Consists of a minimum of 1 hour of flight training and 1 hour of ground training, conducted by an authorized instructor.
+
+The flight review can be substituted by: a proficiency check or practical pilot test for a pilot certificate, rating, or operating privilege, conducted by an approved examiner, pilot check airman, or US Armed Force; a practical test conducted by an examiner for a flight instructor certificate, additional rating, renewal, or reinstatement; or completion of one or more phases of the FAA-sponsored pilot proficiency award program, WINGS. Flight instructor renewal under Part 61.197 exempts the pilot from the ground portion of the flight review.
+
+No "6 HITS" logged looking back six months? You have an additional 6 months to regain currency by performing the "6 HITS" with a safety pilot.
+
+Safety pilot requirements: holds at least a private pilot certificate with the appropriate category and class, and a valid medical or BasicMed; has adequate vision forward and to each side of the aircraft; and the aircraft must have a dual control system.
+
+More than 6 months since IFR current? An Instrument Proficiency Check, or IPC, is required — administered by a CFII, examiner, or other approved person. Guidelines are in the ACS. Some IPC tasks, but not all, can be conducted in an FTD or ATD — see the ACS. To meet recent instrument experience requirements, the following must be recorded in the person's logbook: location and type of each instrument approach accomplished, and the name of the safety pilot, if required.
+
+The IPC must cover these areas of operation: air traffic control clearances and procedures; flight by reference to instruments; navigation systems; instrument approach procedures; emergency operations; and post-flight procedures.
+
+IFR RECENCY TIMELINE, summarized: looking back 6 calendar months from the month of flight, if you performed the "6 HITS," or had an IPC or an instrument checkride in an appropriate aircraft for the rating being exercised, you are IFR current. If not, you enter a grace period: for the next 6 additional calendar months, you may regain currency by performing the "6 HITS" with a safety pilot, in simulated IMC, or in an FFS, FTD, or ATD. If no "6 HITS," IPC, or checkride is logged after that additional 6 months has also expired — 12 calendar months total — an IPC is the only way to reestablish currency.
+
+IFR RECENCY OF EXPERIENCE EXEMPTIONS. A PIC who is actively employed by a Part 121 or 135 operator is exempt from the IFR recency of experience requirements of Part 61.57 when operating under Part 91, 121, or 135, as applicable, for that operator, as long as they comply with the recency of experience requirements applicable for that operation. For example, a Part 121 airline pilot does not need to log "6 HITS" to operate under Part 91 or 121 for that airline, as long as they are an active pilot with the company and current with that airline's FAA-approved training schedule. However, they are not IFR current for flying outside the airline unless they also comply with the 6 HITS within 6 months rule.
+
+USE OF FULL FLIGHT SIM, FTD, OR ATD FOR ACQUIRING INSTRUMENT AERONAUTICAL EXPERIENCE, Section 61.51. For training towards a certificate or rating, an authorized instructor must be present to observe and sign the person's logbook to verify the time and content of the session. For IFR recency requirements, log the training device, time, and content. References: Section 61.51, Section 61.56, Section 61.57, Section 91.109, Instrument-Airplane ACS.
+
+LOGGING INSTRUMENT APPROACH PROCEDURES — REQUIREMENTS:
+1. You must operate the aircraft, FFS, ATD, or FTD solely by reference to instruments, Section 61.51(g)(1). A flight instructor may log an IAP conducted by the student in actual IMC — see FAA letter to Levy, 2008.
+2. Be established on each required segment of the IAP down to its published minimums, MDA or DA. The Initial, starting at the IAF, Intermediate, and Final approach segments are required for logging the approach, unless radar vectored to final by ATC — in simulated IMC, vectors from the safety pilot are also accepted.
+3. If conducted in simulated IMC in an aircraft, or in an FFS, ATD, or FTD, simulated conditions must continue down to the MDA or DA.
+4. In an aircraft, the flight must be in actual or simulated IMC.
+5. In an aircraft, if conditions change from actual IMC to VMC during the final approach segment, you can still log the approach.
+Reference: FAA INFO 15012, 2015.

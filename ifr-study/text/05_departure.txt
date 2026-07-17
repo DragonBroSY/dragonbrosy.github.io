@@ -1,0 +1,34 @@
+Departure Procedures.
+
+DEPARTURE PROCEDURES (DP), AIM 5-2-9. DPs ensure obstacle clearance, provided the aircraft: crosses the departure end of the runway at least 35 feet AGL, reaches 400 feet AGL before turning, and climbs at least 200 feet per nautical mile, or as published on the chart. To convert feet-per-nautical-mile to feet-per-minute: feet per minute equals feet-per-nautical-mile times groundspeed, divided by 60. Pilots are encouraged to file and fly a DP at night, during marginal VMC, or in IMC.
+
+Two types of DP:
+- Obstacle Departure Procedure, or ODP: provides obstacle clearance only. Printed either textually or graphically. Graphic ODPs are titled "(OBSTACLE)."
+- Standard Instrument Departure, or SID: provides obstacle clearance and reduces pilot/controller workload by simplifying ATC clearances and minimizing radio communications. May include special radio failure procedures. SIDs are always published graphically.
+
+DPs are also categorized by required equipment: Non-RNAV DP, using ground-based navigation such as VOR, DME, and NDB. RNAV DP, requiring at least RNAV 1 performance, identified with the word "RNAV" in the title. RADAR DP, using ATC radar vectors to a route, navaid, or fix after departure, annotated "RADAR REQUIRED."
+
+You are not required to accept a SID — to avoid it, state "NO SIDs" in the flight plan's remarks section. Transition routes connect the end of the basic SID procedure to the enroute structure. DPs are published in the "Take-Off Minimums and (Obstacle) Departure Procedures" section of the Terminal Procedure Publication, or TPP.
+
+DIVERSE VECTOR AREA. At some locations with an ODP, Diverse Vector Areas, or DVAs, are available to allow radar vectors in lieu of the pilot flying the ODP. A DVA allows ATC to vector aircraft below the Minimum Vectoring Altitude, or MVA, or Minimum IFR Altitude, or MIA, immediately after takeoff while still meeting obstacle clearance requirements. DVA information is found in the "Take-Off Minimums and (Obstacle) Departure Procedures" section of the TPP, including a statement that initial headings are provided by ATC and any applicable climb gradients.
+
+CLIMB OVER AIRPORT, or VCOA. A departure option for IFR aircraft in VMC. The pilot visually conducts climbing turns over the airport up to the published "climb to" altitude, then proceeds to the instrument portion of the departure. Designed to avoid obstacles beyond 3 statute miles from the departure end of the runway, as an alternative to complying with climb gradients greater than the standard 200 feet per nautical mile. Advise ATC as early as possible prior to departure of the intent to fly a VCOA. Published in the "Take-Off Minimums and (Obstacle) Departure Procedures" section of the TPP, and may appear as an option on graphic ODPs.
+
+IFR DEPARTURE CLEARANCE, the mnemonic "CRAFT":
+- C - Clearance limit.
+- R - Route.
+- A - Altitude.
+- F - Frequency, for departure.
+- T - Transponder code.
+
+Clearance void time: the time at which your clearance is void, after which you may not take off. You must notify ATC within 30 minutes after the void time if you did not depart.
+
+"Hold for release": you may not take off until being released for IFR departure. Release time is the earliest time the aircraft may depart under IFR.
+
+Expect Departure Clearance Time, or EDCT: a runway release time given under traffic management programs at busy airports. Aircraft are expected to depart no earlier and no later than 5 minutes from the EDCT.
+
+Abbreviated departure clearance: "Cleared as filed." AIM 5-2-6.
+
+CLIMB/DESCENT CLEARANCES. "Climb via [the SID's name]" is an abbreviated clearance requiring compliance with the procedure's lateral path, associated speed, and altitude restrictions along the cleared route or procedure, per AIM 5-2-9. Clearance to "climb via" authorizes the pilot to: when used in the IFR departure clearance, in a PDC, DCL, or when cleared to a waypoint depicted on a SID, join the procedure after departure or resume the procedure; when vertical navigation is interrupted and an altitude is assigned that is not contained on the published procedure, to climb from that previously-assigned altitude at the pilot's discretion to the altitude depicted for the next waypoint, once re-established on the procedure; and once established on the depicted departure, to navigate laterally and climb to meet all published or assigned altitude and speed restrictions.
+
+When an IFR clearance includes a STAR, pilots must maintain the last assigned altitude until receiving authorization to descend, so as to comply with all published or issued altitude restrictions.

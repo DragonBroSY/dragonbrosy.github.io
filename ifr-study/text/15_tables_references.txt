@@ -1,0 +1,20 @@
+Tables and References.
+
+Note: this chapter's source material is mostly dense numeric lookup tables — better referenced directly in the PDF than memorized by ear. Here are the facts worth knowing by heart:
+
+TRANSPONDER EMERGENCY CODES: 7500 means aircraft hijacking. 7600 means radio failure. 7700 means emergency.
+
+VOR TIME AND DISTANCE: Distance off course equals 200 feet per dot per nautical mile from the VOR. Distance to the station equals true airspeed times the minutes between bearings, divided by the degrees of bearing change. Time in minutes to the station equals the seconds of bearing change, divided by the degrees of bearing change.
+
+STANDARD RATE TURN, angle of bank calculation: true airspeed divided by 10, times 1.5. For example, at 120 knots true airspeed: 120 divided by 10 is 12; 12 times 1.5 equals 18 degrees of bank.
+
+AIRCRAFT APPROACH CATEGORIES, based on 1.3 times stall speed in landing configuration: Category A, less than 90 knots. Category B, 91 to 120 knots. Category C, 121 to 140 knots. Category D, 141 to 165 knots. Category E, greater than 165 knots. These categories determine circling approach maneuvering radius and minimums — see the approach chart or AIM 5-4-20 for the specific radius and altitude tables.
+
+SPECIAL VFR, Section 91.157: an ATC clearance allowing operation under VFR with weather conditions lower than standard VFR minimums. Available below 10,000 feet MSL within the airspace contained by the upward extension of the lateral boundaries of the controlled airspace designated to the surface of an airport. Requires at least 1 statute mile officially reported visibility and that the aircraft remains clear of clouds. For night Special VFR, from sunset to sunrise, an instrument rating and instrument-equipped aircraft are required.
+
+FLIGHT CATEGORIES used in Aviation Weather Center products, by ceiling and visibility:
+- LIFR, Low IFR, shown in magenta: ceiling less than 500 feet and/or visibility less than 1 statute mile.
+- IFR, shown in red: ceiling 500 feet to below 1,000 feet AGL, and/or visibility 1 to less than 3 statute miles.
+- MVFR, Marginal VFR, shown in blue: ceiling 1,000 to 3,000 feet AGL, and/or visibility 3 to 5 statute miles.
+- VFR, shown in green: ceiling greater than 3,000 feet AGL and visibility greater than 5 statute miles.
+By definition, IFR is ceiling less than 1,000 feet AGL and/or visibility less than 3 miles, with LIFR as a sub-category. VFR is ceiling greater than or equal to 3,000 feet AGL and visibility greater than or equal to 5 statute miles, with MVFR as a sub-category.

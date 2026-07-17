@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IFR Study Guide — DragonBroSY</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { overflow-x: hidden; }
+    body { background: #f5f7fa; color: #1a2a3a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; max-width: 100vw; }
+    .nav { background: #1a3a6b; border-bottom: 3px solid #c8a400; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-brand { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: #fff; font-size: 1.05rem; font-weight: 800; }
+    .nav-brand .wing { font-size: 1.2rem; }
+    .nav-links { display: flex; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.73rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; padding: 0 0.9rem; height: 56px; display: flex; align-items: center; border-bottom: 3px solid transparent; margin-bottom: -3px; transition: color 0.15s, border-color 0.15s; }
+    .nav-links a:hover { color: #fff; border-bottom-color: #c8a400; }
+    .nav-links a.active { color: #fff; border-bottom-color: #c8a400; }
+    @media (max-width: 640px) {
+      .nav { padding: 0 1rem; }
+      .nav-brand { font-size: 0.9rem; flex-shrink: 0; }
+      .nav-links { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; max-width: 58vw; }
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links a { padding: 0 0.55rem; font-size: 0.64rem; flex-shrink: 0; }
+    }
+    .main { max-width: 780px; margin: 2.5rem auto; padding: 0 1.1rem; flex: 1; min-width: 0; }
+    h1 { font-size: 1.8rem; font-weight: 800; color: #1a2a3a; letter-spacing: -0.02em; margin-bottom: 0.4rem; }
+    .subtitle { font-size: 0.84rem; color: #6a8aaa; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid #c8a400; }
+    .chapter { background: #fff; border: 1px solid #dde5ef; border-left: 3px solid #c8a400; border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 0.75rem; }
+    .chapter-num { font-size: 0.6rem; color: #1a3a6b; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.3rem; font-weight: 700; }
+    .chapter-title { font-size: 0.9rem; font-weight: 700; color: #1a2a3a; margin-bottom: 0.6rem; }
+    .chapter audio { width: 100%; height: 34px; }
+    .chapter-links { margin-top: 0.55rem; }
+    .chapter-links a { font-size: 0.72rem; color: #6a8aaa; text-decoration: none; font-weight: 600; }
+    .chapter-links a:hover { color: #1a3a6b; text-decoration: underline; }
+    footer { background: #1a3a6b; border-top: 3px solid #c8a400; text-align: center; font-size: 0.6rem; color: rgba(255,255,255,0.45); padding: 1.4rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a class="nav-brand" href="/"><span class="wing">&#9992;</span> DragonBroSY</a>
+    <div class="nav-links">
+      <a href="https://dragonbrosy.github.io/Elevate-Courses/">Courses</a>
+      <a href="https://dragonbrosy.github.io/Elevate-Courses/feed.xml">Podcast</a>
+      <a href="ifr-study.html" class="active">IFR Study</a>
+      <a href="/#logbook">Logbook</a>
+      <a href="propel.html">Propel</a>
+      <a href="log.html">Log Flight</a>
+      <a href="/#weather">Weather</a>
+      <a href="https://github.com/DragonBroSY">GitHub</a>
+    </div>
+  </nav>
+
+  <div class="main">
+    <h1>IFR Study Guide</h1>
+    <p class="subtitle">Narrated chapter-by-chapter review for the instrument rating. Listen inline or read the transcript.</p>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 01</div>
+      <div class="chapter-title">Pilot Qualifications</div>
+      <audio controls preload="none" src="ifr-study/audio/01_pilot_qualifications.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/01_pilot_qualifications.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 02</div>
+      <div class="chapter-title">Aeronautical Decision Making</div>
+      <audio controls preload="none" src="ifr-study/audio/02_aeronautical_decision_making.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/02_aeronautical_decision_making.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 03</div>
+      <div class="chapter-title">Personal Documents, Aircraft Documents, and Briefings</div>
+      <audio controls preload="none" src="ifr-study/audio/03_documents_briefings.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/03_documents_briefings.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 04</div>
+      <div class="chapter-title">Preflight Info, IFR Flight Plan, Fuel, and Alternates</div>
+      <audio controls preload="none" src="ifr-study/audio/04_preflight_and_flight_plan.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/04_preflight_and_flight_plan.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 05</div>
+      <div class="chapter-title">Departure Procedures</div>
+      <audio controls preload="none" src="ifr-study/audio/05_departure.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/05_departure.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 06</div>
+      <div class="chapter-title">Standard Terminal Arrival and Climb, Descent, and Cruise Clearances</div>
+      <audio controls preload="none" src="ifr-study/audio/06_arrival_and_clearances.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/06_arrival_and_clearances.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 07</div>
+      <div class="chapter-title">Flight Instruments</div>
+      <audio controls preload="none" src="ifr-study/audio/07_flight_instruments.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/07_flight_instruments.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 08</div>
+      <div class="chapter-title">Minimum Equipment Required for Flight</div>
+      <audio controls preload="none" src="ifr-study/audio/08_minimum_equipment.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/08_minimum_equipment.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 09</div>
+      <div class="chapter-title">Radio Navigation</div>
+      <audio controls preload="none" src="ifr-study/audio/09_radio_navigation.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/09_radio_navigation.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 10</div>
+      <div class="chapter-title">Attitude Instrument Flying</div>
+      <audio controls preload="none" src="ifr-study/audio/10_attitude_instrument_flying.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/10_attitude_instrument_flying.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 11</div>
+      <div class="chapter-title">Required Reports Under IFR</div>
+      <audio controls preload="none" src="ifr-study/audio/11_required_reports.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/11_required_reports.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 12</div>
+      <div class="chapter-title">Holding Patterns</div>
+      <audio controls preload="none" src="ifr-study/audio/12_holding_patterns.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/12_holding_patterns.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 13</div>
+      <div class="chapter-title">Instrument Approach Procedures</div>
+      <audio controls preload="none" src="ifr-study/audio/13_instrument_approaches.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/13_instrument_approaches.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 13B</div>
+      <div class="chapter-title">Airspace</div>
+      <audio controls preload="none" src="ifr-study/audio/13b_airspace.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/13b_airspace.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 13C</div>
+      <div class="chapter-title">Weather Information Sources and Briefings</div>
+      <audio controls preload="none" src="ifr-study/audio/13c_weather_sources.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/13c_weather_sources.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 14</div>
+      <div class="chapter-title">Weather Hazards</div>
+      <audio controls preload="none" src="ifr-study/audio/14_weather_hazards.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/14_weather_hazards.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 15</div>
+      <div class="chapter-title">Tables and References</div>
+      <audio controls preload="none" src="ifr-study/audio/15_tables_references.mp3"></audio>
+      <div class="chapter-links"><a href="ifr-study/text/15_tables_references.txt" target="_blank">Read transcript</a></div>
+    </div>
+  </div>
+
+  <footer>DragonBroSY &middot; Flight Training Log</footer>
+</body>
+</html>

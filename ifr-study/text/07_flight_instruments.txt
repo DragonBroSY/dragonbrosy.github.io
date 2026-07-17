@@ -1,0 +1,140 @@
+Flight Instruments.
+
+FLIGHT INSTRUMENTS
+GYROSCOPIC INSTRUMENTS
+- Two principles of a gyroscope:
+- Rigidity in space, and
+- precession.
+Attitude Indicator (AI)
+Operates on the principle of rigidity in space. Shows bank and pitch information. Older AIs may have a
+tumble limit. Should show correct attitude within 5 minutes of starting the engine. Normally vacuum-driven in
+GA aircraft, may be electrical in others. May have small acceleration/deceleration errors (accelerate-slight
+pitch up, decelerate- pitch down) and roll-out errors (following a 180 turn shows a slight turn to the opposite
+direction).
+Heading indicator (HI)
+Operates on the principle of rigidity in space. It only reflects changes in heading, but cannot measure the
+heading directly. You have to calibrate it with a magnetic compass in order for it to indicate correctly. HIs may
+be slaved to a magnetic heading source, such as a flux gate, and sync automatically to the present heading.
+Normally powered by the vacuum system of GA aircraft.
+Turn Indicators
+Operates on the principle of precession.
+- Turn coordinators show rate-of-turn and rate of roll.
+- Turn-and-slip indicators show rate-of-turn only.
+PITOT-STATIC INSTRUMENTS
+Altimeter
+- An aneroid barometer that shows the height above a given pressure level, based on standard pressure
+lapse rate of 1000’ per inch of mercury.
+- A stack of sealed aneroid wafers expand and contract with changes in atmospheric pressure received from
+the static port.
+- A mechanical linkage between the aneroid and the display translates the sensed pressure to an altitude
+indication.
+- An altimeter setting knob (on a “sensitive altimeter”, which are most aircraft altimeters) allows the pilot to
+adjust the current pressure to the current altimeter setting published locally (available from ATIS, METAR or
+ATC).
+- The pressure setting is displayed in the “Kollsman Window” in mb and/or inches of mercury (Hg)
+- In the US, when operating below 18, 000’ MSL regularly set the altimeter to a station within 100 NM.
+Above 18, 000’ MSL, the altimeter should be set to thestandard sea level pressure of 29.92” Hg, and
+operate in Flight Levels (FL).
+- “High to Low - Watch out below!”. Use caution when flying from high pressure to low pressure areas. If
+altimeter setting is not updated, altitude will indicate higher, causing the pilot to fly lower than desired. Flying
+from hot to cold areas results in the same error.
+Types of altitude
+- Indicated altitude – Uncorrected altitude indicated on the dial when set to local pressure setting (QNH).
+- Pressure altitude – Altitude above the standard 29.92. Hg plane (QNE). Used when flying above the
+transition altitude (18, 000’ in the US)
+- Density altitude – Pressure alt. corrected for nonstandard temperature. Used for performance calculations.
+- True altitude – Actual altitude above Mean Sea Level (MSL).
+- Absolute altitude – Height above airport elevation (QFE).
+Vertical Speed Indicator (VSI)
+- Indicates rate-of-climb in fpm (accurate after a 6-9 sec. lag), and rate trend (immediately with rate
+change).
+- A diaphragm inside the instrument is connected directly to the static source.
+- The area outside the diaphragm also receives static pressure, but via a calibrated leak (a restricted orifice).
+- This configuration essentially responds to static pressure change over time.
+- As the diaphragm expands or contracts, a mechanical linkage moves the pointer needle to display the
+current rate of climb to the pilot.
+- Instantaneous VSI (IVSI) solves the lag issue with the addition of vertical accelerometers.
+
+Pitot-Static Instruments – Continued
+Airspeed Indicator (ASI)
+- The airspeed indicator measures the difference between impact (ram) air pressure from the pitot tube and ambient pressure
+from the static port. The result pressure is called dynamic pressure and corresponds to airspeed.
+- Dynamic Pressure (airspeed) = Impact Pressure – Static pressure.
+- A diaphragm in the instrument receives ram pressure from the pitot tube. The area outside the diaphragm is sealed and
+connected to the static port. A mechanical linkage converts the expansion and contraction of the diaphragm to airspeed shown
+on the display dial.
+Types of speed
+- Indicated airspeed (IAS) – indicated on the airspeed indicator
+- Calibrated airspeed (CAS) – IAS corrected for instrument & position errors.
+- Equivalent airspeed (EAS) – CAS corrected for compressibility error.
+- True airspeed (TAS) – Actual speed through the air. TAS is CAS corrected for nonstandard temperature and pressure. At
+supersonic and transonic speeds, TAS is more accurately derived from EAS, rather than CAS.
+- Mach number – The ratio of TAS to the local speed of sound.
+- Ground speed – Actual speed over the ground. TAS corrected for wind conditions.
+AIRSPEED INDICATOR MARKINGS
+- White arc - Flap operating range. Starts at Vs0; ends at Vfe
+- Green arc - Normal operating range.Starts at Vs1; ends at Vno
+- Yellow arc - Caution range. Fly only in smooth air and only with caution.
+- Red line - Vne
+V-SPEEDS
+- Va - Design maneuvering speed
+- Vne - Never Exceed Speed
+- Vs - Stall speed, clean config.
+- Vx - Best angle of climb
+- Vs0 - Stall speed landing config.
+- Vy - Best rate of climb
+- Vs1 - Stall speed specific config.
+- Vfe - Max flap extended speed.
+- Vno - Max structural cruise speed
+STATIC PORT BLOCKAGE
+- Airspeed indicator– Indicates correctly only at the blockage altitude.
+- Higher altitudes → airspeed indicates lower than it should.
+- Lower altitudes → Indicates higher than it should.
+- Altimeter – will freeze on the altitude where it was blocked.
+- VSI – freezes on zero.
+- After verifying a blockage in the static port, you should use an alternate static source or break the VSI window (in which
+case, expect reverse VSI information).
+- When using the alternate static source: (a lower static pressure is measured)
+- Airspeed indicator – indicate a faster speed than it should.
+- Altimeter – indicate higher than it should.
+- VSI – momentarily show a climb.
+PITOT TUBE BLOCKAGE
+The only instrument affected is the airspeed indicator.
+- Ram air inlet clogged and drain hole open? Airspeed drops to zero.
+- Both air inlet and drain hole are clogged? The airspeed indicator will act as an altimeter, and will no longer be reliable.
+- When suspecting a pitot blockage, consider the use of pitot heat to melt ice that may have formed in or on the pitot tube.
+GENERIC INSTRUMENT TAXI CHECK
+- Airspeed – 0 KIAS. - VSI – 0 fpm.
+- Turn coordinator – ball centered and wings level when not - Magnetic compass – swings freely, full of fluid, shows
+turning. On turns: shows turn in correct direction, ball goes to
+opposite direction of the turn.
+- Attitude – Correct pitch attitude and bank angle ±°5 within 5
+known headings and deviation card is installed. Marker
+beacons – Tested.
+minutes of engine start (if vacuum). - NAV & Comm – Set.
+- Heading indicator – Set and shows correct headings. - GPS – Checked and set.
+- Altimeter – Set to local altimeter settings or to airport elevation - EFIS cockpits – Check PFD/MFD/EICAS for ‘X’s,
+(Section 91.121). Shows surveyed elevation ±75 ft (AIM 7-2-3). messages, warnings and symbols.
+
+ MAGNETIC COMPASS ERRORS & LIMITATIONS – “DVMONA”
+- D-Deviation - M- Magnetic dip - N- North/south turn errors -
+- O- Oscillation Northern hemisphere: UNOSUndershoot North/ Overshoot South
+- V- Variation
+- A- Acceleration errors -
+Northern hemisphere: ANDSAccelerate North/ Decelerate South
+ELECTRONIC FLIGHT INSTRUMENTS
+- Attitude Heading Reference Systems (AHRS) – Provides more accurate and reliable attitude and heading data than
+traditional separate gyro systems. The first AHRS units were very expensive and relied on laser gyros and flux valves. Today
+they are based on solid state technologies (no moving parts) and are cheaper, smaller and easier to maintain.
+- Air Data Computers (ADC) – replaces the mechanical pitot-static instruments. The ADC receives inputs from the pitot, static
+and outside temperature ports and computes airspeed, true airspeed, vertical speed and altitude.
+- Flight director – computes and displays command bars over the attitude indicator to assist the pilot in flying selected heading,
+course or vertical speed.
+- Flight Management System (FMS) – Receives inputs from various sensors and provides guidance to the autopilot and flight
+director throughout the flight. The FMS also automatically monitors and selects the most appropriate navigation source for
+accurate positioning. (GPS, VOR/DME, INS etc.)
+- Electronic Flight Instrument Systems (EFIS) – AKA “Glass cockpit”.
+- Primary Flight Displays (PFD) – Displays flight data such as attitude, altitude, airspeed, VSI and heading as well as rate
+tapes.
+- Multi-Function Displays (MFD) – Displays a variety of information such as moving maps, aircraft system status, weather and
+traffic. It may also be used as a backup for other displays, such as the PFD or EICAS.

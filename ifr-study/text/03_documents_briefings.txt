@@ -1,0 +1,56 @@
+Personal Documents, Aircraft Documents, and Briefings.
+
+PERSONAL DOCUMENTS REQUIRED FOR FLIGHT
+- Pilot Certificate.
+- Medical certificate, or US Driver's license as permitted by Section 61.113 and Section 61.23.
+- Authorized photo ID, such as a passport or driver's license.
+- Restricted Radiotelephone Operator Permit, for flights outside the US.
+
+AIRCRAFT DOCUMENTS REQUIRED FOR FLIGHT, the mnemonic "ARROW":
+- A - Airworthiness certificate.
+- R - Registration certificate.
+- R - Radio station license, for flights outside the US.
+- O - Operating limitations and information, found in the AFM.
+- W - Weight and Balance data, aircraft specific.
+References: Section 21.5, Section 91.103, Section 91.9, Section 91.203, ICAO Article 29.
+
+AIRCRAFT MAINTENANCE INSPECTIONS REQUIRED FOR IFR, the mnemonic "AVIATES":
+- A - Airworthiness Directive, or AD, required inspections. Section 39.
+- V - VOR check every 30 days, for IFR. Section 91.171.
+- I - Inspections, under Section 91.409:
+  - Annual inspection, every 12 calendar months, for all aircraft.
+  - 100-hour, time-in-service, inspection required if carrying a person for hire, other than a crew member, or flight instructing for hire in an aircraft provided by the person giving the instruction. "For hire" refers to the person, not the aircraft: a flight school providing an airplane plus instructor for hire requires the 100-hour inspection; a student-owned aircraft does not; a rental with no pilot or instructor does not.
+  - The 100-hour inspection may be exceeded by up to 10 hours if the aircraft is en route to a place where the inspection can be done. This additional time must be included when computing the next 100-hour inspection.
+  - An annual inspection can substitute for the 100-hour if done within 100 hours of time-in-service.
+  - A progressive inspection schedule, if specifically approved by the FAA, may replace the annual and 100-hour inspections.
+- A - Altimeter, automatic altitude reporting used by the transponder, and static system, every 24 calendar months, for IFR in controlled airspace. Section 91.411.
+- T - Transponder, every 24 calendar months. Section 91.413.
+- E - ELT, Section 91.207, inspected every 12 calendar months. Battery must be replaced after more than 1 hour of cumulative transmitter use, or if 50% of its useful life has expired, or for rechargeable batteries, 50% of the useful life of charge has expired.
+- S - Supplemental Type Certificate, or STC, required inspections.
+Reference: Pilot's Handbook of Aeronautical Knowledge.
+
+BRIEFINGS
+
+PASSENGER BRIEFING, the mnemonic "SAFETY":
+- S - Seat belts fastened for taxi, takeoff, and landing. Shoulder harness fastened for takeoff and landing. Seat position adjusted and locked in place.
+- A - Air vents location and operation. All environmental controls discussed. Action in case of any passenger discomfort.
+- F - Fire extinguisher location and operation.
+- E - Exit doors: how to secure, how to open. Emergency evacuation plan. Emergency and survival kit location and contents.
+- T - Traffic: scanning, spotting, and notifying the pilot. Talking, and sterile flight deck expectations.
+- Y - Your questions? Speak up!
+Reference: Pilot's Handbook of Aeronautical Knowledge.
+
+TAXI BRIEFING, the mnemonic "ARCH":
+- A - Assigned or planned runway.
+- R - Route.
+- C - Crossings and hold short instructions.
+- H - Hot spots and Hazards, such as NOTAMs, closed taxiways or runways, and surface condition.
+
+TAKEOFF BRIEFING, the mnemonic "DEPARTS":
+- D - Departure review, such as takeoff type, initial heading, first fix and course, and clearance readout.
+- E - Establish Expectations, such as who is the flying pilot, who is PIC, and positive transfer of controls.
+- P - Plan and special considerations, such as weather, visibility, terrain, unfamiliar field, and inoperative equipment or MELs.
+- A - Alternate: takeoff alternate if needed, or return plan.
+- R - Runway conditions and length.
+- T - Trouble or Tactics, such as rejected takeoff or engine failure.
+- S - Speak up! Questions or concerns?

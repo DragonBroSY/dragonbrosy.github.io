@@ -1,0 +1,25 @@
+Required Reports Under IFR.
+
+REQUIRED REPORTS UNDER IFR, remembered with the mnemonic phrase "MARVELOUS VFR C500," AIM 5-3-3, Section 91.183, Section 91.187:
+- Missed approach.
+- Airspeed changes of plus or minus 10 knots, or 5% change of filed true airspeed, whichever is greater.
+- Reaching a holding fix — report time and altitude.
+- VFR on top, when an altitude change will be made.
+- ETA changed by plus or minus 2 minutes, or plus or minus 3 minutes in the North Atlantic.
+- Leaving a holding fix or point.
+- Outer marker, or the fix used in lieu of it.
+- Unforecasted weather, Section 91.183.
+- Safety of flight — any other information related to safety of flight, Section 91.183.
+- Vacating an altitude or Flight Level.
+- Final Approach fix.
+- Radio, navigation, or approach equipment failure, Section 91.187.
+
+POSITION REPORT ITEMS REQUIRED IN A NON-RADAR ENVIRONMENT, remembered with the mnemonic "A PTA TEN R," Section 91.183, AIM 5-3-2:
+- Aircraft ID.
+- Position.
+- Time.
+- Altitude.
+- Type of flight plan, except when communicating with ARTCC or Approach control.
+- ETA and name of the next reporting fix.
+- Name only of the next succeeding point along the route of flight.
+- Any pertinent remarks.

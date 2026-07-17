@@ -1,0 +1,40 @@
+Instrument Approach Procedures.
+
+APPROACH CLASSIFICATIONS.
+
+Precision approach: lateral and vertical guidance to a Decision Altitude, or DA. Requires at least 1 statute mile ground visibility and remaining clear of clouds, only at airports with approved instrument approach procedures. Examples: ILS, Instrument Landing System; PAR, Precision Approach Radar; GLS, GBAS Landing System.
+
+Approach with Vertical Guidance, or APV: a precision-like approach flown to a DA with lateral and vertical guidance, but that does not meet full precision approach standards. Examples: RNAV/GNSS approaches using LNAV/VNAV or LPV minima; LDA with Glide Slope.
+
+Non-precision approach: lateral guidance only, flown to an MDA. The pilot assumes responsibility for obstruction clearance. Examples: VOR, NDB, LOC, and RNAV/RNP approaches flown to LNAV or LP minima.
+
+Visual approach: initiated by ATC or the pilot. Requires at least a 1,000 foot ceiling and 3 statute miles visibility — IFR in VMC. The pilot must have either the airport or the traffic to follow in sight, and is responsible for visual separation from any traffic to follow. Cannot be initiated by ATC without the required weather.
+
+Contact approach: requires at least 1 statute mile ground visibility, remaining clear of clouds, and is only available at airports with approved instrument approach procedures. The pilot assumes responsibility for obstruction clearance. Unlike a visual approach, a contact approach can only be requested by the pilot, not initiated by ATC.
+
+Approach type abbreviations: LOC is Localizer. LDA is Localizer-type Directional Aid — identical to a localizer but not aligned with the runway. SDF is Simplified Directional Facility, similar to a localizer with 6 or 12 degree width, which may or may not be aligned with the runway. ASR is Approach Surveillance Radar.
+
+PROCEDURE TURN CONTINUED: the shape of the maneuver is mandatory if a teardrop or hold-in-lieu-of-PT is published; otherwise, only the direction of the turn is mandatory. A teardrop procedure may be published in lieu of a procedure turn — in that case, if no intermediate fix is published, the intermediate segment begins 10 miles prior to the final approach fix. If the navigation facility is located on the airport, the final approach segment starts at the completion of the teardrop turn; if not, the final approach segment begins on the final approach course 10 miles from the facility.
+
+MISSED APPROACH, AIM 5-5-5. Execute a missed approach when: arrival at the MAP or DH with insufficient visual reference to the runway environment, a safe approach is not possible, or you are instructed to do so by ATC.
+
+WHEN CAN YOU DESCEND BELOW MDA OR DA? Section 91.175. Three conditions must all be met:
+1. The aircraft is continuously in a position from which a descent to a landing on the intended runway can be made at a normal rate of descent using normal maneuvers.
+2. The flight visibility, or enhanced flight visibility if equipped, is not less than the visibility prescribed for the approach being used.
+3. At least one of the following visual references for the intended runway is distinctly visible and identifiable to the pilot, except for Category II and III approaches: the approach light system — though the pilot may not descend below 100 feet above the touchdown zone elevation using the approach lights as a reference unless the red terminating bars or red side row bars are also distinctly visible; the threshold; the threshold markings; the threshold lights; the runway end identifier lights; the visual glideslope indicator; the touchdown zone or its markings; the touchdown zone lights; the runway or its markings; or the runway lights.
+
+VISUAL DESCENT POINT, or VDP, AIM 5-4-5. A defined point on the final approach course of a non-precision straight-in approach from which a normal descent from the MDA to the runway touchdown point may begin, provided adequate visual reference is established. Identified by a "V" symbol on the descent profile. If not equipped to identify the VDP, fly the approach as if no VDP was published. Do not descend below the MDA prior to reaching the VDP.
+
+Calculating the VDP when not published, by distance: VDP, in nautical miles from the threshold, equals the MDH divided by 300. For example, given an MDH of 600 feet: 600 divided by 300 equals 2 nautical miles — start the descent 2 nautical miles from the threshold.
+
+By time: divide the MDH by 10 to get the seconds to subtract from the time between the FAF and the MAP. For example, given an MDH of 500 feet and a FAF-to-MAP time of 4 minutes: 500 divided by 10 equals 50 seconds; 4 minutes minus 50 seconds equals 3 minutes 10 seconds — start the descent at 3:10 from the FAF.
+
+VERTICAL DESCENT ANGLE, or VDA, AIM 5-4-5. A computed glide path from the FAF to the runway's threshold crossing height, published for non-precision approaches — typically 3 degrees. FAA policy is to publish a VDA and TCH on all non-precision approaches except those published with vertically guided minimums, such as ILS or LOC runway approaches, or no-FAF procedures without a stepdown fix, such as an on-airport VOR or NDB. A VDA does not guarantee obstacle protection below the MDA in the visual segment, and does not change any non-precision approach requirements — VDAs are advisory only; pilots must still comply with all published altitudes on the procedure.
+
+Rate of descent for a 3 degree glide path: vertical speed in feet per minute equals ground speed times 5. For example, at 120 knots: 120 times 5 equals 600 feet per minute.
+
+For other glide path angles, descent gradient as a percentage equals the tangent of the descent angle times 100. Approximate values: 2 degrees is about 3.5%, 3 degrees is about 5.2%, 4 degrees is about 7%, 5 degrees is about 8.7%. Vertical speed equals ground speed times the descent gradient percentage.
+
+How far to start a descent for a 3 degree glide path: Top of Descent, in nautical miles, equals the altitude to lose in feet divided by 300. For example, with 800 feet to lose from MDA to TCH: 800 divided by 300 equals 2.67 nautical miles — start the descent 2.67 nautical miles from the runway threshold.
+
+For other glide path angles: Top of Descent equals altitude to lose divided by the glide path angle times 100. For example, cruising at Flight Level 350, ATC instructs "cross LGA VOR at Flight Level 240," and the pilot elects a steep 4 degree slope at 380 knots ground speed: altitude to lose is 35,000 minus 24,000, or 11,000 feet. At a 3 degree slope, that's 11,000 divided by 300, or 36.67 nautical miles, starting the descent 36.67 nautical miles from LGA VOR. At the steeper 4 degree slope, vertical speed is 380 times 7, or 2,660 feet per minute, and Top of Descent is 11,000 divided by 400, or 27.5 nautical miles from LGA.

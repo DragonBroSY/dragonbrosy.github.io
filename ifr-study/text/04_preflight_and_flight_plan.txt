@@ -1,0 +1,41 @@
+Preflight Info, IFR Flight Plan, Fuel, and Alternates.
+
+PREFLIGHT INFO REQUIRED FOR IFR, Section 91.103, the mnemonic "NWKRAFT":
+- N - NOTAMs.
+- W - Weather reports and forecasts.
+- K - Known traffic delays as advised by ATC.
+- R - Runway length of intended use.
+- A - Alternatives available if the flight cannot be completed as planned.
+- F - Fuel requirements.
+- T - Takeoff and landing performance data.
+
+IS A DESTINATION ALTERNATE REQUIRED? The "1-2-3" rule, Section 91.169. A destination alternate is always required, unless: an instrument approach is published and available for the destination, AND, for at least 1 hour before to 1 hour after the ETA, the ceiling will be at least 2,000 feet above airport elevation and visibility will be at least 3 statute miles.
+
+IFR FLIGHT PLAN, Section 91.173. Requirement: no person may operate an aircraft in controlled airspace under IFR unless that person has filed an IFR flight plan and received an appropriate ATC clearance. Although technically permitted by Section 91.173, taking off into IMC in uncontrolled airspace, Class G, without a clearance or a release, under certain conditions, was ruled by the NTSB as a violation of Section 91.13, careless or reckless operation, and has gotten pilots in trouble with the FAA — see FAA letter to Lamb, 2016, and NTSB Order EA-3935.
+
+How to file an IFR flight plan: through FSS, by phone at 1-800-WX-BRIEF, over the radio via GCO or RCO, or in person; online, at 1800wxbrief.com or fltplan.com; through an EFB such as ForeFlight; or with ATC directly, over the radio, or by phone if no other means is available.
+
+Pop-up IFR clearances let pilots transition from VFR to IFR, even without a previously filed flight plan as required by Section 91.173(a), under ATC authorization. While filing a flight plan with FSS is preferred, pop-ups allow quickly getting the flight into the system — for example, when weather is deteriorating fast during VFR. They are subject to ATC workload and not guaranteed. You must be at or above the minimum IFR altitude, or climb to it under VFR.
+
+File at least 30 minutes prior to estimated departure. Non-scheduled flights above Flight Level 230 should be filed at least 4 hours before estimated departure time. AIM 5-1-6.
+
+Flight plan cancellation, AIM 5-1-15: at towered airports, automatically canceled by ATC upon landing. At non-towered airports, the pilot must contact ATC or FSS to cancel, by radio or phone. You can cancel anytime in flight if out of IMC and out of Class A airspace.
+
+Preferred IFR Routes are published in the Chart Supplement U.S. The AIM recommends filing a preferred route if one is available. AIM 5-1-6.
+
+MINIMUM WEATHER CONDITIONS REQUIRED AT AN ALTERNATE, Section 91.169. Use the alternate airport minima published in the procedure charts, or if none: for a Precision approach, 600 foot ceiling and 2 statute mile visibility; for a Non-precision approach, 800 foot ceiling and 2 statute mile visibility. If no instrument approach is available at the alternate, ceiling and visibility must allow descent from the MEA, approach, and landing under VFR.
+
+FILING AN ALTERNATE — GPS CONSIDERATIONS, AIM 1-1-17b.5, 1-1-18c.9, 1-2-3d. If equipped with a non-WAAS GPS, the flight plan can be based on GPS approach availability at either the destination or the alternate, but not at both. If equipped with WAAS but without baro-VNAV, the flight plan may be filed based on LNAV or circling minima at the alternate, regardless of the available approaches at the destination. If equipped with WAAS and baro-VNAV, LNAV/VNAV or RNP 0.3 are allowed as the basis for the flight plan's alternate — this requires Special Authorization and RNP availability.
+
+IFR CRUISING ALTITUDES, Section 91.179. In controlled airspace, IFR cruising altitudes are as assigned by ATC. In uncontrolled airspace, based on magnetic course:
+- Below Flight Level 290: for magnetic courses 0 to 179 degrees, odd thousands below 18,000 feet, or odd Flight Levels at or above FL180. For 180 to 359 degrees, even thousands below 18,000 feet, or even Flight Levels at or above FL180.
+- Above Flight Level 290, in non-RVSM airspace: for 0 to 179 degrees, Flight Levels at 4,000 foot intervals starting at FL290 — for example FL290, 330, 370. For 180 to 359 degrees, Flight Levels at 4,000 foot intervals starting at FL310 — for example FL310, 350, 390.
+- From Flight Level 290 to 410, in RVSM airspace: for 0 to 179 degrees, odd Flight Levels at 2,000 foot intervals starting at FL290 — for example FL290, 310, 330. For 180 to 359 degrees, even Flight Levels at 2,000 foot intervals starting at FL300 — for example FL300, 320, 340.
+
+IFR MINIMUM FUEL REQUIREMENTS, Section 91.167. Required fuel equals: fuel from departure to destination, plus fuel from the destination to the most distant alternate if an alternate is required, plus 45 minutes at normal cruise. Other fuel requirements exist for Part 121, 135, Flag, and supplemental operations.
+
+IFR TAKEOFF MINIMUMS. No takeoff minimums are mandated for Part 91 operations. For Part 121, 125, 129, and 135: use the prescribed takeoff minimums for the runway, or if none, 1 statute mile visibility, or 5,000 foot RVR, for 1 or 2 engine airplanes; half a statute mile visibility, or 2,400 foot RVR, for more than 2 engines. Non-standard takeoff minimums and departure procedures exist, as do non-standard IFR alternate minimums. Alternate minimums may be not authorized due to an unmonitored facility or the absence of weather reporting service.
+
+DIVERSE DEPARTURE PROCEDURES, Section 91.175. When an Instrument Approach Procedure is developed for an airport, each runway is assessed for departure obstacle clearance. This assessment ensures an aircraft can climb and turn in any direction from the runway while maintaining proper obstacle clearance. All departures are initially assessed using a 40:1, roughly 152 feet-per-nautical-mile, Obstacle Clearance Surface, or OCS. The standard required climb gradient is 200 feet per nautical mile, which provides 48 feet-per-nautical-mile of clearance over the 40:1 OCS. The Required Obstacle Clearance expands along the departure route until reaching 1,000 feet in non-mountainous areas, or 2,000 feet in mountainous areas. The assessment area is limited to 25 nautical miles in non-mountainous areas, or 46 nautical miles in mountainous areas, from the departure airport. Pilots are responsible for obstacle clearance beyond this distance when not operating on a published route, or when flying below the MEA, MOCA, or an ATC-assigned altitude. If a runway fails to meet the diverse departure criteria, an Obstacle Departure Procedure, or ODP, is developed.
+
+When departing with no ODP published, meaning diverse departure criteria is met, pilots must: cross the Departure End of the Runway, or DER, at least 35 feet above DER elevation; climb to 400 feet above DER elevation before making any turns; and continue climbing until reaching the minimum IFR altitude.

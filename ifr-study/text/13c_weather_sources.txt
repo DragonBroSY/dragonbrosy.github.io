@@ -1,0 +1,51 @@
+Weather Information Sources and Briefings.
+
+WEATHER INFORMATION SOURCES:
+- Flight Service Station (FSS).
+- NOAA's Aviation Weather Center website, aviationweather.gov.
+- Flight planning websites such as 1800wxbrief.com and fltplan.com.
+- EFB software, such as ForeFlight or Jeppesen Flight Deck Pro.
+- Flight Information Services-Broadcast, or FIS-B: a ground information data link service provided through the ADS-B network over 978 MHz UAT, providing aviation weather and aeronautical information on cockpit displays. Available data includes METAR, TAF, NEXRAD, AIRMETs, SIGMETs and convective SIGMETs, TFRs, special use airspace updates, NOTAMs, and PIREPs.
+- Automatic Terminal Information Service, or ATIS: a continuous broadcast of local airport weather and NOTAMs, updated hourly, normally at 55 minutes past the hour, with special updates issued outside the regular cycle when needed. Published over the radio and, in locations with D-ATIS, via data link (ACARS).
+- Automated Surface Observation System, or ASOS: typically updates hourly.
+- Automated Weather Observation System, or AWOS: updates every minute.
+- ATC: Center weather advisories are issued by ARTCC to alert pilots of existing or anticipated adverse weather. ARTCC also broadcasts severe weather forecast alerts, convective SIGMETs, and SIGMETs on all frequencies except the emergency frequency, 121.5 MHz.
+- Onboard weather radar, onboard lightning detector, XM satellite weather service, and ACARS.
+
+WEATHER PRODUCTS, in brief:
+
+AIRMETs (WA) advise of significant weather at lower intensities than SIGMET criteria — conditions that may affect all aircraft but are potentially hazardous to aircraft with limited capability. Valid for 6 hours. Three types: AIRMET Tango (T) for moderate turbulence, sustained surface winds of 30 knots or greater, and/or non-convective low-level wind shear; AIRMET Zulu (Z) for moderate icing and freezing level heights; AIRMET Sierra (S) for IFR conditions and/or extensive mountain obscuration. Graphical AIRMETs are available at aviationweather.gov.
+
+SIGMETs (WS) are non-scheduled inflight advisories with a maximum forecast period of 4 hours, advising of non-convective weather potentially hazardous to all aircraft: severe icing not associated with thunderstorms; severe or extreme turbulence, or clear air turbulence, not associated with thunderstorms; and dust storms or sandstorms lowering surface visibility below 3 miles.
+
+Convective SIGMETs (WST) are inflight advisories of convective weather significant to the safety of all aircraft, issued hourly at 55 minutes past the hour for the western, eastern, and central US. Not issued for Alaska or Hawaii. Valid for 2 hours. Issued for severe thunderstorms with surface winds of 50 knots or greater, surface hail of 3/4 inch diameter or greater, or tornadoes; embedded thunderstorms of any intensity; a line of thunderstorms at least 60 miles long affecting at least 40% of its length; thunderstorms producing heavy or greater precipitation affecting at least 40% of an area of at least 3,000 square miles; or any implication of severe or greater turbulence, severe icing, or low-level wind shear.
+
+International SIGMETs are issued outside the contiguous US, following ICAO coding standards, covering Alaska, Hawaii, portions of the Atlantic and Pacific Oceans, and the Gulf of Mexico. Criteria include thunderstorms occurring in lines, embedded in clouds, or in large areas producing tornadoes or large hail; tropical cyclones; severe icing; severe or extreme turbulence; dust storms and sandstorms lowering visibility below 3 miles; and volcanic ash.
+
+PIREPs (UA) and Urgent PIREPs (UUA) are pilot weather reports.
+
+METAR is an aviation routine weather report showing surface weather observations in a standard international format, published every hour; non-scheduled METARs, called SPECI, are issued when there's a significant change in a reported element since the last scheduled METAR.
+
+TAF, or Terminal Aerodrome Forecast, is a weather forecast for a 5 statute mile radius around the station, issued 4 times a day, every 6 hours, normally covering a 24 or 30 hour forecast period. TAF amendments supersede previous TAFs.
+
+Surface analysis charts are generated from surface station reports, showing pressure systems, isobars, fronts, airmass boundaries such as dry lines and outflow boundaries, and station information such as wind, temperature/dew point, sky coverage, and precipitation. Issued every 3 hours, or every 6 hours in Hawaii and tropical and oceanic regions. A Unified Surface Analysis Chart is produced every 6 hours, combining analysis from 4 centers: OPC, WPC, NHC, and HFO.
+
+Radar summary charts (SD) depict precipitation type, intensity, coverage, movement, echoes, and maximum tops. Issued hourly.
+
+Winds and Temperatures Aloft forecasts (FB) are issued 4 times daily for various altitudes and flight levels. Winds at altitudes up to 1,500 feet AGL and temperatures up to 2,500 feet AGL are not shown. Format is D-D-f-f, plus or minus t-t, where DD is wind direction, ff is wind speed, and tt is temperature. Light and variable winds are coded 9900. Winds between 100 and 199 knots are coded by adding 5 to the first digit of the wind direction. Above Flight Level 240, temperatures are always negative and the minus sign is omitted. Examples: "1312+05" means winds 130 at 12 knots, temperature 5 degrees Celsius; "7525-02" means winds 250 at 125 knots, temperature minus 2 degrees Celsius.
+
+Significant weather charts: Low-level significant weather charts forecast significant weather for 12 and 24 hour periods from the surface to 400 millibars, about 24,000 feet, issued 4 times a day, depicting flight categories (IFR, MVFR, and VFR), turbulence, and freezing levels. Mid-level significant weather charts forecast significant weather from 10,000 feet MSL to Flight Level 450, showing thunderstorms, jet streams, tropopause height, tropical cyclones, moderate and severe icing, moderate or severe turbulence, cloud coverage and type, volcanic ash, and areas of released radioactive material — issued 4 times a day for the North Atlantic region. High-level significant weather charts depict forecasts for Flight Level 250 to Flight Level 630, showing coverage, bases and tops of thunderstorms and cumulonimbus clouds, moderate and severe turbulence, jet streams, tropopause heights, tropical cyclones, severe squall lines, volcanic eruption sites, and widespread sand and dust storms — issued 4 times a day.
+
+Convective Outlook (AC) is available in graphical and textual format, a 3-day forecast of convective activity, classified as marginal, slight, enhanced, moderate, or high risk for severe weather. Issued 5 times a day for day 1, twice a day for day 2, and once a day for day 3. Available at spc.noaa.gov.
+
+Weather satellite images: Visible imagery helps identify cloud coverage based on visible light reflection, but is not useful for identifying cloud height. Infrared imagery measures cloud top temperature — the highest clouds appear bright white, middle clouds appear in shades of gray, and low clouds and fog appear dark gray. Water vapor imagery shows areas of moist and dry air in shades of gray from white to black — moist air is depicted as bright white, dry air as black.
+
+NEXRAD, or Next Generation Weather Radar, products include: base reflectivity, showing echo intensities in dBZ, available for several elevation tilt angles; echo tops, color-coded echo top heights; composite reflectivity, revealing the highest reflectivity of all echoes to help examine storm structure and intensity; and 1-hour and 3-hour precipitation totals.
+
+Other online tools: Ceiling and Visibility charts show ceiling based on surface observations — this online tool phased out the older weather depiction chart and is now the HEMS tool at aviationweather.gov/hemst. The Graphical Turbulence Guidance, or GTG, tool at aviationweather.gov/turbulence/gtg shows color-coded turbulence forecasts based on aircraft category, altitude, and time.
+
+TYPES OF WEATHER BRIEFINGS:
+- Standard: a full briefing, including adverse conditions, whether VFR is not recommended, synopsis, current conditions, en-route forecast, destination forecast, winds aloft, NOTAMs, and ATC delays.
+- Abbreviated: updates previously received information from mass-disseminated sources or a previous briefing.
+- Outlook: for departures 6 or more hours away, includes forecasts for the time of the flight.
+- Inflight: FSS also provides any of the above briefing types while airborne.

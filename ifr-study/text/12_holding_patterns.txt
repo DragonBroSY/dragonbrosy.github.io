@@ -1,0 +1,46 @@
+Holding Patterns.
+
+HOLDING PATTERN TIMING
+- Start timing outbound abeam or over the fix, whichever is later. If the abeam point cannot be determined, start the time at the completion of the outbound turn.
+- Adjust the outbound leg so the inbound leg takes: at or below 14,000 feet MSL, 1 minute; above 14,000 feet MSL, 1.5 minutes.
+- For DME or GPS holds, fly the outbound leg to the specified distance from the fix or waypoint.
+
+HOLDING SPEEDS. Maximum holding airspeed by altitude: 6,000 feet or below, 200 knots. 6,001 to 14,000 feet, 230 knots. 14,001 feet and above, 265 knots. Air Force fields, 310 knots, unless published otherwise. Navy fields, 230 knots, unless published otherwise. Some instrument approach procedures may restrict holding to 175 knots.
+
+NON-CHARTED HOLDING CLEARANCE ITEMS:
+- Direction of hold from the fix, such as north, west, south, or northeast.
+- Holding Fix.
+- Radial, course, airway, or route on which to hold.
+- Leg length in miles, if DME or RNAV, or minutes otherwise.
+- Direction of turns, if left — otherwise, right turns are standard.
+- Expect Further Clearance, or EFC, time.
+
+CHARTED HOLDING CLEARANCE ITEMS:
+- Holding Fix.
+- Direction of hold from fix.
+- EFC.
+
+Start speed reduction 3 minutes before reaching the holding fix. Actions at the holding fix and each turn point follow the mnemonic "Turn, Time, Twist, Throttle, Talk."
+
+HOLDING ENTRY. There are three standard entries, based on the aircraft's heading relative to the holding course when crossing the fix:
+- Direct entry: upon crossing the fix, turn to follow the holding pattern directly.
+- Parallel entry: upon crossing the fix, turn to a heading parallel to the holding course, outbound, for 1 minute. Then turn into the hold pattern to intercept the inbound course.
+- Teardrop entry: upon crossing the fix, turn outbound to a heading 30 degrees offset into the pattern. Fly it for 1 minute, then turn in the direction of the hold turns to intercept the inbound course.
+
+Bank angle for hold turns: 3 degrees per second, or 30 degrees bank angle, or 25 degrees bank angle if using a Flight Director — whichever uses the least bank angle.
+
+At the hold fix, report to ATC in the format: callsign, over the place, altitude, at the time.
+
+LOST COMMUNICATIONS PROCEDURE, Section 91.185. If in VFR conditions, continue the flight under VFR and land as soon as practicable. Otherwise:
+
+Altitude to fly — use the highest of, mnemonic "MEA": M, the minimum altitude prescribed for IFR; E, the expected altitude, as in "expect 5,000, 10 minutes after departure"; A, the last altitude assigned by ATC. Use the highest for the route segment being flown.
+
+Route to fly — select in this order, mnemonic "AVEF": A, the assigned route; if none, V, the last route vectored to, meaning fly to the fix, route, or airway last vectored to; if none, E, the last expected route given by ATC; if none, F, the filed route.
+
+Upon leaving the clearance limit: if the clearance limit is a fix from which an approach begins, start the descent and approach as close as possible to the EFC time, or the ETA if no EFC was given. If the clearance limit is not a fix from which an approach begins, then at the EFC time, or the clearance limit time if no EFC was given, proceed to a fix from which an approach begins and start the approach.
+
+PROCEDURE TURN, Section 91.175, AIM 5-4-9. A procedure turn is a maneuver that enables: course reversal, a descent from the IAF, and inbound course interception. Maximum speed is 200 knots. Remain within the charted distance, typically the "remain within [x] NM" note, typically 10 nautical miles, of the procedure turn fix.
+
+Do not fly a procedure turn when: holding in lieu of a procedure turn is published, there is a DME arc, radar vectors to final are being provided, "No PT" is depicted on the chart, a timed approach from a holding fix is in progress, a teardrop course reversal is depicted, or it is requested by the pilot in lieu of a straight-in approach, when established on a segment of a published approach or route via holding in lieu of a procedure turn, radar vectors to final, or a no-PT transition.
+
+A common technique for the 45/180 procedure turn is remembered as "SHARP TT": fly outbound on the procedure turn course, then turn to a heading 45 degrees offset for 1 minute, then turn the opposite direction 180 degrees to intercept the inbound course — commonly flown as a 45-degree outbound turn to a heading such as 165 degrees or 345 degrees relative to the inbound course, followed by the 180-degree turn back.

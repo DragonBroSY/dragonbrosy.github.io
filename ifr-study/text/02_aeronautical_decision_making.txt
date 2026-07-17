@@ -1,0 +1,25 @@
+Aeronautical Decision Making.
+
+AERONAUTICAL DECISION MAKING
+PREFLIGHT SELF-ASSESSMENT – “IM SAFE”
+- I - Illness - Do I have any symptoms?
+- M - Medication - Have I taken prescription or over-the-counter drugs?
+- S - Stress - Am I under psychological pressure, worried about finances, health or family discord?
+- A - Alcohol - No drinking within 8 hours. (“8 hours bottle to throttle”). No more than .04% of alcohol in blood.
+- F - Fatigue - Am I tired / adequately rested?
+- E - Emotion - Am I emotionally upset?
+(Section 91.17, AIM 8-1-1)
+RISK MANAGEMENT & PERSONAL MINIMUMS – “PAVE”
+- P - Pilot (general health, physical / mental / emotional state, proficiency, currency)
+- A - Aircraft (airworthiness, equipment, performance)
+- V - En Vironment (weather hazards, terrain, airports / runways to be used & other conditions)
+- E - External pressure (meetings, people waiting at destination, etc.)
+(Pilot’s Handbook of Aeronautical Knowledge)
+DECISION MAKING – “DECIDE”
+- D - Detect that a change has occurred.
+- E - Estimate the need to counter the change.
+- C - Choose a desirable outcome.
+- I - Identify solutions.
+- D - Do the necessary actions.
+- E - Evaluate the effects of the actions
+(Pilot’s Handbook of Aeronautical Knowledge)

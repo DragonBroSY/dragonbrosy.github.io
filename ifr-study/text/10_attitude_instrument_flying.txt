@@ -1,0 +1,18 @@
+Attitude Instrument Flying.
+
+Basic attitude instrument flying skills: Cross-check, Instrument interpretation, and Aircraft Control.
+
+Common Errors: Fixation, Omission, and Emphasis.
+
+Control and Performance Method: divides the cockpit panel by control instruments and performance instruments. First, set the power and attitude, then monitor the performance and make adjustments.
+- Control instruments: Power, shown on the tachometer, manifold pressure, EPR, or N1; and Attitude, shown on the attitude indicator.
+- Performance instruments: Pitch, shown on the altimeter, airspeed indicator, and VSI; and Bank, shown on the heading indicator, turn coordinator, and magnetic compass.
+
+Primary and Supporting Method: divides the cockpit panel by Pitch, Bank, and Power instruments.
+- Pitch instruments: attitude indicator, altimeter, airspeed indicator, and VSI.
+- Bank instruments: attitude indicator, heading indicator, magnetic compass, and turn coordinator.
+- Power instruments: airspeed, tachometer, and manifold pressure.
+
+For a specific maneuver, primary instruments provide the most essential information for pitch, bank, and power, while supporting instruments back up and supplement the information presented by the primary instruments.
+
+Example, for a constant rate climb with a standard rate turn: Primary — Pitch is the VSI, Bank is the Turn Coordinator, Power is RPM or manifold pressure. Secondary — Pitch is the airspeed indicator and attitude indicator, Bank is the attitude indicator, heading indicator, and magnetic compass, Power is the airspeed indicator.

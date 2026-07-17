@@ -1,0 +1,48 @@
+Minimum Equipment Required for Flight.
+
+MINIMUM EQUIPMENT REQUIRED FOR FLIGHT, Section 91.205.
+
+For VFR day, the mnemonic "TOMATO FLAMES":
+- T - Tachometer for each engine.
+- O - Oil pressure gauge for each engine.
+- M - Manifold pressure gauge for each altitude engine.
+- A - Altimeter.
+- T - Temperature gauge for each liquid-cooled engine.
+- O - Oil temperature indicator for each engine.
+- F - Fuel quantity gauge for each tank.
+- L - Landing gear position lights, if retractable gear.
+- A - Anticollision lights, for aircraft certified after March 11, 1996.
+- M - Magnetic direction indicator, the magnetic compass.
+- E - ELT, if required by Section 91.207.
+- S - Safety belt and shoulder harness.
+
+For VFR night: all VFR day equipment, plus the mnemonic "FLAPS":
+- F - Fuses, a spare set.
+- L - Landing light, if operating for hire.
+- A - Anticollision lights.
+- P - Position lights, the navigation lights.
+- S - Source of electrical power, such as a battery.
+
+For IFR day: all VFR day equipment, plus the mnemonic "GRAB CARD":
+- G - Generator or alternator.
+- R - Radios: two-way radio communication and navigational equipment suitable for the route to be flown.
+- A - Altimeter, sensitive and adjustable for barometric pressure.
+- B - Ball, the slip-skid indicator.
+- C - Clock, showing hours, minutes and seconds, with a sweep-second pointer or digital representation, installed as part of the aircraft equipment.
+- A - Attitude indicator.
+- R - Rate-of-turn indicator.
+- D - Directional gyro, the heading indicator.
+
+For IFR night: all VFR day equipment, plus VFR night equipment, plus GRAB CARD.
+
+Flight at and above Flight Level 240: when using VOR for navigation, DME or RNAV is also required.
+
+If operating for hire over water and beyond power-off gliding distance from shore: an approved flotation device is required for each occupant, and at least one pyrotechnic signaling device.
+
+OPERATING WITH INOPERATIVE ITEMS, Section 91.213. If the aircraft has an approved Minimum Equipment List, or MEL, follow the MEL's provisions.
+
+If the aircraft does not have an MEL, ask whether the inoperative equipment is required by any of the following: VFR-day type certification requirements; the equipment list or kind-of-operations equipment list; Section 91.205 or other regulations for the kind of operation being conducted; or an Airworthiness Directive.
+
+If the answer is yes to any of those, flying is not allowed without a special flight permit, unless operating under Part 121.
+
+If the answer is no to all of those, flying is permitted, provided: the inoperative equipment is removed, if it affects weight and balance, or is deactivated and placarded "Inoperative"; and the pilot or a mechanic determines the inoperative item creates no hazard.

@@ -1,0 +1,152 @@
+Weather Hazards.
+
+WEATHER HAZARDS
+THUNDERSTORMS
+The Three Conditions Required for the formation of Thunderstorms:
+1. Sufficient water vapor (moisture).
+2. An unstable temperature lapse rate. Stability is the resistance of the atmosphere to upwards or downwards
+displacement. An unstable lapse rate allows any air mass displacement to further grow vertically.
+3. An initial uplifting force (e.g., front passages, orographic lifting by topography, heating from below, etc.).
+Three Stages in Thunderstorm Lifecycle:
+1. Cumulus (3-5 mile height) – The lifting action of the air begins, growth rate may exceed 3000 fpm.
+2. Mature (5-10 miles height) – Begins when precipitation starts falling from the cloud base. Updraft at this stage
+may exceed 6000 fpm. Downdrafts may exceed 2500 fpm. All thunderstorm hazards are at their greatest
+intensity at the mature stage.
+3. Dissipating (5-7 miles height) – Characterized by strong downdrafts and the cell dying rapidly.
+Thunderstorm Hazards:
+- Limited visibility - Strong updrafts / downdrafts - Hailstones - Severe turbulence
+- Wind shear - Icing - Heavy rain - Lightning strikes and tornadoes.
+FOG
+A cloud that begins within 50 ft of the surface.
+Fog occurs when:
+- The air temperature near the ground reaches its dew point, or
+- when the dew point is raised to the existing temperature by added moisture to the air.
+Types of fog
+- Radiation fog – Occurs at calm, clear nights when the ground cools rapidly due to the release of ground
+radiation.
+- Advection fog – Warm, moist air moves over a cold surface. Winds are required for advection fog to form.
+- Ice fog – Forms when the temperature is much below freezing and water vapor turns directly into ice crystals.
+Ice fog is common in the arctic regions, but also occurs in mid-latitudes.
+- Upslope fog – Moist, stable air is forced up a terrain slope and cooled down to its dew point by adiabatic
+cooling.
+- Steam fog – Cold, dry air moves over warm water. Moisture is added to the airmass and steam fog forms.
+ICING
+- Structural Ice. Two conditions for formation: 1.Visible moisture (i.e., rain, cloud droplets), and 2.Aircraft
+surface temperature below freezing.
+- Clear ice– The most dangerous type. Heavy, hard and difficult to remove. Forms when water drops freeze
+slowly as a smooth sheet of solid ice. Usually occurs at temperatures close to the freezing point (-10° to 0° C)
+by large supercooled drops of water
+- Rime ice – Opaque, white, rough ice formed by small supercooled water drops freezing quickly. Occurs at
+lower temperatures than clear ice.
+- Mixed ice – Clear and rime ice formed simultaneously.
+- Instrument ice – Structural ice forming over aircraft instruments and sensors, such as pitot and static.
+- Induction ice – ice reducing the amount of air for the engine intake.
+- Intake ice – Blocks the engine intake.
+- Carburetor ice – May form due to the steep temperature drop in the carburetor Venturi. Typical conditions are
+outside air temperatures of -7° to 21° C and a high relative humidity (above 80%).
+- Frost – Ice crystals caused by deposition when both the temperature and the dew point are below freezing.
+
+- Hypoxia - Insufficient supply of oxygen to the body cells.
+AEROMEDICAL (Pilot Handbook of Aeronautical Knowledge) )
+- Hypoxic hypoxia – Insufficient supply of O2 to the body as a whole. As altitude increases, O2 percentage of the atmosphere
+is constant, but its pressure decreases. The reduced pressure becomes insufficient for the O2 molecules to pass through the
+respiratory system’s membranes.
+- Hypemic hypoxia – Inability of the blood to carry the O2 molecules. It may be a result of insufficient blood (bleeding or blood
+donation), anemia or CO poisoning.
+- Histotoxic hypoxia – Inability of the body cells to affectively use the O2 supplied by the blood. This can be caused by use of
+alcohol or drugs.
+- Stagnant hypoxia - Caused by the blood not flowing efficiently. Can be caused by heart problems, excessive acceleration
+(Gs), shock or a constricted blood vessel. Cold temperatures can restrict circulation and decrease blood supplied to the
+extremities.
+- Hyperventilation – A condition which occurs when excessive amount of CO2 is eliminated from the body as a result of
+breathing too rapidly. Symptoms may be similar to those of hypoxia. Breathing into a paper bag or talking aloud helps recovery
+from hyperventilation.
+- Decompression sickness – Inert gasses (mainly nitrogen) are released rapidly from solution in the body tissues and fluids
+as a result of low barometric pressure. The gasses form bubbles that may harm the body in several ways. The most common
+result of decompression sickness is joint pain (“the bends”). To help prevent the bends after SCUBA diving: wait at least 12
+hoursafter diving that does not require a controlled ascent (non-decompression stop diving) for flights up to 8000 ft
+MSL; wait 24 hoursforflights above 8000 ftor after any diving that required a controlled ascent (decompression stop
+diving).
+Oxygen requirements (Section 91.211, Note: see Section 121.327-121.333 & Section 135.89, Section 135.157 for 121/135 operations O2 rules)
+- Unpressurized cabins
+- Cabin pressure altitudes above 12, 500 to 14, 000’ MSL (including) – The required minimum flight crew must be provided
+with and must use supplemental O2 for periods of flight over 30 minutes at these altitudes.
+- Cabin pressure altitudes above 14, 000’ – The required minimum flight crew must be providedwith and must use
+supplemental O2the entire flight time at these altitudes.
+- Cabin pressure altitudes above 15, 000’ MSL – Each occupant must be provided with supplemental O2.
+- Pressurized cabins
+- Above FL250 - an addition of at least 10 minutes of supplemental O2 for each occupant is required.
+- Above FL350 - one pilot at the controls must wear and use an O2mask unless two pilots are at the control with
+quick-donning masks and the aircraft is at or below FL410.
+- If one pilot leaves the controls above FL350, the other pilot must wear and use his O2maskregardless if it’s a quick
+donning type.
+- Middle Ear & Sinus blockage
+- Air pressure in the middle ear and sinuses normally equalizes with external air through the nasal passages.
+- Allergies, colds or sinus infections may block these small opening and prevent the pressure from equalizing.
+- If the air gets trapped, it may cause extreme pain, reduction in hearing or damage to the ear drums. This effect is usually most
+severe during descent.
+- To relieve this condition, try the “Valsalva Maneuver“: pinch your nostrils and gently try to blow air out of your nose. This
+forces air through the Eustachian tube into the middle ear. It may not work if the pilot has a cold, sinus or ear infection, or a
+sore throat.
+- Consider seeing a physician if the condition doesn’t clear after the flight.
+- Spatial disorientation and illusions
+- 3 systems the body uses for spatial orientation
+- Vestibular System - Consists of organs in the inner ear
+- 3 semicircular canals sense movement in 3 axes: pitch, roll and yaw. The canals are filled with fluid, which moves
+against tiny sensory hairs as the head is moved. The brain gets these signals and interprets a sensation of movement.
+- 2 otolith organs, the utricle and saccule, sense acceleration in the horizontal and vertical planes.
+- Somatosensory System - Consists of nerves in the skin, muscles and joints.
+- Visual System - Visual cues from our eyes help the brain figure out spatial orientation.
+- Vestibular Illusions
+- The leans - After leveling the wings following a prolonged turn, pilot may feel that the aircraft is banked in the opposite
+direction of the turn.
+- Coriolis Illusion - After a prolonged turn, the fluid in the ear canal moves at same speed as the canal. A head movement
+on a different plane will cause the fluid to start moving and result in a false sensation of acceleration or turning on a
+different axis.
+- Graveyard Spiral - A pilot in a prolonged, coordinated constant-rate turn may experience the illusion of not turning. After
+leveling the wings, the pilot may feel the sensation of turning to the other direction (“the leans”), causing the pilot to turn
+back in the original direction. Since a higher angle of attack is required during a turn to remain level, the pilot may notice a
+loss of altitude and apply back force on the elevator. This may tighten the spiral and increase the loss of altitude.
+- Somatogravic Illusion - Rapid acceleration stimulates the inner ear otolith organs in the same way as tilting the head
+backwards. This may create the illusion of a higher pitch angle. Deceleration causes the opposite illusion – the sensation of
+tilting the head forward and the aircraft being in a nose-low attitude.
+- Inversion Illusion - An abrupt change from climb to straight and level may create the illusion of tumbling backwards due to
+the fluid movement in the otolith organs.
+- Elevator Illusion - An abrupt upward vertical acceleration may create the illusion of climbing, due to fluid movement in the
+otolith organs.
+
+ Spatial disorientation and illusions - continued
+- Visual Illusions
+- False Horizon - An illusion in which the pilot may misidentify the horizon line. May be caused by sloping cloud formation,
+an obscured horizon, an aurora borealis, dark night with scattered lights and stars or the geometry of the ground
+- Autokinesis - Staring at a stationary point of light in a dark or featureless scene for a prolonged period of time may cause
+the light to appear to be moving. A pilot may attempt to align the aircraft with the perceived moving light, resulting in loss of
+control.
+- Optical Illusions
+- Runway Width Illusion - During approach to land, a narrow runway may give the pilot the illusion that the airplane is too
+high, whereas a wide runway may make it seem too low.
+- Runway and Terrain Slope Illusion - An up-sloping terrain or runway can give the illusion that the plane is higher than it
+actually is.
+- Featureless Terrain Illusion - Also known as “black hole approach.” Flying over dark or featureless terrain (for example,
+during an over-water approach) can give the illusion that the aircraft is at a higher altitude, causing the pilot to fly lower
+than desired.
+- Water Refraction - Light refraction due to rain on the windshield may cause the horizon to seem lower and, as a result, the
+aircraft to appear higher. This illusion may lead the pilot to fly lower than desired.
+- Haze - During an approach, haze may give the illusion that the runway is further or that the airplane is higher than it is.
+- Fog - Flying into fog may create an illusion of a nose-up motion.
+- Ground Lighting Illusion -
+- Lights along straight paths (e.g., road or train lights) can be mistaken for runway or approach lights.
+- Bright runway and approach lights can make the runway appear closer than it is, especially when the surroundingterrain
+is dark. This illusion may lead the pilot to fly a higher approach than desired.
+Coping with spatial disorientation (Pilot Handbook of Aeronautical Knowledge)
+1. Understand the causes of the illusions that may affect you as a pilot and stay alert for them when flying.
+2. Obtain and understand relevant preflight weather information.
+3. Maintain instrument proficiency and obtain training if needed before flying in marginal or instrument conditions.
+4. Do not fly into adverse weather conditions or into dark or featureless areas unless instrument proficient.
+5. When using outside visual references, ensure they are reliable, fixed points on the earth’s surface.
+6. Avoid sudden head movements, particularly during takeoff, turns, and approaches to landing.
+7. Be physically tuned for flight into reduced visibility. Ensure proper rest, adequate diet, and, if flying at night, allow
+for night adaptation. Remember that illness, medication, alcohol, fatigue, sleep loss, and mild hypoxia are likely to
+increase susceptibility to spatial disorientation.
+8. Most importantly, become proficient in the use of flight instruments and rely upon them. Trust the
+instruments and disregard your sensory perceptions.

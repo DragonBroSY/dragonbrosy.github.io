@@ -1,0 +1,100 @@
+Radio Navigation.
+
+VHF OMNI DIRECTIONAL RANGE, or VOR:
+- Operates 108.0 to 117.95 MHz, excluding 108.10 to 111.95 with odd tenths, which are reserved for localizer frequencies.
+- Full scale deflection is 10 degrees.
+- Standard service volumes do not apply to published routes.
+- The pilot must verify the correct and usable VOR station with its morse identifier before using it.
+- The VOR Minimum Operational Network, or VOR MON, program ensures that as old VORs are decommissioned, a MON airport, equipped with a legacy ILS or VOR approach, is available within 100 nautical miles regardless of aircraft position in the continental US.
+
+Standard VOR service volumes, by class: Terminal class covers a 25 nautical mile radius from 1,000 up to 12,000 feet AGL. Low altitude class covers 40 nautical miles from 1,000 up to 18,000 feet AGL. High altitude class covers 40 nautical miles from 1,000 to 14,500 feet, expanding to 100 nautical miles from 14,500 to 18,000 feet, and 130 nautical miles from 18,000 to 45,000 feet, then 100 nautical miles from 45,000 up to 60,000 feet.
+
+VOR receiver checks, under Section 91.171, must be performed every 30 calendar days. Tolerances: plus or minus 4 degrees using a VOT, a repair station signal, or a ground checkpoint; plus or minus 6 degrees using an airborne checkpoint, a dual VOR cross-check, or flying over a prominent ground landmark on a selected radial at least 20 nautical miles from the VOR at a reasonable low altitude. VOR check sign-off uses the mnemonic "DEPS": D for Date, E for Error, or bearing error, P for Place, and S for Signature.
+
+VOR limitations: the cone of confusion overhead the station, reverse sensing if the OBS is used incorrectly, and the requirement for line-of-sight between the aircraft and the station.
+
+DISTANCE MEASURING EQUIPMENT, or DME:
+- Operates 962 to 1213 MHz, in the UHF band, normally tuned automatically with a paired VOR or localizer station.
+- The airborne DME unit transmits an interrogation signal; the ground DME facility receives and replies to it; the airborne unit calculates the slant range distance to the station based on the reply time.
+- Because of slant range error, DME indicates greater than zero when flying directly overhead the station. Slant range error is negligible at roughly 1 nautical mile of DME station distance per every 1,000 feet of height above the station — for example, at 5,000 feet, slant range error is negligible beyond 5 nautical miles of the station.
+- DME service volumes: DME Low covers up to 18,000 feet; DME High covers up to 45,000 feet, both similar in lateral range to their matching VOR service volume class.
+
+NON-DIRECTIONAL BEACON, or NDB:
+- Operates 190 to 535 kHz, in the low-to-medium frequency band, and can also receive and point toward commercial AM radio stations at 550 to 1650 kHz.
+- The Automatic Direction Finder, or ADF, in the aircraft points toward the NDB. Magnetic Bearing equals Magnetic Heading plus Relative Bearing.
+- A Compass Locator is a low-powered NDB, at least 25 watts with roughly 15 nautical mile range, installed at the outer marker or middle marker on some ILS approaches.
+- NDB service volume classes: Compass Locator, 15 nautical miles; Medium High, 25 nautical miles; High, 50 nautical miles or less, see NOTAM or Chart Supplement; High High, 75 nautical miles.
+
+INSTRUMENT LANDING SYSTEM, or ILS.
+
+Localizer: provides lateral course guidance. Frequencies are 108.1 to 111.95 MHz, with odd tenths only. The 90 Hz and 150 Hz signals are carried over the VHF frequency and used by the receiver to interpret the aircraft's lateral position. Width is between 3 and 6 degrees, adjusted so the width at the runway threshold is 700 feet — usually about 5 degrees of total width, which is roughly 4 times more sensitive than a VOR. Coverage range is 35 degrees to each side of the centerline for the first 10 nautical miles, narrowing to 10 degrees out to 18 nautical miles from the antenna, up to an altitude of 4,500 feet.
+
+Glide Slope: provides vertical course guidance. Frequencies are 329.3 to 335 MHz, in the UHF band, automatically tuned with the localizer. Vertical position is interpreted by the intensity of 90 Hz and 150 Hz signals carried over the UHF frequency, directed above and below the slope. Width is 1.4 degrees total, full deflection at 0.7 degrees either direction. Range is typically up to 10 nautical miles. Slope is typically 3 degrees. A false glide slope can occur above the normal glide slope, roughly at twice the published angle.
+
+Marker Beacons provide range information over specific points along the approach, transmitting at 75 MHz. Outer marker: 4 to 7 miles out, blue light, indicates the position where the aircraft should intercept the glide slope at the appropriate interception altitude, plus or minus 50 feet. Middle marker: about 3,500 feet from the runway, amber light, indicates the approximate point where the glide slope meets the decision height, usually 200 feet above the touchdown zone elevation. Inner marker: between the middle marker and the runway threshold, white light, indicates the point where the glide slope meets the decision height on a Category II ILS approach. Back course marker: indicates the final approach fix on selected back course approaches, white light, not part of the primary ILS approach.
+
+Approach Light System, or ALS: provides a basic visible means to transition from instrument-guided flight into a visual approach. The ALS extends from the landing threshold into the approach area up to 2,400 to 3,000 feet for precision instrument runways, and 1,400 to 1,500 feet for non-precision instrument runways. It may include Sequenced Flashing Lights, which appear to the pilot as a ball of light traveling toward the runway twice a second, nicknamed "the rabbit." The visible parts of the ALS configuration can help the pilot estimate flight visibility.
+
+ILS categories and their lowest visibility and decision height: Category I, 2,400 or 1,800 feet visibility, 200 foot DH. Category II, 1,200 feet visibility, 100 foot DH. Category IIIa, greater than 700 feet visibility, less than 100 feet or no DH. Category IIIb, 150 to 700 feet visibility, less than 50 feet or no DH. Category IIIc, zero visibility, no DH.
+
+AREA NAVIGATION (RNAV)
+- Allows navigation on any desired path without the need to overfly ground-based facilities.
+- Types:
+- Global Navigation Satellite System (GNSS), e.g., GPS, Galileo, GLONASS, BeiDou.
+- VOR/DME RNAV
+- DME/DME RNAV
+- Inertial Reference Unit / System (IRU/ IRS)
+- RNAV VNAV - Vertical NAVigation guidance.
+- BARO-VNAV - An RNAV system that uses the barometric altitude to compute vertical guidance for the pilot.
+- Published RNAV routes include Q routes, FL180 to FL450, and T routes, 1,200 AGL to 18,000 MSL, and are designated RNAV 2 unless charted as RNAV 1.
+- Magnetic Reference Bearing (MRB) - the published bearing between two waypoints on an RNAV route.
+
+GLOBAL POSITIONING SYSTEM (GPS)
+- GPS is a Global Navigation Satellite System (GNSS) operated by the United States.
+- The constellation consists of a minimum of 24 satellites, with some spares, orbiting above the earth at 10,900 nautical miles. The system is designed so that at least 5 satellites are in view at any given location on earth.
+- The Aircraft's GPS receiver calculates the distance to a GPS satellite based on the time lapse since the broadcast timestamp, obtained from an atomic clock onboard the satellite, and the time it received the signal.
+- Using only one satellite, the aircraft could virtually be on any point on a sphere surrounding the satellite, with the calculated distance, or "pseudo-range," as the sphere's radius.
+- The GPS receiver uses the intersection of spheres, from multiple satellites, to calculate the aircraft's geographical position. Course and speed data are computed from aircraft position changes.
+- At least 3 satellites are required for 2D position, latitude and longitude; at least 4 satellites are required for 3D position, latitude, longitude and altitude.
+- Receiver Autonomous Integrity Monitoring (RAIM) is a function of GPS receivers that monitors the integrity of the satellite signals.
+- RAIM fault detection requires a minimum of 5 satellites, or 4 satellites plus an altimeter input, called baro-aided RAIM.
+- To eliminate a corrupt satellite, called fault exclusion, RAIM needs an additional satellite, a total of 6, or 5 plus baro-aid.
+- A database loaded into the receiver unit contains navigational data such as: airports, navaids, routes, waypoints and instrument procedures.
+- Airborne GPS units use great-circle navigation.
+- GPS CDI deflection shows distance, unlike a VOR's CDI, which presents an angular distance off course in degrees.
+- GPS can substitute ADF or DME, except for ADF substitution on NDB approaches without a GPS overlay, indicated by "or GPS" in the title.
+- Check GPS NOTAMs before the flight and use RAIM prediction if available on your receiver.
+- GPS Augmentation systems, or Differential GPS (DGPS), improve the accuracy of GPS by measuring errors received by reference stations at known geographical locations and then broadcasting those errors to supported GPS receivers.
+- Satellite Based Augmentation System (SBAS):
+- Wide Area Augmentation System (WAAS) in the US; EGNOS in Europe.
+- Ground stations, called Wide-area Reference Stations and Wide-area Master Stations, measure GPS errors and produce correction signals. These corrections are broadcast back to the satellite segment, from which they are bounced back to aircraft GPS WAAS receivers to improve accuracy, integrity and availability monitoring for GPS navigation.
+- Covers a wide area.
+- Facilitates APV approaches such as LPV and LNAV/VNAV and non-precision LP approaches.
+- Ground Based Augmentation System (GBAS):
+- Formerly named Local Area Augmentation System (LAAS) in the US, now replaced with the ICAO term "GBAS."
+- Errors are broadcast via VHF to GBAS-enabled GPS receivers.
+- GBAS is more accurate than WAAS but covers a much smaller geographical area.
+- Allows for category I and above approaches to GLS DA minima.
+
+REQUIRED NAVIGATION PERFORMANCE (RNP)
+- RNP is a statement of navigation equipment and service performance — RNAV with navigation monitoring and alerting.
+- All RNAV approaches are RNP approaches.
+- Most US RNP approaches are titled "RNAV (GPS)."
+- US Approaches with "RNAV (RNP)" in the title are "AR," or Authorization Required, approaches, which require special FAA approval for the crew, aircraft and operation.
+- In other countries, all RNP approaches may have "RNP" in the title, even those that do not require special authorization.
+RNP approach minima and equipment:
+- GLS DA minima using GBAS, formerly LAAS.
+- LP MDA or LPV DA minima require RNP achieved by WAAS.
+- LNAV / VNAV DA achieved by VNAV-approved WAAS, or BARO-VNAV systems.
+- LNAV MDA achieved by a basic, unaugmented IFR-approved GPS.
+
+Clarifying the difference between RNAV, GNSS, GPS, PBN and RNP:
+- Area Navigation, or RNAV, is a system that enables navigation between any two points without the need to overfly ground-based stations.
+- GNSS is a broad term for satellite-based RNAV systems.
+- GPS is the GNSS operated by the USA. Other examples are GLONASS by Russia and Galileo by the EU.
+- Performance Based Navigation, or PBN, is a general basis for navigation equipment standards, in terms of accuracy, integrity, continuity, availability and functionality for specific operation contexts, such as final approach, enroute, or missed approach.
+- Required Navigation Performance, or RNP, is a specific statement of PBN for the flight segment and aircraft capability. RNP is also defined as RNAV plus navigation monitoring and alerting functionality. Receiver Autonomous Integrity Monitoring, or built-in monitoring in WAAS, provides this capability.
+- Enroute: RNP 2.0, meaning 2 nautical mile accuracy 95% of the flight time.
+- Terminal and Departure: RNP 1.0, meaning 1 nautical mile accuracy 95% of the flight time.
+- Final Approach: RNP 0.3, meaning 0.3 nautical mile accuracy 95% of the flight time.
+- Advanced RNP, or A-RNP, is a higher RNP standard mandatory for RNP AR, requiring capability for Radius-to-Fix, or RF, legs; Scalable RNP, which can gradually vary between 1.0 and 0.3, or as low as 0.1, RNP values; and Parallel offset flight path generation.
