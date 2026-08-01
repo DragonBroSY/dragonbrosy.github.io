@@ -385,3 +385,244 @@ Power off landing- make sure to pay attention to winds. Also keep in mind there 
 2026-07-07	N598A	PA-28-181	KPDK		KPDK					0.60		0.60																		"Hans KreukInstrument Basics & Procedures- Flight back from checkride. 
 - Congrats on your private checkride!"		
 																																
+2026-07-15	N470A	PA-28-181	KPDK		KPDK					2.00		2.00																		"Hans KreukInstrument Basics & Procedures- PDK RMG PDK
+- We filed together. We filed PDK RMG CNI PDK but we could not get an approach into CNI due to the saturated airspace in the Atlanta area for the World Cup
+- 
+- Before getting the CRAFT clearance we can think about some of the items before ATC tells us (clearance limit, altitude, departure frequency) 
+- Heading to RMG we discussed ways to get ahead of the airplane (preloading frequencies, getting the weather, checking NOTAMs and knowing your approach request before ATC asks us to get them, determining holding entry, etc)
+- 
+- RMG RNAV 1
+- We did not have to fly the PT so we need to remove it from our flight plan in the G430
+- We had LPV minimums so we also need to verify that at the IF so we know which line of minimum we can use.
+- We were slightly snaking along our lateral course. For those lateral corrections we want small corrections. We shouldnt need large bank corrections
+- You did well holding glideslope but at the very end we started getting high right before minimums. Know for an LPV the GS and lateral course become more sensitive the closer you get, so the small corrections will need to be done quickly the closer you get to hold your course and GS.
+- When getting the weather, stay with ATC. Youll just have to listen to both at the same time
+- Going missed = 5 Cs. Its the same as a go around but youre adding ""click"" before the ""call"". Click is the OBS button to activate the missed approach. You can only do that after crossing the MAP
+- When configuring make sure to fully configure and complete the before landing checklist
+- 90 kts within 3 miles of the approach
+- Once youre visual tell me something from 91.175c that allows us to continue below minimums
+- 
+- We got set up for CNI but then Atlanta Center told us Atlanta Approach was not allowing practice approaches in their airspace due to a saturated airspace. We returned to PDK
+- 
+- PDK ILS 21L
+- This is a ground based so we had to tune and ID the LOC. This approach was a little unconventional. ATC told us to maintain 110KT until short final due to the amount of traffic going into PDK. We would normally be at 90KTs, configure and slow to 80KTs then 70KTs after. Your lateral course was locking in the entire approach! 
+- Once youre visual tell me something from 91.175c that allows us to continue below minimums
+- Checking with tower on an approach its just ""Peachtree Tower, Career Track ###, ILS 21L"" for example. We dont have to tell them the ATIS info, how far out we are, etc
+- 
+- You did well with the IMC for most of the flight! We will continue to fly in IMC when we can"		
+2026-07-16	N473A	PA-28-181	KPDK		KPDK					2.20		2.20																		"Hans KreukInstrument Basics & Procedures- PDK CPP WDR PDK
+- CPP LOC 25
+- WDR ILS 31
+- 
+- We need to set a timer on takeoff. When we get our clearance we have an altitude to climb to, but another altitude to climb to in typically 5 or 10 minutes. This is for a lost comms situation in IMC. Id utilize the timer on the G500
+- Going to CPP, excellent job staying ahead of the plane the entire way with weather, checklist, tuning/IDing the LOC, etc
+- This approach has a teardrop PT, you knew exactly what to do, however you over shot your turn back inbound. Instead of 204 we were 230+, causing you to need an immediate correction. However, we climbed 200+ feet during that that and it caused us to fly through the LOC and overshoot. 
+- You did great getting back on the LOC and holding it the rest of the way in.
+- Dont forget your 1000 to minimums call. This will typically occur after crossing the FAF/establishing GS.
+- Reaching minimums: perfect job holding minimums! You were right on them and didnt go below them. You can always sit a little above them, but as long as you dont go below them until 91.175c is met, then youre good.
+- Make sure to call out what you see from 91.175c that allows you to descend below minimums to land.
+- Nice job going flaps 25 right after descending below minimums to the runway.
+- When making CTAF calls for your approach position, they can be along the lines of, ""Greene Country Traffic, Career Track 220, 10 miles final Localizer 25"". That allows VFR and IFR traffic to know where we are. Plus its simple and to the point.
+- On the missed dont forget your instructions.
+- 
+- WDR ILS 31
+- We practiced asking for delayed vectors to give more time to brief and set up for an approach.
+- LOC was flown well. We got a little left and right towards the end but you were correcting well.
+- GS a little below us, but you never corrected to get it back to perfect. Since it was sitting 1/2 dot below us, there is a reason for it. Then it started going even further below us, almost to full deflection. As you get closer to the MAP on a ILS, LOC, LPV or LP approach the parameters become narrower the closer you get. You corrections need to be quicker and more accurate the closer you get, or else you can lose the GS or LOC within seconds.
+- I told you prior to the approach we were going missed at the DA. Nice job with the 5 Cs. 
+- 
+- Returned to PDK. We could not practice the RNAV A as there was a cell with heavy rain over the IF and we were VFR
+- Next flight we will practice Circle to Land and VORs"		
+2026-07-18	N470A	PA-28-181	KPDK		KPDK					2.10		2.10																		"Hans KreukInstrument Basics & Procedures- PDK CPP WDR PDK
+- CPP VOR B CTL 25
+- WDR ILS 31 with hold
+- 
+- Set timer on take off. You said this waiting before takeoff but forgot once we got the clearance call
+- CPP VOR B
+- When told ""advise wx, NOTAMs, req"" get that in. You started briefing the plate.
+- You had everything briefed and all checkilst items done except tuning and IDing the VOR. Go ahead and do this once you get to that on your approach plate
+- Forgot to remove the hold from the flight plan. I reminded you and it was removed with .2 miles until the IF. If you forget to remove it the GPS will cycle you for a hold when we need to go inbound
+- Fully configure when you do. You only adjusted flaps and power, but not the rest of the items
+- Great job holding the LOC and minimums!!
+- Circling was done correctly as well.
+- 
+- WDR ILS 31 with a hold:
+- 
+- You checked the NOTAMs to see the DA was changed. Nice job remembering today.
+- You briefed the hold correctly as well. Also, nice work clicking SUSP to remain in the hold and reclicking OBS to leave the hold.
+- We were at 3500 holding per instruction and the hold is at 3000. Once you are cleared in the hold you can descend to 3000, unless you were told to hold 3500.
+- Once GS is moving say, ""glideslope alive"" just like we do with the LOC
+- As we got close to the runway we started snaking a little on the GS. We got a little high and a little low. Anticipate the inputs needed will need to be quick but also smaller to prevent overcorrecting.
+- You went missed correctly just dont forget to click the OBS button to activate the Missed"		
+2026-07-19	N598A	PA-28-181	KPDK		KPDK					2.50		2.50																		"Hans KreukInstrument Basics & Procedures- PDK-AJR-JCA-PDK
+- AJR RNAV 6 x2
+- JCA RNAV 17
+- 
+- When told a frequency change, make sure to establish contact with the new frequency before removing the old one. If you entered the wrong one or if you were given the wrong one, this allows you to go back to your old frequency to get clarification from the controller. If you change it, then you have no known frequency to talk to ATC with
+- 
+- AJR RNAV6 6:
+- NoPT was on your plate from our direction. We did not need to do a PT.
+- You did excellent at the IF by confirming your final approach course, make 10 mi CTAF call, descend and verify the correct line of minima is on the G430. Everything you needed to do, you did.
+- At the FAF this approach unraveled. 
+- Fully configure at the FAF. You only did power and flaps. We have done this a few times. The checklist is right next to the G500 and G430s
+- You held altitude at the FAF for a moment so we got to 70 kts. Pitch the nose over to descend but we also need 80 kts. We were on GS initially but when you looked down at your approach plate the GS shot down 1 dot. There isnt anything on your plate you need. Your minimums were loaded into the G500 and we must memorize the missed instructions. Looking down for 2-3 seconds caused us to get high on the GS and off the lateral course by a full dot as well. We were very close to a full GS and lateral deflection. After the FAF I want you to prioritize your GS and lateral course more. Memorizing the key points (minimums, MD or MDA, missed approach instructions, etc) on your approach plates will also help incredibly
+- You forgot your missed instructions for this approach so we did not turn when it told us to.
+- 
+- You then flew the missed well after rebriefing and you did well entering and flying the missed hold.
+- I then flew the approach to show you a few things. I believe making more verbal callouts will help you. Thinking about your minimum altitude, missed instructions, when your next call will be, etc prior to it needing to happen helps you stay ahead of the plane.
+- 
+- JCA:
+- Hold at IF for RNAV 17
+- You did the holding entry correctly
+- However, you never checked the NOTAMs. You said you did in your call to ATC.
+- There is a NOTAM saying LPV and LNAV/VNAV is unusable. This means we must use LNAV or circling minimums. You did not see this so you used LPV minimums and used the GS. The GS was working, but after the FAF it is not working, hence the NOTAM.
+- You configured at the IF not the FAF. You said you would configure at the fix but then said youd make a 10 mi call at the same fix. We never configure that far out so it should have been a red flag to verify which fix is the IF and which is the FAF.
+- We were not suppose to follow the GS, but we did get full deflection too high after the FAF
+- We broke off the approach due to traffic and headed back to PDK
+- 
+- I want to fly this same route tomorrow with the VOR 35 as well into JCA. It was not your best flight but I have seen improvements in several areas. I want you to focus on staying ahead of the plane mentally (What you will do at each fix? Is our plan and the GPS in sync? Follow the GS and lateral course tighter. The moment you see it start to veer in one direction, correct.)"		
+2026-07-20	N470A	PA-28-181	KPDK		KPDK					2.60		2.60																		"Hans KreukInstrument Basics & Procedures- PDK AJR JCAx2 PDK
+- AJR RNAV 6 CTL 24
+- JCA RNAV 17 
+- JCA VOR 35
+- 
+- Good job setting timer on takeoff
+- You also did better today with checking the wx and NOTAMs before each approach
+- 
+- AJR RNAV 6 CTL 24
+- When doing a circle approach make sure to brief circling minimums and not LPV minimums
+- Still losing GS after the final. I think you arent giving it enough attention in your scan. You looked down at your approach plate for your minimums (which were already loaded into the G500) so you didnt see you got off GS. After the FAF you shouldnt need to look at your plate. You minimums should be memorized and put on the G500 and your missed instructions should be memorized as well.
+- In the circle hold the MDA. Once visual you said ""im high"" and started descending. I think you forgot we were circling because we needed to get to the other side of the airport, so we wouldnt have been high at all.
+- You did very well holding the lateral course on this approach, which is something that has been improving 
+- You want to put in flaps once abeam your touchdown point when in the downwind on a circle
+- Dont forget to make a call to ATC after the missed
+- 
+- JCA RNAV 17
+- the first thing you did after receiving holding instructions (which was only a few miles away) was figure out the entry. That was perfect efficiency. I liked how you figured that out before briefing so you knew exactly what to do at the holding fix
+- After the FAF and before KAWAS you were messing with the altitude bug. This is a great opportunity to get distracted. Just say the altitude out loud and count down your altitude to it. It helps you memorize it
+- Without a glide slope we want to aim for the minimums around the VDP. If we reach them much later we would be high if we had a GS and if we reach it much sooner we would be low.
+- 
+- JCA VOR 35
+- nice job getting set up for this timely.
+- saying ""8 miles to the runway"" does tell other pilots where you are. ""8 mile final"" is much more helpful
+- configured after the FAF, make sure to configure before the FAF when you dont have a GS
+- circle was done well but we were a touch too close, with a .25 XTK. Widen out a little. If the turn to final looks tight, youre too close
+- you flew this approach well though
+- 
+- We will focus on holding GS on our next flight. I believe if you can improve here your approaches will become much better. You lateral course has been much better!"		
+2026-07-23	N470A	PA-28-181	KPDK		KPDK					2.40		2.40																		"Hans KreukInstrument Basics & Procedures- PDK RMGx2 PDK
+- 
+- RMG RNAV 25
+- We can fly to LP minimums. En route you said we would need LNAV. You got confused with LOC and LP. LP and LOC are essentially the same except LOC is ground based and LP is GPS based. We need WAAS to fly LP, which we have.
+- Good job verifying minimums at the IF. LP+V is advisory so we need to meet every altitude until the fix.
+- No 10 mile call to CTAF. 
+- You did good talking yourself through the approach down to the FAF, but you got distracted making a call we got 100 feet below the FAF altitude prior to the fix. 
+- Configured correctly
+- 1000 to miniums, lateral course and holding MDA were all done correctly
+- flew past MAP and didnt realize it. You got quiet. You were doing so well but lost track of our distance to the MAP.
+- Forgot 'click' on the missed
+- 
+- We flew the same approach again as clouds prevented us from using other approaches into RMG.
+- RMG RNAV 25
+- 
+- PT SAT
+- Lateral course, CTAF calls, configuration all SAT
+- When we need to level off at an altitude, make sure to add power before getting there. If you all power at the posted altitude you will descend below it before the plane can react to the added power. Got below 1400 before the FAF
+- When leveling off for the MDA, the moment you are visual and meet 91.175c to land, take out the extra power you added to hold altitude and add flaps 25. We dont want to keep the extra power and get high.
+- On missed forgot 'click' again
+- 
+- We had to get a pop up IFR back to PDK so I showed you how that goes
+- 
+- PDK ILS 21L
+- Forgot to check NOTAMs for the new DA. The first 2 things you should always do when briefing a plate is 1) verify it is the correct plate and 2) check the NOTAMs
+- I liked how you loaded the LOC and the RMG VOR freq for the missed
+- When checking in with a tower when on an approach all you tell them is the approach youre on. Example: ""Peachtree Tower, Career Track 222, ILS 21L"". You dont have to include altitude, distance, etc.
+- This was the best approach you have flown yet. We wanted to focus on holding GS better and you did excellent with it. For almost the entire approach the GS was right on the line we want it to be. Your lateral course was spot on as well. We do have parallel runways so be mindful when you have that so you dont get off towards the direction of the other runway.
+-"		
+2026-07-26	N851P	PA-28-181	KPDK		KPDK					2.30		2.30																		"Hans KreukInstrument Basics & Procedures- KPDK-KRMG-KPDK
+- 
+- Make sure you wait until you are 400ft agl before turning to the heading ATC gave you.
+- Every 1,000ft you climb or descend you need to lean or enrichen the mixture.
+- 
+- KRMG RNAV 19 LPV
+- Struggled holding heading and altitude. Find the right power setting to hold altitude and then trim the plane to relieve the input.
+- Teardrop PT (have the heading already calculated on the plate)
+- Have a quicker instrument cross scan so you don’t get too far off course.
+- Plate brief, make sure you are going through all the boxes when briefing the approach.
+- Got the approach checklist completed.
+- Stay 50ft above each altitude and add power so you don’t descend below minimums.
+- Configured 0.5nm from the FAF.
+- Make corrections sooner and make small corrections to maintain course and say on the glideslope.
+- Double check what the missed procedure are before turning.
+- 
+- KPDK ILS 21L
+- Got the plate briefed and approach checklist completed.
+- Nice job tune & id the localizer.
+- After crossing the fix or getting established on the localizer, look at what altitude you need to descend down to.
+- Got a false glideslope since we were way to high and never descended down.
+- Use the wind diamond to fly the approach.
+- Don’t fixate on one specific instrument, keep the scan constantly moving."		
+2026-07-27	N347D	PA-28-181	KPDK		KPDK					2.30		2.30																		"Hans KreukInstrument Progress Eval- KPDK-KCPP-KCVC-KPDK
+- 
+- KCPP VOR B c 25
+- You stayed ahead of the plane by getting the approach plate briefed, approach checklist completed, and tuned and id the VOR.
+- Make sure you put the new altimeter settings in both the PFD and standby.
+- For a circle to land we circle if we have runway in sight 1.3nm and at minimums.
+- Make more frequent CTAF calls, only made calls from 5 miles out, start making CTAF calls from 10 miles out.
+- You briefed that you were going to turn left for the right downwind of runway 25, but you turned right for the left downwind for runway 7. You got the runways mixed up.
+- When you circle down to the runway, it should be a continuous circle to the runway instead of flying a traffic pattern.
+- 
+- KCVC RNAV 28 LPV
+- You stayed ahead of the plane by getting the approach plate briefed and approach checklist completed.
+- For the hold at IBAYY, try to maintain 90 KIAS, but you flew the hold correctly.
+- Use the flight plan on the 430 to see how far you are from the runway or you can use the approach plate to see approximately how far out you are.
+- Flew 10 KIAS slower for this approach, remember you want to be at 90 KIAS before the FAF and 80 KIAS after the FAF.
+- Nice job configuring at half dot from the FAF.
+- Make more CTAF calls especially when other people are in the pattern or around the airport.
+- Make smaller corrections faster to maintain both course and glideslope.
+- Went missed correctly. 
+- 
+- KCVC RNAV 28 LNAV 
+- You stayed ahead of the plane by getting the approach plate briefed and approach checklist completed.
+- Don't forget to adjust the standby altimeter for the airport.
+- Since you saw you were getting vector to final, all you need to do is activate vectors to final.
+- You need to be making CTAF calls, let other traffic know where you are and what you are doing.
+- Nice job making corrections to stay on the final approach course.
+- Went missed incorrectly. You flew it like a precision approach and not a non precision approach. You need to hold MDA all the way to the MAP and then complete the 5 C's."		
+2026-07-29	N564K	PA-28-181	KLZU		KLZU					0.60		0.60																		"Hans KreukLine Oriented Flight Training (LOFT)- PDK to LZU from plane repo for MX to check nose gear"		
+2026-07-29	N564K	PA-28-181	KPDK		KPDK					0.60		0.60																		"Hans KreukLine Oriented Flight Training (LOFT)- LZU to PDK after MX tweaked with nose gear"		
+2026-07-30	N547K	PA-28-181	KPDK		KPDK					3.70		3.70																		"Hans Kreuk250 NM Instrument XC- 250 xc
+- 
+- RMG AND PDK
+- RMG RNAV 1
+- AND VOR 5
+- PDK RNAV A CTL 3R
+- filed. good job with filing 
+- 
+- RMG:
+- report reaching holding fix
+- wait for GPS to tell you when to turn in a published hold
+- on short final we had a .01 crosstrack and to correct you turned about 15 degrees left. .01 crosstrack is about 52 feet so we need the smallest correction possible
+- when checking in with ATC on the miss dont forget to say the altitude youre at and what youre climbing to
+- comms with ATC during hold and determining the hold SAT
+- 
+- AND:
+- the VOR is the FAF, so we need to configure prior to reaching it. Also, we need to descend right after crossing the FAF. ATC had us 500 feet high as well so we really needed to descend after the FAF
+- Your circle and CTAF calls were all great
+- 
+- PDK:
+- reached minimums to circle about 3 miles from the runway. try to aim to reach the circling minimums closer to the 1.3 distance mark so we dont get low so far out
+- hold MDA in circle until youre ready to descend. We got 100 below circling MDA while established in the downwind"		
+2026-07-31	N470A	PA-28-181	KPDK		KPDK					2.10		2.10																		"Hans KreukInstrument XCs- PDK RMG JZP PDK
+- RMG RNAV 1 PP
+- JZP RNAV 16
+- 
+- I introduced partial panel (PP) today. When PP we need to first fly the plane with our new instrument scan, then notify ATC of the navigation failure. If on an approach we need to change to LNAV minimums
+- 
+- The corrections we need to make when PP need to be small to prevent over correction. We get out lateral navigation via the G430.
+- 
+- JZP 
+- when receiving a vectors to final clearance, if the approach is already loaded, just click 'proc', and click 'vectors to final' instead of reloading the entire approach
+- when configuring you may need to add power to hold GS. If you just pitch up we can get slow. We got to 70 kts but after you did well holding 80 kts, GS and lateral course!
+- 
+- Its been a pleasure flying with you, Hans! Never hesitate to reach out and best of luck with your future!!"		

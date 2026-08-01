@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-14",
-  "source_rows": 282,
+  "generated": "2026-08-01",
+  "source_rows": 294,
   "sources": [
     {
       "file": "logbook.txt",
-      "rows": 47,
-      "used": 46
+      "rows": 59,
+      "used": 58
     },
     {
       "file": "logbook-current.csv",
@@ -23,14 +23,14 @@
       "used": 48
     }
   ],
-  "total_time": 492.2,
+  "total_time": 517.6,
   "airplane": {
-    "total": 187.1,
+    "total": 212.5,
     "pic": 17.2,
     "turbine": 0
   },
   "category_class": {
-    "airplane_sel": 173.3,
+    "airplane_sel": 198.7,
     "airplane_ses": 0,
     "airplane_mel": 13.8,
     "airplane_mes": 0,
@@ -40,7 +40,7 @@
     "pic": 17.2,
     "instructor": 0.0,
     "sic": 301.3,
-    "dual": 178.8,
+    "dual": 204.2,
     "other": 0,
     "fe": 0
   },
@@ -56,8 +56,8 @@
   },
   "last_bfr_or_checkride": "2026-07-07",
   "last_flown_aircraft": "PA-28-181",
-  "total_flight_hours_last_6mo": 82.9,
-  "total_flight_hours_last_12mo": 110.2,
+  "total_flight_hours_last_6mo": 108.3,
+  "total_flight_hours_last_12mo": 127.2,
   "aircraft_flown": [
     {
       "type": "UH-60M",
@@ -74,11 +74,11 @@
     {
       "type": "PA-28-181",
       "category": "sel",
-      "total": 82.9,
+      "total": 108.3,
       "pic": 10.0,
       "dual_given": 0.0,
       "turbine_sic": 0.0,
-      "dual_received": 72.9,
+      "dual_received": 98.3,
       "other": 0.0,
       "last_flown": "2026-07",
       "source": "logbook"
@@ -181,7 +181,7 @@
     }
   ],
   "minimums_raw": {
-    "total_time": 492.2,
+    "total_time": 517.6,
     "multi_engine_land": 13.8,
     "night": 44.6,
     "instrument": 43.2,

@@ -75,9 +75,15 @@ jobs:
               return None
 
           def clean_remarks(text):
-              # LogTen prepends student name — strip "Hans Kreuk" or any leading word-run before first whitespace+dash
-              text = re.sub(r'^[A-Za-z ]{2,30}(?=[A-Z][a-z])', '', text.strip())
-              return re.sub(r'\s*\n\s*', ' ', text).strip()
+              # LogTen prepends the student's own name before every remark
+              # (format varies by export: glued to the title, or separated by
+              # a \r or \n) — anonymize it to a generic alias before it ever
+              # reaches the public site.
+              text = re.sub(r'^\s*Hans\s*Kreuk\s*', 'PI ', text.strip(), count=1, flags=re.IGNORECASE)
+              text = re.sub(r'\s*[\r\n]+\s*', ' ', text)
+              text = re.sub(r'\bHans\s*Kreuk\b', 'PI', text, flags=re.IGNORECASE)
+              text = re.sub(r'\bKreuk\b', 'PI', text, flags=re.IGNORECASE)
+              return text.strip()
 
           # Aircraft types that count as Multi Engine Land. Everything else
           # (and anything unrecognized) defaults to Single Engine Land.
