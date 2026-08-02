@@ -1,6 +1,6 @@
 {
   "generated": "2026-08-02",
-  "source_rows": 294,
+  "source_rows": 295,
   "sources": [
     {
       "file": "logbook.txt",
@@ -18,15 +18,20 @@
       "used": 186
     },
     {
+      "file": "logbook-r22-bfr.csv",
+      "rows": 1,
+      "used": 1
+    },
+    {
       "file": "logbook-sfs.csv",
       "rows": 49,
       "used": 48
     }
   ],
-  "total_time": 517.6,
+  "total_time": 518.9,
   "airplane": {
     "total": 212.5,
-    "pic": 17.2,
+    "pic": 18.5,
     "turbine": 0
   },
   "category_class": {
@@ -34,13 +39,13 @@
     "airplane_ses": 0,
     "airplane_mel": 13.8,
     "airplane_mes": 0,
-    "helicopter_rotor": 305.1
+    "helicopter_rotor": 306.4
   },
   "type_of_time": {
-    "pic": 17.2,
+    "pic": 18.5,
     "instructor": 0.0,
     "sic": 301.3,
-    "dual": 204.2,
+    "dual": 205.5,
     "other": 0,
     "fe": 0
   },
@@ -51,13 +56,13 @@
     "actual_instrument_rotor": 2.1,
     "simulated_instrument_airplane": 9.4,
     "simulated_instrument_rotor": 30.3,
-    "cross_country_airplane": 9.0,
+    "cross_country_airplane": 50.0,
     "cross_country_rotor": 297.6
   },
   "last_bfr_or_checkride": "2026-07-07",
   "last_flown_aircraft": "PA-28-181",
-  "total_flight_hours_last_6mo": 108.3,
-  "total_flight_hours_last_12mo": 127.2,
+  "total_flight_hours_last_6mo": 109.6,
+  "total_flight_hours_last_12mo": 128.5,
   "aircraft_flown": [
     {
       "type": "UH-60M",
@@ -158,13 +163,13 @@
     {
       "type": "R22 BETA II",
       "category": "rotor",
-      "total": 1.5,
-      "pic": 0.0,
+      "total": 2.8,
+      "pic": 1.3,
       "dual_given": 0.0,
       "turbine_sic": 0.0,
       "dual_received": 1.5,
       "other": 0.0,
-      "last_flown": "2023-06",
+      "last_flown": "2026-02",
       "source": "logbook"
     },
     {
@@ -181,14 +186,14 @@
     }
   ],
   "minimums_raw": {
-    "total_time": 517.6,
+    "total_time": 518.9,
     "multi_engine_land": 13.8,
     "night": 44.6,
     "instrument": 43.2,
-    "cross_country": 306.6,
-    "pic_strict": 17.2,
-    "pic_plus_qualifying_sic": 318.5,
-    "pic_cross_country": 1.6,
+    "cross_country": 347.6,
+    "pic_strict": 18.5,
+    "pic_plus_qualifying_sic": 319.8,
+    "pic_cross_country": 7.4,
     "pic_night": 1.6
   }
 }
