@@ -287,7 +287,7 @@ Power off landing- make sure to pay attention to winds. Also keep in mind there 
 2026-05-19	N674A	PA-28-181	KPDK		KPDK					3.60		3.60		2.80																"Hans KreukSolo XCs- First solo XC! We will do it again tomorrow morning!"		
 2026-05-20	N980A	PA-28-181	KPDK		KPDK					3.80		3.80		3.00																"Hans KreukSolo XCs-Solo XC number 2
 - You have 10 hours of solo so we will do the night XC flight next!"		
-2026-05-29	N563K	PA-28-181	KPDK		KPDK					3.20		3.20																		"Hans KreukNight- After a week of trying to get this flight in every day the weather finally held up!
+2026-05-28	N563K	PA-28-181	KPDK		KPDK					3.20		3.20																		"Hans KreukNight- After a week of trying to get this flight in every day the weather finally held up!
 - 
 - Great job with navigating and with the night landings. All were SAT
 - 

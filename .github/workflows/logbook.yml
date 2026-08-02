@@ -21,7 +21,7 @@ jobs:
       - name: Convert logbook to logbook.json + propel.json
         run: |
           python3 - <<'EOF'
-          import csv, json, re, os, io, glob
+          import csv, json, re, os, io, glob, sqlite3
           from datetime import datetime, timedelta, timezone
 
           # ── Column name aliases — covers LogTen Pro's various export
@@ -46,6 +46,7 @@ jobs:
           COL_CATEGORY = ['category']
           COL_FLTREV   = ['flight review']
           COL_REMARKS  = ['remarks', 'comments', 'notes']
+          COL_TAILNUM  = ['aircraft id', 'tail number', 'registration', 'n-number']
 
           def find_col(headers, aliases):
               for alias in aliases:
@@ -213,6 +214,7 @@ jobs:
           last_bfr_dt = [None]
           ac_totals = {}  # ac_type -> {'total', 'category', 'last_dt'}
           source_summary = []
+          all_flight_rows = []  # flat per-flight rows, mirrored into flights.db
 
           def track_aircraft(ac_type, cat, total_h, dt, pic_h, instr_h, sic_h, dual_h):
               if not ac_type:
@@ -296,6 +298,8 @@ jobs:
               c_xc    = find_col(file_headers, COL_XC)
               c_date_ = find_col(file_headers, COL_DATE)
               c_fltrv = find_col(file_headers, COL_FLTREV)
+              c_remk  = find_col(file_headers, COL_REMARKS)
+              c_tail  = find_col(file_headers, COL_TAILNUM)
 
               used = 0
               for row in file_rows:
@@ -311,18 +315,34 @@ jobs:
                   dual_h = parse_hours(row.get(c_dual, '') if c_dual else '')
                   if dual_fallback and dual_h == 0:
                       dual_h = max(total_h - pic_h, 0)
-                  add_row(
-                      dt, ac_type, cat, total_h,
-                      pic_h,
-                      parse_hours(row.get(c_instr, '') if c_instr else ''),
-                      parse_hours(row.get(c_sic, '')   if c_sic   else ''),
-                      dual_h,
-                      parse_hours(row.get(c_night, '') if c_night else ''),
-                      parse_hours(row.get(c_imc, '')   if c_imc   else ''),
-                      parse_hours(row.get(c_sim, '')   if c_sim   else ''),
-                      parse_hours(row.get(c_xc, '')    if c_xc    else ''),
-                  )
+                  instr_h = parse_hours(row.get(c_instr, '') if c_instr else '')
+                  sic_h   = parse_hours(row.get(c_sic, '')   if c_sic   else '')
+                  night_h = parse_hours(row.get(c_night, '') if c_night else '')
+                  imc_h   = parse_hours(row.get(c_imc, '')   if c_imc   else '')
+                  sim_h   = parse_hours(row.get(c_sim, '')   if c_sim   else '')
+                  xc_h    = parse_hours(row.get(c_xc, '')    if c_xc    else '')
+                  add_row(dt, ac_type, cat, total_h, pic_h, instr_h, sic_h, dual_h, night_h, imc_h, sim_h, xc_h)
                   used += 1
+
+                  raw_remarks = row.get(c_remk, '').strip() if c_remk else ''
+                  all_flight_rows.append({
+                      'source': path,
+                      'date': dt.strftime('%Y-%m-%d') if dt else None,
+                      'aircraft_type': ac_type or None,
+                      'tail_number': (row.get(c_tail, '').strip() if c_tail else '') or None,
+                      'category': cat,
+                      'total_time': round(total_h, 2),
+                      'pic': round(pic_h, 2),
+                      'sic': round(sic_h, 2),
+                      'instructor': round(instr_h, 2),
+                      'dual_received': round(dual_h, 2),
+                      'night': round(night_h, 2),
+                      'actual_instrument': round(imc_h, 2),
+                      'simulated_instrument': round(sim_h, 2),
+                      'cross_country': round(xc_h, 2),
+                      'remarks': clean_remarks(raw_remarks) if raw_remarks else None,
+                  })
+
                   if track_bfr:
                       fltrev = row.get(c_fltrv, '').strip() if c_fltrv else ''
                       if fltrev and dt is not None and (last_bfr_dt[0] is None or dt > last_bfr_dt[0]):
@@ -459,11 +479,52 @@ jobs:
           with open('propel.json', 'w') as f:
               json.dump(propel, f, indent=2)
           print(f'Wrote propel.json (total_time={propel["total_time"]}, sources={source_summary})')
+
+          # ── flights.db — local SQLite mirror of every per-flight row that
+          # feeds the totals above (rebuilt from scratch each run, so it
+          # always exactly matches logbook.json/propel.json; not meant to be
+          # hand-edited). ──
+          db = sqlite3.connect('flights.db')
+          db.execute('DROP TABLE IF EXISTS flights')
+          db.execute('''
+              CREATE TABLE flights (
+                  id INTEGER PRIMARY KEY,
+                  source TEXT,
+                  date TEXT,
+                  aircraft_type TEXT,
+                  tail_number TEXT,
+                  category TEXT,
+                  total_time REAL,
+                  pic REAL,
+                  sic REAL,
+                  instructor REAL,
+                  dual_received REAL,
+                  night REAL,
+                  actual_instrument REAL,
+                  simulated_instrument REAL,
+                  cross_country REAL,
+                  remarks TEXT
+              )
+          ''')
+          db.executemany('''
+              INSERT INTO flights (
+                  source, date, aircraft_type, tail_number, category, total_time,
+                  pic, sic, instructor, dual_received, night,
+                  actual_instrument, simulated_instrument, cross_country, remarks
+              ) VALUES (
+                  :source, :date, :aircraft_type, :tail_number, :category, :total_time,
+                  :pic, :sic, :instructor, :dual_received, :night,
+                  :actual_instrument, :simulated_instrument, :cross_country, :remarks
+              )
+          ''', all_flight_rows)
+          db.commit()
+          db.close()
+          print(f'Wrote flights.db ({len(all_flight_rows)} rows)')
           EOF
 
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add logbook.json propel.json
+          git add logbook.json propel.json flights.db
           git diff --staged --quiet || git commit -m "auto: update logbook.json + propel.json [skip ci]" && git push
