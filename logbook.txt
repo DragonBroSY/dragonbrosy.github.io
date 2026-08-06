@@ -367,7 +367,7 @@ Dual XC 2
 - Emergency checklist - I need these memorized before I can send you on a solo XC. We will review these prior to the solo Friday. I want to hear the engine fire during start, engine fire airborne, electrical fire, engine failure and engine roughness checklists all without you looking at the checklist. Every second counts during an emergency, especially the fires.
 
 - Great job with navlog, planning airport entries, flight following and with the alternator failure today! I have full confidence you will pass the eval tomorrow without issue"		
-2026-05-14	N473A	PA-28-181	KPDK		KPDK					3.30		3.30			3.30															"Hans Kreuk
+2026-05-14	N473A	PA-28-181	KPDK		KPDK					3.30	0.20	3.30			3.30															"Hans Kreuk
 Solo XC Eval
 
 - KPDK-KAND
@@ -398,7 +398,7 @@ Solo XCs
 
 -Solo XC number 2
 - You have 10 hours of solo so we will do the night XC flight next!"		
-2026-05-28	N563K	PA-28-181	KPDK		KPDK					3.20		3.20																		"Hans Kreuk
+2026-05-28	N563K	PA-28-181	KPDK		KPDK					3.20	3.20	3.20																		"Hans Kreuk
 Night
 
 - After a week of trying to get this flight in every day the weather finally held up!
@@ -800,3 +800,26 @@ Instrument XCs
 - when configuring you may need to add power to hold GS. If you just pitch up we can get slow. We got to 70 kts but after you did well holding 80 kts, GS and lateral course!
 - 
 - Its been a pleasure flying with you, Hans! Never hesitate to reach out and best of luck with your future!!"		
+2026-08-04	N547K	PA-28-181	KPDK		KPDK					2.10		2.10			2.10															"Hans Kreuk
+Instrument XCs
+
+- great job today on approaches. 
+- RNAV 6 AJR
+- I didn’t really have a much to say about it. 
+- You maintain your glideslope & localizer look very well, similar to when we did the last sim 
+- I can see you practiced what we did and made smaller corrections 
+- only thing about that once  you get to your DA actually look outside when I say visual the runway was right in front of us
+- Now your decision to go missed was good as you went missed at the proper point ( your depression on of you want to land or not)
+- also on the approach plate it states there is pilot control lighting. The runway has a big display placed threshold
+- ILS 27 AHN
+-  your wanna go into the initial part of the approach was good
+- remember as we get closer to the runway, the localizer becomes more sensitive
+- which means we’re gonna have to be making smaller corrections
+- 2 miles out from the runway you started over correcting leading until you almost losing the localizer
+- today got to experience shooting and approach to minimum while simultaneously being in the clouds
+- ILS 21L
+- The approach is way better. You maintain the glide slope and localizer no issues on this one.
+- we got Vector to final
+- we intercepted the localizer follow the glideslope down got to our DA went visual landed safely
+- You used the corrections on the 2 approaches and ended wrong on the final one good job 
+-"		
