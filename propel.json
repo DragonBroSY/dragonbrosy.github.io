@@ -31,7 +31,7 @@
   "total_time": 521.0,
   "airplane": {
     "total": 214.6,
-    "pic": 18.5,
+    "pic": 49.5,
     "turbine": 0
   },
   "category_class": {
@@ -42,10 +42,10 @@
     "helicopter_rotor": 306.4
   },
   "type_of_time": {
-    "pic": 18.5,
+    "pic": 49.5,
     "instructor": 0.0,
     "sic": 301.3,
-    "dual": 207.6,
+    "dual": 176.6,
     "other": 0,
     "fe": 0
   },
@@ -80,10 +80,10 @@
       "type": "PA-28-181",
       "category": "sel",
       "total": 110.4,
-      "pic": 10.0,
+      "pic": 41.0,
       "dual_given": 0.0,
       "turbine_sic": 0.0,
-      "dual_received": 100.4,
+      "dual_received": 69.4,
       "other": 0.0,
       "last_flown": "2026-08",
       "source": "logbook"
@@ -191,9 +191,9 @@
     "night": 48.0,
     "instrument": 43.2,
     "cross_country": 349.7,
-    "pic_strict": 18.5,
-    "pic_plus_qualifying_sic": 319.8,
-    "pic_cross_country": 7.4,
+    "pic_strict": 49.5,
+    "pic_plus_qualifying_sic": 350.8,
+    "pic_cross_country": 33.7,
     "pic_night": 1.6
   }
 }

@@ -275,20 +275,25 @@ jobs:
                       last_flown_dt[0] = dt
                       last_flown_aircraft[0] = ac_type or None
 
-          def process_source(path, file_headers, file_rows, pic_aliases, track_bfr, dual_fallback=False):
+          def process_source(path, file_headers, file_rows, pic_aliases, track_bfr, dual_fallback=False, rated_pic_aliases=None, rated_from=None):
               """Aggregate one already-loaded CSV/TSV into the running totals.
               Rows whose Category is 'Simulator' are excluded — Propel only
               counts real aircraft time. pic_aliases lets the current-program
               file substitute Solo for PIC (see note below). dual_fallback lets
               that same file infer Dual as Total-PIC when its own Dual column
               is blank — single-pilot trainer flying is either solo or dual
-              instruction, no third option."""
+              instruction, no third option. rated_pic_aliases/rated_from let
+              the current-program file switch to the real PIC column once the
+              pilot holds a certificate (FAR 61.51(e): sole manipulator of the
+              controls logs PIC even while receiving instruction — no longer
+              solo-only)."""
               if not file_headers:
                   return 0
               c_ac    = find_col(file_headers, COL_ACTYPE)
               c_cat   = find_col(file_headers, COL_CATEGORY)
               c_total = find_col(file_headers, COL_TOTAL)
               c_pic   = find_col(file_headers, pic_aliases)
+              c_pic_rated = find_col(file_headers, rated_pic_aliases) if rated_pic_aliases else None
               c_instr = find_col(file_headers, COL_INSTR)
               c_sic   = find_col(file_headers, COL_SIC)
               c_dual  = find_col(file_headers, COL_DUAL)
@@ -311,7 +316,10 @@ jobs:
                       continue
                   ac_type = row.get(c_ac, '').strip() if c_ac else ''
                   cat = classify_category(ac_type, row.get(c_cat, '') if c_cat else '')
-                  pic_h = parse_hours(row.get(c_pic, '') if c_pic else '')
+                  if rated_from is not None and dt is not None and dt >= rated_from and c_pic_rated:
+                      pic_h = parse_hours(row.get(c_pic_rated, ''))
+                  else:
+                      pic_h = parse_hours(row.get(c_pic, '') if c_pic else '')
                   dual_h = parse_hours(row.get(c_dual, '') if c_dual else '')
                   if dual_fallback and dual_h == 0:
                       dual_h = max(total_h - pic_h, 0)
@@ -349,11 +357,16 @@ jobs:
                           last_bfr_dt[0] = dt
               return used
 
-          # Current program: Propel's "PIC" for a student pilot is
-          # sole-manipulator (Solo) time, not LogTen's PIC column (which this
-          # particular export mislabels as always equal to Total Time). Dual
-          # falls back to Total-Solo since this export's Dual column is blank.
-          used = process_source(src, headers, rows, COL_SOLO, track_bfr=True, dual_fallback=True)
+          # Current program: before the checkride, "PIC" for a student pilot
+          # is sole-manipulator (Solo) time, not LogTen's PIC column (which
+          # this export mislabels as always equal to Total Time pre-cert).
+          # From the checkride date on, the pilot is rated, so the real PIC
+          # column becomes trustworthy — sole manipulator of the controls is
+          # loggable PIC even while receiving instruction (FAR 61.51(e)).
+          # Dual falls back to Total-PIC when blank, either way.
+          CHECKRIDE_DATE = datetime(2026, 7, 7)
+          used = process_source(src, headers, rows, COL_SOLO, track_bfr=True, dual_fallback=True,
+                                 rated_pic_aliases=COL_PIC, rated_from=CHECKRIDE_DATE)
           source_summary.append({'file': src, 'rows': len(rows), 'used': used})
 
           # Every other logbook-*.csv is a full historical/other-school
