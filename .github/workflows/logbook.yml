@@ -322,7 +322,14 @@ jobs:
                       pic_h = parse_hours(row.get(c_pic, '') if c_pic else '')
                   dual_h = parse_hours(row.get(c_dual, '') if c_dual else '')
                   if dual_fallback and dual_h == 0:
-                      dual_h = max(total_h - pic_h, 0)
+                      if rated_from is not None and dt is not None and dt >= rated_from:
+                          # Rated pilot receiving instruction: PIC and Dual
+                          # Received are both loggable for the same flight
+                          # (FAR 61.51(e)), not mutually exclusive like
+                          # student solo-vs-dual — don't subtract PIC here.
+                          dual_h = total_h
+                      else:
+                          dual_h = max(total_h - pic_h, 0)
                   instr_h = parse_hours(row.get(c_instr, '') if c_instr else '')
                   sic_h   = parse_hours(row.get(c_sic, '')   if c_sic   else '')
                   night_h = parse_hours(row.get(c_night, '') if c_night else '')
@@ -414,12 +421,14 @@ jobs:
               pic = rec['pic']
               instructor = rec['instructor']
               turbine_sic = rec['turbine_sic']
-              # Some source rows log a flight as both PIC and Dual Received
-              # simultaneously (e.g. Superior SFS's own convention) — cap
-              # Dual Received so the breakdown always sums to Total, giving
-              # PIC priority since it's the more specific categorization.
-              dual = min(rec['dual'], max(rec['total'] - pic - instructor - turbine_sic, 0))
-              other = round(rec['total'] - pic - instructor - turbine_sic - dual, 1)
+              # PIC and Dual Received can legitimately overlap on the same
+              # flight — a rated pilot who is sole manipulator of the
+              # controls logs PIC even while receiving instruction (FAR
+              # 61.51(e); Superior SFS's own export already logs it this
+              # way). Each field shows its own real total, not a slice of
+              # Total — they are not required to sum to Total.
+              dual = rec['dual']
+              other = round(max(rec['total'] - pic - instructor - turbine_sic - dual, 0), 1)
               if other < 0.05:
                   other = 0.0
               aircraft_flown.append({
