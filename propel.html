@@ -148,7 +148,7 @@
 
     <div class="slabel">Endeavor Air First Officer Minimums</div>
     <div class="panel">
-      <div class="panel-head">Progress to Eligibility <span class="accent">Military R-ATP pathway (750 hr total time)</span></div>
+      <div class="panel-head">Progress to Eligibility <span class="accent">Military R-ATP pathway (750 hr total time)</span> <span class="accent" id="asOfMins"></span></div>
       <div id="minsBody"></div>
       <div class="note">Targets from Endeavor&rsquo;s published Job Qualifications table (airlineapps.com), entered manually in <code>propel-minimums.json</code> &mdash; update that file if Endeavor republishes new numbers.</div>
     </div>
@@ -162,7 +162,7 @@
 
     <div class="slabel">By Aircraft Flown</div>
     <div class="panel">
-      <div class="panel-head">All Aircraft <span class="accent">Matches Propel's per-aircraft entry form</span></div>
+      <div class="panel-head">All Aircraft <span class="accent">Matches Propel's per-aircraft entry form</span> <span class="accent" id="asOfAircraft"></span></div>
       <div style="overflow-x:auto;">
         <table class="entry-table" id="aircraftTable">
           <thead><tr><th>Aircraft</th><th>Category</th><th class="num">PIC</th><th class="num">Dual Given</th><th class="num">Turbine SIC</th><th class="num">Dual Rec&rsquo;d</th><th class="num">Other</th><th class="num">Total</th><th>Last Flown</th></tr></thead>
@@ -174,26 +174,26 @@
 
     <div class="slabel">Category &amp; Class</div>
     <div class="panel">
-      <div class="panel-head">Total by Category and Class</div>
+      <div class="panel-head">Total by Category and Class <span class="accent" id="asOfCatClass"></span></div>
       <table class="field-table" id="catClassTable"></table>
     </div>
 
     <div class="slabel">Type of Time</div>
     <div class="panel">
-      <div class="panel-head">Total by Type of Time</div>
+      <div class="panel-head">Total by Type of Time <span class="accent" id="asOfTypeTime"></span></div>
       <table class="field-table" id="typeTimeTable"></table>
     </div>
 
     <div class="slabel">Flight Conditions</div>
     <div class="panel">
-      <div class="panel-head">By Flight Conditions</div>
+      <div class="panel-head">By Flight Conditions <span class="accent" id="asOfCond"></span></div>
       <table class="field-table" id="condTable"></table>
       <div class="note">Night / Instrument / Cross&nbsp;Country deltas only grow once <code>logbook.txt</code> has those columns populated (LogTen export currently omits them &mdash; re-export with all columns checked).</div>
     </div>
 
     <div class="slabel">Currency &amp; Totals</div>
     <div class="panel">
-      <div class="panel-head">Summary</div>
+      <div class="panel-head">Summary <span class="accent" id="asOfSummary"></span></div>
       <table class="field-table" id="summaryTable"></table>
     </div>
 
@@ -244,6 +244,11 @@
           '<div class="meta-chip">From <b>' + p.source_rows + '</b> logbook rows</div>' +
           '<div class="meta-chip">Last flown <b>' + (p.last_flown_aircraft || '&mdash;') + '</b></div>' +
           '<div class="meta-chip">Last BFR/checkride <b>' + p.last_bfr_or_checkride + '</b></div>';
+
+        ['asOfMins', 'asOfAircraft', 'asOfCatClass', 'asOfTypeTime', 'asOfCond', 'asOfSummary'].forEach(function(id) {
+          var el = document.getElementById(id);
+          if (el) el.textContent = 'As of ' + p.generated;
+        });
 
         var srcs = p.sources || [];
         if (srcs.length) {

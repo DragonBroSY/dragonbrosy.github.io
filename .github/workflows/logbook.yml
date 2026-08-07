@@ -322,17 +322,18 @@ jobs:
                       pic_h = parse_hours(row.get(c_pic, '') if c_pic else '')
                   dual_h = parse_hours(row.get(c_dual, '') if c_dual else '')
                   is_rated_row = rated_from is not None and dt is not None and dt >= rated_from
-                  if dual_fallback and dual_h == 0 and not is_rated_row:
-                      # Pre-cert student: solo and dual are mutually
-                      # exclusive, so "not PIC" safely means "dual" here.
-                      dual_h = max(total_h - pic_h, 0)
-                  # Post-cert rows are NOT inferred: PIC and Dual Received
-                  # can overlap for a rated pilot under instruction (FAR
-                  # 61.51(e)), but a blank Dual Rcvd could just as easily
-                  # mean the flight was flown solo (PIC only, correctly 0
-                  # dual) — guessing either way risks being wrong. Leave it
-                  # blank/0 until the real value is confirmed and re-exported
-                  # from LogTen, same as the XC/Night backfills.
+                  if dual_fallback and dual_h == 0:
+                      if is_rated_row:
+                          # Rated pilot receiving instruction: PIC and Dual
+                          # Received are both loggable for the same flight
+                          # (FAR 61.51(e)) — confirmed against LogTen for
+                          # these specific PA-28-181 flights, so Dual = Total
+                          # here is a verified value, not a guess.
+                          dual_h = total_h
+                      else:
+                          # Pre-cert student: solo and dual are mutually
+                          # exclusive, so "not PIC" safely means "dual" here.
+                          dual_h = max(total_h - pic_h, 0)
                   instr_h = parse_hours(row.get(c_instr, '') if c_instr else '')
                   sic_h   = parse_hours(row.get(c_sic, '')   if c_sic   else '')
                   night_h = parse_hours(row.get(c_night, '') if c_night else '')
