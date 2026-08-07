@@ -45,7 +45,7 @@
     "pic": 49.5,
     "instructor": 0.0,
     "sic": 301.3,
-    "dual": 207.6,
+    "dual": 176.6,
     "other": 0,
     "fe": 0
   },
@@ -83,7 +83,7 @@
       "pic": 41.0,
       "dual_given": 0.0,
       "turbine_sic": 0.0,
-      "dual_received": 100.4,
+      "dual_received": 69.4,
       "other": 0.0,
       "last_flown": "2026-08",
       "source": "logbook"
