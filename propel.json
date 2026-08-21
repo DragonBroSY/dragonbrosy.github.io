@@ -56,7 +56,7 @@
     "actual_instrument_rotor": 2.1,
     "simulated_instrument_airplane": 9.4,
     "simulated_instrument_rotor": 30.3,
-    "cross_country_airplane": 52.1,
+    "cross_country_airplane": 69.9,
     "cross_country_rotor": 297.6
   },
   "last_bfr_or_checkride": "2026-07-07",
@@ -79,11 +79,11 @@
     {
       "type": "PA-28-181",
       "category": "sel",
-      "total": 137.5,
-      "pic": 68.1,
+      "total": 145.5,
+      "pic": 76.1,
       "dual_given": 0.0,
       "turbine_sic": 0.0,
-      "dual_received": 127.5,
+      "dual_received": 135.5,
       "other": 0.0,
       "last_flown": "2026-08",
       "source": "logbook"
@@ -161,18 +161,6 @@
       "source": "logbook"
     },
     {
-      "type": "PA-28-181 G1000",
-      "category": "sel",
-      "total": 5.7,
-      "pic": 5.7,
-      "dual_given": 0.0,
-      "turbine_sic": 0.0,
-      "dual_received": 5.7,
-      "other": 0.0,
-      "last_flown": "2026-08",
-      "source": "logbook"
-    },
-    {
       "type": "R22 BETA II",
       "category": "rotor",
       "total": 2.8,
@@ -182,18 +170,6 @@
       "dual_received": 2.8,
       "other": 0.0,
       "last_flown": "2026-02",
-      "source": "logbook"
-    },
-    {
-      "type": "PA-28-181 G1000 FI",
-      "category": "sel",
-      "total": 2.3,
-      "pic": 2.3,
-      "dual_given": 0.0,
-      "turbine_sic": 0.0,
-      "dual_received": 2.3,
-      "other": 0.0,
-      "last_flown": "2026-08",
       "source": "logbook"
     },
     {
@@ -214,10 +190,10 @@
     "multi_engine_land": 13.8,
     "night": 48.0,
     "instrument": 43.2,
-    "cross_country": 349.7,
+    "cross_country": 367.5,
     "pic_strict": 84.6,
     "pic_plus_qualifying_sic": 385.9,
-    "pic_cross_country": 33.7,
+    "pic_cross_country": 51.5,
     "pic_night": 1.6
   }
 }

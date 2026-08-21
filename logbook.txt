@@ -823,7 +823,10 @@ Instrument XCs
 - we intercepted the localizer follow the glideslope down got to our DA went visual landed safely
 - You used the corrections on the 2 approaches and ended wrong on the final one good job 
 -"		
-2026-08-05	N564K	PA-28-181	KPDK		KPDK					2.70		2.70																		"Hans KreukInstrument XCs- RNAV 6 AJR
+2026-08-05	N564K	PA-28-181	KPDK		KPDK					2.70		2.70			2.70															"Hans Kreuk
+Instrument XCs
+
+- RNAV 6 AJR
 On this approach you were given partial panel 
 Initial your corrections were small and correct 
 Then you began to correct to the right when your correction was needed to the left 
@@ -844,7 +847,10 @@ On the ILS the approach was SAT
 You continued to correct with +/- 5 and it made controlling the AC easier as you said 
 Good job 
 Also when contacting tower ; say … tower CXK … is with you on the … approach"		
-2026-08-05	N564K	PA-28-181	KPDK		KPDK					2.70		2.70																		"Hans KreukInstrument XCs- RNAV 5 
+2026-08-05	N564K	PA-28-181	KPDK		KPDK					2.70		2.70			2.70															"Hans Kreuk
+Instrument XCs
+
+- RNAV 5 
 Initially after the IAP we were cleared to switch frequencies 
 During this phase you fixated on something 
 You were unsure what 
@@ -876,7 +882,10 @@ You were well within ACS standards
 You spoke out load about the corrections 
 
 Overall good job this was a great flight"		
-2026-08-06	N576K	PA-28-181	KPDK		KPDK					1.70		1.70																		"Hans KreukInstrument XCs- AJR RNAV 6 c 24 PP
+2026-08-06	N576K	PA-28-181	KPDK		KPDK					1.70		1.70			1.70															"Hans Kreuk
+Instrument XCs
+
+- AJR RNAV 6 c 24 PP
 - Nice job staying ahead of the plane. You got the weather super ahead of time, we were able to figure out what approach we wanted to do and got the plate briefed.
 - When on the approach make smaller corrections. When you see you are getting off course make a slight correction but also look at your other instruments to make sure you are at the correct altitude and at the right airspeed. Don't let the plane snake down to the runway.
 - Make more CTAF. Don't just make a 10 and 5 mile call especially when there are traffic in the pattern.
@@ -889,7 +898,10 @@ Overall good job this was a great flight"
 - As you get closer to the runway, you need to make corrections quicker so you don't too far off course.
 - 
 - Keep practicing in the sim and go over the supplement! Let me know if you have any questions."		
-2026-08-10	N104AA	PA-28-181 G1000 FI	KHEF		KHEF					2.30		2.30																		"Hans KreukLine Oriented Flight Training (LOFT)- Good job on Flight
+2026-08-10	N104AA	PA-28-181 G1000 FI	KHEF		KHEF					2.30		2.30																		"Hans Kreuk
+Line Oriented Flight Training (LOFT)
+
+- Good job on Flight
 
 Majority of this flight was uneventful. We picked up IFR and then departed the area. We were giving headings initially, then given direct to happs 
 We got to fly on a tango airway.
@@ -900,7 +912,10 @@ I want you to learn how to operate in that area with the expectation to understa
 The main difference in the DC Sarah is that, similar to Ifr. You need to squawk a code , maintain that code, and listen and follow ATC’s directions.
 
 Of course, we came in IFR, so this was not fully necessary. However, you were able to implement this on your second flight, which is very good"		
-2026-08-10	N869G	PA-28-181 G1000	KJQF		KJQF					3.50		3.50																		"Hans KreukCommercial Duties-of-PIC Cross-Country- The commercial is a PIC Flight was satisfactory.
+2026-08-10	N869G	PA-28-181 G1000	KJQF		KJQF					3.50		3.50			3.50															"Hans Kreuk
+Commercial Duties-of-PIC Cross-Country
+
+- The commercial is a PIC Flight was satisfactory.
 Our departure from Manassas was uneventful. We filed a SFRA flight plan to depart at Fluky Intersection.
 We were given a squat code, told the taxi to the runway, we departed, and then got runway heading to 3000, then given direct.
 Once outside of the Bravo, we were cleared to squawk VFR.
@@ -917,7 +932,10 @@ Your situational awareness was good.
 Keep that up.
 Finally, going into JQF, everything was fine, no issues there, no complaints. We parked where we needed to park. We had the proper taxi clearance and taxi instruction. We knew exactly where the ramp was, so there was no confusion. 
 Good job on the briefing of the taxi area where ATP was."		
-2026-08-10	N935G	PA-28-181 G1000	KLZU		KLZU					2.20		2.20																		"Hans KreukLine Oriented Flight Training (LOFT)- Good job on this flight. 
+2026-08-10	N935G	PA-28-181 G1000	KLZU		KLZU					2.20		2.20																		"Hans Kreuk
+Line Oriented Flight Training (LOFT)
+
+- Good job on this flight. 
 This was an aircraft moment.
 Despite flying through a lot of clouds,
 This was in part due to the activity that was happening 75 miles to the east near the coast.
@@ -932,7 +950,10 @@ You did a great job on the ILS.
 Landing was also good.
 We taxi to get fuel and parked the plane. Everything was fine; no issues.
 Overall, the great flight handled perfectly."		
-2026-08-13	N534A	PA-28-181	KPDK		KPDK					2.20		2.20																		"Hans KreukInstrument XCs- This is one of our better flights
+2026-08-13	N534A	PA-28-181	KPDK		KPDK					2.20		2.20			2.20															"Hans Kreuk
+Instrument XCs
+
+- This is one of our better flights
 - Good job overall today; your comms and approaches were all in ACS standards
 - All approaches were stable, and your corrections were small and intentional 
 - RNAV 25 RMG
@@ -948,7 +969,10 @@ Overall, the great flight handled perfectly."
 - Remember, clear for the option means ""either touch and go, full stop, or low approach)
 - The option is yours 
 - We ended up doing a visual into PDK good job overall"		
-2026-08-14	N384D	PA-28-181	KPDK		KPDK					2.60		2.60																		"Hans KreukInstrument XCs- This was a round Robbin 
+2026-08-14	N384D	PA-28-181	KPDK		KPDK					2.60		2.60			2.60															"Hans Kreuk
+Instrument XCs
+
+- This was a round Robbin 
 - KPDK - KGVL- KAJR - KAHN - KWDR- KPDK
 - GVL RNAV 5 Partial panel 
 - This approach tho it was within standard it wasn't stable 
@@ -968,7 +992,10 @@ Overall, the great flight handled perfectly."
 - On this approach, there wasn't much to say it was one of your more stable approaches 
 - Even with the corrections, you maintained plus or minus 5 and made the proper callouts
 - Good job on maintaining your airspeed that helped stabilize the descent rate"		
-2026-08-15	N730A	PA-28-181	KPDK		KPDK					2.40		2.40																		"Hans KreukInstrument XCs- Don’t forget the RAIM and WAAS check. 
+2026-08-15	N730A	PA-28-181	KPDK		KPDK					2.40		2.40			2.40															"Hans Kreuk
+Instrument XCs
+
+- Don’t forget the RAIM and WAAS check. 
 - 
 - AJR RNAV 6 c 24 PP: UNSAT
 - Make sure to go direct to the airport so when you load in the approach you can choose the right approach. 
@@ -991,7 +1018,10 @@ Overall, the great flight handled perfectly."
 - Talk throughout you scan and add power 50ft before minimums or you will dip below it which happened. You busted minimums. 
 - 
 - Big takeaways are you instrument cross scan and busting minimums and full scale deflection. Talk out you scan and make immediate corrections."		
-2026-08-17	N534A	PA-28-181	KPDK		KPDK					2.30		2.30																		"Hans KreukMock Instrument Checkride- 49A RNAV 3 circle 21: UNSAT
+2026-08-17	N534A	PA-28-181	KPDK		KPDK					2.30		2.30																		"Hans Kreuk
+Mock Instrument Checkride
+
+- 49A RNAV 3 circle 21: UNSAT
 - Got the approach plate briefed, did not complete the approach checklist. 
 - You said the write procedure turn but did not fly that. You turned way too early and never crossed the fix, so the GPS never sequenced you for the procedure turn.
 - Flew the procedure turn too fast, you were above 100 KIAS. Slow down to 90 KIAS and maintain altitude.
@@ -1024,7 +1054,10 @@ Overall, the great flight handled perfectly."
 - Kept getting the inbound course and the parallel PT heading confused.
 - 
 - Get in the sim and practice those partial panels, study up on the supplement. Let me know if you have any questions."		
-2026-08-18	N534A	PA-28-181	KPDK		KPDK					2.70		2.70																		"Hans KreukInstrument Checkride Prep- Altitude and started correcting for your lateral course
+2026-08-18	N534A	PA-28-181	KPDK		KPDK					2.70		2.70																		"Hans Kreuk
+Instrument Checkride Prep
+
+- Altitude and started correcting for your lateral course
 Then, when you started correcting for your vertical guidance, your lateral course started getting away
 
 Then we went to 49A.
@@ -1041,7 +1074,10 @@ Additionally, if you maintain your descent rate and your speed on a partial pane
 Overall, just a few small corrections could help fix that again. Will review that in the SIM
 
 On the way back in, we got the visual due to traffic and the change in the runways"		
-2026-08-19	N384D	PA-28-181	KPDK		KPDK					2.80		2.80																		"Hans KreukInstrument Checkride PrepWe departed VFR and was able to do approches back to back at KWDR
+2026-08-19	N384D	PA-28-181	KPDK		KPDK					2.80		2.80																		"Hans Kreuk
+Instrument Checkride Prep
+
+We departed VFR and was able to do approches back to back at KWDR
 - - RNAV 13- 
 This was the first approach from your mock check ride. On your mark, you struggled a lot with your partial panel.
 We started out with the partial panel into runway 13. This approach was unsatisfactory for many reasons due to. Not configuring at the right moment. Then due to Your fixation you put in the throttle to the decent, however did not initiate the descent, so we got slow.
@@ -1062,7 +1098,10 @@ On this approach you Configured right at the FAF instead of just prior. Other th
 RNAV 31-
 On this approach everything was fine, no issues, no comments. You followed the lateral course. Again, this was partial panel, so all you had was the dual G430sc and your standbys. Approach was stable the entire time.
 I think you're starting to get it. Good job."		
-2026-08-19	N384D	PA-28-181	KPDK		KPDK					2.50		2.50																		"Hans KreukInstrument Checkride Prep- This was our second flight for the day 
+2026-08-19	N384D	PA-28-181	KPDK		KPDK					2.50		2.50																		"Hans Kreuk
+Instrument Checkride Prep
+
+- This was our second flight for the day 
 RNAV 13 partial panel 
 And this approach, you were doing very well until you got to about 2.5 miles from the runway and that's when you decided to go left. I noticed that you had a fixated on your altitude and your hand Was still left on the yoke, which led to you having an input of a left turn. 
 Other than that hiccup, the approach would have been Well within standard.
@@ -1081,7 +1120,10 @@ Overall, this approach was in standard. The only comment I have for this approac
 If we put in bigger corrections, then we're going to have to put in bigger corrections to take out that correction.
 RNAV 13 Circle to land 31
 This was our final approach. This one was LPV all the way to the circling minimums at which you held your MDA. And circle that 1.3. Good job, no issues with this. You also landed."		
-2026-08-20	N534A	PA-28-181	KPDK		KPDK					2.50		2.50																		"Hans KreukInstrument Checkride Prep-  K WDR
+2026-08-20	N534A	PA-28-181	KPDK		KPDK					2.50		2.50																		"Hans Kreuk
+Instrument Checkride Prep
+
+-  K WDR
 -	RNAV 13 Partial panel 
 -	On this approach, everything was fine until short final, and then you decided to start making ±10° corrections. Corrections started to allow you to snake a little bit more to get back to a good cross-track. This approach would have still been an ACS standard, so it would have been a pass.
 -	RNAV 31 LPV

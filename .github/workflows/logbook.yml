@@ -86,6 +86,20 @@ jobs:
               text = re.sub(r'\bKreuk\b', 'PI', text, flags=re.IGNORECASE)
               return text.strip()
 
+          # Collapse avionics/variant suffixes that LogTen appends to the
+          # same airframe onto one canonical type, so the per-aircraft table
+          # shows a single bucket. Keyed on the raw exported string. Only the
+          # PA-28-181 is merged (its G1000 tails are the same airframe for
+          # currency/logging) — CE-172-S G1000 vs G650 stay distinct on
+          # purpose, since those track separately in this logbook.
+          AC_TYPE_ALIASES = {
+              'pa-28-181 g1000': 'PA-28-181',
+              'pa-28-181 g1000 fi': 'PA-28-181',
+          }
+
+          def normalize_ac_type(ac_type):
+              return AC_TYPE_ALIASES.get((ac_type or '').strip().lower(), (ac_type or '').strip())
+
           # Aircraft types that count as Multi Engine Land. Everything else
           # (and anything unrecognized) defaults to Single Engine Land.
           MEL_KEYWORDS = ['da-42', 'da42', 'seminole', 'baron', 'duchess', 'multi']
@@ -314,7 +328,7 @@ jobs:
                   total_h = parse_hours(row.get(c_total, '') if c_total else '')
                   if total_h == 0 and dt is None:
                       continue
-                  ac_type = row.get(c_ac, '').strip() if c_ac else ''
+                  ac_type = normalize_ac_type(row.get(c_ac, '').strip() if c_ac else '')
                   cat = classify_category(ac_type, row.get(c_cat, '') if c_cat else '')
                   if rated_from is not None and dt is not None and dt >= rated_from and c_pic_rated:
                       pic_h = parse_hours(row.get(c_pic_rated, ''))
