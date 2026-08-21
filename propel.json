@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-07",
-  "source_rows": 296,
+  "generated": "2026-08-21",
+  "source_rows": 310,
   "sources": [
     {
       "file": "logbook.txt",
-      "rows": 60,
-      "used": 59
+      "rows": 74,
+      "used": 73
     },
     {
       "file": "logbook-current.csv",
@@ -28,24 +28,24 @@
       "used": 48
     }
   ],
-  "total_time": 521.0,
+  "total_time": 556.1,
   "airplane": {
-    "total": 214.6,
-    "pic": 49.5,
+    "total": 249.7,
+    "pic": 84.6,
     "turbine": 0
   },
   "category_class": {
-    "airplane_sel": 200.8,
+    "airplane_sel": 235.9,
     "airplane_ses": 0,
     "airplane_mel": 13.8,
     "airplane_mes": 0,
     "helicopter_rotor": 306.4
   },
   "type_of_time": {
-    "pic": 49.5,
+    "pic": 84.6,
     "instructor": 0.0,
     "sic": 301.3,
-    "dual": 207.6,
+    "dual": 242.7,
     "other": 0,
     "fe": 0
   },
@@ -61,8 +61,8 @@
   },
   "last_bfr_or_checkride": "2026-07-07",
   "last_flown_aircraft": "PA-28-181",
-  "total_flight_hours_last_6mo": 111.7,
-  "total_flight_hours_last_12mo": 130.6,
+  "total_flight_hours_last_6mo": 146.8,
+  "total_flight_hours_last_12mo": 165.7,
   "aircraft_flown": [
     {
       "type": "UH-60M",
@@ -79,11 +79,11 @@
     {
       "type": "PA-28-181",
       "category": "sel",
-      "total": 110.4,
-      "pic": 41.0,
+      "total": 137.5,
+      "pic": 68.1,
       "dual_given": 0.0,
       "turbine_sic": 0.0,
-      "dual_received": 100.4,
+      "dual_received": 127.5,
       "other": 0.0,
       "last_flown": "2026-08",
       "source": "logbook"
@@ -161,6 +161,18 @@
       "source": "logbook"
     },
     {
+      "type": "PA-28-181 G1000",
+      "category": "sel",
+      "total": 5.7,
+      "pic": 5.7,
+      "dual_given": 0.0,
+      "turbine_sic": 0.0,
+      "dual_received": 5.7,
+      "other": 0.0,
+      "last_flown": "2026-08",
+      "source": "logbook"
+    },
+    {
       "type": "R22 BETA II",
       "category": "rotor",
       "total": 2.8,
@@ -170,6 +182,18 @@
       "dual_received": 2.8,
       "other": 0.0,
       "last_flown": "2026-02",
+      "source": "logbook"
+    },
+    {
+      "type": "PA-28-181 G1000 FI",
+      "category": "sel",
+      "total": 2.3,
+      "pic": 2.3,
+      "dual_given": 0.0,
+      "turbine_sic": 0.0,
+      "dual_received": 2.3,
+      "other": 0.0,
+      "last_flown": "2026-08",
       "source": "logbook"
     },
     {
@@ -186,13 +210,13 @@
     }
   ],
   "minimums_raw": {
-    "total_time": 521.0,
+    "total_time": 556.1,
     "multi_engine_land": 13.8,
     "night": 48.0,
     "instrument": 43.2,
     "cross_country": 349.7,
-    "pic_strict": 49.5,
-    "pic_plus_qualifying_sic": 350.8,
+    "pic_strict": 84.6,
+    "pic_plus_qualifying_sic": 385.9,
     "pic_cross_country": 33.7,
     "pic_night": 1.6
   }

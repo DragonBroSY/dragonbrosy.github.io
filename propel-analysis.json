@@ -1,30 +1,30 @@
 {
-  "generated": "2026-08-06",
+  "generated": "2026-08-21",
   "generated_note": "Written by Claude Code during a review session, not auto-generated on a timer — ask Claude to refresh this after logging a batch of new flights or if a minimum crosses a milestone.",
-  "as_of_total_time": 521.0,
+  "as_of_total_time": 556.1,
 
   "verify_first": {
     "label": "Resolve this before anything else",
-    "body": "The PIC-logging bug is now fixed — the site was crediting every post-checkride dual-instruction flight as 100% Dual Received instead of PIC, when a rated pilot flying as sole manipulator logs PIC even under instruction (FAR 61.51(e)). That fix alone moved strict PIC from 17.2 to 49.5/250 (7% → 20%) without a single new flight. The SIC-combination question is still worth confirming with Endeavor/your recruiter — PIC+qualifying-SIC now sits at 350.8/250, already over target — but it's no longer the single point of failure it was: strict PIC is climbing on its own with every dual instrument lesson now that you're rated."
+    "body": "Still the SIC-combination question — whether Endeavor's asterisk rule lets your military SIC time count toward PIC / PIC Cross Country / PIC Night. If yes, PIC+qualifying-SIC sits at 385.9/250 (154%), well clear. If no, strict PIC is the number that matters, and it's climbing fast on its own: 84.6/250 (34%) now, up from 49.5 two weeks ago — every dual instrument lesson adds PIC since you're rated (FAR 61.51(e)). Confirm the rule with your recruiter, but this is no longer a blocker either way."
   },
 
   "stalled": {
     "label": "Stalled — needs a deliberate decision",
-    "body": "Multi-Engine Land: 13.8/25 (55%), unchanged since your last DA-42 session in June 2025. Nothing in the instrument syllabus touches this — it will not self-resolve. Still needs booking dedicated multi-engine time."
+    "body": "Multi-Engine Land: 13.8/25 (55%), unchanged since your last DA-42 session in June 2025. Nothing in instrument or commercial single-engine training touches this — it will not self-resolve. Still needs dedicated multi-engine time booked specifically."
   },
 
   "resolving_naturally": {
     "label": "Resolving on its own — don't force it",
-    "body": "Instrument (43.2/75, 58%) and Cross Country (already past the 200-hr Restricted-ATP floor at 349.7/500) continue through the normal instrument syllabus. PIC and PIC Cross Country now belong here too: since every dual lesson flown as sole manipulator counts as PIC post-checkride, both grew automatically this month (PIC +31.0 hrs, PIC XC +26.3 hrs) with zero deliberate solo flying — expect this to keep compounding through instrument and commercial training."
+    "body": "You're deep in instrument checkride prep now (mock checkride 8/17, three prep flights through 8/20) — the instrument rating is essentially in hand. Instrument time (43.2/75, 58%) and Cross Country (349.7/500, already well past the 200-hr Restricted-ATP floor) keep climbing through the syllabus. Strict PIC and PIC Cross Country ride along the same way (both grow whenever you fly a dual lesson as sole manipulator), so don't chase them separately."
   },
 
   "highest_leverage": {
     "label": "Highest-leverage move for total hours",
-    "body": "Pace picked up sharply since starting instrument training: 28.8 hrs in the 24 days since the last review (~36 hrs/month, vs. ~20 hrs/month pre-checkride) — at this rate, 750 total time is about 6.4 months out, not 'over a year.' Commercial → CFI is still the fastest path once instrument + commercial are done (instructing pays and builds PIC/total hours faster than personal rental), but the current instrument-training pace is already a real improvement — no need to rush ahead of the syllabus to hit that number."
+    "body": "Pace has accelerated hard: 35.1 hrs in the 15 days since the last review (~70 hrs/month, vs. ~36 last month) — at this rate 750 total time is roughly 2.8 months out. That's checkride-season intensity and won't hold year-round, but it shows the trajectory. Once the instrument checkride is done, Commercial → CFI remains the fastest sustainable path: instructing builds PIC and total hours faster than paying for rentals, and closes the strict-PIC gap directly."
   },
 
   "lagging": {
     "label": "Lagging without a natural fix",
-    "body": "PIC Night: 1.6/25 (6%) — the clear laggard now. Night overall is 48.0/100 (48%), and none of your post-checkride flights have combined PIC and night hours on the same leg yet. Worth scheduling a dedicated night instrument leg soon — as a rated pilot it'll now count as PIC night automatically, the same mechanism that's been growing PIC and PIC XC this month."
+    "body": "PIC Night: 1.6/25 (6%) — still the clear laggard, untouched by all the recent flying. Night overall is 48.0/100 (48%), but none of the post-checkride flights combined PIC and night on the same leg. This is the one category worth deliberately scheduling around: a few dedicated night instrument or night XC legs now count as PIC night automatically, and nothing in the normal syllabus forces them."
   }
 }
