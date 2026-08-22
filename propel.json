@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-21",
+  "generated": "2026-08-22",
   "source_rows": 310,
   "sources": [
     {
@@ -61,7 +61,7 @@
   },
   "last_bfr_or_checkride": "2026-07-07",
   "last_flown_aircraft": "PA-28-181",
-  "total_flight_hours_last_6mo": 146.8,
+  "total_flight_hours_last_6mo": 145.5,
   "total_flight_hours_last_12mo": 165.7,
   "aircraft_flown": [
     {
@@ -195,5 +195,95 @@
     "pic_plus_qualifying_sic": 385.9,
     "pic_cross_country": 51.5,
     "pic_night": 1.6
+  },
+  "iacra": {
+    "_readme": "Aeronautical Experience Grid + Class Hours, matching IACRA's own layout for direct copy-in. Night Take-off/Landing counts show 0 for both columns right now \u2014 not because there were none, but because no takeoff/landing count has ever been entered in LogTen (checked Day T/O/Ldg too: also always blank), and the historical archives that supply all Rotorcraft time do not have those columns in their schema at all. Airplane counts will start populating once you fill them in going forward; Rotorcraft will always read 0 regardless. FTD/FFS/ATD device type is not distinguished in any source; all simulator time is shown under FFS.",
+    "experience_grid": {
+      "total": {
+        "airplane": 249.7,
+        "rotorcraft": 306.4,
+        "ffs": 1.4
+      },
+      "instruction_received": {
+        "airplane": 239.2,
+        "rotorcraft": 3.5,
+        "ffs": 1.4
+      },
+      "solo": {
+        "airplane": 10.0,
+        "rotorcraft": 0.0,
+        "ffs": 0
+      },
+      "pic": {
+        "airplane": 81.7,
+        "rotorcraft": 2.9,
+        "ffs": 0
+      },
+      "sic": {
+        "airplane": 0.0,
+        "rotorcraft": 301.3,
+        "ffs": 0
+      },
+      "xc_instruction_received": {
+        "airplane": 69.9,
+        "rotorcraft": 0.0,
+        "ffs": 0
+      },
+      "xc_solo": {
+        "airplane": 5.8,
+        "rotorcraft": 0.0,
+        "ffs": 0
+      },
+      "xc_pic": {
+        "airplane": 49.9,
+        "rotorcraft": 1.6,
+        "ffs": 0
+      },
+      "xc_sic": {
+        "airplane": 0.0,
+        "rotorcraft": 296.0,
+        "ffs": 0
+      },
+      "instrument": {
+        "airplane": 10.8,
+        "rotorcraft": 32.4,
+        "ffs": 0
+      },
+      "night_instruction_received": {
+        "airplane": 7.8,
+        "rotorcraft": 0.0,
+        "ffs": 0
+      },
+      "night_takeoff_landing": {
+        "airplane": 0,
+        "rotorcraft": 0,
+        "ffs": 0
+      },
+      "night_pic": {
+        "airplane": 0.0,
+        "rotorcraft": 1.6,
+        "ffs": 0
+      },
+      "night_takeoff_landing_pic_sic": {
+        "airplane": 0,
+        "rotorcraft": 0,
+        "ffs": 0
+      },
+      "number_of_flights": {
+        "airplane": 138,
+        "rotorcraft": 170,
+        "ffs": 0
+      }
+    },
+    "class_hours": {
+      "airplane_sel_pic": 81.7,
+      "airplane_sel_sic": 0.0,
+      "airplane_sel_dual": 225.4,
+      "airplane_mel_pic": 0.0,
+      "airplane_mel_sic": 0.0,
+      "airplane_mel_dual": 13.8,
+      "rotorcraft_hel": 306.4,
+      "ffs_total": 1.4
+    }
   }
 }

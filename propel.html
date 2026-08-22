@@ -160,6 +160,23 @@
       <div class="note">Written by Claude during a review session, not auto-generated on a timer &mdash; refresh by asking Claude to re-run this after logging a batch of new flights or when a minimum crosses a milestone.</div>
     </div>
 
+    <div class="slabel">FAA IACRA Application</div>
+    <div class="panel">
+      <div class="panel-head">Aeronautical Experience Grid <span class="accent">Matches IACRA's own field layout</span> <span class="accent" id="asOfIacraGrid"></span></div>
+      <div style="overflow-x:auto;">
+        <table class="entry-table" id="iacraGridTable">
+          <thead><tr><th></th><th class="num">Airplanes</th><th class="num">Rotorcraft</th><th class="num">FFS</th></tr></thead>
+          <tbody id="iacraGridBody"></tbody>
+        </table>
+      </div>
+      <div class="note" id="iacraNote"></div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">Class Hours <span class="accent" id="asOfIacraClass"></span></div>
+      <table class="field-table" id="iacraClassTable"></table>
+    </div>
+
     <div class="slabel">By Aircraft Flown</div>
     <div class="panel">
       <div class="panel-head">All Aircraft <span class="accent">Matches Propel's per-aircraft entry form</span> <span class="accent" id="asOfAircraft"></span></div>
@@ -245,7 +262,7 @@
           '<div class="meta-chip">Last flown <b>' + (p.last_flown_aircraft || '&mdash;') + '</b></div>' +
           '<div class="meta-chip">Last BFR/checkride <b>' + p.last_bfr_or_checkride + '</b></div>';
 
-        ['asOfMins', 'asOfAircraft', 'asOfCatClass', 'asOfTypeTime', 'asOfCond', 'asOfSummary'].forEach(function(id) {
+        ['asOfMins', 'asOfAircraft', 'asOfCatClass', 'asOfTypeTime', 'asOfCond', 'asOfSummary', 'asOfIacraGrid', 'asOfIacraClass'].forEach(function(id) {
           var el = document.getElementById(id);
           if (el) el.textContent = 'As of ' + p.generated;
         });
@@ -309,6 +326,46 @@
             '<td>' + a.last_flown + tag + '</td>' +
           '</tr>';
         }).join('');
+
+        var ic = p.iacra;
+        if (ic) {
+          function gridRow(label, r, isCount) {
+            var fmt = isCount ? function(v){ return String(v); } : hrs;
+            return '<tr><td class="h-type">' + label + '</td>' +
+              '<td class="num">' + fmt(r.airplane) + '</td>' +
+              '<td class="num">' + fmt(r.rotorcraft) + '</td>' +
+              '<td class="num">' + fmt(r.ffs) + '</td></tr>';
+          }
+          var eg = ic.experience_grid;
+          document.getElementById('iacraGridBody').innerHTML =
+            gridRow('Total', eg.total) +
+            gridRow('Instruction Received', eg.instruction_received) +
+            gridRow('Solo', eg.solo) +
+            gridRow('PIC', eg.pic) +
+            gridRow('SIC', eg.sic) +
+            gridRow('Cross Country Instruction Received', eg.xc_instruction_received) +
+            gridRow('Cross Country Solo', eg.xc_solo) +
+            gridRow('Cross Country PIC', eg.xc_pic) +
+            gridRow('Cross Country SIC', eg.xc_sic) +
+            gridRow('Instrument', eg.instrument) +
+            gridRow('Night Instruction Received', eg.night_instruction_received) +
+            gridRow('Night Take-off / Landing', eg.night_takeoff_landing, true) +
+            gridRow('Night PIC', eg.night_pic) +
+            gridRow('Night Take-off / Landing PIC/SIC', eg.night_takeoff_landing_pic_sic, true) +
+            gridRow('Number of Flights', eg.number_of_flights, true);
+          document.getElementById('iacraNote').textContent = ic._readme || '';
+
+          var ch = ic.class_hours;
+          document.getElementById('iacraClassTable').innerHTML =
+            row('Airplane SEL &mdash; PIC', hrs(ch.airplane_sel_pic)) +
+            row('Airplane SEL &mdash; SIC', hrs(ch.airplane_sel_sic)) +
+            row('Airplane SEL &mdash; Instruct Rcvd', hrs(ch.airplane_sel_dual)) +
+            row('Airplane MEL &mdash; PIC', hrs(ch.airplane_mel_pic)) +
+            row('Airplane MEL &mdash; SIC', hrs(ch.airplane_mel_sic)) +
+            row('Airplane MEL &mdash; Instruct Rcvd', hrs(ch.airplane_mel_dual)) +
+            row('Rotorcraft &mdash; HEL', hrs(ch.rotorcraft_hel)) +
+            row('FFS &mdash; Total', hrs(ch.ffs_total));
+        }
 
         await renderMinimums(p.minimums_raw);
         await renderAnalysis();

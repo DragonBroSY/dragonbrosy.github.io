@@ -47,6 +47,9 @@ jobs:
           COL_FLTREV   = ['flight review']
           COL_REMARKS  = ['remarks', 'comments', 'notes']
           COL_TAILNUM  = ['aircraft id', 'tail number', 'registration', 'n-number']
+          COL_NIGHT_TO  = ['night t/o', 'night to', 'night takeoff', 'night takeoffs']
+          COL_NIGHT_LDG = ['night ldg', 'night landing', 'night landings']
+          COL_SIMDUR    = ['simulator']  # device session duration — distinct from COL_SIMINST (simulated/hood instrument time)
 
           def find_col(headers, aliases):
               for alias in aliases:
@@ -223,6 +226,24 @@ jobs:
               'pic_xc': 0.0, 'pic_night': 0.0,
               'last6mo': 0.0, 'last12mo': 0.0,
           }
+
+          # ── IACRA Aeronautical Experience Grid — per-category (air/rotor)
+          # breakdown of rows the main `agg` dict doesn't split out: Solo as
+          # its own row (distinct from PIC — a pre-cert student's solo time
+          # is both, per FAR 61.51(e)(2), but IACRA wants it reported twice),
+          # Dual/PIC/SIC per category rather than combined, and the XC/night
+          # variants of each. FFS is tracked separately since simulator rows
+          # are otherwise skipped entirely. ──
+          IACRA_ROWS = ['dual', 'solo', 'pic', 'sic',
+                        'xc_dual', 'xc_solo', 'xc_pic', 'xc_sic',
+                        'night_dual', 'night_solo', 'night_pic', 'night_sic',
+                        'night_tofl', 'night_tofl_pic_sic', 'flights']
+          ig = {row: {'air': 0.0, 'rotor': 0.0} for row in IACRA_ROWS}
+          ffs = {'total': 0.0, 'dual': 0.0}
+          # IACRA Class Hours table needs PIC/SIC/Instruct Received split by
+          # SEL vs MEL specifically (finer than the air/rotor grid above).
+          cls = {'sel': {'pic': 0.0, 'sic': 0.0, 'dual': 0.0}, 'mel': {'pic': 0.0, 'sic': 0.0, 'dual': 0.0}}
+
           last_flown_aircraft = [None]
           last_flown_dt = [None]
           last_bfr_dt = [None]
@@ -246,7 +267,8 @@ jobs:
               if dt is not None and (rec['last_dt'] is None or dt > rec['last_dt']):
                   rec['last_dt'] = dt
 
-          def add_row(dt, ac_type, cat, total_h, pic_h, instr_h, sic_h, dual_h, night_h, act_inst_h, sim_inst_h, xc_h):
+          def add_row(dt, ac_type, cat, total_h, pic_h, instr_h, sic_h, dual_h, night_h, act_inst_h, sim_inst_h, xc_h,
+                      solo_h=0.0, night_to=0, night_ldg=0):
               track_aircraft(ac_type, cat, total_h, dt, pic_h, instr_h, sic_h, dual_h)
               agg['total'] += total_h
               if cat == 'rotor':
@@ -255,18 +277,21 @@ jobs:
                   agg['act_inst_rotor'] += act_inst_h
                   agg['sim_inst_rotor'] += sim_inst_h
                   agg['xc_rotor'] += xc_h
+                  gcat = 'rotor'
               elif cat == 'mel':
                   agg['mel'] += total_h
                   agg['night_air'] += night_h
                   agg['act_inst_air'] += act_inst_h
                   agg['sim_inst_air'] += sim_inst_h
                   agg['xc_air'] += xc_h
+                  gcat = 'air'
               else:
                   agg['sel'] += total_h
                   agg['night_air'] += night_h
                   agg['act_inst_air'] += act_inst_h
                   agg['sim_inst_air'] += sim_inst_h
                   agg['xc_air'] += xc_h
+                  gcat = 'air'
 
               agg['pic'] += pic_h
               agg['instructor'] += instr_h
@@ -279,6 +304,35 @@ jobs:
               if pic_h > 0:
                   agg['pic_xc'] += xc_h
                   agg['pic_night'] += night_h
+
+              # IACRA grid: same "if this role's hours were logged on this
+              # flight, its XC/night hours count toward that role's XC/night
+              # row too" pattern, per category, for every role (not just PIC).
+              ig['dual'][gcat] += dual_h
+              ig['solo'][gcat] += solo_h
+              ig['pic'][gcat] += pic_h
+              ig['sic'][gcat] += sic_h
+              if dual_h > 0:
+                  ig['xc_dual'][gcat] += xc_h
+                  ig['night_dual'][gcat] += night_h
+              if solo_h > 0:
+                  ig['xc_solo'][gcat] += xc_h
+                  ig['night_solo'][gcat] += night_h
+              if pic_h > 0:
+                  ig['xc_pic'][gcat] += xc_h
+                  ig['night_pic'][gcat] += night_h
+              if sic_h > 0:
+                  ig['xc_sic'][gcat] += xc_h
+                  ig['night_sic'][gcat] += night_h
+              ig['night_tofl'][gcat] += night_to + night_ldg
+              if pic_h > 0 or sic_h > 0:
+                  ig['night_tofl_pic_sic'][gcat] += night_to + night_ldg
+              ig['flights'][gcat] += 1
+
+              if cat in cls:
+                  cls[cat]['pic'] += pic_h
+                  cls[cat]['sic'] += sic_h
+                  cls[cat]['dual'] += dual_h
 
               if dt is not None:
                   if now - dt <= timedelta(days=182):
@@ -319,10 +373,25 @@ jobs:
               c_fltrv = find_col(file_headers, COL_FLTREV)
               c_remk  = find_col(file_headers, COL_REMARKS)
               c_tail  = find_col(file_headers, COL_TAILNUM)
+              c_solo  = find_col(file_headers, COL_SOLO)
+              c_ntof  = find_col(file_headers, COL_NIGHT_TO)
+              c_nldg  = find_col(file_headers, COL_NIGHT_LDG)
+              c_simdur = find_col(file_headers, COL_SIMDUR)
 
               used = 0
               for row in file_rows:
                   if c_cat and row.get(c_cat, '').strip().lower() == 'simulator':
+                      # Excluded from real-aircraft totals entirely, but still
+                      # tallied for the IACRA grid's FFS column — device type
+                      # (FTD/FFS/ATD) isn't distinguished in any source, so
+                      # all simulator time is shown under FFS. Some exports
+                      # (Superior SFS) log the session length in a dedicated
+                      # "Simulator" column and leave Total Time at 0 — take
+                      # whichever is actually populated.
+                      sim_total = parse_hours(row.get(c_total, '') if c_total else '')
+                      sim_dur   = parse_hours(row.get(c_simdur, '') if c_simdur else '')
+                      ffs['total'] += max(sim_total, sim_dur)
+                      ffs['dual']  += parse_hours(row.get(c_dual, '')  if c_dual  else '')
                       continue
                   dt = fmt_date(row.get(c_date_, '') if c_date_ else '')
                   total_h = parse_hours(row.get(c_total, '') if c_total else '')
@@ -354,7 +423,15 @@ jobs:
                   imc_h   = parse_hours(row.get(c_imc, '')   if c_imc   else '')
                   sim_h   = parse_hours(row.get(c_sim, '')   if c_sim   else '')
                   xc_h    = parse_hours(row.get(c_xc, '')    if c_xc    else '')
-                  add_row(dt, ac_type, cat, total_h, pic_h, instr_h, sic_h, dual_h, night_h, imc_h, sim_h, xc_h)
+                  # Solo is tracked in its own right for the IACRA grid,
+                  # independent of pic_aliases — a pre-cert student's solo
+                  # time is simultaneously PIC (FAR 61.51(e)(2)) and Solo,
+                  # IACRA wants both rows reported.
+                  solo_h    = parse_hours(row.get(c_solo, '') if c_solo else '')
+                  night_to  = int(parse_hours(row.get(c_ntof, '') if c_ntof else ''))
+                  night_ldg = int(parse_hours(row.get(c_nldg, '') if c_nldg else ''))
+                  add_row(dt, ac_type, cat, total_h, pic_h, instr_h, sic_h, dual_h, night_h, imc_h, sim_h, xc_h,
+                          solo_h=solo_h, night_to=night_to, night_ldg=night_ldg)
                   used += 1
 
                   raw_remarks = row.get(c_remk, '').strip() if c_remk else ''
@@ -513,6 +590,36 @@ jobs:
                   'pic_plus_qualifying_sic': round(agg['pic'] + agg['sic'], 1),
                   'pic_cross_country': round(agg['pic_xc'], 1),
                   'pic_night': round(agg['pic_night'], 1),
+              },
+              'iacra': {
+                  '_readme': 'Aeronautical Experience Grid + Class Hours, matching IACRA\'s own layout for direct copy-in. Night Take-off/Landing counts show 0 for both columns right now — not because there were none, but because no takeoff/landing count has ever been entered in LogTen (checked Day T/O/Ldg too: also always blank), and the historical archives that supply all Rotorcraft time do not have those columns in their schema at all. Airplane counts will start populating once you fill them in going forward; Rotorcraft will always read 0 regardless. FTD/FFS/ATD device type is not distinguished in any source; all simulator time is shown under FFS.',
+                  'experience_grid': {
+                      'total':                        {'airplane': round(agg['sel'] + agg['mel'], 1), 'rotorcraft': round(agg['rotor'], 1), 'ffs': round(ffs['total'], 1)},
+                      'instruction_received':         {'airplane': round(ig['dual']['air'], 1), 'rotorcraft': round(ig['dual']['rotor'], 1), 'ffs': round(ffs['dual'], 1)},
+                      'solo':                         {'airplane': round(ig['solo']['air'], 1), 'rotorcraft': round(ig['solo']['rotor'], 1), 'ffs': 0},
+                      'pic':                          {'airplane': round(ig['pic']['air'], 1), 'rotorcraft': round(ig['pic']['rotor'], 1), 'ffs': 0},
+                      'sic':                          {'airplane': round(ig['sic']['air'], 1), 'rotorcraft': round(ig['sic']['rotor'], 1), 'ffs': 0},
+                      'xc_instruction_received':      {'airplane': round(ig['xc_dual']['air'], 1), 'rotorcraft': round(ig['xc_dual']['rotor'], 1), 'ffs': 0},
+                      'xc_solo':                      {'airplane': round(ig['xc_solo']['air'], 1), 'rotorcraft': round(ig['xc_solo']['rotor'], 1), 'ffs': 0},
+                      'xc_pic':                       {'airplane': round(ig['xc_pic']['air'], 1), 'rotorcraft': round(ig['xc_pic']['rotor'], 1), 'ffs': 0},
+                      'xc_sic':                       {'airplane': round(ig['xc_sic']['air'], 1), 'rotorcraft': round(ig['xc_sic']['rotor'], 1), 'ffs': 0},
+                      'instrument':                   {'airplane': round(agg['act_inst_air'] + agg['sim_inst_air'], 1), 'rotorcraft': round(agg['act_inst_rotor'] + agg['sim_inst_rotor'], 1), 'ffs': 0},
+                      'night_instruction_received':   {'airplane': round(ig['night_dual']['air'], 1), 'rotorcraft': round(ig['night_dual']['rotor'], 1), 'ffs': 0},
+                      'night_takeoff_landing':        {'airplane': int(ig['night_tofl']['air']), 'rotorcraft': int(ig['night_tofl']['rotor']), 'ffs': 0},
+                      'night_pic':                    {'airplane': round(ig['night_pic']['air'], 1), 'rotorcraft': round(ig['night_pic']['rotor'], 1), 'ffs': 0},
+                      'night_takeoff_landing_pic_sic':{'airplane': int(ig['night_tofl_pic_sic']['air']), 'rotorcraft': int(ig['night_tofl_pic_sic']['rotor']), 'ffs': 0},
+                      'number_of_flights':            {'airplane': int(ig['flights']['air']), 'rotorcraft': int(ig['flights']['rotor']), 'ffs': 0},
+                  },
+                  'class_hours': {
+                      'airplane_sel_pic': round(cls['sel']['pic'], 1),
+                      'airplane_sel_sic': round(cls['sel']['sic'], 1),
+                      'airplane_sel_dual': round(cls['sel']['dual'], 1),
+                      'airplane_mel_pic': round(cls['mel']['pic'], 1),
+                      'airplane_mel_sic': round(cls['mel']['sic'], 1),
+                      'airplane_mel_dual': round(cls['mel']['dual'], 1),
+                      'rotorcraft_hel': round(agg['rotor'], 1),
+                      'ffs_total': round(ffs['total'], 1),
+                  },
               },
           }
 
