@@ -105,7 +105,7 @@ jobs:
 
           # Aircraft types that count as Multi Engine Land. Everything else
           # (and anything unrecognized) defaults to Single Engine Land.
-          MEL_KEYWORDS = ['da-42', 'da42', 'seminole', 'baron', 'duchess', 'multi']
+          MEL_KEYWORDS = ['da-42', 'da42', 'seminole', 'baron', 'duchess', 'multi', 'pa-44', 'pa44']
           ROTOR_KEYWORDS = ['rotorcraft', 'helicopter', 'rotor']
 
           def classify_category(ac_type, category_field=''):

@@ -1,30 +1,30 @@
 {
-  "generated": "2026-08-21",
+  "generated": "2026-09-01",
   "generated_note": "Written by Claude Code during a review session, not auto-generated on a timer — ask Claude to refresh this after logging a batch of new flights or if a minimum crosses a milestone.",
-  "as_of_total_time": 556.1,
+  "as_of_total_time": 566.2,
 
   "verify_first": {
     "label": "Resolve this before anything else",
-    "body": "Still the SIC-combination question — whether Endeavor's asterisk rule lets your military SIC time count toward PIC / PIC Cross Country / PIC Night. If yes, PIC+qualifying-SIC sits at 385.9/250 (154%), well clear. If no, strict PIC is the number that matters, and it's climbing fast on its own: 84.6/250 (34%) now, up from 49.5 two weeks ago — every dual instrument lesson adds PIC since you're rated (FAR 61.51(e)). Confirm the rule with your recruiter, but this is no longer a blocker either way."
+    "body": "Still the SIC-combination question — whether Endeavor's asterisk rule lets your military SIC time count toward PIC / PIC Cross Country / PIC Night. If yes, PIC+qualifying-SIC sits at 396.0/250 (158%), well clear. If no, strict PIC is the number that matters: 94.7/250 (38%), up from 84.6 two weeks ago. Confirm the rule with your recruiter, but this is no longer a blocker either way."
   },
 
   "stalled": {
-    "label": "Stalled — needs a deliberate decision",
-    "body": "Multi-Engine Land: 13.8/25 (55%), unchanged since your last DA-42 session in June 2025. Nothing in instrument or commercial single-engine training touches this — it will not self-resolve. Still needs dedicated multi-engine time booked specifically."
+    "label": "Just unstalled — nearly closed out",
+    "body": "Multi-Engine Land: 21.8/25 (87%), up from 13.8/25 where it had sat frozen since your last DA-42 session in June 2025 — Commercial ME complex (Seminole, PA-44-180) training began 8/25 with two flights totaling 8.0 hrs in one day. At that pace the remaining 3.2 hrs is realistically one more ME session away — confirm the next one is already on the schedule."
   },
 
   "resolving_naturally": {
-    "label": "Resolving on its own — don't force it",
-    "body": "You're deep in instrument checkride prep now (mock checkride 8/17, three prep flights through 8/20) — the instrument rating is essentially in hand. Instrument time (43.2/75, 58%) and Cross Country (367.5/500, already well past the 200-hr Restricted-ATP floor) keep climbing through the syllabus. Strict PIC and PIC Cross Country ride along the same way (both grow whenever you fly a dual lesson as sole manipulator) — PIC XC is now 51.5/100 (52%), over half way — so don't chase them separately."
+    "label": "Resolving on its own — watch for a phase change",
+    "body": "Big one: the Instrument-Airplane checkride passed 8/24 — that rating is done, not just 'in hand' anymore. Cross Country (367.5/500, already well past the 200-hr Restricted-ATP floor) and PIC Cross Country (51.5/100, 52%) rode along automatically through private + instrument training, but didn't move on the checkride flight or either ME session — all were local KPDK/KLZU legs. Commercial ME complex training tends to be pattern/airwork-heavy rather than cross-country, so don't assume these keep climbing the way they did before; recheck after a few more ME sessions."
   },
 
   "highest_leverage": {
     "label": "Highest-leverage move for total hours",
-    "body": "Pace has accelerated hard: 35.1 hrs in the 15 days since the last review (~70 hrs/month, vs. ~36 last month) — at this rate 750 total time is roughly 2.8 months out. That's checkride-season intensity and won't hold year-round, but it shows the trajectory. Once the instrument checkride is done, Commercial → CFI remains the fastest sustainable path: instructing builds PIC and total hours faster than paying for rentals, and closes the strict-PIC gap directly."
+    "body": "Pace has picked back up: 10.1 hrs added in the 11 days since the last review (~28 hrs/month), still well off the ~70 hrs/month checkride-prep sprint but no longer flat. At 566.2/750 (75%) with 183.8 hrs left, keeping a steady cadence through the rest of Commercial ME and into CFI is what actually moves this number, not any single metric here."
   },
 
   "lagging": {
     "label": "Lagging without a natural fix",
-    "body": "PIC Night: 1.6/25 (6%) — still the clear laggard, untouched by all the recent flying. Night overall is 48.0/100 (48%), but none of the post-checkride flights combined PIC and night on the same leg. This is the one category worth deliberately scheduling around: a few dedicated night instrument or night XC legs now count as PIC night automatically, and nothing in the normal syllabus forces them."
+    "body": "PIC Night: 1.6/25 (6%) — still completely untouched, including by both of the newest flights. Night overall is 48.0/100 (48%), but nothing in the current Commercial ME syllabus forces a night+PIC combination either. This remains the one category that needs deliberate scheduling — a few dedicated night legs, flown as PIC, are the only thing that moves it."
   }
 }

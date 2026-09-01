@@ -1136,3 +1136,25 @@ Again, this approach was stable. However, before the FAF, it seemed like when yo
 On this approach, you did the procedure turn while inbound before the final approach fix you configured and then went inbound with no issue. Lateral course was good, no more than .03. You made your callout. Don't forget your callouts.
 
 - You requested 1 more flight tomorrow. we will do that flight then ground from that onward"		
+2026-08-24	N724A	PA-28-181	KPDK		KPDK					2.10		2.10																		"Hans Kreuk
+Inst Rating (SE) Checkride
+
+- Good job on your instrument check ride and welcome to commercial"		
+2026-08-25	N575AT	PA-44-180	KLZU		KLZU					4.00		4.00																		"Hans Kreuk
+Commercial Training in ME Complex Airplane
+
+Great flying with you today! The Seminole is a great aircraft and i'm looking forward to showing you all that is capable of. Here are some tips for the remainder of our flights to look over.
+1. Review the V-Speeds in the Seminole Supplement I shared with you 
+2. Read and memorize the required callouts
+- ""Gear Down Before Landing Checklist"" when checking the gear hold the gear lever in the down position and when you see three in the green and one in the mirror we will verbalize ""Three in the green, none in the red, one in the mirror""
+- On Base Leg or 1000 ft AGL (on instrument approach) we will say Blueline GUMP ""Gas, Undercarriage, Mixture, Props""
+- Upon reaching 400 AGL we will both say and repeat ""Gear Down Stabilized"" if we have three in the green and our stabilized on our approach"		
+2026-08-25	N575AT	PA-44-180	KLZU		KLZU					4.00		4.00																		"Hans Kreuk
+Commercial Training in ME Complex Airplane
+
+Great flying with you today! The Seminole is a great aircraft and i'm looking forward to showing you all that is capable of. Here are some tips for the remainder of our flights to look over.
+1. Review the V-Speeds in the Seminole Supplement I shared with you 
+2. Read and memorize the required callouts
+- ""Gear Down Before Landing Checklist"" when checking the gear hold the gear lever in the down position and when you see three in the green and one in the mirror we will verbalize ""Three in the green, none in the red, one in the mirror""
+- On Base Leg or 1000 ft AGL (on instrument approach) we will say Blueline GUMP ""Gas, Undercarriage, Mixture, Props""
+- Upon reaching 400 AGL we will both say and repeat ""Gear Down Stabilized"" if we have three in the green and our stabilized on our approach"		
