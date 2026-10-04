@@ -1,30 +1,30 @@
 {
-  "generated": "2026-09-01",
+  "generated": "2026-10-03",
   "generated_note": "Written by Claude Code during a review session, not auto-generated on a timer — ask Claude to refresh this after logging a batch of new flights or if a minimum crosses a milestone.",
-  "as_of_total_time": 566.2,
+  "as_of_total_time": 594.8,
 
   "verify_first": {
     "label": "Resolve this before anything else",
-    "body": "Still the SIC-combination question — whether Endeavor's asterisk rule lets your military SIC time count toward PIC / PIC Cross Country / PIC Night. If yes, PIC+qualifying-SIC sits at 396.0/250 (158%), well clear. If no, strict PIC is the number that matters: 94.7/250 (38%), up from 84.6 two weeks ago. Confirm the rule with your recruiter, but this is no longer a blocker either way."
+    "body": "Two logging questions now matter more than any single minimum. (1) The September ATP export left Night and XC blank on three flights that were clearly both: the 9/14 2-hr day XC to KMQY, the 9/15 2-hr night XC, and the 9/29 Duties-of-PIC Night to KCHA (~6.8 hrs). Get those corrected in the school's records — until they are, Night, Cross Country and PIC Cross Country read low. (2) Strict PIC jumped to 123.3/250 (49%), but 16.0 of that is Seminole time the export logs as PIC. Without a multi-engine rating that time isn't loggable PIC under 14 CFR 61.51(e)(1), so the conservative figure is ~107.3/250 (43%). The SIC-combination question from earlier reviews still stands (PIC+qualifying-SIC 424.6/250), but it's no longer the only open item."
   },
 
   "stalled": {
-    "label": "Just unstalled — nearly closed out",
-    "body": "Multi-Engine Land: 21.8/25 (87%), up from 13.8/25 where it had sat frozen since your last DA-42 session in June 2025 — Commercial ME complex (Seminole, PA-44-180) training began 8/25 with two flights totaling 8.0 hrs in one day. At that pace the remaining 3.2 hrs is realistically one more ME session away — confirm the next one is already on the schedule."
+    "label": "Frozen on paper — a records gap, not a flying gap",
+    "body": "Night (48.0/100), Cross Country (367.5/500) and PIC Cross Country (51.5/100) haven't moved since the September 1 review, even though September included both commercial 2-hr cross-countries and a night flight to Chattanooga. That's the blank columns in the export, not missing experience. Once the three entries above are fixed, Night should rise to roughly 52–53 and both XC numbers should climb. If they don't, look at the flights again before scheduling extra legs."
   },
 
   "resolving_naturally": {
-    "label": "Resolving on its own — watch for a phase change",
-    "body": "Big one: the Instrument-Airplane checkride passed 8/24 — that rating is done, not just 'in hand' anymore. Cross Country (367.5/500, already well past the 200-hr Restricted-ATP floor) and PIC Cross Country (51.5/100, 52%) rode along automatically through private + instrument training, but didn't move on the checkride flight or either ME session — all were local KPDK/KLZU legs. Commercial ME complex training tends to be pattern/airwork-heavy rather than cross-country, so don't assume these keep climbing the way they did before; recheck after a few more ME sessions."
+    "label": "Milestone crossed — Multi-Engine Land is done",
+    "body": "Multi-Engine Land: 29.8/25 (119%) — closed out. The two 9/15 Seminole sessions (6.0 hrs) and 9/29 (2.0 hrs) took it past the line, so it no longer needs watching. Commercial single-engine work is also moving along: maneuvers were introduced 9/14, both required 2-hr cross-countries are logged, and the remaining weak spot in the debriefs is soft-field nose protection, not anything hours-related."
   },
 
   "highest_leverage": {
     "label": "Highest-leverage move for total hours",
-    "body": "Pace has picked back up: 10.1 hrs added in the 11 days since the last review (~28 hrs/month), still well off the ~70 hrs/month checkride-prep sprint but no longer flat. At 566.2/750 (75%) with 183.8 hrs left, keeping a steady cadence through the rest of Commercial ME and into CFI is what actually moves this number, not any single metric here."
+    "body": "594.8/750 (79%), with 155.2 hrs left. 28.6 hrs have been added since the 9/1 review, almost all between 9/13 and 9/29, which works out to about 28 hrs/month, the same as last cycle. At that rate you reach 750 in roughly five and a half months (around mid-March 2027). The CFI phase plus building time as an instructor is what shortens that. No single category is holding up total time."
   },
 
   "lagging": {
     "label": "Lagging without a natural fix",
-    "body": "PIC Night: 1.6/25 (6%) — still completely untouched, including by both of the newest flights. Night overall is 48.0/100 (48%), but nothing in the current Commercial ME syllabus forces a night+PIC combination either. This remains the one category that needs deliberate scheduling — a few dedicated night legs, flown as PIC, are the only thing that moves it."
+    "body": "PIC Night: 1.6/25 (6%) — still the one minimum nowhere near done. Fixing the two September night flights in the records could add up to ~4.8 hrs, if the school's PIC logging holds (both were dual), which would bring it to about 6.4. That still leaves ~19 hrs that only come from deliberately scheduled night legs flown as PIC. Night overall (100 needed) shares that fix, so every PIC night hour counts toward both."
   }
 }

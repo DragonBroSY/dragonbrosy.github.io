@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-01",
-  "source_rows": 313,
+  "generated": "2026-10-04",
+  "source_rows": 328,
   "sources": [
     {
       "file": "logbook.txt",
-      "rows": 77,
-      "used": 76
+      "rows": 92,
+      "used": 91
     },
     {
       "file": "logbook-current.csv",
@@ -28,24 +28,24 @@
       "used": 48
     }
   ],
-  "total_time": 566.2,
+  "total_time": 594.8,
   "airplane": {
-    "total": 259.8,
-    "pic": 94.7,
+    "total": 288.4,
+    "pic": 123.3,
     "turbine": 0
   },
   "category_class": {
-    "airplane_sel": 238.0,
+    "airplane_sel": 258.6,
     "airplane_ses": 0,
-    "airplane_mel": 21.8,
+    "airplane_mel": 29.8,
     "airplane_mes": 0,
     "helicopter_rotor": 306.4
   },
   "type_of_time": {
-    "pic": 94.7,
+    "pic": 123.3,
     "instructor": 0.0,
     "sic": 301.3,
-    "dual": 252.8,
+    "dual": 281.4,
     "other": 0,
     "fe": 0
   },
@@ -60,9 +60,9 @@
     "cross_country_rotor": 297.6
   },
   "last_bfr_or_checkride": "2026-07-07",
-  "last_flown_aircraft": "PA-44-180",
-  "total_flight_hours_last_6mo": 155.6,
-  "total_flight_hours_last_12mo": 175.8,
+  "last_flown_aircraft": "PA-28-181",
+  "total_flight_hours_last_6mo": 166.2,
+  "total_flight_hours_last_12mo": 197.0,
   "aircraft_flown": [
     {
       "type": "UH-60M",
@@ -79,13 +79,13 @@
     {
       "type": "PA-28-181",
       "category": "sel",
-      "total": 147.6,
-      "pic": 78.2,
+      "total": 168.2,
+      "pic": 98.8,
       "dual_given": 0.0,
       "turbine_sic": 0.0,
-      "dual_received": 137.6,
+      "dual_received": 158.2,
       "other": 0.0,
-      "last_flown": "2026-08",
+      "last_flown": "2026-09",
       "source": "logbook"
     },
     {
@@ -137,6 +137,18 @@
       "source": "logbook"
     },
     {
+      "type": "PA-44-180",
+      "category": "mel",
+      "total": 16.0,
+      "pic": 16.0,
+      "dual_given": 0.0,
+      "turbine_sic": 0.0,
+      "dual_received": 16.0,
+      "other": 0.0,
+      "last_flown": "2026-09",
+      "source": "logbook"
+    },
+    {
       "type": "CE-172-S G650",
       "category": "sel",
       "total": 14.7,
@@ -158,18 +170,6 @@
       "dual_received": 13.8,
       "other": 0.0,
       "last_flown": "2025-06",
-      "source": "logbook"
-    },
-    {
-      "type": "PA-44-180",
-      "category": "mel",
-      "total": 8.0,
-      "pic": 8.0,
-      "dual_given": 0.0,
-      "turbine_sic": 0.0,
-      "dual_received": 8.0,
-      "other": 0.0,
-      "last_flown": "2026-08",
       "source": "logbook"
     },
     {
@@ -198,13 +198,13 @@
     }
   ],
   "minimums_raw": {
-    "total_time": 566.2,
-    "multi_engine_land": 21.8,
+    "total_time": 594.8,
+    "multi_engine_land": 29.8,
     "night": 48.0,
     "instrument": 43.2,
     "cross_country": 367.5,
-    "pic_strict": 94.7,
-    "pic_plus_qualifying_sic": 396.0,
+    "pic_strict": 123.3,
+    "pic_plus_qualifying_sic": 424.6,
     "pic_cross_country": 51.5,
     "pic_night": 1.6
   },
@@ -212,12 +212,12 @@
     "_readme": "Aeronautical Experience Grid + Class Hours, matching IACRA's own layout for direct copy-in. Night Take-off/Landing counts show 0 for both columns right now \u2014 not because there were none, but because no takeoff/landing count has ever been entered in LogTen (checked Day T/O/Ldg too: also always blank), and the historical archives that supply all Rotorcraft time do not have those columns in their schema at all. Airplane counts will start populating once you fill them in going forward; Rotorcraft will always read 0 regardless. FTD/FFS/ATD device type is not distinguished in any source; all simulator time is shown under FFS.",
     "experience_grid": {
       "total": {
-        "airplane": 259.8,
+        "airplane": 288.4,
         "rotorcraft": 306.4,
         "ffs": 1.4
       },
       "instruction_received": {
-        "airplane": 249.3,
+        "airplane": 277.9,
         "rotorcraft": 3.5,
         "ffs": 1.4
       },
@@ -227,7 +227,7 @@
         "ffs": 0
       },
       "pic": {
-        "airplane": 91.8,
+        "airplane": 120.4,
         "rotorcraft": 2.9,
         "ffs": 0
       },
@@ -282,18 +282,18 @@
         "ffs": 0
       },
       "number_of_flights": {
-        "airplane": 141,
+        "airplane": 156,
         "rotorcraft": 170,
         "ffs": 0
       }
     },
     "class_hours": {
-      "airplane_sel_pic": 83.8,
+      "airplane_sel_pic": 104.4,
       "airplane_sel_sic": 0.0,
-      "airplane_sel_dual": 227.5,
-      "airplane_mel_pic": 8.0,
+      "airplane_sel_dual": 248.1,
+      "airplane_mel_pic": 16.0,
       "airplane_mel_sic": 0.0,
-      "airplane_mel_dual": 21.8,
+      "airplane_mel_dual": 29.8,
       "rotorcraft_hel": 306.4,
       "ffs_total": 1.4
     }

@@ -1158,3 +1158,236 @@ Great flying with you today! The Seminole is a great aircraft and i'm looking fo
 - ""Gear Down Before Landing Checklist"" when checking the gear hold the gear lever in the down position and when you see three in the green and one in the mirror we will verbalize ""Three in the green, none in the red, one in the mirror""
 - On Base Leg or 1000 ft AGL (on instrument approach) we will say Blueline GUMP ""Gas, Undercarriage, Mixture, Props""
 - Upon reaching 400 AGL we will both say and repeat ""Gear Down Stabilized"" if we have three in the green and our stabilized on our approach"		
+2026-09-13	N472TA	PA-28-181 G1000	KMQY		KMQY					2.30		2.30																		"Hans Kreuk
+Line Oriented Flight Training (LOFT)
+
+- This was a loft flight from KLZU to KMQY 
+-There was nothing abnormal about this flight 
+- Good job following procedures and ATC instructions 
+- During the flight, we discussed different aspects of commercial requirements 
+- We spoke about cloud clearances 
+- We also touched on aerodynamics
+- We discussed the difference between an operational license and the requirements for those
+- After the flight, we discussed and corrected any mistakes you may have forgotten 
+- Don't forget the simple stuff 
+- IMSAFE should be something that you need to know regardless of the license you're currently working towards 
+- Don't forget required inspections 
+- Don't forget what airmets and sigmets are 
+- review how long they are valid for 
+- remember ICEFLAGS
+- most importantly listen to the question before answering 
+- you need to think of what the answer is and whats being asked tehre were multiple occasions you brought things up that was not asked"		
+2026-09-13	N436G	PA-28-181 G1000	KLZU		KLZU					2.20		2.20																		"Hans Kreuk
+Line Oriented Flight Training (LOFT)
+
+- - This was a loft flight from  KMQY to KLZU 
+-There was nothing abnormal about this flight 
+- Good job following procedures and ATC instructions 
+- On the way back while en route, we did a partial ground 
+- We went over oxygen requirements 
+- we also touched on the following 
+- Imsafe 
+- PPP
+- Decide mode
+- A-E of an emergency 
+- 5 C's 
+- what to expect as a commercial pilot 
+- we also discussed the need to maintain the knowledge gained in pvt and instrument it will help you later on 
+- good landing 
+- Soft field
+- ensure you protect the nose a little longer other than that it would have been sat"		
+2026-09-14	N696A	PA-28-181	KPDK		KPDK					2.00		2.00																		"Hans Kreuk
+Commercial Single-Engine Training
+
+This was your commercial Single-engine maneuver flight.
+You were re- introduced to all maneuvers. 
+1st, we started with the steep turns.
+On the first attempt, you got 300 low. The bank was 50°, and airspeed was also high due to the increased pitch-down attitude.
+After this, I demonstrated one for you, so you had some kind of idea of what we had to look towards compared to the SIM.
+On attempt # 2. It was SAT; however. Depending on the DP, it could be deemed unsat due to the constant bank of 50 degrees. By this, I mean it wasn't stable at 50. You went close to 45 a couple of times, and then you dipped below 45 and went to like 43, but you caught it and then went back up.
+On the 3 attempt. It was SAT. You corrected the things I illustrated from the first two attempts.
+Then we moved on to slow flight.
+This one I demonstrated first, showing the appropriate entry into the maneuver. I did this because many students balloon. With the introduction of flaps, I want to show you that you had to maintain altitude and that it was possible even though it was bumpy outside.
+After this, you tried the maneuver for the first attempt; however, you got high when you introduced the flaps, as you didn't wait long enough for the airspeed to bleed off. I then instructed you to. Recover and begin the maneuver again.
+On the 2nd attempt, you weren't really getting high; however, after you introduced the flaps, you started decreasing your altitude rapidly, and you got 200 low. After this, I instructed you to restabilize and start again.
+On the 3rd attempt, you maintained your altitude, went through the whole maneuver with no issue, went to the assigned heading, climbed properly, descended properly, and recovered properly. Good job.
+I asked you to do it one more time. For the fourth attempt, you did the same thing as the third attempt. Good job.
+Power-on stall and power-off stall (attempts 1 & 2 for both SAT). No issue on this one. Just watch that pitch-up attitude when on the recovery, as you may get the secondary stall if you pitch up too rapidly, like when you got it in the SIM. However, in the aircraft, you didn't get it today.
+Accelerated stall: I demonstrated this the first time 
+Attempt 1 #- unsat – when recovering, do what you say: Reduce AOA, then wings level, then full power. 
+We don’t want that secondary stall horn.
+Attempt 2 # - SAT- this is exactly how it’s done. Good job, textbook.
+After this, I introduced Chandell by demonstrating it and having you give it a try.
+Attempt 1 – unsat; just make sure you call out just above stall speed, and when pitching up, go a light bit slower so you get right above stall by the 180.
+Attempt 2 -SAT again; make sure you don’t go past 30 degrees and pitch up slightly slower. 
+After this, I demonstrated this the first time: lazy 8’s.
+Attempt 1: SAT; however, you could be a little slower. You were within standards; however, so good job. 
+Attempt 2: SAT; however, again, slow it down. Don’t rush the maneuver. You were within standards.
+I demonstrated this the first time: Steep spirals.
+After the demonstration, I let you do Chandells to get back up to altitude. 
+** Most of which was within commercial standards, but the only thing I see consistent that we spoke about was the bank of 30 degrees. Don’t go farther.***
+Attempt 1: Steep spirals were within standards based on your corrections with the wind and the visual reference being still noticeable.
+I would highly recommend not picking houses in neighborhoods as they are hard to pick out if you lose sight at any point. 
+8s on pylons :
+We were able to perform 1 of these by demonstration and then I had you call out the corrections on the second 360. 
+Due to time and clouds, we decided to head back."		
+2026-09-14	N696A	PA-28-181	KMQY		KMQY					2.00		2.00																		"Hans Kreuk
+2-Hour Commercial Day Cross-Country
+
+- This was the 2-hour cross-country flight from KPDK to KMQY
+- The flight was pretty uneventful
+- Good job maintaining cloud clearances and flight following instructions/ advisorys 
+- During the flight, we did discuss some of the items from the ground earlier today 
+- Remember that the documents that the AC needs and the documents for the pilot need to be known 
+- Also, we need to know the associated risks of holding out 
+- If you don't hear a call from ATC in a while, you could check in as well... it is a 2 way radio"		
+2026-09-15	N696A	PA-28-181	KPDK		KPDK					2.10		2.10																		"Hans Kreuk
+2-Hour Commercial Night Cross-Country
+
+- This was the night of cross-country 
+- We departed IFR due to the visibility and it being dark 
+- Visibility was greater than 10 SM; however, for safety, you opted for IFR. Good PIC decision-making skills 
+- That's what commercial is for: making those PIC decisions
+- On the route, we got issued an arrival as another CXK was going from there, CX
+- You got to see that VFR at night is really not that smart, as you stated 
+- Good job overall on the flight 
+- We landed on 21L due to the increased lighting on that runway"		
+2026-09-15	N243AT	PA-44-180	KLZU		KLZU					4.10		4.10																		"Hans Kreuk
+Commercial Training in ME Complex Airplane
+
+Debriefing:
+Great flying with you today! The Seminole is a great aircraft and i'm looking forward to showing you all that is capable of. Here are some tips for the remainder of our flights to look over.
+1. Review the V-Speeds in the Seminole Supplement I shared with you 
+2. Read and memorize the required callouts
+- ""Gear Down Before Landing Checklist"" when checking the gear hold the gear lever in the down position and when you see three in the green and one in the mirror we will verbalize ""Three in the green, none in the red, one in the mirror""
+- On Base Leg or 1000 ft AGL (on instrument approach) we will say Blueline GUMP ""Gas, Undercarriage, Mixture, Props""
+- Upon reaching 400 AGL we will both say and repeat ""Gear Down Stabilized"" if we have three in the green and our stabilized on our approach"		
+2026-09-15	N243AT	PA-44-180	KLZU		KLZU					1.90		1.90																		"Hans Kreuk
+Commercial Training in ME Complex Airplane
+
+Great flying with you today! The Seminole is a great aircraft. 
+- great job with the takeoff and running through the checklist as appropriate
+- Remember the Seminole is faster so make sure you trim as necessary. 
+- Landings were good as well
+- I look forward to flying with you again
+- Good luck though the rest of your training and I hope to see you in the multi-engine phase soon"		
+2026-09-16	N384D	PA-28-181	KPDK		KPDK					1.80		1.80																		"Hans Kreuk
+Commercial Duties-of-PIC Day
+
+- Today we did 12 tols
+- Good job overall 
+- Soft field takeoff:Unsat 
+- Eventually the takeoff was sta 
+- However, you forgot to retract the flaps, as the tower stated early crosswind when able 
+- Be careful and don't forget the flaps 
+- Soft fields landings
+- #1Unsat 
+- You did not protect the nose long enough 
+- The nose touched down shortly after the mains
+- #2 Unsat 
+- Again, protect the nose after touching down 
+- Don't let it drop as quickly
+- Demonstrated a soft field and how to ensure protection of the nose
+- #3-6 - SAT 
+- Corrections were made to protect the nose; good job; these would have passed the checkride 
+- Short field Landing  -
+- # 1- SAT
+- Shortly after your point, within your tolerances 
+- # 2 - SAT
+- again within tolerances; remember to say simulated heavy braking 
+- # 3 - Unsat 
+- This was due to poor airspeed management 
+- along with an early flare 
+- which led to a loss in airspeed and energy 
+- 
+- ** Always remember don't force the landing ** Good job"		
+2026-09-18	N458A	PA-28-181	KPDK		KPDK					1.90		1.90																		"Hans Kreuk
+Commercial Single-Engine Training
+
+- Soft field takeoff: SAT
+- Chandelle: SAT. Just keep pitching up to 15° to slow down to just above stall speed.
+- Lazy eights: Bug heading and altitude before starting the maneuver. Bank and pitch slower, be more lazy and slow with your control inputs. From the 135-180 degree points, this is when you should get the plane back to standards.
+- Accelerated stall: SAT. Good recovery.
+- Steep spirals: Be mindful of the altitude you start and end the maneuver at. Bug heading before starting the maneuver. Nice job banking for the headwind and tailwind. You shouldn't level the wings during the bank, it is a continuous bank until you have done 3 360s.
+- Eights on pylons: Need to work on these the most. More so finding pylons. Find one and then time the 20-25 seconds and fond the second pylon. You keep the same bank around the pylon and change the pitch depending on if you are ahead or behind the pylon."		
+2026-09-25	N261A	PA-28-181	KPDK		KPDK					1.20		1.20																		"Hans Kreuk
+Line Oriented Flight Training (LOFT)
+
+- On this flight, we got approval from flight ops to complete your LOFT time 4.0 remained now 2.8 remains
+- We did TOLs at PDK
+- Soft field takeoff - SAT 
+- Soft field # 1- Unsat 
+- You did not protect the nose 
+- Short field # 1 SAT 
+- Short field # 2 SAT 
+- Soft field landing # 2: Unsat 
+- Remember the point of this landing isn't a point; it is to protect the nose wheel and land in the first 1/3 of the runway 
+- do not rush to put in flaps 
+- please make sure you're stable 
+- Soft field # 3- SAT 
+- Soft Field # 4 - SAT (per ACS) you can protect the nose longer than that 
+- Even 2 seconds is better than what we saw here 
+- Power off 180: SAT 
+- Good job on the power management 
+- just rememebr dont force it, but don't flare forever. This was close to being unsatisfactory
+- Notes 
+- At some points during your descent out of downwind, you stated 80 but were at 87 
+- Please mean the altitude you say and actually be there
+- That creates confusion
+- Soft field # 5 - unsatisfactory 
+- You did not land in the first 1/3; you were long by 30- 50 feet 
+- Normal landing - SAT"		
+2026-09-28	N458A	PA-28-181	KPDK		KPDK					1.40		1.40																		"Hans Kreuk
+Line Oriented Flight Training (LOFT)
+
+- Respecting the pattern airspeed and altitude: SAT the total duration of the flight good job
+
+Soft field - unsat 
+Protect the nose longer
+You allowed the nose to drop shortly after the mains touched down 
+Soft field #2;
+Nose wheel came down right after mains again 
+Short field ; SAT
+Short field #2 ; SAT
+Short field 3 :SAT
+Power off 180-SAT( watch that nose down correction, we don’t want to force any landings )
+Power off 180 # 2; SAT
+Soft field demonstration:
+Soft field #3: SAT ( technically the nose tapped then stayed up, from my perspective but minimal, try to prevent that )
+Soft field #4 Unsat 
+Really soft but more than first 1/3 of runway 
+Soft field # 5 SAT
+Power off 180 - SAT
+- keep up the good work"		
+2026-09-29	N458A	PA-28-181	KPDK		KPDK					2.70		2.70																		"Hans Kreuk
+Commercial Duties-of-PIC Night
+
+- this was a duties of pic night flight 
+- KPDK - KCHA 
+- 5 touch and goes at a towered airport 
+- MFI will do the other 5 touch and goes at a towered airport 
+- student instructed to speak with MFI"		
+2026-09-29	N458A	PA-28-181	KLZU		KLZU					0.40		0.40																		"Hans Kreuk
+Line Oriented Flight Training (LOFT)
+
+- this was loft flight from KPDK to KLZU
+- flight was uneventfull
+- Soft field - SAT 
+- good job"		
+2026-09-29	N458A	PA-28-181	KPDK		KPDK					0.60		0.60																		"Hans Kreuk
+Line Oriented Flight Training (LOFT)
+
+- This was the flight from KLZU to KPDK on the MX FIX
+- this flight was uneventful 
+- just remember aerodynamic braking please 
+- and we don't try to force any taxi ways if you cant make C go to B
+- Safety focus decision making you are PIC please be more mind full"		
+2026-09-29	N514CG	PA-44-180	KLZU		KLZU					2.00		2.00																		"Hans Kreuk
+Commercial Training in ME Complex Airplane
+
+Great flying with you today! The Seminole is a great aircraft. 
+- great job with the takeoff and running through the checklist as appropriate
+- Remember the Seminole is faster so make sure you trim as necessary. 
+- Landings were good as well
+- I look forward to flying with you again
+- Good luck though the rest of your training and I hope to see you in the multi-engine phase soon"		
