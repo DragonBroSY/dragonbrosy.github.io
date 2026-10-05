@@ -1231,7 +1231,7 @@ I would highly recommend not picking houses in neighborhoods as they are hard to
 8s on pylons :
 We were able to perform 1 of these by demonstration and then I had you call out the corrections on the second 360. 
 Due to time and clouds, we decided to head back."		
-2026-09-14	N696A	PA-28-181	KMQY		KMQY					2.00		2.00																		"Hans Kreuk
+2026-09-14	N696A	PA-28-181	KMQY		KMQY					2.00		2.00			2.00															"Hans Kreuk
 2-Hour Commercial Day Cross-Country
 
 - This was the 2-hour cross-country flight from KPDK to KMQY
@@ -1241,7 +1241,7 @@ Due to time and clouds, we decided to head back."
 - Remember that the documents that the AC needs and the documents for the pilot need to be known 
 - Also, we need to know the associated risks of holding out 
 - If you don't hear a call from ATC in a while, you could check in as well... it is a 2 way radio"		
-2026-09-15	N696A	PA-28-181	KPDK		KPDK					2.10		2.10																		"Hans Kreuk
+2026-09-15	N696A	PA-28-181	KPDK		KPDK					2.10	2.10	2.10			2.10															"Hans Kreuk
 2-Hour Commercial Night Cross-Country
 
 - This was the night of cross-country 
@@ -1359,7 +1359,7 @@ Really soft but more than first 1/3 of runway
 Soft field # 5 SAT
 Power off 180 - SAT
 - keep up the good work"		
-2026-09-29	N458A	PA-28-181	KPDK		KPDK					2.70		2.70																		"Hans Kreuk
+2026-09-29	N458A	PA-28-181	KPDK		KPDK					2.70	2.70	2.70			2.70															"Hans Kreuk
 Commercial Duties-of-PIC Night
 
 - this was a duties of pic night flight 

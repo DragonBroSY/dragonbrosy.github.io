@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04",
+  "generated": "2026-10-05",
   "source_rows": 328,
   "sources": [
     {
@@ -50,18 +50,18 @@
     "fe": 0
   },
   "flight_conditions": {
-    "night_airplane": 7.8,
+    "night_airplane": 12.6,
     "night_rotor": 40.2,
     "actual_instrument_airplane": 1.4,
     "actual_instrument_rotor": 2.1,
     "simulated_instrument_airplane": 9.4,
     "simulated_instrument_rotor": 30.3,
-    "cross_country_airplane": 69.9,
+    "cross_country_airplane": 76.7,
     "cross_country_rotor": 297.6
   },
   "last_bfr_or_checkride": "2026-07-07",
   "last_flown_aircraft": "PA-28-181",
-  "total_flight_hours_last_6mo": 166.2,
+  "total_flight_hours_last_6mo": 163.5,
   "total_flight_hours_last_12mo": 197.0,
   "aircraft_flown": [
     {
@@ -200,13 +200,13 @@
   "minimums_raw": {
     "total_time": 594.8,
     "multi_engine_land": 29.8,
-    "night": 48.0,
+    "night": 52.8,
     "instrument": 43.2,
-    "cross_country": 367.5,
+    "cross_country": 374.3,
     "pic_strict": 123.3,
     "pic_plus_qualifying_sic": 424.6,
-    "pic_cross_country": 51.5,
-    "pic_night": 1.6
+    "pic_cross_country": 58.3,
+    "pic_night": 6.4
   },
   "iacra": {
     "_readme": "Aeronautical Experience Grid + Class Hours, matching IACRA's own layout for direct copy-in. Night Take-off/Landing counts show 0 for both columns right now \u2014 not because there were none, but because no takeoff/landing count has ever been entered in LogTen (checked Day T/O/Ldg too: also always blank), and the historical archives that supply all Rotorcraft time do not have those columns in their schema at all. Airplane counts will start populating once you fill them in going forward; Rotorcraft will always read 0 regardless. FTD/FFS/ATD device type is not distinguished in any source; all simulator time is shown under FFS.",
@@ -237,7 +237,7 @@
         "ffs": 0
       },
       "xc_instruction_received": {
-        "airplane": 69.9,
+        "airplane": 76.7,
         "rotorcraft": 0.0,
         "ffs": 0
       },
@@ -247,7 +247,7 @@
         "ffs": 0
       },
       "xc_pic": {
-        "airplane": 49.9,
+        "airplane": 56.7,
         "rotorcraft": 1.6,
         "ffs": 0
       },
@@ -262,7 +262,7 @@
         "ffs": 0
       },
       "night_instruction_received": {
-        "airplane": 7.8,
+        "airplane": 12.6,
         "rotorcraft": 0.0,
         "ffs": 0
       },
@@ -272,7 +272,7 @@
         "ffs": 0
       },
       "night_pic": {
-        "airplane": 0.0,
+        "airplane": 4.8,
         "rotorcraft": 1.6,
         "ffs": 0
       },

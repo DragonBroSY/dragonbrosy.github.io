@@ -1,30 +1,25 @@
 {
-  "generated": "2026-10-03",
+  "generated": "2026-10-05",
   "generated_note": "Written by Claude Code during a review session, not auto-generated on a timer — ask Claude to refresh this after logging a batch of new flights or if a minimum crosses a milestone.",
   "as_of_total_time": 594.8,
-
   "verify_first": {
     "label": "Resolve this before anything else",
-    "body": "Two logging questions now matter more than any single minimum. (1) The September ATP export left Night and XC blank on three flights that were clearly both: the 9/14 2-hr day XC to KMQY, the 9/15 2-hr night XC, and the 9/29 Duties-of-PIC Night to KCHA (~6.8 hrs). Get those corrected in the school's records — until they are, Night, Cross Country and PIC Cross Country read low. (2) Strict PIC jumped to 123.3/250 (49%), but 16.0 of that is Seminole time the export logs as PIC. Without a multi-engine rating that time isn't loggable PIC under 14 CFR 61.51(e)(1), so the conservative figure is ~107.3/250 (43%). The SIC-combination question from earlier reviews still stands (PIC+qualifying-SIC 424.6/250), but it's no longer the only open item."
+    "body": "The September night/XC records gap is fixed: the 9/14 2-hr day XC to KMQY, the 2.1-hr night XC back to KPDK (logged 9/15), and the 2.7-hr Duties-of-PIC Night to KCHA and back (logged 9/29) now carry their Night and XC time. What's still open is PIC. Strict PIC is 123.3/250 (49%), but 16.0 of that is Seminole time the export logs as PIC. Without a multi-engine rating that time isn't loggable PIC under 14 CFR 61.51(e)(1), so the conservative figure is ~107.3/250 (43%). The SIC-combination question from earlier reviews also still stands (PIC+qualifying-SIC 424.6/250)."
   },
-
   "stalled": {
-    "label": "Frozen on paper — a records gap, not a flying gap",
-    "body": "Night (48.0/100), Cross Country (367.5/500) and PIC Cross Country (51.5/100) haven't moved since the September 1 review, even though September included both commercial 2-hr cross-countries and a night flight to Chattanooga. That's the blank columns in the export, not missing experience. Once the three entries above are fixed, Night should rise to roughly 52–53 and both XC numbers should climb. If they don't, look at the flights again before scheduling extra legs."
+    "label": "Unstuck — the records fix moved four minimums",
+    "body": "With the corrected entries, Night went from 48.0 to 52.8/100, Cross Country from 367.5 to 374.3/500, PIC Cross Country from 51.5 to 58.3/100 (58%), and PIC Night from 1.6 to 6.4/25. None of these are stalled any more, but Cross Country and PIC Cross Country only move on real XC legs, and the Commercial syllabus has few left after the long solo/duties-of-PIC XC."
   },
-
   "resolving_naturally": {
     "label": "Milestone crossed — Multi-Engine Land is done",
     "body": "Multi-Engine Land: 29.8/25 (119%) — closed out. The two 9/15 Seminole sessions (6.0 hrs) and 9/29 (2.0 hrs) took it past the line, so it no longer needs watching. Commercial single-engine work is also moving along: maneuvers were introduced 9/14, both required 2-hr cross-countries are logged, and the remaining weak spot in the debriefs is soft-field nose protection, not anything hours-related."
   },
-
   "highest_leverage": {
     "label": "Highest-leverage move for total hours",
     "body": "594.8/750 (79%), with 155.2 hrs left. 28.6 hrs have been added since the 9/1 review, almost all between 9/13 and 9/29, which works out to about 28 hrs/month, the same as last cycle. At that rate you reach 750 in roughly five and a half months (around mid-March 2027). The CFI phase plus building time as an instructor is what shortens that. No single category is holding up total time."
   },
-
   "lagging": {
     "label": "Lagging without a natural fix",
-    "body": "PIC Night: 1.6/25 (6%) — still the one minimum nowhere near done. Fixing the two September night flights in the records could add up to ~4.8 hrs, if the school's PIC logging holds (both were dual), which would bring it to about 6.4. That still leaves ~19 hrs that only come from deliberately scheduled night legs flown as PIC. Night overall (100 needed) shares that fix, so every PIC night hour counts toward both."
+    "body": "PIC Night: 6.4/25 (26%) — up from 1.6 thanks to the two September night flights, but still the minimum furthest from done. About 18.6 hrs remain, and those only come from deliberately scheduled night legs flown as PIC. Night overall (52.8/100) shares that fix, so every PIC night hour counts toward both."
   }
 }
