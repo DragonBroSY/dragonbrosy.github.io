@@ -1,6 +1,7 @@
 Aerodynamics.
 
 Aerodynamics
+The four forces diagram shows an airplane with an arrow pointing in each direction: thrust pulling forward out of the propeller, drag pulling back behind the tail, lift pointing straight up from the wing, and weight pointing straight down.
 a. Four Forces
   - Thrust – forward force produced by the powerplant/propeller. It opposes the force of drag. It acts parallel to the longitudinal axis.
   - Drag – rearward force (retarding force) caused by disruption of airflow by the aircraft structure. It opposes the force of thrust. It acts parallel and rearward to the relative wind.
@@ -21,14 +22,13 @@ d. Drag
     - Interference Drag – created by the collision of different airstreams creating turbulence or restricts smooth airflow
     - Skin Friction Drag – created between air molecules and the surface of the aircraft
 
-Airfoil diagram labels: Angle of Attack. Relative Wind. Leading Edge. Trailing Edge. Upper Surface. Lower Surface. Chord Line. Camber Line.
+The airfoil diagram shows a wing cross-section with its rounded leading edge facing the oncoming air and its thin trailing edge at the back. The curved top is the upper surface and the flatter bottom is the lower surface. The chord line is drawn straight through the airfoil from the trailing edge to the leading edge, and the camber line curves through the middle, halfway between the upper and lower surfaces. The relative wind arrives head-on toward the leading edge, and the angle of attack is the angle between the chord line and the relative wind.
 - Leading Edge – the part of the airfoil that meets the relative wind first
 - Trailing Edge – the part of the airfoil where the airflow of the upper surface and lower surface rejoin
 - Chord Line – the imaginary straight line drawn through the airfoil from the trailing edge to the leading edge
 - Camber Line – the imaginary line that is equidistant at all points between the upper and lower surfaces
 
 Bernoulli's Principle
-- Longer Travel Distance = Faster Moving Air = Less Pressure
-- Shorter Travel Distance = Slower Moving Air = More Pressure
+The Bernoulli diagram shows air flowing around an airfoil, splitting at the front and passing over and under the wing. The air over the curved top has the longer travel distance, so it is faster moving air with less pressure. The air along the bottom has the shorter travel distance, so it is slower moving air with more pressure. That pressure difference, higher below and lower above, is drawn as lift arrows pointing up from the top of the wing.
 - Bernoulli's Principle – as the velocity of a fluid increases, the pressure and temperature decreases
 - Newton's 3rd Law of Motion – for every action there is an equal and opposite reaction

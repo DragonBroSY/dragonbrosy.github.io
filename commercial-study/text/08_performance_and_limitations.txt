@@ -41,7 +41,7 @@ i. Most Common V-speeds
   - VFE: Flap extension speed
   - VNO: Maximum structural cruise speed
   - VNE: Never exceed speed
-Airspeed indicator labels: VNE (red line). Yellow arc. VNO. Green arc. VS0. VS1. White arc. VFE.
+The airspeed indicator diagram shows where these speeds sit on the dial. The white arc starts at VS0, the bottom of the white arc, and ends at VFE, the top of the white arc. The green arc starts at VS1, the bottom of the green arc, and runs up to VNO. The yellow arc runs from VNO up to VNE, which is marked by the red line.
 j. Weight & Balance
   - Datum – an imaginary vertical plane from which all horizontal distances are measured for balance purposes
   - Station – a location along the airplane fuselage given in terms of the distance from the reference datum
@@ -63,18 +63,16 @@ k. Heavy vs Light Performance
     - Shorter Landing Roll
 
 Crosswind Component
-- SIN(30°)= 50%
-- SIN(45°)= 71%
-- SIN(60°)= 87%
+The crosswind component diagram shows runway 36 with the wind arriving at 30, 45, and 60 degrees off the runway heading. The share of the wind that acts as a crosswind is the sine of that angle. SIN(30°)= 50%, so a wind 30 degrees off the runway gives a crosswind of half the wind speed. SIN(45°)= 71%, so at 45 degrees, about seven tenths of the wind is crosswind. And SIN(60°)= 87%, so at 60 degrees, nearly all of it is.
 
 Aft vs Forward CG
-Weight: 2000lbs. 100 KIAS.
-Aft CG: 2200 ft-lbs Lift. -200 ft-lbs Lift. -2000 lbs Aircraft Weight.
+The diagram compares two identical airplanes, each weighing 2000lbs and flying at 100 KIAS, one with an aft CG and one with a forward CG. In both, the tail pushes down, so the wing has to lift the aircraft weight plus the tail's downforce. With the aft CG, the tail pushes down with 200 ft-lbs of lift, so the wing only needs 2200 ft-lbs of lift to hold up the 2000 lbs aircraft weight. With the forward CG, the tail pushes down with 500 ft-lbs of lift, so the wing needs 2500 ft-lbs of lift for the same 2000 lbs aircraft weight.
+Aft CG:
 - Lower Stall Speed
 - Higher Cruise Speed
 - Decreased Longitudinal Stability
 - Poor Stall/Spin Recovery
-Forward CG: 2500 ft-lbs Lift. -500 ft-lbs Lift. -2000 lbs Aircraft Weight.
+Forward CG:
 - Higher Stall Speed
 - Lower Cruise Speed
 - Increased Longitudinal Stability

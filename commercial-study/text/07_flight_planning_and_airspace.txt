@@ -13,8 +13,11 @@ Flight Planning
   a. Use Foreflight, Garmin Pilot, FSS, Flight Service Website, or 1-800-WX-BRIEF to open a flight plan
   b. Use FSS or an ATC facility to close a flight plan
 
+Flight Plan Form
+The sheet shows the FAA flight plan form, FAA Form 7233-1. Its boxes, in order, are: 1, type, checked as VFR, IFR, or DVFR. 2, aircraft identification. 3, aircraft type and special equipment. 4, true airspeed, in knots. 5, departure point. 6, departure time, both proposed and actual, in Zulu. 7, cruising altitude. 8, route of flight. 9, destination, the name of the airport and city. 10, estimated time en route, in hours and minutes. 11, remarks. 12, fuel on board, in hours and minutes. 13, alternate airports. 14, the pilot's name, address and telephone number, and aircraft home base. 15, number aboard. 16, color of aircraft. And 17, destination contact and telephone, which is optional. Along the bottom, the form reads "Close VFR flight plan with blank FSS on arrival," and a note to civil aircraft pilots says that Part 91 requires you file an IFR flight plan to operate under instrument flight rules in controlled airspace, that failure to file could result in a civil penalty not to exceed $1,000 for each violation, that filing a VFR flight plan is recommended as a good operating practice, and to see Part 99 for requirements concerning DVFR flight plans.
+
 Classes of Airspace (PHAK Chapter 15)
-Airspace diagram labels: Class A, 18,000ft to FL600. Class E. Class G. Class D. Class C. Class B. 700ft AGL. 1,200ft AGL. Nontowered airport with instrument approach. Nontowered airport with no instrument approach.
+The airspace diagram shows a side view of the airspace classes. Class A runs across the top, from 18,000ft up to FL600. Below it, filling most of the picture, is Class E. Class G is the layer underneath, along the surface, and on the far left of the diagram Class G reaches much higher before Class E begins. The floor of Class E is labeled at 700ft AGL in some places and 1,200ft AGL in others. At a nontowered airport with an instrument approach, Class E dips down toward the surface around the airport, while a nontowered airport with no instrument approach sits in Class G. The towered airports have their own shapes rising out of the surface: Class D is a small cylinder, drawn with a dashed border; Class C is two tiers, a narrow core at the surface with a wider shelf above it, like a mushroom; and Class B is the largest, with several tiers stacked like an upside-down wedding cake, each layer wider than the one below it. Each class, in turn, has these requirements.
 
 Class A
 - Entry Requirements: ATC Clearance
@@ -48,12 +51,7 @@ Class G
 - Traffic Advisories: Workload Permitting
 
 VFR Cloud Clearance Requirements
-- At or above 10,000ft MSL, up to but not including 18,000ft MSL: 5 SM Visibility, 1,000ft Above, 1,000ft Below, 1 SM Horizontal
-- Below 10,000ft MSL, Class B, C, D, E: 3 SM Visibility, 1,000ft Above, 500ft Below, 2,000ft Horizontal
-  - Class B: 3SM Clear of Clouds
-- Below 10,000ft MSL and more than 1,200ft AGL, Class G: 1 SM, 1,000ft Above, 500ft Below, 2,000ft Horizontal
-  - Night: 3SM - 1,000ft Above - 500ft Below - 2,000ft Horizontal
-- At or below 1,200ft AGL, Class G: 1SM Clear of Clouds
+The cloud clearance chart is split into altitude bands. At 10,000ft MSL and above, up to but not including 18,000ft MSL, you need 5 SM visibility and must stay 1,000ft above, 1,000ft below, and 1 SM horizontal from clouds. Below 10,000ft MSL, the chart splits in two. In Class B, C, D, and E, you need 3 SM visibility and must stay 1,000ft above, 500ft below, and 2,000ft horizontal from clouds, except in Class B, where the rule is simply 3SM and clear of clouds. In Class G, above 1,200ft AGL, you need 1 SM visibility with the same 1,000ft above, 500ft below, and 2,000ft horizontal; at night that becomes 3SM with 1,000ft above, 500ft below, and 2,000ft horizontal. And in Class G at or below 1,200ft AGL, it's 1SM and clear of clouds.
 
 Special Use Airspace (PHAK Chapter 15)
 M.C.P.R.A.W.N.
@@ -99,3 +97,5 @@ Temporary Flight Restrictions (TFR)
 Controlled Firing Areas (CFA)
 - No chart markings
 - Spotter on ground responsible for suspending activities
+
+Alongside these descriptions, the sheet shows how each one looks on a chart. A military operations area is outlined with a magenta hatched border and labeled by name, such as "Vance 2 MOA." An alert area has a similar magenta hatched border with its number and a note, such as "A-631, concentrated student helicopter training." Prohibited, restricted, and warning areas all share a blue hatched border, labeled with their letter and number, such as P-56, R-6401, or W-518. A national security area is shown with a dashed border, and a temporary flight restriction with a light blue dashed line.

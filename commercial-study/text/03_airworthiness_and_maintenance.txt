@@ -76,16 +76,4 @@ a. Used to fly an unairworthy aircraft:
   - Online or Form 8130-6
 
 §91.213 Inoperative Equipment Flow
-Inoperative Equipment. Is there a Minimum Equipment List (MEL)?
-Yes: Follow the MEL. *MEL will specify what to do.
-No:
-- Is it part of the VFR-day type certification instruments and equipment prescribed in the Type Certificate Data Sheet (TCDS)? Yes: Do Not Fly. No: continue.
-- Is it required on the aircraft's equipment list, or on the Kinds of Operations Equipment List (KOEL) for the kind of flight operation being conducted? Yes: Do Not Fly. No: continue.
-- Is it required by §91.205 for your type of operation? Yes: Do Not Fly. No: continue.
-- Is it required to be operational by an airworthiness directive? Yes: Do Not Fly. No: continue.
-What to do if not required:
-- Removed from the aircraft, the cockpit control placarded, and the maintenance recorded in accordance with §43.9 of this chapter; (No: Do Not Fly.)
-- Or deactivated and placarded "Inoperative." If deactivation of the inoperative instrument or equipment involves maintenance, it must be accomplished and recorded in accordance with part 43 of this chapter; (No: Do Not Fly.)
-- And pilot or a person who is rated to perform maintenance (mechanic) on the aircraft, decided that the inoperative instrument or equipment does not constitute a hazard to the aircraft. (No: Do Not Fly.)
-Done: Go Fly!
-However: Notwithstanding any other provision of this section, an aircraft with inoperable instruments or equipment may be operated under a special flight permit issued in accordance with §21.197 and §21.199.
+This flowchart walks through what to do when you find inoperative equipment. The first question is whether there is a Minimum Equipment List, or MEL. If there is, follow the MEL, because the MEL will specify what to do. If there is no MEL, ask four questions in order, and a yes to any one of them means do not fly. First, is it part of the VFR-day type certification instruments and equipment prescribed in the Type Certificate Data Sheet, the TCDS? Second, is it required on the aircraft's equipment list, or on the Kinds of Operations Equipment List, the KOEL, for the kind of flight operation being conducted? Third, is it required by §91.205 for your type of operation? Fourth, is it required to be operational by an airworthiness directive? If the answer to all four is no, the equipment is not required, and the chart moves on to what to do with it. It must either be removed from the aircraft, with the cockpit control placarded and the maintenance recorded in accordance with §43.9, or be deactivated and placarded "Inoperative," and if deactivation involves maintenance, it must be accomplished and recorded in accordance with part 43. And then the pilot, or a person who is rated to perform maintenance on the aircraft, such as a mechanic, must decide that the inoperative instrument or equipment does not constitute a hazard to the aircraft. If any of those steps isn't done, do not fly. Once they are done, go fly. There is one exception off to the side of the chart: notwithstanding any other provision of this section, an aircraft with inoperable instruments or equipment may be operated under a special flight permit issued in accordance with §21.197 and §21.199.

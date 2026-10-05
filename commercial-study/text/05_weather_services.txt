@@ -28,11 +28,8 @@ Aviation Weather Forecasts
 a. Terminal Aerodrome Forecasts (TAF) – weather report for a five-statute mile radius around an airport. Valid for 24- or 30-hour time periods and updated four times a day or every 6 hours.
 b. Area Forecasts (FA) – gives an idea of the general weather conditions, clouds, and visual meteorological conditions over large areas including several states. There are 6 areas for the continental US.
 
-Cloud types chart:
-- High clouds, above 20,000 AGL: Cirrostratus, Cirrocumulus, Cirrus
-- Middle clouds, 6,500 AGL to 20,000 AGL: Altostratus, Altocumulus
-- Low clouds, below 6,500 AGL: Stratus, Stratocumulus, Nimbostratus
-- Clouds with vertical development: Towering Cumulus, Cumulonimbus
+Cloud Types
+The cloud chart sorts clouds into bands by height. High clouds, above 20,000 AGL, are cirrostratus, cirrocumulus, and cirrus. Middle clouds, between 6,500 AGL and 20,000 AGL, are altostratus and altocumulus. Low clouds, below 6,500 AGL, are stratus, stratocumulus, and nimbostratus, which is drawn with rain falling from it. Off to the side are the clouds with vertical development, which cut through all three bands: towering cumulus, rising from the low levels, and cumulonimbus, which towers all the way up into the high levels with rain falling beneath it.
 
 c. Inflight Weather Advisories – provided to aircraft while en route. They are also available to pilots before departure for flight planning
   - AIRMET – adverse weather conditions that may affect the safety of flight
