@@ -1,0 +1,94 @@
+Weather Theory.
+
+Weather Theory (PHAK Chapter 12, AC 00-6B, AIM Chapter 7)
+- Atmosphere – blanket of air made up of a mixture of gases
+  a. 78% Nitrogen
+  b. 21% Oxygen
+  c. 1% Trace gases (Argon, Carbon Dioxide)
+- Atmospheric Pressure
+  a. Measured in inches of mercury ("Hg) or millibars (mb)
+  b. Standard Sea Level Pressure (SLP) is 29.92"Hg or 1,013.2 mb
+  c. Standard Temperature is 15°C or 59°F
+  d. Generally atmospheric pressure decreases 1 "Hg per 1,000 feet of increase in altitude
+- Atmospheric Stability
+  a. Stability depends on the atmospheres ability to resist vertical motion
+  b. Average rate of temperature change is 2°C (3.5°F) per 1,000 feet
+  c. Dry adiabatic lapse rate is 3°C (5.4°F) per 1,000 feet
+  d. Moist adiabatic lapse rate is from 1.1°C to 2.8°C (2°F to 5°F) per 1,000 feet
+  e. Combination of moisture and temperature determine the stability of air
+  f. Inversion – anomaly where there is an increase in temperature with altitude
+- Moisture – Every 20°F increase in temperature doubles the amount of moisture the air can hold. Every decrease of 20°F cuts the capacity in half
+- Humidity – amount of water vapor present in the atmosphere
+- Relative Humidity – actual amount of moisture in the air compared to the total amount of moisture the air could hold at that temperature
+- Temperature/Dew Point – this relationship defines the concept of relative humidity
+  a. Dew Point – temperature at which the air can no longer hold moisture
+  b. When temperature reaches the dew point the air is completely saturated and moisture begins to condense in the form of fog, dew, frost, clouds, rain, or snow
+- Fog – cloud on the surface
+  a. Radiation Fog – cool air over warm surface
+  b. Advection Fog – warm, moist air over cool surface
+  c. Upslope Fog – warm, moist, stable air forced upslope and cools
+  d. Steam Fog – cold, dry air over warm water
+  e. Ice Fog – water sublimates to ice in the air
+- Ceiling – lowest layer of clouds reported as broken or overcast, or vertical visibility into an obscuration like fog or haze
+- Visibility – greatest horizontal distance at which prominent objects can be viewed with the naked eye
+- Wind – motion of air relative to Earth's surface
+  a. Three forces that affect wind
+    - Pressure Gradient Force – pressure difference, wind speed is directly related to the pressure gradient force. Closely space together isobars indicate strong winds
+    - Coriolis Force – due to rotation of the earth it causes a force at a right angle to the wind direction and directly proportional to wind speed. As windspeed increases, Coriolis force increases.
+    - Friction – Between the wind and the surface there is friction that acts opposite the wind direction.
+  b. Patterns
+    - High-Pressure (OCD) – associated with cold air masses, fast moving, unstable with good visibility
+      - Outward
+      - Clockwise (clock high, counter low)
+      - Descending
+    - Low-Pressure (ICU) – associated with warm air masses, slow moving, stable, and poor visibility
+      - Inward
+      - Counter-clockwise (clock high, counter low)
+      - Upward
+- Windshear – sudden, dramatic shift in windspeed, direction or both. Can cause severe changes in aircraft performance
+- Air Masses – large bodies or air that take on characteristics of an area
+- Fronts – boundary layer between two different air masses
+  a. Warm Front – occurs when a warm air mass of air moves and replaces a body of colder air
+    - Slow moving (10-25mph)
+    - Steady precipitation
+    - Stable air – poor visibility, stratus clouds
+    - Slides over the top of the colder air mass
+  b. Cold Front – occurs when a cold air mass moves and replaces a body of warmer air
+    - Fast moving (25-30mph)
+    - Showery precipitation
+    - Unstable air – good visibility, vertical movement, cumulous clouds
+    - Plows under the warmer air mass
+  c. Stationary Front – cold and warm air mass don't move and have characteristics of both warm and cold fronts
+  d. Occluded Front – when a fast-moving cold front catches up with a slow-moving warm front
+    - Cold Front Occlusion – when the cold front is colder than the air mass ahead of the warm front
+      - Characteristics of both warm and cold fronts
+    - Warm Front Occlusion – when the cold front is warmer than the air mass ahead of the warm front
+      - Most violent, embedded thunderstorms, squall lines
+- Thunderstorms – contain most hazards to flight, flight within 20 miles should be avoided, and do not fly under them
+  a. Recipe: moisture, unstable air, and lifting action
+  b. Stages:
+    - Cumulous – updrafts
+    - Mature – rain begins to fall, updrafts and downdrafts
+    - Dissipating – downdrafts, anvil formation
+  c. Hazards:
+    - Lighting, squall lines, tornadoes, turbulence, icing, hail, engine water ingestions, ceiling and visibility
+- Microbursts – small scale intense downdrafts that cause both vertical and horizontal Windshear
+  - Usually less than 1 mile in diameter as it descends from the cloud base to about 1,000 to 3,000 feet above the ground, then it transitions to horizontal outflow to approximately 2 ½ miles in diameter
+  - Up to 6,000 feet per minute (fpm) downdrafts
+  - Up to 45 knot horizontal winds, resulting in up to 90 knot shear
+  - Virga is an indication of a microburst
+  - Blowing dust is also an indication
+  - Seldom last longer than 15 minutes
+- Frost – formation of thing ice crystals. Can significantly reduce lift and cause the boundary layer to separate at a lower angle of attack (AOA). Do not fly when frost is present on the aircraft.
+- Icing (IFH 4-13) – one of the greatest hazards to flight
+  a. Types:
+    - Structural – accumulation on the exterior of the aircraft
+      - Clear Ice – glossy, transparent
+      - Mixed Ice – combination of clear and rime
+      - Rime – rough, milky, opaque
+Icing type by outside air temperature:
+- 0°C to -10°C: Clear
+- -10°C to -15°C: Mixed (clear and rime)
+- -15°C to -20°C: Rime
+- Turbulence – flow of wind changing from its equilibrium
+  a. Maintain pitch attitude at or below VA

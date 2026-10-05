@@ -1,0 +1,81 @@
+Performance and Limitations.
+
+Performance & Limitations
+Performance
+a. Definition – Operational ability of an aircraft defined by the Aircraft Flight Manual or Pilot's Operating Handbook (AFM/POH)
+b. Effects of High-Density Altitude
+  - High Density Altitude (less dense air) reduces performance
+    - Power – reduced because less air intake for the engine
+    - Thrust – reduced because the propeller exerts less force with less air
+    - Lift – reduced because the airfoils exert less force with less air
+  - Increased Landing Distance
+  - Increased Takeoff Distance
+  - Same Indicated Airspeed, but Higher True Airspeed/Groundspeed
+  - Increased Performance Calculations
+c. Effects of Pressure on Density
+  - Directly proportional, double the pressure = double the density (only true at constant temperature)
+d. Effects of Temperature on Density
+  - Inversely Proportional, increase in temperature = decrease in density (only true at constant pressure)
+e. Effects of Humidity on Density
+  - Water vapor is light than air. Increase in humidity = decrease in density
+f. Pressure Changes
+  - High to Low – Lookout Below
+    - Indicated Altitude will be higher than True Altitude
+    - True Altitude will be lower than Indicated Altitude
+  - Low to High – Look to the Sky
+    - Indicated Altitude will be lower than True Altitude
+    - True Altitude will be higher than Indicated Altitude
+g. How flaps effect performance
+  - Increase lift and induced drag
+  - They allow a steeper rate of descent without increasing airspeed
+h. Maneuvering Speed
+  - The speed at which you can fully deflect 1 control surface, 1 time, in 1 axis of rotation, in smooth air without damaging the aircraft, because the plane will stall before it is damaged.
+i. Most Common V-speeds
+  - VSO: Stall speed in the landing configuration
+  - VS: Stall speed in the clean configuration
+  - VR: Rotation speed
+  - VX: Best angle of climb
+  - VY: Best rate of climb
+  - VG: Best glide speed
+  - VA/VO: Maneuvering speed
+  - VFE: Flap extension speed
+  - VNO: Maximum structural cruise speed
+  - VNE: Never exceed speed
+Airspeed indicator labels: VNE (red line). Yellow arc. VNO. Green arc. VS0. VS1. White arc. VFE.
+j. Weight & Balance
+  - Datum – an imaginary vertical plane from which all horizontal distances are measured for balance purposes
+  - Station – a location along the airplane fuselage given in terms of the distance from the reference datum
+  - Arm – the horizontal distance from the reference datum to the center of gravity or station (C.G.) of an item
+  - Moment – the product of the weight of an item multiplied by its arm
+  - Center of Gravity – the point at which an airplane, or equipment, would balance if suspended. Its distance from the reference datum is found by dividing the total moment by the total weight of the airplane
+k. Heavy vs Light Performance
+  - Heavy
+    - Faster Takeoff Speed
+    - Longer Takeoff Roll
+    - Shallower Climb
+    - Faster Touchdown Speed
+    - Longer Landing Roll
+  - Light
+    - Slower Takeoff Speed
+    - Shorter Takeoff Roll
+    - Steeper Climb
+    - Slower Touchdown Speed
+    - Shorter Landing Roll
+
+Crosswind Component
+- SIN(30°)= 50%
+- SIN(45°)= 71%
+- SIN(60°)= 87%
+
+Aft vs Forward CG
+Weight: 2000lbs. 100 KIAS.
+Aft CG: 2200 ft-lbs Lift. -200 ft-lbs Lift. -2000 lbs Aircraft Weight.
+- Lower Stall Speed
+- Higher Cruise Speed
+- Decreased Longitudinal Stability
+- Poor Stall/Spin Recovery
+Forward CG: 2500 ft-lbs Lift. -500 ft-lbs Lift. -2000 lbs Aircraft Weight.
+- Higher Stall Speed
+- Lower Cruise Speed
+- Increased Longitudinal Stability
+- For every airspeed, flies at a higher AOA compared to Aft CG

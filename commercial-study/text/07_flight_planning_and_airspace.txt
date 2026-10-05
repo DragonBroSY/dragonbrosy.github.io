@@ -1,0 +1,101 @@
+Flight Planning and Airspace.
+
+Flight Planning
+- Planning (NWKRAFT §91.103)
+  a. NOTAMs
+  b. Weather
+  c. Known ATC Delays
+  d. Runway Lengths
+  e. Alternatives Available
+  f. Fuel Requirements
+  g. Takeoff and Landing Distances
+- VFR Flight Plan
+  a. Use Foreflight, Garmin Pilot, FSS, Flight Service Website, or 1-800-WX-BRIEF to open a flight plan
+  b. Use FSS or an ATC facility to close a flight plan
+
+Classes of Airspace (PHAK Chapter 15)
+Airspace diagram labels: Class A, 18,000ft to FL600. Class E. Class G. Class D. Class C. Class B. 700ft AGL. 1,200ft AGL. Nontowered airport with instrument approach. Nontowered airport with no instrument approach.
+
+Class A
+- Entry Requirements: ATC Clearance
+- Minimum Pilot Qualifications: Instrument Rating
+- Equipment Required: IFR Equipped
+- Traffic Advisories: Yes
+Class B
+- Entry Requirements: ATC Clearance
+- Minimum Pilot Qualifications: Private
+- Equipment Required: Two-Way Radio, ADSB-Out, Transponder & Automatic Altitude Reporting
+- Traffic Advisories: Yes
+Class C
+- Entry Requirements: Prior Two-Way Communications
+- Minimum Pilot Qualifications: Student
+- Equipment Required: Two-Way Radio, ADSB-Out, Transponder & Automatic Altitude Reporting
+- Traffic Advisories: Yes
+Class D
+- Entry Requirements: Prior Two-Way Communications
+- Minimum Pilot Qualifications: Student
+- Equipment Required: Two-Way Radio
+- Traffic Advisories: Workload Permitting
+Class E
+- Entry Requirements: None For VFR
+- Minimum Pilot Qualifications: Student
+- Equipment Required: No Specific Requirement
+- Traffic Advisories: Workload Permitting
+Class G
+- Entry Requirements: None
+- Minimum Pilot Qualifications: Student
+- Equipment Required: No Specific Requirement
+- Traffic Advisories: Workload Permitting
+
+VFR Cloud Clearance Requirements
+- At or above 10,000ft MSL, up to but not including 18,000ft MSL: 5 SM Visibility, 1,000ft Above, 1,000ft Below, 1 SM Horizontal
+- Below 10,000ft MSL, Class B, C, D, E: 3 SM Visibility, 1,000ft Above, 500ft Below, 2,000ft Horizontal
+  - Class B: 3SM Clear of Clouds
+- Below 10,000ft MSL and more than 1,200ft AGL, Class G: 1 SM, 1,000ft Above, 500ft Below, 2,000ft Horizontal
+  - Night: 3SM - 1,000ft Above - 500ft Below - 2,000ft Horizontal
+- At or below 1,200ft AGL, Class G: 1SM Clear of Clouds
+
+Special Use Airspace (PHAK Chapter 15)
+M.C.P.R.A.W.N.
+a. Military Operation Areas (MOA)
+b. Controlled Firing Areas (CFA)
+c. Prohibited Areas (P-204)
+d. Restricted Areas (R-2310A)
+e. Alert Areas (A-631)
+f. Warning Areas (W-518)
+g. National Security Areas (NSA)
+
+Military Operation Areas (MOA)
+- Defined lateral & vertical limits
+- Separates military training from IFR traffic
+- VFR traffic does need prior authorization
+- i.e. "OUTLAW MOA"
+Prohibited Areas
+- Defined lateral & vertical limits
+- Established for security or national welfare
+- Flight of aircraft is prohibited
+- i.e. "P-204"
+Alert Areas
+- Exercise caution
+- Inform nonparticipating pilots of high volume of pilot training or aerial activity
+- i.e. "A-631"
+Restricted Areas
+- Defined lateral & vertical limits
+- Allowed to fly through with prior authorization from controlling agency
+- Flight hazardous by nonparticipating aircraft
+- i.e. "R-2310A"
+National Security Areas (NSAs)
+- Defined lateral & vertical limits
+- Established for increased safety & security of ground facilities
+- May be temorarily prohibited airspace
+- Pilots are asked to voluntarily avoid overflying
+Warning Areas
+- Similar in nature to restricted areas, however US government does not have sole jurisdiction
+- Extends from 3NM outward from the coast of the US
+- Warns nonparticipating pilots of potential danger
+Temporary Flight Restrictions (TFR)
+- Established by FDC NOTAMs
+- Defined by time periord, statute miles, and affected altitudes
+Controlled Firing Areas (CFA)
+- No chart markings
+- Spotter on ground responsible for suspending activities

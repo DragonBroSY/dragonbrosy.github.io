@@ -1,0 +1,78 @@
+Eligibility, Aeronautical Experience, and Privileges.
+
+Eligibility Requirements (14 CFR 61.123)
+"To be eligible for a commercial pilot certificate, a person must:"
+1. Be at least 18 years of age; (a)
+2. Be able to read, speak, write, and understand the English language. If the applicant is unable to meet one of these requirements due to medical reasons, then the Administrator may place such operating limitations on that applicant's pilot certificate as are necessary for the safe operation of the aircraft. (b)
+3. Receive a logbook endorsement from an authorized instructor (c)
+4. Pass the required knowledge test on the aeronautical knowledge areas listed in §61.125 of this part; (d)
+5. Receive the required training and a logbook endorsement from an authorized instructor (e)
+6. Meet the aeronautical experience requirements of this subpart that apply to the aircraft category and class rating sought before applying for the practical test; (f)
+7. Pass the required practical test on the areas of operation listed in §61.127(b) of this part that apply to the aircraft category and class rating sought; (g)
+8. Hold at least a private pilot certificate issued under this part or meet the requirements of §61.73; and (h)
+9. Comply with the sections of this part that apply to the aircraft category and class rating sought. (i)
+
+Aeronautical Experience (14 CFR 61.129)
+"For an airplane single-engine rating."
+250 Total Flight Hours
+- 100 hours in powered aircraft, of which 50 hours must be in airplanes
+- 100 hours of PIC
+  - 50 hours in airplanes
+  - 50 hours XC, of which 10 hours must be in airplanes
+- 20 Dual Hours
+  - 10 hours of instrument training
+  - 10 hours in a complex, turbine powered, or technically advanced airplane (TAA)
+  - One 2-hour XC day flight in a single engine airplane of a total straight-line distance of more than 100nm
+  - One 2-hour XC night flight in a single engine airplane of a total straight-line distance of more than 100nm
+  - 3 hours of checkride prep within the preceding 2 calendar months from the month of the test
+- 10 Hours Solo or 10 Hours performing the Duties of PIC
+  - One XC flight of not less than 300nm total distance, with landings at a minimum of 3 points, 1 of which is a straight-line distance of at least 250 nautical miles from the departure point.
+  - 5 hours in night VFR conditions, with 10 takeoffs and 10 landings at an airport with an operating control tower
+*§61.129(i)(i) Credit a maximum of 50 hours toward the total aeronautical experience requirements for an airplane or powered-lift rating, provided the aeronautical experience was obtained from an authorized instructor in a full flight simulator or flight training device that represents that class of airplane or powered-lift category and type, if applicable, appropriate to the rating sought; and
+
+Record Keeping (14 CFR 61.51)
+"Each person must document and record the following time in a manner acceptable to the Administrator:" (a)
+a. Required times to record:
+  - Aeronautical experience required to meet recency (§61.57)
+  - Aeronautical experience and training required for a pilot certificate, rating, or flight review
+
+Privileges and Limitations (14 CFR 61.133)
+Privileges
+- Carry persons or property for compensation or hire (Private vs Common Carriage)
+Limitations
+- If you do not hold an instrument rating in the same category and class you will be issued a commercial pilot certificate that contains the limitation, "The carriage of passengers for hire in (airplanes) on cross-country flights in excess of 50 nautical miles or at night is prohibited."
+- If you have an instrument rating for the same category and class, you will not have any additional limitations
+
+Private vs Common Carriage (AC 120-12A)
+- Common Carriage: a holding out of a willingness to transport persons or property from place to place for compensation.
+- Holding out: offering flight transportation to the general public through some form of advertising.
+- 18-24 contracts have been proven through precedent to be common carriage
+- 3 or less contracts have been proven to be private carriage
+- Be "cautious at any proposal for revenue generating flights", and "discuss their proposed operation with the Regional Counsel of the FAA region." (i.e., call the FSDO)
+
+Exceptions to Private vs Common Carriage (14 CFR 119.1(e))
+- Except for operations when common carriage is not involved conducted with airplanes having a passenger-seat configuration of 20 seats or more, excluding any required crewmember seat, or a payload capacity of 6,000 pounds or more, this part does not apply to -
+1. Student instruction
+2. Nonstop Commercial Air Tours conducted after September 11, 2007, in an airplane or helicopter having a standard airworthiness certificate and passenger-seat configuration of 30 seats or fewer and a maximum payload capacity of 7,500 pounds or less that begin and end at the same airport, and are conducted within a 25-statute mile radius of that airport, in compliance with the Letter of Authorization issued under § 91.147 of this chapter. For nonstop Commercial Air Tours conducted in accordance with part 136, subpart B of this chapter, National Parks Air Tour Management, the requirements of part 119 of this chapter apply unless excepted in § 136.37(g)(2). For Nonstop Commercial Air Tours conducted in the vicinity of the Grand Canyon National Park, Arizona, the requirements of SFAR 50-2, part 93, subpart U, and part 119 of this chapter, as applicable, apply.
+3. Ferry or training flights
+4. Aerial work operations, including -
+  i. Crop dusting, seeding, spraying, and bird chasing
+  ii. Banner towing
+  iii. Aerial photography or survey
+  iv. Fire fighting
+  v. Helicopter operations in construction or repair work (but it does apply to transportation to and from the site of operations); and
+  vi. Powerline or pipeline patrol
+5. Sightseeing flights conducted in hot air balloons
+6. Nonstop flights conducted within a 25-statute-mile radius of the airport of takeoff carrying persons or objects for the purpose of conducting intentional parachute operations.
+7. Helicopter flights conducted within a 25-statute mile radius of the airport of takeoff if -
+  i. Not more than two passengers are carried in the helicopter in addition to the required flightcrew
+  ii. Each flight is made under day VFR conditions;
+  iii. The helicopter used is certificated in the standard category and complies with the 100-hour inspection requirements of part 91 of this chapter
+  iv. The operator notifies the responsible Flight Standards office at least 72 hours before each flight and furnishes any essential information that the office requests
+  v. The number of flights does not exceed a total of six in any calendar year
+  vi. Each flight has been approved by the Administrator; and
+  vii. Cargo is not carried in or on the helicopter
+8. Operations conducted under part 133 of this chapter or 375 of this title
+9. Emergency mail service conducted under 49 U.S.C. 41906
+10. Operations conducted under the provisions of § 91.321 of this chapter or
+11. Small UAS operations conducted under part 107 of this chapter.

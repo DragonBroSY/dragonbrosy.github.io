@@ -1,0 +1,91 @@
+Airworthiness and Maintenance.
+
+Airworthiness
+D.I.E.
+- Documents (ARROW-PEC)
+- Inspections (AVIATE)
+- Equipment (A TOMATO FLAMES, FLAPS, GRABCARDD)
+
+Documents
+A.R.R.O.W. P.E.C
+- Airworthiness Certificate (§91.203)
+- Registration (§91.203)
+- Radio Operating License (International only FCC Form 605)
+- Operating Limitations & AFM (§21.5)
+- Weight & Balance (§91.103)
+- Placards (§91.9)
+- External Data Plate (§45.11)
+- Compass Deviation Card (§23.2610)
+
+Inspections
+A.V.I.A.T.E.
+- Airworthiness Directives (§39)
+- VOR Check within the preceding 30 days (IFR Only §91.171)
+- Inspections:
+  - 100 Hour Inspection if for hire (§91.409)
+  - Annual Inspection every 12 calendar months (§91.409)
+- Altimeter, Altitude Reporting Encoder, and Static System every 24 calendar months (IFR Only §91.411)
+- Transponder every 24 calendar months (§91.413)
+- ELT every 12 calendar months (§91.207)
+
+Equipment (§91.205)
+A. T.O.M.A.T.O F.L.A.M.E.S. (Day VFR)
+- Airspeed Indicator
+- Tachometer for each engine
+- Oil Pressure Gauge for each engine using pressure system
+- Manifold Pressure Gauge (altitude engines)
+- Altimeter
+- Temperature Gauge (liquid-cooled engines)
+- Oil Temperature Gauge (air-cooled engines)
+- Fuel Gauge
+- Landing Gear Position Lights
+- Anti-collision Lights (planes certificated after March 11, 1996)
+- Magnetic Direction Indicator
+- ELT
+- Safety Belts
+F.L.A.P.S. (Night VFR)
+- Fuses (spares or circuit breakers)
+- Landing Light if for hire
+- Anti-collision Lights (planes certificated after August 11, 1971)
+- Position Lights
+- Source of adequate electrical energy
+G.R.A.B.C.A.R.D.D. (IFR)
+- Generator/Alternator
+- Radio – 2 Way + Navigation Equipment for route
+- Altimeter (Baro adjustable)
+- Ball (Slip-Skid Indicator)
+- Clock
+- Attitude Indicator
+- Rate of Turn Indicator
+- Directional Gyro (Heading Indicator)
+- DME or RNAV (If above FL240 using VORs for navigation)
+
+Maintenance
+Airplane Logbook Documentation (§91.417)
+a. Annual, 100hr, and any other required Inspections
+b. Maintenance, Preventive Maintenance, and Alterations
+c. Records must include:
+  - Description of the work performed
+  - Date of Completion
+  - Signature and Certificate Number of person approving the aircraft for return to service
+Pilot-Performed Preventative Maintenance (§43 Appendix A(c))
+a. Small or minor maintenance, including: servicing landing gear tires, replacing bulbs, and repairing upholstery
+Special Flight Permit (§21.197)
+a. Used to fly an unairworthy aircraft:
+  - To a repair station, storing, delivering, testing, demonstrating, and evacuating
+  - Online or Form 8130-6
+
+§91.213 Inoperative Equipment Flow
+Inoperative Equipment. Is there a Minimum Equipment List (MEL)?
+Yes: Follow the MEL. *MEL will specify what to do.
+No:
+- Is it part of the VFR-day type certification instruments and equipment prescribed in the Type Certificate Data Sheet (TCDS)? Yes: Do Not Fly. No: continue.
+- Is it required on the aircraft's equipment list, or on the Kinds of Operations Equipment List (KOEL) for the kind of flight operation being conducted? Yes: Do Not Fly. No: continue.
+- Is it required by §91.205 for your type of operation? Yes: Do Not Fly. No: continue.
+- Is it required to be operational by an airworthiness directive? Yes: Do Not Fly. No: continue.
+What to do if not required:
+- Removed from the aircraft, the cockpit control placarded, and the maintenance recorded in accordance with §43.9 of this chapter; (No: Do Not Fly.)
+- Or deactivated and placarded "Inoperative." If deactivation of the inoperative instrument or equipment involves maintenance, it must be accomplished and recorded in accordance with part 43 of this chapter; (No: Do Not Fly.)
+- And pilot or a person who is rated to perform maintenance (mechanic) on the aircraft, decided that the inoperative instrument or equipment does not constitute a hazard to the aircraft. (No: Do Not Fly.)
+Done: Go Fly!
+However: Notwithstanding any other provision of this section, an aircraft with inoperable instruments or equipment may be operated under a special flight permit issued in accordance with §21.197 and §21.199.

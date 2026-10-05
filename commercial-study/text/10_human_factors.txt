@@ -1,0 +1,153 @@
+Human Factors.
+
+Human Factors (PHAK Chapter 17)
+- IMSAFE Checklist for Pilot
+  a. Illness
+  b. Medication
+  c. Stress
+    - Acute vs Chronic
+  d. Alcohol
+  e. Fatigue
+    - Acute vs Chronic
+  f. External Factors
+- Hypoxia – means "reduced oxygen" or "not enough oxygen"
+  a. Symptoms
+    - Cyanosis
+    - Headache
+    - Euphoria
+    - Impaired Judgement
+    - Decreased response to stimuli and increased reaction time
+    - Visual Impairment
+    - Drowsiness
+    - Lightheaded or Dizzy
+    - Tingling Sensations
+    - Numbness
+  b. Hypoxia and Hyperventilation have common symptoms, but when in doubt treat for hypoxia first.
+  c. Hypoxic Hypoxia – lack of oxygen to the body as a whole.
+  d. Hypemic Hypoxia – means "not enough blood," lack of oxygen in the blood or ability to transport it to the body's cells.
+  e. Stagnant Hypoxia – means "not flowing," oxygen rich blood is not flowing to a part of the body.
+  f. Histotoxic Hypoxia – cells inability to effectively use oxygen. Caused by alcohol or drugs.
+- Hyperventilation – lack of carbon dioxide in the blood caused by excessive breathing
+  a. Symptoms
+    - Visual Impairment
+    - Unconsciousness
+    - Lightheaded or Dizzy
+    - Tingling Sensations
+    - Hot & Cold Sensations
+    - Muscle Spasms
+  b. Hypoxia and Hyperventilation have common symptoms, but when in doubt treat for hypoxia first.
+  c. Treatment
+    - Descend to a lower altitude
+    - Use supplemental oxygen
+- Middle Ear & Sinus
+  a. Climbs and descents cause a pressure difference from inside the body to the outside. If pressure builds inside the body without equalizing it can cause severe pain
+  b. Eustachian tube allows for air pressure to equalize in the middle ear
+  c. Small openings connect sinuses and nasal passages that allow to equalize pressure
+  d. Do not fly with an upper respiratory infection or nasal allergic condition
+- Spatial Disorientation – lack of awareness to the position, attitude, or movement of an aircraft
+  a. Vestibular System – semicircular canals in the inner ear are positioned with three axes to sense yaw, pitch, and roll
+    - Vestibular Illusions
+      - The Leans – occurs when making a sudden return to level flight after a gradual and prolonged turn. After returning to level flight it may cause an illusion that the aircraft is banking in the opposite direction.
+      - Coriolis Illusion – occurs when in a prolonged turn and the fluid in the inner ear moves at the same speed as the canal, then a movement of the head in a different direction can send that fluid moving creating the illusion of moving, turning, or accelerating in a different direction
+      - Graveyard Spiral – occurs when in prolonged coordinated constant rate turn pilot may have the illusion of not turning. Returning to level flight, the pilot will then feel a sensation of turning in the opposite direction and incorrectly responds by entering the turn again. With the loss of altitude due to the turn, the pilot compensates by pulling back on the controls. This tightens up the turn into a spiral.
+      - Somatogravic Illusion – rapid acceleration causes the same sensation as tilting the head backwards. This gives the illusion of being a nose high attitude. The pilot could incorrectly push the nose forward. The opposite is also true for rapid deceleration.
+      - Inversion Illusion – a sudden change from a climb to straight and level flight can create the illusion of tumbling backwards. The pilot could incorrectly push the aircraft into a nose low attitude which could make the illusion worse.
+      - Elevator Illusion – a sudden upward vertical acceleration from an updraft gives the illusion of being in climb. The pilot could incorrectly push the aircraft into a nose low attitude. The opposite is also true for a sudden downward vertical acceleration.
+  *Corrective Action: TRUST YOUR INSTRUMENTS, not your body's sensations*
+  b. Somatosensory System – nerves in the skin, muscles, and joints that combined with hearing help sense the body's position based on gravity, feeling, and sound ("flying by the seat of your pants")
+    - No illusions and typically reliable
+  c. Visual System – eyes sense the body's position based on what is seen
+    - Visual Illusions
+      - False Horizon – due to several potential causes of obscuring the horizon (fog and night with city lights) it can create the illusion of a false horizon and the pilot could incorrectly align the aircraft with the false horizon and potentially a dangerous attitude.
+      - Autokinesis – occurs when flying at night and stationary light appears to start moving when staring at it for long periods of time. The pilot could incorrectly align the aircraft the perceived moving light.
+  d. Motion Sickness – caused when the brain receives conflicting signals about the orientation of the body.
+    - Symptoms
+      - General Discomfort
+      - Nausea
+      - Dizziness
+      - Paleness
+      - Sweating
+      - Vomiting
+- Carbon Monoxide Poisoning
+  a. Carbon Monoxide is an odorless colorless gas that bonds 200 times more likely to hemoglobin than oxygen.
+  b. Carbon Monoxide can reach the cockpit through small heaters and exhaust leaks.
+- Stress – body's response to physical and psychological demands. Causing a release of hormones, increase in metabolism, blood sugar, heart rate, respiration, and blood pressure.
+  a. Acute
+    - Short term, "fight or flight"
+    - Healthy person can usually cope
+  b. Chronic
+    - Long Term
+    - Exceeds the ability for an individual to cope
+    - Not safe to fly
+    - Consistent acute stress can develop into chronic stress
+- Fatigue – associated with pilot error due to the effects that include degradation of attention, concentration, impaired coordination, and decreased ability to communicate
+  a. Acute
+    - Short term, normal occurrence is everyday living
+    - Rest and 8 hours of sleep ordinarily cure acute fatigue
+    - Skill Fatigue
+      - Timing Disruption – performing tasks as usual, but the timing is off.
+      - Disruption of the Perceptual Field – focusing on the center of vision and neglecting peripheral vision
+    - Causes
+      - Mild Hypoxia
+      - Physical Stress
+      - Psychological Stress
+  b. Chronic
+    - Long term, usually has psychological roots
+    - Continuous high stress levels produce chronic fatigue
+    - Not relieved by proper diet, adequate rest and sleep
+    - Usually requires treatment by a physician
+- Hypothermia – critical loss of heat from the body
+  a. Symptoms
+    - Cyanosis
+    - Goosebumps
+    - Shivering
+- Optical Illusions
+  a. Runway Width Illusion
+    - Narrower than usual runways have the illusion that the aircraft is higher than it actually is, causing a lower than normal approach
+    - Wider than usual runways have the illusion that the aircraft is lower than it actually is, causing a higher than normal approach
+  b. Runway & Terrain Slope Illusion
+    - Upsloping runways have the illusion that the aircraft is higher than it actually is, causing a lower than normal approach
+    - Down sloping runways have the illusion that the aircraft is lower than it actually is, causing a higher than normal approach
+  c. Featureless Terrain Illusion
+    - Absence of ground terrain features has the illusion that the aircraft is at a higher altitude than it actually is, causing a lower than normal approach
+  d. Water Refraction
+    - Rain on the windscreen has the illusion of being at a higher altitude than normal, due to the horizon appearing lower than it is
+  e. Haze
+    - Has the illusion of being at a greater distance and altitude from the runway, causing a lower than normal approach
+  f. Fog
+    - Has the illusion of pitching up, causing the pilot to steepen the approach
+  g. Ground Lighting Illusions
+    - Lights in a straight path, such as road lights or moving trains have the illusion of appearing like a runway or approach lights
+*Corrective Action: Anticipate illusions and TRUST YOUR INSTRUMENTS*
+- Altitude-Induced Decompression Sickness (DCS)
+  a. Occurs when exposed to low barometric pressures that causes nitrogen to turn into a gas and bubbles form in different areas of the body.
+  b. Treatment
+    - Oxygen Mask with 100% oxygen
+    - Emergency Descent and land as soon as possible
+    - Areas of joint pain keep still, do not work the pain
+    - Upon landing seek medical attention
+  c. Scuba Diving – subjects the body to increased pressure, putting more dissolved nitrogen into the body
+    - Uncontrolled Ascent
+      - Wait 12 hours after diving to fly at altitude up to 8,000ft MSL (not pressurized cabin altitude)
+    - Controlled Ascent
+      - Wait 24 hours after diving to fly at altitudes above 8,000ft MSL (not pressurized cabin altitude)
+
+Drugs & Alcohol (§91.17, §61.15)
+- Drugs (FAA AME Guide, FAA Over the Counter Med Guide)
+  a. Must be approved by the FAA for flight activity
+  b. Must not affect flight performance
+  c. Always consult an Aviation Medical Examiner (AME)
+  d. Antihistamine with impairing properties, is the most common drug found in pilots who have died in aviation accidents
+- Alcohol
+  a. 8 hours "bottle to throttle"
+  b. Must have less than 0.04 blood alcohol level
+  c. Must not be under the influence of alcohol
+  d. Effects
+    - Impaired Efficiency
+    - Deteriorated Performance
+    - Impaired Judgement
+    - Decreased Sense of Responsibility
+    - Impaired Coordination
+    - Diminished Memory
+    - Reduced Visual Field
+    - Lower Attention Span

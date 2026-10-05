@@ -1,0 +1,73 @@
+Aviation Weather Services.
+
+Aviation Weather Services (PHAK Chapter 13, AC 00-45H, AIM Chapter 7)
+Service Outlets
+a. Flight Service Station (FSS) – a primary source for preflight weather information. A preflight weather briefing can be obtained from 1-800-WX BRIEF. It also provides inflight weather briefing services and weather advisories to flights within the FSS area of responsibility.
+b. Telephone Information Briefing Service (TIBS) – an automated telephone recording of meteorological and aeronautical information. Designed to be a preliminary briefing tool and does not replace a standard briefing. Phone numbers for TIBS are listed in the Chart Supplement.
+
+Weather Briefings
+a. Standard Briefing – this provides the most information and should be obtained before each flight. It provides information pertaining to your flight:
+  - Adverse conditions
+  - If VFR flight is recommended or not
+  - Synopsis – the larger weather picture
+  - Current Conditions – not included if departure is more than 2 hours away
+  - En Route Forecast – summary of weather forecast for route of flight
+  - Destination Forecast – expected weather for destination airport at ETA
+  - Winds and Temperatures Aloft
+  - Notices to Airmen (NOTAM)
+  - ATC Delays
+  - Other Information – any additional information requested
+b. Abbreviated Briefing – a shortened version of a standard briefing. Used to update previous briefings if flight is delayed.
+c. Outlook Briefing – should be used when departure is 6 or more hours away. Good source for flight planning.
+
+Aviation Weather Reports
+a. Aviation Routine Weather Report (METAR) – surface weather observations posted in a standard international code, usually updated hourly. If significant changes occur between scheduled times a METAR SPECI will be issued.
+b. Pilot Weather Reports (PIREPs) – observations from pilots about the actual current conditions in the air. Pilots are encouraged to report unexpected weather conditions to FSS or ATC.
+
+Aviation Weather Forecasts
+a. Terminal Aerodrome Forecasts (TAF) – weather report for a five-statute mile radius around an airport. Valid for 24- or 30-hour time periods and updated four times a day or every 6 hours.
+b. Area Forecasts (FA) – gives an idea of the general weather conditions, clouds, and visual meteorological conditions over large areas including several states. There are 6 areas for the continental US.
+
+Cloud types chart:
+- High clouds, above 20,000 AGL: Cirrostratus, Cirrocumulus, Cirrus
+- Middle clouds, 6,500 AGL to 20,000 AGL: Altostratus, Altocumulus
+- Low clouds, below 6,500 AGL: Stratus, Stratocumulus, Nimbostratus
+- Clouds with vertical development: Towering Cumulus, Cumulonimbus
+
+c. Inflight Weather Advisories – provided to aircraft while en route. They are also available to pilots before departure for flight planning
+  - AIRMET – adverse weather conditions that may affect the safety of flight
+    - Issued as needed and valid for 6 hours
+    - S (IFR) – Extensive mountain obscuration, ceilings less than 1000 feet and/or visibility less than 3 statute miles affecting over 50% of the area at one time
+    - T (Turbulence) – Moderate Turbulence, surface winds of 30 knots or more
+    - Z (Icing) – Moderate icing, and freezing levels
+  - SIGMET – adverse weather conditions that will likely affect the safety of flight
+    - Issued as needed and valid for 4 hours (Hurricanes are valid for 6 hours)
+    - Severe icing not associated with thunderstorms
+    - Severe or extreme turbulence or clear air turbulence (CAT) not associated with thunderstorms
+    - Dust storms or sandstorms reducing visibility below 3 statute miles
+    - Volcanic ash
+  - Convective SIGMET – adverse weather conditions that will affect the safety of flight
+    - Issued as needed and valid for 2 hours
+    - Implies severe or greater turbulence, severe icing, and low-level wind shear
+    - Severe thunderstorms due to:
+      i. Surface winds 50 knots or greater
+      ii. Hail ¾ inches or greater at the surface
+    - Embedded Thunderstorms
+    - Squall Lines
+    - Tornadoes
+    - Thunderstorms covering 40% or more of 3,000 square miles or greater
+d. Winds and Temperature Aloft Forecast (FB) – provide wind and temperature forecasts in thousand-foot increments at specific locations. Forecasts are made twice a day.
+  - Above FL240 temperatures are always negative
+  - If winds are greater ≥100 knots, then 50 is added to the wind direction, and you have to add 100 to the wind speed
+    - i.e. 845043
+      i. 84 = 340 degrees (Wind direction based on true North)
+      ii. 50 = 150 knots (Wind speed)
+      iii. 43 = -43 degrees (Temperature is Celsius)
+  - Winds not reported at levels that are within 1,500 feet of station
+  - Temperatures are not reported at levels within 2,500 feet of station
+
+Weather Charts
+a. Surface Analysis Chart – it depicts the current surface weather. Shows areas of high and low pressure, fronts, temperatures, dew points, wind directions and speeds, local weather, and visual obstructions. Updated every 3 hours
+b. Weather Depiction Chart – details surface conditions from METARs and other surface observations. Provides graphical display of where IFR, VFR, and MVFR weather is. Updated every 3 hours.
+c. Low-Level Significant Weather Prognostic Chart – forecast of aviation weather hazards, used to give guidance to VFR pilots. Includes fronts, isobars, cloud coverage, and precipitation areas. Provides information from the surface to FL240. Issued 4 times a day and is divided into a 12- and 24-hour forecast.
+d. Radar Summary Chart – observation derived from national radar network that shows a graphic display of radar weather reports. Issued hourly.

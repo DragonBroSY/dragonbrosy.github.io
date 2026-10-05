@@ -1,0 +1,38 @@
+Aeronautical Decision Making and Hazardous Attitudes.
+
+Aeronautical Decision Making (ADM) (PHAK Chapter 2)
+- Systematic approach that is used to determine the best course of action
+- Aviate – Navigate – Communicate (Order of Priority)
+- PAVE Checklist – Identify Hazards & Personal Minimums
+  a. Pilot (IMSAFE)
+  b. Aircraft (AVIATE, ARROWPEC, Weight & Balance, Performance)
+  c. EnVironment (NEWKRAFT, Pre-flight Planning)
+  d. External Pressure ("get-there-itis", impress someone, meetings)
+- 3P Model – used during all phases of flight
+  a. Perceive – the given set of circumstances for a flight
+  b. Process – by evaluating their impact on flight safety
+  c. Perform – by implementing the best course of action
+- DECIDE Model
+  a. Detect the problem
+  b. Estimate the severity
+  c. Choose a course of action
+  d. Identify solutions
+  e. Do the course of action
+  f. Evaluate the course of action
+
+Hazardous Attitudes & Antidotes (PHAK Chapter 2)
+- Anti-Authority
+  a. "Don't tell me."
+  b. Follow the rule. They are usually right.
+- Impulsivity
+  a. "Do it quickly."
+  b. Not so fast. Think first.
+- Invulnerability
+  a. "It won't happen to me"
+  b. It could happen to me.
+- Macho
+  a. "I can do it."
+  b. Taking chances is foolish.
+- Resignation
+  a. "What's the use?"
+  b. I'm not helpless. I can make a difference

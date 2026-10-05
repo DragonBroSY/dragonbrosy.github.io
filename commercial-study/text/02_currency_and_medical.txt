@@ -1,0 +1,58 @@
+Recent Flight Experience and Medical Certificates.
+
+Recent Flight Experience (14 CFR 61.57)
+"no person may act as a pilot in command of an aircraft carrying passengers—unless"
+Passenger Carry Requirements
+a. General Experience (a)
+  - In order to carry passengers during daytime
+    - 3 takeoffs and landings as PIC in the preceding 90 days prior to carrying passengers
+      i. For day currency, touch and goes are permitted in tricycle gear aircraft
+      ii. Acted as sole manipulator of the flight controls (i)
+      iii. If tailwheel the landings must be to a full stop (ii)
+      iv. Must be in the same category, class, and type (if type rating is required) (ii)
+b. Night Takeoff and Landing Experience
+  - In order to carry passengers during 1 hour after sunset to 1 hour before sunrise
+    - 3 takeoffs and landings as PIC in the preceding 90 days prior to carrying passengers
+      i. For night currency and landings must be to a full stop
+      ii. Acted as sole manipulator of the flight controls (i)
+      iii. Must be in the same category, class, and type (if type rating is required)
+
+Medical Certificates (14 CFR 61.23)
+Medical Privileges
+a. After designated time medical does not downgrade but keeps its original issued class but has the privileges of a lower class.
+  - i.e. If you are under 40 years old and have a 1st class medical, after 12 calendar months it does not downgrade to a 3rd class medical. It becomes a 1st class medical with 3rd class privileges.
+Must hold a first-class medical certificate:
+a. When exercising the pilot-in-command privileges of an airline transport pilot certificate
+b. When exercising the second-in-command privileges of an airline transport pilot certificate in a part 121 operation that requires three or more pilots
+c. When serving as a required pilot flightcrew member in an operation conducted under part 121 of this chapter if the pilot has reached his or her 60th birthday.
+Must hold a second-class medical certificate:
+a. When exercising second-in-command privileges of an airline transport pilot certificate in part 121
+b. When exercising privileges of a commercial pilot certificate
+Must hold a third-class medical:
+a. When exercising the privileges of a private pilot certificate, recreational pilot certificate, or student pilot certificate, except when operating under the conditions and limitations set forth in §61.113(i);
+b. When exercising the privileges of a flight instructor certificate and acting as the pilot in command or as a required flightcrew member, except when operating under the conditions and limitations set forth in §61.113(i);
+c. When taking a practical test in an aircraft for a recreational pilot, private pilot, commercial pilot, or airline transport pilot certificate, or for a flight instructor certificate, except when operating under the conditions and limitations set forth in §61.113(i); or
+d. When performing the duties as an Examiner in an aircraft when administering a practical test or proficiency check for an airman certificate, rating, or authorization
+
+Medical duration table:
+- 1st Class: Under 40, 12 Calendar Months. 40 and Older, 6 Calendar Months.
+- 2nd Class: Under 40, 12 Calendar Months. 40 and Older, 12 Calendar Months.
+- 3rd Class: Under 40, 60 Calendar Months. 40 and Older, 24 Calendar Months.
+*The durations all start at the beginning of the medical received. i.e. If you get a first-class medical and are under 40, the third-class privileges last for 60 calendar months from the start of the first class medical.
+
+Documents required to exercise private pilot privileges (14 CFR 61.3)
+- Pilot Certificate
+- Government Issued Photo ID
+- Medical Certificate
+
+BasicMed Privileges and Limitations (14 CFR 68)(AC 68-1A)
+Privileges and Limitations (AC 68-1A 3.2)
+a. You can conduct any operation that you would otherwise be able to conduct using your pilot certificate and a third-class medical certificate, except you are limited to:
+  - Fly with no more than five passengers
+  - Fly an aircraft with a maximum certificated takeoff weight of no more than 6,000lbs.
+  - Fly an aircraft that is authorized to carry no more than 6 occupants
+  - Flight within the United States, at an indicated airspeed of 250 knots or less, and at an altitude at or below 18,000 ft MSL.
+  - You may not fly for compensation or hire
+
+Proficiency vs. Currency
+Currency means that you have met the requirements by the FAA to act as PIC within a certain time period (i.e. §61.57). Flying skills are lost over time and even though you may be legal to fly, you must determine if you are safe to fly. Proficiency is being ready to handle any reasonable situation.
