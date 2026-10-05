@@ -240,6 +240,37 @@
       return await res.json();
     }
 
+    // Record when/where this update was made (city-level, via IP lookup) in
+    // last-update.json, which every page footer displays. Best-effort: a
+    // failure here never blocks the flight save itself.
+    async function stampUpdate() {
+      try {
+        var loc = null;
+        try {
+          var d = await fetch('https://ipinfo.io/json').then(function(r){ return r.json(); });
+          loc = [d.city, d.region, d.country].filter(Boolean).join(', ') || null;
+        } catch (e) {}
+        var now = new Date();
+        function p2(n) { return String(n).padStart(2, '0'); }
+        var tz = new Intl.DateTimeFormat('en-US', { timeZoneName: 'short' }).formatToParts(now)
+          .find(function(x){ return x.type === 'timeZoneName'; }).value;
+        var stamp = {
+          timestamp: now.getFullYear() + '-' + p2(now.getMonth() + 1) + '-' + p2(now.getDate()) + ' ' +
+                     p2(now.getHours()) + ':' + p2(now.getMinutes()) + ':' + p2(now.getSeconds()) + ' ' + tz,
+          iso: now.toISOString(),
+          location: loc || 'location unavailable',
+          source: 'Log Flight page'
+        };
+        var url = 'https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO + '/contents/last-update.json';
+        var body = { message: 'Update last-update.json', content: utf8ToBase64(JSON.stringify(stamp, null, 2) + '\n'), branch: GH_BRANCH };
+        var cur = await fetch(url + '?ref=' + GH_BRANCH, { headers: apiHeaders() });
+        if (cur.ok) body.sha = (await cur.json()).sha;
+        await fetch(url, { method: 'PUT', headers: Object.assign({'Content-Type':'application/json'}, apiHeaders()), body: JSON.stringify(body) });
+      } catch (e) {
+        console.warn('last-update stamp failed', e);
+      }
+    }
+
     function csvEscape(v) {
       v = String(v == null ? '' : v);
       return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
@@ -451,6 +482,7 @@
 
         var newContent = stringifyCSV(rows);
         await ghPutFile(newContent, file.sha, message);
+        await stampUpdate();
 
         state.rows = rows;
         renderEntries();
@@ -472,6 +504,7 @@
         var removed = rows.splice(idx, 1)[0];
         var newContent = stringifyCSV(rows);
         await ghPutFile(newContent, file.sha, 'Delete flight: ' + (removed ? removed['Date'] + ' ' + removed['Aircraft'] : idx));
+        await stampUpdate();
         state.rows = rows;
         renderEntries();
         setStatus(statusEl, 'Deleted.', 'ok');
@@ -500,5 +533,6 @@
       checkConnection().then(function(ok) { if (ok) loadEntries(false); });
     }
   </script>
+  <script src="last-update.js" defer></script>
 </body>
 </html>

@@ -23,6 +23,7 @@ jobs:
           python3 - <<'EOF'
           import csv, json, re, os, io, glob, sqlite3
           from datetime import datetime, timedelta, timezone
+          from zoneinfo import ZoneInfo
 
           # ── Column name aliases — covers LogTen Pro's various export
           # formats plus other schools' SIS exports (e.g. ETA/Superior SFS).
@@ -541,7 +542,7 @@ jobs:
           aircraft_flown.sort(key=lambda a: -a['total'])
 
           propel = {
-              'generated': now.strftime('%Y-%m-%d'),
+              'generated': datetime.now(ZoneInfo('America/New_York')).strftime('%Y-%m-%d %H:%M:%S %Z'),
               'source_rows': sum(s['rows'] for s in source_summary),
               'sources': source_summary,
               'total_time': round(agg['total'], 1),

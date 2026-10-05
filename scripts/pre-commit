@@ -1,0 +1,8 @@
+#!/bin/sh
+# Stamp last-update.json (time + city-level location) into every commit made
+# from this Mac. Install: ln -sf ../../scripts/pre-commit .git/hooks/pre-commit
+# Skip once with: SKIP_STAMP=1 git commit ...
+[ -n "$SKIP_STAMP" ] && exit 0
+root=$(git rev-parse --show-toplevel)
+python3 "$root/scripts/stamp_update.py" >/dev/null && git add "$root/last-update.json"
+exit 0
