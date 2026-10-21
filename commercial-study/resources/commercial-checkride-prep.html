@@ -1,0 +1,1078 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commercial ASEL Checkride Prep</title>
+<meta name="description" content="Commercial single-engine land checkride study guide: oral questions, scenario planning, regulations, systems and flight maneuvers.">
+<style>
+:root {
+  --bg: #f7f6f2; --surface: #ffffff; --text: #1d2228; --muted: #5d6670;
+  --accent: #1f5f8b; --accent-soft: #e4eef5; --border: #dcdad3; --row: #f3f2ee;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171b; --surface: #1c2026; --text: #e4e6e9; --muted: #9aa3ad;
+    --accent: #7db8e0; --accent-soft: #1f2b36; --border: #2e343c; --row: #20252c;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 16px; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 var(--sans); }
+.layout { max-width: 1180px; margin: 0 auto; padding: 0 16px; display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 40px; }
+header.hero { grid-column: 1 / -1; padding: 48px 0 24px; border-bottom: 1px solid var(--border); }
+.hero .kicker { color: var(--accent); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: 13px; margin: 0 0 8px; }
+.hero h1 { margin: 0 0 12px; font-size: clamp(28px, 4vw, 40px); line-height: 1.15; }
+.hero p { margin: 0; color: var(--muted); max-width: 720px; }
+nav.toc { position: sticky; top: 16px; align-self: start; padding-top: 28px; }
+nav.toc h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 8px; border: 0; padding: 0; }
+nav.toc ol { list-style: none; margin: 0; padding: 0; }
+nav.toc a { display: block; padding: 6px 10px; border-radius: 6px; color: var(--text); text-decoration: none; font-size: 14px; line-height: 1.35; }
+nav.toc a:hover { background: var(--accent-soft); color: var(--accent); }
+main { padding: 8px 0 64px; min-width: 0; }
+main h2 { font-size: 26px; margin: 48px 0 12px; padding-top: 8px; border-top: 3px solid var(--accent); }
+main h3 { font-size: 19px; margin: 32px 0 8px; }
+main p, main li { max-width: 76ch; }
+main ul, main ol { padding-left: 22px; }
+main li { margin: 4px 0; }
+a { color: var(--accent); }
+strong { font-weight: 650; }
+.table-wrap { overflow-x: auto; margin: 16px 0; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+th { background: var(--accent-soft); font-weight: 650; white-space: nowrap; }
+tbody tr:nth-child(even) td { background: var(--row); }
+tbody tr:last-child td { border-bottom: 0; }
+li.task { list-style: none; margin-left: -22px; }
+li.task input { margin-right: 8px; transform: translateY(1px); }
+footer { grid-column: 1 / -1; border-top: 1px solid var(--border); padding: 20px 0 40px; color: var(--muted); font-size: 13px; }
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; gap: 0; }
+  nav.toc { position: static; padding-top: 20px; }
+  nav.toc ol { display: flex; flex-wrap: wrap; gap: 4px; }
+  nav.toc a { background: var(--surface); border: 1px solid var(--border); font-size: 13px; }
+}
+@media print {
+  nav.toc { display: none; }
+  .layout { display: block; max-width: none; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  main h2 { break-before: page; }
+  .table-wrap { overflow: visible; border: 0; }
+  tr, td, th { break-inside: avoid; }
+  a { color: #000; text-decoration: none; }
+}
+</style>
+</head>
+<body>
+<div class="layout">
+  <header class="hero">
+    <p class="kicker">Study guide</p>
+    <h1>Commercial ASEL Checkride Prep</h1>
+    <p>Oral answers, scenario planning (KJZP → KMQY → 3M7 aerial photo flight), regulations, systems and flight standards for the Commercial ASEL practical test.</p>
+  </header>
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol><li><a href="#1-checkride-day">1. Checkride day</a></li><li><a href="#2-the-scenario-jzp-mqy-3m7-photo-flight-mqy-jzp">2. The scenario: JZP → MQY → 3M7 photo flight → MQY → JZP</a></li><li><a href="#3-commercial-privileges-and-limitations-loa-q2">3. Commercial privileges and limitations (LOA Q2)</a></li><li><a href="#4-airworthiness-loa-q4">4. Airworthiness (LOA Q4)</a></li><li><a href="#5-weather-loa-q3-q7-q8">5. Weather (LOA Q3, Q7, Q8)</a></li><li><a href="#6-performance-and-aerodynamics-loa-q1-q6">6. Performance and aerodynamics (LOA Q1, Q6)</a></li><li><a href="#7-systems-loa-q5-q9">7. Systems (LOA Q5, Q9)</a></li><li><a href="#8-airspace-navigation-oxygen-transponder">8. Airspace, navigation, oxygen, transponder</a></li><li><a href="#9-human-factors-and-aeromedical">9. Human factors and aeromedical</a></li><li><a href="#10-flight-portion">10. Flight portion</a></li></ol>
+  </nav>
+  <main>
+<h2 id="1-checkride-day">1. Checkride day</h2>
+<p>You win or lose the tone in the first five minutes: early, pressed shirt tucked in, clean shaven, one color-tabbed binder, logbook tabbed to every endorsement and requirement, IACRA username and password written down. Cole already knows you from your private ASEL add-on, so lean into that familiarity without getting casual.</p>
+<h3 id="your-add-on-situation-know-this-cold">Your add-on situation (know this cold)</h3>
+<p>You hold a Commercial certificate with a rotorcraft rating, so this is an <strong>additional category rating</strong> under 14 CFR 61.63(b), not an initial commercial certificate.</p>
+<ul>
+<li><strong>No knowledge test required.</strong> 61.63(b)(4): an applicant who already holds a rotorcraft (or other powered) rating at the commercial level need not take another knowledge test. LOA items 3–5 (AKT report, missed-area review, decoded subject codes) are N/A unless you took the written anyway. Say this up front and bring the 61.63(b) endorsement instead.</li>
+<li><strong>Training and experience still apply.</strong> 61.63(b)(2): you need the training and aeronautical experience for the commercial airplane rating, i.e. 61.129(a). Rotorcraft time counts toward total and powered-aircraft time, but several items must be in airplanes. Tab each one:</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>61.129(a) item</th>
+<th>Requirement</th>
+<th>Where it is in your logbook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total time</td>
+<td>250 hrs (rotorcraft counts)</td>
+<td></td>
+</tr>
+<tr>
+<td>Powered aircraft</td>
+<td>100 hrs, 50 in airplanes</td>
+<td></td>
+</tr>
+<tr>
+<td>PIC</td>
+<td>100 hrs, 50 in airplanes</td>
+<td></td>
+</tr>
+<tr>
+<td>PIC cross-country</td>
+<td>50 hrs, 10 in airplanes</td>
+<td></td>
+</tr>
+<tr>
+<td>Instrument training</td>
+<td>10 hrs, 5 in a single-engine airplane</td>
+<td></td>
+</tr>
+<tr>
+<td>Complex or TAA training</td>
+<td>10 hrs</td>
+<td></td>
+</tr>
+<tr>
+<td>Day XC with CFI</td>
+<td>2 hrs, over 100 NM straight-line</td>
+<td></td>
+</tr>
+<tr>
+<td>Night XC with CFI</td>
+<td>2 hrs, over 100 NM straight-line</td>
+<td></td>
+</tr>
+<tr>
+<td>Checkride prep</td>
+<td>3 hrs within 2 calendar months of the test</td>
+<td></td>
+</tr>
+<tr>
+<td>Solo/PIC performing duties</td>
+<td>10 hrs in SE airplane, incl. 300 NM XC with 3 landings, one leg 250 NM straight-line</td>
+<td></td>
+</tr>
+<tr>
+<td>Night VFR solo/PIC</td>
+<td>5 hrs with 10 takeoffs and landings at a towered airport</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="binder-order-matches-coles-loa">Binder order (matches Cole's LOA)</h3>
+<ol>
+<li>Photo ID, pilot certificate, medical</li>
+<li>Endorsements: 61.39(a)(6)(i)–(ii) prerequisites, 61.63(b) category add-on (and AKT items only if applicable)</li>
+<li>IACRA application signed by instructor (paper copy too)</li>
+<li>Aircraft logbooks: airframe, engine, propeller, tabbed to the last annual, 100-hour, ELT, transponder and AD list</li>
+<li>AROW documents in the airplane</li>
+<li>W&amp;B for every leg, using Cole at 210 lb</li>
+<li>Nav logs for JZP→MQY, MQY→3M7→MQY, MQY→JZP, printed even if you use ForeFlight</li>
+<li>Standard weather briefing for the checkride time</li>
+<li>Takeoff and landing data for each airport at forecast temp and wind</li>
+<li>Current FAR/AIM and sectional (paper or digital)</li>
+</ol>
+<p>Fee is $1,000 for the initial; $500 recheck if the oral is complete. Payment by cash, check, Venmo, Zelle or PayPal. His office is hangar H-04 on the west side of KJZP, midfield, southeast corner of the hangar horseshoe.</p>
+<h2 id="2-the-scenario-jzp-mqy-3m7-photo-flight-mqy-jzp">2. The scenario: JZP → MQY → 3M7 photo flight → MQY → JZP</h2>
+<p>The flight is legal as a commercial operation because aerial photography is aerial work excepted from Part 119 by 119.1(e)(4), and the plan is safe if you refuel at MQY, cross the Cumberland Plateau high, and orbit 3M7 at 1,000–1,500 AGL. Plan all four legs; previous applicants got credit for planning the MQY–3M7 leg even when Cole didn't dig in.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Leg</th>
+<th>Distance</th>
+<th>Key facts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KJZP → KMQY</td>
+<td>about 138 NM, course roughly northwest</td>
+<td>Direct line passes almost over Chattanooga (CHA) Class C; mountains near JZP and the Cumberland Plateau en route</td>
+</tr>
+<tr>
+<td>KMQY → 3M7 area</td>
+<td>38 NM, course about 036°</td>
+<td>3M7 is non-towered, CTAF/UNICOM 122.8, AWOS-3PT 120.85, field elevation 969 ft, runway 1/19, 5,200 × 75 ft</td>
+</tr>
+<tr>
+<td>Photo orbit</td>
+<td>30 min</td>
+<td>Under Nashville Approach (118.4) area but outside the Class C; rural terrain with tall towers on the sectional</td>
+</tr>
+<tr>
+<td>3M7 area → KMQY → KJZP</td>
+<td>38 NM, then 138 NM</td>
+<td>Same airspace in reverse</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="airspace-and-minimums-along-the-route">Airspace and minimums along the route</h3>
+<ul>
+<li><strong>KMQY is Class D under the Nashville (BNA) Class C.</strong> Tower 118.5, ground 121.4. Tower hours are 0700–2200 local weekdays and 0700–1900 weekends; outside those hours it reverts to Class G. Establish two-way radio communication before entering (91.129). BNA traffic overflies MQY at 2,500 MSL and above, and Army Guard helicopters run just north of the Class D at about 1,500 MSL. Pattern altitude for light aircraft is 957 AGL (about 1,500 MSL).</li>
+<li><strong>Chattanooga Class C</strong> sits on the direct line. Options: contact Chattanooga Approach and transit (two-way comms required, 91.130), or fly above its ceiling. Above the ceiling of Class C within its lateral limits up to 10,000 MSL, transponder and ADS-B Out are still required (91.215, 91.225).</li>
+<li><strong>VFR cruising altitude</strong> (91.159): magnetic course 180–359° means even thousands plus 500. Westbound to MQY: 4,500, 6,500 or 8,500. Eastbound home: odd plus 500 (5,500, 7,500). 6,500 westbound clears the plateau with good glide range and keeps you above the CHA Class C.</li>
+<li><strong>Weather minimums (91.155):</strong> Class C, D and E below 10,000 MSL are 3 SM and 500 below, 1,000 above, 2,000 horizontal from clouds. Class G below 1,200 AGL by day is 1 SM, clear of clouds. Class D also needs a 1,000-ft ceiling to operate VFR in the surface area without a special VFR clearance.</li>
+<li><strong>Time zones:</strong> JZP is Eastern; MQY and 3M7 are Central. Say this when you brief passenger pickup times and sunset.</li>
+</ul>
+<h3 id="fuel-and-weight-the-judgment-answer">Fuel and weight (the judgment answer)</h3>
+<p>Rough numbers at about 120 kt TAS and 9–10 gph: JZP→MQY about 1.2 hr, the photo mission with transit about 1.2 hr, return about 1.2 hr. That is roughly 3.6 hr plus the 30-minute day VFR reserve (91.151), around 40+ gallons against 48 usable. Technically possible, practically thin. <strong>Refuel at MQY</strong>, and load only the fuel the photo leg needs so you stay under 2,550 lb with you, a 210-lb and a 130-lb passenger. Show a separate W&amp;B for each leg, including CG at takeoff and landing.</p>
+<h3 id="whats-the-lowest-legal-altitude-over-3m7-and-what-would-you-fly">"What's the lowest legal altitude over 3M7, and what would you fly?"</h3>
+<ul>
+<li><strong>Legal floor (91.119):</strong> anywhere, an altitude that allows an emergency landing without undue hazard. Over congested areas, 1,000 ft above the highest obstacle within 2,000 ft horizontally. Over other-than-congested areas, 500 AGL. Over open water or sparsely populated areas, 500 ft from any person, vessel, vehicle or structure.</li>
+<li><strong>What you'd actually fly:</strong> about 1,000–1,500 AGL (roughly 2,000–2,500 MSL near 3M7). Why: glide range to the 5,200-ft runway, clear of the tall towers, below BNA arrival traffic, and enough altitude to recover if a turn goes wrong.</li>
+<li><strong>The real risk:</strong> low, slow, steep orbits around a point with a passenger saying "a little closer" is the classic stall-spin setup. Brief it: bank limit about 30°, airspeed floor well above stall (slow cruise, not slow flight), coordinated turns, watch the downwind side of the orbit where groundspeed rises and pilots tighten the turn.</li>
+</ul>
+<h3 id="the-passengers-change-the-plan-mid-flight">"The passengers change the plan mid-flight"</h3>
+<p>If they ask to land at 3M7 and be dropped off, or to go sightseeing somewhere else, the flight stops being aerial work and becomes transporting persons for compensation. That needs a Part 119 certificate (Part 135), and sightseeing for hire needs a 91.147 letter of authorization. Answer: decline, finish the photo work or return them to MQY.</p>
+<h2 id="3-commercial-privileges-and-limitations-loa-q2">3. Commercial privileges and limitations (LOA Q2)</h2>
+<p>The one-line answer is "I can be paid to fly"; the full answer is that <strong>61.133 lets me be paid as a pilot, but who provides the aircraft and who holds operational control decides whether the operation also needs a Part 119 certificate.</strong> Every past applicant said this topic opened the oral. Build your answer in this order:</p>
+<ol>
+<li><strong>What 61.133 gives me.</strong> Act as PIC of an aircraft carrying persons or property for compensation or hire, and act as a pilot for compensation or hire, <em>provided I'm qualified under the part that governs the operation</em> (91, 135, 137, etc.).</li>
+<li><strong>The limitation if I don't hold an airplane instrument rating</strong> (61.133(b)): no carrying passengers for hire in airplanes on cross-countries over 50 NM or at night. Know whether this applies to you. Note the photo flight (MQY → 3M7 area, 38 NM) stays inside 50 NM; the JZP → MQY repositioning carries no paying passengers.</li>
+<li><strong>Why it isn't simple: the operator question.</strong> A pilot is paid; an operator sells transportation. If I provide both the airplane and the pilot to the public for compensation, I'm an air carrier or commercial operator and need a Part 119 certificate (Part 135 for on-demand).</li>
+<li><strong>Common vs private carriage</strong> (AC 120-12A). Common carriage has four elements: holding out, to transport persons or property, from place to place, for compensation. Private carriage is carriage for one or a few selected customers without holding out, typically under a long-term arrangement. Too many "private" customers starts to look like common carriage.</li>
+<li><strong>Holding out</strong> is any advertising or reputation that you'll fly anyone who asks: websites, business cards, word of mouth, a sign at the FBO.</li>
+<li><strong>Operational control</strong> (14 CFR 1.1): whoever exercises authority over initiating, conducting or terminating the flight. That person or company is the operator and carries the regulatory burden.</li>
+<li><strong>Leases.</strong> Dry lease = aircraft only; the lessee has operational control and hires its own pilot. Wet lease = aircraft plus at least one crewmember; that is providing transportation and needs a certificate. A "dry lease" where the same person also supplies the pilot is a sham lease the FAA treats as illegal charter (AC 91-37B).</li>
+<li><strong>119.1(e) exceptions</strong> where I can provide plane and pilot without a 119 certificate: student instruction; nonstop commercial air tours within 25 SM under 91.147 (with a letter of authorization); ferry or training flights; <strong>aerial work</strong> such as crop dusting (Part 137 applies), banner towing, <strong>aerial photography or survey</strong>, firefighting, powerline or pipeline patrol; nonstop parachute-jump flights within 25 SM; Part 91 subpart K fractional programs.</li>
+<li><strong>What I can do with a commercial and no 119 certificate:</strong> corporate pilot (private carriage for the company that owns the aircraft), aerial photo and survey, banner towing, pipeline patrol, ferry flights, glider or parachute tows, 91.147 air tours with an LOA, SIC or PIC for a 135 or 121 operator once qualified there.</li>
+<li><strong>Recurrent requirements:</strong> nothing new beyond 61.56 (flight review) and 61.57 (passenger, night, instrument currency).</li>
+</ol>
+<h3 id="coles-scenarios-and-answers">Cole's scenarios and answers</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Answer</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"If I owned the airplane, could you fly my wife somewhere for compensation?"</td>
+<td>Yes, under Part 91</td>
+<td>The owner provides the airplane and holds operational control; you are a hired pilot. Nobody is selling transportation to the public.</td>
+</tr>
+<tr>
+<td>"What if you owned the airplane?"</td>
+<td>No, unless an exception applies</td>
+<td>Now you provide plane and pilot for compensation: transporting persons for hire. Needs a 119/135 certificate. Aerial photography would be fine (119.1(e)); flying his wife to Sarasota would not.</td>
+</tr>
+<tr>
+<td>Flight school owner (owns the planes) hires you as an instructor to fly him to Sarasota for a consulting job</td>
+<td>Yes</td>
+<td>Owner's aircraft, owner's operational control, you're a paid pilot. Private carriage.</td>
+</tr>
+<tr>
+<td>He brings two business associates</td>
+<td>Yes, as long as they aren't paying him or you for the ride</td>
+<td>Still his flight in his airplane. If they reimburse him, he's carrying persons for compensation and it becomes a charter problem.</td>
+</tr>
+<tr>
+<td>His wife and daughter come too</td>
+<td>Yes, same logic</td>
+<td>Passengers riding on the owner's own Part 91 flight. The legal trigger is someone paying for transportation or the owner holding out, not who the passengers are.</td>
+</tr>
+<tr>
+<td>Aerial photo flight for two passengers near 3M7, using an aircraft you or your employer provide</td>
+<td>Yes</td>
+<td>119.1(e)(4) aerial photography; nonstop; departs and returns MQY. Requires a 100-hour inspection (carrying persons for hire, 91.409(b)).</td>
+</tr>
+<tr>
+<td>They ask to be dropped at 3M7</td>
+<td>No</td>
+<td>Becomes transport from place to place for hire; needs Part 135.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Use "I'd call the FSDO" only after you've reasoned through it; one past applicant noted Cole doesn't want that as a default answer.</p>
+<h2 id="4-airworthiness-loa-q4">4. Airworthiness (LOA Q4)</h2>
+<p>An aircraft is airworthy when it <strong>conforms to its type design</strong> (TCDS plus any STCs and approved alterations) <strong>and is in a condition for safe operation</strong>; the PIC decides (91.7) and the owner or operator keeps it maintained (91.403). Cole warns that a non-comprehensive demo means you don't know it, so walk him through all four layers with the logbooks open.</p>
+<h3 id="layer-1-documents-in-the-airplane-and-the-regulation-behind-each">Layer 1 — Documents in the airplane (and the regulation behind each)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Document</th>
+<th>Requirement</th>
+<th>The "why"</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Airworthiness certificate</td>
+<td>91.203(a)(1), displayed per 91.203(b)</td>
+<td>Proves the aircraft was found to conform to type design; stays valid while maintained per Parts 43 and 91 (21.181)</td>
+</tr>
+<tr>
+<td>Registration</td>
+<td>91.203(a)(2); now valid 7 years</td>
+<td>Identifies the owner and nationality</td>
+</tr>
+<tr>
+<td>Radio station license</td>
+<td>Only for international flight (FCC)</td>
+<td>Not required domestically</td>
+</tr>
+<tr>
+<td>Operating limitations: AFM/POH, placards, markings</td>
+<td>91.9</td>
+<td>Limits must be available to the pilot in flight</td>
+</tr>
+<tr>
+<td>Weight and balance data</td>
+<td>Part of the AFM content required by 23.2620 (loading information); original W&amp;B and any amended W&amp;B after equipment changes</td>
+<td>Limits are meaningless without the empty weight and CG of <em>this</em> airframe</td>
+</tr>
+<tr>
+<td>AFM supplements</td>
+<td>91.9 via the STC</td>
+<td>E.g., electronic ignition, G5/G500 — required equipment and limitations</td>
+</tr>
+</tbody>
+</table></div>
+<p>Also know 91.203(c)–(d) is about fuel tanks in the cabin (not applicable).</p>
+<h3 id="layer-2-inspections-show-each-entry-in-the-logbook">Layer 2 — Inspections (show each entry in the logbook)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Inspection</th>
+<th>Interval</th>
+<th>Regulation</th>
+<th>Required today?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annual</td>
+<td>12 calendar months</td>
+<td>91.409(a)</td>
+<td>Yes, every flight</td>
+</tr>
+<tr>
+<td>100-hour</td>
+<td>Every 100 hours time in service; may overfly by up to 10 hrs only to reach a place to do it, and that time counts against the next</td>
+<td>91.409(b)</td>
+<td>Yes: the aircraft is used for flight instruction for hire and the photo flight carries persons for hire</td>
+</tr>
+<tr>
+<td>ELT</td>
+<td>12 calendar months; battery replaced after 1 hr cumulative use or 50% of useful life</td>
+<td>91.207</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Transponder</td>
+<td>24 calendar months</td>
+<td>91.413</td>
+<td>Yes: required in MQY's Class D under BNA Class C mode-C airspace and over the CHA Class C</td>
+</tr>
+<tr>
+<td>Altimeter/static system</td>
+<td>24 calendar months</td>
+<td>91.411</td>
+<td>Only for IFR in controlled airspace</td>
+</tr>
+<tr>
+<td>VOR check</td>
+<td>30 days</td>
+<td>91.171</td>
+<td>Only IFR</td>
+</tr>
+<tr>
+<td>Airworthiness Directives</td>
+<td>As specified in each AD (one-time, recurring, by hours or calendar)</td>
+<td>91.403, Part 39</td>
+<td>Yes: check the AD compliance record for recurring ADs coming due</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Annual vs 100-hour:</strong> same scope (Part 43 appendix D), different people. An annual requires an A&amp;P with Inspection Authorization; a 100-hour can be done by any A&amp;P. An annual can substitute for a 100-hour, not the reverse.</p>
+<p><strong>Cole's trick question:</strong> "Why is there one annual entry but three 100-hour entries?" Part 43.11 entries go in the record for what was inspected. If the entry says "aircraft," one entry covers airframe, engine and propeller. If the shop writes separate airframe, engine and propeller entries (one per logbook), you'll see three. Find the actual entries in <em>your</em> airplane's logs before checkride day.</p>
+<h3 id="layer-3-preflight-inspection">Layer 3 — Preflight inspection</h3>
+<p>The POH checklist, done by you, completes the "condition for safe operation" half. Cole meets you at the airplane: expect to name each antenna (com 1/2, nav/VOR, GPS, transponder/ADS-B, ELT, marker beacon if equipped) and explain the engine and electrical system.</p>
+<h3 id="layer-4-inoperative-equipment-your-position-lights-are-out">Layer 4 — Inoperative equipment ("your position lights are out")</h3>
+<p>No MEL on the Archer, so use 91.213(d). The item must <strong>not</strong> be required by any of these:</p>
+<ol>
+<li><strong>91.205</strong> for the kind of flight (day VFR list below; night adds lights and power)</li>
+<li><strong>The equipment list or KOEL</strong> in the POH</li>
+<li><strong>The TCDS</strong></li>
+<li><strong>An AD</strong></li>
+<li><strong>Any other rule</strong> for the operation (e.g., ADS-B for the airspace, 100-hour for hire)</li>
+</ol>
+<p>If none require it: deactivate or remove it, placard it "INOPERATIVE," and have the removal or deactivation recorded in the maintenance records (43.9 or 43.11). The pilot or a mechanic determines it isn't a hazard. <strong>Position lights:</strong> not required for day VFR (needed at night by 91.205(c)), so placard and go, but the flight must end before sunset. Your return to JZP crosses a time zone, so check it.</p>
+<p><strong>91.205(b) day VFR, with the reason</strong> (Cole dislikes bare acronyms): airspeed indicator, altimeter, magnetic direction indicator (basic flight instruments); tachometer, oil pressure, oil temperature, fuel quantity for each tank (engine health); manifold pressure for altitude engines; landing gear position indicator for retractables; anticollision lights for small airplanes certificated after March 11, 1996; ELT (91.207); seat belts, and shoulder harnesses in front seats for airplanes manufactured after July 18, 1978. <strong>Night adds:</strong> position lights, anticollision lights, a landing light if operating for hire, an adequate source of electrical power, and spare fuses if fuses are used.</p>
+<h2 id="5-weather-loa-q3-q7-q8">5. Weather (LOA Q3, Q7, Q8)</h2>
+<p>Walk weather big picture → hazards → specifics → decision, naming the value of each product; Cole asks "would you go?" and "what's your limit today?", so end with a go/no-go and your personal minimum.</p>
+<h3 id="q3-my-briefing-process-and-what-each-product-is-worth">Q3 — My briefing process and what each product is worth</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Product</th>
+<th>Its particular value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Official record</td>
+<td>Standard briefing (1800wxbrief or ForeFlight brief)</td>
+<td>Satisfies 91.103 "all available information" and creates a record; includes NOTAMs and TFRs</td>
+</tr>
+<tr>
+<td>2. Big picture</td>
+<td>Surface analysis chart</td>
+<td>Current fronts, pressure centers, isobars (wind strength), station models</td>
+</tr>
+<tr>
+<td></td>
+<td>Prog charts (12–48 hr)</td>
+<td>Where fronts and precipitation will be at departure and return times</td>
+</tr>
+<tr>
+<td></td>
+<td>Convective outlook</td>
+<td>Probability of thunderstorms over 1–3 days</td>
+</tr>
+<tr>
+<td>3. Hazards</td>
+<td>G-AIRMETs: Sierra (IFR, mountain obscuration), Tango (turbulence, strong surface winds, LLWS), Zulu (icing, freezing level)</td>
+<td>Area hazards below SIGMET intensity, with a time-step forecast</td>
+</tr>
+<tr>
+<td></td>
+<td>SIGMETs, Convective SIGMETs, CWAs</td>
+<td>Severe icing or turbulence, dust, volcanic ash; embedded or lines of thunderstorms; short-term center warnings</td>
+</tr>
+<tr>
+<td></td>
+<td>PIREPs</td>
+<td>The only observed conditions aloft: tops, bases, icing, turbulence</td>
+</tr>
+<tr>
+<td>4. Route detail</td>
+<td>GFA (Graphical Forecasts for Aviation)</td>
+<td>Clouds, ceilings, visibility, weather, winds, icing and turbulence by altitude and hour; replaced the text area forecast</td>
+</tr>
+<tr>
+<td></td>
+<td>Radar and satellite</td>
+<td>Where precipitation actually is now; cloud cover and tops</td>
+</tr>
+<tr>
+<td></td>
+<td>Winds and temperatures aloft (FB)</td>
+<td>Nav log wind correction and groundspeed; freezing level</td>
+</tr>
+<tr>
+<td>5. Airports</td>
+<td>METAR</td>
+<td>Current conditions at JZP, MQY, CHA, 3M7 (AWOS-3PT, no TAF)</td>
+</tr>
+<tr>
+<td></td>
+<td>TAF</td>
+<td>Forecast within 5 SM of the airport, issued four times daily, 24–30 hr. Use MQY's TAF for arrival; 3M7 has none, so use nearby TAFs plus the GFA</td>
+</tr>
+<tr>
+<td>6. Decide</td>
+<td>Personal minimums vs legal minimums</td>
+<td>Example: VFR XC needs ceilings 3,000+ and visibility 5+ SM, crosswind within your demonstrated limit, no convection on the route</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Departure vs destination:</strong> at departure I care about now (METAR) and the next hour; at the destination I care about the TAF window of my ETA ±1 hr and the trend. <strong>If bases were lower than my planned 6,500:</strong> I'd pick an altitude that keeps legal cloud clearance and terrain clearance over the plateau; if that can't be done with a 1,000-ft margin over terrain, no-go or re-route along lower terrain.</p>
+<h3 id="fronts-and-pressure-systems-asked-by-almost-every-applicant">Fronts and pressure systems (asked by almost every applicant)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>System</th>
+<th>Weather</th>
+<th>Cues</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cold front</td>
+<td>Steep slope, narrow band; cumuliform, showers, thunderstorms, gusty winds, turbulence; clearing and good visibility behind</td>
+<td>Temperature drops, wind veers (shifts clockwise), pressure rises after passage</td>
+</tr>
+<tr>
+<td>Warm front</td>
+<td>Shallow slope, wide band hundreds of miles ahead; stratiform, low ceilings, poor visibility, fog, steady precipitation; freezing rain possible ahead in winter</td>
+<td>Temperature rises after passage, gradual change</td>
+</tr>
+<tr>
+<td>Stationary</td>
+<td>Front not moving; weather of either type persisting for days</td>
+<td>Winds parallel to the front</td>
+</tr>
+<tr>
+<td>Occluded</td>
+<td>Cold front overtakes warm front; combined weather, often embedded thunderstorms</td>
+<td>Mixed cues</td>
+</tr>
+<tr>
+<td>High pressure</td>
+<td>Descending air, clockwise and outward (northern hemisphere); generally fair, stable, but haze, smoke, inversions and morning fog</td>
+<td>Altimeter setting rises</td>
+</tr>
+<tr>
+<td>Low pressure</td>
+<td>Rising air, counterclockwise and inward; clouds, precipitation, unstable</td>
+<td>Altimeter setting falls</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Altimeter:</strong> flying from high to low pressure (or hot to cold) without resetting, the altimeter reads higher than true altitude: "high to low, look out below." <strong>Performance:</strong> high pressure and cold air give lower density altitude, so more engine power, more prop thrust, more lift at a given TAS: shorter takeoff, better climb, and lower true airspeed on approach for a shorter landing roll. Low pressure and heat do the opposite.</p>
+<h3 id="q7-inflight-icing-what-id-do">Q7 — Inflight icing: what I'd do</h3>
+<p>The Archer is not approved for flight into known icing, and VFR I shouldn't be in visible moisture, so icing for me means an exit, not a management problem. Freezing rain or drizzle below clouds is how a VFR pilot meets it.</p>
+<ol>
+<li><strong>Exit immediately:</strong> 180° turn back to where conditions were good, or change altitude toward warmer air. In freezing rain there is warmer air above, so climb if able; otherwise descend if terrain allows.</li>
+<li><strong>Pitot heat on</strong>, defroster and cabin heat to full, carburetor heat as needed (induction icing).</li>
+<li><strong>Fly by hand</strong> if using an autopilot so trim changes aren't masked; keep airspeed up, avoid abrupt maneuvers.</li>
+<li><strong>Tell ATC</strong>, declare an emergency if needed, file a PIREP.</li>
+<li><strong>Land at the nearest suitable airport</strong> with a long runway.</li>
+</ol>
+<h3 id="q8-approach-and-landing-after-icing">Q8 — Approach and landing after icing</h3>
+<ul>
+<li><strong>Fly faster:</strong> ice raises stall speed and reduces critical AOA; carry extra speed on approach (a reasonable margin is 10 kt or more, per POH or CFI guidance) and use a power-on approach.</li>
+<li><strong>Minimal or no flaps:</strong> flap extension changes tail downwash and can trigger a <strong>tailplane stall</strong> with an iced horizontal stabilizer. If the nose pitches down or controls go light after flap extension, retract flaps.</li>
+<li><strong>Choose a long runway:</strong> higher touchdown speed and longer roll; don't float, fly it onto the runway with a minimal flare.</li>
+<li><strong>Visibility:</strong> windshield may be obscured; use defroster, side window, or a gentle slip to see.</li>
+<li><strong>Expect</strong> heavier weight, more drag, less climb performance; avoid steep turns and go-arounds if at all possible.</li>
+</ul>
+<h2 id="6-performance-and-aerodynamics-loa-q1-q6">6. Performance and aerodynamics (LOA Q1, Q6)</h2>
+<p>Cole wants process and "why": show where each number came from in the POH, and explain each effect through angle of attack, lift and drag. Numbers below are typical PA-28-181 values from memory; <strong>replace them with your tail number's POH figures</strong> before the checkride.</p>
+<h3 id="q1-glide-ratio-of-the-archer">Q1 — Glide ratio of the Archer</h3>
+<ul>
+<li><strong>Best glide:</strong> about 76 KIAS at 2,550 lb, flaps up, prop windmilling (POH section 3).</li>
+<li><strong>Ratio:</strong> roughly 9:1 to 10:1, about 1.5 NM per 1,000 ft AGL in still air. Derive it in front of him from the POH glide chart: distance ÷ height in the same units.</li>
+<li><strong>Over the plateau at 6,500 MSL</strong> (terrain around 2,000), about 4,500 AGL gives roughly 6–7 NM of glide. That's why you chose that altitude.</li>
+<li><strong>What changes it:</strong><ul>
+<li><strong>Weight:</strong> a lighter airplane has a <em>lower</em> best glide speed but the <em>same</em> ratio. Fly slightly slower than 76 when light.</li>
+<li><strong>Wind:</strong> headwind cuts range over the ground; add a few knots into a headwind, slow slightly with a tailwind.</li>
+<li><strong>Drag:</strong> flaps, slips and a windmilling prop all steepen the glide.</li>
+<li><strong>CG:</strong> forward CG needs more tail downforce, which adds induced drag, so slightly worse glide.</li>
+</ul>
+</li>
+</ul>
+<h3 id="forward-vs-aft-cg-and-why">Forward vs aft CG and why</h3>
+<p>Lift acts behind the CG, so the tail pushes down to balance. Move the CG forward and the tail must push down harder, so the wing carries the airplane <em>plus</em> that tail load.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Forward CG</th>
+<th>Aft CG</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stability</td>
+<td>More stable</td>
+<td>Less stable</td>
+</tr>
+<tr>
+<td>Stall speed</td>
+<td>Higher (wing at higher AOA for the extra load)</td>
+<td>Lower</td>
+</tr>
+<tr>
+<td>Cruise speed and fuel</td>
+<td>Slower, more fuel (more induced drag)</td>
+<td>Faster, less fuel</td>
+</tr>
+<tr>
+<td>Control forces</td>
+<td>Heavier; harder to rotate and flare, risk of nose-wheel-first landing</td>
+<td>Lighter; easy to over-control</td>
+</tr>
+<tr>
+<td>Stall and spin recovery</td>
+<td>Easier</td>
+<td>Harder; beyond aft limit may be unrecoverable</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="cas-ias-tas-on-the-nav-log-a-lot-of-people-get-that-wrong">CAS, IAS, TAS on the nav log ("a lot of people get that wrong")</h3>
+<ul>
+<li><strong>TAS comes from the POH cruise performance chart:</strong> enter pressure altitude and temperature, pick the power setting, read RPM, % power, <strong>TAS</strong> and fuel flow. That's the source Cole wants to hear.</li>
+<li><strong>IAS</strong> is what the airspeed indicator shows. <strong>CAS</strong> is IAS corrected for instrument and position error (POH airspeed calibration table). <strong>TAS</strong> is CAS corrected for nonstandard pressure and temperature, about 2% higher per 1,000 ft.</li>
+<li>To show the IAS you'd expect in cruise: take POH TAS → E6B with pressure altitude and temperature → CAS → calibration table → IAS.</li>
+<li>Groundspeed then comes from TAS plus the winds aloft forecast on the E6B.</li>
+</ul>
+<h3 id="density-altitude-and-why-airliners-cruise-high">Density altitude (and why airliners cruise high)</h3>
+<p>Higher density altitude means thinner air: the engine makes less power (less air per intake stroke), the prop makes less thrust, and the wing needs a higher TAS for the same lift. Same indicated airspeed for approach, but higher groundspeed, longer takeoff roll, longer landing roll, weaker climb.</p>
+<p>Airliners cruise high anyway because jet efficiency improves with altitude: drag is lower at a given TAS, so they go faster for the same fuel; turbine engines are more efficient in cold air; they're above most weather and traffic. Thrust drops with altitude, but drag drops too, so there's an optimum altitude that rises as fuel burns off (step climbs).</p>
+<h3 id="q6-when-is-a-spin-most-likely">Q6 — When is a spin most likely?</h3>
+<p>A spin is an aggravated stall with yaw: one wing is more stalled than the other, producing autorotation. Both conditions must be present: <strong>critical AOA exceeded</strong> and <strong>uncoordinated flight (yaw)</strong>. Most likely:</p>
+<ol>
+<li><strong>Base-to-final turn:</strong> overshooting final, adding inside rudder to tighten the turn and opposite aileron to hold bank. A skidded turn at low altitude is the classic stall-spin killer.</li>
+<li><strong>Departure climb</strong> at high pitch with insufficient right rudder for P-factor.</li>
+<li><strong>Go-around</strong> with full flaps and nose-up trim, pitch rising and rudder neglected.</li>
+<li><strong>Accelerated stalls</strong> in steep turns, where load factor raises stall speed.</li>
+<li><strong>In this scenario:</strong> low, slow orbits over 3M7 with passengers distracting you.</li>
+</ol>
+<p><strong>Recovery (PARE):</strong> Power idle, Ailerons neutral, Rudder full opposite the rotation, Elevator briskly forward to break the stall; neutralize rudder when rotation stops; recover smoothly from the dive. <strong>Why ailerons neutral:</strong> opposite aileron lowers the aileron on the down wing, raising its camber and AOA and deepening its stall, which can flatten or speed up the spin. <strong>Is the Archer approved for spins?</strong> No; intentional spins are prohibited (POH limitations).</p>
+<h3 id="va-maneuvering-speed">Va (maneuvering speed)</h3>
+<p>The speed at or below which the airplane will stall before exceeding limit load factor (3.8 G for normal category). About 113 KIAS at 2,550 lb in the Archer; it <strong>decreases at lighter weight</strong> because a lighter airplane accelerates more for the same gust or control input (Va ≈ Vs × √load limit). Va doesn't protect against full alternating control reversals; one full deflection in one axis at a time.</p>
+<h3 id="four-left-turning-tendencies">Four left-turning tendencies</h3>
+<ol>
+<li><strong>Torque:</strong> Newton's third law; the prop turns clockwise from the cockpit, the airplane rolls left. Strongest at high power, low speed.</li>
+<li><strong>P-factor:</strong> at high AOA the descending right blade meets air at a higher angle and makes more thrust, yawing left.</li>
+<li><strong>Spiraling slipstream:</strong> prop wash corkscrews around the fuselage and strikes the left side of the vertical tail, yawing left.</li>
+<li><strong>Gyroscopic precession:</strong> force on a spinning disc takes effect 90° later in the direction of rotation; pitching nose-down (tailwheel raising its tail) yaws left. Minor in a nosewheel airplane.</li>
+</ol>
+<h2 id="7-systems-loa-q5-q9">7. Systems (LOA Q5, Q9)</h2>
+<p>Explain systems as flows (where fuel, air, spark and electrons go, and what fails when), not as a parts list. Confirm voltage, avionics and which magneto is electronic for your exact tail number; Archers in the ATP fleet vary by year and retrofit.</p>
+<h3 id="engine-typical-pa-28-181">Engine (typical PA-28-181)</h3>
+<ul>
+<li><strong>Lycoming O-360-A4M, 180 hp at 2,700 RPM:</strong> four cylinders, horizontally opposed, air-cooled, carbureted, normally aspirated, direct drive to a fixed-pitch prop.</li>
+<li><strong>Fuel:</strong> two wing tanks, 48 gal usable; selector LEFT / RIGHT / OFF (no BOTH). Engine-driven pump plus electric boost pump (on for takeoff, landing and tank switching). Gravity can't feed a low-wing carburetor, which is why the pumps matter.</li>
+<li><strong>Induction:</strong> air filter → carburetor (venturi, float bowl, mixture control) → intake. Carb heat draws unfiltered heated air from a shroud around the exhaust; expect an RPM drop and roughness that improves as ice melts.</li>
+<li><strong>Oil:</strong> wet sump, 8 qt capacity, oil cooler, pressure and temperature gauges.</li>
+<li><strong>Ignition:</strong> dual, two plugs per cylinder from two independent sources; engine runs with the master off as long as an ignition source is self-powered.</li>
+</ul>
+<h3 id="electronic-magneto-what-cole-asks-about">Electronic magneto (what Cole asks about)</h3>
+<p>Many ATP Archers have one magneto replaced by an electronic ignition module (commonly SureFly) under an STC, with an AFM supplement.</p>
+<ul>
+<li><strong>What it does:</strong> solid-state module in the magneto's place, with a hotter spark and <strong>variable timing</strong> that advances spark at lower manifold pressure and higher altitude, giving smoother operation and easier starts.</li>
+<li><strong>The key difference: it needs aircraft electrical power.</strong> A conventional magneto generates its own current. With a total electrical failure (battery depleted), the electronic side stops firing and the engine runs on the remaining conventional magneto, like a single-mag runup check: slight RPM drop, but it runs.</li>
+<li><strong>Runup check</strong> looks the same as a mag check. Know which side (L or R) yours is and the drop limits in the AFM supplement.</li>
+<li><strong>Airworthiness tie-in:</strong> it's an STC, so it's part of "conforms to type design," and the supplement's limitations are mandatory (91.9).</li>
+</ul>
+<h3 id="electrical-system">Electrical system</h3>
+<p>Battery → master switch (split: BAT / ALT) → bus bar → circuit breakers → loads. Engine-driven alternator, voltage regulator, ammeter or load meter, voltmeter, low-voltage/ALT annunciator, starter contactor, avionics master. <strong>Confirm whether your airplane is 14 V or 28 V and the alternator rating.</strong></p>
+<p><strong>Alternator failure on a VFR day XC (Cole's oral scenario):</strong></p>
+<ol>
+<li><strong>Confirm:</strong> ALT annunciator, ammeter discharge or zero output, falling voltage.</li>
+<li><strong>Checklist:</strong> check ALT circuit breakers; cycle ALT switch off then on; if not restored, ALT off.</li>
+<li><strong>Shed load:</strong> avionics you don't need, lights, boost pump unless required; keep one com and the transponder if in Class C/D airspace.</li>
+<li><strong>Is it an emergency?</strong> Not immediately: the alternator isn't on the 91.205(b) day VFR list and the engine runs independently. But the battery gives a limited time, maybe 30 minutes, and you need a transponder and radio near BNA and MQY. Land at the nearest suitable airport while you still have radios; tell ATC.</li>
+<li><strong>If the battery dies:</strong> radios, transponder, flaps (if electric), fuel gauges and the electronic ignition side go. Squawk 7600 before it goes if you can.</li>
+<li><strong>Arriving at a towered airport with no radio:</strong> watch for <strong>light gun signals</strong> from the tower (table in section 8). In flight, steady green = cleared to land. Acknowledge by rocking wings in daytime.</li>
+</ol>
+<h3 id="q5-flight-instruments-limitations-and-errors">Q5 — Flight instruments, limitations and errors</h3>
+<p><strong>Pitot-static instruments</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Instrument</th>
+<th>How it works</th>
+<th>Errors and failures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Airspeed indicator</td>
+<td>Diaphragm compares pitot (ram) pressure against static pressure</td>
+<td>Position and instrument error (CAS correction). Pitot blocked with drain open: reads zero. Pitot and drain blocked: acts like an altimeter, reads higher in a climb.</td>
+</tr>
+<tr>
+<td>Altimeter</td>
+<td>Sealed aneroid wafers expand as static pressure drops; Kollsman window set to local altimeter</td>
+<td>Nonstandard pressure and temperature: high to low or hot to cold, reads too high. Static blocked: freezes at the blockage altitude.</td>
+</tr>
+<tr>
+<td>Vertical speed indicator</td>
+<td>Diaphragm with a calibrated leak; shows trend immediately, rate after 6–9 seconds</td>
+<td>Lag; static blocked: reads zero.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Static port blocked:</strong> altimeter frozen, VSI zero, airspeed reads low in a climb and high in a descent. <strong>Alternate static source</strong> (cabin air, slightly lower pressure): altimeter and airspeed read a little high, VSI shows a momentary climb.</p>
+<p><strong>Gyroscopic and electronic instruments</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Instrument</th>
+<th>Principle</th>
+<th>Errors and limitations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Attitude indicator</td>
+<td>Rigidity in space (vacuum or electric gyro)</td>
+<td>Tumble limits on older units; small errors in acceleration and turns. Vacuum failure: slowly erroneous with no flag.</td>
+</tr>
+<tr>
+<td>Heading indicator</td>
+<td>Rigidity in space</td>
+<td>Precession: reset to the compass about every 15 minutes in straight-and-level, unaccelerated flight</td>
+</tr>
+<tr>
+<td>Turn coordinator</td>
+<td>Precession; canted gimbal senses roll rate and yaw rate; inclinometer ball shows coordination</td>
+<td>Shows rate of turn, not bank angle</td>
+</tr>
+<tr>
+<td>Glass (G5 / G500 TXi)</td>
+<td>AHRS (solid-state gyros, accelerometers, magnetometer) plus air data computer fed by the pitot-static system</td>
+<td>Still subject to pitot-static blockages; red X on failure; know the backup instrument and its battery endurance</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Magnetic compass errors:</strong> variation, deviation (compass card), magnetic dip. Northerly turning error: turning from north the compass lags, from south it leads (UNOS: undershoot north, overshoot south). Acceleration error on east/west headings: accelerate north, decelerate south (ANDS). Oscillation in turbulence.</p>
+<h3 id="q9-when-to-lean-the-mixture-and-how">Q9 — When to lean the mixture and how</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>When</th>
+<th>Procedure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Taxi</td>
+<td>Always on the ground (prevents lead fouling of plugs)</td>
+<td>Lean aggressively; mixture rich before runup and takeoff, or per ATP SOP</td>
+</tr>
+<tr>
+<td>Takeoff at high density altitude</td>
+<td>Field density altitude above about 5,000 ft</td>
+<td>At full power before brake release, lean for maximum RPM (or POH procedure)</td>
+</tr>
+<tr>
+<td>Climb</td>
+<td>Above about 5,000 ft density altitude, full power</td>
+<td>Lean gradually for smooth operation and best RPM</td>
+</tr>
+<tr>
+<td>Cruise</td>
+<td>Any altitude at 75% power or less (Lycoming guidance)</td>
+<td><strong>With EGT:</strong> lean to peak, then enrich to the POH value (best power about 100–125 °F rich of peak; best economy near peak). <strong>Without EGT:</strong> lean until roughness or RPM drop, then enrich until smooth plus a little.</td>
+</tr>
+<tr>
+<td>Descent</td>
+<td>Throughout</td>
+<td>Enrich gradually as you descend to avoid an over-lean mixture</td>
+</tr>
+<tr>
+<td>Before landing</td>
+<td>Pre-landing checklist</td>
+<td>Full rich (or as set for a high-elevation field) so full power is available for a go-around</td>
+</tr>
+</tbody>
+</table></div>
+<p>Why: as altitude increases, air density drops but the carburetor still meters fuel by volume, so the mixture gets richer; leaning restores the correct fuel-air ratio for power, smoothness and fuel economy.</p>
+<h2 id="8-airspace-navigation-oxygen-transponder">8. Airspace, navigation, oxygen, transponder</h2>
+<p>These came up as quick-fire questions, often in the airplane; short exact answers keep the oral moving.</p>
+<h3 id="supplemental-oxygen-91211">Supplemental oxygen (91.211)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Cabin pressure altitude</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Above 12,500 up to 14,000 MSL</td>
+<td>Required crew must use oxygen for any portion over 30 minutes</td>
+</tr>
+<tr>
+<td>Above 14,000 MSL</td>
+<td>Required crew must use oxygen the entire time</td>
+</tr>
+<tr>
+<td>Above 15,000 MSL</td>
+<td>Every occupant must be <em>provided</em> oxygen</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Pressurized aircraft</strong> (fair game): above FL250, a 10-minute supply for each occupant for a descent; above FL350, one pilot at the controls wears a mask unless two pilots are at the controls with quick-donning masks (and one must wear it above FL410). A pressurized cabin keeps cabin altitude low by pumping in compressed air (engine bleed or turbo) and regulating outflow; know cabin altitude, differential pressure, and that rapid decompression gives a very short time of useful consciousness.</p>
+<h3 id="transponder-and-ads-b-out-91215-91225">Transponder and ADS-B Out (91.215, 91.225)</h3>
+<p>Required in Class A, B and C; within 30 NM of a Class B primary airport (the Mode C veil) from the surface to 10,000 MSL; above the ceiling and within the lateral limits of Class B or C up to 10,000 MSL; Class E at and above 10,000 MSL, excluding at and below 2,500 AGL. ADS-B Out adds Class E over the Gulf of Mexico at and above 3,000 MSL within 12 NM of the coast. <strong>On your route:</strong> over or in the CHA Class C, and in MQY's Class D because it sits under the BNA Class C. Transponder inspection every 24 calendar months (91.413).</p>
+<h3 id="airspace-weather-minimums-and-dimensions">Airspace weather minimums and dimensions</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Typical dimensions</th>
+<th>Entry requirement</th>
+<th>VFR weather minimums</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>18,000 MSL to FL600</td>
+<td>IFR clearance</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Surface to 10,000 MSL, upside-down wedding cake</td>
+<td>ATC clearance</td>
+<td>3 SM, clear of clouds</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Surface to 4,000 AGL; 5 NM core, 10 NM shelf from 1,200 AGL; 20 NM outer area</td>
+<td>Two-way comms established</td>
+<td>3 SM, 500 below, 1,000 above, 2,000 horizontal</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Surface to about 2,500 AGL, sized to the airport</td>
+<td>Two-way comms established</td>
+<td>3 SM, 500/1,000/2,000; 1,000 ft ceiling in the surface area</td>
+</tr>
+<tr>
+<td>E below 10,000 MSL</td>
+<td>Usually 700 or 1,200 AGL floor, or surface</td>
+<td>None</td>
+<td>3 SM, 500/1,000/2,000</td>
+</tr>
+<tr>
+<td>E at or above 10,000 MSL</td>
+<td></td>
+<td>None</td>
+<td>5 SM, 1,000 below, 1,000 above, 1 SM horizontal</td>
+</tr>
+<tr>
+<td>G at or below 1,200 AGL</td>
+<td></td>
+<td>None</td>
+<td>Day 1 SM, clear of clouds; night 3 SM, 500/1,000/2,000</td>
+</tr>
+<tr>
+<td>G above 1,200 AGL, below 10,000 MSL</td>
+<td></td>
+<td>None</td>
+<td>Day 1 SM, night 3 SM; 500/1,000/2,000</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="vor-service-volumes-aim-1-1-8">VOR service volumes (AIM 1-1-8)</h3>
+<p>One applicant was asked this. Verify against the current AIM table before the ride.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Altitude band (AGL)</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Terminal (T)</td>
+<td>1,000–12,000</td>
+<td>25 NM</td>
+</tr>
+<tr>
+<td>Low (L)</td>
+<td>1,000–18,000</td>
+<td>40 NM</td>
+</tr>
+<tr>
+<td>High (H)</td>
+<td>1,000–14,500 / 14,500–18,000 / 18,000–45,000 / 45,000–60,000</td>
+<td>40 / 100 / 130 / 100 NM</td>
+</tr>
+<tr>
+<td>VOR Low (VL)</td>
+<td>1,000–5,000 / 5,000–18,000</td>
+<td>40 / 70 NM</td>
+</tr>
+<tr>
+<td>VOR High (VH)</td>
+<td>1,000–5,000 / 5,000–14,500 / 14,500–18,000 / 18,000–45,000 / 45,000–60,000</td>
+<td>40 / 70 / 100 / 130 / 100 NM</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Identifying a VOR:</strong> Morse code identifier is the only positive ID; if your avionics decode and display the identifier, the equipment has listened to the Morse code for you. <strong>"You're lost, a VOR is nearby":</strong> find the frequency on the sectional, tune and ID it, center the CDI with a FROM indication to read your radial, or TO to read the bearing to fly, then fly that course. Other lost procedures: climb for better reception and visibility, communicate (ATC, flight service), confess and comply; use GPS or flight following.</p>
+<h3 id="light-gun-signals-91125">Light gun signals (91.125)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>On the ground</th>
+<th>In flight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Steady green</td>
+<td>Cleared for takeoff</td>
+<td>Cleared to land</td>
+</tr>
+<tr>
+<td>Flashing green</td>
+<td>Cleared to taxi</td>
+<td>Return for landing (expect a steady green)</td>
+</tr>
+<tr>
+<td>Steady red</td>
+<td>Stop</td>
+<td>Give way to other aircraft and continue circling</td>
+</tr>
+<tr>
+<td>Flashing red</td>
+<td>Taxi clear of the runway in use</td>
+<td>Airport unsafe, do not land</td>
+</tr>
+<tr>
+<td>Flashing white</td>
+<td>Return to starting point on the airport</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Alternating red and green</td>
+<td>Exercise extreme caution</td>
+<td>Exercise extreme caution</td>
+</tr>
+</tbody>
+</table></div>
+<p>Acknowledge in flight by rocking wings by day, or flashing landing or navigation lights at night.</p>
+<h2 id="9-human-factors-and-aeromedical">9. Human factors and aeromedical</h2>
+<p>Cole frames these as passenger problems on the scenario flight, so answer with what you'd do in the cockpit, not just definitions.</p>
+<p><strong>"You missed top of descent, you're descending steeply, and a passenger's ears hurt."</strong> That's an ear block: the eustachian tube can't equalize as outside pressure rises in descent.</p>
+<ol>
+<li>Reduce the descent rate right away (level off, or climb back a little if airspace allows); extend the approach with a wider pattern or a 360 if needed.</li>
+<li>Have them swallow, yawn, chew gum, or do a gentle Valsalva (pinch nose, close mouth, gently blow).</li>
+<li>Keep them awake during descent (you swallow less when asleep).</li>
+<li>Prevention: plan top of descent around 500 fpm; don't fly passengers (or yourself) with a cold or congestion.</li>
+</ol>
+<p><strong>Hypoxia types</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Cause</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hypoxic</td>
+<td>Not enough oxygen available (low partial pressure at altitude)</td>
+<td>Flying high without supplemental oxygen</td>
+</tr>
+<tr>
+<td>Hypemic</td>
+<td>Blood can't carry oxygen</td>
+<td>Carbon monoxide from a cracked exhaust or heater shroud, blood donation, anemia</td>
+</tr>
+<tr>
+<td>Stagnant</td>
+<td>Blood isn't circulating</td>
+<td>High G, cold extremities</td>
+</tr>
+<tr>
+<td>Histotoxic</td>
+<td>Cells can't use oxygen</td>
+<td>Alcohol, some drugs</td>
+</tr>
+</tbody>
+</table></div>
+<p>Symptoms: euphoria, headache, impaired judgment, tingling, cyanosis, tunnel vision, drowsiness. Recovery: supplemental oxygen, descend; for CO, cabin heat off, fresh air vents open, land. Know where the CO detector is in your Archer.</p>
+<p><strong>Other quick ones:</strong> hyperventilation (slow breathing, talk aloud); spatial disorientation (trust instruments, avoid head movement in turns); carbon monoxide; dehydration and heat stress; alcohol (91.17: 8 hours bottle to throttle, below 0.04 BAC, not under the influence); IMSAFE (Illness, Medication, Stress, Alcohol, Fatigue, Emotion/Eating); hazardous attitudes (anti-authority, impulsivity, invulnerability, macho, resignation) and their antidotes; PAVE risk assessment (Pilot, Aircraft, enVironment, External pressures). For the photo flight, external pressure is the big one: paying customers who want "one more pass, a little lower."</p>
+<h2 id="10-flight-portion">10. Flight portion</h2>
+<p>Expect about 1.8 hours: soft-field departure, nav log by pilotage and dead reckoning to two checkpoints, a simulated oil-pressure or oil-temperature problem that becomes a diversion and pattern work, then airwork, an engine fire emergency descent, eights on pylons, and a return. Cole is silent unless he's giving the next block; silence is good, and he'll tell you if you fail.</p>
+<h3 id="how-he-runs-it">How he runs it</h3>
+<ul>
+<li>He hands you tasks in blocks ("show me slow flight and three stalls") and lets you pick the order. Pick a sequence that flows (e.g., chandelle from the clean configuration you're already in).</li>
+<li>You preflight alone; he meets you at the airplane. Remove the chocks. Shout "CLEAR PROP" and look.</li>
+<li>Taxi at a brisk walking pace. Checklist in hand for every phase, including the full shutdown and securing checklist at his hangar.</li>
+<li>Navigation: GPS stays off the map at first. Know time and ETA to checkpoint one and report how far off you are. Pick a first checkpoint within about 10 NM so it's quick.</li>
+<li>Ask if you're unsure which landing he wants. Verbalize your aim point for short-field and power-off 180 landings before you start.</li>
+</ul>
+<h3 id="emergencies-talk-and-touch-dont-actually-shut-things-down">Emergencies (talk and touch, don't actually shut things down)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Your actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low oil pressure</td>
+<td>Recognize it's an emergency; POH says land as soon as possible and prepare for a power-off landing. Turn toward the nearest airport, get the weather, announce on CTAF or call ATC, plan for engine failure (high, close-in pattern).</td>
+</tr>
+<tr>
+<td>High oil temperature</td>
+<td>Check oil pressure too; enrich mixture, reduce power, increase airspeed for cooling; land at the nearest suitable airport.</td>
+</tr>
+<tr>
+<td>Engine failure after the above</td>
+<td>Pitch for best glide (about 76 KIAS), pick the field or runway you can make (switch to a straight-in if closer), troubleshoot only if time allows (fuel selector, boost pump, mixture, carb heat, mags), then the power-off landing checklist.</td>
+</tr>
+<tr>
+<td>Engine fire in flight</td>
+<td>Mixture idle cutoff, fuel selector off, boost pump off, cabin heat and defrost off, vents as POH says; emergency descent (bank about 30–45°, airspeed per POH up to Vno or as specified, clear the area); land as soon as possible.</td>
+</tr>
+<tr>
+<td>Smoking engine</td>
+<td>Treat as fire until proven otherwise.</td>
+</tr>
+<tr>
+<td>Alternator failure</td>
+<td>See section 7.</td>
+</tr>
+</tbody>
+</table></div>
+<p>When he says the problem is fixed, finish with a clean recovery and a checklist before the next task.</p>
+<h3 id="commercial-acs-tolerances-verify-against-faa-s-acs-7b-and-the-atp-archer-maneuvers-guide">Commercial ACS tolerances (verify against FAA-S-ACS-7B and the ATP Archer maneuvers guide)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Key standards</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Steep turns</td>
+<td>50° ±5° bank, altitude ±100 ft, airspeed ±10 kt, rollout heading ±10°; entry at or below Va; at least 1,500 AGL; clearing turns first. He watches the second turn.</td>
+</tr>
+<tr>
+<td>Chandelle</td>
+<td>Start at or below Va; about 30° bank; maximum performance 180° climbing turn, ending wings level just above stall speed, heading ±10°; at least 1,500 AGL.</td>
+</tr>
+<tr>
+<td>Eights on pylons</td>
+<td>Pivotal altitude ≈ groundspeed² ÷ 11.3 (knots). Fly straight first to establish groundspeed and wind; pylon held on the reference line with altitude changes.</td>
+</tr>
+<tr>
+<td>Slow flight</td>
+<td>Altitude ±50 ft, heading ±10°, airspeed +5/−0 kt, bank ±5°. Expect turns around 40° bank and climbs of about 200 ft. Let it stabilize.</td>
+</tr>
+<tr>
+<td>Power-off, power-on, accelerated stalls</td>
+<td>Recognize, reduce AOA promptly, coordinated recovery, minimal altitude loss; accelerated stall below Va with about 45° bank.</td>
+</tr>
+<tr>
+<td>Short-field landing</td>
+<td>Touch down at or within 100 ft beyond the point.</td>
+</tr>
+<tr>
+<td>Power-off 180° accuracy</td>
+<td>Touch down at or within 200 ft beyond the point, no power after abeam.</td>
+</tr>
+<tr>
+<td>Normal and soft-field landings</td>
+<td>Proper configuration and speeds; soft field: weight off the nosewheel, verbalize control inputs throughout.</td>
+</tr>
+<tr>
+<td>Go-around</td>
+<td>Power, attitude, configuration in sequence, verbalized.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="checklists-for-checkride-week">Checklists for checkride week</h3>
+<ul>
+<li class="task"><input type="checkbox"> Read your tail number's POH sections 2–4 and the electronic ignition supplement</li>
+<li class="task"><input type="checkbox"> Find the annual, 100-hour, ELT, transponder and AD entries in the actual logbooks</li>
+<li class="task"><input type="checkbox"> Plan and fly-through all four legs with fresh weather the day before</li>
+<li class="task"><input type="checkbox"> Rehearse the privileges explanation out loud in under three minutes</li>
+<li class="task"><input type="checkbox"> Memorize the engine failure, engine fire and low oil pressure flows</li>
+</ul>
+<h3 id="sources">Sources</h3>
+<ul>
+<li><a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-D/part-61/subpart-B/section-61.63" target="_blank" rel="noopener">14 CFR 61.63 (eCFR)</a></li>
+<li><a href="https://www.faa.gov/mqy" target="_blank" rel="noopener">FAA Smyrna Airport (MQY) pilot information</a></li>
+<li><a href="https://skyvector.com/airport/MQY/Smyrna-Airport" target="_blank" rel="noopener">SkyVector: KMQY</a> and <a href="https://skyvector.com/airport/3M7/Lafayette-Municipal-Airport" target="_blank" rel="noopener">3M7</a></li>
+<li>Cole Daum LOA (12/30/2025) and ATP Special Emphasis Supplement (student reports Jul 2024 – Apr 2026)</li>
+</ul>
+<p>Aircraft numbers (speeds, glide, engine, fuel) are typical PA-28-181 values written from memory; regulation summaries are paraphrased. Confirm both against your POH and the current FAR/AIM.</p>
+  </main>
+  <footer>Personal study notes, not an official FAA or ATP publication. Verify every figure against your aircraft's POH, the current FAR/AIM and the Commercial Pilot ACS. Last updated October 21, 2026.</footer>
+</div>
+</body>
+</html>
