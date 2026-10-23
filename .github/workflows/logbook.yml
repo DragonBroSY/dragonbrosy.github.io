@@ -7,6 +7,7 @@ on:
       - 'logbook.txt'
       - 'logbook-*.csv'
       - 'propel-baseline.json'
+      - 'propel-iacra.json'
   workflow_dispatch:
 
 jobs:
@@ -241,6 +242,19 @@ jobs:
                         'night_tofl', 'night_tofl_pic_sic', 'flights']
           ig = {row: {'air': 0.0, 'rotor': 0.0} for row in IACRA_ROWS}
           ffs = {'total': 0.0, 'dual': 0.0}
+
+          # ── propel-iacra.json — the hand-checked IACRA 8710-1 grid is the
+          # base (it holds instrument/XC/night/ATD time that no export
+          # carries). Only flights dated AFTER its as_of are added on top,
+          # from the exports, using the same per-role rules below. ──
+          with open('propel-iacra.json') as f:
+              iacra_anchor = json.load(f)
+          IACRA_AS_OF = datetime.strptime(iacra_anchor['as_of'], '%Y-%m-%d')
+          post = {}           # (field, gcat) -> hours/counts added since as_of
+          post_flights = []   # [date, aircraft, total] for the page note
+          def bump(field, gcat, v):
+              if v:
+                  post[(field, gcat)] = post.get((field, gcat), 0.0) + v
           # IACRA Class Hours table needs PIC/SIC/Instruct Received split by
           # SEL vs MEL specifically (finer than the air/rotor grid above).
           cls = {'sel': {'pic': 0.0, 'sic': 0.0, 'dual': 0.0}, 'mel': {'pic': 0.0, 'sic': 0.0, 'dual': 0.0}}
@@ -330,6 +344,31 @@ jobs:
                   ig['night_tofl_pic_sic'][gcat] += night_to + night_ldg
               ig['flights'][gcat] += 1
 
+              if dt is not None and dt > IACRA_AS_OF:
+                  pg = 'airplanes' if gcat == 'air' else 'rotorcraft'
+                  bump('total', pg, total_h)
+                  bump('instruction_received', pg, dual_h)
+                  bump('solo', pg, solo_h)
+                  bump('pic', pg, pic_h)
+                  bump('sic', pg, sic_h)
+                  if dual_h > 0: bump('xc_instruction_received', pg, xc_h)
+                  if solo_h > 0: bump('xc_solo', pg, xc_h)
+                  if pic_h > 0: bump('xc_pic', pg, xc_h)
+                  if sic_h > 0: bump('xc_sic', pg, xc_h)
+                  bump('instrument', pg, act_inst_h + sim_inst_h)
+                  if dual_h > 0: bump('night_instruction_received', pg, night_h)
+                  bump('night_takeoff_landing', pg, night_to + night_ldg)
+                  if pic_h > 0: bump('night_pic', pg, night_h)
+                  if sic_h > 0: bump('night_sic', pg, night_h)
+                  if pic_h > 0 or sic_h > 0: bump('night_takeoff_landing_pic_sic', pg, night_to + night_ldg)
+                  if cat in ('sel', 'mel'):
+                      bump(cat + '_pic', 'class', pic_h)
+                      bump(cat + '_sic', 'class', sic_h)
+                      bump(cat + '_dual', 'class', dual_h)
+                  elif cat == 'rotor':
+                      bump('helicopter', 'class', total_h)
+                  post_flights.append([dt.strftime('%Y-%m-%d'), ac_type, round(total_h, 1)])
+
               if cat in cls:
                   cls[cat]['pic'] += pic_h
                   cls[cat]['sic'] += sic_h
@@ -344,7 +383,7 @@ jobs:
                       last_flown_dt[0] = dt
                       last_flown_aircraft[0] = ac_type or None
 
-          def process_source(path, file_headers, file_rows, pic_aliases, track_bfr, dual_fallback=False, rated_pic_aliases=None, rated_from=None):
+          def process_source(path, file_headers, file_rows, pic_aliases, track_bfr, dual_fallback=False, rated_pic_aliases=None, rated_from=None, airplane_only=False):
               """Aggregate one already-loaded CSV/TSV into the running totals.
               Rows whose Category is 'Simulator' are excluded — Propel only
               counts real aircraft time. pic_aliases lets the current-program
@@ -400,13 +439,27 @@ jobs:
                       continue
                   ac_type = normalize_ac_type(row.get(c_ac, '').strip() if c_ac else '')
                   cat = classify_category(ac_type, row.get(c_cat, '') if c_cat else '')
+                  if airplane_only and cat == 'rotor':
+                      # The ATP LogTen export also carries the 2026-02-21
+                      # R22 flight, which logbook-r22-bfr.csv already counts.
+                      continue
                   if rated_from is not None and dt is not None and dt >= rated_from and c_pic_rated:
                       pic_h = parse_hours(row.get(c_pic_rated, ''))
+                      if cat in UNRATED_CLASSES:
+                          # Sole-manipulator PIC (61.51(e)(1)(i)) needs the
+                          # category AND class rating — no PIC in the PA-44
+                          # until the MEL rating is issued.
+                          pic_h = 0.0
                   else:
                       pic_h = parse_hours(row.get(c_pic, '') if c_pic else '')
                   dual_h = parse_hours(row.get(c_dual, '') if c_dual else '')
                   is_rated_row = rated_from is not None and dt is not None and dt >= rated_from
-                  if dual_fallback and dual_h == 0:
+                  # The practical test itself is flown with a DPE, not an
+                  # instructor — PIC only, never Instruction Received.
+                  title = (row.get(c_remk, '') if c_remk else '').strip().split('\n')
+                  title = title[1].lower() if len(title) > 1 else ''
+                  is_practical_test = bool(re.search(r'\bcheckride\b', title)) and not re.search(r'prep|mock|proficiency', title)
+                  if dual_fallback and dual_h == 0 and not is_practical_test:
                       if is_rated_row:
                           # Rated pilot receiving instruction: PIC and Dual
                           # Received are both loggable for the same flight
@@ -468,8 +521,10 @@ jobs:
           # loggable PIC even while receiving instruction (FAR 61.51(e)).
           # Dual falls back to Total-PIC when blank, either way.
           CHECKRIDE_DATE = datetime(2026, 7, 7)
+          # Airplane classes the pilot is NOT yet rated in (no PIC logged).
+          UNRATED_CLASSES = {'mel'}
           used = process_source(src, headers, rows, COL_SOLO, track_bfr=True, dual_fallback=True,
-                                 rated_pic_aliases=COL_PIC, rated_from=CHECKRIDE_DATE)
+                                 rated_pic_aliases=COL_PIC, rated_from=CHECKRIDE_DATE, airplane_only=True)
           source_summary.append({'file': src, 'rows': len(rows), 'used': used})
 
           # Every other logbook-*.csv is a full historical/other-school
@@ -541,6 +596,22 @@ jobs:
               })
           aircraft_flown.sort(key=lambda a: -a['total'])
 
+          def build_iacra():
+              COUNTS = {'night_takeoff_landing', 'night_takeoff_landing_pic_sic'}
+              def total(field, row, base):
+                  v = base + post.get((field, row), 0.0)
+                  return int(round(v)) if field in COUNTS else round(v, 1)
+              grid = {row: {f: total(f, row, v) for f, v in fields.items()}
+                      for row, fields in iacra_anchor['grid'].items()}
+              cls_out = {f: total(f, 'class', v) for f, v in iacra_anchor['class_totals'].items()}
+              return {
+                  'base_as_of': iacra_anchor['as_of'],
+                  'base_source': iacra_anchor.get('source', ''),
+                  'added_flights': post_flights,
+                  'grid': grid,
+                  'class_totals': cls_out,
+              }
+
           propel = {
               'generated': datetime.now(ZoneInfo('America/New_York')).strftime('%Y-%m-%d %H:%M:%S %Z'),
               'source_rows': sum(s['rows'] for s in source_summary),
@@ -592,36 +663,7 @@ jobs:
                   'pic_cross_country': round(agg['pic_xc'], 1),
                   'pic_night': round(agg['pic_night'], 1),
               },
-              'iacra': {
-                  '_readme': 'Aeronautical Experience Grid + Class Hours, matching IACRA\'s own layout for direct copy-in. Night Take-off/Landing counts show 0 for both columns right now — not because there were none, but because no takeoff/landing count has ever been entered in LogTen (checked Day T/O/Ldg too: also always blank), and the historical archives that supply all Rotorcraft time do not have those columns in their schema at all. Airplane counts will start populating once you fill them in going forward; Rotorcraft will always read 0 regardless. FTD/FFS/ATD device type is not distinguished in any source; all simulator time is shown under FFS.',
-                  'experience_grid': {
-                      'total':                        {'airplane': round(agg['sel'] + agg['mel'], 1), 'rotorcraft': round(agg['rotor'], 1), 'ffs': round(ffs['total'], 1)},
-                      'instruction_received':         {'airplane': round(ig['dual']['air'], 1), 'rotorcraft': round(ig['dual']['rotor'], 1), 'ffs': round(ffs['dual'], 1)},
-                      'solo':                         {'airplane': round(ig['solo']['air'], 1), 'rotorcraft': round(ig['solo']['rotor'], 1), 'ffs': 0},
-                      'pic':                          {'airplane': round(ig['pic']['air'], 1), 'rotorcraft': round(ig['pic']['rotor'], 1), 'ffs': 0},
-                      'sic':                          {'airplane': round(ig['sic']['air'], 1), 'rotorcraft': round(ig['sic']['rotor'], 1), 'ffs': 0},
-                      'xc_instruction_received':      {'airplane': round(ig['xc_dual']['air'], 1), 'rotorcraft': round(ig['xc_dual']['rotor'], 1), 'ffs': 0},
-                      'xc_solo':                      {'airplane': round(ig['xc_solo']['air'], 1), 'rotorcraft': round(ig['xc_solo']['rotor'], 1), 'ffs': 0},
-                      'xc_pic':                       {'airplane': round(ig['xc_pic']['air'], 1), 'rotorcraft': round(ig['xc_pic']['rotor'], 1), 'ffs': 0},
-                      'xc_sic':                       {'airplane': round(ig['xc_sic']['air'], 1), 'rotorcraft': round(ig['xc_sic']['rotor'], 1), 'ffs': 0},
-                      'instrument':                   {'airplane': round(agg['act_inst_air'] + agg['sim_inst_air'], 1), 'rotorcraft': round(agg['act_inst_rotor'] + agg['sim_inst_rotor'], 1), 'ffs': 0},
-                      'night_instruction_received':   {'airplane': round(ig['night_dual']['air'], 1), 'rotorcraft': round(ig['night_dual']['rotor'], 1), 'ffs': 0},
-                      'night_takeoff_landing':        {'airplane': int(ig['night_tofl']['air']), 'rotorcraft': int(ig['night_tofl']['rotor']), 'ffs': 0},
-                      'night_pic':                    {'airplane': round(ig['night_pic']['air'], 1), 'rotorcraft': round(ig['night_pic']['rotor'], 1), 'ffs': 0},
-                      'night_takeoff_landing_pic_sic':{'airplane': int(ig['night_tofl_pic_sic']['air']), 'rotorcraft': int(ig['night_tofl_pic_sic']['rotor']), 'ffs': 0},
-                      'number_of_flights':            {'airplane': int(ig['flights']['air']), 'rotorcraft': int(ig['flights']['rotor']), 'ffs': 0},
-                  },
-                  'class_hours': {
-                      'airplane_sel_pic': round(cls['sel']['pic'], 1),
-                      'airplane_sel_sic': round(cls['sel']['sic'], 1),
-                      'airplane_sel_dual': round(cls['sel']['dual'], 1),
-                      'airplane_mel_pic': round(cls['mel']['pic'], 1),
-                      'airplane_mel_sic': round(cls['mel']['sic'], 1),
-                      'airplane_mel_dual': round(cls['mel']['dual'], 1),
-                      'rotorcraft_hel': round(agg['rotor'], 1),
-                      'ffs_total': round(ffs['total'], 1),
-                  },
-              },
+              'iacra': build_iacra(),
           }
 
           with open('propel.json', 'w') as f:

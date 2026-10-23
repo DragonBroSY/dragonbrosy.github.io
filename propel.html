@@ -62,6 +62,8 @@
     .entry-table th { text-align: left; padding: 0.5rem 0.9rem; font-size: 0.58rem; letter-spacing: 0.09em; text-transform: uppercase; color: #6a8aaa; border-bottom: 1px solid #dde5ef; background: #f5f7fa; white-space: nowrap; }
     .entry-table td { padding: 0.55rem 0.9rem; color: #4a6a8a; border-bottom: 1px solid #eef2f7; white-space: nowrap; }
     .entry-table tr:last-child td { border-bottom: none; }
+    .iacra-grid th { white-space: normal; min-width: 4.2rem; vertical-align: bottom; }
+    .iacra-grid td.num small { display: block; font-size: 0.6rem; color: #8aa0b8; font-weight: 400; }
     .entry-table tr:hover td { background: #f9fafc; }
     .entry-table .num { text-align: right; font-variant-numeric: tabular-nums; }
     .entry-table td.h-type { color: #1a3a6b; font-weight: 600; }
@@ -163,10 +165,10 @@
 
     <div class="slabel">FAA IACRA Application</div>
     <div class="panel">
-      <div class="panel-head">Aeronautical Experience Grid <span class="accent">Matches IACRA's own field layout</span> <span class="accent" id="asOfIacraGrid"></span></div>
+      <div class="panel-head">III. Record of Pilot Time <span class="accent">Same layout as the 8710-1</span> <span class="accent" id="asOfIacraGrid"></span></div>
       <div style="overflow-x:auto;">
-        <table class="entry-table" id="iacraGridTable">
-          <thead><tr><th></th><th class="num">Airplanes</th><th class="num">Rotorcraft</th><th class="num">FFS</th></tr></thead>
+        <table class="entry-table iacra-grid" id="iacraGridTable">
+          <thead><tr><th></th><th class="num">Total</th><th class="num">Instruction Received</th><th class="num">Solo</th><th class="num">PIC / SIC</th><th class="num">XC Instruction Received</th><th class="num">XC Solo</th><th class="num">XC PIC / SIC</th><th class="num">Instrument</th><th class="num">Night Instruction Received</th><th class="num">Night T/O / Ldg</th><th class="num">Night PIC / SIC</th><th class="num">Night T/O / Ldg PIC / SIC</th></tr></thead>
           <tbody id="iacraGridBody"></tbody>
         </table>
       </div>
@@ -174,7 +176,7 @@
     </div>
 
     <div class="panel">
-      <div class="panel-head">Class Hours <span class="accent" id="asOfIacraClass"></span></div>
+      <div class="panel-head">Class Totals <span class="accent" id="asOfIacraClass"></span></div>
       <table class="field-table" id="iacraClassTable"></table>
     </div>
 
@@ -329,43 +331,46 @@
         }).join('');
 
         var ic = p.iacra;
-        if (ic) {
-          function gridRow(label, r, isCount) {
-            var fmt = isCount ? function(v){ return String(v); } : hrs;
-            return '<tr><td class="h-type">' + label + '</td>' +
-              '<td class="num">' + fmt(r.airplane) + '</td>' +
-              '<td class="num">' + fmt(r.rotorcraft) + '</td>' +
-              '<td class="num">' + fmt(r.ffs) + '</td></tr>';
+        if (ic && ic.grid) {
+          function cell(v, isCount) {
+            return '<td class="num">' + (v ? (isCount ? String(v) : hrs(v)) : '') + '</td>';
           }
-          var eg = ic.experience_grid;
+          function picSic(pic, sic) {
+            if (!pic && !sic) return '<td class="num"></td>';
+            return '<td class="num">' + (pic ? 'PIC ' + hrs(pic) : '') + (sic ? '<small>SIC ' + hrs(sic) + '</small>' : '') + '</td>';
+          }
+          function gridRow(label, r) {
+            return '<tr><td class="h-type">' + label + '</td>' +
+              cell(r.total) + cell(r.instruction_received) + cell(r.solo) +
+              picSic(r.pic, r.sic) +
+              cell(r.xc_instruction_received) + cell(r.xc_solo) +
+              picSic(r.xc_pic, r.xc_sic) +
+              cell(r.instrument) +
+              cell(r.night_instruction_received) + cell(r.night_takeoff_landing, true) +
+              picSic(r.night_pic, r.night_sic) +
+              cell(r.night_takeoff_landing_pic_sic, true) + '</tr>';
+          }
+          var g = ic.grid;
           document.getElementById('iacraGridBody').innerHTML =
-            gridRow('Total', eg.total) +
-            gridRow('Instruction Received', eg.instruction_received) +
-            gridRow('Solo', eg.solo) +
-            gridRow('PIC', eg.pic) +
-            gridRow('SIC', eg.sic) +
-            gridRow('Cross Country Instruction Received', eg.xc_instruction_received) +
-            gridRow('Cross Country Solo', eg.xc_solo) +
-            gridRow('Cross Country PIC', eg.xc_pic) +
-            gridRow('Cross Country SIC', eg.xc_sic) +
-            gridRow('Instrument', eg.instrument) +
-            gridRow('Night Instruction Received', eg.night_instruction_received) +
-            gridRow('Night Take-off / Landing', eg.night_takeoff_landing, true) +
-            gridRow('Night PIC', eg.night_pic) +
-            gridRow('Night Take-off / Landing PIC/SIC', eg.night_takeoff_landing_pic_sic, true) +
-            gridRow('Number of Flights', eg.number_of_flights, true);
-          document.getElementById('iacraNote').textContent = ic._readme || '';
+            gridRow('Airplanes', g.airplanes) + gridRow('Rotorcraft', g.rotorcraft) + gridRow('ATD', g.atd);
+          var added = ic.added_flights || [];
+          var addedHrs = added.reduce(function(s, f){ return s + f[2]; }, 0);
+          document.getElementById('iacraNote').textContent =
+            'Base: ' + ic.base_source + ', covering flights through ' + ic.base_as_of + '. ' +
+            (added.length
+              ? 'Added since then from the LogTen export: ' + added.length + ' flight' + (added.length === 1 ? '' : 's') +
+                ' (' + addedHrs.toFixed(1) + ' hrs, ' + added[0][0] + ' to ' + added[added.length - 1][0] + '). Instrument, XC and night on those flights only count if they are filled in LogTen.'
+              : 'No flights logged since then.') +
+            ' To re-base after a new hand-checked 8710-1, update propel-iacra.json.';
 
-          var ch = ic.class_hours;
+          var ct = ic.class_totals;
           document.getElementById('iacraClassTable').innerHTML =
-            row('Airplane SEL &mdash; PIC', hrs(ch.airplane_sel_pic)) +
-            row('Airplane SEL &mdash; SIC', hrs(ch.airplane_sel_sic)) +
-            row('Airplane SEL &mdash; Instruct Rcvd', hrs(ch.airplane_sel_dual)) +
-            row('Airplane MEL &mdash; PIC', hrs(ch.airplane_mel_pic)) +
-            row('Airplane MEL &mdash; SIC', hrs(ch.airplane_mel_sic)) +
-            row('Airplane MEL &mdash; Instruct Rcvd', hrs(ch.airplane_mel_dual)) +
-            row('Rotorcraft &mdash; HEL', hrs(ch.rotorcraft_hel)) +
-            row('FFS &mdash; Total', hrs(ch.ffs_total));
+            row('Airplane SEL &mdash; PIC', hrs(ct.sel_pic)) +
+            row('Airplane SEL &mdash; Instruct Rcvd', hrs(ct.sel_dual)) +
+            row('Airplane MEL &mdash; PIC', hrs(ct.mel_pic)) +
+            row('Airplane MEL &mdash; Instruct Rcvd', hrs(ct.mel_dual)) +
+            row('Rotorcraft &mdash; Helicopter', hrs(ct.helicopter)) +
+            row('ATD &mdash; SE', hrs(ct.atd_se));
         }
 
         await renderMinimums(p.minimums_raw);

@@ -1,0 +1,32 @@
+{
+  "_readme": "Base for the Propel tab's IACRA section: hand-checked values from IACRA application 5736074 (Commercial ASEL added rating, generated 2026-10-21). It covers every flight through as_of. The logbook workflow adds only flights dated after as_of, from the exports. When a new hand-checked 8710-1 is done, replace these numbers and move as_of forward.",
+  "source": "IACRA application 5736074, hand-checked",
+  "as_of": "2026-10-13",
+  "grid": {
+    "airplanes": {
+      "total": 298.7, "instruction_received": 273.8, "solo": 10.0,
+      "pic": 107.2, "sic": 0.0,
+      "xc_instruction_received": 103.9, "xc_solo": 5.8, "xc_pic": 85.8, "xc_sic": 0.0,
+      "instrument": 44.7,
+      "night_instruction_received": 21.1, "night_takeoff_landing": 24,
+      "night_pic": 11.8, "night_sic": 0.0, "night_takeoff_landing_pic_sic": 14
+    },
+    "rotorcraft": {
+      "total": 306.4, "instruction_received": 3.5, "solo": 0.0,
+      "pic": 2.9, "sic": 301.3,
+      "xc_instruction_received": 0.0, "xc_solo": 0.0, "xc_pic": 1.6, "xc_sic": 296.0,
+      "instrument": 32.4,
+      "night_instruction_received": 0.0, "night_takeoff_landing": 0,
+      "night_pic": 1.6, "night_sic": 0.0, "night_takeoff_landing_pic_sic": 0
+    },
+    "atd": {
+      "total": 40.3, "instruction_received": 40.3, "instrument": 26.3
+    }
+  },
+  "class_totals": {
+    "sel_pic": 107.2, "sel_sic": 0.0, "sel_dual": 273.8,
+    "mel_pic": 0.0, "mel_sic": 0.0, "mel_dual": 29.8,
+    "helicopter": 306.4,
+    "atd_se": 40.3
+  }
+}
