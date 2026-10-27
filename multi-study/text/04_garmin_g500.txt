@@ -1,0 +1,117 @@
+Aircraft Systems, Part Three: The Garmin G500.
+
+Garmin G500
+2012 and 2013 model Piper Seminoles are equipped with the Garmin G500 electronic flight deck.
+A photo shows the G500 as one wide bezel holding two screens side by side. The left screen, labeled Primary Flight Display, or PFD, shows the attitude indicator with airspeed and altitude tapes and an HSI below. The right screen, labeled Multi-Function Display, or MFD, shows a round traffic display.
+
+G500 Differences
+• The G500 powers on and off with the battery master, not the avionics master.
+• There are no vacuum driven instruments, vacuum pumps, or suction gauge. Instruments are electrically powered.
+• The standby attitude indicator must be erected on power-up by pulling the cage knob.
+• Test the standby attitude battery as directed by the After Start Checklist by pressing and holding the "STBY PWR" button until amber LED begins flashing. A continuous green light beneath "TEST" during the full sequence indicates that the battery is good. A red light illuminated anytime during the test indicates that the battery is not charged and may require replacement.
+• The standby attitude indicator warning light will blink for approximately 1 minute when the battery master switch is turned off. DO NOT press the STBY PWR button as it causes continuous operation of the gyro on its emergency battery. Exit the airplane with either a blinking LED or red flag.
+• G500 equipped Seminoles do not have a conventional turn coordinator. A slip-skid indicator is located at the top of the attitude indicator. Step on the "brick" instead of the "ball". Use the reference lines and the magenta line that appears above the heading indicator to identify a standard rate or half-standard rate turn.
+• Outside air temperature (OAT) displays on PFD under the airspeed tape. There is no OAT probe or analog gauge between the windows.
+• Ground track can be identified on the heading indicator by a small magenta diamond near the lubber line (only visible when ground track is different than heading).
+• The digital altitude and airspeed readouts are very sensitive and can cause some pilots to continuously make corrections for insignificant deviations. Pilot action - Don't overcorrect for deviations of a few feet. Crosscheck digital and analog standby instruments to avoid the tendency to overcorrect.
+Refer to the complete G500 Pilot's Guide located in ForeFlight Documents and in the Student Extranet Library.
+
+G500 Components
+The G500 is comprised of 6 main components:
+• Primary Flight Display (PFD, left) and Multi-Function Display (MFD, right)
+• Attitude Heading Reference System (AHRS)
+• Air Data Computer (ADC)
+• Magnetometer
+• Temperature Probe
+• Dual Garmin GNS 430 GPS
+The PFD (left) shows primary flight information in place of traditional pitot-static and gyroscopic instruments and also provides an HSI for navigation. ATP procedures call for configuring the MFD (right) to display traffic information service (TIS).
+The Attitude Heading Reference System (AHRS) contains tilt sensors, accelerometers, and rate sensors to provide attitude and heading information on the PFD.
+The Air Data Computer (ADC) compiles information from the pitot-static system and an outside air temperature sensor to provide pressure altitude, airspeed, vertical speed, and outside air temperature on the PFD.
+The magnetometer senses the earth's magnetic field and sends data to the AHRS for processing to determine magnetic heading.
+The temperature probe provides outside air temperature (OAT) data to the ADC.
+The dual Garmin GNS 430 GPSs provide input to the AHRS and PFD/MFD.
+CAUTION: The GNS 430 and G500 units each have their own databases. Navigation, terrain and map information on the G500 Multi-Function Display (MFD) may not be current and is not to be used for navigation. Use the G500 MFD for traffic information.
+
+G500 PFD Functions
+These buttons toggle the function of the PFD knob.
+A column of five buttons sits above the PFD knob, each labeled with what it lets the knob do:
+HDG — Set heading bug (push PFD knob to set heading bug to current heading.)
+CRS — Set course (when in VLOC mode)
+ALT — Set altitude bug and alerter
+V/S — Set V/S Bug (do not use)
+BARO — Altimeter setting
+CDI needle indicates NAV source: green for VLOC / magenta for GPS.
+
+G500 Standby Instruments
+Standby Attitude Indicator
+An electrical standby attitude indicator is powered and charged by the electrical system during normal operations. During an electrical failure, the standby attitude indicator will continue operating from its internal dedicated battery for approximately 60 seconds while and an amber blinking LED prompts you to press the "STBY PWR" button, which continues operation until the internal battery is depleted. A fully charged standby attitude indicator battery should provide up to 1 hour of normal standby attitude indicator operation; however, a situation requiring use of the standby attitude indicator is an emergency. Exit IMC and land as soon as possible.
+If the pilot fails to activate the standby battery within 60 seconds, the STBY PWR button can still be pressed to activate the standby battery. However, the gyro may not be oriented to the airplane depending on the time elapsed prior to pressing the STBY PWR button. Press the STBY PWR button while the amber LED is blinking for best results.
+
+Standby Attitude Indicator Battery Check
+Prior to flight, the electric standby indicator battery must be tested. In order to accomplish the test, aircraft electrical power must be on (Battery Master ON) and the standby attitude indicator gyro must be fully operational with the red gyro flag out of view. Test the standby battery as called for by the After Start Checklist.
+• Press and hold the "STBY PWR" button for approximately four seconds. This puts the gyro in a one-minute battery test mode. The amber LED next to STBY PWR will flash during the test sequence.
+• A continuous green light illuminated beneath "TEST" during the full sequence indicates that the standby battery is good.
+• A red light illuminated anytime during the test indicates that the battery is not charged and may require replacement. Contact maintenance.
+
+Standby Attitude Indicator Shutdown
+During a normal shutdown following the Shutdown Terminate Checklist, do not press the "STBY PWR" button. Doing so activates emergency operation and depletes the internal standby battery. Turn the battery master switch OFF when prompted by the checklist. Allow the amber LED to blink for approximately 60 seconds, followed by the appearance of the red gyro warning flag, which indicates the unit is powered down.
+
+Standby Altimeter & Airspeed Indicator
+The pitot-static system provides information to the standby altimeter and airspeed indicator.
+
+G500 Failures & Partial-Panel Approaches
+For partial panel training and checkrides, the two most common training scenarios are simulated AHRS failure and PFD failures.
+The table lists each failure condition, how it is simulated, and which instrument approaches are available.
+AHRS Failure — simulated by covering the Attitude Indicator (ADI) — all precision and non-precision approaches available.
+PFD Failure — simulated by dimming the PFD/MFD screens — only GPS approach available.
+Electrical Failure — no simulated failure available — no approaches available.
+ADC Failure — no simulated failure available — all precision and non-precision approaches available.
+Circuit breaker-simulated failures are prohibited in ATP aircraft. Piper and Garmin advise against pulling circuit breakers as a means of simulating failures on the Garmin G500 system. Pulling circuit breakers–or using them as switches–has the potential to weaken the circuit breaker to a point at which it may not perform its intended function. Also reference Advisory Circulars 120-80, 23-17B, and 43.13-1B.
+
+Attitude and Heading Reference System (AHRS) Failure
+Indications:
+1. The sky/ground presentation is removed.
+2. A red X appears across the Attitude Direction Indicator (ADI).
+3. Yellow "ATTITUDE FAIL" and "HDG" alert messages appear on the PFD.
+4. A "TRK" message appears to the right of the ground track at the top of the compass rose.
+5. Rate-of-turn information is unavailable.
+6. "HDG LOST", "HDG FAULT", and "TRK TRAFFIC" alert messages appear on the MFD.
+A screenshot labeled AHRS Failure shows the PFD with the blue-and-brown attitude display gone, replaced by a black background with a large red X and the words ATTITUDE FAIL. The airspeed and altitude tapes are still displayed on either side, and the heading readout at the bottom shows a TRK tag.
+The PFD continues displaying airspeed, altitude, vertical speed, compass rose and ground track. Ground track and compass rose indications are supplied by GPS, indicated by a "TRK" message. Any precision or non-precision approach is available using the HSI on the PFD.
+Pilot Action
+1. Use standby attitude indicator.
+2. Continue using HSI on PFD. Verify track against magnetic compass heading.
+3. Precision (ILS) and non-precision (GPS, Localizer, and VOR) approaches can be accomplished.
+
+PFD Failure
+Indications
+1. PFD Screen is dark.
+Pilot Action
+1. Refer to the standby instruments.
+2. Use the GPS CDI page for navigation and approaches. CLR - Press and hold for 3 seconds to return to default CDI page.
+3. Only GPS non-precision approaches can be accomplished.
+During an MFD failure, with the PFD functioning normally, all approaches are available for use.
+
+Electrical Failure
+Indication
+1. The G500 and GPS systems will be inoperative / dark.
+2. The "STBY PWR" button on the standby attitude indicator will begin blinking.
+Pilot Action
+1. Use standby attitude indicator. Press the "STBY PWR" button right of the blinking LED to continue operating using its internal battery.
+2. Use standby airspeed, altimeter and compass.
+3. Declare an emergency and exit IMC as soon as practicable. The manufacturer does not specify the endurance time of the integral emergency battery.
+
+Air Data Computer (ADC) Failure
+Indications
+1. Loss of data accompanied by a red X and yellow alert messages occurs over:
+• Airspeed
+• Altitude
+• Vertical speed
+• True airspeed (TAS)
+• Outside air temperature (OAT)
+2. Wind calculations are unavailable
+Attitude and heading references will function normally on the PFD.
+A screenshot labeled ADC Failure shows the PFD with the attitude display and HSI still working normally, while red X's cover the airspeed tape on the left and the altitude and vertical speed tapes on the right.
+Pilot Action
+1. Use standby airspeed indicator and altimeter.
+There is no backup for the VSI, but known pitch attitudes using the attitude indicator, power settings, and airspeeds produce consistent rates.

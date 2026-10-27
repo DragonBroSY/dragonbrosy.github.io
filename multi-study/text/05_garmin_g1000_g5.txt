@@ -1,0 +1,108 @@
+Aircraft Systems, Part Four: The Garmin G1000 and Garmin G5.
+
+Garmin G1000
+Some Piper Seminoles are equipped with the Garmin G1000 electronic flight deck.
+
+G1000 Components
+The G1000 is comprised of several main components, called Line Replaceable Units (LRUs):
+• Primary Flight Display (PFD)
+• Multi Function Display (MFD)
+• Integrated Avionics Units (2)
+• Attitude and Heading Reference System (AHRS)
+• Air Data Computer (ADC)
+• Engine/Airframe Unit
+• Magnetometer
+• Audio Panel
+• Transponder
+The PFD (left screen) shows primary flight information in place of traditional pitot-static and gyroscopic instruments, and also provides an HSI for navigation.
+The MFD (right screen) provides a GPS-enabled moving map with traffic and weather information. It can also be used to display waypoint/airport information, flight plans, instrument procedures, trip planning utilities, and system setup/configuration information.
+The Integrated Avionics Units each contain a WAAS-enabled GPS receiver, a VHF nav/comm radio, and a flight director. They also serve as communications hubs to relay information from the other LRUs to the PFD and MFD. For redundancy, one IAU is connected to each display, and they do not communicate with each other directly.
+The Attitude and Heading Reference System uses accelerometers and rate sensors, along with magnetic field readings from the magnetometer and GPS information from the IAUs, to provide aircraft attitude and heading information to the flight displays and IAUs.
+The Air Data Computer processes data from the pitot/static system as well as the OAT probe to provide pressure altitude, airspeed, vertical speed, and air temperature data to the system.
+The Engine/Airframe Unit receives and processes signals from the engine and airframe sensors (engine RPM and temperatures, fuel quantity, gear position, etc.).
+The magnetometer measures the local magnetic field and sends data to the AHRS to determine the aircraft's magnetic heading.
+The audio panel is installed between the two display screens and integrates controls for the nav/com audio, intercom system, and marker beacon receiver. It also controls manual display reversionary mode (which can shift the primary flight instruments to the MFD).
+The transponder is a Mode S device, controlled via the PFD, that also provides ADS-B In/Out capability.
+
+G1000 Flight Instruments
+A screenshot of the Primary Flight Display in its default layout has seven numbered callouts. Number 1 is the airspeed indicator, the vertical tape on the left side of the attitude display. Number 2 is the turn rate indicator, at the top of the compass rose. Number 3 is the horizontal situation indicator, or HSI, the compass rose in the lower center. Number 4 is the vertical speed indicator, the narrow scale to the right of the altitude tape. Number 5 is the altimeter, the vertical tape on the right. Number 6 is the slip/skid indicator, just under the bank pointer at the top of the attitude indicator. Number 7 is the attitude indicator itself, the blue sky and brown ground filling the upper part of the screen.
+① Airspeed Indicator
+② Turn Rate Indicator
+③ Horizontal Situation Indicator (HSI)
+④ Vertical Speed Indicator (VSI)
+⑤ Altimeter
+⑥ Slip/Skid Indicator
+⑦ Attitude Indicator
+The G1000 PFD displays the same flight information as the conventional "six-pack", but pilots should be aware of the following considerations.
+Airspeed and altitude information are displayed with moving tapes and a digital readout of the current airspeed and altitude to the nearest knot / 20 feet, respectively. This precision leads some pilots to overcontrol the aircraft, continuously making corrections for insignificant deviations. Be sure not to overcorrect for deviations of a few feet or knots.
+The information traditionally displayed on the turn coordinator is split between two locations on the screen. The inclinometer ("ball") is replaced with a white "brick" under the pointer at the top of the attitude indicator. "Step on the brick" to center it and maintain coordinated flight. The rate of turn indication is provided by a magenta trend vector at the top of the HSI. Tick marks are provided for half-standard and standard rate turns.
+On the HSI, a small magenta diamond indicates the aircraft's current ground track. (This diamond may not be visible if crosswinds are minimal and the track is nearly equal to the heading.) Also, pilots should note the color of the CDI needle to determine the current navigation source. Magenta needles indicate GPS, while green needles indicate VOR or LOC.
+
+G1000 Controls
+The G1000 has duplicate sets of controls on the PFD and MFD bezels. Using the controls towards the center of the aircraft (on the right side of the PFD and the left side of the MFD) helps to ensure that both student and instructor can see each other's inputs.
+A drawing of one display bezel, labeled PFD/MFD Controls, numbers the controls around the dark screen. Down the left edge are number 1, the NAV radio controls at the top; number 2, the HDG knob; number 3, the block of AFCS keys; and number 4, the ALT knob at the bottom. Down the right edge are number 5, the COM radio controls at the top; number 6, the CRS/BARO knobs; number 7, the RANGE joystick; and number 8, the FMS keys and knob at the bottom. Number 9 is the row of softkeys along the bottom edge.
+Left Side - Top to Bottom
+① NAV Radio Controls: Use the NAV knob, along with the frequency transfer key, to tune NAV receiver frequencies. Turn the VOL knob to control the volume, and press the knob to toggle the Morse code identifier on/off.
+② HDG Knob: Sets the heading bug on the HSI.
+③ AFCS Keys: Used to program the Garmin GFC 700 Automatic Flight Control System. (Not installed on all aircraft.)
+④ ALT Knob: Sets the altitude bug on the altimeter.
+Right Side - Top to Bottom
+⑤ COM Radio Controls: Use the COM knob, along with the frequency transfer key, to tune COM receiver frequencies. Turn the VOL knob to control the volume, or press to turn the automatic squelch on or off.
+⑥ CRS/BARO Knobs: Turn the outer, large knob to set the barometric pressure setting for the altimeter. Turn the small, inner knob to select a course on the HSI when in VOR or OBS mode.
+⑦ RANGE Joystick: Turn to adjust map range. Press to activate the map pointer.
+⑧ FMS Keys/Knob: Use these to program flight plans, enter waypoints, select instrument procedures, etc.
+Bottom Edge
+⑨ Softkeys: There are 12 softkeys along the bottom edge of each display with functions that vary depending on context.
+Review the G1000 Pilot's Guide for your airplane for more information on the G1000's features. These are available in the ATP Library and in ForeFlight Documents.
+
+Standby Instruments
+G1000-equipped Piper Seminoles are also equipped with a standby flight instrument (either an Aspen Evolution Backup Display or a Garmin G5) mounted on the left side of the instrument panel. Both Garmin and Aspen units are fully digital, independent flight instrument displays providing attitude, barometric altitude, airspeed, heading, vertical speed, slip/skid, and turn rate indications. Should the G1000 fail (say, due to a failed display screen or AHRS), the pilot can control the aircraft using the standby instrument. If this occurs, exit and avoid IFR conditions as soon as practical.
+G1000-equipped Seminoles do not have traditional magnetic compasses. Instead, the standby instruments provide a backup source of magnetic heading information. The Aspen EBD contains an internal magnetometer, while the Garmin G5 is accompanied by an external GMU 11 magnetometer unit.
+The standby instrument can draw electrical power from a few different sources, to ensure the pilot has uninterrupted access to critical flight information:
+• In normal operation, the standby instrument is powered by the engine-driven alternator via the Essential Bus.
+• If the alternator fails, the primary battery will continue to power the standby instrument via the Essential Bus.
+• Once the primary battery is depleted (or if the primary electrical system otherwise fails), the Seminole's emergency battery will power the standby instrument via the Emergency Bus for approximately 30 minutes.
+• If all electrical power to the standby instrument is removed, a backup internal battery in the unit will continue to power it for at least 30 minutes in the case of the Aspen EBD, or up to 4 hours in the case of the Garmin G5.
+Prior to flight, the pilot must check the power level of the emergency battery using the procedures in the ATP Seminole Checklists. With the alternator and battery master off, move the emergency battery switch to the ARM position. The PFD and standby instrument should both power on with all instrument indications functional, and the E VOLTS reading on the PFD must be at least 23.3 volts. If E VOLTS is low prior to engine start, check again following run up.
+Activation of the emergency battery following electrical failure indicates an emergency situation. Land as soon as possible.
+The standby instrument will not automatically switch to its internal battery if the aircraft is on the ground (inferred from low airspeed). This ensures the unit does not remain on after aircraft shutdown. However, if the Aspen EBD does not automatically turn off during aircraft shutdown, press and hold the red REV button on the upper right for up to 20 seconds until the "Shutdown in progress" message appears. The Garmin G5 can be turned off by pressing and holding the power button for five seconds.
+
+G1000 Failures & Partial-Panel Approaches
+Training Considerations
+For partial-panel training and checkrides, the two most common training scenarios are PFD failures and ADAHRS failures.
+• PFD Failure: Simulate by dimming the PFD screen. The student should respond by pushing the DISPLAY BACKUP button to activate reversionary mode and move the flight instrument displays to the MFD. All instrument procedures remain available. Use the Inset Map for situational awareness.
+• ADC or AHRS Failure: The ADC and AHRS have various failure modes that can cause one or more instrument indications to become unavailable. To simulate a worst-case scenario in which all of the G1000's flight instruments are unusable, dim the PFD screen and do not activate reversionary mode. Then, fly the airplane using the standby instruments. The MFD should remain on the moving map screen for situational awareness. GPS approach procedures remain available. Set the MFD fields to TRK, DTK, XTK, and DIS to maintain situational awareness of your position relative to the intended track (in lieu of the CDI).
+Other failure modes in which some (but not all) instruments are unavailable can be simulated using paper or foam cutouts that hang from the COM and NAV knobs and cover up particular areas of the PFD screen. ATP does not provide these cutouts.
+The simulation of failures by pulling circuit breakers is prohibited in ATP aircraft. Piper, Garmin, and the FAA all advise against pulling circuit breakers as a means of simulating failures on the G1000 system. Pulling circuit breakers, or using them as switches, has the potential to weaken the circuit breaker to a point at which it may not perform its intended function.
+
+LRU Failures
+If an LRU or an LRU function fails, a red or amber X is displayed over the window(s) corresponding to the failed data. If this occurs, follow the appropriate emergency checklist. Generally, this involves checking the circuit breaker for the affected LRU, then (if the problem is not fixed by resetting the breaker) using the standby instruments to exit IFR conditions and land as soon as practical.
+Two screenshots illustrate this. The one labeled AHRS Failure shows the attitude area blacked out with a large red X, the words ATTITUDE FAIL, and an amber HDG flag where the heading should be. The one labeled ADC Failure shows red X's running down the airspeed tape, the altitude tape, and the vertical speed scale, each with the words AIRSPEED FAIL, ALTITUDE FAIL, and VERT SPEED FAIL written vertically inside them.
+
+AHRS Modes
+The AHRS uses GPS, magnetometer, and air data to assist in attitude/heading calculations, in addition to the data from its internal sensors. Loss of this external data can affect the availability of attitude and heading information, even if the AHRS itself is functional. Either GPS or air data must be available for the AHRS to provide attitude information. Additionally, loss of magnetometer data will result in invalid heading information.
+If the AHRS cannot provide valid heading information, the course pointer on the HSI will point straight up, effectively converting it into a standard, fixed-card course deviation indicator. As a result, pilots can still perform partial-panel instrument approach procedures following an AHRS failure. Cross-reference between heading information from the magnetic compass and course information from the PFD.
+
+Display Failures
+If either display fails, the G1000 should automatically enter reversionary mode, in which important flight information is presented in a condensed format on the remaining display(s). Reversionary mode can also be activated manually by pressing the red DISPLAY BACKUP button on the audio panel. Engine Indication System readings appear on the left edge of the screen, and the inset map appears at lower right.
+A photo labeled Reversionary Mode (Failed PFD) shows the full G1000 panel. The left screen is black. The audio panel between the screens has its red DISPLAY BACKUP button, and the right screen now shows the full flight instrument display, with the engine gauges down its left edge and a small inset map in the lower right corner.
+Because the IAUs are not cross-linked, any functions handled by just one IAU will be lost if its corresponding display fails. If the PFD fails, NAV1, COM1, and GPS1 will be unavailable. If the MFD fails, NAV2, COM2, and GPS2 are unavailable. Other optional avionics may also become unavailable, depending on the particular avionics configuration.
+
+Electrical Failure
+If the alternator fails, a red "ALTR FAIL" CAS warning message will appear on the PFD. All G1000 equipment will initially remain on, powered by the main battery. Follow the appropriate emergency checklist to verify the failure and attempt to reset the alternator.
+If the alternator is still failed, continue to the electrical load shedding portion of the checklist. Part of this procedure is to turn off the avionics master. This will disable the MFD and #2 IAU, along with optional avionics. The PFD will remain active and switch to reversionary mode.
+Once the main battery is depleted, the emergency battery will activate and provide approximately 30 minutes of power to the emergency bus. This will maintain power to the PFD, but the transponder and the cooling fans will shut off. Declare an emergency, exit IMC, and land as soon as possible.
+
+Garmin G5
+Some 1979-model Piper Seminoles are equipped with two Garmin G5 Electronic Flight Instruments in place of the vacuum-powered attitude indicator and horizontal situation indicator. Aircraft with G5 avionics have had their vacuum system equipment removed (including related gauges and annunciator lights).
+
+G5 Pages
+Each G5 has two pages: the PFD Page and the HSI Page. During installation, the units are configured to display the PFD Page on the top unit and the HSI Page on the bottom unit. The PFD displays attitude, airspeed, altitude, turn rate, heading, and vertical speed information, using a similar layout to the Garmin G1000 (but in a smaller form factor). To maintain commonality with aircraft with all-conventional gauges, standard procedure is to use the G5 PFD as the primary source of attitude information only, while using the conventional gauges for airspeed, altitude, turn rate, and vertical speed information.
+Slight mismatches of a few knots or tens of feet between the airspeed/altitude information on the PFD and the conventional instruments are common and not cause for concern. When setting the altimeters, enter the same pressure setting on both; do not modify one setting just to make the altimeters match.
+The HSI Page functions like a standard HSI, showing heading and either VOR/LOC or GPS course information depending on which is selected on the NAV 1 GNS 430. The Selection Knob normally adjusts the heading bug; to select a course, first press the knob to enter the menu and select "Course" (or "OBS" if using GPS data), then use the knob to select the desired course.
+
+G5 Failures
+As with other Garmin glass-panel instruments, failures of G5 instrument functions are indicated by a red "X" over the affected data. Failures in flight can be addressed by using other cockpit instruments or (in the case of attitude failure) by switching the bottom unit to show the PFD page. To switch pages, press the Selection Knob to activate the unit's menu, then rotate to select the PFD Page. An [!] icon in the lower left indicates a new system message. Press the Selection Knob and rotate to select and read the message. The G5 Pilot's Guide lists possible messages and their meanings (most of which alert the pilot to system faults).
+
+G5 Electrical Power
+For redundancy, the upper G5 unit is powered from the main bus and will turn on with the battery master switch, while the lower one is powered from the avionics bus and will turn on with the avionics master. The G5 instruments also have internal backup batteries that can power the device for up to 4 hours if aircraft electrical power is lost. If this occurs, a system message will appear and the battery status indicator in the upper left of the screen will display the remaining battery charge time. Exit IMC and land as soon as practicable.

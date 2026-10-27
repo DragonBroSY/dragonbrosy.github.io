@@ -1,0 +1,49 @@
+Aircraft Systems, Part Two: Vacuum, Pitot Static, Fuel, Electrical, Heater, Stall Warning, and Emergency Exit.
+
+Vacuum Pumps
+Seminoles with conventional flight instruments are equipped with two engine-driven vacuum pumps. The vacuum system operates the attitude gyro and, on aircraft without slaving mechanisms installed, the HSI. Suction limits are 4.8 to 5.2 inches of mercury at 2000 RPM. The failure of a vacuum pump is indicated by an annunciator panel light and a red, pump inoperative indicator on the vacuum gauge. In most circumstances, the failure of one pump alone will not cause the loss of any instruments because the remaining pump should handle the entire vacuum demand.
+
+Pitot Static
+The heated pitot mast (combined pitot tube and static port) is located underneath the left wing. An alternate static source is located inside the cabin under the left side of the instrument panel for use in the event of static port blockage. When using the alternate static source, the storm window and cabin vents must be closed, and the heater and defroster must be turned on. This will reduce the pressure differential between the cockpit and the atmosphere, reducing pitot static error. The pitot static instruments are the airspeed indicator, altimeter, and VSI.
+
+Fuel System
+The Seminole, which uses 100 low lead avgas (blue), is equipped with two 55-gallon bladder nacelle tanks. One gallon is unusable in each tank.
+There are two engine-driven and two electrically driven fuel pumps. The electric fuel pumps are used for engine start, takeoff, landing, and fuel selector changes.
+ATP uses the electric fuel pumps for in-flight maneuvers, except for steep turns.
+The aircraft is equipped with a three-position fuel selector for each engine. The positions are "ON", "OFF", and "X-FEED" (cross feed). The fuel selectors remain in the "ON" position during normal operations, and each engine draws fuel from the tank on the same side as the engine. When "X-FEED" is selected, the engine draws fuel from the tank on the opposite side. Fuel cannot be transferred from tank to tank. Crossfeed operation is limited to straight and level flight only.
+The correct procedure for crossfeed operations to supply the left engine with fuel from the right tank is:
+1. Left engine electric boost pump on.
+2. Left fuel selector selected to "X-FEED."
+3. Check left fuel pressure (or fuel flow, in G1000-equipped aircraft).
+4. Left engine electric boost pump off.
+5. Check fuel pressure (or fuel flow, in G1000-equipped aircraft).
+
+Electrical System
+Non-G1000 Seminoles are equipped with a 14-volt electrical system which utilizes push-pull type circuit breakers; a 12-volt, lead-acid battery; and two 70-amp, engine-driven alternators. Voltage regulators maintain constant 14-volt output from each alternator at varying engine RPMs, effectively sharing the electrical load. Loss of one alternator is indicated by an annunciator light and a zero indication on the loadmeter. The remaining alternator will normally provide adequate electrical power.
+The electrical system on G1000 Seminoles is similar, except that the system voltage is 28 volts, the battery is 24 volts, and the alternators generate 65 amps. Loss of an alternator is indicated by an ALTR FAIL CAS warning and an ALTR AMPS indication of zero. In addition to the main battery, G1000 Seminoles have a 24V emergency battery that will automatically power the Emergency Bus when main system voltage drops below 20V. This maintains power to the PFD, COM/NAV 1, engine instruments, standby flight instrument, and audio panel for approximately 30 minutes.
+An over-voltage relay in each alternator circuit provides system protection by taking an alternator offline if its output exceeds 17-volts (for 14V aircraft) or 32 volts (for 28V aircraft). If this occurs, the ALT annunciator or ALTR FAIL CAS warning will illuminate. The battery is used as a source of emergency electrical power and for engine starts. High drain items include the lights, vent fan, heater, gear hydraulic pump, radios, and PFD/MFD (if applicable). If an electrical problem arises, always check circuit breakers. If a circuit breaker is popped, reset only one time.
+
+Heater
+Heat to the cabin is supplied by a Janitrol gas combustion heater located in the nose compartment. Air from the heater is distributed by a manifold to the ducts along the cabin floor to outlets at each seat and to the defroster outlet. Operation of the heater is controlled by a three-position switch located on the instrument panel labeled "CABIN HEAT", "OFF", and "FAN." Airflow and temperature are regulated by the three levers to the right of the switch: "AIR INTAKE", "TEMP", and "DEF."
+For cabin heat, the "AIR INTAKE" lever must be fully open and the "CABIN HEAT" switch on. This simultaneously starts fuel flow and ignites heater. During ground operation, it also activates the ventilation blower. When cabin air reaches the temperature selected on the "TEMP" lever, ignition of the heater cycles automatically to maintain the selected temperature.
+Two safety switches located on the front of the heater unit prevent both fan and heater operation when the air intake lever is in the closed position. When the heater is on, a ventilation blower actuates any time the landing gear is extended. In flight, a micro switch, which actuates when the gear is retracted, turns off the ventilation blower so that the cabin air is circulated by ram air pressure only.
+An overheat switch in the heater acts as a safety device to render the heater inoperative if a malfunction should occur. Should the switch deactivate the heater, the red "HEATER OVER TEMP" annunciator light on the instrument panel will illuminate (in G1000-equipped aircraft, a CAS warning will appear reading HTR OVRHEAT). The overheat switch is located on the aft inboard end of the heater vent jacket. A red reset button is located on the heater shroud in the nose cone compartment.
+To prevent activation of the overheat switch upon normal heater shutdown during ground operation, turn the three-position switch to "FAN" for two minutes with the air intake lever in the open position before turning the switch off. During flight, leave the air intake open for a minimum of 15 seconds after turning the switch to off.
+Fuel is supplied to the heater at a rate of ½ gallon per hour from downstream of the left fuel selector and filter.
+To introduce outside, unheated air into the cabin during flight, the "AIR INTAKE" lever should be open and the "CABIN HEAT" off. A fresh air blower is installed to provide airflow during ground operation. It is operated by a high/low blower fan switch.
+
+Stall Warning Horn
+The Seminole is equipped with two electric stall detectors located on the left wing. The inboard detector provides stall warning at flaps 25° or 40° and the outboard at flaps 0° or 10°. The purpose of the two tabs is to provide adequate stall warning at varied angles of attack. The electric stall tabs are deactivated on the ground through the use of the squat switch on the left (1979 model) or right (2000 and later models) main landing gear. In G1000 Seminoles, the warning is an aural annunciation ("Stall... Stall... Stall..."), while in conventional or G500 Seminoles it is a continuous tone.
+
+Emergency Exit
+The emergency exit is the pilot's left side window. Use this when emergency egress becomes necessary on the ground and the main entry door is unavailable due to fire, etc. The emergency exit release handle is located beneath the thermoplastic cover on the vertical post between the first and second left side windows. To exit the aircraft, remove the thermoplastic cover, pull the release handle forward and then push the window out. The window then will fall free from the fuselage.
+
+Inoperative Instruments & Equipment per FAR 91.213
+ATP's aircraft do not operate under the guidance of a minimum equipment list (MEL), and instead operate in accordance with the following FAR 91.213 subpart. Because this is only an excerpt, the complete subpart should be referred to if necessary:
+(3) The inoperative instruments and equipment are --
+(i) Removed from the aircraft, the cockpit control placarded, and the maintenance recorded in accordance with §43.9 of this chapter; or
+(ii) Deactivated and placarded "Inoperative." If deactivation of the inoperative instrument or equipment involves maintenance, it must be accomplished and recorded in accordance with part 43 of this chapter;
+(4) A determination is made by a pilot, who is certificated and appropriately rated under part 61 of this chapter, or by a person, who is certificated and appropriately rated to perform maintenance on the aircraft, that the inoperative instrument or equipment does not constitute a hazard to the aircraft.
+
+Lynx NGT-9000
+Piper Seminoles equipped with the Lynx NGT-9000 must use the Lynx as the Primary Traffic information source. The standard avionics configuration for the Lynx consists of the homepage with transponder information on the left side of the screen and traffic information on the right.

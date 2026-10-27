@@ -1,0 +1,160 @@
+In-Flight Maneuvers, Part Two: Airstart, Unusual Attitudes, and the Private Pilot Maneuvers.
+
+ALL — Airstart Procedure
+The airstart procedure varies between the 1979, 2000, and 2022 model Seminoles since the 2000 models are equipped with an unfeathering accumulator and the 2022 models are fuel-injected.
+
+1979 Model Seminole — Airstart (Abnormal Checklist)
+INOP ENG FUEL SELECTOR — ON
+INOP ENG CARB HEAT — OFF
+INOP ENG MIXTURE — FULL FWD
+INOP ENG PROP — FULL FWD
+INOP ENG FUEL PUMP — ON
+INOP ENG ALTERNATOR — ON
+INOP ENG MAGNETOS — ON
+AVIONICS MASTER — (if conditions permit) OFF
+INOP ENG THROTTLE — TWO FULL STROKES
+INOP ENG THROTTLE — 1/4" OPEN
+INOP ENG STARTER — (ATP 8 seconds max) ENGAGE
+PROP WINDMILLING
+INOP ENG STARTER — RELEASE
+WHEN ENGINE BEGINS TO RUN
+THROTTLE — INCREASE SLOWLY TO 15" MP
+MAINTAIN 15" MP UNTIL CHT GREEN
+AVIONICS MASTER — ON
+PERFORM CRUISE CHECKLIST
+
+2000 Model Seminole — Airstart (Abnormal Checklist)
+INOP ENG THROTTLE — CLOSED
+INOP ENG FUEL SELECTOR — ON
+INOP ENG CARB HEAT — OFF
+INOP ENG MAGNETOS — ON
+INOP ENG FUEL PUMP — ON
+INOP ENG ALTERNATOR — ON
+INOP ENG MIXTURE — FULL FWD
+AIRSPEED — 100 KIAS (min) / 120 KIAS (recommended)
+INOP ENG PROP — FULL FWD
+INOP ENG THROTTLE — 1/4" OPEN
+The prop may not easily come out of feather unless airspeed is at least 100 KIAS. It may take up to 20 seconds for prop to windmill. If prop does not windmill verify that there is no prop movement, then engage starter for up to 8 seconds max.
+WHEN ENGINE BEGINS TO RUN
+THROTTLE — INCREASE SLOWLY TO 15" MP
+MAINTAIN 15" MP UNTIL CHT GREEN
+PERFORM CRUISE CHECKLIST
+
+2022 Model Seminole — Airstart (Abnormal Checklist)
+INOP ENG THROTTLE — CLOSED
+INOP ENG FUEL SELECTOR — ON
+INOP ENG ALT-AIR — CLOSE
+INOP ENG MAGNETOS — ON
+INOP ENG FUEL PUMP — ON
+AIRSPEED — 100 KIAS (min) / 120 KIAS (recommended)
+INOP ENG THROTTLE — 1/4" OPEN
+INOP ENG PROP — FULL FWD
+INOP ENG MIXTURE — (after prop rotation) ADVANCE
+IF NO PROP MOVEMENT WITHIN 7 SECONDS
+INOP ENG MIXTURE — FULL RICH
+INOP ENG STARTER — ENGAGE UNTIL PROP WINDMILLS (max 8 seconds)
+Engage starter immediately after advancing mixture to avoid flooding engine.
+WHEN ENGINE BEGINS TO RUN
+THROTTLE — INCREASE SLOWLY TO 15" MP
+INOP ENG ALTERNATOR — ON
+MAINTAIN 15" MP UNTIL CHT GREEN
+PERFORM CRUISE CHECKLIST
+IF RESTART NOT SUCCESSFUL
+INOP ENG MIXTURE — CUTOFF
+INOP ENG THROTTLE — CLOSE
+INOP ENG PROP — FEATHER
+PERFORM ENGINE FAILURE SECURE CHECKLIST
+
+ALL — Recovery from Unusual Attitudes
+Nose High–Climbing (Airspeed Decreasing)
+1. Increase power.
+2. Pitch level.
+3. Bank 0°.
+4. "Cruise Checklist."
+Nose Low–Descending (Airspeed Increasing)
+1. Reduce power.
+2. Bank 0°.
+3. Pitch smoothly level.
+4. "Cruise Checklist."
+
+PVT — Steep Turns
+Steep turns are to be accomplished above 3,000' AGL. Roll into a coordinated 360° steep turn with at least 45° of bank.
+1. Perform two 90° clearing turns.
+2. Set power to maintain 120 KIAS throughout maneuver.
+3. Cruise checklist.
+4. Set bug to entry heading.
+5. Maintain selected altitude ±100'.
+6. Maintain 120 KIAS or a safe airspeed not to exceed VA.
+7. Adjust power as necessary during maneuver.
+8. Perform 360° turn to the left maintaining at least 45° bank ±5°.
+9. Roll out on entry heading ±10°.
+10. Perform 360° turn to the right maintaining at least 45° bank ±5°.
+11. Roll out on entry heading ±10°.
+12. "Cruise Checklist."
+ACS — Airspeed ±10 KIAS — Altitude ±100' — Bank ±5° — Heading ±10°
+In high density altitude conditions, the reduction in available aircraft performance may require steep turns to be performed at a slower airspeed. Select and announce an appropriate airspeed prior to the maneuver.
+
+PVT — Maneuvering During Slow Flight
+Slow flight is to be accomplished above 4,000' AGL. As specified by the Examiner, this maneuver may be accomplished in any configuration while demonstrating coordinated straight-and-level flight, climbs, turns, and descents. Establish and maintain an airspeed at which any further increase in angle of attack, increase in load factor, or reduction in power would result in a stall warning (e.g., aircraft buffet, stall horn, etc.).
+1. Clearing turns.
+2. "Gear Down Before Landing Checklist."
+3. Extend full flaps 40°.
+4. Slow to just above stall warning activation (approximately 60-65 KIAS).
+5. Adjust power as necessary to maintain airspeed and altitude while maneuvering.
+6. Accomplish straight-and-level flight, climbs, turns, and descents as required, without activating a stall warning.
+7. Recover with max power.
+8. Retract flaps slowly to 0°.
+9. Accelerate to 82 KIAS (VX), maintain altitude or climb as specified by Examiner.
+10. Retract gear, accelerate to 88 KIAS (VY).
+11. "Cruise Checklist."
+ACS — Airspeed +10/-0 KIAS — Altitude ±100' — Bank ±10° — Heading ±10°
+
+Stall Recovery
+When practicing recovery from a fully developed stall in a multi-engine aircraft, immediately reduce the AOA by aggressively moving the elevator control forward to ensure recovery without worrying about a specific loss of altitude. This is not an approach to stall–it is a stall that has broken and an aggressive reduction in AOA is critical. The ACS places no emphasis on maintaining altitude or limiting loss of altitude.
+CAUTION: Fully developed stalls may lead to inadvertent, unrecoverable spins.
+"It is not recommended that full stalls be practiced unless a qualified flight instructor is present. A power-off or power-on full stall should only be practiced in a structured lesson with clear learning objectives and cautions discussed." (AFH 13-20)
+"No multiengine airplane is approved for spins, and their spin recovery characteristics are generally very poor. It is therefore prudent to practice spin avoidance and maintain a high awareness of situations that can result in an inadvertent spin." (AFH 13-18)
+A fully developed stall in a multi-engine airplane is a situation that can "result in an inadvertent spin".
+"In order to spin any airplane, a stalled condition needs to exist. At the stall, the presence or introduction of a yawing moment can initiate spin entry. In a multiengine airplane, the yawing moment may be generated by rudder input or asymmetrical thrust." (AFH 13-18)
+When recovering with max power, advance throttles smoothly. This assists with symmetrical power increases.
+
+PVT — Power-Off Stall
+Stalls are to be accomplished above 4,000' AGL, with a stabilized descent approximating a 3° final approach glidepath (400 FPM). Private requires prompt recovery after a fully developed stall occurs. As specified by the Examiner, this stall may be accomplished on a selected heading ±10° or in a 15°-bank turn (max bank 20°).
+Always reduce throttles slowly to avoid damage to engines.
+When recovering with max power, advance throttles smoothly. This assists with symmetrical power increases.
+1. Clearing turns.
+2. "Gear Down Before Landing Checklist."
+3. Extend full flaps 40°.
+4. Establish a stabilized 400 FPM descent at 75 KIAS.
+5. Maintain selected heading, or establish 15°-bank turn as specified by Examiner.
+6. Slowly reduce power to idle.
+7. Slowly increase pitch attitude to induce a stall.
+8. Acknowledge cues of the impending stall and then recover immediately after a fully developed stall occurs. Simultaneously:
+• Reduce AOA – Lower nose. Do not attempt to maintain altitude.
+• Roll wings level.
+• Smoothly apply max power.
+9. Accelerate to VX or VY (82 or 88 KIAS) as required. Adjust trim.
+10. Retract flaps slowly to 10°.
+11. Establish a positive rate of climb, then retract gear.
+12. Retract flaps to 0°.
+13. "Cruise Checklist."
+ACS — Bank ±10°, not to exceed 20° — Heading ±10°
+
+PVT — Power-On Stall
+Stalls are to be accomplished above 4,000' AGL. Private requires recovery after a fully developed stall occurs. As specified by the Examiner, this stall may be accomplished in the takeoff configuration (Gear Down, Flaps 0°) or the departure configuration (Gear Up, Flaps 0°) while on a selected heading ±10° or in a 15°-bank turn (max bank 20°) ±10°.
+1. Clearing turns.
+2. Set takeoff or departure configuration as specified by the Examiner:
+A. Takeoff configuration (Gear Down, Flaps 0°).
+B. Departure configuration (Gear Up, Flaps 0°).
+3. Mixtures–Enrichen, Props–Fwd, Fuel Pumps–On.
+4. Slow to 80 KIAS, liftoff speed.
+5. Maintain selected heading or establish a 15°-bank turn, as specified by the Examiner.
+6. Transition smoothly to approx. 15° pitch-up while increasing power to 18" MP.
+7. Acknowledge the cues of the impending stall and then recover immediately after a fully developed stall occurs. Simultaneously:
+• Reduce AOA – Lower nose. Do not attempt to maintain altitude.
+• Smoothly apply max power.
+• Level wings.
+8. Accelerate to 82 KIAS (VX), establish a positive rate of climb.
+9. Retract gear (if extended), accelerate to 88 KIAS (VY).
+10. "Cruise Checklist."
+ACS — Bank ±10°, not to exceed 20° — Heading ±10°

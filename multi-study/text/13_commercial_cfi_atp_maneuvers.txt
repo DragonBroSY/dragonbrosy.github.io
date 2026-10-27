@@ -1,0 +1,164 @@
+In-Flight Maneuvers, Part Three: Commercial, CFI, and ATP Maneuvers.
+
+COM — Steep Turns
+Steep turns are to be accomplished above 3,000' AGL. Roll into a coordinated 360° steep turn with at least 50° of bank.
+1. Perform two 90° clearing turns.
+2. Set power to maintain 120 KIAS throughout maneuver.
+3. Cruise checklist.
+4. Set bug to entry heading.
+5. Maintain selected altitude ±100'.
+6. Maintain 120 KIAS or a safe airspeed not to exceed VA.
+7. Adjust power as necessary during maneuver.
+8. Perform 360° turn to the left maintaining at least 50° bank ±5°.
+9. Roll out on entry heading ±10°.
+10. Perform 360° turn to the right maintaining at least 50° bank ±5°.
+11. Roll out on entry heading ±10°.
+12. "Cruise Checklist."
+NOTE: In high density altitude configurations, the reduction in available aircraft performance may require steep turns to be performed at a slower airspeed. Select and announce an appropriate airspeed prior to the maneuver.
+ACS — Airspeed ±10 KIAS — Altitude ±100' — Bank ±5° — Heading ±10°
+
+COM — Maneuvering During Slow Flight
+Slow flight is to be accomplished above 4,000' AGL. As specified by the Examiner, this maneuver may be accomplished in any configuration while demonstrating coordinated straight-and-level flight, climbs, turns, and descents. The airspeed selected is that at which any further increase in angle of attack, increase in load factor, or reduction in power would result in a stall warning (e.g. aircraft buffet, stall horn, etc.).
+1. Clearing turns.
+2. "Gear Down Before Landing Checklist."
+3. Extend full flaps 40°.
+4. Slow to just above stall warning (approximately 60-65 KIAS).
+5. Adjust power as necessary to maintain airspeed and altitude while maneuvering.
+6. Accomplish straight-and-level flight, climbs, turns, and descents as required, without activating a stall warning.
+7. Recover with max power.
+8. Retract flaps slowly to 0°.
+9. Accelerate to 82 KIAS (VX), maintain altitude or climb as specified by Examiner.
+10. Retract gear, accelerate to 88 KIAS (VY).
+11. "Cruise Checklist."
+ACS — Airspeed +5/-0 KIAS — Altitude ±50' — Bank ±5° — Heading ±10°
+
+COM — Power-Off Stall
+Stalls are to be accomplished above 4,000' AGL, with a stabilized descent approximating a 3° final approach glidepath (400 FPM). Commercial requires prompt recovery at the first indication of an impending stall (e.g. aircraft buffet, stall horn, etc.). As specified by the Examiner, this stall may be accomplished on a selected heading ±10° or in a 15°-bank turn (max bank 20°).
+Always reduce throttles slowly to avoid damage to engines.
+When recovering with max power, advance throttles smoothly. This assists with symmetrical power increases.
+1. Clearing turns.
+2. "Gear Down Before Landing Checklist."
+3. Extend full flaps 40°.
+4. Establish a stabilized 400 FPM descent at 75 KIAS.
+5. Maintain selected heading, or establish 15°-bank turn as specified by Examiner.
+6. Slowly reduce power to idle while increasing pitch attitude to induce stall (approx. 12°).
+7. Acknowledge cues of the impending stall and then recover promptly at the first indication of an impending stall. Simultaneously:
+• Reduce AOA – Lower nose. Do not attempt to maintain altitude.
+• Roll wings level.
+• Smoothly apply max power.
+8. Accelerate to VX or VY (82 or 88 KIAS) as required. Adjust trim.
+9. Retract flaps slowly to 10°.
+10. Establish a positive rate of climb, then retract gear.
+11. Retract flaps to 0°.
+12. "Cruise Checklist."
+ACS — Bank ±5°, not to exceed 20° — Heading ±10°
+
+COM — Power-On Stall
+Stalls are to be accomplished above 4,000' AGL. Commercial requires recovery at the first indication of an impending stall (e.g. aircraft buffet, stall horn, etc.). As specified by the Examiner, this stall may be accomplished in the takeoff configuration (Gear Down, Flaps 0°) or the departure configuration (Gear Up, Flaps 0°) while on a selected heading ±10° or in a 15°-bank turn (Max bank 20°) ±10°.
+1. Clearing turns.
+2. Set takeoff or departure configuration as specified by the Examiner:
+A. Takeoff configuration (Gear Down, Flaps 0°).
+B. Departure configuration (Gear Up, Flaps 0°).
+3. Mixtures–Enrichen, Props–Fwd, Fuel Pumps–On.
+4. Slow to 80 KIAS, liftoff speed.
+5. Maintain selected heading or establish a 15°-bank turn, as specified by the Examiner.
+6. Transition smoothly to approx. 15° pitch-up while increasing power to 18" MP.
+7. Acknowledge stall cues and recover promptly at the first indication of an impending stall.
+8. Simultaneously reduce angle-of-attack, set max power, and level wings.
+9. Accelerate to 82 KIAS (VX), establish a positive rate of climb.
+10. Retract gear (if extended), accelerate to 88 KIAS (VY).
+11. "Cruise Checklist."
+ACS — Bank ±10°, not to exceed 20° — Heading ±10°
+
+COM — Accelerated Stall
+Accelerated stalls are accomplished at an altitude that allows the maneuver to be completed no lower than 4,000 feet AGL. Transition smoothly from cruise attitude to a bank angle of 45°, maintaining coordinated turning flight, while increasing elevator back pressure steadily to induce the stall.
+1. Clearing turns.
+2. Flaps-up, gear-up.
+3. Mixtures–Enrichen, Props–Fwd, Fuel Pumps–On.
+4. Slow to 100 KIAS.
+5. Slowly reduce power to idle.
+6. Establish a coordinated 45° bank turn.
+7. Maintain altitude to induce stall.
+8. Recover at the first indication of an impending stall.
+9. Reduce angle-of-attack, level wings, and set max power.
+10. "Cruise Checklist."
+
+COM — Emergency Descent
+1. Perform two 90° clearing turns.
+2. Throttles–Slowly reduce to idle.
+3. Props–Full Forward.
+4. Mixtures – Adjust.
+5. Gear–Down (VLO Down = 140 KIAS).
+6. Cowl flaps–As Required.
+7. Initiate turning descent (bank angle 30°-45°) while scanning for traffic.
+8. Maintain 120 KIAS (in training), unless requested by examiner or required by emergency to accelerate to VLE (140 KIAS).
+9. Notify ATC/Traffic as appropriate.
+When recovering from the Emergency Descent, verify airspeed at or below 109 KIAS (maximum gear retraction speed) before retracting the gear.
+Required maneuvers for the CFI Multi-Engine Add-On are the same as for the Commercial Add-On except for the addition of the Airspeed Drag Demonstration.
+
+CFI — Airspeed Drag Demonstration
+Note power required for each drag item and VSI changes throughout each step.
+1. Clearing turns.
+2. Mixtures–Enrichen, Props–Fwd, Fuel Pumps–On.
+3. Slow to 88 KIAS/Blueline.
+4. Extend gear.
+5. Add power to maintain 88 KIAS and altitude.
+6. Extend flaps 25°.
+7. Add power to maintain 88 KIAS and altitude.
+8. Extend flaps 40°.
+9. Add power to maintain 88 KIAS and altitude.
+Above steps are for knowledge of drag to required-power relationships
+ACS-Required Tasks Below
+10. Close left throttle. (Windmilling prop)
+11. Add max power on right engine, maintain 88 KIAS and heading. (Note VSI.)
+12. Left Cowl Flap–As Required.
+13. Flaps up, maintain 88 KIAS. (Note VSI.)
+14. Gear up, maintain 88 KIAS. (Note VSI.)
+15. Left throttle to 12" MP simulated feather power, maintain 88 KIAS. (Note VSI.)
+16. Pitch for 82 KIAS. (Note VSI.)
+17. Pitch for 100 KIAS. (Note VSI.)
+18. Bring throttles slowly together to 20" MP.
+19. Left cowl flap: open or as required.
+20. "Cruise Checklist."
+
+ATP — Steep Turns
+Steep turns are to be accomplished above 3,000' AGL and may be performed with two 180° turns or one 360° turn. Roll into a coordinated 45°-bank steep turn. Roll into and out of turns at approximately the same rate.
+1. Perform two 90° clearing turns.
+2. Set power to maintain 120 KIAS throughout maneuver.
+3. Set bug to entry heading.
+4. Maintain selected altitude ±100'.
+5. Maintain 120 KIAS or a safe airspeed not to exceed VA.
+6. Adjust power as necessary.
+7. Perform 180° turn to the left maintaining 45° bank ±5°.
+8. Roll out at 180° point ±10°.
+9. Perform 180° turn to the right maintaining 45° bank ±5°.
+10. Roll out on entry heading ±10°.
+ACS — Airspeed ±10 KIAS — Altitude ±100' — Bank ±5° — Heading ±10°
+
+ATP — Approach to Stall in Approach Configuration (Clean)
+Stalls are to be accomplished above 4,000' AGL. ATP rating requires the pilot to announce the first indication of an impending stall (stall horn). As specified by the Examiner, this stall may be accomplished on a selected heading ±5° or in a 15 to 30°-bank turn.
+1. Clearing turns.
+2. Set power 15" MP.
+3. Flaps-up, gear-up.
+4. Mixtures–Enrichen, Props–Fwd, Fuel Pumps–On.
+5. Pitch to maintain altitude.
+6. Maintain selected heading, or establish a 20°-bank turn as specified by Examiner.
+7. Announce first indication of impending stall (stall horn).
+8. Recover: Simultaneously reduce angle-of-attack, set max power, and level wings.
+9. "Cruise Checklist."
+
+ATP — Approach to Stall in Landing Configuration
+Stalls are to be accomplished above 4,000' AGL. ATP rating requires the pilot to announce the first indication of an impending stall (stall horn). As specified by the Examiner, this stall may be accomplished on a selected heading ±5° or in a 15 to 30°-bank turn.
+Always reduce throttles slowly to avoid damage to engines.
+When recovering with max power, advance throttles smoothly. This assists with symmetrical power increases.
+1. Clearing turns.
+2. "Gear Down Before Landing Checklist."
+3. Set Flaps 40°.
+4. Pitch to maintain altitude.
+5. Maintain selected heading, or establish a 20°-bank turn as specified by Examiner.
+6. Announce first indication of impending stall (stall horn).
+7. Recover: Simultaneously reduce angle-of-attack, set max power, and level wings.
+8. Retract flaps slowly to 0°.
+9. Accelerate to 82 KIAS (VX).
+10. Retract gear, accelerate to 88 KIAS (VY).
+11. "Cruise Checklist."

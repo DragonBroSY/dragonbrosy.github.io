@@ -1,0 +1,112 @@
+In-Flight Maneuvers, Part One: Spin Awareness, the VMC Demonstration, and Engine Failure.
+
+Section 6. In-Flight Maneuvers & Procedures.
+
+Spin Awareness
+Aerodynamic Factors
+All spins are preceded by a stall on at least part of the wing. The primary cause of an inadvertent spin is exceeding the critical AOA while applying excessive or insufficient rudder and, to a lesser extent, aileron. Asymmetrical power could contribute to a spin.
+Flight Situations when Unintentional Spins may Occur
+• During a VMC Demonstration, when at the point of reaching both VMC and stall simultaneously.
+• While maneuvering during slow flight.
+Procedure for Recovery from Unintentional Spins
+This procedure is taken directly from the Piper Seminole POH.
+1. Throttles–Retard to idle.
+2. Rudder–Full opposite to direction of spin.
+3. Control Wheel–Release back pressure.
+4. Control Wheel–Full forward if nose does not drop.
+5. Ailerons–Neutral.
+6. Rudder–Neutralize when rotation stops.
+7. Control Wheel–Smooth back pressure to recover from dive.
+Intentional spins are prohibited in multi-engine aircraft. For further reference concerning stall and spin awareness, consult AC 61-67C.
+
+In-Flight Maneuvers
+The following maneuvers (except for the VMC Demo unless CLT restricted) are required for all ratings. Additional procedures required for the specific rating sought are subsequently listed in this section for Airline Transport Pilot, Commercial Multi-Engine Initial or Add-On, CFI Multi-Engine Add-On and Private Multi-Engine Add-On.
+
+Clearing Turns for In-Flight Maneuvers
+1. Maintain selected altitude.
+2. Set bug to entry heading.
+3. Lower the wing in the direction of the turn to clear the area below the wing, then roll back to wings level. Remember: "Look Left, Clear Left, Turn Left."
+4. Perform 90° clearing turn to left or right.
+5. Perform 90° clearing turn back to original heading.
+When slowing for maneuvers or approaches, maintain a power setting that eliminates the gear horn. This may increase the target speed to maintain gear horn silence.
+
+Standard Avionics Configurations
+ATP requires that GPS and similar avionics equipment be set up in a standard configuration for the various types of flight operation. This will ensure optimal display of traffic, navigation, heading, and course information. Working with a standard avionics configuration in the training environment increases safety, situational awareness, and proficiency.
+The standard pages for each set of avionics equipment in each phase of flight are listed in the Standard Avionics Configuration sheet, available in the ATP Library and ForeFlight Documents.
+
+ALL — VMC Demonstration
+Not required for ATP rating, unless CLT restricted. The VMC Demo is to be accomplished at or above 4,000' AGL, or as specified by Examiner.
+In the Piper Seminole, VMC occurs at a lower airspeed than stall speed. The Seminole will lose power as altitude increases because of the reduced density of the air entering the induction system of the engine. Increase the pitch attitude slowly to reduce the airspeed at approximately 1 knot per second while applying rudder pressure to maintain directional control until full rudder is applied. As the speed decreases, additional aileron input will be required to maintain a maximum of 5° bank toward the operating engine. Recover at the first indication of loss of directional control, stall horn, or buffet.
+1. Clearing turns.
+2. Flaps-up, gear-up.
+3. Mixtures–Enrichen, Props–Fwd, Fuel Pumps–On.
+4. Slowly close left throttle while maintaining heading and altitude.
+5. Slow to 100 KIAS (approx. 10 KIAS above VYSE).
+6. Slowly increase right throttle (operating engine) to full power. Use rudder to maintain directional control and bank up to 5° towards the operating engine.
+7. Increase pitch attitude slowly, decrease airspeed at approximately 1 knot per second until full rudder is applied to maintain directional control.
+8. Recover at first sign of:
+A. Loss of directional control.
+B. First indication of stall (stall horn or buffet).
+9. Recover promptly by simultaneously reducing power sufficiently on the operating engine while decreasing the angle of attack as necessary to regain directional control within 20° of entry heading.
+10. Continue recovery by increasing power slowly on operating engine while maintaining an AOA that allows for airspeed to increase to a point where directional control can be maintained with a minimum loss of altitude.
+11. Accelerate to 82-88 KIAS.
+12. Bring throttles slowly together to 20" MP.
+13. "Cruise Checklist."
+Recovery shall not be attempted by increasing the power on the simulated failed engine for demonstration.
+During the VMC Demo, the gear horn will sound due to the left throttle being closed. Do not confuse the gear horn, which beeps at 90 cycles per minute, with the steady stall warning horn–typically the first indication of a stall at which to begin recovery.
+
+ALL — Maneuvering with One Engine Inoperative
+The maneuver shall be performed above 4,000' AGL and in a position where a safe landing at an airport can be accomplished in the event the engine cannot be restarted. Maintain altitude ±100' unless a minimum sink is required due to airspeed at blueline and extremely high density altitude. Maintain heading ±10°.
+Below 3,000' AGL, engine failures may be simulated with the throttle only. At 3,000' AGL or higher, engine failures may also be simulated with the mixture. Never use the fuel selector to simulate an engine failure.
+
+ALL — In-Flight Engine Failure (Shutdown-Secure) Demo
+1. Instructor or examiner simulates engine failure with the mixture.
+2. Complete the In-Flight Engine Failure Checklist.
+3. Complete the Troubleshoot Checklist above 3,000' AGL (if no obvious damage).
+4. If no re-start, continue the In-Flight Engine Failure Checklist and complete the Engine Failure Secure Checklist.
+5. Maneuver as specified by instructor or examiner.
+When maneuvering with one engine inoperative is complete, perform an airstart (separate maneuver) using the Airstart Checklist.
+Perform an actual engine shutdown on either engine only above 4,000' AGL. When performing the engine shutdown and secure maneuver as part of a training event (as opposed to an actual emergency), the items on the Engine Failure Secure Checklist are to be simulated (touched but not actuated).
+
+In-Flight Engine Failure — Emergency Checklist
+MAINTAIN DIRECTIONAL CONTROL / PITCH ATTITUDE / AIRSPEED
+MIXTURES — FULL FWD
+PROPS — FULL FWD
+THROTTLES — FULL FWD
+FLAPS — UP
+GEAR — UP
+IDENTIFY — DEAD FOOT
+VERIFY/THROTTLE — CLOSE
+Troubleshoot:
+THROTTLE — 1"
+FUEL PUMPS — ON
+MAGNETOS — ON/CHECK
+FUEL SELECTORS — ON
+CARB HEAT — ON, CHECK, OFF
+FUEL QTY/PRESSURE OR FLOW — CHECK
+OIL PRESSURE/TEMP — CHECK
+If engine inop, continue In-Flight Engine Failure Checklist & Engine Failure Secure
+INOP ENG PROP — FEATHER
+INOP ENG MIXTURE — CUTOFF
+
+Engine Failure Secure
+OPERATING ENG MIXTURE — LEAN AS REQ
+TRIM — AS REQ
+INOP ENG MAGNETOS — OFF
+INOP ENG FUEL PUMP — OFF
+INOP ENG ALTERNATOR — OFF
+INOP ENG FUEL SELECTOR — OFF
+INOP ENG COWL FLAP — CLOSED
+REC/BLOW — OFF
+PERFORM CRUISE CHECKLIST
+
+Example Single-Engine Drift Down Scenario
+Inoperative Engine at 8,000' MSL, 20° C, and 3,400 lbs. (This is the approximate weight for two people, bags, and half fuel.) The following computations are based on the "Climb Performance—One Engine Operating—Gear Up" chart in the Seminole POH.
+Associated Conditions: Flaps 0°, Operating Engine Cowl Flap Open, Inoperative Engine Cowl Flap Closed, Landing Gear Up, Mixture Full Rich, Inoperative Engine Prop Feathered, Full Throttle, 2700 RPM, 88 KIAS/Blueline. (To achieve maximum single-engine performance, the operating engine mixture should be leaned as required.)
+The table lists altitude, temperature, rate of climb, and distance covered at 88 KIAS/Blueline, approximately 1.5 NM per minute.
+8,000' MSL — 20° C / 68° F — -120 FPM — From 8,000 to 7,000: 13 NM
+7,000' MSL — 22° C / 72° F — -80 FPM — From 7,000 to 6,000: 19 NM
+6,000' MSL — 24° C / 75° F — -40 FPM — From 6,000 to 5,000: 37 NM
+5,000' MSL — 26° C / 79° F — 0 FPM — Single Engine Absolute Ceiling
+4,000' MSL — 28° C / 82° F — 50 FPM — Single Engine Service Ceiling
+All figures are approximate.

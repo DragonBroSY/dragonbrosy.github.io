@@ -1,0 +1,139 @@
+Introduction and Engine-Out Aerodynamics.
+
+IMPORTANT NOTICE
+Refer to POH/AFM
+Do not use procedures listed without referencing the full procedures described in the approved Owner's Manual, POH, or POH/AFM specific to the airplane you are flying. Endurance and fuel capacities may vary considerably depending on the specific model / serial number being flown and any modifications it may have.
+
+Introduction
+Thank you for choosing ATP for your flight program.
+ATP flies over 540,000 hours per year to provide over 12,500 FAA certificates annually. ATP is committed to providing you low prices; efficient, standardized, and effective flight programs; and–most importantly–the highest level of safety.
+To maximize the effectiveness of your flight program, ATP's Piper Seminole Training Supplement contains a condensed overview of multi-engine aerodynamics, portions of the Piper Seminole POH, and flight procedures. You must have a complete knowledge of all information contained in this supplement prior to the start of your program. This information will assist you with your training and flight check.
+It is critical that you memorize the following:
+• Emergency Engine Failure Checklists.
+• V-Speeds.
+• Answers to all questions contained in the "Oral Review" section in the back of the supplement.
+The information in this supplement is highly condensed and serves as a good quick reference, but it must not be used as a substitute for the FAA-approved pilot's operating handbook required for safe operation of the airplane.
+Thank you for giving ATP an opportunity to serve you.
+
+Section 1. Engine-Out Aerodynamics.
+
+Aerodynamic Effects of an Engine Failure
+When an engine failure occurs in a multi-engine aircraft, asymmetric thrust and drag cause the following effects on the aircraft's axes of rotation:
+
+Pitch Down (Lateral Axis)
+Loss of accelerated slipstream over the horizontal stabilizer causes it to produce less negative lift, causing the aircraft to pitch down. To compensate for the pitch down effect, additional back pressure is required.
+The Seminole has a lesser pitch-down effect than most light twins because the T-tail configuration removes the horizontal stabilator from the accelerated slipstream.
+
+Roll Toward the Failed Engine (Longitudinal Axis)
+The wing produces less lift on the side of the failed engine due to the loss of accelerated slipstream. Reduced lift causes a roll toward the failed engine and requires additional aileron deflection into the operating engine.
+The illustration beside this paragraph shows the Seminole from head-on. The left engine is failed, with its propeller drawn as a stopped, windmilling blade, while the right propeller is spinning. A shaded lift curve drawn above the wing is tall over the operating engine and drops away over the failed engine, and a curved arrow above the cabin shows the airplane rolling toward the dead engine.
+
+Yaw Toward the Dead Engine (Vertical Axis)
+Loss of thrust and increased drag from the windmilling propeller cause the aircraft to yaw toward the failed engine. This requires additional rudder pressure on the side of the operating engine. "Dead foot, dead engine."
+The accompanying illustration views the Seminole from above. A thrust arrow points forward from the operating engine only, a drag arrow points back from the windmilling engine, and a curved arrow over the nose shows the airplane yawing toward the failed engine.
+
+Engine Inoperative Climb Performance
+Climb performance depends on the excess power needed to overcome drag.
+When a multi-engine airplane loses an engine, the airplane loses 50% of its available power. This power loss results in a loss of approximately 80% of the aircraft's excess power and climb performance. Drag is a major factor relative to the amount of excess power available. An increase in drag (such as the loss of one engine) must be offset by additional power. This additional power is now taken from the excess power, making it unavailable to aid the aircraft in climb.
+When an engine is lost, maximize thrust (full power) and minimize drag (flaps and gear up, prop feathered, etc.) in order to achieve optimum single-engine climb performance.
+
+Approximate Drag Factors per the Piper Seminole POH
+1. Flaps 25° — -240 FPM
+2. Flaps 40° — -275 FPM
+3. Windmilling Prop — -200 FPM
+4. Gear Extended — -250 FPM
+ATP's experience indicates more than -200 FPM drag from the windmilling prop.
+
+Under FAR Part 23:
+The FAA does not require multi-engine airplanes that weigh less than 6,000 pounds or have a VSO speed under 61 knots to meet any specified single-engine performance criteria. No single engine climb performance is required. Actual climb performance is documented by the manufacturer.
+The Seminole's max TOW is 3,800 pounds and VSO speed is 55 KIAS. Review the POH for single-engine climb performance for specific conditions.
+
+Airspeeds for Max Single-Engine Performance
+VXSE
+The airspeed for the steepest angle of climb on single-engine.
+VYSE
+The airspeed for the best rate of climb on single-engine. (Or for the slowest loss of altitude on drift-down.) Blueline is the marking on the airspeed indicator corresponding to VYSE at max weight.
+
+Sideslip Versus Zero Sideslip
+During flight with one engine inoperative, proper pilot technique is required to maximize aircraft performance. An important technique is to establish a Zero Sideslip Condition.
+
+Sideslip Condition (Undesirable)
+When an engine failure occurs, thrust from the operating engine yaws the aircraft. To maintain aircraft heading with the wings level, rudder must be applied toward the operating engine. This rudder force results in the sideslip condition by moving the nose of the aircraft in a direction resulting in the misalignment of the fuselage and the relative wind. This condition usually allows the pilot to maintain aircraft heading; however, it produces a high drag condition that significantly reduces aircraft performance.
+The figure for the sideslip condition has three parts. On the left, a turn coordinator shows the little airplane with its wings level and the ball centered. In the middle, the attitude indicator also shows wings level. On the right, an overhead view of the Seminole tracking north shows the relative wind coming straight down from the north, while the fuselage is angled away from it, with the nose pointed off toward the operating engine. The left engine is labeled failed engine, and a thrust arrow comes from the right engine. The caption reads: Sideslip Condition: Ball Centered & Wings Level, Aircraft Tracking North.
+
+Zero Sideslip Condition (Best Performance)
+The solution to maintaining aircraft heading and reducing drag to improve performance is the Zero Sideslip Condition. When the aircraft is banked into the operating engine (usually 2°-5°), the bank angle creates a horizontal component of lift. The horizontal lift component aids in counteracting the turning moment of the operating engine, minimizing the rudder deflection required to align the longitudinal axis of the aircraft to the relative wind. In addition to banking into the operating engine, the appropriate amount of rudder required is indicated by the inclinometer ball being "split" towards the operating engine side. The Zero Sideslip Condition aligns the fuselage with the relative wind to minimize drag and must be flown for optimum aircraft performance.
+The figure for the zero sideslip condition mirrors the first one. The turn coordinator now shows the ball sitting half out of center toward the operating engine, split on the line. The attitude indicator shows a small bank toward the operating engine. A head-on view of the Seminole shows the wing tilted down a few degrees on the operating engine's side, with the lift arrow tilted so that it has a horizontal component of lift pointing toward the operating engine, while the failed engine is on the high side. The caption reads: Zero Sideslip Condition: 2°-5° Bank into Operating Engine.
+
+Single-Engine Service Ceiling
+Single-engine service ceiling is the maximum density altitude at which the single-engine best rate of climb airspeed (VYSE) will produce a 50 FPM rate of climb with the critical engine inoperative.
+
+Single-Engine Absolute Ceiling
+Single-engine absolute ceiling is the maximum density altitude that an aircraft can attain or maintain with the critical engine inoperative. VYSE and VXSE are equal at this altitude. The aircraft drifts down to this altitude when an engine fails.
+
+Climb Performance Depends on Four Factors
+• Airspeed: Too little or too much will decrease climb performance.
+• Drag: Gear, Flaps, Cowl Flaps, Flight Control Deflection, Prop, and Sideslip.
+• Power: Amount available in excess of that needed for level flight. (Engines may require leaning due to altitude for max engine performance.)
+• Weight: Passengers, baggage, and fuel load greatly affect climb performance.
+
+Critical Engine
+The critical engine is the engine that, when it fails, most adversely affects the performance and handling qualities of the airplane.
+The Seminole is equipped with a counter-rotating propeller on the right engine. The failure of either engine has the same effects on performance. This is why the Seminole does not have a critical engine.
+On most multi-engine aircraft, both propellers rotate clockwise as viewed from the cockpit. By understanding the following factors when flying an aircraft that has both propellers rotating clockwise, it will be apparent that a left-engine failure makes the aircraft more difficult to fly than a right-engine failure. The clockwise rotation of the props contributes to the following factors that cause the left engine to be critical:
+P — P-Factor
+A — Accelerated Slipstream
+S — Spiraling Slipstream
+T — Torque
+
+P-Factor (Yaw)
+Both propellers turn clockwise as viewed from the cockpit. At low airspeeds and high angles of attack, the descending blade produces more thrust than the ascending blade due to its increased angle of attack. Though both propellers produce the same overall thrust, the descending blade on the right engine has a longer arm from the CG (or greater leverage) than the descending blade on the left engine. The left engine produces the thrust closest to center line. The yaw produced by the loss of the left engine will be greater than the yaw produced by the loss of the right engine, making the left engine critical.
+The illustration shows a twin from above with a thrust arrow on the right side of each propeller disc, where the descending blade is. The arrow on the right engine sits farther out from the fuselage than the arrow on the left engine, and a curved arrow over the nose shows the resulting yaw.
+
+Accelerated Slipstream (Roll and Pitch)
+P-Factor causes more thrust to be produced on the right side of the propeller. This yields a center of lift that is closer to the aircraft's longitudinal axis on the left engine and further from the longitudinal axis on the right engine and also results in less negative lift on the tail. Because of this, the roll produced by the loss of the left engine will be greater than the roll produced by the loss of the right engine, making the left engine critical.
+The illustration shows the twin from head-on with lift arrows rising from the right side of each propeller disc, so the left engine's lift arrow is close to the fuselage and the right engine's lift arrow is well out on the wing, with a curved roll arrow above the cabin.
+
+Spiraling Slipstream (Yaw)
+A spiraling slipstream from the left engine hits the vertical stabilizer from the left, helping to counteract the yaw produced by the loss of the right engine. However, with a left engine failure, slipstream from the right engine does not counteract the yaw toward the dead engine because it spirals away from the tail, making the left engine critical.
+The illustration shows the twin from above with corkscrew arrows trailing back from each propeller. The spiral from the left engine wraps inward and strikes the left side of the vertical tail, while the spiral from the right engine curls outward, away from the tail.
+
+Torque (Roll)
+For every action, there is an equal and opposite reaction. Since the propellers rotate clockwise, the aircraft will tend to roll counterclockwise. When the right engine is lost, the aircraft will roll to the right. The right rolling tendency, however, is reduced by the torque created by the left engine. When the left engine is lost, the aircraft will roll to the left, and the torque produced by the right engine will add to the left rolling tendency requiring more aileron input, which increases drag, making the left engine critical.
+The illustration shows the twin from head-on with a curved arrow at each propeller showing clockwise rotation, and a curved arrow above the cabin showing the airplane's opposite, counterclockwise rolling tendency.
+
+Summary
+On most light multi-engine aircraft when the critical engine is inoperative, both directional control and performance suffer more than when the non-critical engine is inoperative.
+
+VMC
+VMC is the calibrated airspeed at which, following the sudden critical loss of thrust, it is possible to maintain control of the airplane. For multi-engine airplanes, the pilot must determine VMC, for the most critical configurations used in takeoff and landing operations.
+When the PA-44 was originally designed, the historic regulation 14 CFR Part 23.149 outlined the items that would most accurately simulate critical engine failure and represent the most critical mode of powerplant failure expected with respect to controllability. You can use the acronym SMACFUM to explain this.
+• Standard day conditions at sea level (max engine power)
+• Most unfavorable weight
+• Aft CG (or most unfavorable)
+• Critical engine windmilling
+• Flaps in the takeoff position & Landing gear retracted
+• Up to 5° bank into the operative engine
+• Max available takeoff power on each engine
+Any change to the above condition will change VMC, possibly significantly. The following summarizes how VMC may be affected by the above conditions.
+
+1. Standard Day Sea Level
+Standard conditions yield high air density that allows the engine to develop maximum power. An increase in altitude or temperature (a decrease in air density) will result in reduced engine performance and prop efficiency. This decreases the adverse yaw effect. VMC speed decreases as altitude increases.
+
+2. Most Unfavorable Weight and Center of Gravity
+The certification test allows up to 5° bank into the operating engine. In a given bank, the heavier the aircraft, the greater the horizontal component of lift that adds to the rudder force. As weight increases, the horizontal component of lift increases, which added to the rudder, decreases VMC. As the center of gravity moves forward, the moment arm between the rudder and the CG is lengthened, increasing the leverage of the rudder. This increased leverage increases the rudder's effectiveness and results in a lower VMC speed.
+
+3. Critical Engine Prop Windmilling
+When the propeller is in a low pitch position (unfeathered), it presents a large area of resistance to the relative wind. This resistance causes the engine to "windmill." The windmilling creates a large amount of drag and results in a yawing moment into the dead engine. When the propeller is "feathered," the blades are in a high pitch position, which aligns them with the relative wind, minimizing drag. A feathered prop will decrease drag and lower VMC.
+
+4. Flaps Takeoff Position, Landing Gear Up, Trimmed for Takeoff
+When the gear is extended, the gear and gear doors have a keel effect, reducing the yawing tendency and decreasing the VMC speed. Extended flaps have a stabilizing effect that may reduce VMC speed.
+
+5. Up to 5° Bank into the Operating Engine
+When the wings are level, only the rudder is used to stop the yaw produced by the operating engine (sideslip condition). Banking into the operating engine creates a horizontal component of lift which aids the rudder force. With this horizontal component of lift and full rudder deflection, VMC is at the lowest speed. VMC increases with decreasing bank by a factor of approximately 3 knots per degree of bank angle.
+
+6. Maximum Power On The Operating Engine
+When the operating engine develops maximum power, adverse yaw is increased toward the inoperative engine. The pilot must overcome this yaw to maintain directional control. Any condition that increases power on the operating engine will increase VMC speed. Any condition that decreases power on the operating engine (such as power reduction by the pilot, an increase in altitude, temperature, low density, or aging engine) will decrease VMC.
+At VMC, the rudder pedal force required to maintain control must not exceed 150 pounds and it must not be necessary to reduce power of the operative engine(s). During the maneuver, the airplane must not assume any dangerous attitude and it must be possible to prevent a heading change of more than 20°.
+Piper determined VMC for the Seminole at 1,500' MSL with a weight of 2,730 lbs. and 5° bank into the operating engine. The test results were then computed to sea level conditions.
+NOTE: Each aircraft is different and may be subject to different handling qualities than discussed here. Recovery from loss of directional control should always follow the guidelines of the POH and FAA Airplane Flying Handbook.

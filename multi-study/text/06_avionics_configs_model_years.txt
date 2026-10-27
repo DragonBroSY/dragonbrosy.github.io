@@ -1,0 +1,112 @@
+Aircraft Systems, Part Five: Standard Avionics Configurations and Differences by Model Year.
+
+Standard Avionics Configurations
+Automatic zoom must be disabled. Set ranges to view approximately a 2 NM radius in the traffic pattern or congested areas; a 6 NM radius for departure, arrival, and practice area operations; and a 12 NM radius for enroute VFR or IFR.
+
+Garmin G1000
+Taxiing
+MFD: Map page with range set to airport diagram view.
+Airport diagram may be expired, reference for situational awareness only.
+A photo shows the G1000 set up for taxi. The PFD on the left shows the normal flight instruments with the small traffic inset outlined in red at its lower left corner, and the MFD on the right shows a zoomed-in airport diagram of the runways and taxiways.
+Traffic Pattern Operations
+PFD: Traffic map (INSET left).
+MFD: Map page with traffic information active.
+• NXi: Detail set to Detail-3
+• Other: Declutter set to DCLTR-1
+Enroute and Airwork
+PFD: Active with appropriate nav source (needles) active.
+MFD: Map page with traffic information active. Traffic inset should be included on the PFD for added traffic awareness.
+• NXi: Detail set to Detail-3
+• Other: Declutter set to DCLTR-1
+Full Panel Approaches
+PFD: Active NAV source on HSI/Traffic map (INSET left).
+MFD: Map page with traffic information active and orientation set to track up.
+• NXi: Detail set to Detail-3
+• Other: Declutter set to DCLTR-1
+A photo labeled G1000 Standard Configuration shows the PFD with the flight instruments and HSI on the left, and the MFD on the right showing a moving map with the engine gauges along its left edge.
+Partial Panel Approaches
+PFD: Dimmed or covered.
+MFD: Reversionary Mode.
+Map Overlay: On with Traffic Information active.
+A photo labeled G1000 Partial Panel Configuration shows the left screen dark, while the right screen shows the reversionary flight display with engine gauges on its left and the inset map in the corner.
+Pilots can exercise PIC judgment to briefly switch to other pages or settings with information helpful to the safe, efficient conduct of the flight. After doing so, promptly switch back to the standard configurations.
+
+Garmin G500 w/ Dual GNS430
+Taxi & Traffic Pattern Operations
+MFD: Map page group, traffic map page (map page 3).
+MFD databases are not regularly updated in G500-equipped aircraft. Use GNS430 for tasks requiring current database information (geographical location, airspace, airports and navaids, etc.)
+COM/NAV 1: Nav page group, Moving map page (Nav page 2).
+COM/NAV 2: Nav page group, Traffic information page (Nav page 3).
+A photo labeled Dual Garmin GNS 430 GPS Configuration shows the G500 with its traffic display on the right screen, and below it the two GNS 430 units: the first showing a moving map with nearby airports, and the second showing the circular traffic page with a few nearby targets and their relative altitudes.
+Enroute, Airwork, and Full Panel Approaches
+PFD: Active with appropriate nav source active on HSI.
+MFD: Map page group, traffic Map page (Map page 3).
+COM/NAV 1: Default Nav page (Nav page 1), page values set to DIS, GS, DTK, TRK, XTK, ETE.
+VLOC Button: Selected to appropriate nav source.
+COM/NAV 2: Moving Map page (Nav page 2), with traffic information active and orientation set to TRACK UP.
+A figure labeled G500 w/ dual 430s - Enroute shows the G500 traffic map with targets around the ownship symbol, a GNS 430 on its default Nav page with the data fields for distance, desired track, bearing, ground speed, track, and time enroute, with the track field circled in green, and a second GNS 430 showing the moving map.
+Partial Panel Approaches:
+PFD: Dimmed or covered. Use standby instruments.
+MFD: If not dimmed, map page with traffic information active and orientation set to track up.
+COM/NAV 1: Approach loaded, Default Nav page (Nav 1). Default Nav page values: DIS, GS, DTK, TRK, XTK, ETE
+COM/NAV 2: Nav page group, Moving map page (Nav page 2), with traffic information active and orientation set to TRACK UP.
+VLOC Button: Selected to appropriate nav source.
+Course Guidance: TRK information (on GPS1).
+GPS Approach with No HSI: Use GPS1 set to CDI page; GPS2 Set to Moving Map Page (Nav 2).
+Two GNS 430 screens illustrate this: the first shows the default Nav page with its course deviation bar across the top, and the second shows the moving map.
+For PFD failures on the G500, the only approach option is a GPS approach, using the GPS CDI for course guidance.
+
+Single Garmin GNS430
+Taxi & Traffic Pattern Operations
+COM/NAV 1: Traffic Information Page (Nav page 3)
+NGT-9000: Home page with traffic information active
+Enroute, Airwork & Full Panel Approaches
+COM/NAV 1: Moving map page (Nav page 2), orientation set to track up, traffic information active
+NGT-9000: Home page with traffic information active
+Photos show the GNS 430 on its traffic page and on its moving map, and the Lynx NGT-9000 home page, with the squawk code 1200, pressure altitude, and mode buttons on the left half of the screen and a small round traffic display on the right half.
+Partial Panel Approaches
+COM/NAV 1: Default Nav page (Nav page 1), page values set to DIS, GS, DTK, TRK, XTK, ETE
+NGT-9000: Home page with traffic information active
+Attitude and heading indicator covered
+A photo labeled Partial Panel VOR / ILS Approaches - Use Nav 2 OBS shows a conventional six-pack panel with the attitude and heading indicators covered by red covers and the number 2 navigation indicator circled in green, next to the GNS 430 default Nav page with its course deviation bar crossed out. A second photo, labeled Partial Panel GPS Approach Configuration, shows the same covered panel, but this time the GNS 430's course deviation bar and track field are circled in green as the source of course guidance.
+
+Dual Garmin GNS430 (with or without Lynx NGT-9000)
+Taxi & Traffic Pattern Operations
+COM/NAV 1: Nav page group, Moving map page (Nav page 2).
+COM/NAV 2: Nav page group, Traffic information page (Nav page 3).
+NGT-9000: Home page with transponder info on left side and traffic on right side
+Photos show the first GNS 430 on the moving map, the second on the traffic page, and the Lynx NGT-9000 home page.
+Enroute, Airwork & Full Panel Approaches
+COM/NAV 1: Nav page group, Moving map page (Nav page 2), orientation set to track up
+COM/NAV 2: Nav page group, Traffic information page (Nav page 3)
+NGT-9000: Home page with Traffic
+Partial Panel Approaches
+COM/NAV 1: Nav page group, Moving map page (Nav page 2), orientation set to track up
+COM/NAV 2: Default Nav page (Nav page 1) Default Nav page values: DIS, GS, DTK, TRK, XTK, ETE
+NGT-9000: Home page with Traffic
+Attitude and heading indicator covered
+The same two partial panel photos follow: Partial Panel VOR / ILS Approaches - Use Nav 2 OBS, with the number 2 navigation indicator circled, and Partial Panel GPS Approach Configuration, with the GPS course deviation bar and track circled.
+
+GPS Setup for VFR Airwork & Maneuvers
+When in a familiar area performing VFR maneuver training, or when remaining in the traffic pattern for takeoff/landing practice, at least one GPS unit should be selected to the Traffic page. If two units are present, one may be selected to the Moving Map page. To avoid redundant information, never have two systems on the same page.
+Aircraft maneuvering will cause errors in the display. These errors primarily affect relative bearing information and traffic target track vector (it will lag). Traffic information is provided as an aid in visually acquiring traffic. It is the responsibility of the pilot to see and maneuver to avoid traffic.
+
+List of Pilots Guides
+G500 Pilot's Guide
+GNS430 Pilot's Guide
+Lynx NGT-9000 Pilot's Guide
+G1000 Pilot's Guide
+G5 Pilot's Guide
+
+Notable Differences Between Seminoles by Model Year
+The table compares three groups of Seminoles: the 1979-80 models, the 2000-19 models, and the 2022-Later models.
+Engines: 1979-80 — Left: O-360-E1A6D, Right: LO-360-E1A6D. 2000-19 — Left: O-360-A1H6, Right: LO-360-A1H6. 2022-Later — Left: IO-360-B1G6, Right: LIO-360-B1G6.
+Oil Capacity: 1979-80 — 4 to 6 Quarts, ATP Minimum 4.5 Quarts. 2000-19 and 2022-Later — 6 to 8 Quarts, ATP Minimum 6.5 Quarts.
+Minimum Oil Pressure: 1979-80 — 15 PSI. 2000-19 and 2022-Later — 25 PSI.
+Landing Gear Mute Switch: 1979-80 — N/A. 2000-19 and 2022-Later — Do not use.
+Primer: 1979-80 — Manual/Plunger; Ports Fuel Into Cylinders 1, 2 & 4. 2000-19 — Button/Electric; Electric Fuel Pump Must be On; Press Primer Button 2-3 Sec. before Starting Cold Engine; Ports Fuel Into Cylinders 1, 2 & 4. 2022-Later — N/A: priming achieved by advancing mixture to RICH with fuel pump on.
+Recognition Lights: 1979-80 — N/A. 2000-19 and 2022-Later — Located on Each Wingtip; Used Along With Landing Light for Recognition.
+Fin Strobe & Strobe Light Rocker Switch: 1979-80 — Anti-Collision Lights Only (Strobes). 2000-19 and 2022-Later — Rocker Switch Down for Ground Use (Fin Strobe / Rotating Beacon); Rocker Switch Up Before Takeoff / Flight Use (Strobes).
+"LO BUS" Annunciator Light: 1979-80 — N/A. 2000-19 — Illuminates Red when Alternators not Providing 14 V DC to the tie bus, and bus voltage drops to battery voltage, 12.5 V DC. 2022-Later — N/A.
+Unfeathering Accumulators: 1979-80 — N/A. 2000-19 and 2022-Later — Stores Engine Oil Under Pressure for Air-Starting the Engine; Releases Stored Pressure Back to Prop Governor when Prop Lever Moved Forward; Oil Pressure Drives the Blades from the Feathered Position Toward Low-Pitch (Windmilling); Windmilling Prop with Addition of Fuel and Ignition will Allow the Engine to Start.
+Airstart: 1979-80 — Starter Only; Be Sure to Only Engage the Proper Side of the Rocker Start Switch; Pressing the Wrong Side will Cause Engine Damage to the Operating Engine. 2000-19 and 2022-Later — Unfeathering Accumulator. The 2000 Seminole utilizes a prop unfeathering accumulator which stores engine oil under pressure for airstarting the engine. The stored pressure is released back to the prop governor when the prop lever is moved forward. Oil pressure drives the blades from the feathered position toward low-pitch windmilling. When the prop is windmilling, the addition of fuel and ignition will allow the engine to start.

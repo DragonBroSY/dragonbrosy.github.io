@@ -1,0 +1,91 @@
+Arrival Procedures, Part One: Briefings, Callouts, Stabilized Approaches, and Landing Technique.
+
+Section 5. Arrival Procedures.
+
+Approach Briefing
+The approach briefing has two columns.
+IFR: Field Elevation; Type of Approach; NAV Frequency; Course; Glideslope Intercept or FAF Altitude; Minimums; Missed Approach Procedure.
+VFR: Field Elevation; Pattern Altitude; Type of Landing; Brief 400' AGL altitude for "Gear Down—Stabilized" call.
+
+Announced Callouts on Approach
+"Gear Down Before Landing Checklist"
+Where:
+• Visual: Before descending below TPA
+• Instrument: ½ dot below glideslope intercept (or at FAF, if no vertical guidance)
+Actions - Pilot Flying:
+• Complete the Gear Down Before Landing checklist, calling out each step.
+• After the first step (GEAR… 3 GREEN), leave your hand on the selector until the PNF also announces "Three green." Then, proceed with the remaining steps.
+Actions - Pilot Not Flying:
+• Monitor the PF's performance of the checklist. (Reference the checklist placard.)
+• After the PF announces "Gear - three green," verify that the landing gear is deployed, and then state "Three green."
+Notes:
+• This checklist must be performed before descending below TPA / the FAF. No exceptions.
+• On single-engine training approaches on high-DA days, if descent rates are too high, the PF may reduce drag by deferring flap extension only. Never defer gear extension unless required by an actual emergency.
+
+"Blueline—GUMP. Gas, Undercarriage, Mixtures, Props."
+Where:
+• Visual: On base or turning final
+• Instrument: 1,000 feet AGL
+Actions - Pilot Flying:
+• Call out "Blueline—GUMP."
+• Verify the aircraft is on speed (VYSE).
+• Check the items, calling out each one in turn ("Gas, Undercarriage, Mixtures, Props").
+Actions - Pilot Not Flying:
+• Silently back up the PF.
+
+"Gear Down—Stabilized"
+Where:
+• All approaches: 400 feet AGL
+Actions - Pilot Flying:
+• Confirm that the landing gear is down and that all stabilized approach criteria are met.
+• Announce "Gear down—stabilized."
+Actions - Pilot Not Flying:
+• After the PF's callout, confirm that the gear is down and the approach is stabilized.
+• Announce "Gear down—stabilized."
+Notes:
+• If either pilot notes that the gear is not down, or the approach is not stabilized, go around.
+
+"Approaching Minimums" / "Minimums"
+• During instrument approaches, to enhance altitude awareness, the PF will also call out "Approaching Minimums" when 100 feet above MDA or DA, followed by "Minimums" at MDA or DA.
+
+Summary of Callouts
+The summary table lists each callout, where it is made on a VFR or visual approach, and where it is made on an instrument approach.
+PF: "Gear Down Before Landing Checklist," PNF: "Three Green" — Visual: before descending below TPA (abeam touchdown point, for pattern work). Instrument: ½ dot below GS intercept (precision) or at FAF (non-precision).
+PF: "Blueline—GUMP. Gas, Undercarriage, Mixtures, Props" — Visual: on base or turning final. Instrument: 1,000' AGL.
+PF: "Approaching Minimums" — Visual: N/A. Instrument: 100' above MDA or DA.
+PF: "Minimums" — Visual: N/A. Instrument: at MDA or DA.
+PF: "Gear Down—Stabilized," PNF: "Gear Down—Stabilized" — both: 400 feet AGL.
+PF = Pilot Flying / PNF = Pilot Not Flying
+
+Stabilized Approaches
+The Airplane Flying Handbook defines a stabilized approach as "one in which the pilot establishes and maintains a constant-angle glide path towards a predetermined point on the landing runway. It is based on the pilot's judgment of certain visual clues and depends on maintaining a constant final descent airspeed and configuration." Stabilized approaches significantly reduce the chance of landing mishaps.
+ATP requires a stabilized approach for all landings, both visual and instrument. Pilots should strive for a stabilized approach throughout their final descent to landing, and the aircraft must be stabilized by the last gear status check ("Gear Down—Stabilized") at 400' AGL. If the approach is not stabilized by that point, or if it becomes unstable later, a go-around is required.
+Conditions for a Stabilized Approach
+• Glidepath: Constant angle glidepath. Proper descent angle and rate of descent to land in the first third of the runway (approximately 450 FPM) must be established and maintained. All available landing aids (ILS, VASI, PAPI, etc.) must be used.
+• Configuration: Aircraft in landing configuration. Gear down and locked. Flaps and trim in final setting for landing.
+• Airspeed: Airspeed stable and within ±5 knots of target speed (88 KIAS for normal landings and approaches, 75 KIAS for short-field landings).
+These parameters are not merely targets, they are mandatory conditions and limits. Any deviation at or beyond the beginning of the stabilized approach corridor at 400' AGL requires a mandatory go-around.
+
+Go Around Philosophy
+The decision to execute a go-around is both prudent and encouraged anytime the outcome of an approach or landing becomes uncertain. ATP considers the use of a go-around under such conditions as an indication of good judgement and cockpit discipline on the part of the pilot.
+Go-Arounds During Engine-Out Approaches
+In the Piper Seminole, going around on one engine must be avoided. Applying full asymmetric power while at low airspeed poses a serious risk of loss of aircraft control, and the Seminole's limited single-engine climb performance may leave the aircraft unable to climb to a safe altitude for another landing attempt. Per ATP policy, never attempt a single-engine go-around below 500' AGL.
+During all simulated engine-out approaches and landings, both engines are available beginning at 400' AGL. Should an unstabilized approach require a go-around, the pilot must smoothly apply full power on both throttles, and take care to maintain aircraft control while the thrust becomes symmetric.
+If an actual engine failure has occurred, continuing the approach to a landing is almost always the safer option, even if the approach becomes unstabilized. The pilot should attempt to stabilize the approach as early as possible, and use PIC judgment to choose a course of action most likely to result in a safe landing.
+Instructors should vigilantly monitor student approaches and landings, and should command go-arounds if any of the stabilized approach conditions are not met. Instructors should make every effort to avoid allowing a student to take an unstabilized approach close to the ground, requiring the instructor to take the controls and initiate a go-around. Students must also be taught to evaluate their own approaches for the stabilized approach criteria and make the go-around call if necessary, as they alone will be responsible for this during solos, crew cross-country operations, and checkrides.
+
+Collision Avoidance
+Pilots need to obtain and maintain situational awareness of other aircraft in, entering, and departing the pattern BEFORE entering the High Traffic Collision Risk box.
+The illustration shows a rectangular traffic pattern drawn in perspective, with airplanes on the downwind, base, and final legs and one departing. A translucent red box, labeled High Traffic Collision Risk and marked 500' tall, sits over the final approach course and the approach end of the runway, where arriving, departing, and pattern traffic all converge.
+Review ATP's Collision Avoidance Philosophy Supplement for more information on mid-air collision risk mitigation.
+
+Normal Landing Technique
+• Verify that the gear is extended and the approach is stabilized, and announce at 400' AGL: "Gear Down—Stabilized."
+• Maintain a stabilized descent angle.
+• Reduce throttles slowly over approach end, slow to 80 KIAS
+• Touch down at approx. 75 KIAS on centerline within the first third of the runway.
+• Maintain back pressure on control wheel to prevent slamming the nose wheel onto the runway.
+
+Flap Setting
+ATP always recommends landing with flaps 25°. The approach speeds used for flaps 25° are the same as flaps 40° for normal landings. Flaps 25° places the airplane in the best configuration for go-arounds and crosswind landings. Note: Flaps 25° also introduces a secondary gear warning. Use pilot discretion for situations requiring a different setting, such as short field landings, single-engine maneuvering or high winds. The revised PA-44-180 operation manual, section 4.31a states: "landing may be made with any flap setting."
+The gear horn is an action horn. The gear warning horn should never be heard below 1,000' AGL on arrivals. Take immediate action by extending the landing gear or by going around.

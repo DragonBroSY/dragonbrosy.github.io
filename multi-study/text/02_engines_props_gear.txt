@@ -1,0 +1,74 @@
+Aircraft Systems, Part One: Engines, Propellers, Landing Gear, Brakes, and Flaps.
+
+Section 2. Aircraft Systems.
+
+Engines
+The Seminole is equipped with two Lycoming, 4-cylinder, O-360 (opposed, 360 cubic inch) engines rated at 180 horsepower at 2700 RPM. The right engine is designated as an LO-360 due to the fact that it rotates to the left. The engines are direct drive (crankshaft connected directly to the propeller), horizontally opposed (pistons oppose each other), piston driven and normally aspirated (no turbo or supercharging). Seminoles with model years prior to 2022 have carbureted engines, and those with model years from 2022 onwards have fuel-injected engines.
+L — Lycoming
+H — Horizontally Opposed
+A — Air Cooled
+N — Normally Aspirated
+D — Direct Drive
+NOTE: Certain procedures, particularly those for engine starting, are substantially different between carbureted and fuel-injected engines. Be sure to use the correct checklist for each specific aircraft.
+
+Ignition
+Engine ignition is provided through the use of two magnetos per engine. As originally equipped, both are conventional engine-driven magnetos which are independent of the aircraft's electrical system and each other.
+In some aircraft, one magneto per engine has been replaced with an EIS (Electronic Ignition System) solid-state magneto. This magneto is powered by the main battery. EIS magnetos are more reliable, while the remaining conventional magneto provides redundancy in the event of electrical system failure. Aircraft with EIS magnetos can be identified by a placard on the instrument panel advising not to operate the aircraft with low battery voltage. There are no operational differences between aircraft with an EIS magneto and those with only conventional magnetos.
+
+Carburetor Icing
+For aircraft with carbureted engines, under certain moist atmospheric conditions at temperatures of 20° to 70° F (-5° to 20° C), it is possible for ice to form in the induction system, even in summer weather. This is due to the high air velocity through the carburetor venturi and the absorption of heat from this air by vaporization of the fuel. To avoid this, the carburetor heat is provided to replace the heat lost by vaporization. The initial signs of carburetor ice can include engine roughness and a drop in manifold pressure. Carburetor heat should be selected on if carburetor ice is encountered. Adjust mixture for maximum smoothness.
+NOTE: Carburetor heat also serves as an alternate air source in case the engine's air intake is blocked. In lieu of carburetor heat, fuel-injected Seminoles have a similar "Alternate Air" control that provides heated, unfiltered air to the induction system.
+
+Propellers
+The Seminole is equipped with Hartzell two-bladed, controllable pitch, constant speed, full feathering metal propellers.
+
+Controllable Pitch
+Controllable pitch is the ability to control engine RPM by varying the pitch of the propeller blades. When the blue propeller control handle is moved forward, oil pressure, regulated by a propeller governor, drives a piston, which moves the blades to a low pitch–high RPM (unfeathered) position. When the blue propeller control handle is moved aft, oil pressure is reduced by the propeller governor. This allows a nitrogen-charged cylinder, spring, and centrifugal counterweights to drive the blades to a high pitch–low RPM (feathered) position.
+
+Constant Speed
+After RPM setting is selected with the blue propeller control handles, the propeller governor will automatically vary oil pressure inside the propeller hub to change the propeller blade pitch in order to maintain a constant engine RPM. Because of this, changes in power setting (manifold pressure) and flight attitude will not cause a change in RPM.
+
+Full Feathering
+When the propeller blades are in alignment with the relative wind, they are feathered. Feathered propeller blades reduce the drag caused by the blade area exposed to the relative wind. Feathering the propeller blades on the Seminole is accomplished by moving the blue propeller control handle fully aft past the low RPM detent, into the "FEATHER" position. The propeller takes approximately six seconds to feather. When feathering the propeller, the mixture should be placed to cutoff to stop engine combustion and power production.
+The Seminole is equipped with a centrifugal stop pin that prevents propeller feathering below 950 RPM. The purpose of this is to allow the propeller blades to remain in a low pitch upon engine shutdown. This will prevent excessive loads on the engine starter during the next engine start.
+Regardless of the Prop Lever position, if oil pressure is lost, the propeller will feather when the RPM is above 950 RPM. Typically, RPM will be above 950 in flight and on takeoff roll and landing roll due to airflow over the propeller.
+
+Propeller Overspeed
+Propeller overspeed is usually caused by a malfunction in the propeller governor which allows the propeller blades to rotate to full low pitch. If propeller overspeed should occur, retard the throttle. The propeller control should be moved to full "DECREASE RPM" and then set if any control is available. Airspeed should be reduced and throttle used to maintain a maximum of 2700 RPM.
+
+Propeller and Governor Ground Checks
+As part of the Run Up checklist, the propeller and propeller governor systems are dynamically tested. This consists of two steps: Prop Feather and Prop Exercise and Governor Function.
+The Prop Feather check confirms that the propeller is able to move toward the feathered position, which is critical in an engine failure situation where the drag of an unfeathered propeller would be detrimental. When the propeller control lever is pulled back, the propeller governor decreases oil pressure supplied to the propeller hub. This allows the propeller's internal spring, counterweights, and nitrogen pressure to increase the propeller blade angle, which decreases engine RPM. Additionally, it allows the relatively cold and thick oil in the propeller's hub to be exchanged with the engine's warmer oil ensuring the propeller responds in a normal manner.
+The Prop Exercise and Governor Function check also circulates warm oil into the propeller's hub and provides confirmation that the propeller governor is able to maintain engine RPM. As RPM is reduced by the governor's commanded increase in propeller blade angle, an associated slight increase in manifold pressure can be observed.
+
+Landing Gear
+The Seminole is equipped with hydraulically actuated, fully retractable, tricycle-type landing gear. Hydraulic pressure for gear operation is provided by an electrically powered, reversible hydraulic pump. The gear is held in the up position solely by hydraulic pressure. Springs assist in gear extension and in locking the gear in the down position. After the gear is down and the downlock hooks engage, springs maintain force on each hook to keep it locked until it is released by applying hydraulic pressure with the gear selector.
+In conventional and G500 Seminoles, the position of the gear is indicated by a combination of:
+• Gear indicator lights. These three green lights (one for each gear) are directly above the landing gear selector switch. They illuminate when the down limit switches are depressed, indicating that the gear is down and locked.
+• The "GEAR UNSAFE" annunciator. This red annunciator at the top of the instrument panel illuminates when neither the up nor down limit switches are depressed, usually indicating that the gear is in transit.
+In G1000 Seminoles, gear status is displayed on the MFD:
+• Green circles: gear down and locked
+• Hollow white circles: gear up
+• Crosshatched squares: gear in transit
+• Red circles: abnormal / unknown gear position
+Additionally, a convex mirror on the left engine nacelle allows the pilot to visually confirm the position of the nose gear.
+A gear warning system is activated under any of the following conditions:
+1. The gear is not locked down with the throttle lever positioned below approximately 15" manifold pressure (MP) on one or both engines.
+2. The gear is not locked down with wing flaps selected to 25° or 40°.
+3. The gear handle is in the up position on the ground (tested only by authorized maintenance personnel).
+This warning consists of a rapid (90 or 180 cycles per minute) beeping in conventional or G500 Seminoles, and an aural "CHECK GEAR" voice alert (accompanied by a CAS warning) in G1000 Seminoles.
+Gear retraction on the ground is prevented by a squat switch located on the left main landing gear. On the ground, the switch is open, preventing electrical current from reaching the hydraulic pump. Once airborne, the strut becomes fully extended, closing the switch that allows current to reach the hydraulic pump.
+In the event of a hydraulic malfunction, the landing gear may be extended by the use of the red emergency gear extension knob. After placing the gear selector in the down position, pulling the red emergency gear extension knob releases the hydraulic pressure which is holding the gear in the up position and allows the gear to free-fall down. Emergency gear extension is limited to a maximum of 100 KIAS due to air-load on the nose gear.
+Diagnosing gear abnormalities can require careful analysis. A non-illuminated gear indicator could mean the gear is not locked down, that the indicating system is malfunctioning, or simply that the bulb has burned out. (To check the bulbs, the indicator lights can be pulled out and swapped between sockets.)
+When dealing with a suspected landing gear problem, it is important to verify the position of the navigation light switch. This switch will cause the green lights to be dimmed and, in some cases, make them impossible to see during the day. As with any emergency or abnormality, always refer to the appropriate checklist. Use all available information (from the gear indicators, Gear Unsafe annunciator, warning horn, and nose gear mirror) to diagnose potential system issues.
+NOTE: If hydraulic pressure is lost with gear retracted, the gear will free-fall.
+The nose wheel is steered through the use of the rudder pedals and is steerable 30 degrees either side of center.
+
+Brakes
+The Seminole is equipped with hydraulically actuated disk brakes on the main landing gear wheels. Braking is accomplished by depressing the tops of the rudder pedals. The hydraulic system for the brakes is independent of that for the landing gear. The brake fluid reservoir for servicing is located in the nose cone. To set the parking brake, hold the brakes and pull the black parking brake knob.
+All ATP Seminoles are equipped with heavy duty brakes. Refer to the POH to make the required adjustment to performance calculations.
+The parking brake is not to be used in training or flight checks with ATP.
+
+Flaps
+The Seminole is equipped with a manual flap system. The flaps are extended with a lever located between the two pilot seats. Flap settings are 0°, 10°, 25° and 40° and are spring-loaded to return to the 0° position.
+ATP operations require Flaps 25° for all landings except the short field, which requires Flaps 40°. Flaps 25° causes a gear warning indication if the gear is not down.

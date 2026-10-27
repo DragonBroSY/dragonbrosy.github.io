@@ -1,0 +1,147 @@
+Arrival Procedures, Part Two: Visual and Instrument Approaches, Go-Arounds, and Holding.
+
+Normal Visual Approach & Landing
+1. Complete the "Approach Checklist" before entering the traffic pattern; devote full attention to aircraft control and traffic avoidance.
+2. Slow to 100 KIAS prior to entering downwind or traffic pattern.
+3. Enter traffic pattern at published TPA (typically 1,000' AGL).
+4. Announce when abeam approach end, on extended base, or on extended final (When ready to descend out of pattern altitude): "Gear Down Before Landing Checklist."
+5. Extend flaps 25°.
+6. Descend out of TPA at 88 KIAS/Blueline.
+7. Announce on base leg or turning final: "Blueline—GUMP." "Gas, Undercarriage, Mixtures, Props."
+8. Maintain 88 KIAS/Blueline with flaps 25° on base and final.
+9. Announce at 400' AGL: "Gear Down—Stabilized."
+Whenever leaving TPA you should verify that the "Gear Down Before Landing Checklist" has been accomplished. Both pilots must have verified that the gear position indicators show three green.
+
+Gear Down Before Landing Checklist (ATP, Inc. Max Gear Speed 120 KIAS)
+GEAR — (Hand on Selector Until) 3 GREEN
+FUEL SELECTORS — ON
+FLAPS — (Vfe 111 KIAS) 25°
+MIXTURES — FWD
+PROPS — FWD
+FUEL PUMPS — ON
+Checklist Complete
+
+Normal Visual Approach & Landing Profile
+The profile is drawn as an airplane flying a long straight-in arrival that joins a rectangular pattern, with notes at each point. Approx. 15 NM from Airport: "Approach Checklist"; verify 400' AGL altitude for the "Gear Down—Stabilized" call. Approx. 10 NM from Airport: begin slowing to 100 KIAS; plan descent to reach pattern altitude by 5 NM out. Approx. 5 NM from Airport: reduce power to approx 15" MP or power setting that eliminates gear horn; maintain 100 KIAS and TPA. When Ready to Descend Out of TPA (only descend out of pattern altitude on one engine when certain of making the runway): announce "Gear Down—Before Landing Checklist"; extend gear (hand on selector until 3 green); select flaps 25°; accomplish Before Landing Checklist. On Base: maintain Blueline speed; check and announce "Blueline—GUMP; Gas, Undercarriage, Mixture, Props." At 400' on final: check and announce "Gear Down—Stabilized." At 200': begin slowing to 80 KIAS. Touchdown: on intended touchdown point, within first third of runway, at minimum controllable airspeed (stall warning on). Rollout: maintain centerline until taxi speed; increase crosswind control inputs as airplane slows.
+If the pattern altitude is lower than the standard 1,000' AGL, run the Gear Down Before Landing Checklist in its usual position relative to the runway. However, delay the start of descent until you can fly a normal descent path to the intended touchdown point.
+
+Traffic Pattern Operations Profile
+This profile shows the closed traffic pattern for repeated landings. After touchdown and takeoff, climb at VY, 88 KIAS, and at 300' below TPA, turn crosswind. Established on Downwind: complete pattern work After T/O Checklist; power 15-18" (100 KIAS); flaps / gear up. Abeam Touchdown Point: reduce power 1-2"; "Gear Down Before Landing Checklist"; maintain TPA to slow to 88 KIAS, then begin the descent. On Base: maintain 88 KIAS; verify and announce "Blue—Line—GUMP; Gas, Undercarriage, Mixture, Props." At 400' on final: check and announce "Gear Down—Stabilized."
+
+Short Field Visual Approach & Landing
+1. Complete the "Approach Checklist" before entering the traffic pattern; devote full attention to aircraft control and traffic avoidance.
+2. Slow to 100 KIAS prior to entering downwind or traffic pattern.
+3. Enter traffic pattern at published TPA.
+4. Announce when abeam approach end, on extended base, or on extended final (When ready to descend out of pattern altitude): "Gear Down Before Landing Checklist Short Field."
+5. Extend flaps 25°.
+6. Descend out of TPA at 88 KIAS/Blueline.
+7. Announce: (On Base Leg or Turning to Final) "Blueline—GUMP." "Gas, Undercarriage, Mixtures, Props."
+8. On final, extend flaps 40°.
+9. Reduce airspeed to speed per Landing Distance Over 50 Ft. Obstacle Short Field Effort Chart (POH section 5) for actual weight. Maintain constant power, airspeed, and angle of descent.
+10. Announce at 400' AGL: "Gear Down—Stabilized."
+11. Close throttles slowly in the flare – touch down with little or no floating.
+12. Maintain back pressure on control wheel to prevent slamming the nose wheel onto the runway.
+13. Retract flaps after touchdown.
+14. Simulate and announce "max braking" for training and checkride purposes.
+Use 75 KIAS (max weight speed) on final as a minimum speed for training and flight checks, unless specified by the Examiner to use computed speed for actual weight. To maintain a margin of safety during training, select a touchdown point no earlier than the beginning of the second centerline marking.
+TECHNIQUE: Fly proper speed and maintain some power for round out, close throttles in flare.
+
+Precision Approach One or Two Engines (ILS or RNAV to LPV Minimums)
+ATP recommends initially setting flaps 25° at glideslope intercept for both one and two-engine precision approaches. When conducting a one-engine ILS down to minimums it is assumed that a landing is assured. Flaps 25° allows for a stabilized approach to touchdown for both one and two-engine operations. ATP does not recommend a one-engine go-around below 500' AGL. For training purposes, both engines are available from 400' AGL and below, should a go-around become necessary.
+1. Complete the "Approach Checklist" and identify localizer when able.
+2. Set the published inbound course on the HSI.
+3. Announce "Course Alive" when the localizer begins moving toward center.
+4. Check for flags at glideslope intercept altitude and marker.
+5. Maintain 100 KIAS until glideslope intercept.
+6. Announce "Glideslope Alive" when the glideslope begins moving toward center.
+7. ½ dot below glideslope intercept: "Gear Down Before Landing Checklist."
+8. Extend flaps 25°.
+9. Descend on glideslope at 88 KIAS/Blueline (or 100 KIAS considering traffic).
+10. Announce out of 1,000' AGL: "Blueline—GUMP." "Gas, Undercarriage, Mixtures, Props."
+11. Maintain 88 KIAS/Blueline from 1,000' AGL inbound.
+12. Announce at 400' AGL: "Gear Down—Stabilized."
+13. Announce at 100' above minimums: "Approaching Minimums."
+14. "Minimums."
+
+ILS Approach One or Two Engines Profile
+The profile is a side view of the descent on the glideslope. Level at 100 KIAS until ½ dot below glideslope intercept: "Gear Down Before Landing Checklist" – Flaps 25°. Descending at 88 KIAS, at 1000' AGL: "Blueline, GUMP." At 400' AGL: "Gear Down—Stabilized." At 100' above DH: "Approaching Minimums." At DH: "Minimums." Then slow to 80 KIAS and touch down at approx. 75 KIAS.
+
+Non-Precision Straight-In Approach One or Two Engines
+For a simulated single-engine non-precision straight-in approach: "Gear Down Before Landing Checklist" at FAF; maintain 100 KIAS approach speed and flaps 0°; Flaps 25° descending from MDA, followed by the "Gear Down—Stabilized" call at 400' AGL. If the airplane will not maintain MDA on a simulated one-engine approach with full power on the operating engine, terminate the approach and use both engines. ATP does not recommend a one-engine go-around below 500' AGL. For training purposes, both engines are available from 400' AGL and below, should a go-around become necessary.
+During simulated single-engine training ATP prohibits gear retraction at MDA unless a missed approach is being demonstrated. With an actual engine failure, you may be required to retract the gear to maintain MDA.
+1. Complete the "Approach Checklist" and identify the NAV aid when able.
+2. Maintain 100 KIAS clean (gear up, flaps up) during procedure turn outbound and inbound to the FAF.
+3. Set the published inbound course on the HSI.
+4. Announce "Course Alive" when the course needle begins moving toward center.
+5. Check for flags. 2 miles prior to FAF, verify approach mode on GPS (APR, LPV, LNAV, LP, etc.)
+6. Just prior to the FAF: "Gear Down Before Landing Checklist."
+7. Flaps 0° (one engine) / Flaps 25° (two engines).
+8. At the FAF: Start time, Descend at 600-800 FPM at 88 KIAS/Blueline.
+9. Announce out of 1,000' AGL: "Blueline—GUMP." "Gas, Undercarriage, Mixtures, Props."
+10. Maintain 88 KIAS/Blueline from 1,000' AGL inbound.
+11. Announce at 100' above minimums: "Approaching Minimums."
+12. "Minimums."
+13. Maintain MDA (plus 50' minus 0').
+14. Runway in sight: descend at predetermined VDP or maintain MDA to MAP.
+15. Do not leave MDA until landing is assured.
+16. When descending from MDA: Flaps 25° (single-engine)
+17. Announce at 400' AGL: "Gear Down—Stabilized."
+
+Non-Precision Straight-In Approach One or Two Engines Profile
+The profile is a stepped side view. At 100 KIAS crossing the FAF: "Gear Down Before Landing Checklist"; 2 Eng: Flaps 25° / 1 Eng: Flaps Up (0°); start time if required. Descending at 88 KIAS, at 1000' AGL: "Blueline, GUMP." At 100' above MDA: "Approaching Minimums." At MDA: "Minimums," then level at MDA. Leaving MDA, 1 Eng, Landing Assured: Flaps 25°. At 400' AGL: "Gear Down—Stabilized." Then slow to 80 KIAS and touch down at approx. 75 KIAS.
+
+Circle to Land Approaches Two Engines
+ATP prohibits engine-out (actual or simulated) circle to land approaches in the training environment below Traffic Pattern Altitude.
+ATP requires 88 to 100 KIAS approach speed and flaps 0° for circle to land approaches. Unlike straight-in approaches, maintain 88 to 100 KIAS out of 1,000' AGL, descending to MDA. Approach category B is used for minimums. Category B speed ranges from 91 KIAS to 120 KIAS. When leaving MDA, set flaps 25°. Verify and announce "Gear Down—Stabilized" at 400' AGL. Do not exceed 111 KIAS (VFE) during approach.
+1. Complete the approach checklist and identify the NAV aid when able.
+2. Maintain 100 KIAS clean (gear up, flaps up) during procedure turn outbound and inbound to the FAF.
+3. Set the published inbound course on the HSI.
+4. Announce "Course Alive" when the course needle begins moving toward center.
+5. Check for flags.
+6. Just prior to the FAF: "Gear Down Before Landing Checklist."
+7. Flaps 0°.
+8. At the FAF: Start time, Descend at 600-800 FPM at 88-100 KIAS.
+9. Announce out of 1,000' AGL: "Blueline—GUMP." "Gas, Undercarriage, Mixtures, Props." (You may maintain up to 100 KIAS for circle maneuver at MDA.)
+10. Announce at 100' above minimums: "Approaching Minimums."
+11. "Minimums."
+12. Maintain MDA during circling maneuver (plus 50' minus 0').
+13. When turning onto final and descending from MDA: Flaps 25°
+14. Announce at 400' AGL: "Gear Down—Stabilized."
+
+Circle to Land Approaches Two Engines Profile
+The profile is a side view that ends in a circling turn. At 100 KIAS crossing the FAF: "Gear Down Before Landing Checklist" (Flaps 0°); start time if required. Descending at 88-100 KIAS, at 1000' AGL: "Blueline, GUMP." (88-100 KIAS). At 100' above MDA: "Approaching Minimums." At MDA: "Minimums," then the circling maneuver at MDA. Leaving MDA: Flaps 25°. At 400' AGL: "Gear Down—Stabilized." Then slow to 80 KIAS and touch down at approx. 75 KIAS.
+
+Go Around / Missed Approach
+Both pilots must watch for unsatisfactory conditions throughout the approach. A go-around procedure must be initiated any time the conditions for a safe approach and landing are not met. Either pilot can command the go-around or missed approach. Some examples of unsatisfactory approach and landing conditions are:
+• Unstable approach path or airspeed.
+• Improper runway alignment.
+• Unexpected hazards on the runway or on final.
+• Any sounding of the gear warning horn below 1,000' AGL.
+• Anything that jeopardizes a safe approach and landing.
+Any time unsafe or unsatisfactory conditions are encountered, a go-around must be immediately executed and another approach and landing should be made under more favorable conditions.
+1. Simultaneously increase throttles to full power and pitch for climb.
+2. Retract flaps slowly to 0°. (Slowly to preclude excessive sink.)
+3. Retract landing gear upon acquiring positive rate of climb.
+4. Climb at 88 KIAS/Blueline (VY) until 500' AGL.
+5. Climb at 110 KIAS after passing through 500' AGL (provides better visibility and engine cooling) unless VX or VY is needed for obstacle clearance.
+6. Reduce power to 24" MP, 2500 RPM at 1,000' AGL.
+7. Announce and perform "After Takeoff Checklist" out of 1,000' AGL.
+During simulated engine-out training, both engines are available for a go-around from 400' AGL and below. Do not attempt a single-engine go-around below 500' AGL.
+
+Holding
+Max speeds:
+Up to 6,000' MSL — 200 KIAS
+6,001' to 14,000' MSL — 230 KIAS
+1. Slow to 100 KIAS holding speed 3 minutes prior to fix.
+2. Acquire EFC.
+3. Hold at 100 KIAS, with 1 minute leg to the inbound fix once established.
+4. Report altitude and time at holding fix.
+5. Make proper entry.
+
+Approach, Procedure Turn & Holding Power Settings
+The following suggested power settings are approximations only.
+ILS, 88 KIAS (Configured) — 2-Eng.: 15" — 1-Eng.: 20"
+Non-Precision, 88 KIAS (Configured) — 2-Eng.: 13" — 1-Eng.: 15" (600-800 FPM Descent)
+Level at MDA, 88 KIAS (Configured) — 2-Eng.: 20" — 1-Eng.: Full or As Necessary
+Holding/PT, 100 KIAS (Clean) — 2-Eng.: 18" — 1-Eng.: Full or As Necessary
+Traffic Pattern, 100 KIAS (Clean) — 2-Eng.: 18" — 1-Eng.: Full or As Necessary

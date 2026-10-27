@@ -1,0 +1,96 @@
+Departure Procedures.
+
+Section 4. Departure Procedures.
+
+Passenger Briefing
+1. Safety Belt/Harness Usage
+2. Cockpit Door Operation
+3. Emergency Exit Operation
+4. Fire Extinguisher Location/Usage
+5. No Smoking
+6. PIC Authority/Training/Checkride
+
+Pre-Takeoff Briefing (Standard Procedures)
+Engine failure or abnormality prior to rotation:
+• Abort takeoff - Throttles immediately closed
+• Brake as required - Stop straight ahead
+If not enough runway to stop:
+• Mixture to cutoff
+• Fuel selectors, Magnetos, & Battery Master Off
+• Maintain directional control, avoid obstacles
+Engine failure after rotation with gear down & sufficient runway remains for a complete stop:
+• Maintain directional control
+• Throttles immediately closed
+• Land straight ahead, brake as required
+Engine failure after rotation with gear up and decision made to continue:
+• Maintain directional control/Pitch Attitude/Airspeed
+• Mixtures, Props, Throttles Full Forward
+• Flaps and Gear Up
+• Identify with dead foot, Verify by closing the throttle
+• Feather Prop
+• Mixture to cutoff
+• Climb at 88 KIAS/Blueline
+• Declare an Emergency and Land
+
+Normal Takeoff (Flaps 0°)
+Do not delay on runway.
+1. Approaching centerline, position controls for wind.
+2. Smoothly increase throttles to full power.
+3. Check engine gauges.
+4. "Airspeed Alive."
+5. Start slow rotation at 75 KIAS. (Main gear should lift off at approximately 80 KIAS. 75 KIAS is VR, not VLOF.)
+6. Accelerate to 88 KIAS/Blueline (VY).
+7. Establish a positive rate of climb and retract the gear if no runway remains. (When taking off from runways 4,000' or less, no runway usually remains after a positive rate of climb has been established.)
+8. Climb at 88 KIAS/Blueline (VY) until 500' AGL.
+9. Climb at 110 KIAS after passing through 500' AGL. (100-110 KIAS provides better visibility and engine cooling. Density altitude, terrain, obstacles, etc. may require a climb speed from 82-100 KIAS.)
+10. Reduce throttles to 24" MP, 2500 RPM at 1,000' AGL.
+11. "After Takeoff Checklist" out of 1,000' AGL.
+
+Normal Takeoff Profile
+The normal takeoff profile is drawn as a side view of the runway and climbout, read from left to right. At the start of the roll: position controls for wind, smooth increase to full power, check gauges. Along the runway: "Airspeed Alive," then VR at 75 KIAS, then lift-off at approximately 80 KIAS. In the initial climb: 88 KIAS, accelerating to blueline, and, with no runway remaining for return, "Positive Rate—Gear Up." At 500' AGL: decrease pitch and accelerate to 110 KIAS. At 1000' AGL: set climb power, 24" MP and 2500 RPM, cruise-climb at 110 KIAS, and the "After Takeoff Checklist."
+Some ATP aircraft are equipped with Traffic Information System (TIS). TIS is not intended to be used as a collision avoidance system and does not relieve the pilot of responsibility to "see and avoid" other aircraft.
+
+Short Field Takeoff & Climb (Flaps 0°)
+1. Hold brakes at departure end of runway.
+2. Increase throttles to 2000 RPM.
+3. Check engine gauges.
+4. Increase throttles to full power.
+5. Release brakes.
+6. "Airspeed Alive."
+7. Rotate at 70 KIAS or as specified per Short Field Effort Chart (POH section 5) for Flaps 0° and actual weight.
+8. Climb at 82 KIAS through obstacle height or as specified per Short Field Effort Chart (POH section 5) for Flaps 0° and actual weight.
+9. Establish a positive rate of climb and retract the gear.
+10. Climb at 88 KIAS/Blueline (VY) when clear of obstacles until 500' AGL.
+11. Climb at 110 KIAS after passing through 500' AGL.
+12. Reduce power to 24" MP, 2500 RPM at 1,000' AGL.
+13. "After Takeoff Checklist" out of 1,000' AGL.
+
+Short Field Takeoff & Climb Profile
+The short field profile is drawn the same way, from left to right. At the start of the runway: hold brakes, advance throttles slowly, check gauges at 2000 RPM, throttles full, release brakes. Along the runway: "Airspeed Alive," then rotation at VR, the computed speed. In the steep initial climb: obstacle clearance speed, past the obstacle, which is drawn as a small tree. Then accelerate to 88 KIAS and "Positive Rate, Gear Up." At 500' AGL: decrease pitch and accelerate to 110 KIAS. At 1000' AGL: set climb power, 24" MP and 2500 RPM, cruise-climb at 110 KIAS, and the "After Takeoff Checklist."
+Perform all training flight takeoffs with flaps up. ATP prohibits a flaps 25° short field takeoff for training and flight checks due to critically low airspeeds in the event of an actual engine failure. For short field takeoff training, rotate at 70 KIAS, climb at 82 KIAS through 50' or obstacle clearance as minimum speeds for training and flight checks, unless specified by the Examiner to use computed speed for actual weight.
+
+Engine Failure Procedure
+After Takeoff with No Runway Remaining and Gear Up
+Should an engine failure occur after takeoff and gear-up in a light twin, the following three second, step-by-step technique is suggested. For liability purposes, the following procedure does not cover all situations due to aircraft weight, OAT, density altitude, and aircraft performance. Refer to aircraft POH for additional information.
+Engine Failure Occurs – Perform the following in 3 seconds.
+One Thousand One: Decrease pitch attitude to horizon or slightly above – approximately 1° on AI. (If the Seminole is trimmed flying out at 88 KIAS and engine failure occurs, the airplane nose will drop towards the horizon due to loss of lift.)
+One Thousand Two: Input aileron to bank 2° to 5° into the operating engine. This will assist in directional control and assist in stopping the torque roll effect.
+One Thousand Three: Input rudder towards the operating engine. Inputting the rudder after accomplishing the above steps in the first two seconds will help alleviate stomping on the wrong rudder, creating a situation of directional control loss, airspeed loss, and possible altitude loss. Immediately accomplish memory items on "In-Flight Engine Failure" checklist.
+
+In-Flight Engine Failure (After Takeoff) — Emergency Checklist
+For ATP, Inc. training and checkrides only perform Troubleshoot Checklist at or above 3000' AGL. If an actual engine failure occurs, perform Troubleshoot Checklist only if altitude permits.
+MAINTAIN DIRECTIONAL CONTROL / PITCH ATTITUDE / AIRSPEED
+MIXTURES — FULL FWD
+PROPS — FULL FWD
+THROTTLES — FULL FWD
+FLAPS — UP
+GEAR — UP
+IDENTIFY — DEAD FOOT
+VERIFY/THROTTLE — CLOSE
+INOP ENG PROP — FEATHER
+INOP ENG MIXTURE — CUTOFF
+CLIMB — 88 KIAS/BLUELINE
+After Takeoff: Climb at 88 KIAS/Blueline or 82 KIAS/VXSE if required for obstacle clearance. Climb to pattern altitude or as required.
+DECLARE AN EMERGENCY WITH ATC
+LAND AT NEAREST SUITABLE AIRPORT
+Perform Engine Failure Secure Checklist if Time Permits

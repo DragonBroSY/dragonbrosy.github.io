@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-Engine Study Guide — DragonBroSY</title>
+  <meta name="description" content="Piper Seminole multi-engine checkride prep: narrated chapter audio of the ATP Seminole Training Supplement, plus flashcards for engine failure, VMC demo, V-speeds and in-flight maneuvers." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { overflow-x: hidden; }
+    body { background: #f5f7fa; color: #1a2a3a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; max-width: 100vw; }
+    .nav { background: #1a3a6b; border-bottom: 3px solid #c8a400; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-brand { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: #fff; font-size: 1.05rem; font-weight: 800; }
+    .nav-brand .wing { font-size: 1.2rem; }
+    .nav-links { display: flex; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.73rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; padding: 0 0.9rem; height: 56px; display: flex; align-items: center; border-bottom: 3px solid transparent; margin-bottom: -3px; transition: color 0.15s, border-color 0.15s; }
+    .nav-links a:hover { color: #fff; border-bottom-color: #c8a400; }
+    .nav-links a.active { color: #fff; border-bottom-color: #c8a400; }
+    @media (max-width: 640px) {
+      .nav { padding: 0 1rem; }
+      .nav-brand { font-size: 0.9rem; flex-shrink: 0; }
+      .nav-links { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; max-width: 58vw; }
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links a { padding: 0 0.55rem; font-size: 0.64rem; flex-shrink: 0; }
+    }
+    .main { max-width: 780px; margin: 2.5rem auto; padding: 0 1.1rem; flex: 1; min-width: 0; width: 100%; }
+    h1 { font-size: 1.8rem; font-weight: 800; color: #1a2a3a; letter-spacing: -0.02em; margin-bottom: 0.4rem; }
+    .subtitle { font-size: 0.84rem; color: #6a8aaa; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid #c8a400; }
+    .chapter { background: #fff; border: 1px solid #dde5ef; border-left: 3px solid #c8a400; border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 0.75rem; }
+    .chapter-num { font-size: 0.6rem; color: #1a3a6b; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.3rem; font-weight: 700; }
+    .chapter-title { font-size: 0.9rem; font-weight: 700; color: #1a2a3a; margin-bottom: 0.6rem; }
+    .chapter audio { width: 100%; height: 34px; }
+    .chapter-links { margin-top: 0.55rem; }
+    .chapter-links a { font-size: 0.72rem; color: #6a8aaa; text-decoration: none; font-weight: 600; }
+    .chapter-links a:hover { color: #1a3a6b; text-decoration: underline; }
+    .section-head { font-size: 1.05rem; font-weight: 800; color: #1a2a3a; margin: 2rem 0 0.75rem; padding-bottom: 0.4rem; border-bottom: 2px solid #c8a400; }
+    .chapter-desc { font-size: 0.78rem; color: #4a6a8a; line-height: 1.45; }
+    .credit { font-size: 0.72rem; color: #6a8aaa; margin-top: 1.5rem; line-height: 1.5; }
+    .credit a { color: #1a3a6b; }
+    footer { background: #1a3a6b; border-top: 3px solid #c8a400; text-align: center; font-size: 0.6rem; color: rgba(255,255,255,0.45); padding: 1.4rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 3rem; }
+
+    /* Flashcards */
+    .decks { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.9rem; }
+    .deck-btn { font: inherit; font-size: 0.74rem; font-weight: 700; color: #1a3a6b; background: #fff; border: 1px solid #c9d6e6; border-radius: 999px; padding: 0.4rem 0.85rem; cursor: pointer; }
+    .deck-btn:hover { border-color: #1a3a6b; }
+    .deck-btn[aria-pressed="true"] { background: #1a3a6b; color: #fff; border-color: #1a3a6b; }
+    .deck-btn .n { font-weight: 600; opacity: 0.7; margin-left: 0.25rem; }
+    .card { background: #fff; border: 1px solid #dde5ef; border-left: 3px solid #c8a400; border-radius: 8px; min-height: 260px; padding: 1.3rem 1.4rem; cursor: pointer; user-select: none; position: relative; outline: none; }
+    .card:focus-visible { box-shadow: 0 0 0 3px rgba(26,58,107,0.35); }
+    .card .side { font-size: 0.6rem; color: #1a3a6b; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 700; margin-bottom: 0.6rem; display: flex; justify-content: space-between; }
+    .card .tag { color: #9a7d00; }
+    .card .q { font-size: 1.15rem; font-weight: 700; line-height: 1.4; color: #1a2a3a; }
+    .card .hint { font-size: 0.74rem; color: #6a8aaa; margin-top: 1rem; }
+    .card .a { font-size: 0.9rem; line-height: 1.5; color: #1a2a3a; }
+    .card .a ol, .card .a ul { padding-left: 1.3rem; }
+    .card .a li { margin: 0.12rem 0; }
+    .card .a table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    .card .a td { padding: 0.22rem 0.4rem; border-bottom: 1px solid #edf1f6; vertical-align: top; }
+    .card .a td:last-child { text-align: right; font-weight: 700; white-space: nowrap; }
+    .card .a .note { font-size: 0.78rem; color: #4a6a8a; margin-top: 0.6rem; }
+    .card .a .chk td:first-child { font-family: ui-monospace, Menlo, monospace; font-size: 0.8rem; }
+    .card .a .sub { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #9a7d00; margin: 0.6rem 0 0.2rem; }
+    .card-nav { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-top: 0.75rem; }
+    .card-nav button { font: inherit; font-size: 0.76rem; font-weight: 700; color: #1a3a6b; background: #fff; border: 1px solid #c9d6e6; border-radius: 6px; padding: 0.5rem 0.9rem; cursor: pointer; }
+    .card-nav button:hover { border-color: #1a3a6b; }
+    .card-nav .count { font-size: 0.74rem; color: #6a8aaa; font-variant-numeric: tabular-nums; }
+    .card-nav .grp { display: flex; gap: 0.4rem; }
+    .kbd-hint { font-size: 0.68rem; color: #8aa0b8; margin-top: 0.5rem; text-align: center; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a class="nav-brand" href="/"><span class="wing">&#9992;</span> DragonBroSY</a>
+    <div class="nav-links">
+      <a href="https://dragonbrosy.github.io/Elevate-Courses/">Courses</a>
+      <a href="https://dragonbrosy.github.io/Elevate-Courses/feed.xml">Podcast</a>
+      <a href="ifr-study.html">IFR Study</a>
+      <a href="commercial-study.html">Commercial Study</a>
+      <a href="multi-study.html" class="active">Multi Study</a>
+      <a href="/#logbook">Logbook</a>
+      <a href="propel.html">Propel</a>
+      <a href="log.html">Log Flight</a>
+      <a href="/#weather">Weather</a>
+      <a href="https://github.com/DragonBroSY">GitHub</a>
+    </div>
+  </nav>
+
+  <div class="main">
+    <h1>Multi-Engine Study Guide</h1>
+    <p class="subtitle">Piper Seminole checkride prep. Drill the flashcards, then listen to the full training supplement chapter by chapter or read the transcript.</p>
+
+    <h2 class="section-head" id="flashcards">Flashcards</h2>
+    <div class="decks" role="group" aria-label="Flashcard decks" id="decks"></div>
+    <div class="card" id="card" tabindex="0" role="button" aria-live="polite"></div>
+    <div class="card-nav">
+      <div class="grp"><button id="prev" type="button">&larr; Prev</button><button id="next" type="button">Next &rarr;</button></div>
+      <span class="count" id="count"></span>
+      <div class="grp"><button id="shuffle" type="button">Shuffle</button></div>
+    </div>
+    <p class="kbd-hint">Tap the card or press Space to flip &middot; &larr; &rarr; to move between cards</p>
+
+    <h2 class="section-head">Audio Chapters</h2>
+    <div id="chapters"></div>
+
+    <h2 class="section-head">Resources</h2>
+    <div class="chapter">
+      <div class="chapter-num">Reference &middot; PDF</div>
+      <div class="chapter-title">Piper Seminole Training Supplement</div>
+      <div class="chapter-desc">ATP Flight School &middot; Revised 2025-11-06 &middot; <a href="https://atpflightschool.com/changes/supp-seminole" target="_blank" rel="noopener">recent changes</a></div>
+      <div class="chapter-links"><a href="multi-study/resources/atp-piper-seminole-supplement.pdf" target="_blank">Open PDF</a></div>
+    </div>
+
+    <p class="credit">Source: Piper Seminole Training Supplement, &copy; 2009&ndash;2025 ATP USA, Inc. (<a href="https://atpflightschool.com" target="_blank" rel="noopener">atpflightschool.com</a>), shared with permission. Text narrated word-for-word from the supplement; diagrams adapted into narrated descriptions. Flashcards quote the supplement. Always refer to the POH/AFM for the airplane you are flying.</p>
+  </div>
+
+  <footer>DragonBroSY &middot; Flight Training Log</footer>
+
+  <script>
+    const CHAPTERS = [
+      ['01_intro_engine_out_aerodynamics', 'Introduction and Engine-Out Aerodynamics'],
+      ['02_engines_props_gear', 'Aircraft Systems: Engines, Propellers, Landing Gear, Brakes, and Flaps'],
+      ['03_airframe_fuel_electrical', 'Aircraft Systems: Vacuum, Pitot Static, Fuel, Electrical, Heater, and Stall Warning'],
+      ['04_garmin_g500', 'Aircraft Systems: Garmin G500'],
+      ['05_garmin_g1000_g5', 'Aircraft Systems: Garmin G1000 and G5'],
+      ['06_avionics_configs_model_years', 'Standard Avionics Configurations and Differences by Model Year'],
+      ['07_vspeeds_performance_weight_balance', 'V-Speeds, Performance, and Weight & Balance'],
+      ['08_departure_procedures', 'Departure Procedures and the After-Takeoff Engine Failure'],
+      ['09_arrival_callouts_stabilized', 'Arrival Procedures: Callouts, Stabilized Approaches, and Landing'],
+      ['10_approaches_go_around_holding', 'Arrival Procedures: Visual and Instrument Approaches, Go-Around, Holding'],
+      ['11_vmc_demo_engine_failure', 'In-Flight Maneuvers: Spin Awareness, VMC Demo, and Engine Failure'],
+      ['12_airstart_private_maneuvers', 'In-Flight Maneuvers: Airstart, Unusual Attitudes, and Private Maneuvers'],
+      ['13_commercial_cfi_atp_maneuvers', 'In-Flight Maneuvers: Commercial, CFI, and ATP Maneuvers'],
+      ['14_oral_review', 'Oral Review']
+    ];
+    document.getElementById('chapters').innerHTML = CHAPTERS.map(([slug, title], i) => `
+    <div class="chapter">
+      <div class="chapter-num">Chapter ${String(i + 1).padStart(2, '0')}</div>
+      <div class="chapter-title">${title}</div>
+      <audio controls preload="none" src="multi-study/audio/${slug}.mp3"></audio>
+      <div class="chapter-links"><a href="multi-study/text/${slug}.txt" target="_blank">Read transcript</a></div>
+    </div>`).join('');
+
+    // ---- Flashcards (wording from the ATP Seminole Training Supplement) ----
+    const chk = rows => '<table class="chk">' + rows.map(([a, b]) => `<tr><td>${a}</td><td>${b}</td></tr>`).join('') + '</table>';
+    const ol = items => '<ol>' + items.map(x => `<li>${x}</li>`).join('') + '</ol>';
+    const ul = items => '<ul>' + items.map(x => `<li>${x}</li>`).join('') + '</ul>';
+    const tol = (cols) => '<div class="sub">ACS</div><table>' + cols.map(([a, b]) => `<tr><td>${a}</td><td>${b}</td></tr>`).join('') + '</table>';
+
+    const DECKS = {
+      'Engine Failure': [
+        { q: 'In-Flight Engine Failure checklist — memory items through Identify / Verify.', a: '<p><b>MAINTAIN DIRECTIONAL CONTROL / PITCH ATTITUDE / AIRSPEED</b></p>' + chk([['MIXTURES', 'FULL FWD'], ['PROPS', 'FULL FWD'], ['THROTTLES', 'FULL FWD'], ['FLAPS', 'UP'], ['GEAR', 'UP'], ['IDENTIFY', 'DEAD FOOT'], ['VERIFY/THROTTLE', 'CLOSE']]) },
+        { q: 'In-Flight Engine Failure: Troubleshoot items (after Verify / Throttle — Close).', a: chk([['THROTTLE', '1"'], ['FUEL PUMPS', 'ON'], ['MAGNETOS', 'ON/CHECK'], ['FUEL SELECTORS', 'ON'], ['CARB HEAT', 'ON, CHECK, OFF'], ['FUEL QTY/PRESSURE or FLOW', 'CHECK'], ['OIL PRESSURE/TEMP', 'CHECK']]) + '<p class="note">If engine inop, continue In-Flight Engine Failure Checklist &amp; Engine Failure Secure. ATP training/checkrides: troubleshoot only at or above 3,000\' AGL.</p>' },
+        { q: 'In-Flight Engine Failure: after troubleshooting, if the engine is still inop?', a: chk([['INOP ENG PROP', 'FEATHER'], ['INOP ENG MIXTURE', 'CUTOFF']]) + '<p class="note">Then the Engine Failure Secure checklist.</p>' },
+        { q: 'Engine Failure Secure checklist.', a: chk([['OPERATING ENG MIXTURE', 'LEAN AS REQ'], ['TRIM', 'AS REQ'], ['INOP ENG MAGNETOS', 'OFF'], ['INOP ENG FUEL PUMP', 'OFF'], ['INOP ENG ALTERNATOR', 'OFF'], ['INOP ENG FUEL SELECTOR', 'OFF'], ['INOP ENG COWL FLAP', 'CLOSED'], ['REC/BLOW', 'OFF']]) + '<p class="note">PERFORM CRUISE CHECKLIST. In training, Secure items are simulated (touched but not actuated).</p>' },
+        { q: 'In-Flight Engine Failure (After Takeoff) — full checklist.', a: '<p><b>MAINTAIN DIRECTIONAL CONTROL / PITCH ATTITUDE / AIRSPEED</b></p>' + chk([['MIXTURES', 'FULL FWD'], ['PROPS', 'FULL FWD'], ['THROTTLES', 'FULL FWD'], ['FLAPS', 'UP'], ['GEAR', 'UP'], ['IDENTIFY', 'DEAD FOOT'], ['VERIFY/THROTTLE', 'CLOSE'], ['INOP ENG PROP', 'FEATHER'], ['INOP ENG MIXTURE', 'CUTOFF'], ['CLIMB', '88 KIAS/BLUELINE']]) + '<p class="note">After takeoff: 88 KIAS/Blueline, or 82 KIAS/V<sub>XSE</sub> if required for obstacle clearance. DECLARE AN EMERGENCY WITH ATC. LAND AT NEAREST SUITABLE AIRPORT. Engine Failure Secure if time permits.</p>' },
+        { q: 'Engine failure after takeoff, gear up: the 3-second technique?', a: ol(['<b>One Thousand One:</b> decrease pitch to the horizon or slightly above — approx. 1° on the AI.', '<b>One Thousand Two:</b> aileron to bank 2°–5° into the operating engine.', '<b>One Thousand Three:</b> rudder toward the operating engine.']) + '<p class="note">Then immediately the In-Flight Engine Failure memory items. Rudder last helps avoid stomping on the wrong rudder.</p>' },
+        { q: 'Pre-takeoff briefing: engine failure or abnormality prior to rotation?', a: ul(['Abort takeoff — throttles immediately closed', 'Brake as required — stop straight ahead']) + '<div class="sub">If not enough runway to stop</div>' + ul(['Mixture to cutoff', 'Fuel selectors, magnetos, &amp; battery master off', 'Maintain directional control, avoid obstacles']) },
+        { q: 'Pre-takeoff briefing: engine failure after rotation, gear down, enough runway to stop?', a: ul(['Maintain directional control', 'Throttles immediately closed', 'Land straight ahead, brake as required']) },
+        { q: 'Pre-takeoff briefing: engine failure after rotation, gear up, decision to continue?', a: ul(['Maintain directional control/pitch attitude/airspeed', 'Mixtures, props, throttles full forward', 'Flaps and gear up', 'Identify with dead foot, verify by closing the throttle', 'Feather prop', 'Mixture to cutoff', 'Climb at 88 KIAS/Blueline', 'Declare an emergency and land']) },
+        { q: 'Engine failure demo: how may failures be simulated, and at what altitudes?', a: ul(['Below 3,000\' AGL: throttle only.', 'At 3,000\' AGL or higher: throttle or mixture.', 'Never use the fuel selector.', 'Actual shutdown on either engine only above 4,000\' AGL.', 'Troubleshoot checklist only at or above 3,000\' AGL (training/checkrides).']) },
+        { q: 'Drift-down: 8,000\' MSL, 20°C, 3,400 lbs, prop feathered, 88 KIAS. Where does it level off?', a: '<table><tr><td>8,000 → 7,000 (−120 FPM)</td><td>13 NM</td></tr><tr><td>7,000 → 6,000 (−80 FPM)</td><td>19 NM</td></tr><tr><td>6,000 → 5,000 (−40 FPM)</td><td>37 NM</td></tr><tr><td>5,000\' (0 FPM)</td><td>SE absolute ceiling</td></tr><tr><td>4,000\' (+50 FPM)</td><td>SE service ceiling</td></tr></table><p class="note">Approx. 1.5 NM per minute at blueline. All figures approximate.</p>' }
+      ],
+      'VMC Demo': [
+        { q: 'VMC demo: minimum altitude, and which engine is "failed"?', a: '<p>At or above <b>4,000\' AGL</b> (or as specified by the Examiner). Slowly close the <b>left</b> throttle; the right engine is the operating engine.</p><p class="note">Not required for the ATP rating unless CLT restricted.</p>' },
+        { q: 'VMC demo: setup steps 1–6.', a: ol(['Clearing turns.', 'Flaps up, gear up.', 'Mixtures — enrichen, props — fwd, fuel pumps — on.', 'Slowly close left throttle while maintaining heading and altitude.', 'Slow to 100 KIAS (approx. 10 KIAS above V<sub>YSE</sub>).', 'Slowly increase right throttle to full power. Rudder for directional control; bank up to 5° toward the operating engine.']) },
+        { q: 'VMC demo: how do you slow down, and how fast?', a: '<p>Increase pitch slowly, decreasing airspeed at approximately <b>1 knot per second</b>, until full rudder is applied to maintain directional control. Add aileron as speed decreases to hold a maximum of 5° bank toward the operating engine.</p>' },
+        { q: 'VMC demo: recover at the first sign of…?', a: ul(['Loss of directional control', 'First indication of stall (stall horn or buffet)']) + '<p class="note">Don\'t confuse the gear horn (beeps at 90 cycles/min because the left throttle is closed) with the steady stall horn.</p>' },
+        { q: 'VMC demo: recovery steps 9–13.', a: ol(['Simultaneously reduce power on the operating engine and decrease AOA as necessary to regain directional control within 20° of entry heading.', 'Increase power slowly on the operating engine while holding an AOA that lets airspeed increase, with minimum loss of altitude.', 'Accelerate to 82–88 KIAS.', 'Bring throttles slowly together to 20" MP.', '"Cruise Checklist."']) + '<p class="note">Never recover by adding power on the simulated failed engine.</p>' },
+        { q: 'Why can the Seminole stall before reaching VMC in the demo?', a: '<p>In the Seminole, VMC occurs at a lower airspeed than stall speed. The engine loses power as altitude increases (less dense air in the induction system), which reduces VMC.</p><p class="note">Spin risk: reaching VMC and stall at the same time.</p>' },
+        { q: 'Define VMC.', a: '<p>The calibrated airspeed at which, following the sudden critical loss of thrust, it is possible to maintain control of the airplane.</p><p class="note">Red line, 56 KIAS. Piper determined it at 1,500\' MSL, 2,730 lbs, 5° bank, computed to sea level.</p>' },
+        { q: 'SMACFUM — the VMC certification conditions.', a: ul(['<b>S</b>tandard day at sea level (max engine power)', '<b>M</b>ost unfavorable weight', '<b>A</b>ft CG (or most unfavorable)', '<b>C</b>ritical engine windmilling', '<b>F</b>laps in the takeoff position &amp; landing gear retracted', '<b>U</b>p to 5° bank into the operative engine', '<b>M</b>ax available takeoff power on each engine']) },
+        { q: 'What raises VMC? What lowers it?', a: '<div class="sub">Lowers VMC</div>' + ul(['Higher altitude / temperature (less power)', 'Heavier weight (more horizontal lift in a bank)', 'Forward CG (longer rudder arm)', 'Feathered prop', 'Gear extended (keel effect), flaps extended', 'Bank into the operating engine (up to 5°)', 'Less power on the operating engine']) + '<div class="sub">Raises VMC</div>' + ul(['More power on the operating engine', 'Less bank — about 3 knots per degree']) },
+        { q: 'VMC certification limits on rudder force and heading?', a: ul(['Rudder pedal force ≤ 150 pounds', 'No need to reduce power on the operative engine', 'No dangerous attitude', 'Possible to prevent a heading change of more than 20°']) },
+        { q: 'PAST — why the left engine is critical (on conventional twins).', a: ul(['<b>P</b>-Factor (yaw)', '<b>A</b>ccelerated Slipstream (roll and pitch)', '<b>S</b>piraling Slipstream (yaw)', '<b>T</b>orque (roll)']) + '<p class="note">The Seminole\'s right prop counter-rotates, so it has no critical engine.</p>' },
+        { q: 'Zero sideslip: how do you fly it?', a: '<p>Bank <b>2°–5° into the operating engine</b>, with the inclinometer ball <b>"split"</b> toward the operating engine side. This aligns the fuselage with the relative wind for minimum drag.</p>' }
+      ],
+      'V-Speeds': [
+        ['V<sub>SO</sub>', '55 KIAS', 'Stall speed in landing configuration — bottom of white arc'],
+        ['V<sub>MC</sub>', '56 KIAS', 'Minimum controllable airspeed — red line'],
+        ['V<sub>S</sub>', '57 KIAS', 'Stall speed with zero flaps — bottom of green arc'],
+        ['V<sub>R</sub>', '75 KIAS', 'Rotation speed (start rotation)'],
+        ['V<sub>X</sub>', '82 KIAS', 'Best angle of climb'],
+        ['V<sub>XSE</sub>', '82 KIAS', 'Best angle of climb single-engine'],
+        ['V<sub>SSE</sub>', '82 KIAS', 'Safe speed for intentional engine failure'],
+        ['V<sub>Y</sub>', '88 KIAS', 'Best rate of climb'],
+        ['V<sub>YSE</sub>', '88 KIAS', 'Best rate of climb single-engine — blue line'],
+        ['V<sub>FE</sub>', '111 KIAS', 'Maximum flap extension speed — top of white arc'],
+        ['V<sub>LO</sub> (Up)', '109 KIAS', 'Maximum gear retraction speed'],
+        ['V<sub>LO</sub> (Down)', '140 KIAS', 'Maximum gear extension speed'],
+        ['V<sub>LE</sub>', '140 KIAS', 'Maximum speed with gear extended'],
+        ['V<sub>NO</sub>', '169 KIAS', 'Max structural cruising speed — top of green arc'],
+        ['V<sub>NE</sub>', '202 KIAS', 'Never exceed speed — red line'],
+        ['V<sub>A</sub> at 3,800 lbs', '135 KIAS', 'Maneuvering speed at max weight'],
+        ['V<sub>A</sub> at 2,700 lbs', '112 KIAS', 'Maneuvering speed at 2,700 pounds'],
+        ['Max demonstrated crosswind', '17 knots', '']
+      ].map(([v, s, d]) => ({ q: v + '?', a: `<p class="q">${s}</p><p>${d}</p>` })).concat([
+        { q: 'Other key speeds: emergency gear extension max, ATP max gear speed, liftoff, approach.', a: '<table><tr><td>Emergency gear extension (max)</td><td>100 KIAS</td></tr><tr><td>ATP max gear-down speed (checklist)</td><td>120 KIAS</td></tr><tr><td>Main gear liftoff (normal takeoff)</td><td>~80 KIAS</td></tr><tr><td>Short field rotate / climb (training minimum)</td><td>70 / 82 KIAS</td></tr><tr><td>Normal approach / short field final</td><td>88 / 75 KIAS</td></tr><tr><td>Touchdown</td><td>~75 KIAS</td></tr><tr><td>Cruise climb above 500\' AGL</td><td>110 KIAS</td></tr></table>' }
+      ]),
+      'Section 6 Maneuvers': [
+        { tag: 'ALL', q: 'Spin recovery (from the POH).', a: ol(['Throttles — retard to idle.', 'Rudder — full opposite to direction of spin.', 'Control wheel — release back pressure.', 'Control wheel — full forward if nose does not drop.', 'Ailerons — neutral.', 'Rudder — neutralize when rotation stops.', 'Control wheel — smooth back pressure to recover from dive.']) },
+        { tag: 'ALL', q: 'Clearing turns for in-flight maneuvers.', a: ol(['Maintain selected altitude.', 'Set bug to entry heading.', 'Lower the wing in the direction of the turn to clear below it, then roll wings level. "Look Left, Clear Left, Turn Left."', '90° clearing turn left or right.', '90° clearing turn back to original heading.']) },
+        { tag: 'ALL', q: 'Maneuvering with one engine inoperative: altitude, tolerances.', a: '<p>Above <b>4,000\' AGL</b>, in a position to land at an airport if the engine won\'t restart.</p>' + tol([['Altitude', '±100\''], ['Heading', '±10°']]) + '<p class="note">Unless minimum sink is required at blueline in extremely high density altitude.</p>' },
+        { tag: 'ALL', q: 'In-Flight Engine Failure (Shutdown-Secure) Demo — steps.', a: ol(['Instructor or examiner simulates engine failure with the mixture.', 'Complete the In-Flight Engine Failure Checklist.', 'Troubleshoot Checklist above 3,000\' AGL (if no obvious damage).', 'If no restart, continue In-Flight Engine Failure Checklist and complete Engine Failure Secure.', 'Maneuver as specified.']) + '<p class="note">Then an airstart (separate maneuver).</p>' },
+        { tag: 'ALL', q: 'Airstart — 2000 model Seminole.', a: chk([['INOP ENG THROTTLE', 'CLOSED'], ['INOP ENG FUEL SELECTOR', 'ON'], ['INOP ENG CARB HEAT', 'OFF'], ['INOP ENG MAGNETOS', 'ON'], ['INOP ENG FUEL PUMP', 'ON'], ['INOP ENG ALTERNATOR', 'ON'], ['INOP ENG MIXTURE', 'FULL FWD'], ['AIRSPEED', '100 min / 120 rec'], ['INOP ENG PROP', 'FULL FWD'], ['INOP ENG THROTTLE', '1/4" OPEN']]) + '<p class="note">Up to 20 sec to windmill; if no prop movement, starter up to 8 sec. When it runs: throttle slowly to 15" MP until CHT green, then Cruise Checklist.</p>' },
+        { tag: 'ALL', q: 'Airstart — 1979 model Seminole.', a: chk([['INOP ENG FUEL SELECTOR', 'ON'], ['INOP ENG CARB HEAT', 'OFF'], ['INOP ENG MIXTURE', 'FULL FWD'], ['INOP ENG PROP', 'FULL FWD'], ['INOP ENG FUEL PUMP', 'ON'], ['INOP ENG ALTERNATOR', 'ON'], ['INOP ENG MAGNETOS', 'ON'], ['AVIONICS MASTER', 'OFF (if cond. permit)'], ['INOP ENG THROTTLE', 'TWO FULL STROKES'], ['INOP ENG THROTTLE', '1/4" OPEN'], ['INOP ENG STARTER', 'ENGAGE (8 sec max)']]) + '<p class="note">Prop windmilling → release starter. When it runs: throttle slowly to 15" MP until CHT green, avionics master on, Cruise Checklist. Starter only — engage the correct side of the rocker switch.</p>' },
+        { tag: 'ALL', q: 'Airstart — 2022 model (fuel-injected) Seminole.', a: chk([['INOP ENG THROTTLE', 'CLOSED'], ['INOP ENG FUEL SELECTOR', 'ON'], ['INOP ENG ALT-AIR', 'CLOSE'], ['INOP ENG MAGNETOS', 'ON'], ['INOP ENG FUEL PUMP', 'ON'], ['AIRSPEED', '100 min / 120 rec'], ['INOP ENG THROTTLE', '1/4" OPEN'], ['INOP ENG PROP', 'FULL FWD'], ['INOP ENG MIXTURE', 'ADVANCE (after prop rotation)']]) + '<p class="note">No prop movement in 7 sec: mixture full rich, starter until windmilling (8 sec max). Runs: throttle to 15" MP, alternator on, CHT green, Cruise Checklist. No restart: mixture cutoff, throttle close, prop feather, Engine Failure Secure.</p>' },
+        { tag: 'ALL', q: 'Recovery from unusual attitudes: nose high vs. nose low.', a: '<div class="sub">Nose high — climbing (airspeed decreasing)</div>' + ol(['Increase power.', 'Pitch level.', 'Bank 0°.', '"Cruise Checklist."']) + '<div class="sub">Nose low — descending (airspeed increasing)</div>' + ol(['Reduce power.', 'Bank 0°.', 'Pitch smoothly level.', '"Cruise Checklist."']) },
+        { tag: 'PVT', q: 'Steep turns (Private): bank, speed, altitude, tolerances.', a: '<p>Above <b>3,000\' AGL</b>. 360° left then 360° right, at least <b>45°</b> bank. Power for <b>120 KIAS</b> (not above V<sub>A</sub>). Two 90° clearing turns, cruise checklist, bug entry heading.</p>' + tol([['Airspeed', '±10 KIAS'], ['Altitude', '±100\''], ['Bank', '±5°'], ['Heading (rollout)', '±10°']]) },
+        { tag: 'PVT', q: 'Slow flight (Private): setup and recovery.', a: ol(['Clearing turns.', '"Gear Down Before Landing Checklist."', 'Full flaps 40°.', 'Slow to just above stall warning (approx. 60–65 KIAS).', 'Adjust power; straight-and-level, climbs, turns, descents without a stall warning.', 'Recover with max power.', 'Flaps slowly to 0°.', 'Accelerate to 82 KIAS (V<sub>X</sub>).', 'Gear up, accelerate to 88 KIAS (V<sub>Y</sub>).', '"Cruise Checklist."']) + tol([['Airspeed', '+10/−0 KIAS'], ['Altitude', '±100\''], ['Bank', '±10°'], ['Heading', '±10°']]) },
+        { tag: 'PVT', q: 'Power-off stall (Private): setup.', a: ol(['Above 4,000\' AGL. Clearing turns.', '"Gear Down Before Landing Checklist."', 'Full flaps 40°.', 'Stabilized 400 FPM descent at 75 KIAS.', 'Heading, or 15°-bank turn (max 20°).', 'Slowly reduce power to idle.', 'Slowly increase pitch to induce a stall.']) + '<p class="note">Private: recover after a <b>fully developed</b> stall.</p>' },
+        { tag: 'PVT', q: 'Power-off stall: recovery (Private and Commercial).', a: '<p>Simultaneously: reduce AOA — lower nose (don\'t try to hold altitude); roll wings level; smoothly apply max power.</p>' + ol(['Accelerate to V<sub>X</sub> or V<sub>Y</sub> (82 or 88 KIAS). Adjust trim.', 'Flaps slowly to 10°.', 'Positive rate of climb, then gear up.', 'Flaps to 0°.', '"Cruise Checklist."']) + tol([['Bank — PVT / COM', '±10° / ±5° (max 20°)'], ['Heading', '±10°']]) },
+        { tag: 'PVT', q: 'Power-on stall (Private): setup and recovery.', a: ol(['Above 4,000\' AGL. Clearing turns.', 'Takeoff config (gear down, flaps 0°) or departure config (gear up, flaps 0°).', 'Mixtures — enrichen, props — fwd, fuel pumps — on.', 'Slow to 80 KIAS (liftoff speed).', 'Heading or 15°-bank turn.', 'Smoothly to approx. 15° pitch-up while increasing power to 18" MP.', 'Recover after a fully developed stall: lower nose, max power, level wings.', 'Accelerate to 82 KIAS (V<sub>X</sub>), positive rate.', 'Gear up (if extended), 88 KIAS (V<sub>Y</sub>).', '"Cruise Checklist."']) + tol([['Bank', '±10° (max 20°)'], ['Heading', '±10°']]) },
+        { tag: 'ALL', q: 'Stall recovery philosophy in a twin.', a: '<p>For a fully developed stall, reduce AOA <b>aggressively</b> with forward elevator; don\'t worry about a specific loss of altitude. The ACS places no emphasis on holding altitude. Advance throttles smoothly for symmetrical power.</p><p class="note">Fully developed stalls may lead to inadvertent, unrecoverable spins. No multiengine airplane is approved for spins.</p>' },
+        { tag: 'COM', q: 'Steep turns (Commercial): what\'s different from Private?', a: '<p>At least <b>50°</b> bank (Private is 45°). Otherwise the same: above 3,000\' AGL, 120 KIAS, 360° left and right.</p>' + tol([['Airspeed', '±10 KIAS'], ['Altitude', '±100\''], ['Bank', '±5°'], ['Heading', '±10°']]) },
+        { tag: 'COM', q: 'Slow flight (Commercial) tolerances.', a: '<p>Same procedure as Private: gear down checklist, flaps 40°, approx. 60–65 KIAS, recover with max power, flaps up, 82 then gear up, 88.</p>' + tol([['Airspeed', '+5/−0 KIAS'], ['Altitude', '±50\''], ['Bank', '±5°'], ['Heading', '±10°']]) },
+        { tag: 'COM', q: 'Power-off stall (Commercial): setup — and when do you recover?', a: ol(['Clearing turns.', '"Gear Down Before Landing Checklist."', 'Full flaps 40°.', 'Stabilized 400 FPM descent at 75 KIAS.', 'Heading or 15°-bank turn (max 20°).', 'Slowly reduce power to idle while increasing pitch (approx. 12°).']) + '<p class="note">Commercial: recover at the <b>first indication</b> of an impending stall (buffet, stall horn).</p>' },
+        { tag: 'COM', q: 'Power-on stall (Commercial).', a: '<p>Same setup as Private: takeoff or departure config, enrichen/fwd/pumps on, 80 KIAS, approx. 15° pitch-up with 18" MP.</p><p>Recover at the <b>first indication</b>: simultaneously reduce AOA, set max power, level wings. 82 KIAS and positive rate, gear up, 88 KIAS, Cruise Checklist.</p>' + tol([['Bank', '±10° (max 20°)'], ['Heading', '±10°']]) },
+        { tag: 'COM', q: 'Accelerated stall.', a: '<p>Completed no lower than <b>4,000\' AGL</b>.</p>' + ol(['Clearing turns.', 'Flaps up, gear up.', 'Mixtures — enrichen, props — fwd, fuel pumps — on.', 'Slow to 100 KIAS.', 'Slowly reduce power to idle.', 'Coordinated 45° bank turn.', 'Maintain altitude to induce the stall.', 'Recover at the first indication of an impending stall.', 'Reduce AOA, level wings, set max power.', '"Cruise Checklist."']) },
+        { tag: 'COM', q: 'Emergency descent.', a: ol(['Two 90° clearing turns.', 'Throttles — slowly reduce to idle.', 'Props — full forward.', 'Mixtures — adjust.', 'Gear — down (V<sub>LO</sub> down = 140 KIAS).', 'Cowl flaps — as required.', 'Turning descent, 30°–45° bank, scanning for traffic.', 'Maintain 120 KIAS in training (up to V<sub>LE</sub> 140 if required).', 'Notify ATC/traffic.']) + '<p class="note">Recovery: at or below 109 KIAS (V<sub>LO</sub> up) before retracting the gear.</p>' },
+        { tag: 'CFI', q: 'Airspeed drag demonstration: the ACS-required steps.', a: ol(['(After gear/flaps power demo at 88 KIAS) Close left throttle — windmilling prop.', 'Max power on right engine, hold 88 KIAS and heading. Note VSI.', 'Left cowl flap — as required.', 'Flaps up, 88 KIAS. Note VSI.', 'Gear up, 88 KIAS. Note VSI.', 'Left throttle to 12" MP (simulated feather), 88 KIAS. Note VSI.', 'Pitch for 82 KIAS. Note VSI.', 'Pitch for 100 KIAS. Note VSI.', 'Throttles slowly together to 20" MP; left cowl flap open; "Cruise Checklist."']) },
+        { tag: 'ATP', q: 'Steep turns (ATP).', a: '<p>Above 3,000\' AGL. Two 180° turns or one 360°, <b>45°</b> bank, 120 KIAS. Roll in and out at about the same rate. 180° left, roll out at the 180° point, 180° right, roll out on entry heading.</p>' + tol([['Airspeed', '±10 KIAS'], ['Altitude', '±100\''], ['Bank', '±5°'], ['Heading', '±10°']]) },
+        { tag: 'ATP', q: 'Approach to stall, approach configuration (clean).', a: ol(['Clearing turns.', 'Power 15" MP.', 'Flaps up, gear up.', 'Mixtures — enrichen, props — fwd, fuel pumps — on.', 'Pitch to maintain altitude.', 'Heading, or 20°-bank turn.', 'Announce first indication of impending stall (stall horn).', 'Recover: reduce AOA, max power, level wings.', '"Cruise Checklist."']) },
+        { tag: 'ATP', q: 'Approach to stall, landing configuration.', a: ol(['Clearing turns.', '"Gear Down Before Landing Checklist."', 'Flaps 40°.', 'Pitch to maintain altitude.', 'Heading, or 20°-bank turn.', 'Announce first indication of impending stall (stall horn).', 'Recover: reduce AOA, max power, level wings.', 'Flaps slowly to 0°.', 'Accelerate to 82 KIAS (V<sub>X</sub>).', 'Gear up, accelerate to 88 KIAS (V<sub>Y</sub>).', '"Cruise Checklist."']) }
+      ]
+    };
+
+    const deckEl = document.getElementById('decks'), cardEl = document.getElementById('card'), countEl = document.getElementById('count');
+    let deckName = 'Engine Failure', order = [], pos = 0, flipped = false;
+
+    function setDeck(name) {
+      deckName = name; order = DECKS[name].map((_, i) => i); pos = 0; flipped = false;
+      [...deckEl.children].forEach(b => b.setAttribute('aria-pressed', b.dataset.deck === name));
+      render();
+    }
+    function render() {
+      const c = DECKS[deckName][order[pos]];
+      const tag = c.tag ? `<span class="tag">${c.tag}</span>` : '';
+      cardEl.innerHTML = flipped
+        ? `<div class="side"><span>Answer</span>${tag}</div><div class="a">${c.a}</div>`
+        : `<div class="side"><span>${deckName}</span>${tag}</div><div class="q">${c.q}</div><div class="hint">Tap to reveal</div>`;
+      countEl.textContent = `${pos + 1} / ${order.length}`;
+    }
+    function move(d) { pos = (pos + d + order.length) % order.length; flipped = false; render(); }
+
+    deckEl.innerHTML = Object.keys(DECKS).map(n => `<button class="deck-btn" type="button" data-deck="${n}" aria-pressed="false">${n}<span class="n">${DECKS[n].length}</span></button>`).join('');
+    deckEl.addEventListener('click', e => { const b = e.target.closest('.deck-btn'); if (b) setDeck(b.dataset.deck); });
+    cardEl.addEventListener('click', () => { flipped = !flipped; render(); });
+    document.getElementById('prev').onclick = () => move(-1);
+    document.getElementById('next').onclick = () => move(1);
+    document.getElementById('shuffle').onclick = () => {
+      for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
+      pos = 0; flipped = false; render();
+    };
+    document.addEventListener('keydown', e => {
+      if (e.target.closest('audio, input, textarea')) return;
+      if (e.key === 'ArrowRight') move(1);
+      else if (e.key === 'ArrowLeft') move(-1);
+      else if ((e.key === ' ' || e.key === 'Enter') && (e.target === cardEl || e.target === document.body)) { e.preventDefault(); flipped = !flipped; render(); }
+    });
+    setDeck('Engine Failure');
+  </script>
+  <script src="last-update.js" defer></script>
+</body>
+</html>

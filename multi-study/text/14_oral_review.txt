@@ -1,0 +1,135 @@
+Oral Review.
+
+Section 7. Oral Review.
+
+Lost Comm Procedure (FAR 91.185)
+If in VFR conditions, or if VFR conditions are encountered, squawk 7600, remain VFR and land as soon as practicable.
+If in IFR conditions, squawk 7600 and fly:
+Route (First that applies.): Assigned; Vectored; Expected; Filed.
+Altitude (Whichever is highest until descent is required for landing.): Minimum IFR Altitude; Expected; Assigned.
+
+FAR Review
+1. To maintain instrument currency, a pilot must have made six approaches and demonstrated proper holding procedures as well as radial and bearing tracking in the last six months.
+2. An alternate is not required if the weather at your destination is forecast to be at least a 2,000' ceiling and visibility of at least three miles. The forecast must be from one hour before to one hour after your estimated time of arrival.
+3. If an alternate airport is needed, forecasted weather at ETA must be at least 600' ceiling and 2 miles visibility for a precision approach; an alternate airport that offers only a non-precision approach must be at least 800' ceiling and 2 miles visibility.
+4. Reserve fuel of 45 minutes is required for IFR flights; 30 minutes for VFR day flights; and 45 minutes for VFR night flights. This reserve is required in addition to the fuel required to fly to your destination and alternate.
+5. VOR limits: 4 degrees for VOT, ground checkpoint and dual check. 6 degrees for an airborne check.
+6. VOR equipment must be checked every 30 days.
+7. Transponders must be checked every 24 calendar months.
+8. Pitot static systems must be checked every 24 calendar months.
+9. ELT equipment must be checked every 12 months, after half of the battery life, or after 1 hour of cumulative use.
+10. An aircraft used for hire must have a 100 hour and an annual inspection.
+11. In order to descend below the DH or MDA, all of the following conditions must exist:
+A. The required flight visibility is met.
+B. The aircraft is in a normal position to land.
+C. (1) The runway environment is in sight – descend to land.
+(2) Approach lights in sight – descend to 100' above touch down zone until runway environment is in sight.
+(3) Descend and land if red terminating bars or red side row bars are in sight.
+12. Multi-engine aircraft with a VSO of 61 knots or less, or a gross weight under 6,000 pounds do not have to demonstrate positive single-engine climb performance per FAR 23.
+13. The minimum equipment list includes a list of equipment that may be inoperative for a particular phase of flight. If not required to have a MEL, comply with the minimum equipment prescribed by the FAR's.
+14. Standard Traffic Pattern Altitude (TPA) for multi-engine aircraft is 1,000' AGL.
+
+Answer The Following Sample Oral Questions Prior To Arriving For Training
+1. Recite the V speeds.
+2. What is the maximum demonstrated crosswind component?
+3. Describe the Seminole PA-44-180 engine.
+A. How many cylinders?
+B. Who is the manufacturer?
+C. What is the horsepower rating?
+D. Does it have fuel injectors or a carburetor?
+E. Is the engine turbo-charged or normally aspirated?
+F. Why is the right engine labeled LO-360?
+G. How are the cylinders arranged?
+H. How is ignition provided?
+I. What are the minimum and maximum oil capacities in the 1979 and 2000 model Seminoles?
+4. Describe the propeller system.
+A. Who makes the propellers?
+B. What does oil pressure do to the propeller?
+C. Which lever manipulates oil pressure to the propeller?
+D. Which unit regulates oil pressure to the propeller?
+E. What is the function of the nitrogen cylinder?
+F. What is the purpose of the spring in the prop dome?
+G. Define constant speed.
+H. What unit adjusts the propeller to maintain a constant RPM and how does it do it?
+I. Define full feathering.
+J. Will the propeller always feather?
+K. What are centrifugal stop pins?
+L. What is the true purpose of the centrifugal stop pins?
+5. What is the correct action for a propeller overspeed?
+6. Describe the electrical system.
+7. What are the indications of a failed alternator?
+8. Will the engines continue to run with the alternator and battery master switches turned off?
+9. Describe the vacuum system.
+A. Which instruments are vacuum operated?
+B. What are the normal vacuum operating limits?
+C. How many vacuum pumps does the PA-44 have?
+D. What indications would occur in the event of a vacuum pump failure?
+10. Describe the stall warning system.
+11. Describe the fuel system.
+12. Explain how to cross feed fuel.
+13. Describe the landing gear system.
+A. How is the landing gear actuated? Describe the pump.
+B. What keeps the gear in the up position?
+C. What keeps the gear in the down position?
+D. If hydraulic pressure is suddenly lost in flight, what indication, if any, would you have?
+E. In what three situations will the landing gear horn activate?
+F. What unit will not allow the gear to be retracted on the ground?
+G. What is the procedure to extend the gear manually (Emergency Gear Extension)?
+H. What airspeed is of importance during manual gear extension?
+I. Are the brake and the landing gear hydraulics interconnected?
+J. If you lose gear hydraulics, will you still have brakes?
+K. What indicates that the gear is in transit and the hydraulic pump is activated?
+14. What type of braking system is used by the Seminole? Where is the brake fluid serviced?
+15. What type of flaps does the Seminole have?
+A. What are the flap settings on the Seminole?
+16. What are the maximum taxi, takeoff, and landing weights?
+17. What is the maximum baggage capacity?
+18. Define VSSE.
+19. What are the drag factors on light twins?
+20. Who determines VMC for a particular aircraft?
+21. Define VMC.
+22. Why is an aft CG used in determining VMC?
+23. What are the factors in determining VMC?
+24. Define critical engine and list the factors used to determine it.
+25. What causes an aircraft to sideslip with the loss of an engine, and what action is required to correct this?
+26. How much climb performance is lost when an engine fails?
+27. What aircraft equipment checks are required under FAR part 91?
+28. Define absolute and single-engine service ceiling.
+29. What documents are required to be on the aircraft?
+30. Explain lost communications procedures.
+31. Will the propeller feather below 950 RPM? Why or why not?
+32. Explain the pitot static system.
+A. Does the PA-44 have an alternate static source? If so, how is it activated and what actions are necessary to acquire the most accurate reading?
+B. What instruments are pitot static?
+C. Where is the pitot static port located?
+33. How do you prevent a heater overheat?
+34. What is the fuel capacity? How many gallons are unusable?
+35. What grade fuel is to be used in the PA-44?
+36. How many fuel pumps are on the aircraft?
+37. When are the electric fuel pumps to be used?
+38. What are the various positions on the fuel selector control?
+39. Explain the procedure for cross feeding fuel when operating the right engine from the left tank.
+40. If an engine failure occurred at 5,000' MSL, or a high density altitude, what would you do to get max performance from the operating engine after performing the In-Flight Engine Failure Checklist?
+41. If the cylinder head temp and oil temp approach the caution range, what can be done to assist in cooling?
+42. Why does manifold pressure decrease approximately 1" every 1,000' during climb?
+43. When an engine is inoperative or feathered, what indication will be observed on the manifold pressure gauge?
+44. Why is the manifold pressure gauge not necessarily a good indicator in determining an inoperative engine?
+
+Additional Questions Specific to G500-Equipped Aircraft
+1. In the event of an electrical failure, what pilot actions are necessary to ensure continued operation of the standby attitude indicator?
+2. If the standby power button on the attitude indicator is not pressed within one minute of electrical failure, what will happen?
+3. How do you determine a standard rate turn on an aircraft with a G500 system?
+4. In the event of an AHRS failure, which indications will no longer be displayed on the PFD? Which indications will still be visible on the PFD?
+5. Which approaches can be accomplished with an AHRS failure?
+6. What instrument approaches are available with the PFD inoperative? With the MFD inoperative? With a total PFD/MFD failure?
+7. How long does the internal battery last when providing power to the standby attitude indicator?
+8. With the loss of the ADC, which lost instrument does not have a backup? What should you do to compensate for the lack of information?
+
+Additional Questions Specific to G1000-Equipped Aircraft
+1. If electrical power is lost from both alternators, what other power sources will allow the avionics to continue providing flight instrument information?
+2. What are the Line Replaceable Units (LRUs) that make up the G1000 system?
+3. What feature of the G1000 should the pilot use in the event of a PFD screen failure?
+4. What flight instrument indications would be lost in the event of an AHRS failure? An ADC failure?
+5. How is the loss of a flight instrument indicated to the pilot?
+6. What is the secondary / backup source of flight instrument information?
+7. How are rate of turn and turn coordination displayed on the G1000?

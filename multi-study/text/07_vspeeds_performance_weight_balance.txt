@@ -1,0 +1,64 @@
+Performance, V-Speeds, and Weight and Balance.
+
+Section 3. Performance / Weight & Balance.
+
+Piper Seminole V-Speeds
+Speeds listed below are in Knots Indicated Airspeed (KIAS).
+VSO — 55 KIAS — Stall speed in landing configuration — Bottom of White Arc
+VMC — 56 KIAS — Minimum controllable airspeed — Red Line
+VS — 57 KIAS — Stall speed with zero flaps — Bottom of Green Arc
+VR — 75 KIAS — Rotation speed (start rotation)
+VX — 82 KIAS — Best angle of climb
+VXSE — 82 KIAS — Best angle of climb single-engine
+VSSE — 82 KIAS — Safe speed for intentional engine failure
+VY — 88 KIAS — Best rate of climb
+VYSE — 88 KIAS — Best rate of climb single-engine — Blue Line
+VFE — 111 KIAS — Maximum flap extension speed — Top of White Arc
+VLO (Up) — 109 KIAS — Maximum gear retraction speed
+VLO (Down) — 140 KIAS — Maximum gear extension speed
+VLE — 140 KIAS — Maximum speed with gear extended
+VNO — 169 KIAS — Max Structural Cruising Speed — Top of Green Arc
+VNE — 202 KIAS — Never exceed speed — Red Line
+VA — 135 KIAS — Maneuvering speed at 3800 pounds
+VA — 112 KIAS — Maneuvering speed at 2700 pounds
+Maximum demonstrated crosswind — 17
+
+Performance Charts
+All performance charts will be covered by the instructor and are not limited to the following:
+• Takeoff Distance to Clear a 50' Obstacle
+• Accelerate Stop Distance
+• Single Engine Rate of Climb
+• Single Engine Service Ceiling
+• Landing Distance
+
+Sample Weight & Balance Problem
+Complete the following sample weight and balance problem.
+Conditions
+Basic Empty Weight — 2,540.5 lbs. (Remember to use actual aircraft BEW for flight check.)
+Front Pilots — 370 lbs.
+Rear Passengers — 170 lbs.
+Baggage — 3 Bags @ 75 lbs. and 2 Bags @ 50 lbs. (May need to relocate some baggage to rear passenger seats.)
+Max Ramp Weight — 3,816 lbs.
+Max Takeoff/Landing Weight — 3,800 lbs.
+Max Baggage Weight — 200 lbs.
+Max Usable Fuel — 108 gal.
+The worksheet is a blank table with columns for Weight, Arm, and Moment, where weight times arm equals moment. The rows and their arms are: Basic Empty Weight, arm 86.13; plus Front Pilots, arm 80.50; plus Rear Passengers, arm 118.10; plus Baggage, 200 lbs. Max, arm 142.80; which equals the Zero Fuel Weight, with a box for its CG, where CG equals moment divided by weight. Then plus Usable Fuel, arm 95.00, equals Ramp Weight. Then minus Taxi Fuel, 2.65 gallons, which is 16 pounds at arm 95.00, for a moment of 1,520, equals Takeoff Weight, with a box for its CG. Then minus Fuel Burn equals Landing Weight, with a box for its CG.
+Calculate the Following
+1. Zero Fuel CG
+2. Usable Fuel
+3. Takeoff Weight
+4. Takeoff CG
+5. From comparing the Takeoff CG and Zero Fuel CG, which direction does the CG move as fuel is burned off?
+Plot Zero Fuel CG and Takeoff CG on the CG Envelope Graph Below
+Answers: (1) 91.6 (2) 68.4 gal. (3) 3,800 lbs. (4) 91.9 (5) Forward
+
+Formulas
+• Weight × Arm = Moment
+• Total Moment ÷ Total Weight = CG
+• Max Ramp Weight – Zero Fuel Weight = Usable Fuel Weight
+• Fuel Weight ÷ 6 = Fuel Gallons
+• 100 LL (Blue) Fuel Weighs 6 lbs./gal.; Oil Weighs 7.5 lbs./gal.
+• 2 Gallons of unusable fuel and oil at full capacity are Included in Basic Empty Weight
+
+CG Envelope Graph
+The CG envelope graph plots aircraft weight, from 2,300 up to 3,800 pounds, on the vertical axis against C.G. location in inches aft of datum, from 84 to 93, on the horizontal axis. The CG grid lines are drawn slanting, so the whole envelope looks like a leaning, skewed shape. Its aft edge is labeled AFT Limit 93 and stays at 93 inches for the full height of the chart. Its forward edge is labeled FWD Limit 84: it stays at 84 inches from 2,300 pounds up to 2,800 pounds, then moves gradually aft to 85 inches at 3,400 pounds, and then more steeply, to 86 inches at 3,500 pounds, 87 at 3,600, 88 at 3,700, and 89 inches at the top of the envelope, 3,800 pounds. The top edge of the envelope is the 3,800-pound maximum weight line, running from 89 to 93 inches.
