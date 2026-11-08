@@ -91,6 +91,20 @@
     .wx-decoded { display: none; margin-top: 0.75rem; border-top: 1px solid #dde5ef; padding-top: 0.75rem; }
     .wx-sub { font-size: 0.58rem; color: rgba(255,255,255,0.55); margin-top: 0.1rem; }
 
+    /* FILE DROP */
+    .drop-zone { margin: 1rem; border: 2px dashed #b8c8dc; border-radius: 8px; padding: 1.6rem 1rem; text-align: center; color: #6a8aaa; font-size: 0.78rem; cursor: pointer; transition: background 0.15s, border-color 0.15s; }
+    .drop-zone.over { background: #eef3fa; border-color: #1a3a6b; color: #1a3a6b; }
+    .drop-zone b { color: #1a3a6b; }
+    .drop-icon { font-size: 1.6rem; margin-bottom: 0.4rem; }
+    .fd-bar { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; justify-content: space-between; padding: 0 1rem 0.7rem; font-size: 0.72rem; color: #6a8aaa; }
+    .fd-bar select, .fd-bar input { font: inherit; font-size: 0.72rem; padding: 0.25rem 0.45rem; border: 1px solid #dde5ef; border-radius: 4px; background: #fff; color: #1a2a3a; }
+    .fd-bar button { font: inherit; font-size: 0.68rem; font-weight: 700; padding: 0.28rem 0.7rem; border-radius: 4px; border: 1px solid #1a3a6b; background: #1a3a6b; color: #fff; cursor: pointer; }
+    .fd-status { padding: 0 1rem 0.7rem; font-size: 0.72rem; color: #6a8aaa; min-height: 1em; }
+    .fd-status.err { color: #c0392b; }
+    .fd-status.ok { color: #1e8449; }
+    .logbook td a { color: #1a3a6b; font-weight: 600; text-decoration: none; word-break: break-all; }
+    .logbook td a:hover { text-decoration: underline; }
+
     footer { background: #1a3a6b; border-top: 3px solid #c8a400; text-align: center; font-size: 0.6rem; color: rgba(255,255,255,0.45); padding: 1.4rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 1rem; }
     footer .freq { color: rgba(255,255,255,0.3); }
   </style>
@@ -105,6 +119,7 @@
       <a href="ifr-study.html">IFR Study</a>
       <a href="commercial-study.html">Commercial Study</a>
       <a href="multi-study.html">Multi Study</a>
+      <a href="#files">Files</a>
       <a href="#logbook">Logbook</a>
       <a href="propel.html">Propel</a>
       <a href="log.html">Log Flight</a>
@@ -157,6 +172,40 @@
         <div class="card-title">Quick Start Guide</div>
         <div class="card-desc">How to listen, read notes, and publish your own content to this site.</div>
       </a>
+    </div>
+
+    <a id="files"></a>
+    <div class="slabel">File Drop</div>
+    <div class="panel" style="margin-top:1rem;">
+      <div class="panel-head">&#128194; Uploaded Files <span class="accent" id="fdCount"></span></div>
+      <div class="drop-zone" id="dropZone">
+        <div class="drop-icon">&#11015;</div>
+        <b>Drop files here</b> or click to choose &mdash; each file is committed to <code>uploads/</code> in the repo
+        <input type="file" id="fileInput" multiple hidden />
+      </div>
+      <div class="fd-bar">
+        <div id="fdTokenRow">
+          <input type="password" id="fdToken" placeholder="GitHub token (github_pat_...)" autocomplete="off" size="26" />
+          <button id="fdSaveToken">Save</button>
+          <span style="margin-left:0.3rem;">Same token as <a href="log.html" style="color:#1a3a6b;">Log Flight</a></span>
+        </div>
+        <label>Sort by
+          <select id="fdSort">
+            <option value="date-desc">Date (newest first)</option>
+            <option value="date-asc">Date (oldest first)</option>
+            <option value="name-asc">Name (A&ndash;Z)</option>
+            <option value="name-desc">Name (Z&ndash;A)</option>
+            <option value="size-desc">Size (largest first)</option>
+            <option value="size-asc">Size (smallest first)</option>
+            <option value="type-asc">Type</option>
+          </select>
+        </label>
+      </div>
+      <div class="fd-status" id="fdStatus"></div>
+      <table class="logbook">
+        <thead><tr><th>Name</th><th>Type</th><th>Size</th><th>Uploaded</th></tr></thead>
+        <tbody id="fdBody"></tbody>
+      </table>
     </div>
 
     <a id="logbook"></a>
@@ -238,6 +287,139 @@
       } catch(err) {
         tb.innerHTML = '<tr><td colspan="5" style="color:#9ab0c8;padding:1.1rem;text-align:center;font-size:0.75rem;">No logbook data available.</td></tr>';
       }
+    })();
+
+    // File Drop: commits dropped files to uploads/ via the GitHub Contents API
+    // (same browser-stored token as log.html) and lists them from uploads/index.json.
+    (function() {
+      var OWNER = 'DragonBroSY', REPO = 'dragonbrosy.github.io', BRANCH = 'main';
+      var TOKEN_KEY = 'dragonbrosy_gh_token', MANIFEST = 'uploads/index.json';
+      var MAX_BYTES = 25 * 1024 * 1024;
+      var files = [];
+      var body = document.getElementById('fdBody'), statusEl = document.getElementById('fdStatus');
+      var sortEl = document.getElementById('fdSort'), zone = document.getElementById('dropZone');
+      var input = document.getElementById('fileInput');
+
+      function token() { return localStorage.getItem(TOKEN_KEY) || ''; }
+      function headers() {
+        return { 'Authorization': 'Bearer ' + token(), 'Accept': 'application/vnd.github+json',
+                 'X-GitHub-Api-Version': '2022-11-28', 'Content-Type': 'application/json' };
+      }
+      function enc(path) { return path.split('/').map(encodeURIComponent).join('/'); }
+      function api(path) { return 'https://api.github.com/repos/' + OWNER + '/' + REPO + '/contents/' + enc(path); }
+      function esc(s) { return String(s).replace(/[&<>"']/g, function(c){ return '&#' + c.charCodeAt(0) + ';'; }); }
+      function setStatus(msg, cls) { statusEl.textContent = msg; statusEl.className = 'fd-status' + (cls ? ' ' + cls : ''); }
+      function fmtSize(n) {
+        if (n < 1024) return n + ' B';
+        if (n < 1048576) return (n / 1024).toFixed(1) + ' KB';
+        return (n / 1048576).toFixed(1) + ' MB';
+      }
+      function ext(name) { var i = name.lastIndexOf('.'); return i > 0 ? name.slice(i + 1).toUpperCase() : '—'; }
+
+      function render() {
+        var mode = sortEl.value;
+        var list = files.slice().sort(function(a, b) {
+          switch (mode) {
+            case 'date-asc':  return a.date.localeCompare(b.date);
+            case 'name-asc':  return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' });
+            case 'name-desc': return b.name.localeCompare(a.name, undefined, { sensitivity: 'base' });
+            case 'size-desc': return b.size - a.size;
+            case 'size-asc':  return a.size - b.size;
+            case 'type-asc':  return ext(a.name).localeCompare(ext(b.name)) || a.name.localeCompare(b.name);
+            default:          return b.date.localeCompare(a.date);
+          }
+        });
+        document.getElementById('fdCount').textContent = files.length + (files.length === 1 ? ' file' : ' files');
+        if (!list.length) {
+          body.innerHTML = '<tr><td colspan="4" style="color:#9ab0c8;padding:1.1rem;text-align:center;">No files yet — drop one above.</td></tr>';
+          return;
+        }
+        body.innerHTML = list.map(function(f) {
+          var d = new Date(f.date);
+          return '<tr><td><a href="' + esc(enc(f.path)) + '" target="_blank" rel="noopener">' + esc(f.name) + '</a></td>' +
+            '<td>' + esc(ext(f.name)) + '</td><td>' + fmtSize(f.size) + '</td>' +
+            '<td>' + d.toLocaleDateString([], { year: 'numeric', month: 'short', day: 'numeric' }) + ' ' +
+            d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + '</td></tr>';
+        }).join('');
+      }
+
+      function readBase64(file) {
+        return new Promise(function(resolve, reject) {
+          var r = new FileReader();
+          r.onload = function() { resolve(String(r.result).split(',')[1] || ''); };
+          r.onerror = function() { reject(r.error); };
+          r.readAsDataURL(file);
+        });
+      }
+
+      function uniqueName(name) {
+        var taken = {}; files.forEach(function(f){ taken[f.name.toLowerCase()] = 1; });
+        if (!taken[name.toLowerCase()]) return name;
+        var dot = name.lastIndexOf('.'), base = dot > 0 ? name.slice(0, dot) : name, ex = dot > 0 ? name.slice(dot) : '';
+        for (var i = 2; ; i++) { var n = base + ' (' + i + ')' + ex; if (!taken[n.toLowerCase()]) return n; }
+      }
+
+      async function upload(fileList) {
+        if (!token()) { setStatus('Save a GitHub token first (needs Contents: read & write on this repo).', 'err'); return; }
+        var picked = Array.prototype.slice.call(fileList);
+        for (var i = 0; i < picked.length; i++) {
+          var file = picked[i];
+          if (file.size > MAX_BYTES) { setStatus(file.name + ' is over 25 MB — skipped.', 'err'); continue; }
+          try {
+            setStatus('Uploading ' + file.name + ' (' + (i + 1) + '/' + picked.length + ')…');
+            var name = uniqueName(file.name.replace(/[\/\\]/g, '_'));
+            var path = 'uploads/' + name;
+            var res = await fetch(api(path), { method: 'PUT', headers: headers(), body: JSON.stringify({
+              message: 'Upload ' + name + ' via File Drop', content: await readBase64(file), branch: BRANCH }) });
+            if (!res.ok) throw new Error(res.status + ' ' + (await res.text()).slice(0, 150));
+
+            // Re-read the manifest right before writing so its sha is current.
+            var cur = await fetch(api(MANIFEST) + '?ref=' + BRANCH, { headers: headers() });
+            var sha = null, manifest = [];
+            if (cur.ok) {
+              var j = await cur.json(); sha = j.sha;
+              manifest = JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g, '')))));
+            }
+            var entry = { name: name, path: path, size: file.size, type: file.type || '', date: new Date().toISOString() };
+            manifest.push(entry);
+            var put = { message: 'Add ' + name + ' to uploads index', branch: BRANCH,
+                        content: btoa(unescape(encodeURIComponent(JSON.stringify(manifest, null, 2) + '\n'))) };
+            if (sha) put.sha = sha;
+            res = await fetch(api(MANIFEST), { method: 'PUT', headers: headers(), body: JSON.stringify(put) });
+            if (!res.ok) throw new Error('index update ' + res.status);
+            files = manifest; render();
+          } catch (e) {
+            setStatus('Upload failed for ' + file.name + ': ' + e.message, 'err'); return;
+          }
+        }
+        setStatus('Done. Links go live once GitHub Pages redeploys (about a minute).', 'ok');
+      }
+
+      zone.addEventListener('click', function(){ input.click(); });
+      input.addEventListener('change', function(){ upload(input.files); input.value = ''; });
+      ['dragenter', 'dragover'].forEach(function(ev) {
+        zone.addEventListener(ev, function(e){ e.preventDefault(); zone.classList.add('over'); });
+      });
+      ['dragleave', 'drop'].forEach(function(ev) {
+        zone.addEventListener(ev, function(e){ e.preventDefault(); zone.classList.remove('over'); });
+      });
+      zone.addEventListener('drop', function(e){ if (e.dataTransfer.files.length) upload(e.dataTransfer.files); });
+      sortEl.addEventListener('change', render);
+
+      var tokRow = document.getElementById('fdTokenRow');
+      tokRow.style.visibility = token() ? 'hidden' : 'visible';
+      document.getElementById('fdSaveToken').addEventListener('click', function() {
+        var t = document.getElementById('fdToken').value.trim();
+        if (!t) return;
+        localStorage.setItem(TOKEN_KEY, t);
+        document.getElementById('fdToken').value = '';
+        tokRow.style.visibility = 'hidden';
+        setStatus('Token saved in this browser.', 'ok');
+      });
+
+      fetch(MANIFEST + '?_=' + Date.now()).then(function(r){ return r.ok ? r.json() : []; })
+        .then(function(list){ files = list; render(); })
+        .catch(function(){ render(); });
     })();
 
     // Weather
