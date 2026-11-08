@@ -58,6 +58,7 @@
     .form-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; }
     .form-grid.two { grid-template-columns: repeat(2, 1fr); }
 
+    [hidden] { display: none !important; }
     .btn { display: inline-flex; align-items: center; gap: 0.4rem; border: none; border-radius: 5px; padding: 0.6rem 1.2rem; font-size: 0.78rem; font-weight: 700; cursor: pointer; letter-spacing: 0.02em; }
     .btn-primary { background: #1a3a6b; color: #fff; }
     .btn-primary:hover { background: #244c8a; }
@@ -106,19 +107,15 @@
 
     <div class="slabel">Connection</div>
     <div class="panel">
-      <div class="panel-head">GitHub Access Token</div>
+      <div class="panel-head">GitHub Sign-in</div>
       <div class="panel-body">
-        <div class="field">
-          <label>Personal Access Token</label>
-          <input type="password" id="tokenInput" placeholder="github_pat_..." autocomplete="off" />
-        </div>
         <div class="btn-row">
-          <button class="btn btn-primary" id="saveTokenBtn">Save Token</button>
-          <button class="btn btn-ghost" id="clearTokenBtn">Clear</button>
-          <span id="tokenStatus" style="align-self:center;font-size:0.75rem;color:#6a8aaa;"><span class="status-dot unknown"></span>Not checked</span>
+          <button class="btn btn-primary" id="signInBtn">Sign in with GitHub</button>
+          <button class="btn btn-ghost" id="signOutBtn" hidden>Sign out</button>
+          <span id="tokenStatus" style="align-self:center;font-size:0.75rem;color:#6a8aaa;"><span class="status-dot unknown"></span>Not signed in</span>
         </div>
       </div>
-      <div class="note">Stored only in this browser's local storage &mdash; never committed to the repo, never leaves your device except to call GitHub's API directly. Use a <b>fine-grained</b> token scoped to only the <code>dragonbrosy.github.io</code> repo with <b>Contents: Read and write</b> permission (create one at github.com &rarr; Settings &rarr; Developer settings &rarr; Personal access tokens &rarr; Fine-grained tokens).</div>
+      <div class="note">Uses the <b>DragonBroSY File Drop</b> GitHub App, the same sign-in as the File Drop on the main page. Sign-in lasts 8 hours in this tab.</div>
     </div>
 
     <div class="slabel" id="formLabel">New Flight</div>
@@ -188,7 +185,7 @@
       <div style="overflow-x:auto;">
         <table class="entry-table" id="entryTable">
           <thead><tr><th>Date</th><th>Aircraft</th><th>Route</th><th class="num">Total</th><th>Remarks</th><th>Actions</th></tr></thead>
-          <tbody id="entryBody"><tr><td colspan="6" style="padding:1.5rem;text-align:center;color:#9ab0c8;">Enter a token above to load entries.</td></tr></tbody>
+          <tbody id="entryBody"><tr><td colspan="6" style="padding:1.5rem;text-align:center;color:#9ab0c8;">Sign in above to load entries.</td></tr></tbody>
         </table>
       </div>
     </div>
@@ -199,20 +196,18 @@
     DragonBroSY &nbsp;&middot;&nbsp; All Altitudes Reserved
   </footer>
 
+  <script src="gh-auth.js"></script>
   <script>
     var GH_OWNER = 'DragonBroSY';
     var GH_REPO = 'dragonbrosy.github.io';
     var GH_BRANCH = 'main';
     var GH_FILE_PATH = 'logbook-current.csv';
-    var TOKEN_KEY = 'dragonbrosy_gh_token';
 
     var CSV_FIELDS = ['Date','Aircraft','Category','Total Time','PIC','SIC','Instructor','Dual Received','Night','Act Inst','Sim Inst','X-Country','Route','Remarks'];
 
     var state = { sha: null, rows: [], editingIndex: null };
 
-    function getToken() { return localStorage.getItem(TOKEN_KEY) || ''; }
-    function setToken(t) { localStorage.setItem(TOKEN_KEY, t); }
-    function clearToken() { localStorage.removeItem(TOKEN_KEY); }
+    function getToken() { return GHAuth.token(); }
 
     function utf8ToBase64(str) { return btoa(unescape(encodeURIComponent(str))); }
     function base64ToUtf8(str) { return decodeURIComponent(escape(atob(str))); }
@@ -322,14 +317,19 @@
       var statusEl = document.getElementById('tokenStatus');
       var token = getToken();
       if (!token) {
-        statusEl.innerHTML = '<span class="status-dot unknown"></span>Not checked';
+        statusEl.innerHTML = '<span class="status-dot unknown"></span>Not signed in';
         return;
       }
       statusEl.innerHTML = '<span class="status-dot unknown"></span>Checking...';
       try {
         var res = await fetch('https://api.github.com/repos/' + GH_OWNER + '/' + GH_REPO, { headers: apiHeaders() });
         if (res.ok) {
-          statusEl.innerHTML = '<span class="status-dot ok"></span>Connected';
+          var who = '';
+          var u = await fetch('https://api.github.com/user', { headers: apiHeaders() });
+          if (u.ok) who = (await u.json()).login;
+          statusEl.innerHTML = '<span class="status-dot ok"></span>Signed in' + (who ? ' as ' + who : '');
+          document.getElementById('signInBtn').hidden = true;
+          document.getElementById('signOutBtn').hidden = false;
           return true;
         }
         statusEl.innerHTML = '<span class="status-dot bad"></span>Failed (' + res.status + ')';
@@ -459,7 +459,7 @@
     async function saveEntry() {
       var statusEl = document.getElementById('saveStatus');
       var btn = document.getElementById('saveFlightBtn');
-      if (!getToken()) { setStatus(statusEl, 'Save a GitHub token above first.', 'warn'); return; }
+      if (!getToken()) { setStatus(statusEl, 'Sign in with GitHub above first.', 'warn'); return; }
 
       var rec = formToRecord();
       if (!rec['Date'] || !rec['Aircraft']) { setStatus(statusEl, 'Date and Aircraft are required.', 'warn'); return; }
@@ -514,16 +514,13 @@
       }
     }
 
-    document.getElementById('saveTokenBtn').addEventListener('click', async function() {
-      setToken(document.getElementById('tokenInput').value.trim());
-      document.getElementById('tokenInput').value = '';
-      var ok = await checkConnection();
-      if (ok) await loadEntries(true);
-    });
-    document.getElementById('clearTokenBtn').addEventListener('click', function() {
-      clearToken();
-      document.getElementById('tokenStatus').innerHTML = '<span class="status-dot unknown"></span>Not checked';
-      document.getElementById('entryBody').innerHTML = '<tr><td colspan="6" style="padding:1.5rem;text-align:center;color:#9ab0c8;">Enter a token above to load entries.</td></tr>';
+    document.getElementById('signInBtn').addEventListener('click', function() { GHAuth.signIn('/log.html'); });
+    document.getElementById('signOutBtn').addEventListener('click', function() {
+      GHAuth.signOut();
+      document.getElementById('tokenStatus').innerHTML = '<span class="status-dot unknown"></span>Not signed in';
+      document.getElementById('signInBtn').hidden = false;
+      document.getElementById('signOutBtn').hidden = true;
+      document.getElementById('entryBody').innerHTML = '<tr><td colspan="6" style="padding:1.5rem;text-align:center;color:#9ab0c8;">Sign in above to load entries.</td></tr>';
       state.rows = []; state.sha = null;
     });
     document.getElementById('saveFlightBtn').addEventListener('click', saveEntry);

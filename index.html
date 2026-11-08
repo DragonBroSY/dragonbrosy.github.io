@@ -303,6 +303,7 @@ git log --oneline -3</pre>
     <span class="freq">CTAF 122.8 &nbsp;&middot;&nbsp; ATIS 135.275</span>
   </footer>
 
+  <script src="gh-auth.js"></script>
   <script>
     // Parallax
     window.addEventListener('scroll', function(){
@@ -349,24 +350,13 @@ git log --oneline -3</pre>
       var OWNER = 'DragonBroSY', BRANCH = 'main';
       var REPOS = { private: 'dragonbrosy-files', public: 'dragonbrosy.github.io' };
       var MANIFEST = 'uploads/index.json';
-      // GitHub App "DragonBroSY File Drop" + Cloudflare Worker that swaps the login code for an 8-hour token.
-      var CLIENT_ID = 'Iv23li1WNeCUgA1hlL5a';
-      var AUTH_URL = 'https://dragonbrosy-oauth.dragonbrosy.workers.dev/token';
-      var INSTALL_URL = 'https://github.com/apps/dragonbrosy-file-drop/installations/new';
-      var REDIRECT = 'https://dragonbrosy.github.io/';
-      var SESSION_KEY = 'dragonbrosy_gh_oauth', STATE_KEY = 'dragonbrosy_gh_oauth_state';
       var files = [], access = { private: false, public: false }, target = 'private';
       var body = document.getElementById('fdBody'), statusEl = document.getElementById('fdStatus');
       var sortEl = document.getElementById('fdSort'), zone = document.getElementById('dropZone');
       var input = document.getElementById('fileInput');
       var visBtns = document.querySelectorAll('#fdVis button');
 
-      function token() {
-        try {
-          var t = JSON.parse(sessionStorage.getItem(SESSION_KEY) || 'null');
-          return t && t.exp > Date.now() ? t.token : '';
-        } catch (e) { return ''; }
-      }
+      var token = GHAuth.token;
       function headers(extra) {
         return Object.assign({ 'Authorization': 'Bearer ' + token(), 'Accept': 'application/vnd.github+json',
                  'X-GitHub-Api-Version': '2022-11-28', 'Content-Type': 'application/json' }, extra || {});
@@ -578,7 +568,7 @@ git log --oneline -3</pre>
       var outBtn = document.getElementById('fdSignOut');
 
       function signedOut(msg) {
-        sessionStorage.removeItem(SESSION_KEY);
+        GHAuth.signOut();
         files = []; body.innerHTML = '';
         document.getElementById('fdCount').textContent = '';
         appEl.hidden = true; outBtn.hidden = true; loginEl.hidden = false;
@@ -621,36 +611,14 @@ git log --oneline -3</pre>
         }
       }
 
-      document.getElementById('fdSignIn').addEventListener('click', function() {
-        var state = Array.from(crypto.getRandomValues(new Uint8Array(16)), function(b){ return b.toString(16).padStart(2, '0'); }).join('');
-        sessionStorage.setItem(STATE_KEY, state);
-        location.href = 'https://github.com/login/oauth/authorize?client_id=' + CLIENT_ID +
-          '&redirect_uri=' + encodeURIComponent(REDIRECT) + '&state=' + state;
-      });
-
-      // Back from GitHub with ?code=&state= : check state, swap the code for a token, clean the URL.
-      async function finishLogin() {
-        var q = new URLSearchParams(location.search);
-        var code = q.get('code'), state = q.get('state');
-        if (!code) return;
-        history.replaceState(null, '', location.pathname + '#files');
-        var expected = sessionStorage.getItem(STATE_KEY);
-        sessionStorage.removeItem(STATE_KEY);
-        if (!expected || state !== expected) { setStatus('Sign-in failed: login request didn\'t match. Try again.', 'err'); return; }
-        setStatus('Finishing GitHub sign-in…');
-        try {
-          var res = await fetch(AUTH_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ code: code }) });
-          var j = await res.json();
-          if (!res.ok || !j.access_token) throw new Error(j.error || res.status);
-          sessionStorage.setItem(SESSION_KEY, JSON.stringify({ token: j.access_token, exp: Date.now() + (j.expires_in - 60) * 1000 }));
-          document.getElementById('files').scrollIntoView();
-        } catch (e) {
-          setStatus('Sign-in failed: ' + e.message, 'err');
-        }
-      }
+      document.getElementById('fdSignIn').addEventListener('click', function(){ GHAuth.signIn('/#files'); });
 
       outBtn.addEventListener('click', function(){ signedOut(); });
-      finishLogin().then(function(){ if (token()) signIn(); });
+      GHAuth.finishLogin().then(function(r) {
+        if (r.redirecting) return;
+        if (r.error) { setStatus('Sign-in failed: ' + r.error, 'err'); return; }
+        if (token()) { if (location.hash === '#files') document.getElementById('files').scrollIntoView(); signIn(); }
+      });
     })();
 
     // Weather
