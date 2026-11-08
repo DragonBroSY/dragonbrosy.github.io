@@ -118,6 +118,9 @@
     .fd-status.ok { color: #1e8449; }
     .logbook td a { color: #1a3a6b; font-weight: 600; text-decoration: none; word-break: break-all; }
     .logbook td a:hover { text-decoration: underline; }
+    .fd-move { margin-left: 0.5rem; font: inherit; font-size: 0.62rem; font-weight: 700; padding: 0.12rem 0.45rem; border-radius: 3px; border: 1px solid #1a3a6b; background: #fff; color: #1a3a6b; cursor: pointer; white-space: nowrap; }
+    .fd-move:hover { background: #1a3a6b; color: #fff; }
+    .fd-move:disabled { opacity: 0.4; cursor: not-allowed; }
 
     footer { background: #1a3a6b; border-top: 3px solid #c8a400; text-align: center; font-size: 0.6rem; color: rgba(255,255,255,0.45); padding: 1.4rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 1rem; }
     footer .freq { color: rgba(255,255,255,0.3); }
@@ -423,12 +426,76 @@ git log --oneline -3</pre>
             ? '<a href="' + esc(enc(f.path)) + '" target="_blank" rel="noopener">' + esc(f.name) + '</a>'
             : '<a href="#" data-path="' + esc(f.path) + '" data-name="' + esc(f.name) + '">' + esc(f.name) + '</a>';
           return '<tr><td>' + link + '</td>' +
-            '<td>' + (f.vis === 'private' ? '&#128274; Private' : '&#127760; Public') + '</td>' +
+            '<td style="white-space:nowrap;">' + (f.vis === 'private' ? '&#128274; Private' : '&#127760; Public') +
+              (access.private && access.public
+                ? '<button class="fd-move" data-vis="' + f.vis + '" data-name="' + esc(f.name) + '">Make ' + (f.vis === 'private' ? 'public' : 'private') + '</button>'
+                : '') + '</td>' +
             '<td>' + esc(ext(f.name)) + '</td><td>' + fmtSize(f.size) + '</td>' +
             '<td>' + d.toLocaleDateString([], { year: 'numeric', month: 'short', day: 'numeric' }) + ' ' +
             d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + '</td></tr>';
         }).join('');
       }
+
+      async function putManifest(vis, list, sha, message) {
+        var put = { message: message, branch: BRANCH, content: utf8ToB64(JSON.stringify(list, null, 2) + '\n') };
+        if (sha) put.sha = sha;
+        var res = await fetch(api(vis, MANIFEST), { method: 'PUT', headers: headers(), body: JSON.stringify(put) });
+        if (!res.ok) throw new Error('index update ' + res.status);
+      }
+
+      function syncFiles(vis, list) {
+        files = files.filter(function(f){ return f.vis !== vis; })
+          .concat(list.map(function(f){ return Object.assign({ vis: vis }, f); }));
+      }
+
+      // Move a file between repos: copy into the other repo first, then delete the original.
+      var moving = false;
+      async function moveFile(from, name) {
+        if (moving) return;
+        var to = from === 'private' ? 'public' : 'private';
+        var f = files.filter(function(x){ return x.vis === from && x.name === name; })[0];
+        if (!f) return;
+        if (to === 'private' && !confirm('Make "' + name + '" private?\n\nIt will be removed from the public site, but anyone who already ' +
+            'downloaded it keeps their copy, and it stays in the public repo\'s git history.')) return;
+        moving = true;
+        body.querySelectorAll('.fd-move').forEach(function(b){ b.disabled = true; });
+        try {
+          setStatus('Moving ' + name + ' to ' + to + '…');
+          var meta = await fetch(api(from, f.path) + '?ref=' + BRANCH, { headers: headers() });
+          if (!meta.ok) throw new Error('read ' + meta.status);
+          var srcSha = (await meta.json()).sha;
+          var raw = await fetch(api(from, f.path) + '?ref=' + BRANCH, { headers: headers({ 'Accept': 'application/vnd.github.raw' }) });
+          if (!raw.ok) throw new Error('download ' + raw.status);
+          var content = await readBase64(await raw.blob());
+
+          var newName = uniqueName(name, to), newPath = 'uploads/' + newName;
+          var res = await fetch(api(to, newPath), { method: 'PUT', headers: headers(), body: JSON.stringify({
+            message: 'Move ' + newName + ' from ' + from + ' via File Drop', content: content, branch: BRANCH }) });
+          if (!res.ok) throw new Error('copy ' + res.status + ' ' + (await res.text()).slice(0, 150));
+          var mt = await loadManifest(to);
+          mt.list.push(Object.assign({}, f, { name: newName, path: newPath, vis: undefined }));
+          await putManifest(to, mt.list, mt.sha, 'Add ' + newName + ' to uploads index');
+          syncFiles(to, mt.list);
+
+          res = await fetch(api(from, f.path), { method: 'DELETE', headers: headers(), body: JSON.stringify({
+            message: 'Move ' + name + ' to ' + to + ' via File Drop', sha: srcSha, branch: BRANCH }) });
+          if (!res.ok) throw new Error('copied, but removing the original failed (' + res.status + ')');
+          var mf = await loadManifest(from);
+          mf.list = mf.list.filter(function(x){ return x.path !== f.path; });
+          await putManifest(from, mf.list, mf.sha, 'Remove ' + name + ' from uploads index');
+          syncFiles(from, mf.list);
+          setStatus(name + ' is now ' + to + '.' + (to === 'public' ? ' Its link goes live once GitHub Pages redeploys (about a minute).' : ''), 'ok');
+        } catch (e) {
+          setStatus('Move failed for ' + name + ': ' + e.message, 'err');
+        }
+        moving = false;
+        render();
+      }
+
+      body.addEventListener('click', function(e) {
+        var b = e.target.closest('.fd-move');
+        if (b) moveFile(b.dataset.vis, b.dataset.name);
+      });
 
       // Private files aren't served by Pages: fetch the raw bytes with the token and download.
       body.addEventListener('click', async function(e) {
@@ -484,13 +551,8 @@ git log --oneline -3</pre>
             // Re-read the manifest right before writing so its sha is current.
             var m = await loadManifest(vis);
             m.list.push({ name: name, path: path, size: file.size, type: file.type || '', date: new Date().toISOString() });
-            var put = { message: 'Add ' + name + ' to uploads index', branch: BRANCH,
-                        content: utf8ToB64(JSON.stringify(m.list, null, 2) + '\n') };
-            if (m.sha) put.sha = m.sha;
-            res = await fetch(api(vis, MANIFEST), { method: 'PUT', headers: headers(), body: JSON.stringify(put) });
-            if (!res.ok) throw new Error('index update ' + res.status);
-            files = files.filter(function(f){ return f.vis !== vis; })
-              .concat(m.list.map(function(f){ return Object.assign({ vis: vis }, f); }));
+            await putManifest(vis, m.list, m.sha, 'Add ' + name + ' to uploads index');
+            syncFiles(vis, m.list);
             render();
           } catch (e) {
             setStatus('Upload failed for ' + file.name + ': ' + e.message, 'err'); return;
