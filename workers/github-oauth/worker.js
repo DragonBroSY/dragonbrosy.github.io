@@ -34,11 +34,17 @@ export default {
 
     const gh = await fetch('https://github.com/login/oauth/access_token', {
       method: 'POST',
-      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', 'User-Agent': 'dragonbrosy-oauth-worker' },
       body: JSON.stringify({ client_id: env.GITHUB_CLIENT_ID, client_secret: env.GITHUB_CLIENT_SECRET, code })
     });
-    const data = await gh.json();
-    if (!data.access_token) return cors({ error: data.error_description || data.error || 'exchange failed' }, 400, origin);
+    const text = await gh.text();
+    let data = {};
+    try { data = JSON.parse(text); } catch (e) {}
+    if (!data.access_token) {
+      // Log only the shape of GitHub's reply, never token values.
+      console.log('exchange failed', gh.status, Object.keys(data).join(','), text.slice(0, 200).replace(/gh[ousr]_\w+/g, '[redacted]'));
+      return cors({ error: data.error_description || data.error || ('GitHub replied ' + gh.status) }, 400, origin);
+    }
 
     // Only the short-lived access token goes back; the long-lived refresh token is dropped.
     return cors({ access_token: data.access_token, expires_in: data.expires_in || 28800 }, 200, origin);
