@@ -99,6 +99,15 @@
     .fd-bar { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center; justify-content: space-between; padding: 0 1rem 0.7rem; font-size: 0.72rem; color: #6a8aaa; }
     .fd-bar select, .fd-bar input { font: inherit; font-size: 0.72rem; padding: 0.25rem 0.45rem; border: 1px solid #dde5ef; border-radius: 4px; background: #fff; color: #1a2a3a; }
     .fd-bar button { font: inherit; font-size: 0.68rem; font-weight: 700; padding: 0.28rem 0.7rem; border-radius: 4px; border: 1px solid #1a3a6b; background: #1a3a6b; color: #fff; cursor: pointer; }
+    .fd-login { padding: 1.6rem 1rem 0.6rem; text-align: center; font-size: 0.78rem; color: #4a6a8a; }
+    .fd-login p { margin: 0.4rem auto 0.8rem; max-width: 440px; line-height: 1.5; color: #6a8aaa; }
+    .fd-login input { font: inherit; font-size: 0.74rem; padding: 0.35rem 0.5rem; border: 1px solid #dde5ef; border-radius: 4px; }
+    .fd-login button { font: inherit; font-size: 0.72rem; font-weight: 700; padding: 0.38rem 0.9rem; border-radius: 4px; border: 1px solid #1a3a6b; background: #1a3a6b; color: #fff; cursor: pointer; }
+    .fd-login a { color: #1a3a6b; }
+    .fd-lock { font-size: 1.5rem; margin-bottom: 0.3rem; }
+    .fd-hint { font-size: 0.68rem; }
+    .git-ref { margin: 0; padding: 1rem 1.2rem; font-family: "SF Mono", "Fira Code", "Courier New", monospace; font-size: 0.74rem; line-height: 1.6; color: #1a2a3a; background: #fff; overflow-x: auto; }
+    .git-ref span { color: #9ab0c8; }
     .fd-status { padding: 0 1rem 0.7rem; font-size: 0.72rem; color: #6a8aaa; min-height: 1em; }
     .fd-status.err { color: #c0392b; }
     .fd-status.ok { color: #1e8449; }
@@ -177,35 +186,67 @@
     <a id="files"></a>
     <div class="slabel">File Drop</div>
     <div class="panel" style="margin-top:1rem;">
-      <div class="panel-head">&#128194; Uploaded Files <span class="accent" id="fdCount"></span></div>
-      <div class="drop-zone" id="dropZone">
-        <div class="drop-icon">&#11015;</div>
-        <b>Drop files here</b> or click to choose &mdash; each file is committed to <code>uploads/</code> in the repo
-        <input type="file" id="fileInput" multiple hidden />
+      <div class="panel-head">&#128194; Uploaded Files <span class="accent" id="fdCount"></span>
+        <button class="decode-btn" id="fdSignOut" hidden>SIGN OUT</button>
       </div>
-      <div class="fd-bar">
-        <div id="fdTokenRow">
-          <input type="password" id="fdToken" placeholder="GitHub token (github_pat_...)" autocomplete="off" size="26" />
-          <button id="fdSaveToken">Save</button>
-          <span style="margin-left:0.3rem;">Same token as <a href="log.html" style="color:#1a3a6b;">Log Flight</a></span>
+      <div id="fdLogin" class="fd-login">
+        <div class="fd-lock">&#128274;</div>
+        <b>GitHub sign-in required</b>
+        <p>Sign in with a GitHub token that has write access to this repo to view and upload files.</p>
+        <div>
+          <input type="password" id="fdToken" placeholder="github_pat_..." autocomplete="off" size="28" />
+          <button id="fdSaveToken">Sign in with GitHub</button>
         </div>
-        <label>Sort by
-          <select id="fdSort">
-            <option value="date-desc">Date (newest first)</option>
-            <option value="date-asc">Date (oldest first)</option>
-            <option value="name-asc">Name (A&ndash;Z)</option>
-            <option value="name-desc">Name (Z&ndash;A)</option>
-            <option value="size-desc">Size (largest first)</option>
-            <option value="size-asc">Size (smallest first)</option>
-            <option value="type-asc">Type</option>
-          </select>
-        </label>
+        <p class="fd-hint">Fine-grained token, this repo only, <b>Contents: Read and write</b>. Same token as <a href="log.html">Log Flight</a>. Stored only in this browser.</p>
+      </div>
+      <div id="fdApp" hidden>
+        <div class="drop-zone" id="dropZone">
+          <div class="drop-icon">&#11015;</div>
+          <b>Drop files here</b> or click to choose &mdash; each file is committed to <code>uploads/</code> in the repo
+          <input type="file" id="fileInput" multiple hidden />
+        </div>
+        <div class="fd-bar">
+          <span id="fdUser"></span>
+          <label>Sort by
+            <select id="fdSort">
+              <option value="date-desc">Date (newest first)</option>
+              <option value="date-asc">Date (oldest first)</option>
+              <option value="name-asc">Name (A&ndash;Z)</option>
+              <option value="name-desc">Name (Z&ndash;A)</option>
+              <option value="size-desc">Size (largest first)</option>
+              <option value="size-asc">Size (smallest first)</option>
+              <option value="type-asc">Type</option>
+            </select>
+          </label>
+        </div>
+        <table class="logbook">
+          <thead><tr><th>Name</th><th>Type</th><th>Size</th><th>Uploaded</th></tr></thead>
+          <tbody id="fdBody"></tbody>
+        </table>
       </div>
       <div class="fd-status" id="fdStatus"></div>
-      <table class="logbook">
-        <thead><tr><th>Name</th><th>Type</th><th>Size</th><th>Uploaded</th></tr></thead>
-        <tbody id="fdBody"></tbody>
-      </table>
+    </div>
+
+    <div class="slabel">Git Quick Reference</div>
+    <div class="panel" style="margin-top:1rem;">
+      <div class="panel-head">&#8997; Upload to Repo <span class="accent">Run in order</span></div>
+<pre class="git-ref"><span># 1. Pull latest</span>
+git pull --rebase --autostash origin main
+
+<span># 2. Stage files</span>
+git add &lt;file&gt; &lt;file&gt;
+
+<span># 3. Check what's staged</span>
+git status --short
+
+<span># 4. Commit</span>
+git commit -m "Short description of the change"
+
+<span># 5. Push</span>
+git push origin main
+
+<span># 6. Confirm</span>
+git log --oneline -3</pre>
     </div>
 
     <a id="logbook"></a>
@@ -294,7 +335,6 @@
     (function() {
       var OWNER = 'DragonBroSY', REPO = 'dragonbrosy.github.io', BRANCH = 'main';
       var TOKEN_KEY = 'dragonbrosy_gh_token', MANIFEST = 'uploads/index.json';
-      var MAX_BYTES = 25 * 1024 * 1024;
       var files = [];
       var body = document.getElementById('fdBody'), statusEl = document.getElementById('fdStatus');
       var sortEl = document.getElementById('fdSort'), zone = document.getElementById('dropZone');
@@ -364,7 +404,6 @@
         var picked = Array.prototype.slice.call(fileList);
         for (var i = 0; i < picked.length; i++) {
           var file = picked[i];
-          if (file.size > MAX_BYTES) { setStatus(file.name + ' is over 25 MB — skipped.', 'err'); continue; }
           try {
             setStatus('Uploading ' + file.name + ' (' + (i + 1) + '/' + picked.length + ')…');
             var name = uniqueName(file.name.replace(/[\/\\]/g, '_'));
@@ -406,20 +445,49 @@
       zone.addEventListener('drop', function(e){ if (e.dataTransfer.files.length) upload(e.dataTransfer.files); });
       sortEl.addEventListener('change', render);
 
-      var tokRow = document.getElementById('fdTokenRow');
-      tokRow.style.visibility = token() ? 'hidden' : 'visible';
+      var loginEl = document.getElementById('fdLogin'), appEl = document.getElementById('fdApp');
+      var outBtn = document.getElementById('fdSignOut');
+
+      function signedOut(msg) {
+        localStorage.removeItem(TOKEN_KEY);
+        files = []; body.innerHTML = '';
+        document.getElementById('fdCount').textContent = '';
+        appEl.hidden = true; outBtn.hidden = true; loginEl.hidden = false;
+        setStatus(msg || '', msg ? 'err' : '');
+      }
+
+      // Signed in = token belongs to a GitHub user with push access to this repo.
+      async function signIn() {
+        if (!token()) { signedOut(); return; }
+        setStatus('Checking GitHub sign-in…');
+        try {
+          var repo = await fetch('https://api.github.com/repos/' + OWNER + '/' + REPO, { headers: headers() });
+          if (!repo.ok) throw new Error(repo.status === 401 ? 'Token rejected by GitHub.' : 'Token cannot access this repo.');
+          var r = await repo.json();
+          if (!r.permissions || !r.permissions.push) throw new Error('Token needs write access to this repo.');
+          var who = '';
+          var u = await fetch('https://api.github.com/user', { headers: headers() });
+          if (u.ok) who = (await u.json()).login;
+          // Load the list through the authenticated API rather than the public site path.
+          var cur = await fetch(api(MANIFEST) + '?ref=' + BRANCH, { headers: headers() });
+          files = cur.ok ? JSON.parse(decodeURIComponent(escape(atob((await cur.json()).content.replace(/\n/g, ''))))) : [];
+          document.getElementById('fdUser').textContent = who ? 'Signed in as ' + who : 'Signed in';
+          loginEl.hidden = true; appEl.hidden = false; outBtn.hidden = false;
+          setStatus(''); render();
+        } catch (e) {
+          signedOut('Sign-in failed: ' + e.message);
+        }
+      }
+
       document.getElementById('fdSaveToken').addEventListener('click', function() {
         var t = document.getElementById('fdToken').value.trim();
         if (!t) return;
         localStorage.setItem(TOKEN_KEY, t);
         document.getElementById('fdToken').value = '';
-        tokRow.style.visibility = 'hidden';
-        setStatus('Token saved in this browser.', 'ok');
+        signIn();
       });
-
-      fetch(MANIFEST + '?_=' + Date.now()).then(function(r){ return r.ok ? r.json() : []; })
-        .then(function(list){ files = list; render(); })
-        .catch(function(){ render(); });
+      outBtn.addEventListener('click', function(){ signedOut(); });
+      signIn();
     })();
 
     // Weather
