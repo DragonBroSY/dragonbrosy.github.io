@@ -48,10 +48,16 @@
     history.replaceState(null, '', location.pathname + location.hash);
     if (!expected || state !== expected) return { error: 'login request didn\'t match. Try again.' };
     try {
-      var res = await fetch(AUTH_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' },
-                                        body: JSON.stringify({ code: code }) });
-      var j = await res.json();
-      if (!res.ok || !j.access_token) throw new Error(j.error || res.status);
+      // The Worker says retry:true when GitHub briefly throttles it; a fresh request usually works.
+      var res, j;
+      for (var attempt = 0; attempt < 5; attempt++) {
+        if (attempt) await new Promise(function(r){ setTimeout(r, 700 * attempt); });
+        res = await fetch(AUTH_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' },
+                                      body: JSON.stringify({ code: code }) });
+        j = await res.json();
+        if (!j.retry) break;
+      }
+      if (!res.ok || !j.access_token) throw new Error(j.retry ? 'GitHub is busy, try again in a minute.' : (j.error || res.status));
       sessionStorage.setItem(SESSION_KEY, JSON.stringify({ token: j.access_token, exp: Date.now() + (j.expires_in - 60) * 1000 }));
     } catch (e) {
       return { error: e.message };

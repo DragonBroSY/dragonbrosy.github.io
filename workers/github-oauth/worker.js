@@ -37,6 +37,10 @@ export default {
       headers: { 'Accept': 'application/json', 'Content-Type': 'application/json', 'User-Agent': 'dragonbrosy-oauth-worker' },
       body: JSON.stringify({ client_id: env.GITHUB_CLIENT_ID, client_secret: env.GITHUB_CLIENT_SECRET, code })
     });
+    // GitHub intermittently answers 429 to Cloudflare's shared outbound IPs. That
+    // doesn't use up the code, and a fresh request usually gets through, so tell
+    // the browser to retry (retrying inside this same request keeps failing).
+    if (gh.status === 429) return cors({ error: 'GitHub busy', retry: true }, 503, origin);
     const text = await gh.text();
     let data = {};
     try { data = JSON.parse(text); } catch (e) {}
