@@ -1509,3 +1509,241 @@ Comm SE Initial Checkride
 Commercial Single-Engine Checkride Prep
 
 "		
+2026-10-27	N238AT	PA-44-180	KLZU		KLZU					1.70		1.70																		"Hans Kreuk
+Commercial Multiengine Add-On Prep
+
+Steep Turns 
+- keep an eye on pitch attitude. 
+
+Power on stall good
+
+Power off stall 
+- be easier on the rudders here. The plane starting yawing really hard. All it takes is light aileron and rudder to hold heading.  
+
+Slow flight 
+- you want to be operating in the region of reverse command here. Try to avoid pitching up and down to level off after a climb or descent. 
+
+Accelerated Stall
+- just be easier on the pitch down. All you need to do is release back pressure hear to break the stall. No need to force the nose in the brown. Remember you have plenty of airspeed with these due to stalling at a high airspeed. 
+ 
+Vmc demo good
+
+Engine shutdown
+- slow down running checklist items. Always fly the plane first. Double check flight instruments and make sure you are holding 88 knots while running checklist. 
+
+- keep working on the flows. Let’s try to get these down by next flight"		
+2026-10-29	N686AT	PA-44-180	KLZU		KLZU					1.80		1.80																		"Hans Kreuk
+Commercial Multiengine Add-On Prep
+
+Short takeoff SAT
+- rotated  little faster and pitch up to 10-12 degrees to get 82 knots. 
+
+Steep Turns SAT
+- keep an eye on pitch attitude. If you start getting down into the brown, that’s a key sign that you are descending
+
+Power on stall SAT
+- look over your departure and takeoff configurations. 
+- When stalling down force nose over. You are releasing back which reduces angle of attack. 
+
+Power off stall UNSAT
+- improper recovery
+- Look over recovery. 
+- 2nd time was better 
+
+Slow flight SAT
+
+Accelerated Stall SAT
+ 
+Vmc demo UNSAT
+- we were uncoordinated with rudder usage and recovery was incorrect. 
+- Work on these in the sim. 
+
+Engine shutdown/Airstsrt - UNSAT
+- we lost 1,200’ due to being fast the whole time
+- You never feathered the prop
+- Keep power no more than 15” of MP until CHT is in the green
+- Forgot to open cow flap
+
+KGVL RNAV 5 Single engine app UNSAT
+- engine out flow incorrect. You never went mixtures, props, throttles full forward. 
+- We lost 300’ below minimums prior to the FAF due to being above 88 knots
+
+Short field landing UNSAT
+- we landed long due to not pulling power. You didn’t have power idle until we touched down. 
+
+- make sure you continue studying."		
+2026-10-30	N238AT	PA-44-180	KLZU		KLZU					1.90		1.90																		"Hans Kreuk
+Commercial Multiengine Add-On Prep
+
+- there is a lot of work to be done. Continue to study maneuver set up and recovery’s as well as the engine out flow. These should be very well down by now. 
+- You should really start coming in and getting into the sim. We don’t have much flight time left and there will need to be significant improvement prior to endorsement. 
+- you can definitely get this stuff down. The sim is a really good tool to help with some of these mistakes. 
+
+Short takeoff SAT
+- once your clear of obstacle, you don’t have to climb at 82 knots. You can pitch for 88 knots. 
+
+After takeoff - use checklist always
+- you set MP and RPM backwards. 
+- Make sure you are zooming out maps page on transponder to actively be aware of traffic.  
+
+Engine out in climb UNSAT
+- overall you ran through it well. But you didn’t add full throttles after announcing it which caused us to continue to descend at a fast rate. 
+
+Steep Turns 
+- first attempt UNSAT bank was between 35 and 40 most of maneuver. And pitch and alitude changes were +\- 100’
+- 2nd attempt I demonstrated
+- 3rd attempt much better
+
+Power on stall takeoff config SAT
+
+Power off stall SAT
+
+Slow flight UNSAT
+- big airspeed changes when configured
+- Gained 200’ on recovery
+
+Accelerated Stall 
+- first attempt you weren’t wings level before adding power
+- You were 110 knots before you started to pitch up for positive rate of climb
+ 
+Vmc demo UNSAT
+- you said maintain 88 knots
+- You forgot about your heading bug so you turned 40 degrees off of heading
+- You then pitch up to 82 knots trying to get a positive rate on recovery. 
+- Slowly scissor the props to 20” 
+
+Engine shutdown/Airstart UNSAT
+- engine out flow incorrect. You didnt say flaps/gear up 
+- Make sure you are below 100 knots prior to opening cow flaps. 
+
+Emergency descent UNSAT
+- on recovery, you lost 250’. Make sure you start leveling off for assigned altitude about 200’ above it. 
+- Also, you started to bring gear up and never added power after leveling off so our airspeed was rapidly dropping. 
+
+KGVL RNAV 23 Single engine app UNSAT
+- climbed 200’ during procedure turn
+- You descended 300’ below FAF minimums while descended from IAF. You just never looked at altitude. I finally stopped you from descending. 
+- Make sure you are always simulating the feathering the prop and cut the mixture below 3000’ AGL. We don’t actually try to do this. 
+
+Short field landing UNSAT
+- landed about 125’ short. 
+- You forgot to mention flaps down max simulated braking."		
+2026-11-06	N127AT	PA-44-180	KLZU		KLZU					1.60		1.60																		"Hans Kreuk
+Commercial Multiengine Add-On Prep
+
+Short takeoff SAT
+
+Aborted takeoff UNSAT
+- make sure you are closing throttle for this. 
+
+Engine out in climb UNSAT
+- you forgot flaps and gear up initially. 
+- You said about 3,000 but remember this is for AGL. We were still below 3,000 AGL
+- Big thing is you tried to really feather prop. Remember we are simulating everything low to the ground. We don’t actually do this. 
+
+Steep Turns UNSAT
+- first turn descended 140’ initially. 
+
+Power on stall SAT
+
+Power off stall SAT
+- first attempt, you started to add flaps about VFE. Also, you hadn’t put gear down yet. Run checklist
+
+Slow flight UNSAT
+- First 2 attempts we gained 100’ during configuration 
+- Also, got gear horn during set up because we didn’t wait for green indications before adding flaps. 
+- unstable with altitude and airspeed
+- On recovery, you forgot to bring gear up
+
+Accelerated Stall SAT
+ 
+Vmc demo SAT
+- it’s very important not to let go of rudder on recovery. We are already close to loosing directional control. Removing the rudder only increases the chances of loss of control
+
+Engine shutdown/Airstart SAT
+
+KLZU ILS 25 Single engine app UNSAT
+- you held 3,000 and never descended once getting established. Once you got configured then you said you could descended to FAF mins. 
+- You never ran full engine out flow. You stopped after mixtures props throttles full fwd. 
+
+Short field landing SAT
+- don’t forgot flaps up max simulated braking"		
+2026-11-09	N686AT	PA-44-180	KLZU		KLZU					1.60		1.60																		"Hans Kreuk
+Commercial Multiengine Add-On Prep
+
+- don’t forget instrument check in first protected turn
+- During run up you messed up governor check. You said you were looking for MP drop instead of rise. Get in the sim or parked Seminole and make sure you have checklist down. 
+
+Aborted takeoff SAT
+
+Short takeoff UNSAT
+- you said rotate at 70 but didn’t leave the ground until 80 knots. 
+- You stopped pitch attitude about 5 degrees of pitch up so we stayed between 88-92 knots. Make sure you pitch up to 10-12 degrees of pitch.
+- You left mixture lean on takeoff. This will automatically result in a NOD on checkride. 
+
+Engine out in climb UNsAT
+- ran flow well but airspeed continued to drop below 78 knots so I finally had to let you know we were getting slow. 
+- 2nd time was better
+
+Steep Turns SAT
+- bank the whole maneuver was closer to 40-45 bank
+
+Power on stall departure configuration UNsAT
+- you put the gear down for this. I reclarrified departure configuration
+- Other than wrong configuration, maneuver was good. 
+
+Power off stall SAT
+
+Slow flight UNSAT
+- pull power to like 17” or so when setting up. 20” of MP is a lot when adding flaps. 
+- Maneuver was ok until recovery. We gained 200’ on recovery. We have to fix this. If you noticed you climbed, make sure to pull power and get back down to assigned altitude. 
+
+Accelerated Stall SAT
+ 
+Vmc demo SAT
+    - don’t let the rudder out on these when recovering. This is very important you remember this. 
+
+Engine shutdown/Airstart UnSAT
+- you feathered prop before trying to troubleshoot. Once you feather the prop you can no longer troubleshoot. 
+- Always assess altitude after the identify verify step.
+
+KGVL RNAV 23 Single engine app UNSAT
+- You forgot identify verify as part of the engine out flow
+- we got as slow as 73 knots trying to hold altitude. We have to watch this. Level off about 80’ higher than FAF mins. We can’t just pitch up in hopes to hold altitude with a single engine. Airspeed is the most important. We could just level off and intercept the glideslope. 
+- You forgot to make any calls. I finally made the first call for us on a 4 mile final. 
+
+KLZU RNAV 25 Single engine app SAT
+- watch the GPS count down to turn. Both approaches we overshot course because we turned late. The gps counts down and has you turn a little early so we don’t overshoot 
+
+Short field landing UNSAT
+- we ballooned and got slow. Landed long"		
+2026-11-11	N127AT	PA-44-180	KLZU		KLZU					1.50		1.50																		"Hans Kreuk
+Commercial Multiengine Add-On Prep
+
+Short takeoff SAT
+
+Engine out in climb SAT
+- don’t forget to say you would declare an emergency and land
+
+Steep Turns 
+- you have to pitch up going into that left turn. Don’t wait until you descend 100’
+- Bank need to stay closer to 50 degrees 
+
+Slow flight 
+ - forgot to bring gear up. 
+
+Vmc demo 
+- first attempt, you let go over the rudder on recovery so the plane pulled hard to the into side. 
+- 2nd attempt, you brought the nose up a little quick on recovery so the airspeed stopped at about 81 knots. 
+- 3rd attempt was better
+
+Engine shutdown/Airstart SAT
+
+KLZU RNAV 25 Single engine app 
+
+Emergency Descent
+- make sure to not bank more than 45 degrees. Between 30-45 degrees is plenty. 
+
+Short field landing we did 2 and both were long
+- first attempt you didn’t actually pull power to idle until we were over the 1,000 footers
+- 2nd attempt was too much flare"		
