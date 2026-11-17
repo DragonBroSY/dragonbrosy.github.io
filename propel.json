@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-23 17:16:50 EDT",
-  "source_rows": 337,
+  "generated": "2026-11-16 22:41:15 EST",
+  "source_rows": 343,
   "sources": [
     {
       "file": "logbook.txt",
-      "rows": 101,
-      "used": 100
+      "rows": 107,
+      "used": 106
     },
     {
       "file": "logbook-current.csv",
@@ -28,16 +28,16 @@
       "used": 48
     }
   ],
-  "total_time": 611.6,
+  "total_time": 621.7,
   "airplane": {
-    "total": 305.2,
+    "total": 315.3,
     "pic": 124.1,
     "turbine": 0
   },
   "category_class": {
     "airplane_sel": 275.4,
     "airplane_ses": 0,
-    "airplane_mel": 29.8,
+    "airplane_mel": 39.9,
     "airplane_mes": 0,
     "helicopter_rotor": 306.4
   },
@@ -45,7 +45,7 @@
     "pic": 124.1,
     "instructor": 0.0,
     "sic": 301.3,
-    "dual": 293.3,
+    "dual": 303.4,
     "other": 0,
     "fe": 0
   },
@@ -60,9 +60,9 @@
     "cross_country_rotor": 297.6
   },
   "last_bfr_or_checkride": "2026-07-07",
-  "last_flown_aircraft": "PA-28-181",
-  "total_flight_hours_last_6mo": 164.5,
-  "total_flight_hours_last_12mo": 205.1,
+  "last_flown_aircraft": "PA-44-180",
+  "total_flight_hours_last_6mo": 146.8,
+  "total_flight_hours_last_12mo": 212.4,
   "aircraft_flown": [
     {
       "type": "UH-60M",
@@ -125,6 +125,18 @@
       "source": "logbook"
     },
     {
+      "type": "PA-44-180",
+      "category": "mel",
+      "total": 26.1,
+      "pic": 0.0,
+      "dual_given": 0.0,
+      "turbine_sic": 0.0,
+      "dual_received": 26.1,
+      "other": 0.0,
+      "last_flown": "2026-11",
+      "source": "logbook"
+    },
+    {
       "type": "OH-58C",
       "category": "rotor",
       "total": 22.6,
@@ -134,18 +146,6 @@
       "dual_received": 0.0,
       "other": 0.0,
       "last_flown": "2018-05",
-      "source": "logbook"
-    },
-    {
-      "type": "PA-44-180",
-      "category": "mel",
-      "total": 16.0,
-      "pic": 0.0,
-      "dual_given": 0.0,
-      "turbine_sic": 0.0,
-      "dual_received": 16.0,
-      "other": 0.0,
-      "last_flown": "2026-09",
       "source": "logbook"
     },
     {
@@ -198,8 +198,8 @@
     }
   ],
   "minimums_raw": {
-    "total_time": 611.6,
-    "multi_engine_land": 29.8,
+    "total_time": 621.7,
+    "multi_engine_land": 39.9,
     "night": 52.8,
     "instrument": 43.2,
     "cross_country": 374.3,
@@ -231,12 +231,42 @@
         "2026-10-22",
         "PA-28-181",
         0.7
+      ],
+      [
+        "2026-10-27",
+        "PA-44-180",
+        1.7
+      ],
+      [
+        "2026-10-29",
+        "PA-44-180",
+        1.8
+      ],
+      [
+        "2026-10-30",
+        "PA-44-180",
+        1.9
+      ],
+      [
+        "2026-11-06",
+        "PA-44-180",
+        1.6
+      ],
+      [
+        "2026-11-09",
+        "PA-44-180",
+        1.6
+      ],
+      [
+        "2026-11-11",
+        "PA-44-180",
+        1.5
       ]
     ],
     "grid": {
       "airplanes": {
-        "total": 304.4,
-        "instruction_received": 278.1,
+        "total": 314.5,
+        "instruction_received": 288.2,
         "solo": 10.0,
         "pic": 112.9,
         "sic": 0.0,
@@ -280,7 +310,7 @@
       "sel_dual": 278.1,
       "mel_pic": 0.0,
       "mel_sic": 0.0,
-      "mel_dual": 29.8,
+      "mel_dual": 39.9,
       "helicopter": 306.4,
       "atd_se": 40.3
     }
