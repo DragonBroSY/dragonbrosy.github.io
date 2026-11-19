@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-16 22:41:15 EST",
-  "source_rows": 343,
+  "generated": "2026-11-18 19:26:32 EST",
+  "source_rows": 346,
   "sources": [
     {
       "file": "logbook.txt",
-      "rows": 107,
-      "used": 106
+      "rows": 110,
+      "used": 109
     },
     {
       "file": "logbook-current.csv",
@@ -28,24 +28,24 @@
       "used": 48
     }
   ],
-  "total_time": 621.7,
+  "total_time": 627.1,
   "airplane": {
-    "total": 315.3,
-    "pic": 124.1,
+    "total": 320.7,
+    "pic": 125.8,
     "turbine": 0
   },
   "category_class": {
     "airplane_sel": 275.4,
     "airplane_ses": 0,
-    "airplane_mel": 39.9,
+    "airplane_mel": 45.3,
     "airplane_mes": 0,
     "helicopter_rotor": 306.4
   },
   "type_of_time": {
-    "pic": 124.1,
+    "pic": 125.8,
     "instructor": 0.0,
     "sic": 301.3,
-    "dual": 303.4,
+    "dual": 307.1,
     "other": 0,
     "fe": 0
   },
@@ -59,10 +59,10 @@
     "cross_country_airplane": 76.7,
     "cross_country_rotor": 297.6
   },
-  "last_bfr_or_checkride": "2026-07-07",
+  "last_bfr_or_checkride": "2026-11-18",
   "last_flown_aircraft": "PA-44-180",
-  "total_flight_hours_last_6mo": 146.8,
-  "total_flight_hours_last_12mo": 212.4,
+  "total_flight_hours_last_6mo": 148.4,
+  "total_flight_hours_last_12mo": 217.8,
   "aircraft_flown": [
     {
       "type": "UH-60M",
@@ -127,11 +127,11 @@
     {
       "type": "PA-44-180",
       "category": "mel",
-      "total": 26.1,
-      "pic": 0.0,
+      "total": 31.5,
+      "pic": 1.7,
       "dual_given": 0.0,
       "turbine_sic": 0.0,
-      "dual_received": 26.1,
+      "dual_received": 29.8,
       "other": 0.0,
       "last_flown": "2026-11",
       "source": "logbook"
@@ -198,13 +198,13 @@
     }
   ],
   "minimums_raw": {
-    "total_time": 621.7,
-    "multi_engine_land": 39.9,
+    "total_time": 627.1,
+    "multi_engine_land": 45.3,
     "night": 52.8,
     "instrument": 43.2,
     "cross_country": 374.3,
-    "pic_strict": 124.1,
-    "pic_plus_qualifying_sic": 425.4,
+    "pic_strict": 125.8,
+    "pic_plus_qualifying_sic": 427.1,
     "pic_cross_country": 58.3,
     "pic_night": 6.4
   },
@@ -261,14 +261,29 @@
         "2026-11-11",
         "PA-44-180",
         1.5
+      ],
+      [
+        "2026-11-18",
+        "PA-44-180",
+        2.2
+      ],
+      [
+        "2026-11-18",
+        "PA-44-180",
+        1.7
+      ],
+      [
+        "2026-11-18",
+        "PA-44-180",
+        1.5
       ]
     ],
     "grid": {
       "airplanes": {
-        "total": 314.5,
-        "instruction_received": 288.2,
+        "total": 319.9,
+        "instruction_received": 291.9,
         "solo": 10.0,
-        "pic": 112.9,
+        "pic": 114.6,
         "sic": 0.0,
         "xc_instruction_received": 103.9,
         "xc_solo": 5.8,
@@ -308,9 +323,9 @@
       "sel_pic": 112.9,
       "sel_sic": 0.0,
       "sel_dual": 278.1,
-      "mel_pic": 0.0,
+      "mel_pic": 1.7,
       "mel_sic": 0.0,
-      "mel_dual": 39.9,
+      "mel_dual": 43.6,
       "helicopter": 306.4,
       "atd_se": 40.3
     }
