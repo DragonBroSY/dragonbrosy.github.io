@@ -443,22 +443,26 @@ jobs:
                       # The ATP LogTen export also carries the 2026-02-21
                       # R22 flight, which logbook-r22-bfr.csv already counts.
                       continue
-                  if rated_from is not None and dt is not None and dt >= rated_from and c_pic_rated:
-                      pic_h = parse_hours(row.get(c_pic_rated, ''))
-                      if cat in UNRATED_CLASSES:
-                          # Sole-manipulator PIC (61.51(e)(1)(i)) needs the
-                          # category AND class rating — no PIC in the PA-44
-                          # until the MEL rating is issued.
-                          pic_h = 0.0
-                  else:
-                      pic_h = parse_hours(row.get(c_pic, '') if c_pic else '')
-                  dual_h = parse_hours(row.get(c_dual, '') if c_dual else '')
-                  is_rated_row = rated_from is not None and dt is not None and dt >= rated_from
                   # The practical test itself is flown with a DPE, not an
                   # instructor — PIC only, never Instruction Received.
                   title = (row.get(c_remk, '') if c_remk else '').strip().split('\n')
                   title = title[1].lower() if len(title) > 1 else ''
                   is_practical_test = bool(re.search(r'\bcheckride\b', title)) and not re.search(r'prep|mock|proficiency', title)
+                  if rated_from is not None and dt is not None and dt >= rated_from and c_pic_rated:
+                      pic_h = parse_hours(row.get(c_pic_rated, ''))
+                      class_rated_from = CLASS_RATED_FROM.get(cat)
+                      if class_rated_from is not None and not (
+                          dt > class_rated_from or (dt == class_rated_from and is_practical_test)
+                      ):
+                          # Sole-manipulator PIC (61.51(e)(1)(i)) needs the
+                          # category AND class rating — no PIC in the PA-44
+                          # before the MEL rating. On the rating date only
+                          # the practical test itself counts as PIC.
+                          pic_h = 0.0
+                  else:
+                      pic_h = parse_hours(row.get(c_pic, '') if c_pic else '')
+                  dual_h = parse_hours(row.get(c_dual, '') if c_dual else '')
+                  is_rated_row = rated_from is not None and dt is not None and dt >= rated_from
                   if dual_fallback and dual_h == 0 and not is_practical_test:
                       if is_rated_row:
                           # Rated pilot receiving instruction: PIC and Dual
@@ -521,8 +525,8 @@ jobs:
           # loggable PIC even while receiving instruction (FAR 61.51(e)).
           # Dual falls back to Total-PIC when blank, either way.
           CHECKRIDE_DATE = datetime(2026, 7, 7)
-          # Airplane classes the pilot is NOT yet rated in (no PIC logged).
-          UNRATED_CLASSES = {'mel'}
+          # Date each later class rating was earned (Commercial ME add-on).
+          CLASS_RATED_FROM = {'mel': datetime(2026, 11, 18)}
           used = process_source(src, headers, rows, COL_SOLO, track_bfr=True, dual_fallback=True,
                                  rated_pic_aliases=COL_PIC, rated_from=CHECKRIDE_DATE, airplane_only=True)
           source_summary.append({'file': src, 'rows': len(rows), 'used': used})

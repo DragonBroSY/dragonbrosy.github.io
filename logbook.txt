@@ -1747,3 +1747,15 @@ Emergency Descent
 Short field landing we did 2 and both were long
 - first attempt you didn’t actually pull power to idle until we were over the 1,000 footers
 - 2nd attempt was too much flare"		
+2026-11-18	N2545C	PA-44-180	KDKX		KDKX					2.20		2.20																		"Hans Kreuk
+Commercial Multiengine Add-On Prep
+
+"		
+2026-11-18	N2545C	PA-44-180	KDKX		KDKX					1.70		1.70																		"Hans Kreuk
+Comm ME Add-On Checkride
+
+"	1	
+2026-11-18	N326ND	PA-44-180	KLZU		KLZU					1.50		1.50																		"Hans Kreuk
+Commercial Multiengine Add-On Prep
+
+"		
