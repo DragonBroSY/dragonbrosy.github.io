@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-18 19:26:32 EST",
+  "generated": "2026-11-18 19:28:46 EST",
   "source_rows": 346,
   "sources": [
     {
@@ -31,7 +31,7 @@
   "total_time": 627.1,
   "airplane": {
     "total": 320.7,
-    "pic": 125.8,
+    "pic": 127.3,
     "turbine": 0
   },
   "category_class": {
@@ -42,7 +42,7 @@
     "helicopter_rotor": 306.4
   },
   "type_of_time": {
-    "pic": 125.8,
+    "pic": 127.3,
     "instructor": 0.0,
     "sic": 301.3,
     "dual": 307.1,
@@ -128,7 +128,7 @@
       "type": "PA-44-180",
       "category": "mel",
       "total": 31.5,
-      "pic": 1.7,
+      "pic": 3.2,
       "dual_given": 0.0,
       "turbine_sic": 0.0,
       "dual_received": 29.8,
@@ -203,8 +203,8 @@
     "night": 52.8,
     "instrument": 43.2,
     "cross_country": 374.3,
-    "pic_strict": 125.8,
-    "pic_plus_qualifying_sic": 427.1,
+    "pic_strict": 127.3,
+    "pic_plus_qualifying_sic": 428.6,
     "pic_cross_country": 58.3,
     "pic_night": 6.4
   },
@@ -283,7 +283,7 @@
         "total": 319.9,
         "instruction_received": 291.9,
         "solo": 10.0,
-        "pic": 114.6,
+        "pic": 116.1,
         "sic": 0.0,
         "xc_instruction_received": 103.9,
         "xc_solo": 5.8,
@@ -323,7 +323,7 @@
       "sel_pic": 112.9,
       "sel_sic": 0.0,
       "sel_dual": 278.1,
-      "mel_pic": 1.7,
+      "mel_pic": 3.2,
       "mel_sic": 0.0,
       "mel_dual": 43.6,
       "helicopter": 306.4,
