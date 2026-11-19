@@ -451,13 +451,17 @@ jobs:
                   if rated_from is not None and dt is not None and dt >= rated_from and c_pic_rated:
                       pic_h = parse_hours(row.get(c_pic_rated, ''))
                       class_rated_from = CLASS_RATED_FROM.get(cat)
+                      tail = (row.get(c_tail, '') if c_tail else '').strip().upper()
+                      after_pass_same_day = (dt, tail) in FLOWN_AFTER_CLASS_RATING
                       if class_rated_from is not None and not (
-                          dt > class_rated_from or (dt == class_rated_from and is_practical_test)
+                          dt > class_rated_from
+                          or (dt == class_rated_from and (is_practical_test or after_pass_same_day))
                       ):
                           # Sole-manipulator PIC (61.51(e)(1)(i)) needs the
                           # category AND class rating — no PIC in the PA-44
-                          # before the MEL rating. On the rating date only
-                          # the practical test itself counts as PIC.
+                          # before the MEL rating. On the rating date, only
+                          # the practical test and flights listed as flown
+                          # after the pass count as PIC.
                           pic_h = 0.0
                   else:
                       pic_h = parse_hours(row.get(c_pic, '') if c_pic else '')
@@ -527,6 +531,8 @@ jobs:
           CHECKRIDE_DATE = datetime(2026, 7, 7)
           # Date each later class rating was earned (Commercial ME add-on).
           CLASS_RATED_FROM = {'mel': datetime(2026, 11, 18)}
+          # Same-day flights flown after the pass: PIC and Dual Received.
+          FLOWN_AFTER_CLASS_RATING = {(datetime(2026, 11, 18), 'N326ND')}
           used = process_source(src, headers, rows, COL_SOLO, track_bfr=True, dual_fallback=True,
                                  rated_pic_aliases=COL_PIC, rated_from=CHECKRIDE_DATE, airplane_only=True)
           source_summary.append({'file': src, 'rows': len(rows), 'used': used})
