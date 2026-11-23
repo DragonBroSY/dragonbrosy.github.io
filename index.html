@@ -363,6 +363,17 @@ git log --oneline -3</pre>
         return Object.assign({ 'Authorization': 'Bearer ' + token(), 'Accept': 'application/vnd.github+json',
                  'X-GitHub-Api-Version': '2022-11-28', 'Content-Type': 'application/json' }, extra || {});
       }
+      // GitHub API call that notices an expired/revoked sign-in (the token lasts 8 hours and
+      // isn't renewed), sends you back to the sign-in screen, and throws an error marked expired.
+      var EXPIRED = 'Your GitHub sign-in expired (it lasts 8 hours). Sign in again, then retry.';
+      async function gh(url, opts) {
+        var res = token() ? await fetch(url, opts) : { status: 401 };
+        if (res.status === 401) {
+          signedOut(EXPIRED);
+          var err = new Error(EXPIRED); err.expired = true; throw err;
+        }
+        return res;
+      }
       function enc(path) { return path.split('/').map(encodeURIComponent).join('/'); }
       function repoApi(vis) { return 'https://api.github.com/repos/' + OWNER + '/' + REPOS[vis]; }
       function api(vis, path) { return repoApi(vis) + '/contents/' + enc(path); }
@@ -378,7 +389,7 @@ git log --oneline -3</pre>
       function utf8ToB64(s) { return btoa(unescape(encodeURIComponent(s))); }
 
       async function loadManifest(vis) {
-        var res = await fetch(api(vis, MANIFEST) + '?ref=' + BRANCH, { headers: headers() });
+        var res = await gh(api(vis, MANIFEST) + '?ref=' + BRANCH, { headers: headers() });
         if (!res.ok) return { sha: null, list: [] };
         var j = await res.json();
         return { sha: j.sha, list: JSON.parse(b64ToUtf8(j.content)) };
@@ -432,7 +443,7 @@ git log --oneline -3</pre>
       async function putManifest(vis, list, sha, message) {
         var put = { message: message, branch: BRANCH, content: utf8ToB64(JSON.stringify(list, null, 2) + '\n') };
         if (sha) put.sha = sha;
-        var res = await fetch(api(vis, MANIFEST), { method: 'PUT', headers: headers(), body: JSON.stringify(put) });
+        var res = await gh(api(vis, MANIFEST), { method: 'PUT', headers: headers(), body: JSON.stringify(put) });
         if (!res.ok) throw new Error('index update ' + res.status);
       }
 
@@ -443,9 +454,9 @@ git log --oneline -3</pre>
 
       // Delete a file and drop it from that repo's index. Used by move and delete.
       async function removeFile(vis, f, message) {
-        var meta = await fetch(api(vis, f.path) + '?ref=' + BRANCH, { headers: headers() });
+        var meta = await gh(api(vis, f.path) + '?ref=' + BRANCH, { headers: headers() });
         if (meta.ok) {
-          var res = await fetch(api(vis, f.path), { method: 'DELETE', headers: headers(), body: JSON.stringify({
+          var res = await gh(api(vis, f.path), { method: 'DELETE', headers: headers(), body: JSON.stringify({
             message: message, sha: (await meta.json()).sha, branch: BRANCH }) });
           if (!res.ok) throw new Error('delete ' + res.status);
         } else if (meta.status !== 404) throw new Error('read ' + meta.status);
@@ -474,7 +485,7 @@ git log --oneline -3</pre>
           await removeFile(vis, f, 'Delete ' + name + ' via File Drop');
           setStatus(name + ' deleted.' + (vis === 'public' ? ' Its public link stops working once GitHub Pages redeploys (about a minute).' : ''), 'ok');
         } catch (e) {
-          setStatus('Delete failed for ' + name + ': ' + e.message, 'err');
+          if (!e.expired) setStatus('Delete failed for ' + name + ': ' + e.message, 'err');
         }
         lockRows(false);
         render();
@@ -491,12 +502,12 @@ git log --oneline -3</pre>
         lockRows(true);
         try {
           setStatus('Moving ' + name + ' to ' + to + '…');
-          var raw = await fetch(api(from, f.path) + '?ref=' + BRANCH, { headers: headers({ 'Accept': 'application/vnd.github.raw' }) });
+          var raw = await gh(api(from, f.path) + '?ref=' + BRANCH, { headers: headers({ 'Accept': 'application/vnd.github.raw' }) });
           if (!raw.ok) throw new Error('download ' + raw.status);
           var content = await readBase64(await raw.blob());
 
           var newName = uniqueName(name, to), newPath = 'uploads/' + newName;
-          var res = await fetch(api(to, newPath), { method: 'PUT', headers: headers(), body: JSON.stringify({
+          var res = await gh(api(to, newPath), { method: 'PUT', headers: headers(), body: JSON.stringify({
             message: 'Move ' + newName + ' from ' + from + ' via File Drop', content: content, branch: BRANCH }) });
           if (!res.ok) throw new Error('copy ' + res.status + ' ' + (await res.text()).slice(0, 150));
           var mt = await loadManifest(to);
@@ -508,7 +519,7 @@ git log --oneline -3</pre>
           catch (err) { throw new Error('copied, but removing the original failed (' + err.message + ')'); }
           setStatus(name + ' is now ' + to + '.' + (to === 'public' ? ' Its link goes live once GitHub Pages redeploys (about a minute).' : ''), 'ok');
         } catch (e) {
-          setStatus('Move failed for ' + name + ': ' + e.message, 'err');
+          if (!e.expired) setStatus('Move failed for ' + name + ': ' + e.message, 'err');
         }
         lockRows(false);
         render();
@@ -528,7 +539,7 @@ git log --oneline -3</pre>
         e.preventDefault();
         setStatus('Downloading ' + a.dataset.name + '…');
         try {
-          var res = await fetch(api('private', a.dataset.path) + '?ref=' + BRANCH,
+          var res = await gh(api('private', a.dataset.path) + '?ref=' + BRANCH,
                                 { headers: headers({ 'Accept': 'application/vnd.github.raw' }) });
           if (!res.ok) throw new Error(res.status);
           var url = URL.createObjectURL(await res.blob());
@@ -538,7 +549,7 @@ git log --oneline -3</pre>
           setTimeout(function(){ URL.revokeObjectURL(url); }, 60000);
           setStatus('');
         } catch (err) {
-          setStatus('Download failed: ' + err.message, 'err');
+          if (!err.expired) setStatus('Download failed: ' + err.message, 'err');
         }
       });
 
@@ -594,7 +605,7 @@ git log --oneline -3</pre>
             setStatus('Uploading ' + picked[i].rel + ' to ' + vis + ' (' + (i + 1) + '/' + picked.length + ')…');
             var name = uniqueName(picked[i].rel.split('/').map(function(s){ return s.replace(/\\/g, '_'); }).join('/'), vis);
             var path = 'uploads/' + name;
-            var res = await fetch(api(vis, path), { method: 'PUT', headers: headers(), body: JSON.stringify({
+            var res = await gh(api(vis, path), { method: 'PUT', headers: headers(), body: JSON.stringify({
               message: 'Upload ' + name + ' via File Drop', content: await readBase64(file), branch: BRANCH }) });
             if (!res.ok) throw new Error(res.status + ' ' + (await res.text()).slice(0, 150));
 
@@ -605,7 +616,8 @@ git log --oneline -3</pre>
             syncFiles(vis, m.list);
             render();
           } catch (e) {
-            setStatus('Upload failed for ' + picked[i].rel + ': ' + e.message, 'err'); return;
+            if (!e.expired) setStatus('Upload failed for ' + picked[i].rel + ': ' + e.message, 'err');
+            return;
           }
         }
         setStatus(vis === 'public' ? 'Done. Public links go live once GitHub Pages redeploys (about a minute).'
