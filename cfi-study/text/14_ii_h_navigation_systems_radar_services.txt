@@ -1,0 +1,90 @@
+II.H Navigation Systems and Radar Services
+
+Task H. Navigation Systems and Radar Services
+Note: The evaluator should reference the manufacturer’s equipment supplement(s) as necessary for appropriate limitations, procedures, etc.
+References: AC 91-78; AIM; FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-25
+Objective: To determine the applicant understands navigation systems and radar services, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Ground-based navigation (identification, orientation, course determination, equipment, tests, regulations, interference, appropriate use of navigation data, and signal integrity).
+K2. Satellite-based navigation (e.g., equipment, regulations, authorized use of databases, and Receiver Autonomous Integrity Monitoring (RAIM)).
+K3. Radar assistance to visual flight rules (VFR) aircraft (e.g., operations, equipment, available services, traffic advisories).
+K4. Transponder (Mode(s) A, C, and S) and Automatic Dependent Surveillance-Broadcast (ADS-B).
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Management of automated navigation and autoflight systems.
+R2. Distractions, task prioritization, loss of situational awareness, or disorientation.
+R3. Limitations of the navigation system in use.
+R4. Loss of a navigation signal.
+R5. Use of an electronic flight bag (EFB), if used.
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Use an airborne electronic navigation system.
+S2. Determine the airplane's position using the navigation system.
+S3. Intercept and track a given course, radial, or bearing.
+S4. Recognize and describe the indication of station or waypoint passage.
+S5. Use proper communication procedures when utilizing radar services.
+
+
+Ground-based navigation (identification, orientation, course determination, equipment, tests, and regulations, interference, appropriate use of navigation data, signal integrity)
+
+What are the Ground based navigation systems?
+NDB: The Nondirectional Radio Beacon (NDB) is a ground-based transmitter emitting radio signals in all directions. When paired with an Automatic Direction Finder (ADF), it determines the aircraft's bearing to the station. The ADF indicator, usually mounted separately on the aircraft panel, points to the NDB ground station, indicating the Relative Bearing (RB), which is the angle between the aircraft's heading and the station's direction.
+NDBs operate within the frequency range of 190 to 535 kHz, distinct from the AM broadcast band. They can transmit voice, often relaying weather information through Automated Weather Observing Systems (AWOS). Pilots verify the station's identity using Morse code identifiers, typically comprising two letters or an alphanumeric combination.
+Airborne ADF equipment includes a nondirectional "sense" antenna and a bidirectional "loop" antenna. The ADF receiver combines signals from both antennas to ascertain direction, reducing ambiguity. The ADF indicator can be fixed-card, rotatable compass-card, or a Radio Magnetic Indicator (RMI). Fixed-card indicators show RB directly, while rotatable versions allow alignment of aircraft heading with the indicator's top to display Magnetic Bearing (MB). RMIs differ by automatically aligning with the aircraft's gyrocompass, featuring dual needles for ADF and VOR navigation.
+VOR: The Very High Frequency Omnidirectional Range (VOR) is a crucial navigational aid used in civil aviation across the National Airspace System (NAS). It transmits azimuth information relative to magnetic north, enabling aircraft to navigate along 360 courses TO or FROM the VOR station. When paired with Distance Measuring Equipment (DME), it becomes a VOR/DME, providing both azimuth and distance data. Military installations combining TACAN with VOR are known as VORTACs, offering the same functionalities. VOR signals are unaffected by aircraft attitude or heading and include Morse code identification alongside voice transmissions for weather and communication. Coverage typically extends at least 40 miles at standard altitudes for instrument flight rules (IFR). VOR facilities are monitored for accuracy and listed in aviation directories for operational details.
+VOR ground stations include antennas atop a building with an automatic monitoring system, ensuring signal integrity within 1° accuracy. Airborne equipment comprises antennas, receivers, and indicator instruments. Pilots select desired courses via an omnibearing selector (OBS) and track deviations using a course deviation indicator (CDI). The TO/FROM indicator specifies if the aircraft is directed TO or FROM the station. Signal reliability is indicated by flags or other visual indicators. Advanced setups may integrate VOR information with localizer signals on an HSI, simplifying navigation tasks such as course intercepts and approach maneuvers.
+The VOR operates independently of aircraft heading, providing consistent indications regardless of the aircraft's orientation. To use the VOR, tune the receiver to the station's frequency, adjust the volume to hear the signal, and identify it audibly. Set the Omnibearing Selector (OBS) to align the Course Deviation Indicator (CDI) needle with the course displayed under the index. If the CDI shows reverse sensing due to setting the reciprocal course, correct by turning away from the needle. For precise positioning on a radial, a second NAVAID is necessary.
+To track TO the station, adjust the OBS until "TO" is displayed, then center the CDI needle and follow the indicated course. Correct course deviations by making gradual adjustments. If the needle deflects left, it suggests a crosswind from the left. Once corrections return the needle to center, reduce adjustments by half. Keeping the CDI centered guides the aircraft to the station. For tracking FROM the station on a VOR radial, center the CDI with a "FROM" indication and align the aircraft's position and desired outbound track. Enter the magnetic course under the index using the OBS and maintain an intercept heading until the CDI centers. Follow the procedure used for tracking TO the station to fly outbound on the specified radial.
+
+How accurate is the course alignment of a VOR?
+The accuracy of VOR navigation relies on precise calibration and operation of both ground and airborne components. Typically, VOR course alignment is within a tolerance of ±1°, though some stations may exhibit minor deviations noted by needle movements or brief flag alerts, especially in mountainous areas. Pilots navigating unfamiliar routes should be aware of these potential fluctuations and use the TO/FROM indicator to confirm passage over the station. Certain propeller RPM settings or helicopter rotor speeds can induce CDI fluctuations up to ±6°, but adjusting these settings usually resolves any roughness. Pilots are advised to check for these variations before reporting station or equipment issues.
+
+Satellite-based navigation (e.g., equipment, regulations, authorized use of databases, and Receiver Autonomous Integrity Monitoring (RAIM))
+
+What is used for satellite-based navigation?
+GPS, a satellite-based radio navigation system, broadcasts signals enabling receivers to determine precise global positions. Developed by the Department of Defense (DOD), it serves as a space-based system for positioning, velocity, and time. The DOD oversees the GPS satellite constellation, ensuring continuous monitoring and proper functioning. GPS provides Earth-centered coordinates referenced to the World Geodetic System of 1984 (WGS-84), offering weather-independent global coverage suitable for primary navigation in oceanic airspace and remote regions. Certified GPS equipment can supplement IFR navigation for domestic operations, terminals, and certain instrument approach procedures (IAPs). Navigational data such as distance, bearing to waypoints, and groundspeed are computed from current aircraft position (latitude and longitude). Pilots should verify GPS authorization for IFR use in specific countries before flight.
+GPS comprises three main components: space, control, and user. The space segment includes a constellation of over 30 Navstar satellites, positioned in 6 orbital planes spaced 60° apart around 11,000 miles above Earth. These satellites continuously broadcast pseudo-random code timing signals and data messages processed by aircraft receivers to determine precise positioning. The control segment maintains satellite accuracy through ground-based monitoring and control stations, ensuring satellite positions and clocks are synchronized. The user segment consists of aircraft-mounted antennas and receiver/processors that provide accurate positioning, velocity, and timing. GPS equipment used for IFR operations must meet Technical Standard Order (TSO) C-129 standards, have appropriate airworthiness installation, and operate according to aircraft manuals. An updatable GPS database supports IFR procedures, including en route, terminal, and instrument approaches. Hand-held GPS systems and those meeting TSO C-115a are not authorized for IFR navigation or approaches but may enhance situational awareness under VFR conditions. Pilots should consult NOTAMs and aeronautical information for GPS/WAAS operations, including updates on WAAS availability and service levels from flight service stations (FSS).
+GPS operates by using satellites as precise reference points for ranging and triangulation. A GPS receiver requires signals from at least four satellites above the mask angle (the minimum elevation angle above the horizon for signal use). Each satellite broadcasts a specific code, known as a C/A (course/acquisition) code, containing position, system time, and data accuracy details. By calculating the time taken for signals to travel from satellites (at approximately 186,000 miles per second) and knowing the broadcast time precisely, the receiver computes a pseudo-range distance. This pseudo-range is based on signal travel time rather than direct measurement.
+In addition to distance, the receiver needs precise satellite positions, known as ephemeris data, which each satellite transmits. Using this data, the GPS receiver triangulates its position mathematically from multiple satellites. At least four satellites are required to determine a three-dimensional position (latitude, longitude, and altitude) and time solution. Navigational data such as distance, bearing to waypoints, and groundspeed are computed using the aircraft's known latitude/longitude and a built-in database.
+To ensure signal integrity, GPS receivers use Receiver Autonomous Integrity Monitoring (RAIM), which requires at least five satellites in view or four satellites with barometric altimeter aiding to detect signal anomalies. RAIM can identify and exclude corrupted signals from the navigation solution. Without RAIM, pilots cannot confirm GPS position accuracy. For IFR operations, aircraft using GPS must have an approved alternate means of navigation installed and operational. This includes avionics capable of receiving all required ground-based navigation aids for the route and destination airports. Continuous monitoring of alternate navigation equipment is mandatory if RAIM is not available or is lost during flight. If RAIM loss is anticipated, pilots must use other approved equipment, delay departure, or cancel the flight accordingly.
+
+What is a mask angle?
+Minimum angle above the horizon that a satellite must reach for a GPS receiver to detect its signal.r
+
+Radar assistance to visual flight rules (VFR) aircraft (e.g., operations, equipment, available services, traffic advisories)
+
+What equipment is typically required on VFR aircraft to receive radar assistance?
+Mode C transponder
+
+Transponder (Mode(s) A, C, and S) and Automatic Dependent Surveillance-Broadcast (ADS-B)
+
+What are the differences between transponders and ADS-B?
+Transponder
+A transponder is an electronic device installed in aircraft that responds to radar interrogations by transmitting a coded signal. This signal provides air traffic controllers with additional information beyond what is available from primary radar returns (which reflect off the aircraft's metal surfaces). There are several modes of transponder operation:
+
+● Mode A:
+    • Function: Mode A transponders transmit a 4-digit octal code selected by the pilot or ground personnel. This code is used for radar identification purposes.
+    • Use: It allows air traffic controllers to positively identify and track an aircraft on radar displays.
+
+● Mode C:
+    • Function: Mode C transponders, in addition to the Mode A functionality, also transmit the aircraft's pressure altitude (derived from the altimeter setting) to the radar system.
+    • Use: This altitude information assists controllers in maintaining safe separation between aircraft, particularly in airspace where vertical separation is critical.
+
+● Mode S:
+    • Function: Mode S transponders are more advanced and capable than Mode A and C transponders. They can transmit more data, including aircraft identification, GPS-derived position information, flight identification, and other selective information.
+    • Use: Mode S transponders are used for more precise surveillance, collision avoidance systems like TCAS (Traffic Collision Avoidance System), and other applications requiring enhanced data exchange between aircraft and ground systems.
+Automatic Dependent Surveillance-Broadcast (ADS-B)
+ADS-B is a surveillance technology in which an aircraft determines its position via GPS and periodically broadcasts it, along with other information such as identity, altitude, and velocity, to air traffic control and nearby aircraft. Key points about ADS-B include:
+• Functionality: ADS-B Out transmits aircraft data periodically (usually every second) to ADS-B ground stations and other aircraft equipped with ADS-B In receivers.
+• Information: Besides position, ADS-B Out broadcasts information such as altitude, velocity, and unique identification data (ICAO aircraft address).
+• Benefits: ADS-B enhances situational awareness for pilots and air traffic controllers by providing more accurate and frequent position updates compared to radar-based surveillance. It also improves aircraft-to-aircraft collision avoidance capabilities.
+
+Key Differences Between Transponder Modes and ADS-B:
+• Technology: Transponders (Modes A, C, S) respond to radar interrogations and transmit limited information such as aircraft identity and altitude. ADS-B, on the other hand, broadcasts more detailed positional and other data autonomously.
+• Surveillance: Transponders rely on ground-based radar for surveillance, while ADS-B uses satellite-based GPS for position determination and broadcasts this data to both ground stations and nearby aircraft.
+
+What is one of the networks ADS-B operates through?
+Universal Access Transceiver (UAT) 978 MHz
+
+The applicant exhibits the skill to: Use an airborne electronic navigation system. Determine the airplane's position using the navigation system. Intercept and track a given course, radial, or bearing. Recognize and describe the indication of station or waypoint passage. Use proper communication procedures when utilizing radar services. Maintain the appropriate altitude, ±100 feet and heading, ±10°.

@@ -1,0 +1,75 @@
+II.D Principles of Flight
+
+Task D. Principles of Flight
+References: FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-23, FAA-H-8083-25; POH/AFM
+Objective: To determine the applicant understands aerodynamics appropriate to the desired instructor certificate, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Airfoil design characteristics.
+K2. Airplane stability, maneuverability and controllability.
+K3. Turning tendency (e.g., torque, p-factor, spiraling slipstream, and gyroscopic precession).
+K4. Forces acting on an airplane.
+K5. Load factors in airplane design.
+K6. Wingtip vortices and appropriate precautions.
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. The basic aerodynamic principles of flight.
+
+Skills: The applicant demonstrates how to:
+S1. Deliver instruction on principles of flight, including at least three of the elements listed in K1 through K6.
+
+
+Airfoil design characteristics
+
+What are the primary design characteristics of an airfoil, and how do they affect an aircraft's lift and flight performance? PHAK (4-6)
+A typical airfoil profile shows distinct design features: the upper surface with pronounced curvature (camber) and the flatter lower surface. It includes the rounded leading edge and tapered trailing edge. The chord line connects the leading and trailing edges, indicating camber extent. The airfoil's shape optimally utilizes aerodynamic principles, generating lift through positive pressure below and negative pressure above the wing.
+
+Airplane stability, maneuverability and controllability
+
+Describe the relationship between stability, maneuverability, and controllability in an aircraft and explain how these characteristics impact flight performance. PHAK (5-14)
+Stability in aircraft refers to its inherent ability to correct deviations from its equilibrium state and maintain or return to its intended flight path. This quality is primarily determined by the aircraft's design characteristics, including aerodynamics, propulsion system, and structural strength.
+There are two types of stability:
+• Static Stability: This describes the aircraft's initial response when disturbed from a particular pitch, yaw, or bank:
+    • Positive static stability: The aircraft tends to return to its original equilibrium after being disturbed.
+    • Neutral static stability: The aircraft tends to remain in a new condition after a disturbance.
+    • Negative static stability: The aircraft continues away from its original equilibrium after being disturbed.
+• Dynamic Stability: This refers to the aircraft's motion over time following a disturbance:
+    • Positive dynamic stability: The oscillations decrease over time, with the aircraft returning towards equilibrium.
+    • Neutral dynamic stability: The oscillations neither decrease nor increase over time.
+    • Negative dynamic stability: The oscillations increase over time, moving further away from equilibrium.
+Stability impacts two key aspects of aircraft performance:
+• Maneuverability: The ease with which an aircraft can be maneuvered and its ability to handle the stresses of maneuvers.
+• Controllability: The aircraft's responsiveness to pilot inputs in terms of adjusting flight path and attitude.
+Both stability and controllability are critical design considerations that influence an aircraft's operational safety and performance capabilities.
+
+Turning tendencies (e.g., torque, p-factor, spiraling slipstream, and gyroscopic precession)
+
+What are the four primary aerodynamic forces that contribute to an aircraft's turning tendency, and how does each affect the aircraft during flight? PHAK (5-30)
+The four main elements that induce rotational forces around the aircraft's axes:
+• Torque Reaction: Resulting from the engine and propeller, it acts in opposition to the rotation of internal components.
+• Corkscrewing Effect of the Slipstream: High-speed propeller rotation creates a spiraling airflow affecting the aircraft's tail, causing yaw and sometimes roll.
+• Gyroscopic Action of the Propeller: Similar to a gyroscope, it responds to forces by generating yaw and pitch moments, particularly noticeable during maneuvers like raising the tail during takeoff.
+• Asymmetric Loading (P-Factor): Occurs at high angles of attack (AOA) when the downward-moving propeller blade generates more lift due to increased airflow velocity, resulting in a yawing moment towards the left.
+Each of these elements varies in prominence depending on flight conditions and aircraft design. Pilots counteract these effects using rudder and elevator inputs to maintain control throughout all phases of flight.
+
+Forces acting on an airplane
+
+What are the four primary forces acting on an airplane during flight, and how do they interact to control the aircraft's motion? PHAK (5-2)
+The four primary forces acting on an airplane during flight are lift, weight, thrust, and drag. Lift, generated by the airplane's wings, counters the weight (gravity pulling the aircraft downward) and enables the airplane to ascend or maintain altitude. Thrust, produced by the engine, propels the airplane forward, overcoming drag, which is the air resistance opposing the aircraft's forward motion. The balance and manipulation of these forces through pilot controls determine the airplane's speed, direction, and altitude.
+
+Load factor in airplane design
+
+What are load factors in airplane design, and why are they critical for a pilot to understand during maneuvers? PHAK (5-32)
+In aerodynamics, the maximum load factor at a specific bank angle represents the ratio of lift to weight and follows a trigonometric relationship. It's measured in Gs, which equate to the force of gravity on a stationary body and denote the force an accelerated body experiences. Any force that alters an aircraft's straight-line flight path imposes stress on its structure, with the magnitude of this force defined as the load factor. In respect to maneuvers, load factor increases with the severity of maneuvers. The category system optimizes aircraft utility: for routine operations, lower load factors (and correspondingly lower aircraft weights) suffice. However, training or acrobatic maneuvers necessitate higher load factors due to increased maneuvering stresses.
+
+Wingtip vortices and appropriate precautions
+
+What are wingtip vortices, and what precautions should a pilot take to avoid their hazardous effects during flight operations? PHAK (5-8)
+To avoid encountering wingtip vortices, which are strongest when an aircraft is heavy, clean, and flying at low speeds.This is typically during takeoffs and landings,pilots should follow these guidelines:
+• Avoid flying through another aircraft's flight path.
+• Rotate earlier than the preceding aircraft did during takeoff.
+• Maintain a vertical separation of at least 1,000 feet from aircraft on similar flight paths.
+• When landing behind another aircraft, approach the runway higher and touch down after the preceding aircraft's touchdown point.
+Wind significantly affects wingtip vortex drift; for instance, a 10-knot wind can move vortices approximately 1,000 feet per minute in the wind direction. Pilots should consider wind speed and direction when choosing takeoff and landing points to avoid wake turbulence. A safety margin of about 3 minutes is recommended to allow for dissipation of wake turbulence if uncertain about another aircraft's operations.
+
+The applicant exhibits the skill to: Deliver instruction on principles of flight, including at least three of the elements listed in K1 through K6

@@ -1,0 +1,89 @@
+V.C Engine Starting
+
+Task C. Engine Starting
+References: FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-23, FAA-H-8083-25; POH/AFM
+Objective: To determine the applicant understands engine starting, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Starting under various conditions.
+K2. Starting the engine(s) by use of external power.
+K3. Engine limitations as they relate to starting.
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Propeller safety.
+R2. Use of external power unit.
+R3. Limitations during starting.
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Position the airplane properly considering structures, other aircraft, wind, and the safety of nearby persons and property.
+S2. Complete the appropriate checklist(s).
+
+
+Starting under various conditions.
+
+What are some considerations for starting an aircraft engine under cold weather conditions?
+• In cold weather, ensure the engine is properly preheated to facilitate starting and prevent damage to engine components.
+• Use engine preheaters or other heating devices to warm the engine oil and cylinders before attempting to start the engine.
+• Follow manufacturer's recommendations for cold weather starting procedures, including priming the engine and adjusting the mixture for optimal fuel-air mixture.
+
+What are some considerations for starting an aircraft engine under hot weather conditions?
+• In hot weather, avoid prolonged engine cranking to prevent overheating of starter and electrical components.
+• Use proper engine starting techniques, such as avoiding excessive priming and allowing sufficient time for fuel to vaporize in the intake manifold.
+• Monitor engine temperatures closely during starting to prevent engine overheating and ensure proper cooling airflow.
+
+What are some considerations for starting an aircraft engine under high altitude conditions?
+• At high altitude, adjust engine starting procedures to account for reduced air density and lower oxygen levels.
+• Use appropriate mixture settings and throttle positions to optimize engine performance for high altitude starting.
+• Consider the use of engine primer or boost pumps to facilitate fuel delivery and improve starting reliability at altitude.
+
+What are some considerations for starting an aircraft engine under humid conditions?
+• In humid conditions, take precautions to prevent moisture accumulation in the engine intake and ignition system, which can affect starting reliability.
+• Ensure proper drainage of air intake and induction system components to prevent water ingestion during starting.
+• Use appropriate starting procedures to account for moisture in the air and ensure proper fuel-air mixture for ignition.
+
+Starting the engine(s) by use of external power.
+
+What are the procedures and considerations for starting an aircraft engine(s) using external power?
+Preparation:
+• Ensure the aircraft's electrical system is compatible with external power sources and properly configured for external power connection.
+• Verify that the external power unit is serviceable and capable of supplying the required voltage and current for engine starting.
+Connection:
+• Connect the external power unit to the aircraft's electrical system according to manufacturer's instructions and safety guidelines.
+• Use appropriate cables and connectors to establish a secure and reliable connection between the external power unit and the aircraft.
+Power Up:
+• Energize the external power unit and verify that electrical power is available to the aircraft's systems.
+• Monitor voltage and current levels to ensure they are within acceptable limits for engine starting.
+Engine Start:
+• Follow standard engine starting procedures as outlined in the aircraft's operating manual or checklist.
+• Engage the starter motor and monitor engine parameters such as RPM, oil pressure, and temperature during the starting sequence.
+Monitoring:
+• Continuously monitor engine parameters and electrical system status during the starting process to detect any anomalies or abnormalities.
+• Ensure that the engine starts smoothly and without any signs of excessive cranking or abnormal noises.
+Disconnection:
+• Once the engine(s) have started successfully, disconnect the external power unit from the aircraft's electrical system.
+• Follow proper procedures for safely storing cables and connectors to prevent damage or tripping hazards.
+Safety:
+• Maintain awareness of safety considerations during external power operations, including electrical shock hazards, fire risks, and proper handling of equipment.
+• Follow established safety procedures and protocols to minimize the risk of accidents or injuries during engine starting with external power.
+
+Engine limitations as they relate to starting.
+
+What are some engine limitations to consider when starting an aircraft engine?
+Starter Duty Cycle:
+Engines have duty cycle limits to prevent overheating.
+Battery Capacity:
+Ensure the battery is adequately charged.
+Oil Temperature:
+Verify oil temperature is within limits for proper lubrication.
+Fuel System Priming:
+Follow manufacturer's recommendations to prevent flooding.
+Ignition Timing:
+Ensure correct timing for smooth starting.
+Engine Temperature:
+Extreme temperatures can affect starting.
+Compression:
+Address low compression issues promptly.
+Altitude:
+Consider adjustments for high altitude operations.
+
+The applicant exhibits the skill to: Position the airplane properly considering structures, other aircraft, wind, and the safety of nearby persons and property. Complete the appropriate checklist(s).

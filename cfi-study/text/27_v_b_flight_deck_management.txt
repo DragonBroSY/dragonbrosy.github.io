@@ -1,0 +1,122 @@
+V.B Flight Deck Management
+
+Task B. Flight Deck Management
+Note: See Appendix 2: Safety of Flight.
+References: 14 CFR part 91; AC 120-71; FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-23, FAA-H-8083-25; POH/AFM
+Objective: To determine the applicant understands flight deck management, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Passenger briefing requirements, including operation and required use of safety restraint systems.
+K2. Use of appropriate checklists.
+K3. Requirements for current and appropriate navigation data.
+K4. Securing items and cargo.
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Use of systems or equipment, including automation and portable electronic devices.
+R2. Inoperative equipment.
+R3. Passenger distractions.
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Secure all items in the aircraft.
+S2. Conduct an appropriate passenger briefing, including identifying the pilot-in-command (PIC), use of safety belts, shoulder harnesses, doors, passenger conduct, sterile aircraft, propeller blade avoidance, and emergency procedures.
+S3. Properly program and manage the aircraft’s automation, as applicable.
+S4. Appropriately manage risks by utilizing ADM, including SRM/CRM.
+
+
+Passenger briefing requirements, including operation and required use of safety restraint systems.
+
+What are the passenger briefing requirements regarding the operation and required use of safety restraint systems?
+Seat Belt Operation:
+Instruct passengers on how to fasten and unfasten their seatbelts, including the location of the seatbelt buckle and how to adjust the length of the belt.
+Seatbelt Use:
+Emphasize the importance of keeping seatbelts fastened at all times when seated, especially during takeoff, landing, and periods of turbulence.
+Shoulder Harnesses:
+Inform passengers about the use of shoulder harnesses if equipped, including how to properly wear and adjust them for maximum effectiveness.
+Emergency Exits:
+Point out the location and operation of emergency exits, including doors, windows, and emergency evacuation procedures.
+Seatbacks:
+Advise passengers to ensure seatbacks are in the upright and locked position during critical phases of flight.
+Smoking Policy:
+Remind passengers of the prohibition of smoking on board the aircraft, including electronic cigarettes or vaping devices.
+
+Why is it important for pilots to conduct thorough passenger briefings?
+Safety:
+Passenger briefings help ensure that passengers are aware of and prepared for potential emergencies or abnormal situations, enhancing overall flight safety.
+Compliance:
+Conducting thorough briefings demonstrates compliance with regulatory requirements and operator policies regarding passenger safety and emergency procedures.
+Emergency Preparedness:
+Instructing passengers on the location and use of safety equipment and emergency exits equips them to respond effectively in the event of an emergency evacuation.
+Risk Mitigation:
+By informing passengers of safety procedures and expectations, pilots can mitigate risks associated with passenger non-compliance, confusion, or panic during critical phases of flight.
+Legal Liability:
+Providing comprehensive passenger briefings helps mitigate potential legal liability in the event of accidents, incidents, or passenger injuries by demonstrating due diligence and adherence to safety protocols.
+
+Use of appropriate checklists.
+
+Why is the use of appropriate checklists crucial for pilots?
+Safety:
+Checklists serve as a systematic means of ensuring critical tasks are performed correctly and in the proper sequence, reducing the risk of human error and enhancing flight safety.
+Compliance:
+Checklists help pilots adhere to standard operating procedures (SOPs), regulatory requirements, and manufacturer recommendations, ensuring consistency and uniformity in operations.
+Risk Management:
+By prompting pilots to verify the completion of essential tasks and safety-critical items, checklists help mitigate risks associated with oversight, omission, or procedural deviation.
+Memory Aid:
+Checklists serve as memory aids, especially during high workload situations or under stress, helping pilots remember and execute tasks accurately and efficiently.
+Training Tool:
+Checklists facilitate training and proficiency development by providing a structured framework for learning and reinforcing procedural knowledge and skills.
+
+How do checklists contribute to flight safety and operational efficiency?
+Prevents Errors:
+Checklists help prevent errors and oversights by providing a standardized process for performing tasks, reducing the likelihood of missed steps or procedural deviations.
+Enhances Situational Awareness:
+By guiding pilots through preflight, in-flight, and post-flight tasks, checklists enhance situational awareness and ensure critical items are addressed, even during distractions or interruptions.
+Facilitates Crew Coordination:
+Checklists promote effective communication and coordination among crew members, ensuring mutual understanding and cooperation in executing tasks.
+Improves Time Management:
+Checklists help pilots manage time effectively by prioritizing tasks, streamlining workflow, and minimizing unnecessary delays or distractions.
+Supports Decision Making:
+Checklists assist pilots in making informed decisions by providing relevant information and prompts for evaluating options, especially in emergency or abnormal situations.
+
+Requirements for current and appropriate navigation data.
+
+What are the requirements for ensuring current and appropriate navigation data for Visual Flight Rules (VFR) operations?
+Update Frequency:
+Regularly update navigation databases, charts, and software to ensure they reflect the latest information and changes in airspace, navigation aids, and procedures.
+Validity:
+Verify the validity and currency of navigation data by checking expiration dates, effective dates, and revision cycles to ensure compliance with regulatory requirements.
+Source Reliability:
+Obtain navigation data from reputable sources, such as official aviation authorities, charting companies, or approved data providers, to ensure accuracy and reliability.
+Coverage:
+Ensure navigation data covers the intended flight area, including airspace, airports, navigation aids, and terrain features, to support safe and efficient navigation.
+Compatibility:
+Ensure navigation data is compatible with onboard avionics, electronic flight bags (EFBs), navigation instruments, and software used for flight planning and navigation.
+Quality Assurance:
+Implement quality assurance measures to verify the accuracy, integrity, and completeness of navigation data, including cross-checking with multiple sources and conducting pre-flight reviews.
+Backup:
+Carry backup navigation tools, such as paper charts, navigation logs, or alternative navigation devices, as a contingency in case of electronic navigation system failure or data corruption.
+Regulatory Compliance:
+Adhere to regulatory requirements governing the use of navigation data in aviation, including FAA regulations and operator-specific policies, to ensure compliance and safety of flight operations.
+
+Securing items and cargo.
+
+What are some considerations for securing items and cargo in an aircraft?
+Weight and Balance:
+Ensure items and cargo are distributed evenly within the aircraft to maintain proper weight and balance, adhering to manufacturer's specifications and limitations.
+Securing Methods:
+Use appropriate securing methods such as seatbelts, cargo nets, straps, or tie-downs to prevent shifting or movement of items during flight.
+Heavy Items:
+Secure heavy items low and close to the aircraft's center of gravity to minimize the impact on stability and control.
+Fragile Items:
+Protect fragile items by packing them securely and cushioning them with padding or packing materials to prevent damage during turbulence or rough landings.
+Protruding Objects:
+Ensure that protruding objects or cargo do not obstruct controls, exits, or emergency equipment, and are securely stowed to prevent interference with flight operations.
+Emergency Access:
+Maintain clear access to emergency exits, equipment, and controls by securing items in a way that allows for quick and unobstructed access in case of an emergency.
+Communication:
+Communicate with passengers and crew members about the importance of securing personal belongings and following safety instructions to minimize hazards and ensure a safe and comfortable flight.
+Pre-flight Inspection:
+Conduct pre-flight inspections to verify that items and cargo are properly secured and stowed according to regulations and operational procedures before departure.
+Regulatory Compliance:
+Adhere to regulatory requirements governing the securing of items and cargo in aircraft, including FAA regulations and operator-specific policies, to ensure compliance and safety of flight operations.
+
+The applicant exhibits the skill to: Secure all items in the aircraft. Conduct an appropriate passenger briefing, including identifying the pilot-in-command (PIC), use of safety belts, shoulder harnesses, doors, passenger conduct, sterile aircraft, propeller blade avoidance, and emergency procedures. Properly program and manage the aircraft’s automation, as applicable. Appropriately manage risks by utilizing ADM, including SRM/CRM.

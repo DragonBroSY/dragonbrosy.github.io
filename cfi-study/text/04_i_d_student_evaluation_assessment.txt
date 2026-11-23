@@ -1,0 +1,169 @@
+I.D Student Evaluation, Assessment, and Testing
+
+Task D. Student Evaluation, Assessment, and Testing
+References: FAA-H-8083-2, FAA-H-8083-9, FAA-H-8083-25
+Objective: To determine the applicant understands evaluation and testing, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant understands and explains:
+K1. Purpose and characteristics of effective assessment.
+K2. Traditional assessments.
+K3. Authentic assessments, including:
+    a. Learner-centered assessment
+    b. Maneuver or procedure grades
+    c. Assessing risk management skills
+K4. Choosing an effective assessment method.
+K5. Purposes and types of critiques.
+K6. Oral assessment, including:
+    a. Characteristics of effective questions
+    b. Types of questions to avoid
+    c. Answering learner questions
+K7. Assessment of piloting ability.
+
+Risk Management: The applicant is able to identify, assess, and mitigate risk associated with:
+R1. Delivering an assessment.
+
+Skills: The applicant exhibits the skill to:
+S1. Use appropriate methods and techniques to assess learner performance in ground or flight training.
+
+
+Purpose and characteristics of effective assessment (AIH 6-2)
+
+What are the characteristics of an effective assessment? What are the characteristics of an effective assessment?
+Acronym: FAST COCO
+Flexible
+In effective assessment, the instructor evaluates the learner's performance within its specific context, recognizing that a learner's performance may vary due to factors such as mood or circumstance, and adapts the tone, technique, and content of the assessment accordingly, allowing for flexibility in design and execution to address variables, while constantly navigating the challenge of deciding what to emphasize or minimize in any given situation. Acceptable
+For an assessment to be effective, it must be accepted by the student, which often requires more than just a certificate or credential; rather, learners need confidence in the instructor's qualifications, teaching ability, sincerity, and authority, factors which can be established through the instructor's manner, attitude, and familiarity with the subject, ultimately leading to assessments that are received well when presented fairly and convincingly.
+Specific
+In effective assessment, the instructor's feedback should be precise and actionable, as learners require specific recommendations to act upon, with explanations provided for deficiencies and clear suggestions for improvement expressed firmly and authoritatively to ensure understanding, leaving learners with no ambiguity about areas of strength and weakness, and how to enhance their performance.
+Thoughtful
+In effective assessment, the instructor demonstrates thoughtfulness by considering the learner's need for self-esteem, recognition, and approval, avoiding actions that diminish the individual's dignity or resort to ridicule, anger, or amusement at the learner's expense, while maintaining honesty and respect for the learner's personal feelings, such as delivering criticism in private settings.
+Comprehensive
+Maintaining objectivity in assessment is paramount for its effectiveness, as personal biases, conflicts, and halo errors can distort judgments, requiring a focus on honest evaluation rooted in actual performance.
+Objective
+Maintaining objectivity in assessment is essential as the instructor's personal biases, conflicts, or excessive sympathy towards learners can distort judgments, known as "halo error," necessitating a focus on honesty and factual evaluation of performance to ensure effectiveness.
+Constructive
+An effective assessment must prioritize constructive feedback that highlights strengths to inspire improvement, while also providing positive guidance for addressing mistakes or weaknesses, omitting praise for its own sake or unhelpful negative comments
+Organized
+Effective assessment requires organization, which can take various logical patterns that make sense to the learner, such as following the sequence of the performance, analyzing successes or failures starting from a specific point, or breaking down the assessment into parts or building them into a cohesive whole.
+
+Traditional assessments (AIH 6-3)
+
+What are traditional assessments and how are they applied in flight instruction?
+Traditional assessments typically involve written tests like multiple choice, matching, true/false, and fill-in-the-blank, focusing on rote memorization with each item having a single correct answer, often machine-scored, and offering little opportunity to demonstrate critical thinking skills. While these assessments support instructor-centered teaching and provide limited performance measurement, they are useful for evaluating a learner's understanding of factual knowledge necessary for advancing to higher levels of learning.
+
+Authentic assessments - Learner-centered assessment (AIH 6-5)
+
+What is the 4 step process of asking an open ended question for a
+
+Learner-Centered Assessment
+Replay:
+The instructor initiates a verbal recap of the flight or procedure with the learner.
+Reconstruct:
+This stage enhances learning by identifying key areas where the learner might have taken different actions during the flight or procedure.
+Reflect:
+Understanding is enriched by giving meaning to perceptions and experiences, requiring reflection on the events.
+Redirect:
+In the final step, the learner is guided to relate the lessons learned in this session to other experiences and consider their relevance in future sessions.
+
+Authentic assessments - Maneuver or procedure grades (AIH 6-6)
+
+What are the grades a maneuver or procedure can be given?
+Describe:
+After completing the scenario, the learner can describe the physical and cognitive aspects of the scenario activities but needs help to successfully execute the maneuver or procedure.
+Explain:
+After completing the scenario, the learner can describe the activity and understands the underlying concepts, principles, and procedures, but still needs assistance to successfully execute the maneuver or procedure.
+Practice:
+After completing the scenario, the learner can plan and execute the scenario with coaching, instruction, and/or assistance to correct any deviations and errors identified by the instructor.
+Perform:
+After completing the scenario, the learner can perform the activity without instructor assistance, identifying and correcting errors and deviations promptly, ensuring successful completion of the activity. This indicates proficiency in piloting and systems operation skills.
+Not observed:
+Any event that was not accomplished or required.
+
+Authentic assessments - Assessing risk management skills (AIH 6-6)
+
+How are risk management skills assessed in flight training through authentic assessments?
+Authentic assessments of risk management skills involve active participation from learners, cultivating a habit of thoughtful reflection and self-assessment essential for ensuring safety as a pilot.
+
+Choosing an effective assessment method (AIH 6-7)
+
+What is the four steps in choosing an effective assessment method?
+When assessing the learner’s progress in aviation instruction, instructors can utilize a four-step process:
+• Determine level-of-learning objectives.
+• List indicators of desired behaviors.
+• Establish criterion objectives.
+• Develop criterion-referenced test items.
+
+Purposes and types of critiques (AIH 6-10)
+
+What are the types of critiques and oral assessments?
+Instructor/Learner Critique:
+The instructor leads a group discussion where class members offer constructive feedback on a performance. This method requires careful control and direction to maintain focus and avoid chaos.
+Learner-Led Critique:
+A learner leads the assessment, either following a pattern set by the instructor or using their own discretion. Though potentially inefficient due to participants' inexperience, this method can stimulate interest and learning.
+Small Group Critique:
+The class is divided into small groups, each analyzing a specific area and presenting their findings to the class. The instructor provides criteria and guidelines, leading to a comprehensive assessment through combined reports.
+Individual Learner Critique by Another Learner:
+Another learner presents the assessment, or the instructor asks multiple learners questions about the performance quality. This approach encourages group ownership of the feedback, with the instructor maintaining firm control.
+Self-Critique:
+Learners assess their own performance under the instructor's supervision and control, fostering personal reflection and improvement.
+Written Critique:
+This method allows the instructor to provide detailed feedback that learners can refer to later. Written assessments benefit the learner-performer with permanent records of suggestions from peers but do not offer the same benefit to the rest of the class.
+For all types of critiques, the instructor should address disagreements, correct misconceptions, and cover any overlooked or important areas.
+
+Oral assessment - Characteristics of effective questions (AIH 6-11)
+
+What are the characteristics of effective questions?
+• Apply to the subject of instruction.
+• Be brief and concise, but also clear and definite.
+• Be adapted to the ability, experience, and stage of training of the learners.
+• Center on only one idea (limited to who, what, when, where, how, or why, not a combination).
+• Present a challenge to the learners.
+
+Oral assessment - Answering learner questions (AIH 6-12)
+
+Is it your responsibility as an instructor to ensure that students are comprehending and are satisfied with your answer?
+Yes. After responding, determine whether or not the learner is satisfied with the answer.
+
+Oral assessment - Types of questions to avoid (AIH 6-11)
+
+What are the types of questions to avoid?
+Puzzle:
+Avoid complex questions like, “What is the first action you should take if a conventional gear airplane with a weak right brake is swerving left in a right crosswind during a full flap, power-on wheel landing?”
+Oversize:
+Avoid overly broad questions such as, “What do you do before beginning an engine overhaul?” Toss-up:
+Avoid questions with multiple correct answers like, “In an emergency, should you squawk 7700 or pick a landing spot?”
+Bewilderment:
+Avoid confusing questions such as, “In reading the altimeter—you know you set a sensitive altimeter for the nearest station pressure—if you take temperature into account, as when flying from a cold air mass through a warm front, what precaution should you take when in a mountainous area?”
+Trick Questions:
+Avoid questions designed to confuse, such as those with response options that are purposely ordered to mislead, making learners feel they are in a battle of wits with the instructor rather than learning.
+Irrelevant Questions:
+Avoid questions that do not relate to the subject being tested, like asking about tire inflation during a test on the timing of magnetos. These questions introduce unrelated facts and hinder the learner’s progress.
+
+Assessment of piloting ability (AIH 6-1)
+
+What is the definition of an assessment?
+Assessment is a vital aspect of the teaching process as it gauges the manner, content, and effectiveness of a learner's progress.
+
+The applicant exhibits the skill to: Use appropriate methods and techniques to assess learner performance in ground or flight training.
+
+What methods and techniques can aviation instructors use to assess learner performance effectively in ground or flight training?
+Written Tests and Quizzes:
+Administer written tests or quizzes to assess learners' understanding of theoretical concepts, regulations, procedures, and other knowledge-based areas.
+Oral Questioning:
+Conduct oral questioning sessions to evaluate learners' comprehension, critical thinking skills, and ability to articulate their understanding of aviation topics.
+Practical Examinations:
+Administer practical examinations to assess learners' ability to apply theoretical knowledge and demonstrate proficiency in performing flight maneuvers, procedures, and tasks.
+Flight Reviews:
+Conduct flight reviews to evaluate learners' aeronautical skills, decision-making abilities, and adherence to standard operating procedures during flight training.
+Flight Simulation:
+Utilize flight simulators to simulate realistic flight scenarios and assess learners' performance in handling emergencies, abnormal situations, and challenging flight conditions.
+Mock Checkrides:
+Conduct mock checkrides or practical tests to evaluate learners' overall readiness for pilot certification, assessing their aeronautical knowledge, flight proficiency, and decision-making capabilities.
+Peer Evaluation:
+Incorporate peer evaluation activities where learners assess and provide feedback to their peers' performance, promoting self-reflection and collaboration in the learning process.
+Instructor Observation:
+Observe learners' performance during ground or flight training sessions to assess their skills, attitudes, and adherence to safety protocols, providing constructive feedback for improvement.
+Portfolio Assessment:
+Implement portfolio assessment methods where learners compile evidence of their learning achievements, including written assignments, flight logs, performance evaluations, and self-assessments.
+Continuous Assessment:
+Conduct ongoing, formative assessments throughout the training process to monitor learners' progress, identify areas for improvement, and adjust instruction accordingly to facilitate learning and skill development.

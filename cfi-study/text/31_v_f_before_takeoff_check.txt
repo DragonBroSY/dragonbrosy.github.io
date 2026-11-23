@@ -1,0 +1,75 @@
+V.F Before Takeoff Check
+
+Task F. Before Takeoff Check
+References: FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-23, FAA-H-8083-25; POH/AFM
+Objective: To determine the applicant understands before takeoff checks, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Purpose of before takeoff checklist items, including:
+    a. Reasons for checking each item
+    b. Detecting malfunctions
+    c. Ensuring the aircraft is in safe operating condition as recommended by the manufacturer
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Division of attention while conducting before takeoff checks.
+R2. Unexpected runway changes by air traffic control (ATC).
+R3. Wake turbulence.
+R4. Potential powerplant failure during takeoff or other malfunction considering operational factors such as airplane characteristics, runway/takeoff path length, surface conditions, environmental conditions, and obstructions.
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Review takeoff performance.
+S2. Complete the appropriate checklist(s).
+S3. Position the airplane appropriately considering wind direction and the presence of any aircraft, vessels, or buildings as applicable.
+S4. Divide attention inside and outside the flight deck.
+S5. Verify that engine parameters and airplane configuration are suitable.
+
+
+Purpose of before takeoff checklist items, including - Reasons for checking each item
+
+What is the purpose of conducting a before takeoff checklist?
+The purpose of the before takeoff checklist is to ensure that all critical systems and components are properly configured and functioning before initiating the takeoff roll.
+
+What are the reasons for checking each item on the before takeoff checklist?
+Reasons for checking each item include:
+• Control surfaces
+• Ensure they are free and correct in movement to maintain control during takeoff.
+• Flight controls
+• Verify proper movement and functionality for maneuvering the aircraft.
+• Trim
+• Adjust for desired flight characteristics and stability during takeoff
+• Engine instruments
+• Confirm engine parameters are within acceptable limits for safe operation.
+• Fuel system
+• Ensure proper fuel quantity and distribution for the intended flight.
+• Electrical system
+• Verify essential electrical components are operational for communication, navigation, and safety systems.
+• Lights
+• Check lighting systems for visibility and compliance with regulations.
+• Instruments and avionics
+• Confirm accuracy and functionality for navigation and situational awareness.
+• Cabin doors
+• Ensure all doors are securely closed to prevent in-flight hazards.
+• Seat belts and harnesses
+• Ensure occupants are properly secured for safety during takeoff and potential emergencies.
+• Briefing
+• Review takeoff procedures, emergency actions, and departure routes to enhance crew coordination and preparedness.
+
+Purpose of before takeoff checklist items, including - Detecting malfunctions
+
+How does the before takeoff checklist serve in detecting malfunctions, and why is it important to identify malfunctions before initiating takeoff?
+• The before takeoff checklist aids in detecting malfunctions by systematically verifying the functionality of critical systems and components.
+• It is important to identify malfunctions before initiating takeoff to prevent potential safety hazards and ensure the airworthiness of the aircraft.
+• By checking items such as engine instruments, flight controls, and electrical systems, any anomalies or malfunctions can be detected and addressed before they escalate into safety concerns during flight.
+• Early detection of malfunctions allows for timely troubleshooting and corrective action, minimizing the risk of in-flight emergencies or accidents.
+• Additionally, identifying malfunctions before takeoff contributes to a culture of proactive safety management, emphasizing the importance of thorough pre-flight checks in ensuring the overall safety of flight operations.
+
+Purpose of before takeoff checklist items, including - Ensuring the aircraft is in safe operating condition as recommended by the manufacturer
+
+How does the before takeoff checklist contribute to ensuring the aircraft is in a safe operating condition as recommended by the manufacturer?
+• The before takeoff checklist ensures that all essential systems and components of the aircraft are inspected and verified to be in proper working order, aligning with the manufacturer's recommendations for safe operation.
+• By systematically checking items such as control surfaces, flight controls, engine instruments, and fuel systems, the checklist helps identify any discrepancies or malfunctions that could compromise the safety of flight.
+• Verifying the correct configuration of critical systems, such as trim settings and electrical systems, ensures that the aircraft is prepared for safe takeoff and flight.
+• The checklist includes items related to aircraft performance, such as weight and balance calculations, which are crucial for maintaining safe operating limits as specified by the manufacturer.
+• Compliance with the before takeoff checklist helps mitigate the risk of mechanical failures or system malfunctions that could lead to accidents or incidents during flight, promoting a culture of safety and adherence to manufacturer guidelines.
+
+The applicant exhibits the skill to: Review takeoff performance. Complete the appropriate checklist(s). Position the airplane appropriately considering wind direction and the presence of any aircraft, vessels, or buildings as applicable. Divide attention inside and outside the flight deck. Verify that engine parameters and airplane configuration are suitable.

@@ -1,0 +1,217 @@
+V.D Taxiing, Airport Signs, and Lighting (ASEL, AMEL)
+
+Task D. Taxiing, Airport Signs, and Lighting (ASEL, AMEL)
+References: AC 91-73; AIM; Chart Supplements; FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-25; POH/ AFM
+Objective: To determine the applicant understands taxiing an airplane, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Elements of safe taxi operations.
+K2. Current airport aeronautical references and information resources such as the Chart Supplement, airport diagram, and Notices to Air Missions (NOTAMs).
+K3. Taxi instructions/clearances.
+K4. Airport markings, signs, and lights.
+K5. Visual indicators for wind.
+K6. Aircraft lighting, as appropriate.
+K7. Procedures for:
+    a. Appropriate flight deck activities prior to taxi, including route planning and identifying the location of Hot Spots
+    b. Radio communications at towered and nontowered airports
+    c. Entering or crossing runways
+    d. Night taxi operations
+    e. Low visibility taxi operations
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Activities and distractions.
+R2. Confirmation or expectation bias as related to taxi instructions.
+R3. A taxi route or departure runway change.
+R4. Runway incursion.
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Receive and correctly read back clearances/instructions, if applicable.
+S2. Use an airport diagram or taxi chart during taxi, if published, and maintain situational awareness.
+S3. Position the flight controls for the existing wind, if applicable.
+S4. Complete the appropriate checklist(s).
+S5. Perform a brake check immediately after the airplane begins moving.
+S6. Maintain positive control of the airplane during ground operations by controlling direction and speed without excessive use of brakes.
+S7. Comply with airport/taxiway markings, signals, and air traffic control (ATC) clearances and instructions.
+S8. Position the airplane properly relative to hold lines.
+
+
+Elements of safe taxi operations.
+
+What are the key elements of safe taxi operations for a flight instructor to emphasize to their students?
+Situational awareness:
+Maintaining awareness of aircraft movement, other traffic, and signage.
+Clear communication:
+Using proper radio calls and hand signals when applicable.
+Proper scanning techniques:
+Checking for traffic and obstacles both ahead and behind the aircraft.
+Compliance with airport regulations and procedures:
+Following designated taxi routes and adhering to ATC instructions.
+Aircraft control:
+Using appropriate braking and steering techniques to maintain control during taxiing.
+
+Current airport aeronautical references and information resources such as the Chart Supplement, airport diagram, and Notices to Air Missions (NOTAMs).
+
+What are the current airport aeronautical references and information resources that a flight instructor should emphasize to their students?
+Chart Supplement:
+Provides essential information about airports, including services available, runway data, and communication frequencies.
+Airport Diagram:
+Offers a detailed layout of airport taxiways, runways, and facilities to aid in navigation and taxi operations.
+Notices to Air Missions (NOTAMs):
+Contains critical updates and information regarding temporary changes or hazards at airports, such as runway closures, construction activity, or navigational aids outages.
+Air Traffic Control (ATC) communications:
+Instruct students on how to obtain and interpret ATIS (Automatic Terminal Information Service) broadcasts and communicate effectively with ATC for current airport conditions and clearances.
+
+Taxi instructions/clearances.
+
+What are the important considerations for understanding and executing taxi instructions and clearances as a flight instructor and pilot?
+Clear understanding of taxiway and runway designations:
+Ensure students can correctly identify assigned taxi routes and runway entrances.
+Proper interpretation of taxi instructions:
+Teach students to listen carefully to ATC instructions and repeat back clearances to confirm understanding.
+Awareness of airport signage and markings:
+Emphasize the significance of following directional signs and markings to navigate the airport safely.
+Communication etiquette with ground control:
+Instruct students on using proper radio phraseology and adhering to ATC instructions promptly and accurately.
+Vigilance for other traffic:
+Stress the importance of maintaining situational awareness and looking out for other aircraft and vehicles while taxiing.
+
+Airport markings, signs, and lights.
+
+What are the key aspects of airport markings, signs, and lights that a flight instructor should teach their students to ensure safe operations on the ground?
+Understanding of runway and taxiway markings:
+Educate students on the meanings of different markings such as runway hold lines, taxiway centerlines, and runway designation markings.
+Recognition and interpretation of airport signs:
+Familiarize students with the various signage used at airports, including location signs, direction signs, and mandatory instruction signs.
+Knowledge of airport lighting systems:
+Teach students about runway and taxiway edge lights, runway centerline lights, and approach lighting systems, and their significance for nighttime and low-visibility operations. Importance of following signage and lighting instructions:
+Emphasize the critical role of obeying signs and lights to navigate the airport safely and avoid runway incursions or other ground incidents.
+Application of markings, signs, and lights during taxi operations:
+Provide practical exercises for students to apply their knowledge of markings, signs, and lights while taxiing, including identifying taxi routes, holding positions, and runway entrances.
+
+Visual indicators for wind.
+
+What visual indicators can pilots use to assess wind direction and strength during taxi, takeoff, and landing operations?
+Windsock:
+Explain to students the significance of windsocks in indicating wind direction and strength, with a fully extended windsock indicating stronger winds and its orientation showing wind direction.
+Tetrahedron:
+Describe how the wind direction and intensity can be inferred from the orientation and movement of the tetrahedron, commonly found at airports.
+Wind tee:
+Teach students to observe the movement of the wind tee's arms to determine wind direction, with the extended arm pointing into the wind.
+Smoke or dust:
+Highlight how the movement and dispersal of smoke or dust particles can provide visual cues about wind direction and intensity, particularly useful in areas without windsocks or other indicators.
+Water ripples:
+Explain how the appearance and movement of water ripples on nearby bodies of water can indicate wind direction and strength, providing additional visual confirmation for pilots during pre-flight assessments.
+
+Aircraft lighting, as appropriate.
+
+What are the different types of aircraft lighting and their purposes, and how should pilots utilize them appropriately during various phases of flight?
+Navigation lights:
+Explain to students the function of navigation lights, which are typically red on the left wingtip, green on the right wingtip, and white on the tail, aiding in aircraft recognition and indicating the direction of flight.
+Position lights:
+Describe how position lights, also known as anti-collision lights or strobe lights, enhance aircraft visibility to other pilots, especially during night operations or in reduced visibility conditions.
+Landing lights:
+Discuss the importance of landing lights for illuminating the runway during takeoff and landing, improving visibility for pilots and ground personnel.
+Taxi lights:
+Teach students about the purpose of taxi lights, which assist pilots in maneuvering on the ground by illuminating the taxiway and ramp areas.
+Beacon lights:
+Explain the use of beacon lights, which serve as a visual indicator of an aircraft's presence and can be activated during engine start-up and shutdown to alert ground personnel.
+Interior lights:
+Highlight the significance of interior lights for providing illumination within the cockpit and cabin, enhancing visibility of instruments, controls, and emergency exits, especially during nighttime operations or in adverse weather conditions.
+Wingtip lights:
+Describe the function of wingtip lights, which improve aircraft visibility to other pilots, particularly during night flying or in low-light conditions, and may also serve as anti-collision lights.
+Recognition lights:
+Discuss how recognition lights, often found on larger aircraft, can be used to increase aircraft visibility during critical phases of flight, such as during final approach or when operating in congested airspace.
+Logo lights:
+Explain the purpose of logo lights, which illuminate the aircraft's tail logo or registration markings, enhancing its visibility to ground personnel and other aircraft during taxi, takeoff, and landing operations, particularly in low-light conditions.
+
+Procedures for - Appropriate flight deck activities prior to taxi, including route planning and identifying the location of Hot Spots
+
+What are the recommended procedures for flight deck activities before taxiing, including route planning and identifying the location of Hot Spots?
+Route planning:
+Instruct students to review the planned taxi route, considering factors such as runway assignments, ATC instructions, and airport diagrams to ensure familiarity with the intended taxi path.
+Reviewing Hot Spots:
+Teach students to identify Hot Spots on the airport diagram, which are areas prone to potential runway incursions or other safety hazards, and to review corresponding procedures for navigating these areas safely.
+Preparing navigation aids:
+Encourage students to set up navigation aids, such as GPS or airport diagrams, to assist in tracking the aircraft's position and progress along the taxi route.
+Verifying aircraft configuration:
+Ensure students confirm that the aircraft's configuration is appropriate for taxiing, including setting appropriate lighting, adjusting avionics settings, and configuring engine controls.
+Briefing the taxi route:
+Emphasize the importance of briefing the taxi route with other crew members, if applicable, to ensure mutual understanding of the planned taxi path and potential challenges or hazards along the way.
+
+Procedures for - Radio communications at towered and non-towered airports
+
+What are the recommended procedures for radio communications at towered airports?
+Initial contact:
+Instruct students to make initial radio contact with the tower or ground control using the designated frequency, providing the aircraft's call sign, location, and intentions.
+Clearance requests:
+Teach students to request taxi, takeoff, landing, and other clearances from ATC using concise and clear radio phraseology, including acknowledging instructions and reading back clearances for confirmation.
+Traffic advisories:
+Emphasize the importance of listening for and acknowledging traffic advisories from ATC, including instructions to follow other aircraft or adjust speed or altitude to maintain separation.
+Departure and arrival procedures:
+Explain departure and arrival procedures, including following assigned headings, altitudes, and speeds as instructed by ATC, and adhering to published standard instrument departure (SID) and standard terminal arrival route (STAR) procedures where applicable.
+
+What are the recommended procedures for radio communications at untowered airports?
+Self-announce procedures:
+Instruct students to self-announce their intentions on the designated CTAF (Common Traffic Advisory Frequency) frequency, including position reports, intentions for taxi, takeoff, and landing, and any other pertinent information for other pilots in the area.
+Traffic advisories:
+Encourage students to listen for and acknowledge traffic advisories from other pilots in the area, including announcing their own positions and intentions to facilitate traffic awareness and coordination.
+Right-of-way rules:
+Teach students the right-of-way rules applicable to non-towered airports, including yielding to aircraft on final approach and giving way to aircraft already taxiing or on the active runway.
+Traffic pattern procedures:
+Explain traffic pattern procedures, including entering the traffic pattern at the appropriate altitude and distance, making standard pattern legs, and adhering to published traffic pattern altitudes and procedures for the specific airport.
+
+Procedures for - Entering or crossing runways
+
+What are the recommended procedures for entering or crossing runways during taxi operations?
+Preparing for runway entry:
+Instruct students to first obtain clearance from ATC before entering or crossing any runway, regardless of whether it is active or not.
+Clearing the approach path:
+Teach students to scan for approaching aircraft on final approach and to verify that the runway is clear before crossing or entering it.
+Holding position markings:
+Emphasize the importance of stopping at hold short markings and verifying clearance from ATC before proceeding onto the runway.
+Crosswind checks:
+Encourage students to visually check for crosswind traffic from both directions before entering or crossing the runway.
+Cross promptly and with caution:
+Once clearance is received, instruct students to cross the runway promptly but cautiously, while maintaining a lookout for other aircraft and vehicles.
+Compliance with ATC instructions:
+Remind students to adhere to any specific instructions provided by ATC regarding runway entry or crossing, including runway hold instructions and clearance to cross multiple runways.
+Communication with other aircraft:
+Encourage students to broadcast their intentions on the appropriate frequency when entering or crossing runways at non-towered airports to alert other pilots in the vicinity.
+
+Procedures for - Night taxi operations
+
+What are the recommended procedures for conducting taxi operations at night?
+Exterior lighting:
+Instruct students to ensure all required exterior lights, including navigation lights, position lights, and taxi lights, are turned on before taxiing to enhance visibility for other aircraft and ground personnel.
+Illumination checks:
+Encourage students to verify that taxiway and runway lighting are operational and clearly visible before proceeding, and to report any discrepancies to ATC or airport authorities.
+Slow and deliberate movements:
+Emphasize the need for cautious and deliberate taxi movements at night, as reduced visibility can make it more challenging to identify obstacles, signage, and other aircraft.
+Increased scanning and vigilance:
+Stress the importance of maintaining a continuous scan for other traffic, personnel, and obstacles during night taxi operations, using both visual and cockpit lighting to enhance situational awareness.
+Use of airport diagrams:
+Encourage students to reference airport diagrams or charts with detailed lighting information to aid in navigation and identify taxi routes, hold short lines, and runway entrances.
+Communication with ATC:
+Remind students to communicate clearly and promptly with ATC regarding their position, intentions, and any relevant information during night taxi operations, including requests for progressive taxi instructions if necessary.
+Avoiding distractions:
+Caution students against distractions in the cockpit during night taxi operations, emphasizing the need to focus on the task at hand and maintain a sterile cockpit environment to ensure safe and efficient taxiing.
+
+Procedures for - Low visibility taxi operations
+
+What are the recommended procedures for conducting taxi operations in low visibility conditions?
+Use of low visibility procedures:
+Instruct students to familiarize themselves with the airport's low visibility procedures, including any specific instructions or routes designated for use during reduced visibility conditions.
+Enhanced lighting:
+Encourage students to use all available lighting resources, including exterior lights and cockpit lighting, to improve visibility of the taxiway and surrounding environment.
+Follow guidance lines:
+Teach students to rely on painted taxiway centerlines, edge markings, and guidance lines to maintain proper alignment and track during low visibility taxi operations.
+Reduced speed:
+Emphasize the importance of reducing taxi speed in low visibility conditions to allow for increased reaction time and improve situational awareness.
+Increased scanning:
+Stress the need for continuous scanning and vigilance for other aircraft, vehicles, and obstacles during low visibility taxi operations, using all available lighting and visual aids to enhance awareness.
+Communication with ATC:
+Remind students to maintain clear and concise communication with ATC regarding their position, intentions, and any difficulties encountered during low visibility taxi operations, and to request progressive taxi instructions if necessary.
+Use of ground movement radar:
+If available, instruct students to utilize ground movement radar or other electronic aids to supplement visual references and enhance situational awareness during low visibility taxi operations.
+
+The applicant exhibits the skill to: Receive and correctly read back clearances/instructions, if applicable. Use an airport diagram or taxi chart during taxi, if published, and maintain situational awareness. Position the flight controls for the existing wind, if applicable. Complete the appropriate checklist(s). Perform a brake check immediately after the airplane begins moving. Maintain positive control of the airplane during ground operations by controlling direction and speed without excessive use of brakes. Comply with airport/taxiway markings, signals, and air traffic control (ATC) clearances and instructions. Position the airplane properly relative to hold lines.

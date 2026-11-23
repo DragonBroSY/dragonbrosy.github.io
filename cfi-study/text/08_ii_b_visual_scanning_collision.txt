@@ -1,0 +1,191 @@
+II.B Visual Scanning and Collision Avoidance
+
+Task B. Visual Scanning and Collision Avoidance
+References: AC 90-48; AIM; FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-25
+Objective: To determine the applicant understands visual scanning and collision avoidance, can apply that knowledge, manage associated risks, demonstrate pilot-in-command skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Environmental conditions that degrade vision.
+K2. Vestibular and visual illusions.
+K3. “See and Avoid” responsibilities.
+K4. Visual scanning procedure and the importance of peripheral vision.
+K5. Aircraft blind spots and clearing procedures.
+K6. Visual cues of an impending mid-air collision.
+K7. Situations that create the greatest collision risk.
+K8. Division of attention inside and outside the aircraft.
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Distractions to visual scanning.
+R2. Relaxed intermediate focal distance.
+R3. High volume operational environments.
+R4. Collision reaction time.
+R5. Use of a safety pilot.
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Effectively scan using short regularly spaced eye movements.
+S2. Scan around physical obstructions.
+S3. Use appropriate visual scanning techniques.
+S4. Use electronic traffic alert systems, if available.
+
+
+Environmental conditions that degrade vision
+
+Identify and describe the environmental conditions that can significantly degrade a pilot's vision. (PHAK 17-22 & AC 90-48E)
+Environmental conditions that can affect a pilot’s ability to conduct effective visual scans and avoid collisions:
+The optical properties of the atmosphere can significantly change how an aircraft appears, especially on hazy days or during times like dawn, dusk, and full moonlight, which can result in decreased visual clarity known as mesopic vision. Night flying presents its own set of challenges, as the rods responsible for night vision are absent from the fovea, creating a central blind spot. As a result, pilots need to look 5-10 degrees off-center to clearly see objects. Additionally, precipitation—such as rain, mist, sleet, or snow—can obstruct cockpit windows and windshields, while glare can make it difficult to see. Moreover, flying above the clouds or in a haze layer can cause empty-field myopia, where the absence of specific visual cues outside the aircraft complicates orientation.
+
+Vestibular and visual illusions
+
+As a Certified Flight Instructor, you are responsible for educating student pilots about the potential dangers of vestibular and visual illusions. Describe three vestibular illusions and three visual illusions that pilots may encounter and the instructional strategies you would use to train pilots to correct for these illusions. (PHAK 17-7)
+The Leans:
+The Leans are caused by a sudden return to level flight following a gradual and prolonged turn that went unnoticed by the pilot. As a result, the pilot may lean in the direction of the original turn in a corrective attempt to regain the perception of a correct vertical posture. Teach students to rely on flight instruments rather than body sensations, particularly the attitude indicator, during periods of poor visibility or while in clouds.
+Coriolis Illusion:
+The Coriolis Illusion occurs when a pilot has been in a turn long enough for the fluid in the ear canal to move at the same speed as the canal. This will lead to the disoriented pilot to maneuver the aircraft into a dangerous attitude in an attempt to correct the aircraft’s perceived attitude. Emphasize the importance of minimizing head movements during turns and relying on instruments to confirm flight attitude and rate of turn.
+Graveyard Spiral:
+The Graveyard Spiral occurs when a pilot is in a prolonged, coordinated, constant-rate turn and experiences the illusion of not turning. When returning to straight and level, the pilot may experience the illusion of turning in the opposite direction. As a response, the pilot returns to the original turn. The pilot will experience a loss of altitude in a turn and will increase yoke pressure to alleviate the loss of altitude. Further tightening the spin. Continuous monitoring of the turn coordinator and altitude indicator to maintain awareness of actual aircraft performance and orientation.
+Runway Width Illusion:
+The Runway Width illusion can pose numerous challenges that are unique to wide and narrow runways. A narrower-than-usual runway can create the illusion that the aircraft is higher than it is, leading to a lower approach being flown. A wider-than-usual runway can create the illusion that the aircraft is lower than it is, leading to a higher approach being flown. Train students to use VASI/PAPI lights for proper glide slope alignment and to familiarize themselves with different runway specifications during pre-flight planning.
+False Horizon:
+A False Horizon can result from a sloping cloud formation, obscured horizon, dark scene spread with lights, and other examples can lead to this illusion. The disoriented pilot may orient the aircraft and place it into a dangerous attitude as a result of this false horizon. Reinforce the use of the artificial horizon on the instrument panel for accurate pitch and bank information, especially under conditions of limited visibility.
+Autokinesis:
+Autokinesis occurs when flying in the dark, and a stationary light may appear to move if stared at for a prolonged period of time. The pilot may attempt to align the aircraft with the perceived moving light. Teach pilots to maintain a dynamic visual scan of the entire cockpit and outside environment to prevent fixation and misinterpretation of visual cues.
+
+“See and Avoid” responsibilities
+
+What are the primary responsibilities of pilots regarding "See and Avoid" principles?
+Pilots are responsible for maintaining a vigilant lookout for other aircraft and actively avoiding potential collisions by continuously scanning the sky, utilizing proper scanning techniques, and adhering to right-of-way rules. This "See and Avoid" principle, emphasized in FAA publications, is fundamental to aviation safety, especially in visual flight conditions where reliance on visual cues is crucial.
+
+Additional Thoughts
+
+Responsibility of the instructor to the learner.
+From the start of flight training, the instructor ensures learners develop the habit of looking for other air traffic at all times. If learners believe the instructor assumes all responsibility for scanning and collision avoidance procedures, they do not develop the habit of maintaining a constant vigilance, which is essential to safety. Any observed tendency of a learner to enter flight maneuvers without first making a careful check for other air traffic needs to be corrected immediately. It is imperative to introduce 14 CFR part 91, section 91.113 “right-of-way” rules to the learner. Practice the “see and avoid” concept at all times regardless of whether the training is conducted under VFR or instrument flight rules (IFR).
+
+Best Practices to introduce to the learner.
+    • ADS-B In is an effective system to help pilots see and avoid other aircraft. If your aircraft is equipped with ADS-B In, it is important to understand its features and how to use it properly. Pilots should incorporate the traffic display in their normal traffic scan to provide awareness of nearby aircraft. Prior to taxiing onto an airport movement area, ADS-B In can provide advance indication of arriving aircraft and aircraft in the traffic pattern. Systems that incorporate a traffic alerting feature can help minimize the pilot's inclination to fixate on the display.
+    • Understand the limitations of ADS-B In. In certain airspace, not all aircraft will be equipped with ADS-B Out or transponders and will not be visible on your ADS-B In display.
+    • Limit the amount of time that you focus on flight instruments or tablets.
+    • Develop a strategic approach to scanning for traffic. Scan the entire sky and try not to focus straight ahead.
+
+Visual scanning procedure and the importance of peripheral vision
+
+Why does the FAA highlight the significance of understanding the visual scanning procedure and the importance of peripheral vision for aviation instructors?
+The FAA stresses the understanding of the visual scanning procedure and the importance of peripheral vision to enable aviation instructors to effectively teach their students about situational awareness and collision avoidance. By emphasizing these concepts, instructors can impart critical skills to their students, enhancing their ability to detect and respond to potential hazards in the airspace. This focus aligns with the FAA's commitment to promoting safety and proficiency in flight training, as detailed in the guidance for aviation educators.
+
+Additional thoughts
+
+What are the scanning techniques and why does the FAA place emphasis on peripheral vision? Peripheral vision is key to scanning for traffic at night. Introduce this to the learner by referencing scanning techniques in the PHAK.
+    • Scanning techniques are very important in identifying objects at night. To scan effectively, pilots must look from right to left or left to right.
+    • They should begin scanning at the greatest distance an object can be perceived (top) and move inward toward the position of the aircraft (bottom). For each stop, an area approximately 30° wide should be scanned. The duration of each stop is based on the degree of detail that is required, but no stop should last longer than 2 to 3 seconds. When moving from one viewing point to the next, pilots should overlap the previous field of view by 10°.
+    • Off-center viewing is another type of scan that pilots can use during night flying. It is a technique that requires an object be viewed by looking 10° above, below, or to either side of the object. In this manner, the peripheral vision can maintain contact with an object. With off-center vision, the images of an object viewed longer than 2 to 3 seconds will disappear. This occurs because the rods reach a photochemical equilibrium that prevents any further response until the scene changes. This produces a potentially unsafe operating condition. To overcome this night vision limitation, pilots must be aware of the phenomenon and avoid viewing an object for longer than 2 or 3 seconds. The peripheral field of vision will continue to pick up the object when the eyes are shifted from one off center point to another.
+
+Instructors should make sure their learners are aware of limitations when it comes to scanning and traffic avoidance.
+• These limitations may include: Reduced scan frequency due to concentration on flight instruments or tablets and distraction with passengers.
+• Blind spots related to high-wing and low-wing aircraft in addition to windshield posts and sun visors.
+• Prevailing weather conditions including reduced visibility and the position of the sun.
+• The attitude of the aircraft will create additional blind spots.
+• The physical limitations of the human eye, including the time required to (re)focus on near and far objects, from the instruments to the horizon for example; empty field myopia, narrow field of vision and atmospheric lighting all affect our ability to detect another aircraft.
+
+Aircraft blind spots and clearing procedures
+
+Why is it important for pilots to be aware of aircraft blind spots and understand clearing procedures?
+Pilots must be vigilant about aircraft blind spots and follow clearing procedures to prevent mid-air collisions and ground incidents. Understanding blind spots and adhering to proper procedures ensures thorough visual scans, enhancing aviation safety and proficiency.
+
+Additional Considerations
+
+Blind spots are not only associated with the aircraft but also physiological with the most common being associated with night flying.
+It is estimated that once fully adapted to darkness, the rods are 10,000 times more sensitive to light than the cones, making them the primary receptors for night vision. Since the cones are concentrated near the fovea, the rods are also responsible for much of the peripheral vision. The concentration of cones in the fovea can make a night blind spot in the center of the field of vision. To see an object clearly at night, the pilot must expose the rods to the image. This can be done by looking 5° to 10° off center of the object to be seen. This can be tried in a dim light darkened room. When looking directly at the light, it dims or disappears altogether. When looking slightly off center, it becomes clearer and brighter. When looking directly at an object, the image is focused mainly on the fovea, where detail is best seen. At night, the ability to see an object in the center of the visual field is reduced as the cones lose much of their sensitivity and the rods become more sensitive. Looking off center can help compensate for this night blind spot. Along with the loss of sharpness (acuity) and color at night, depth perception and judgment of size may be lost.
+
+Visual cues of an impending mid-air collision
+
+What are the visual cues of an impending mid-air collision?
+• Abnormal aircraft movement relative to your own.
+• Sudden changes in the size of another aircraft's image in your field of view.
+• An aircraft's image growing larger or appearing to get closer rapidly.
+• The appearance of another aircraft in your peripheral vision without warning.
+• Observing another aircraft's position relative to fixed objects on the ground or in the sky changing rapidly.
+• Recognizing conflicting flight paths between your aircraft and another.
+• Unusual or unexpected movements from other aircraft, such as sharp turns or altitude changes.
+• Loss of visual contact with an aircraft previously observed in your vicinity.
+• Recognizing converging flight paths with another aircraft.
+• An abrupt increase in the number of aircraft within your immediate airspace.
+
+Additional Considerations
+
+Ensure the learner is aware of these facts from recent FAA studies with regards to mid air collisions to negate the invulnerable attitude of “it won't happen to me”
+    • Most of the aircraft involved in collisions are engaged in recreational flying not on any type of flight plan.
+    • Most midair collisions occur in VFR weather conditions during weekend daylight hours.
+    • The vast majority of accidents occurred at or near non-towered airports and at altitudes below 1,000 feet.
+    • Pilots of all experience levels were involved in midair collisions, from pilots on their first solo, to 20,000 hour veterans.
+    • Most collisions occur in daylight with visibility greater than 3 miles
+
+Situations that create the greatest collision risk
+
+What are some situations that create the greatest risk of collision for aircraft, and how can they be mitigated?
+To minimize collision risks, pilots must stay alert during taxiing, takeoff, landing, and in busy airspace. They should follow ATC instructions, utilize TCAS, adhere to traffic patterns and right-of-way rules, and maintain communication with other pilots and control towers, particularly in non-controlled areas.
+
+Additional discussion between instructor and learner What is situational awareness and how do we maintain it while flying?
+Situational awareness involves accurately perceiving and understanding all factors affecting safety across the four key risk elements before, during, and after flight. It requires recognizing the relative importance of these factors and their future impact on the flight. Maintaining situational awareness allows pilots to oversee the entire operation rather than focusing solely on one factor. Elements to consider include aircraft systems, pilot and passenger status, and environmental conditions like spatial orientation, terrain, traffic, weather, and airspace.
+
+What factors affect the ability to maintain situational awareness?
+Numerous challenges can impede a pilot's ability to maintain situational awareness. Factors such as fatigue, stress, or excessive workload can lead to fixation on isolated issues rather than overall flight awareness. Distractions, often starting small like a malfunctioning gauge, can escalate into accidents if they divert attention from critical tasks. Fatigue poses a significant threat by impairing alertness and performance, exacerbated by conditions like sleep loss or disruption of circadian rhythms common in flight environments. Complacency, stemming from overconfidence due to automation or routine operations, also jeopardizes situational awareness. Flight instructors play a crucial role in reinforcing awareness through targeted exercises that ensure pilots remain vigilant amidst potential distractions and complacency.
+
+Division of attention inside and outside the aircraft
+
+How should a Certified Flight Instructor (CFI) teach a student pilot to effectively manage the division of attention between inside and outside the cockpit during flight?
+A CFI should teach a student pilot to manage attention by practicing and emphasizing the importance of a systematic scan pattern that alternates between monitoring instruments and observing external conditions. One rule of thumb to teach the learner for VFR flight is to Spend 90 percent of the time looking outside scanning for traffic and the other 10 percent of your time inside referencing your instruments. Remind the learner to have their “head up eyes out” while taxing and flying.
+
+The applicant exhibits the skill to: Effectively scan using short regularly spaced eye movements.
+
+Describe the importance of effective visual scanning techniques during flight instruction and how they contribute to situational awareness and flight safety.
+Effective visual scanning techniques are crucial in flight instruction as they directly enhance situational awareness and contribute to flight safety in several key ways:
+• Traffic Awareness: Visual scanning techniques teach pilots, especially during flight instruction, to systematically scan the airspace for other aircraft. This includes scanning for traffic both inside and outside the aircraft. By maintaining a consistent scanning pattern (such as using the "see and avoid" concept), pilots can detect and avoid potential collisions, thereby enhancing flight safety.
+• Navigational Reference: Visual scanning helps pilots maintain awareness of their position relative to ground features, navigation aids, and other reference points such as waypoints or visual landmarks. This is essential for maintaining accurate navigation and preventing navigation errors.
+• Instrument Cross-Checking: Pilots are trained to cross-check their instruments regularly during visual scanning. This ensures that the information displayed on instruments matches their visual perception of the flight situation. It helps in detecting any discrepancies or anomalies early, allowing corrective action to be taken promptly.
+• Environmental Awareness: Visual scanning techniques promote awareness of environmental factors such as weather conditions (clouds, storms), terrain features (mountains, valleys), and airport traffic patterns. This comprehensive awareness helps pilots make informed decisions regarding flight path adjustments and weather avoidance, thereby improving safety.
+• Distraction Management: Effective visual scanning techniques teach pilots to manage distractions by prioritizing their attention on critical tasks such as scanning for traffic and monitoring instruments. This reduces the likelihood of fixation on non-essential tasks or instruments, which can compromise situational awareness and safety.
+• Adaptability and Preparedness: Pilots trained in visual scanning techniques develop the ability to adapt to changing flight conditions effectively. They are prepared to handle unexpected situations by continuously assessing their surroundings and maintaining situational awareness.
+In conclusion, visual scanning techniques are fundamental in flight instruction as they instill habits that promote situational awareness, reduce risks associated with flight operations, and ultimately enhance flight safety by ensuring pilots remain vigilant and informed throughout their flights.
+
+Scan around physical obstructions.
+
+How does the ability to scan around physical obstructions enhance flight safety, and what techniques can be employed for effective scanning during flight instruction?
+Scanning around physical obstructions is vital for situational awareness and collision avoidance. Techniques like banking the aircraft or adjusting seat position improve visibility. Combining visual and instrument scans compensates for blind spots. Practicing these techniques enhances hazard awareness and decision-making, bolstering flight safety. The ability to scan around physical obstructions is crucial for enhancing flight safety in several ways:
+1. Enhanced Traffic Awareness: Physical obstructions such as aircraft structures, cockpit instruments, or even passengers can obstruct a pilot's view. Effective scanning techniques allow pilots to look around these obstructions to maintain awareness of other aircraft in the vicinity. This helps in avoiding mid-air collisions and maintaining safe separation distances.
+2. Improved Visibility of Critical Areas: Physical obstructions can sometimes obscure critical areas of the aircraft or important reference points outside the aircraft, such as runway thresholds during landing or other aircraft during taxiing. Proper scanning techniques enable pilots to adjust their position or use mirrors and aircraft systems effectively to overcome these obstructions and maintain situational awareness.
+3. Increased Environmental Awareness: Scanning around physical obstructions allows pilots to monitor environmental conditions such as weather changes, terrain features, and obstacles on the ground. This awareness is vital for making timely decisions regarding flight path adjustments, weather avoidance, and safe landings.
+4. Effective Instrument Cross-Checking: Physical obstructions within the cockpit can sometimes hinder a pilot's ability to see and cross-check instruments properly. By employing scanning techniques that involve moving their head and adjusting their position, pilots can ensure they have a clear view of all instruments and can cross-check them effectively to verify aircraft performance and status.
+Techniques for effective scanning during flight instruction include:
+• Use of Peripheral Vision: Pilots are trained to utilize peripheral vision to scan the cockpit and external environment without fixating on any single point. This helps in maintaining awareness of the overall flight situation while scanning for specific details.
+• Systematic Scanning Patterns: Implementing systematic scanning patterns, such as the "clock-face" or "Z" pattern, ensures comprehensive coverage of the cockpit and external environment. This includes scanning instruments, outside visual references, and traffic areas.
+• Head Movement and Positioning: Encouraging pilots to move their head and adjust their position within the cockpit allows them to look around physical obstructions effectively. This technique helps in maintaining continuous situational awareness and reduces the impact of obstructions on visibility.
+• Use of Mirrors and Aircraft Systems: Teaching pilots to utilize cockpit mirrors and aircraft systems (such as traffic alert systems and weather radar) effectively can compensate for physical obstructions and enhance overall situational awareness. In summary, the ability to scan around physical obstructions enhances flight safety by improving traffic awareness, visibility of critical areas, environmental awareness, and instrument cross-checking. Effective scanning techniques during flight instruction involve utilizing peripheral vision, employing systematic scanning patterns, adjusting head movement and positioning, utilizing mirrors and aircraft systems, and integrating CRM principles. These techniques equip pilots with the skills necessary to maintain situational awareness and make informed decisions throughout all phases of flight.
+
+Use appropriate visual scanning techniques.
+
+Why are appropriate visual scanning techniques important for flight safety, and how can instructors help students develop proficiency in this skill?
+Instructors play a crucial role in helping students develop proficiency in visual scanning techniques:
+1. Structured Training: Instructors can provide structured training sessions dedicated to teaching scanning techniques. This includes explaining the importance of scanning, demonstrating proper techniques, and allowing students to practice under supervision.
+2. Simulation Exercises: Using flight simulators, instructors can create scenarios where students practice scanning for traffic, monitoring instruments, and maintaining situational awareness in various weather conditions and flight phases. Simulators allow for safe and controlled repetition of scanning exercises.
+3. Feedback and Correction: During training flights, instructors provide immediate feedback on students' scanning techniques. They correct any errors and reinforce good habits to ensure students develop effective scanning skills early in their training.
+4. Real-World Application: Encouraging students to apply scanning techniques during actual flight operations reinforces their importance and allows for practical application of learned skills.
+By emphasizing the importance of visual scanning techniques and providing structured training and feedback, instructors help students develop proficiency in scanning. This proficiency is critical for enhancing flight safety by ensuring pilots maintain situational awareness and effectively manage the complexities of flight operations.
+
+Use electronic traffic alert systems, if available.
+
+How do electronic traffic alert systems improve flight safety, and what considerations should instructors emphasize about their use?
+Electronic Traffic Alert Systems (ETAS), such as Traffic Alert and Collision Avoidance Systems (TCAS), significantly enhance flight safety by providing pilots with real-time information about nearby aircraft. Here’s how ETAS improve safety and considerations instructors should emphasize:
+
+Benefits of Electronic Traffic Alert Systems:
+• Collision Avoidance: ETAS alert pilots to the presence of nearby aircraft, including those not visible to the naked eye or obscured by weather conditions. This early warning allows pilots to take evasive action to avoid potential collisions.
+• Enhanced Situational Awareness: By displaying traffic information on cockpit displays, ETAS enhance pilots' situational awareness. Pilots can better understand the relative position, altitude, and trajectory of other aircraft in their vicinity.
+• Reduced Mid-Air Collision Risk: ETAS significantly reduce the risk of mid-air collisions by providing alerts and advisories that prompt pilots to adjust their flight path and maintain safe separation from other aircraft.
+• Integration with Cockpit Displays: Modern ETAS are often integrated with Primary Flight Displays (PFDs) or Multi-Function Displays (MFDs), making traffic information easily accessible and comprehensible to pilots without causing undue distraction.
+• Automatic Alerts: ETAS can issue automatic advisories, such as Resolution Advisories (RAs) in TCAS systems, which provide clear guidance on the recommended vertical maneuver to avoid conflicting traffic.
+
+Considerations for Instructors about ETAS:
+• Understanding System Limitations: Instructors should emphasize that while ETAS are highly effective, they have limitations. For example, they may not detect non-transponder-equipped aircraft or those flying at lower altitudes in certain airspace.
+• Proper Interpretation of Alerts: It’s crucial for pilots to understand how to interpret ETAS alerts and advisories correctly. Instructors should teach pilots to differentiate between traffic alerts (TA) and resolution advisories (RA) in TCAS systems and how to respond appropriately to each.
+• Integration with Visual Scanning: ETAS are a supplement to, not a replacement for, visual scanning techniques. Instructors should stress the importance of maintaining visual awareness and using ETAS as an additional tool to enhance situational awareness.
+• Training on System Operation: Instructors should provide thorough training on the operation and features of ETAS during ground school and flight simulator sessions. This includes hands-on practice in recognizing and responding to ETAS alerts in simulated scenarios.
+• CRM Integration: Instructors should integrate ETAS use with Crew Resource Management (CRM) principles. This includes effective communication among crew members regarding traffic information and collaboration in making decisions based on ETAS alerts.
+• Regulatory Compliance: Instructors should ensure that pilots understand regulatory requirements regarding the use of ETAS, including when and where they are mandatory or recommended by aviation authorities.

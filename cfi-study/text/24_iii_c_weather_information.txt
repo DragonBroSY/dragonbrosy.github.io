@@ -1,0 +1,243 @@
+III.C Weather Information
+
+Task C. Weather Information
+Note: If K3 is selected, the evaluator must assess the applicant’s knowledge of at least three sub-elements.
+References: 14 CFR part 91; AC 91-92; AIM; FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-25, FAA-H-8083-28
+Objective: To determine the applicant understands weather information, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Sources of weather data (e.g., National Weather Service, Flight Service) for flight planning purposes.
+K2. Acceptable weather products and resources required for preflight planning, current and forecast weather for departure, en route, and arrival phases of flight such as:
+    a. Airport Observations (METAR and SPECI) and Pilot Observations (PIREP)
+    b. Surface Analysis Chart, Ceiling and Visibility Chart (CVA)
+    c. Terminal Aerodrome Forecasts (TAF)
+    d. Graphical Forecasts for Aviation (GFA)
+    e. Wind and Temperature Aloft Forecast (FB)
+    f. Convective Outlook (AC)
+    g. Inflight Aviation Weather Advisories including Airmen's Meteorological Information (AIRMET), Significant Meteorological Information (SIGMET), and Convective SIGMET
+K3. Meteorology applicable to the departure, en route, alternate, and destination under visual flight rules (VFR) in Visual Meteorological Conditions (VMC), including expected climate and hazardous conditions such as:
+    a. Atmospheric composition and stability
+    b. Wind (e.g., windshear, mountain wave, factors affecting wind, etc.)
+    c. Temperature and heat exchange
+    d. Moisture/precipitation
+    e. Weather system formation, including air masses and fronts
+    f. Clouds
+    g. Turbulence
+    h. Thunderstorms and microbursts
+    i. Icing and freezing level information
+    j. Fog/mist
+    k. Frost
+    l. Obstructions to visibility (e.g., smoke, haze, volcanic ash, etc.)
+K4. Flight deck instrument displays of digital weather and aeronautical information.
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Making the go/no-go and continue/divert decisions, including:
+    a. Circumstances that would make diversion prudent
+    b. Personal weather minimums
+    c. Hazardous weather conditions, including known or forecast icing or turbulence aloft
+R2. Use and limitations of:
+    a. Installed onboard weather equipment
+    b. Aviation weather reports and forecasts
+    c. Inflight weather resources
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Use available aviation weather resources to obtain an adequate weather briefing.
+S2. Analyze the implications of at least three of the conditions listed in K3a through K3l, using actual weather or weather conditions provided by the evaluator.
+S3. Correlate weather information to make a go/no-go decision.
+
+
+Sources of weather data (e.g., National Weather Service (NWS), Flight Service Station (FSS)) for flight planning purposes.
+
+What are some sources of weather data available to pilots for flight planning purposes, as outlined in the CFI Airman Certification Standards (ACS)?
+• National Weather Service (NWS)
+• Flight Service Stations (FSS)
+• Aviation Weather Center (AWC)
+• ATIS
+• AWOS
+• TAF
+
+Acceptable weather products and resources required for preflight planning - Aviation routine weather reports (METARs) and pilot reports (PIREPs)
+
+What are some acceptable weather products and resources required for preflight planning, specifically focusing on Aviation Routine Weather Reports (METARs) and Pilot Reports (PIREPs)?
+Acceptable weather products and resources for preflight planning include Aviation Routine Weather Reports (METARs) and Pilot Reports (PIREPs). METARs provide current weather conditions at airports, including temperature, wind speed and direction, visibility, cloud cover, and atmospheric pressure. PIREPs are real-time reports of in-flight weather conditions provided by pilots, offering valuable information on turbulence, icing, cloud heights, and other atmospheric phenomena. Pilots can access METARs and PIREPs through various sources, including aviation weather websites, Flight Service Stations, and cockpit weather displays, to make informed decisions and ensure safe flight operations.
+
+Acceptable weather products and resources required for preflight planning - Terminal aerodrome forecasts (TAFs) and graphical forecasts for aviation (GFAs)
+
+What weather products are considered acceptable for preflight planning, and why are Terminal Aerodrome Forecasts (TAFs) and Graphical Forecasts for Aviation (GFAs) essential resources in this process?
+Acceptable weather products for preflight planning include TAFs and GFAs. TAFs provide detailed forecasts for specific terminal aerodromes, offering insights into expected weather conditions such as wind, visibility, and precipitation. GFAs provide graphical representations of forecasted weather elements, covering larger geographical areas and depicting significant weather phenomena relevant to aviation. Both TAFs and GFAs are essential resources for pilots, offering valuable information to assess weather conditions along their planned route, make informed decisions, and ensure flight safety.
+
+Acceptable weather products and resources required for preflight planning - Inflight weather advisories including Airman's Meteorological Information (AIRMET) and Significant Meteorological Information (SIGMET)
+
+What weather products and resources are considered acceptable for preflight planning, specifically focusing on inflight weather advisories such as AIRMETs and SIGMETs?
+Acceptable weather products and resources for preflight planning include inflight weather advisories such as AIRMETs (Airmen's Meteorological Information) and SIGMETs (Significant Meteorological Information). AIRMETs provide information about significant weather phenomena affecting flights but with less intensity or duration compared to SIGMETs. SIGMETs, on the other hand, provide information about significant weather phenomena affecting safety, such as severe turbulence, icing, and thunderstorms. Pilots should consult AIRMETs and SIGMETs to anticipate and mitigate potential weather hazards during flight planning and execution.
+
+Acceptable weather products and resources required for preflight planning - Wind and temperature aloft forecast (FB)
+
+What weather resource provides information on wind speed, direction, and temperature at different altitudes for preflight planning?
+Wind and temperature aloft forecasts (FB) offer valuable data on wind conditions and temperature variations at various altitudes, aiding pilots in making informed decisions for safe and efficient flight planning.
+
+Acceptable weather products and resources required for preflight planning - Surface analysis and weather depiction charts
+
+What weather products are essential for preflight planning, specifically for understanding surface conditions and overall weather patterns?
+Surface analysis and weather depiction charts are crucial weather products for preflight planning. They provide valuable information about current surface conditions, including fronts, pressure systems, and areas of precipitation, helping pilots understand the overall weather patterns and make informed decisions for safe flight planning.
+
+Acceptable weather products and resources required for preflight planning - Significant weather prognostic charts
+
+What type of weather chart provides forecasts of significant weather events affecting flight operations over a specified period?
+Significant weather prognostic charts offer forecasts of significant weather events, such as thunderstorms, turbulence, and icing, expected to impact flight operations within a designated time frame. These charts assist pilots in anticipating and planning for potential weather hazards during their flights.
+
+Acceptable weather products and resources required for preflight planning - Thunderstorm watches, warnings, and convective activity forecast charts
+
+What weather resources provide information on thunderstorm watches, warnings, and forecasts of convective activity, aiding pilots in flight planning and decision-making?
+National Weather Service (NWS):
+The NWS provides comprehensive weather information, including watches, warnings, and forecasts, on its website and through local forecast offices.
+Aviation Weather Center (AWC):
+The AWC offers specialized aviation weather products, including convective outlooks, thunderstorm forecasts, and graphical representations of convective activity, on its website.
+Flight Service Stations (FSS):
+FSS provides weather briefings and assistance with accessing weather products, including thunderstorm watches, warnings, and forecasts, via telephone or radio communication.
+Aviation Weather Websites:
+Various aviation weather websites, such as Weather.gov, AviationWeather.gov, and commercial weather services, offer access to thunderstorm watches, warnings, and convective activity forecasts, along with other aviation-specific weather information.
+Mobile Apps:
+Several mobile applications designed for pilots provide access to weather information, including thunderstorm watches, warnings, and convective outlooks, for flight planning and in-flight weather monitoring.
+
+Meteorology applicable visual flight rules (VFR) in Visual Meteorological Conditions (VMC) - Atmospheric composition and stability
+
+How does atmospheric composition and stability impact Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+Atmospheric composition and stability play significant roles in Visual Flight Rules (VFR) operations during Visual Meteorological Conditions (VMC). The composition of the atmosphere, including factors like humidity, temperature, and pressure, affects visibility and cloud formation, influencing VFR flight conditions. Additionally, atmospheric stability determines the likelihood of turbulence, convective activity, and the formation of hazardous weather phenomena such as thunderstorms, which can impact VFR flight safety. Pilots must consider these atmospheric factors to ensure safe and comfortable flight operations in VMC conditions.
+
+Meteorology applicable visual flight rules (VFR) in Visual Meteorological Conditions (VMC) - Wind (e.g., windshear, mountain wave, factors affecting wind, etc.)
+
+How does wind, including windshear, mountain wave, and factors affecting wind, impact Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+Wind plays a crucial role in Visual Flight Rules (VFR) operations during Visual Meteorological Conditions (VMC). Windshear, sudden changes in wind speed or direction, can pose hazards during takeoff and landing, affecting aircraft performance and control. Mountain waves, caused by wind flowing over mountainous terrain, can create turbulence and downdrafts, especially on the lee side of mountains, impacting VFR flight safety. Factors affecting wind, such as pressure systems, fronts, and terrain features, influence wind patterns and intensity, requiring pilots to consider wind conditions for route planning and aircraft performance. Pilots must be aware of these wind-related phenomena and factors to ensure safe and effective VFR flight operations in VMC.
+
+Meteorology applicable visual flight rules (VFR) in Visual Meteorological Conditions (VMC) - Temperature and heat exchange
+
+How does temperature and heat exchange impact Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+Temperature and heat exchange have significant effects on Visual Flight Rules (VFR) operations during Visual Meteorological Conditions (VMC). High temperatures can decrease aircraft performance, reduce engine efficiency, and affect aircraft lift and control, particularly during takeoff and landing. Additionally, temperature variations can create thermal turbulence, causing discomfort and potentially hazardous flying conditions for VFR pilots. Understanding temperature gradients and heat exchange mechanisms, such as advection and radiation, is essential for assessing atmospheric stability and predicting weather phenomena affecting VFR flight safety. Pilots must consider temperature effects and heat exchange dynamics to make informed decisions and ensure safe VFR flight operations in VMC.
+
+Meteorology applicable visual flight rules (VFR) in Visual Meteorological Conditions (VMC) - Moisture/precipitation
+
+How does moisture and precipitation impact Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+Moisture and precipitation play significant roles in Visual Flight Rules (VFR) operations during Visual Meteorological Conditions (VMC). Moisture in the atmosphere, such as humidity and dew point, affects visibility and cloud formation, which can impact VFR flight conditions. Precipitation, including rain, snow, and fog, reduces visibility and can create hazardous flying conditions for VFR pilots. Understanding moisture content and precipitation patterns is essential for assessing weather conditions and making informed decisions regarding VFR flight safety. Pilots must monitor moisture levels and precipitation forecasts to ensure safe VFR flight operations in VMC.
+
+Meteorology applicable visual flight rules (VFR) in Visual Meteorological Conditions (VMC) - Weather system formation, including air masses and fronts
+
+How does weather system formation, including air masses and fronts, impact Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+Weather system formation, characterized by the interaction of air masses and fronts, significantly impacts Visual Flight Rules (VFR) operations during Visual Meteorological Conditions (VMC). Different air masses, such as maritime and continental, have distinct temperature, humidity, and stability characteristics, affecting weather conditions and cloud formation in their respective regions. Fronts, boundaries between air masses, can lead to changes in weather patterns, including the formation of clouds, precipitation, and turbulence, which can impact VFR flight safety. Understanding weather system formation and the associated effects of air masses and fronts is crucial for VFR pilots to anticipate and navigate through changing weather conditions effectively. Pilots must monitor weather forecasts and updates to make informed decisions and ensure safe VFR flight operations in VMC.
+
+Meteorology applicable to visual flight rules (VFR) in Visual Meteorological Conditions (VMC) - Clouds
+
+How do clouds impact Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+Clouds have a significant impact on Visual Flight Rules (VFR) operations during Visual Meteorological Conditions (VMC). Clouds reduce visibility, obscure terrain and obstacles, and can create hazardous flying conditions for VFR pilots. Understanding cloud types, such as cumulus, stratus, and cumulonimbus, helps pilots assess weather conditions and anticipate potential turbulence, icing, or reduced visibility associated with different cloud formations. Pilots must adhere to VFR cloud clearance and visibility requirements to ensure safe flight operations, maintain adequate separation from clouds and maintain visual contact with the ground and surrounding terrain. Monitoring cloud coverage and cloud forecasts is essential for VFR pilots to make informed decisions and ensure safe VFR flight operations in VMC.
+
+Meteorology applicable to visual flight rules (VFR) in Visual Meteorological Conditions (VMC) - Turbulence
+
+What are some common indicators of turbulence that pilots should be aware of during Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+Cloud Formations:
+Cumulus clouds, especially with towering or cauliflower-shaped tops, can indicate convective activity and potential turbulence.
+Wind Patterns:
+Strong or gusty winds, particularly when encountering wind shear or turbulence associated with changes in wind direction or speed, can be indicators of turbulent conditions.
+Terrain Features:
+Mountainous terrain or rough terrain features can generate mechanical turbulence, especially in windy conditions.
+Aircraft Behavior:
+Sudden changes in aircraft attitude, altitude, or airspeed, along with noticeable bumps or vibrations, can signal the presence of turbulence.
+Pilot Reports (PIREPs):
+Reports from other pilots about encountering turbulence in the same area or along the planned route can provide valuable real-time information for anticipating and avoiding turbulent conditions.
+Weather Forecasts and Advisories:
+Meteorological forecasts, SIGMETs (Significant Meteorological Information), and AIRMETs (Airmen's Meteorological Information) may provide warnings or advisories for turbulence in specific regions or along certain flight routes.
+Visual Observations:
+Observation of birds or dust devils indicating turbulent airflow near the surface, or the presence of rotor clouds or horizontal roll clouds near mountainous areas, can serve as visual cues for potential turbulence.
+Flight Instruments:
+Variations in airspeed, vertical speed, and altitude indicated on flight instruments can also provide indications of turbulence.
+Pilot Experience and Intuition:
+Experienced pilots often develop a sense for detecting and anticipating turbulence based on factors such as weather conditions, terrain, and aircraft performance, enhancing their ability to recognize and respond to turbulent conditions effectively.
+
+Meteorology applicable to visual flight rules (VFR) in Visual Meteorological Conditions (VMC) - Thunderstorms and microbursts
+
+How does meteorology, specifically thunderstorms, impact Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+• Thunderstorms pose significant hazards to VFR operations due to associated turbulence, lightning, hail, and strong convective updrafts and downdrafts.
+• VFR pilots should avoid flying near or through thunderstorms to minimize the risk of encountering hazardous weather conditions.
+• Monitoring weather forecasts, radar imagery, and pilot reports (PIREPs) can help pilots identify areas of convective activity and plan routes to avoid thunderstorms.
+• Thunderstorms can develop rapidly, so pilots should maintain situational awareness and be prepared to alter their flight plans to steer clear of developing or active thunderstorm cells.
+
+How does meteorology, specifically microbursts, impact Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+• Microbursts are intense downdrafts associated with thunderstorms, capable of producing sudden and significant changes in wind speed and direction near the surface.
+• In VMC, microbursts can be difficult to detect visually but may be indicated by localized wind shear, rapid changes in airspeed, or sudden loss of altitude.
+• Pilots should exercise caution when operating in areas prone to thunderstorm activity, particularly during approach and departure phases of flight, where microbursts pose a heightened risk.
+• Avoiding flight near convective activity and utilizing weather radar or ground-based wind shear detection systems can help mitigate the risk of encountering microbursts during VFR operations in VMC.
+• If inadvertently encountering a microburst, pilots should follow procedures for escaping the hazardous conditions by applying power, increasing airspeed, and initiating a climb to exit the downdraft and regain positive control of the aircraft.
+
+Meteorology applicable to visual flight rules (VFR) in Visual Meteorological Conditions (VMC) - Icing and freezing level information
+
+How does meteorology, specifically icing, impact Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+• Icing occurs when supercooled water droplets freeze upon contact with an aircraft's surfaces, leading to reduced aerodynamic performance and potential loss of control.
+• Even in VMC, pilots should be aware of icing conditions, particularly when flying in or near clouds, precipitation, or areas of visible moisture at temperatures below freezing.
+• Monitoring weather forecasts, icing potential charts, and pilot reports (PIREPs) can help pilots identify areas of potential icing and make informed decisions to avoid or mitigate the risk.
+• VFR pilots should maintain a safe distance from visible moisture and ice-producing conditions to prevent the accumulation of ice on the aircraft surfaces.
+
+How does meteorology, specifically freezing level information, impact Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+• The freezing level is the altitude in the atmosphere where the temperature drops below freezing, leading to the formation of ice crystals or supercooled water droplets.
+• Knowledge of the freezing level is essential for VFR pilots to anticipate the presence of icing conditions at various altitudes and plan routes accordingly.
+• Freezing level information can be obtained from weather forecasts, pilot reports, and atmospheric soundings, allowing pilots to determine the likelihood of encountering icing conditions along their intended flight path.
+• Pilots should be especially cautious when flying near the freezing level, as rapid changes in temperature and moisture can increase the risk of encountering icing conditions, even in VMC.
+• Utilizing weather briefing services and maintaining communication with air traffic control can help VFR pilots stay informed about freezing level information and make appropriate adjustments to their flight plans to ensure safe operations.
+
+Meteorology applicable to visual flight rules (VFR) in Visual Meteorological Conditions (VMC) - Fog/mist
+
+How does fog and mist impact VFR operations in VMC?
+Visibility Reduction:
+Fog and mist reduce visibility, making it challenging for pilots to maintain visual references.
+Awareness:
+Pilots must anticipate fog and mist formation, especially in low-lying areas during cool, humid conditions.
+Preparation:
+Monitoring weather forecasts and visibility reports helps pilots plan for potential fog or mist.
+Caution:
+Pilots should exercise caution when encountering fog or mist, as it poses a hazard to navigation.
+Response:
+If encountered, pilots should consider diverting or initiating IFR procedures if available.
+Navigation Assistance:
+Utilizing navigation aids and maintaining communication with ATC aids safe navigation through fog or mist conditions.
+
+Meteorology applicable to visual flight rules (VFR) in Visual Meteorological Conditions (VMC) - Frost
+
+How does meteorology, specifically frost, impact Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+Frost:
+Frost forms on aircraft surfaces when temperatures are below freezing and moisture is present, posing a hazard to flight.
+Impact on Aerodynamics:
+Frost disrupts airflow over the aircraft's surfaces, reducing lift and increasing drag, affecting aircraft performance.
+Decreased Lift:
+Frost on wings reduces lift, affecting the aircraft's ability to generate sufficient lift for takeoff and climb.
+Increased Drag:
+Frost increases drag, reducing airspeed and affecting aircraft control and maneuverability.
+Safety Concerns:
+Frost can obscure critical surfaces such as wings, control surfaces, and sensors, compromising pilot visibility and aircraft systems.
+Pre-flight Inspection:
+Pilots must conduct thorough pre-flight inspections to detect and remove frost from aircraft surfaces before flight.
+De-icing Procedures:
+De-icing procedures, such as using de-icing fluids or heated surfaces, are necessary to remove frost and ensure safe flight operations.
+Regulatory Compliance:
+Adhering to regulations regarding frost removal and aircraft de-icing is essential to ensure compliance and safety during VFR flight in VMC conditions.
+
+Meteorology applicable to visual flight rules (VFR) in Visual Meteorological Conditions (VMC) - Obstructions to visibility (e.g., smoke, haze, volcanic ash, etc.)
+
+How do meteorological factors such as smoke, haze, volcanic ash, etc., impact Visual Flight Rules (VFR) operations in Visual Meteorological Conditions (VMC)?
+Reduced Visibility:
+Smoke, haze, volcanic ash, and other obstructions reduce visibility, making it challenging for pilots to maintain visual references.
+Hazards to Navigation:
+Reduced visibility increases the risk of mid-air collisions and hazards to navigation, requiring heightened vigilance from pilots.
+Adverse Effects on Flight Performance:
+Smoke, haze, and ash particles can degrade aircraft performance by affecting engine efficiency, aerodynamics, and sensor accuracy.
+
+Flight deck instrument displays of digital weather and aeronautical information.
+
+How do flight deck instrument displays of digital weather and aeronautical information enhance Visual Flight Rules (VFR) operations?
+Real-Time Weather Data:
+Digital weather displays provide pilots with real-time weather information, including radar imagery, satellite data, and weather forecasts, enabling better situational awareness and informed decision-making during flight.
+Terrain and Obstacle Awareness:
+Aeronautical information displays show terrain features, obstacles, and terrain clearance information, helping pilots navigate safely and avoid terrain-related hazards during VFR flight.
+Enhanced Navigation:
+Integration of digital navigation charts and maps allows pilots to visualize their route, waypoints, and airspace boundaries, enhancing navigation accuracy and efficiency during VFR operations.
+Traffic Awareness:
+Traffic alerting systems display nearby aircraft traffic, highlighting potential collision threats and enabling pilots to take evasive action to maintain separation and avoid mid-air collisions.
+
+The applicant exhibits the skill to: Use available aviation weather resources to obtain an adequate weather briefing. Analyze the implications of at least three of the conditions listed in K3a through K3l, using actual weather or weather conditions provided by the evaluator. Correlate weather information to make a go/no-go decision.

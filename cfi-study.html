@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CFI Study Guide — DragonBroSY</title>
+  <meta name="description" content="Narrated chapter-by-chapter audio of a Flight Instructor (CFI) ACS study guide, Areas of Operation I through VI, organized by ACS task, with transcripts." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { overflow-x: hidden; }
+    body { background: #f5f7fa; color: #1a2a3a; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; overflow-x: hidden; max-width: 100vw; }
+    .nav { background: #1a3a6b; border-bottom: 3px solid #c8a400; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-brand { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: #fff; font-size: 1.05rem; font-weight: 800; }
+    .nav-brand .wing { font-size: 1.2rem; }
+    .nav-links { display: flex; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.73rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; padding: 0 0.9rem; height: 56px; display: flex; align-items: center; border-bottom: 3px solid transparent; margin-bottom: -3px; transition: color 0.15s, border-color 0.15s; }
+    .nav-links a:hover { color: #fff; border-bottom-color: #c8a400; }
+    .nav-links a.active { color: #fff; border-bottom-color: #c8a400; }
+    @media (max-width: 640px) {
+      .nav { padding: 0 1rem; }
+      .nav-brand { font-size: 0.9rem; flex-shrink: 0; }
+      .nav-links { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; max-width: 58vw; }
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links a { padding: 0 0.55rem; font-size: 0.64rem; flex-shrink: 0; }
+    }
+    .main { max-width: 780px; margin: 2.5rem auto; padding: 0 1.1rem; flex: 1; min-width: 0; }
+    h1 { font-size: 1.8rem; font-weight: 800; color: #1a2a3a; letter-spacing: -0.02em; margin-bottom: 0.4rem; }
+    .subtitle { font-size: 0.84rem; color: #6a8aaa; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid #c8a400; }
+    .chapter { background: #fff; border: 1px solid #dde5ef; border-left: 3px solid #c8a400; border-radius: 8px; padding: 1rem 1.2rem; margin-bottom: 0.75rem; }
+    .chapter-num { font-size: 0.6rem; color: #1a3a6b; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.3rem; font-weight: 700; }
+    .chapter-title { font-size: 0.9rem; font-weight: 700; color: #1a2a3a; margin-bottom: 0.6rem; }
+    .chapter audio { width: 100%; height: 34px; }
+    .chapter-links { margin-top: 0.55rem; }
+    .chapter-links a { font-size: 0.72rem; color: #6a8aaa; text-decoration: none; font-weight: 600; }
+    .chapter-links a:hover { color: #1a3a6b; text-decoration: underline; }
+    .section-head { font-size: 1.05rem; font-weight: 800; color: #1a2a3a; margin: 2rem 0 0.75rem; padding-bottom: 0.4rem; border-bottom: 2px solid #c8a400; }
+    .chapter-desc { font-size: 0.78rem; color: #4a6a8a; line-height: 1.45; }
+    .credit { font-size: 0.72rem; color: #6a8aaa; margin-top: 1.5rem; line-height: 1.5; }
+    .credit a { color: #1a3a6b; }
+    footer { background: #1a3a6b; border-top: 3px solid #c8a400; text-align: center; font-size: 0.6rem; color: rgba(255,255,255,0.45); padding: 1.4rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a class="nav-brand" href="/"><span class="wing">&#9992;</span> DragonBroSY</a>
+    <div class="nav-links">
+      <a href="https://dragonbrosy.github.io/Elevate-Courses/">Courses</a>
+      <a href="https://dragonbrosy.github.io/Elevate-Courses/feed.xml">Podcast</a>
+      <a href="ifr-study.html">IFR Study</a>
+      <a href="commercial-study.html">Commercial Study</a>
+      <a href="multi-study.html">Multi Study</a>
+      <a href="cfi-study.html" class="active">CFI Study</a>
+      <a href="/#logbook">Logbook</a>
+      <a href="propel.html">Propel</a>
+      <a href="log.html">Log Flight</a>
+      <a href="/#weather">Weather</a>
+      <a href="https://github.com/DragonBroSY">GitHub</a>
+    </div>
+  </nav>
+
+  <div class="main">
+    <h1>CFI Study Guide</h1>
+    <p class="subtitle">Flight instructor checkride prep, following the Flight Instructor ACS (FAA-S-ACS-25), Areas of Operation I through VI. Each chapter is one ACS task: it opens with the task&rsquo;s references, objective and elements, then works through the study questions. Listen inline or read the transcript.</p>
+
+    <h2 class="section-head">Area I &middot; Fundamentals of Instructing</h2>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 01 &middot; Task I.A</div>
+      <div class="chapter-title">Effects of Human Behavior and Communication on the Learning Process</div>
+      <audio controls preload="none" src="cfi-study/audio/01_i_a_effects_human_behavior.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/01_i_a_effects_human_behavior.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 02 &middot; Task I.B</div>
+      <div class="chapter-title">Learning Process</div>
+      <audio controls preload="none" src="cfi-study/audio/02_i_b_learning_process.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/02_i_b_learning_process.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 03 &middot; Task I.C</div>
+      <div class="chapter-title">Course Development, Lesson Plans, and Classroom Training Techniques</div>
+      <audio controls preload="none" src="cfi-study/audio/03_i_c_course_development_lesson_plans.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/03_i_c_course_development_lesson_plans.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 04 &middot; Task I.D</div>
+      <div class="chapter-title">Student Evaluation, Assessment, and Testing</div>
+      <audio controls preload="none" src="cfi-study/audio/04_i_d_student_evaluation_assessment.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/04_i_d_student_evaluation_assessment.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 05 &middot; Task I.E</div>
+      <div class="chapter-title">Elements of Effective Teaching in a Professional Environment</div>
+      <audio controls preload="none" src="cfi-study/audio/05_i_e_elements_effective_teaching.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/05_i_e_elements_effective_teaching.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 06 &middot; Task I.F</div>
+      <div class="chapter-title">Elements of Effective Teaching that Include Risk Management and Accident Prevention</div>
+      <audio controls preload="none" src="cfi-study/audio/06_i_f_elements_effective_teaching.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/06_i_f_elements_effective_teaching.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <h2 class="section-head">Area II &middot; Technical Subject Areas</h2>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 07 &middot; Task II.A</div>
+      <div class="chapter-title">Human Factors</div>
+      <audio controls preload="none" src="cfi-study/audio/07_ii_a_human_factors.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/07_ii_a_human_factors.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 08 &middot; Task II.B</div>
+      <div class="chapter-title">Visual Scanning and Collision Avoidance</div>
+      <audio controls preload="none" src="cfi-study/audio/08_ii_b_visual_scanning_collision.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/08_ii_b_visual_scanning_collision.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 09 &middot; Task II.C</div>
+      <div class="chapter-title">Runway Incursion Avoidance</div>
+      <audio controls preload="none" src="cfi-study/audio/09_ii_c_runway_incursion_avoidance.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/09_ii_c_runway_incursion_avoidance.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 10 &middot; Task II.D</div>
+      <div class="chapter-title">Principles of Flight</div>
+      <audio controls preload="none" src="cfi-study/audio/10_ii_d_principles_flight.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/10_ii_d_principles_flight.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 11 &middot; Task II.E</div>
+      <div class="chapter-title">Aircraft Flight Controls and Operation of Systems</div>
+      <audio controls preload="none" src="cfi-study/audio/11_ii_e_aircraft_flight_controls_operation.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/11_ii_e_aircraft_flight_controls_operation.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 12 &middot; Task II.F</div>
+      <div class="chapter-title">Performance and Limitations</div>
+      <audio controls preload="none" src="cfi-study/audio/12_ii_f_performance_limitations.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/12_ii_f_performance_limitations.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 13 &middot; Task II.G</div>
+      <div class="chapter-title">National Airspace System</div>
+      <audio controls preload="none" src="cfi-study/audio/13_ii_g_national_airspace_system.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/13_ii_g_national_airspace_system.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 14 &middot; Task II.H</div>
+      <div class="chapter-title">Navigation Systems and Radar Services</div>
+      <audio controls preload="none" src="cfi-study/audio/14_ii_h_navigation_systems_radar_services.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/14_ii_h_navigation_systems_radar_services.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 15 &middot; Task II.I</div>
+      <div class="chapter-title">Navigation and Cross-Country Flight Planning</div>
+      <audio controls preload="none" src="cfi-study/audio/15_ii_i_navigation_cross_country_flight.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/15_ii_i_navigation_cross_country_flight.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 16 &middot; Task II.J</div>
+      <div class="chapter-title">14 CFR and Publications</div>
+      <audio controls preload="none" src="cfi-study/audio/16_ii_j_14_cfr_publications.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/16_ii_j_14_cfr_publications.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 17 &middot; Task II.K</div>
+      <div class="chapter-title">Endorsements and Logbook Entries</div>
+      <audio controls preload="none" src="cfi-study/audio/17_ii_k_endorsements_logbook_entries.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/17_ii_k_endorsements_logbook_entries.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 18 &middot; Task II.L</div>
+      <div class="chapter-title">Water and Seaplane Characteristics, Seaplane Bases, Maritime Rules, and Aids to Marine Navigation (ASES, AMES)</div>
+      <div class="chapter-desc">ACS task only &mdash; the guide has no study questions for this seaplane task.</div>
+      <audio controls preload="none" src="cfi-study/audio/18_ii_l_water_seaplane_characteristics.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/18_ii_l_water_seaplane_characteristics.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 19 &middot; Task II.M</div>
+      <div class="chapter-title">Night Operations</div>
+      <audio controls preload="none" src="cfi-study/audio/19_ii_m_night_operations.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/19_ii_m_night_operations.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 20 &middot; Task II.N</div>
+      <div class="chapter-title">High Altitude Operations - Supplemental Oxygen</div>
+      <audio controls preload="none" src="cfi-study/audio/20_ii_n_high_altitude_operations.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/20_ii_n_high_altitude_operations.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 21 &middot; Task II.O</div>
+      <div class="chapter-title">High Altitude Operations - Pressurization</div>
+      <audio controls preload="none" src="cfi-study/audio/21_ii_o_high_altitude_operations.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/21_ii_o_high_altitude_operations.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <h2 class="section-head">Area III &middot; Preflight Preparation</h2>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 22 &middot; Task III.A</div>
+      <div class="chapter-title">Pilot Qualifications</div>
+      <audio controls preload="none" src="cfi-study/audio/22_iii_a_pilot_qualifications.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/22_iii_a_pilot_qualifications.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 23 &middot; Task III.B</div>
+      <div class="chapter-title">Airworthiness Requirements</div>
+      <audio controls preload="none" src="cfi-study/audio/23_iii_b_airworthiness_requirements.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/23_iii_b_airworthiness_requirements.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 24 &middot; Task III.C</div>
+      <div class="chapter-title">Weather Information</div>
+      <audio controls preload="none" src="cfi-study/audio/24_iii_c_weather_information.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/24_iii_c_weather_information.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <h2 class="section-head">Area IV &middot; Preflight Lesson on a Maneuver to be Performed in Flight</h2>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 25 &middot; Task IV.A</div>
+      <div class="chapter-title">Maneuver Lesson</div>
+      <audio controls preload="none" src="cfi-study/audio/25_iv_a_maneuver_lesson.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/25_iv_a_maneuver_lesson.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <h2 class="section-head">Area V &middot; Preflight Procedures</h2>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 26 &middot; Task V.A</div>
+      <div class="chapter-title">Preflight Assessment</div>
+      <audio controls preload="none" src="cfi-study/audio/26_v_a_preflight_assessment.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/26_v_a_preflight_assessment.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 27 &middot; Task V.B</div>
+      <div class="chapter-title">Flight Deck Management</div>
+      <audio controls preload="none" src="cfi-study/audio/27_v_b_flight_deck_management.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/27_v_b_flight_deck_management.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 28 &middot; Task V.C</div>
+      <div class="chapter-title">Engine Starting</div>
+      <audio controls preload="none" src="cfi-study/audio/28_v_c_engine_starting.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/28_v_c_engine_starting.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 29 &middot; Task V.D</div>
+      <div class="chapter-title">Taxiing, Airport Signs, and Lighting (ASEL, AMEL)</div>
+      <audio controls preload="none" src="cfi-study/audio/29_v_d_taxiing_airport_signs_lighting.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/29_v_d_taxiing_airport_signs_lighting.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 30 &middot; Task V.E</div>
+      <div class="chapter-title">Taxiing and Sailing (ASES, AMES)</div>
+      <audio controls preload="none" src="cfi-study/audio/30_v_e_taxiing_sailing.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/30_v_e_taxiing_sailing.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 31 &middot; Task V.F</div>
+      <div class="chapter-title">Before Takeoff Check</div>
+      <audio controls preload="none" src="cfi-study/audio/31_v_f_before_takeoff_check.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/31_v_f_before_takeoff_check.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <h2 class="section-head">Area VI &middot; Airport and Seaplane Base Operations</h2>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 32 &middot; Task VI.A</div>
+      <div class="chapter-title">Communications, Light Signals, and Runway Lighting Systems</div>
+      <audio controls preload="none" src="cfi-study/audio/32_vi_a_communications_light_signals.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/32_vi_a_communications_light_signals.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-num">Chapter 33 &middot; Task VI.B</div>
+      <div class="chapter-title">Traffic Patterns</div>
+      <audio controls preload="none" src="cfi-study/audio/33_vi_b_traffic_patterns.mp3"></audio>
+      <div class="chapter-links"><a href="cfi-study/text/33_vi_b_traffic_patterns.txt" target="_blank">Read transcript</a></div>
+    </div>
+
+    <h2 class="section-head">Resources</h2>
+    <div class="chapter">
+      <div class="chapter-num">Reference &middot; PDF</div>
+      <div class="chapter-title">Flight Instructor Study Guide (CFI ACS, Areas I&ndash;VI)</div>
+      <div class="chapter-desc">ATP Flight School &middot; 265 pages &middot; questions and comments: Flight-Standards@allatps.com</div>
+      <div class="chapter-links"><a href="cfi-study/resources/atp-cfi-acs-study-guide.pdf" target="_blank">Open PDF</a></div>
+    </div>
+    <div class="chapter">
+      <div class="chapter-num">Reference &middot; FAA</div>
+      <div class="chapter-title">Flight Instructor for Airplane Category ACS (FAA-S-ACS-25)</div>
+      <div class="chapter-desc">The FAA standard the guide follows &middot; source of each chapter&rsquo;s task table</div>
+      <div class="chapter-links"><a href="https://www.faa.gov/training_testing/testing/acs/cfi_airplane_acs_25.pdf" target="_blank" rel="noopener">Open on faa.gov</a></div>
+    </div>
+
+    <p class="credit">Source: Flight Instructor Study Guide (CFI ACS, Areas I&ndash;VI), ATP Flight School (<a href="https://atpflightschool.com" target="_blank" rel="noopener">atpflightschool.com</a>), shared with permission. Text narrated word-for-word from the guide; the ACS task tables (FAA-S-ACS-25) and the Basic Levels of Learning diagram are adapted into narrated descriptions. The guide is a supplement to the FAA references listed in each task, not a replacement for ground training with a qualified instructor.</p>
+  </div>
+
+  <footer>DragonBroSY &middot; Flight Training Log</footer>
+  <script src="last-update.js" defer></script>
+</body>
+</html>

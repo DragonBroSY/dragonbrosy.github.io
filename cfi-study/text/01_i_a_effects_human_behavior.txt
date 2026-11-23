@@ -1,0 +1,266 @@
+I.A Effects of Human Behavior and Communication on the Learning Process
+
+FLIGHT INSTRUCTOR STUDY GUIDE
+
+How to use this document:
+This study guide follows the structure of the ACS and is a supplement to the FAA resources listed in the “References” section at the top of each ACS Task. It is not a replacement for ground training with a qualified instructor. Use this guide in conjunction with the FAA-approved resources to develop a deeper level of knowledge.
+Please forward questions and comments to Flight-Standards@allatps.com
+
+Area of Operation I. Fundamentals of Instructing
+Note: The evaluator must select Task E, Task F, and at least one other Task for initial flight instructor applicants. During a practical test for an added flight instructor rating or flight instructor reinstatement, the evaluator has discretion to evaluate the applicant on Fundamentals of Instructing.
+Task A. Effects of Human Behavior and Communication on the Learning Process
+References: FAA-H-8083-2, FAA-H-8083-9, FAA-H-8083-25
+Objective: To determine the applicant understands human behavior and effective communication, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant understands and explains:
+K1. Elements of human behavior, including:
+    a. Definitions of human behavior
+    b. Instructor and learner relationship
+    c. Motivation
+    d. Human needs
+    e. Defense mechanisms
+K2. Learner emotional reactions, including:
+    a. Anxiety and stress
+    b. Impatience
+    c. Worry or lack of interest
+    d. Physical discomfort, illness, fatigue, and dehydration
+    e. Apathy due to inadequate instruction
+K3. Teaching the adult learner.
+K4. Effective communication, including:
+    a. Basic elements of communication
+    b. Barriers to effective communication
+    c. Developing communication skills
+
+Risk Management: The applicant is able to identify, assess, and mitigate risk associated with:
+R1. Recognizing and accommodating human behavior.
+R2. Barriers to communication.
+
+Skills: The applicant exhibits the skill to:
+S1. Give examples of how human behavior affects motivation and learning.
+S2. Describe what the instructor can do to deal with:
+    a. Serious abnormal emotional behavior
+    b. Defense mechanisms
+S3. Use effective communication in ground and flight instruction.
+
+
+Elements of human behavior - Definitions of human behavior (AIH 2-1)
+
+What is the definition of human behavior?
+• Human behavior has multiple definitions in AIH 2-1.
+• Human behavior is seen as the product of factors that cause people to act in predictable ways.
+• Human behavior is also defined as the result of attempts to satisfy certain needs.
+• Another definition of human behavior focuses on the typical life course of humans.
+
+Elements of human behavior - Instructor and learner relationship (AIH 2-1)
+
+What is the biggest factor in an instructor and learner relationship?
+Personality type.
+
+What is a way to bridge the gap between a difference in instructor and learner personality types?
+Personalizing the teaching style to cater to the learners’ personality.
+
+Elements of human behavior - Motivation (AIH 2-2)
+
+What is motivation?
+The reason that one acts or behaves in a certain way and lies at the heart of goals.
+
+What are some common reasons humans are motivated?
+• Promise or achievement of rewards. Such as:
+• Achieving goals
+• Financial motivation
+• Public recognition
+• Satisfaction of one’s self concept
+
+What to maintain learner motivation?
+• Ask new learners about their aviation training goals.
+• Reward incremental successes in learning.
+• Present new challenges.
+• Occasionally remind learners about their own stated goals for aviation training.
+• Assure learners that learning plateaus are normal and that improvement will resume with continued effort.
+
+Elements of human behavior - Human Needs (AIH 2-5)
+
+What are some human needs that encourage learning? Use the acronym PS-BECS
+Physiological - food, water, air, normal maintenance of the human body need to be met.
+Security - learners need to feel safe from harm in the learning environment.
+Belonging - learners need to give and receive affection in order to feel a sense of belonging. This may include reinforcement of the learner’s decision to pursue a career in aviation.
+Esteem - esteem comes from feeling good about one’s self. Depending on the learner- this can come from internal or external influences.
+Cognitive and Aesthetic
+- Cognitive: a need to know and understand.
+    - Understanding a situation empowers individuals to either control it or make informed decisions, reinforced by the brain's release of dopamine upon learning.
+- Aesthetic: the emotional need of the artist.
+    - The desires and innate feeling someone gets when they “like” something will factor into the learner-instructor relationship. For example, if an instructor does not “like” the learner- this can hinder the instructor’s ability to teach the learner consciously or subconsciously.
+Self-Actualization - occurs when all prior needs are met, involves fulfilling one's innate potential, akin to being all one can be.
+
+What is Maslow’s Hierarchy of needs?
+Maslow’s Hierarchy is a pyramid ranking of human needs, both mental and psychological, based on the strength of that need.
+
+What are the “needs” outlined in Maslow’s Hierarchy?
+Level 1: Air, Water, Food, Shelter, Sleep, Sex
+Level 2: Safety and Security
+Level 3: Love and Belongingness
+Level 4: Self-Esteem
+Level 5: Cognitive and Aesthetic (added in later years)
+Level 6: Self-Actualization: Vitality, Creativity, Self-Sufficiency, Authenticity, Playfulness, Meaningfulness
+
+Elements of human behavior - Defense mechanisms (AIH 2-9)
+
+What defense mechanisms should flight students and instructors be aware of and seek to avoid? Define and provide an aviation-related example of each.
+
+Acronym: DR DR FCPR:
+Displacement: An unconscious shift of emotion from the real source of a problem to a less threatening substitute. For example: A student is upset with his instructor, but instead of voicing their frustration to the instructor, the student takes their anger out on their significant other.
+Reaction Formation: Faking a belief opposite to the true belief because the true belief causes anxiety. For example: A student is unbearably anxious about a checkride - to cope, they respond by acting like they don’t care about the outcome.
+Denial: Refusing to accept reality because it is too painful. For example: A student fails a check ride but claims it is not technically a failure because it resulted from just one non-safety related, easily fixable mistake.
+Repression: A person places uncomfortable thoughts into inaccessible areas of the unconscious mind. For example: A father takes his son flying and botches a stall recovery, leading to a scary moment where the plane briefly enters an incipient spin. Years later as an adult flight student, the son finds he is inexplicably terrified of practicing stalls.
+Fantasy: Daydreaming about how things should be rather than doing anything about how things are. For example: Instead of studying, a student spends hours every day flying 747s in Microsoft Flight Simulator, daydreaming about how cool life will be as an airline pilot.
+Compensation: Counterbalancing perceived weaknesses by emphasizing strength in other areas. For example: A commercial student struggles with landings but acts like it’s no big deal because of how strong their steep turns are.
+Projection: Placing your own unacceptable impulses onto someone else - i.e., “It’s not me it’s them.” For example: A student fails a check ride, and instead of showing accountability for their clear knowledge deficiencies, blames the examiner for being overly thorough.
+Rationalization: A subconscious technique for justifying actions that otherwise would be unacceptable. For example: A student is unprepared for a mock and fails it, but rationalizes that it’s not a big deal because the failure doesn’t go on their FAA flight record, and there’s still plenty of time to prepare for the check ride.
+
+Learner emotional reactions - Anxiety and stress (AIH 2-12)
+
+What is Anxiety?
+It involves a sense of apprehension or fear about what's to come, especially when the outcome is uncertain or potentially negative. Anxiety can manifest in various ways, from mild discomfort to severe distress, and it often accompanies situations where control or predictability is lacking.
+
+What are normal reactions to stress?
+The student responds rapidly and exactly within the limits of their experience and training.
+
+What are abnormal reactions to stress?
+Acronym: PRE SIM
+• Painstaking self control
+• Rapid changes in emotion
+• Extreme over-cooperation
+• Severe anger
+• Inappropriate laughter or singing
+• Marked changes in mood
+If serious abnormalities are noted during training, the instructor may suspend instruction with the learner until further steps are taken to deem the learner fit to fly.
+
+Describe how an instructor can identify and address a learner's anxiety during flight training.
+An instructor can identify a learner’s anxiety through various indicators such as nervous behavior, hesitation in performing maneuvers, or excessive questioning. To address this, the instructor should discuss the learner's fears openly, ensuring they understand that such feelings are common and manageable. They can also provide additional support or adapt the pace of training to help the learner build confidence.
+
+Learner emotional reactions - Impatience (AIH 2-12)
+
+How does an Instructor correct learner impatience?
+By presenting the necessary preliminary training one step at a time, with clearly stated goals for each step. Impatience can worsen when unnecessary time and practice is spent on a specific task or skill.
+
+Learner emotional reactions - Worry or lack of interest (AIH 2-13)
+
+What is the effect of worry or lack of interest on learning?
+Worried or emotionally upset students are not ready to learn, as they are unable to devote enough energy and focus towards learning new material.
+
+What is the most effective cure to worry or lack of interest?
+Prevention is the most effective cure. While the instructor cannot be responsible for outside diversions- the instructor should be aware of the learner's mental state and ensure that the student is informed about their objectives and progress.
+
+Learner emotional reactions - Physical discomfort, illness, fatigue, and dehydration (AIH 2-13)
+
+What are the effects of physical discomfort and illness on learning?
+Slows the rate of learning. Physical discomfort inhibits the ability of the learner to devote their total attention to the learning experience.
+
+What is acute fatigue?
+A result of normal everyday living, it’s the tiredness felt after long periods of physical and mental strain. It’s characterized by:
+- Inattention
+- Distractibility
+- Errors in timing
+- Neglect of secondary tasks
+- Loss of accuracy and control
+- Lack of awareness of error accumulation
+- Irritability
+
+How can an instructor mitigate the effects of acute fatigue?
+By keeping the duration of flight training and learning sessions to only as long as the learner is attentive and receptive to information.
+
+What is chronic fatigue?
+A result of inadequate time for recovery from repeated episodes of acute fatigue. It’s a combination of physiological and psychological issues that have serious impacts on human performance.
+
+What is dehydration and what are its effects?
+Dehydration is the critical loss of water from the body. It reduces a pilot’s level of alertness and impairs the decision making process. It is most often encountered while flying in high temperatures or high altitudes.
+
+Learner emotional reactions - Apathy due to inadequate instruction (AIH 2-14)
+
+What effect does inadequate instruction have on a learner?
+Nothing destroys a learner’s interest as quickly as a poorly organized period of instruction. This includes poor preparation, presentations, distracting mannerisms, personal uniqueness, and appearance of irritation with the learner. Once an instructor loses learner confidence, it is near impossible to regain and the learning rate is diminished.
+
+Teaching the adult learner (2-17)
+
+What characteristics do adult learners possess?
+• Adults seek learning primarily for its practical application, often driven by specific needs or life events.
+• They are autonomous, drawing from their experiences and preferring relevance and immediate application.
+• Goal-oriented and practical, adults prioritize aspects of lessons useful for their work.
+• Like all learners, adults require respect and find motivation in bolstering their self-esteem.
+• They are eager to solve problems and apply newfound knowledge promptly.
+
+How can instructors help adult learners?
+• Design a training syllabus with clear course objectives that demonstrate how the training aids in achieving specific goals.
+• Facilitate the integration of new concepts with existing knowledge to promote retention and application.
+• Clarify learner expectations early on and allow them autonomy in controlling pace and timing.
+• Offer frequent scenario-based training to capitalize on adult learners' preference for self-direction.
+• Encourage collaboration and resource utilization while avoiding excessive guidance or isolation.
+• Utilize resources like books, programmed instruction, and computers, which are favored by adult learners.
+• Foster a cooperative learning environment and involve learners in mutual planning, avoiding excessive hand-holding.
+
+Effective communication - Basic elements of communication (AIH 4-2)
+
+What are the basic elements of communication? Teach the acronym SSR
+Source (sender, speaker, writer, encoder, transmitter, or instructor)
+The effectiveness of the source relies on three main factors: Firstly, their skill in selecting and utilizing language is crucial for conveying meaningful symbols to the audience. Secondly, communicators inadvertently disclose information about themselves, including their self-perception and attitude towards the message and recipients. Lastly, successful communicators rely on accurate, current, and engaging content to maintain audience interest and credibility.
+Symbols used in composing and transmitting the message (words or signs [model prop/desk lamp in Figure 4-1])
+The first element in effective communication is the usage of precise words or symbols that are chosen based on the receiver's ability to understand and interpret them. Receiver (listener, reader, decoder, or learner)
+The receiver is the individual or learner to whom the message is directed. When the source’s message impacts the receiver in the intended manner. Effective communication has occurred.
+
+Effective communication - Barriers to effective communication (4-4)
+
+What are the barriers to effective communication? Use the acronym COEIL
+Confusion Between the Symbol and the Symbolized Object
+Words and symbols do not always represent the same thing to every person. To communicate effectively, speakers and writers should account for possible misinterpretation. Words and symbols can then be chosen to represent what the speaker or writer intends.
+Overuse of Abstractions
+Concrete words or terms refer to objects people can relate directly to their own experiences. These words or terms specify an idea that can be perceived or a thing that can be visualized. Abstract words, on the other hand, stand for ideas that cannot be directly experienced, things that do not call forth mental images in the minds of the learners.
+External Factors
+Others are external factors outside of the instructor’s control that prevents a process or activity from being carried out properly. These factors may include physiological, environmental, and psychological elements. To communicate effectively, the instructor should consider the effects of these factors and mitigate them where possible.
+Interference
+While the instructor or learner may believe that an intact message has been sent and received, the assumption may be inaccurate. Noise and other factors may distort the message. Psychological factors also interfere with the receipt of a message.
+Lack of Common Experience
+Communication can be effective only to the extent that the experiences (physical, mental, and emotional) of the participants are similar.
+
+Effective communication - Developing communication skills (AIH 4-6)
+
+How can a CFI develop their communication skills?
+Through experience and practice.
+
+What are 5 different ways to practice and develop their communication skills? Use the acronym LIQIR
+Listening: Listening is hearing with comprehension. Instructors play a crucial role in effective communication with their learners, requiring an understanding of their learners' capabilities. Developing good listening skills is essential for instructors to establish rapport and comprehension with their students. On top of that, it is also essential for learners to want to listen. Emotions can interfere with effective listening, necessitating strategies to mitigate distractions and anxieties. Encouraging learners to focus on main ideas and purposeful listening aids in understanding complex concepts. By incorporating these techniques, instructors facilitate improved information retention among learners, ultimately fostering better communication and learning outcomes.
+Instructional Communication: Effective instructional communication involves the instructor guiding learners through procedures and assessing their performance to ensure desired outcomes. Instructors are encouraged to draw from their expertise and confidence in the subject matter to enhance instruction. Evaluation methods tailored to the specific learning goals are vital for assessing learner progress. Understanding the underlying principles behind tasks is emphasized to promote comprehensive learning. This involves not only knowing how to perform tasks but also understanding the reasons behind them. Assessments are utilized to gauge the depth of learners' understanding, ensuring that they grasp the concepts effectively. (Elaborated upon in AIH Chapter 6: Assessments)
+Questioning: Effective questioning plays a crucial role in gauging learner comprehension and fostering engagement between instructors and learners. It demonstrates the instructor's attentiveness and interest in the learner's perspective. Instructors should pose focused, open-ended questions to encourage meaningful responses and allow for further exploration of topics. Open-ended questions, starting with words like "why" and "how," prompt objective answers and promote deeper understanding, whereas closed-ended questions often yield limited, rote responses.
+Instructional Enhancement
+Continuous learning is crucial for instructors. While professional development is discussed further in AIH Chapter 8, deepening subject knowledge enhances instructional effectiveness. Additional knowledge and training boost confidence and enrich instructional presentations. However, instructors must tailor their approach to the learner's level to ensure relevance and engagement.
+Role Playing: Role playing is a learning technique where participants take on specific roles within a given scenario. Instead of merely absorbing information, learners actively engage by embodying a role and applying their knowledge or skills to address the situation presented. This method allows individuals to gain practical experience by simulating real-life interactions.
+
+The applicant exhibits the skill to: Give examples of how human behavior affects motivation and learning (AIH 2-2)
+
+How does human behavior influence motivation and learning in the context of aviation instruction?
+Response to Failure
+Some learners might view failure as a setback and lose confidence, while others see it as an opportunity to learn and improve. Instructors can foster a growth mindset by encouraging learners to view challenges as opportunities to develop their skills.
+Intrinsic vs. Extrinsic Motivation
+Learners motivated intrinsically are driven by personal satisfaction and interest in the subject itself, whereas extrinsically motivated learners might seek to learn for rewards or recognition. Providing clear, real-world applications of flying skills can enhance intrinsic motivation, while offering praise or certificates might better motivate extrinsically driven learners.
+Emotional State
+The emotional state of a learner, such as anxiety or excitement, can influence their ability to absorb information and perform tasks.
+
+Describe what the instructor can do to deal with serious abnormal emotional behavior (AIH 2-15)
+
+What strategies can an aviation instructor employ to effectively handle serious abnormal emotional behavior in a student pilot?
+When faced with abnormal reactions to stress, a flight instructor should approach the situation with sensitivity and professionalism. Firstly, they should assess the severity of the abnormal reactions and ensure the safety of everyone involved. Then, they should strive to understand the underlying cause of the abnormal reactions, whether it be fear, anxiety, or other psychological factors. It's crucial for the instructor to remain calm and supportive while guiding the individual through coping strategies or seeking appropriate assistance if necessary. Clear communication, reassurance, and empathy are key in helping the individual manage stress effectively and continue their training with confidence. Additionally, the flight instructor should document the incident appropriately and follow any established protocols for addressing psychological concerns within the training program.
+
+Describe what the instructor can do to deal with defense mechanisms (AIH 2-12)
+
+How can an aviation instructor effectively address and manage defense mechanisms displayed by a student pilot during instruction?
+A proficient instructor should possess knowledge of common defense mechanisms and related behavioral issues. Through empathetic discussion and practical insights, an instructor can aid learners in overcoming challenges, prioritizing the restoration of motivation and self-assurance. It's essential to recognize the delicate nature of the human psyche, as improper approaches may cause harm. In severe cases where deep psychological issues are a concern, prompt and expert intervention is crucial. In such instances, instructors should advise learners to seek assistance from qualified counselors.
+- Encourage reflection and introspection to help the student identify the underlying reasons for employing defense mechanisms.
+- Provide specific and constructive feedback on performance to help the student confront areas of improvement without feeling threatened.
+- Utilize motivational techniques such as positive reinforcement and encouragement to boost the student's confidence and willingness to address challenges.
+
+Use effective communication in ground and flight instruction (AIH 4-2)
+
+How does the use of effective communication contribute to successful ground and flight instruction in aviation training?
+Ground Instruction
+Use clear, concise language, Engage learners by asking questions, encouraging them to ask questions, and facilitating discussions. Visual aids can help bridge understanding, provide regular feedback on learners’ progress. Adapt communication styles to match the diverse learning preferences of students.
+Flight Instruction
+Pre-Flight Briefing, Use of Standard Phraseology. Stay calm and composed, even in stressful situations. Active Listening, Post-Flight Debrief

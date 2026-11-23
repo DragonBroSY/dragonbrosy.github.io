@@ -1,0 +1,88 @@
+III.B Airworthiness Requirements
+
+Task B. Airworthiness Requirements
+References: 14 CFR parts 23, 39, 43, 91; FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-23, FAA-H-8083-25
+Objective: To determine the applicant understands airworthiness requirements, including aircraft certificates, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. General airworthiness requirements and compliance for airplanes, including:
+    a. Location and expiration dates of required aircraft certificates
+    b. Required inspections and aircraft logbook documentation
+    c. Airworthiness Directives and Special Airworthiness Information Bulletins
+    d. Purpose and procedure for obtaining a special flight permit
+K2. Pilot-performed preventive maintenance.
+K3. Equipment requirements for day and night VFR flight, including:
+    a. Flying with inoperative equipment
+    b. Using an approved Minimum Equipment List (MEL)
+    c. Kinds of Operation Equipment List (KOEL)
+    d. Required discrepancy records or placards
+K4. Standard and special airworthiness certificates and their associated operational limitations.
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Inoperative equipment discovered prior to flight.
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Locate and describe airplane airworthiness and registration information.
+S2. Determine the airplane is airworthy in the scenario given by the evaluator.
+S3. Apply appropriate procedures for operating with inoperative equipment in a scenario given by the evaluator.
+
+
+General airworthiness requirements and compliance for airplanes - Location and expiration dates of required aircraft certificates
+
+What are the general airworthiness requirements regarding the location and expiration dates of required aircraft certificates?
+According to FAA regulations, aircraft operating within the United States must have their required certificates, such as the airworthiness certificate, registration certificate, and operating limitations, readily accessible in the aircraft. These certificates must be displayed at all times during operation and must not be expired.
+
+General airworthiness requirements and compliance for airplanes - Required inspections and aircraft logbook documentation
+
+What are the general airworthiness requirements for airplanes regarding required inspections and aircraft logbook documentation?
+General airworthiness requirements for airplanes mandate compliance with periodic inspections outlined in the aircraft's maintenance manual or regulatory standards. These inspections cover various components such as airframe, engine, propeller, avionics, and instruments. Additionally, thorough documentation of all maintenance activities, inspections, repairs, and alterations must be recorded in the aircraft's logbooks, including details such as dates, descriptions of work performed, and the signatures of qualified personnel. This documentation ensures traceability and compliance with airworthiness standards.
+
+General airworthiness requirements and compliance for airplanes - Airworthiness Directives and Special Airworthiness Information Bulletins
+
+How do Airworthiness Directives (ADs) and Special Airworthiness Information Bulletins (SAIBs) ensure compliance with general airworthiness requirements?
+• Airworthiness Directives (ADs) mandate corrective actions for unsafe conditions in aircraft, engines, etc.
+• Special Airworthiness Information Bulletins (SAIBs) provide non-mandatory safety information.
+• ADs require mandatory compliance, while SAIBs offer valuable guidance for safety enhancement.
+
+General airworthiness requirements and compliance for airplanes - Purpose and procedure for obtaining a special flight permit
+
+What are the general airworthiness requirements and compliance procedures for airplanes, and what is the purpose and procedure for obtaining a special flight permit?
+General airworthiness requirements for airplanes include compliance with regulations such as proper maintenance, inspections, and adherence to approved design data. A special flight permit, also known as a ferry permit, is issued for aircraft that do not meet airworthiness standards but are capable of safe flight under specific conditions. To obtain a special flight permit, the aircraft owner or operator must apply to the appropriate aviation authority, providing necessary documentation and demonstrating the need for the permit, such as for flight to a maintenance facility for repairs.
+
+Pilot-performed preventive maintenance
+
+What is pilot-performed preventive maintenance, and what regulations govern it?
+Pilot-performed preventive maintenance refers to the maintenance tasks authorized by the Federal Aviation Regulations (FARs) that a pilot with proper training and certification can perform on an aircraft they own or operate. These tasks are outlined in FAR Part 43 Appendix A, and they include activities such as changing tires, replacing spark plugs, and servicing landing gear shock struts, among others. It's essential for pilots to adhere strictly to the regulations and guidelines provided to ensure the safety and airworthiness of the aircraft.
+
+Equipment requirements for day and night VFR flight - Flying with inoperative equipment
+
+What are the equipment requirements for conducting day and night VFR flights, and what considerations should a pilot make when flying with inoperative equipment?
+For day VFR flight, aircraft must be equipped with instruments and equipment appropriate to the type of operation. This includes those items listed in 91.205. Acronyms ATOMATOFLAMES and FLAPS are most commonly used.
+When flying with inoperative equipment, pilots must adhere to FAA regulations outlined in 14 CFR 91.213.
+
+Equipment requirements for day and night VFR flight - Using an approved Minimum Equipment List (MEL)
+
+What is the purpose of using an approved Minimum Equipment List (MEL) for day and night VFR flight regarding equipment requirements?
+The MEL allows pilots to legally conduct day and night VFR flights by specifying the minimum equipment required for safe operation when certain components are inoperative.
+
+How would you know that your airplane has an MEL?
+An MEL affects the type certificate and therefore there would be mention of it in the Supplements section of the POH/AFM.
+
+Equipment requirements for day and night VFR flight - Kinds of Operation Equipment List (KOEL)
+
+What is the purpose of the Kinds of Operation Equipment List (KOEL) regarding equipment requirements for day and night VFR flight?
+The KOEL serves to outline the specific equipment necessary for different kinds of operations, ensuring compliance with regulations and enhancing safety during both day and night Visual Flight Rules (VFR) flights.
+
+Equipment requirements for day and night VFR flight - Required discrepancy records or placards
+
+What are the equipment requirements for both day VFR flight and night VFR flight, and what is the procedure regarding required discrepancy records or placards?
+For both day VFR flight and night VFR flight, the aircraft must be equipped with the appropriate instruments and equipment as outlined in FAR Part 91.205. This includes items such as an airspeed indicator, altimeter, magnetic direction indicator (compass), and a functioning set of navigation lights for night flight. Any discrepancies with the required equipment must be addressed before flight. If any equipment is found to be inoperative or missing, a placard indicating the discrepancy and its effect on flight safety must be installed, and the aircraft's maintenance records must reflect the discrepancy and any subsequent maintenance actions taken.
+
+Standard and special airworthiness certificates and their associated operational limitations
+
+What are the two main types of airworthiness certificates issued by the Federal Aviation Administration (FAA), and what are their associated operational limitations?
+The two main types of airworthiness certificates issued by the FAA are Standard and Special Airworthiness Certificates.
+• Standard Airworthiness Certificates are issued for normal, utility, acrobatic, commuter, or transport category aircraft. They are subject to all applicable airworthiness regulations and standards, and their operational limitations are defined by those regulations.
+• Special Airworthiness Certificates, on the other hand, are issued for aircraft that do not meet the criteria for standard airworthiness. These include categories such as experimental, restricted, and provisional certificates. Operational limitations for these aircraft are specific to the conditions under which they were issued, often with restrictions on operation, maintenance, and flight testing.
+
+The applicant exhibits the skill to: Locate and describe airplane airworthiness and registration information. Determine the airplane is airworthy in the scenario given by the evaluator. Apply appropriate procedures for operating with inoperative equipment in a scenario given by the evaluator.

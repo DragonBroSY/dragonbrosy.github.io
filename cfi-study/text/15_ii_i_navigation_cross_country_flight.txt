@@ -1,0 +1,268 @@
+II.I Navigation and Cross-Country Flight Planning
+
+Task I. Navigation and Cross-Country Flight Planning
+Note: Preparation, presentation, and explanation of a computer-generated flight plan is an acceptable option.
+References: 14 CFR part 91; AIM; Chart Supplements; FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-25, NOTAMs; VFR Navigation Charts
+Objective: To determine the applicant understands navigation and cross-country flight planning, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Route planning, including consideration of different classes and special use airspace (SUA) and selection of appropriate and available navigation/communication systems and facilities.
+K2. Altitude selection accounting for terrain and obstacles, glide distance of airplane, visual flight rules (VFR) cruising altitudes, and effect of wind.
+K3. Plotting a course.
+K4. Power setting selection.
+K5. Calculating:
+    a. Time, climb and descent rates, course, distance, heading, true airspeed, and groundspeed
+    b. Estimated time of arrival, including conversion to universal coordinated time (UTC)
+    c. Fuel requirements, including reserve
+K6. Elements of a VFR flight plan.
+K7. Correlate weather information to make a go/no-go decision.
+K8. Procedures for activating and closing a VFR flight plan.
+K9. Magnetic compass errors.
+K10. Pilotage and dead reckoning.
+K11. Planned calculations versus actual results and required corrections.
+K12. Diversion and lost procedures.
+K13. Inflight intercept procedures.
+K14. Use of an electronic flight bag (EFB), if used.
+K15. Chart symbols.
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Pilot.
+R2. Aircraft.
+R3. Environment (e.g., weather, airports, airspace, terrain, obstacles).
+R4. External pressures.
+R5. Limitations of air traffic control (ATC) services.
+R6. Fuel planning.
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Prepare, present, and explain a cross-country flight plan assigned by the evaluator, including a risk analysis to the first fuel stop.
+S2. Apply pertinent information from appropriate and current aeronautical charts, Chart Supplements; Notices to Air Missions (NOTAMs) relative to airport, runway and taxiway closures; and other flight publications.
+S3. Create a navigation plan and simulate filing a VFR flight plan.
+S4. Recalculate fuel reserves based on a scenario provided by the evaluator.
+
+
+Route planning, including consideration of different classes and special use airspace (SUA) and selection of appropriate and available navigation/communication systems and facilities.
+
+When teaching the learner about route planning it’s important to include the use of navigational aids like VFR waypoints, distinct visual check points and VORs. Have the learner include the VOR names and morse codes associated with those VORs along their route in the navigation log. This is useful if the learner becomes lost and needs a way of identifying their position. Tune and ID two VOR’s center the needle to determine which radial they are on for each VOR and find the intersection on the chart.
+Use easily identifiable points from the air like VFR checkpoints or distinct structures when route planning.
+A straight line of navigation is not alway the best route to take when planning a route. Be sure to consider if the route chosen will have the learner flying through Special use airspace like MOA’s and restricted areas. If that is the case they will need to exercise extreme caution and in some cases get permission from controlling agencies.
+If the plane is equipped with GPS, teach the learner how to properly input the navigation route into the GPS’s flight plan page to enhance situational awareness and position.
+
+What documents can be used to find the governing agency for each Special Use Airspace including their frequency?
+The VFR Sectional chart legend
+
+Altitude selection accounting for terrain and obstacles, glide distance of airplane, visual flight rules (VFR) cruising altitudes, and effect of wind
+
+What are the VFR cursing altitudes?
+East bound flights are Even thousands above 3000ft plus 500, West bound flights are odd thousand plus 500 above 3000ft. The altitude selection east and west are based on magnetic course.
+
+What should the learner do when selecting an altitude and accounting for terrain and obstacles?
+Reference the Maximum elevation figure (MEF) in each quadrant.
+
+What resource should you direct the learner to when selecting an altitude taking winds into account?
+Winds aloft chart.
+
+When selecting an altitude for your flight, what document would you use to find the gliding distance of your aircraft?
+The POH
+Instructors should be teaching the learner to take all these factors into account when selecting their VFR cruising altitude, each one plays an important role in safety and performance of the airplane. An additional consideration should be airspace, will the altitude selection help navigate above any airspaces along the route, if not is that airspace legal for the learner to fly through? What's the required equipment to navigate in that airspace? All these are important factors when selecting an altitude.
+
+Plotting a course
+
+Make sure the instructor teaches the learner to take magnetic variation into account when converting to magnetic heading. Use the variation line that's closest to the route. The variation may change along the route depending on the direction flown, specifically east and west headings vs north and south. Instructors should also make sure the learner is aware of the difference between nautical miles and statute miles and which measurement to use when plotting a course. This is important when it comes to performance calculations like fuel burn and estimated time enroute.
+
+When using a plotter are you referencing magnetic or true north?
+True North
+
+Power setting selection
+
+What should the learner reference when selecting a power setting?
+The performance charts in the POH
+
+What factors need to be taken into account when selecting a power setting?
+Cruising altitude, fuel burn, TAS and outside air temperature
+
+What is BHP?
+Brake horsepower. Brake horsepower is a measurement of an engine's power output, representing the amount of work the engine can do. It's called "brake" horsepower because it's measured using a brake mechanism that absorbs the engine's power output. This measurement is commonly used to quantify the power of aircraft engines.
+Instructors should teach the learner to carefully read the full performance chart when selecting a power setting, one common error the learner falls victim to is not reading the notes on the chart which could change the selected power setting based on a number of factors. This holds true on any performance chart from the POH.
+
+Calculating - Time, climb and descent rates, course, distance, heading, true airspeed, and groundspeed
+
+Learners should be taught to use nautical miles when calculating distance and knots for speed calculations. Use the performance charts to help determine time, top of climb and descent rates.
+
+Which tools should the instructor teach the learner how to use when determining information like course, true airspeed and ground speed?
+The E6B and the plotter.Learners should be taught to use both the paper E6B and electronic E6B. The electronic E6B has the advantage of being user friendly but is dependent on battery power.
+
+Define true airspeed?
+True airspeed (TAS) is the speed of an aircraft relative to the surrounding air mass. TAS takes into account factors such as altitude, temperature, and air density, providing a more accurate measure of the aircraft's actual speed through the air.
+
+Calculating - Estimated time of arrival, including conversion to universal coordinated time (UTC)
+
+When planning a flight, how do you calculate the estimated time of arrival (ETA), and what steps are involved in converting it to Universal Coordinated Time (UTC)?
+To calculate the estimated time of arrival (ETA) for a flight, you typically start with the scheduled departure time and add the estimated duration of the flight. This duration is influenced by factors such as distance, wind speed and direction, aircraft performance, and any planned stops or waypoints along the route.
+• Determine Departure Time
+• Estimate Flight Duration
+• Add Flight Duration to Departure Time
+• Convert to UTC
+    • If the departure location is ahead of UTC, subtract the number of hours of the time difference.
+    • If the departure location is behind UTC, add the number of hours of the time difference.
+• Check for Daylight Saving Time (DST)Final ETA in UTC
+
+Calculating - Fuel requirements, including reserves
+
+Teach the learner about personal minimums when it comes to fuel requirements and that they should have their own. Personal minimums for fuel is the same concept for personal minimums with weather and other factors like hours of sleep in a certain time period and sickness in the past x number of days. Add together the personal minimum fuel with the FAA requirements for a total amount of fuel reserve upon landing at the destination.
+
+What regulation covers VFR Fuel requirements?
+14 CFR 91.151
+
+Elements of a VFR flight plan
+
+What are all of the elements required in a VFR flight plan?
+Regulation 14 CFR 91.153 outlines the required information for a VFR flight plan.
+
+Correlate weather information to make a go/no-go decision
+
+How can a flight instructor effectively correlate various weather information to make a go/no-go decision for a flight?
+• Evaluate current weather conditions using various sources such as METARs, TAFs, and weather radar.
+• Assess how weather conditions may change during the planned flight time.
+• Consider weather trends and patterns in the local area.
+• Analyze the significance of weather phenomena like fog, thunderstorms, icing, and turbulence on flight safety.
+• Determine the impact of weather on factors such as visibility, ceiling, wind, and temperature on the intended flight.
+• Utilize tools and resources like weather briefing services, weather apps, and aviation weather websites for up-to-date information.
+• Prioritize safety and exercise good judgment in determining whether the weather is suitable for the planned flight.
+
+Procedures for activating and closing a VFR flight plan
+
+What are the procedures for activating a VFR flight plan?
+Contact a Flight Service Station (FSS) or air traffic control facility to activate the VFR flight plan before departure. Provide necessary information such as aircraft identification, departure point, destination, estimated time en route, and fuel onboard. Alternatively, activate the flight plan through Flight Service on the ground or in the air using radio communication.
+
+What are the procedures for closing a VFR flight plan?
+Close the VFR flight plan upon arrival by contacting FSS, air traffic control, or via telephone. Failure to close a VFR flight plan within a specified time frame may result in search and rescue procedures being initiated.
+
+Magnetic compass errors
+
+What are the various types of magnetic compass errors, and how do they affect aircraft navigation? Use Acronym DVMONA
+Deviation:
+Deviation is caused by magnetic influences within the aircraft, such as electrical systems and metal components. It varies with the aircraft's heading and affects the accuracy of the magnetic compass.
+Variation:
+Variation is the angular difference between true north and magnetic north. It varies based on geographic location and affects the reading of the magnetic compass.
+Magnetic Dip Error:
+Dip error is caused by the inclination of the Earth's magnetic field. It causes the compass to indicate incorrectly when the aircraft is in a bank or during climbs or descents.
+Oscillation:
+Occurs when the magnetic compass exhibits unwanted variations or fluctuations in its readings. These oscillations can manifest as erratic needle movements or instability in the compass indication.
+Northerly Turning Error:
+Northerly turning error occurs when turning from an east or west heading to a northerly heading. It causes the compass to initially indicate a turn in the opposite direction.
+Acceleration and Deceleration Errors:
+Acceleration and deceleration errors occur due to the forces acting on the compass during changes in speed. They cause the compass card to lag or lead during acceleration or deceleration.
+How They Affect Navigation:
+Magnetic compass errors can lead to inaccuracies in navigation, especially when relying solely on the magnetic compass. Pilots must be aware of these errors and use proper techniques to correct for them, such as using other navigation instruments or applying appropriate corrections.
+
+Pilotage and dead reckoning
+
+What is dead reckoning?
+Dead reckoning (DR) is the navigation technique of estimating aircraft position based on a previously known position, course, speed, and time elapsed.
+• It involves plotting the initial position on a chart, then calculating subsequent positions by accounting for the aircraft's heading, groundspeed, wind correction, and time.
+• Dead reckoning requires accurate knowledge of the aircraft's performance, wind conditions, and timekeeping.
+• It is commonly used when visual references are limited or unavailable, such as during night flights or in adverse weather conditions.
+
+What is the difference between pilotage and dead reckoning?
+• Pilotage relies on visual references and ground observations, while dead reckoning relies on calculations based on known parameters.
+• Pilotage is more dependent on external visual cues, while dead reckoning is more reliant on internal calculations and instruments.
+• Pilotage is typically used in conjunction with dead reckoning for enhanced navigation accuracy, especially during VFR flights where visual references are abundant but may not be continuous.
+
+Planned calculations versus actual results and required corrections
+
+What are the differences between planned calculations and actual results in aviation?
+Planned Calculations:
+• Planned calculations in aviation involve pre-flight assessments and estimations of various parameters such as fuel consumption, time en route, altitude, and groundspeed.
+• Pilots use performance charts, weather forecasts, and flight planning software to calculate expected values for these parameters based on intended routes and aircraft performance.
+• Planned calculations serve as a baseline for the flight, providing guidance for fuel requirements, navigation, and timing.
+Actual Results:
+• Actual results in aviation refer to the real-time values and conditions encountered during the flight.
+• Factors such as wind, temperature, air traffic control instructions, and aircraft performance may cause actual results to deviate from planned calculations.
+• Actual results include deviations in fuel consumption, groundspeed, altitude, and time en route compared to pre-flight estimates.
+
+How do pilots determine and apply required corrections?
+• Pilots must continuously monitor actual results during the flight and compare them to planned calculations to identify discrepancies.
+• Required corrections involve adjusting flight parameters to account for deviations from the planned values.
+• Corrections may include altering altitude or heading to account for wind drift, recalculating fuel consumption based on actual usage, or adjusting the flight plan to accommodate changes in route or timing.
+• Pilots use navigation instruments, communication with air traffic control, and onboard systems to make informed decisions and implement necessary corrections.
+
+Diversion and lost procedures
+
+What are the procedures for handling diversions?
+• If conditions deteriorate or unexpected circumstances arise, pilots may need to divert from their planned route to an alternate destination.
+• Pilots should assess the situation, considering factors such as weather, fuel availability, and airport facilities, to select a suitable alternate airport.
+• Communicate intentions with air traffic control (ATC) or flight service to update them on the diversion and receive assistance if needed.
+• Re-calculate fuel requirements and estimated time en route to the alternate airport.
+• Follow established diversion procedures outlined in the Standard Operating Procedures (SOPs) or company policies.
+
+What are the procedures for handling diversions and lost situations?
+• If unsure of their position or unable to navigate accurately, pilots should initiate lost procedures to regain situational awareness.
+• Utilize navigation aids such as VOR (VHF Omni-directional Range) stations, GPS (Global Positioning System), or NDB (Non-Directional Beacon) to determine position.
+• If equipped, activate and utilize onboard navigation systems, including GPS and inertial navigation systems (INS), to aid in determining position.
+• Declare an emergency if necessary and request assistance from ATC or flight service for radar vectors, navigation assistance, or guidance to a suitable landing location.
+• Follow established lost procedures outlined in the aircraft's operating manual or flight training materials.
+
+Inflight intercept procedures
+
+What are the procedures for handling an in-flight intercept by military or law enforcement aircraft?
+Recognition:
+Pilots must first recognize the presence of an intercepting aircraft. This can be indicated by visual signals, radio communications, or visual identification of the intercepting aircraft. Intercepting aircraft may approach from various directions and altitudes, depending on the situation.
+Response:
+Upon recognition of an intercepting aircraft, pilots should comply with all instructions given by the intercepting aircraft or air traffic control. Respond promptly and positively to radio communications from the intercepting aircraft or ATC, following their instructions carefully. If instructed to follow the intercepting aircraft, maintain a safe distance and follow their flight path while complying with any altitude or speed restrictions provided.
+Communication:
+Maintain continuous radio communication with the intercepting aircraft or ATC, providing relevant information and responding to inquiries as required.
+If unable to establish radio communication, follow established procedures for visual signals, such as rocking wings or following the intercepting aircraft's flight path.
+Compliance:
+Comply with all instructions given by the intercepting aircraft or ATC to ensure safe resolution of the intercept situation. Avoid abrupt maneuvers or actions that may be misinterpreted by the intercepting aircraft.
+Emergency Procedures:
+If the intercept situation escalates or if there are safety concerns, declare an emergency and follow established emergency procedures. Notify ATC of the emergency situation and request assistance as needed.
+Post-Intercept Actions:
+After the intercept is complete and communication with ATC or the intercepting aircraft is terminated, resume normal flight operations.Report the intercept incident to the appropriate authorities and provide a debriefing as required.
+
+Use of an electronic flight bag (EFB), if used
+
+What pre-flight checks should be conducted for an Electronic Flight Bag (EFB)?
+Ensure the EFB is charged and updated with latest software and data. Verify secure mounting or stowage in the cockpit.
+
+What functionalities should pilots be familiar with when using an EFB?
+Understand navigation tools, weather information, and flight planning features. Know how to input and retrieve data efficiently.
+
+How can pilots ensure data integrity on an EFB?
+Regularly update databases and software. Confirm accuracy and currency of displayed information.
+
+What are some considerations for integrating an EFB with cockpit systems?
+Integrate with avionics and communication equipment for enhanced situational awareness. Utilize wireless connectivity options for data sharing.
+
+Why is it important to carry backup navigation tools when using an EFB?
+To mitigate reliance on electronic systems alone in case of malfunction or power loss. Maintain proficiency in traditional navigation techniques.
+
+What regulatory requirements should pilots adhere to when using an EFB?
+Comply with FAA Advisory Circulars and operator-specific policies. Follow guidelines for electronic device usage during flight.
+
+Chart symbols
+
+What are some common symbols found on aviation charts, and what do they represent?
+Airport Symbol:
+Depicts the location of an airport on the chart.
+Runway Symbol:
+Indicates the orientation and dimensions of a runway.
+Navaid Symbol:
+Represents navigation aids such as VORs (VHF Omni-directional Range) or NDBs (Non-Directional Beacons).
+Obstruction Symbol:
+Marks the location and height of obstacles such as towers or antennas.
+Airspace Boundary:
+Denotes the boundaries and classifications of airspace, including Class B, C, D, E, and G airspace.
+Special Use Airspace:
+Indicates areas designated for specific activities such as military operations, restricted airspace, or prohibited airspace.
+Terrain and Elevation Contours:
+Displays elevation levels and terrain features to aid in navigation and terrain avoidance.
+Aircraft Navigation Route:
+Depicts airways, Victor airways, jet routes, and other designated routes for aircraft navigation.
+Geographic Features:
+Represents natural and man-made features such as rivers, lakes, roads, and cities to provide visual references for navigation.
+Airport Services and Facilities:
+Identifies services available at airports such as fuel, parking, and maintenance facilities.
+Miscellaneous Symbols:
+Includes symbols for landmarks, boundaries, boundaries, and other features relevant to aviation navigation and safety.
+
+The applicant exhibits the skill to: Prepare, present, and explain a cross-country flight plan assigned by the evaluator, including a risk analysis to the first fuel stop. Apply pertinent information from appropriate and current aeronautical charts, Chart Supplements; Notices to Air Missions (NOTAMs) relative to airport, runway and taxiway closures; and other flight publications. Create a navigation plan and simulate filing a VFR flight plan. Recalculate fuel reserves based on a scenario provided by the evaluator.

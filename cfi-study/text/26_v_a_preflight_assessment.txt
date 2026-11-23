@@ -1,0 +1,196 @@
+V.A Preflight Assessment
+
+Area of Operation V. Preflight Procedures
+Note: The evaluator must select at least one Task from this Area of Operation.
+Task A. Preflight Assessment
+References: FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-23, FAA-H-8083-25, FAA-H-8083-28; POH/ AFM
+Objective: To determine the applicant understands preflight assessment, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Pilot self-assessment.
+K2. Determining that the airplane to be used is appropriate and airworthy.
+K3. Airplane preflight inspection, including:
+    a. Which items should be inspected
+    b. The reasons for checking each item
+    c. How to detect possible defects
+    d. The associated regulations
+K4. Environmental factors, including weather, terrain, route selection, and obstructions.
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Pilot.
+R2. Aircraft.
+R3. Environment (e.g., weather, airports, airspace, terrain, obstacles).
+R4. External pressures.
+R5. Aviation security concerns.
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Inspect the airplane with reference to an appropriate checklist.
+S2. Verify the airplane is in condition for safe flight and conforms to its type design.
+S3. Perform self-assessment.
+S4. Continue to assess the environment for safe flight.
+
+
+Pilot self-assessment.
+
+What is a good self assessment you can use to determine you are safe to fly?
+• Illness
+• Meds
+• Stress
+• Alcohol
+• Fatigue
+• Emotion / Eating
+
+Determining that the airplane to be used is appropriate and airworthy.
+
+What is a good assessment you can use to determine the aircraft is airworthy?
+Required documents
+• Airworthiness
+• Registration
+• Radio license
+• Operating handbook
+• Weight and balance
+Required inspections
+• Annual
+• VOR
+• 100 hour
+• Altimeter
+• Transponder
+• ELT
+
+Airplane preflight inspection, including - Which items should be inspected
+
+What items should be inspected during an airplane preflight inspection, and why is each item important for ensuring the safety and airworthiness of the aircraft?
+Exterior Surfaces:
+Check for damage, loose components, and signs of corrosion to maintain structural integrity and aerodynamic performance.
+Control Surfaces:
+Verify proper attachment, freedom of movement, and security of control linkages to ensure responsive and effective aircraft control.
+Landing Gear:
+Inspect tires, brakes, struts, and hydraulic components for wear, damage, and proper inflation/extension to facilitate safe takeoffs and landings.
+Engine and Propeller:
+Examine for leaks, loose fasteners, and visible damage on engine components, cowling, and propeller blades to prevent mechanical failures in flight.
+Fuel System:
+Check fuel quantity, quality, and leaks in tanks, lines, and fittings to prevent fuel starvation or contamination during flight.
+Electrical System:
+Test battery condition, check wiring, switches, and lighting systems for proper operation to ensure electrical reliability in flight.
+Cockpit and Cabin:
+Inspect instruments, controls, seats, restraints, and emergency equipment for functionality and accessibility to maintain a safe and comfortable flying environment.
+Documentation:
+Verify the presence and currency of required documents, including airworthiness certificate, registration, and maintenance records, to comply with regulatory requirements.
+
+Airplane preflight inspection, including - The reasons for checking each item
+
+What are the reasons for checking each item during an airplane preflight inspection?
+Exterior Surfaces:
+Ensures structural integrity and aerodynamic performance by detecting damage, loose components, and signs of corrosion that could compromise flight safety.
+Control Surfaces:
+Verifies proper attachment and freedom of movement to maintain responsive and effective aircraft control, reducing the risk of control surface malfunctions during flight.
+Landing Gear:
+Ensures safe takeoffs and landings by inspecting tires, brakes, struts, and hydraulic components for wear, damage, and proper inflation/extension.
+Engine and Propeller:
+Prevents in-flight mechanical failures by checking for leaks, loose fasteners, and visible damage on engine components, cowling, and propeller blades.
+Fuel System:
+Prevents fuel-related emergencies by checking fuel quantity, quality, and leaks in tanks, lines, and fittings to ensure adequate fuel supply and prevent contamination.
+Electrical System:
+Ensures electrical reliability in flight by testing battery condition, checking wiring, switches, and lighting systems for proper operation, reducing the risk of electrical failures.
+Cockpit and Cabin:
+Maintains a safe and comfortable flying environment by inspecting instruments, controls, seats, restraints, and emergency equipment for functionality and accessibility.
+Documentation:
+Ensures regulatory compliance and aircraft airworthiness by verifying the presence and currency of required documents, including airworthiness certificate, registration, and maintenance records.
+
+Airplane preflight inspection, including - How to detect possible defects
+
+How can a pilot detect possible defects in exterior surfaces during an airplane preflight inspection?
+Visual Inspection:
+Look for signs of damage, such as dents, cracks, or wrinkles, and check for loose or missing rivets, bolts, or screws.
+Touch Inspection:
+Run hands along surfaces to feel for abnormalities like raised areas or loose panels.
+Sound Inspection:
+Tap on surfaces to listen for hollow or dull sounds, indicating potential damage or delamination.
+
+How can a pilot detect possible defects in control surfaces during an airplane preflight inspection?
+Manual Movement:
+Physically manipulate control surfaces to ensure they move freely and smoothly without binding or excessive resistance.
+Visual Check:
+Verify that control linkages are securely attached and that there are no signs of wear or damage on hinges, hinges, or control cables.
+Function Test:
+Move controls through their full range of motion while observing corresponding movement of control surfaces.
+
+How can a pilot detect possible defects in landing gear during an airplane preflight inspection?
+Visual Inspection:
+Check tires for wear, cuts, bulges, or embedded foreign objects, and inspect brakes for leaks, worn pads, or damaged discs.
+Hydraulic Check:
+Look for leaks or seepage around hydraulic components such as struts, lines, and actuators.
+Function Test:
+Extend and retract landing gear to ensure smooth operation and proper alignment.
+
+How can a pilot detect possible defects in engine and propeller during an airplane preflight inspection?
+Visual Inspection:
+Examine engine and propeller for leaks, cracks, or signs of corrosion, and inspect propeller blades for nicks, scratches, or damage.
+Functional Check:
+Inspect the propeller by hand to detect binding or rough spots, and inspect engine components for loose fittings, hoses, or wiring.
+Listen for Abnormal Sounds:
+Listen for any unusual noises such as grinding, knocking, or tapping, which may indicate internal engine or propeller issues.
+
+How can a pilot detect possible defects in the fuel system during an airplane preflight inspection?
+Visual Inspection:
+Check fuel quantity indicators for accuracy, inspect fuel caps and vents for tightness and security, and look for signs of leaks or stains around fuel tanks and lines.
+Smell Inspection:
+Sniff for the odor of fuel, which may indicate a leak in the fuel system.
+Drain Check:
+Drain a small quantity of fuel from the sumps to check for water, sediment, or contaminants
+
+How can a pilot detect possible defects in the electrical system during an airplane preflight inspection?
+Functional Check:
+Turn on electrical switches and lights to verify proper operation, and inspect wiring and connections for signs of wear, corrosion, or loose connections.
+Voltage Check:
+Use a multimeter to check battery voltage and ensure it is within the acceptable range, and check alternator output during engine operation.
+
+How can a pilot detect possible defects in the cockpit and cabin during an airplane preflight inspection?
+Functional Check:
+Test instruments, avionics, and controls for proper operation, and inspect seats, seat belts, and harnesses for wear or damage.
+Emergency Equipment Inspection:
+Verify the presence and condition of emergency equipment such as fire extinguishers, first aid kits, and emergency exits.
+Cabin Inspection:
+Check for loose items or foreign objects that could become hazards during flight, and ensure that doors and windows are secure and properly latched.
+
+Airplane preflight inspection, including - The associated regulations
+
+What are the regulations associated with conducting an airplane preflight inspection?
+FAR Part 91.7:
+Requires pilots to ensure the aircraft is in an airworthy condition before flight, which includes conducting a preflight inspection.
+FAR Part 91.405:
+Specifies the requirements for aircraft maintenance records, including entries documenting the completion of preflight inspections.
+FAR Part 91.13:
+Prohibits operating an aircraft in a careless or reckless manner, which includes failure to properly inspect the aircraft before flight.
+
+Why is it important for pilots to adhere to these regulations?
+Ensures Compliance:
+Adhering to regulatory requirements demonstrates compliance with FAA rules and standards, reducing the risk of enforcement actions or penalties.
+Enhances Safety:
+Following regulations for preflight inspections helps identify and address potential safety hazards or mechanical issues before flight, reducing the risk of accidents or incidents.
+Legal Responsibility:
+Pilots have a legal responsibility to operate aircraft in accordance with applicable regulations, including conducting preflight inspections as required by FARs.
+Protects Passengers and Property:
+Proper preflight inspections help safeguard the lives and property of passengers and others on the ground by minimizing the risk of mechanical failures or malfunctions in flight.
+Professionalism:
+Adhering to regulations reflects positively on the professionalism and competence of the pilot, instilling confidence in passengers, peers, and regulatory authorities.
+
+Environmental factors, including weather, terrain, route selection, and obstructions.
+
+What are some environmental factors, including weather, terrain, route selection, and obstructions, that impact Visual Flight Rules (VFR) operations?
+Weather:
+Weather conditions such as visibility, cloud cover, wind speed, and turbulence can affect VFR operations, influencing route planning and aircraft performance.
+Terrain:
+Terrain features such as mountains, valleys, and bodies of water can affect navigation and require careful consideration when planning VFR routes to ensure safe passage and terrain clearance.
+Route Selection:
+Selecting appropriate routes involves considering factors such as airspace restrictions, navigation aids, terrain avoidance, and weather conditions to optimize safety and efficiency.
+Obstructions:
+Obstructions such as towers, antennas, and buildings pose collision hazards to aircraft and must be identified and avoided during VFR flight planning and navigation.
+Navigation Aids:
+Utilizing navigation aids such as VORs (VHF Omni-directional Range), GPS (Global Positioning System), and visual landmarks helps pilots maintain situational awareness and navigate accurately during VFR operations.
+Communication:
+Effective communication with air traffic control, flight service, and other pilots enhances safety by providing timely information and assistance regarding weather, traffic, and navigation hazards.
+Emergency Preparedness:
+Being prepared for emergency situations, such as engine failure or adverse weather conditions, is essential for VFR pilots, including knowing emergency landing sites and procedures for declaring an emergency and seeking assistance.
+
+The applicant exhibits the skill to: Inspect the airplane with reference to an appropriate checklist. Verify the airplane is in condition for safe flight and conforms to its type design. Perform self-assessment. Continue to assess the environment for safe flight.

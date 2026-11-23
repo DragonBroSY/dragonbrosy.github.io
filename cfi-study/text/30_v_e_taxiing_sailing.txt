@@ -1,0 +1,92 @@
+V.E Taxiing and Sailing (ASES, AMES)
+
+Task E. Taxiing and Sailing (ASES, AMES)
+References: AC 91-73; AIM; Chart Supplements; FAA-H-8083-2, FAA-H-8083-9, FAA-H-8083-23, FAA-H-8083-25; POH/AFM; USCG Navigation Rules
+Objective: To determine the applicant understands taxiing and sailing, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Procedures for various types of taxiing and sailing.
+K2. Current airport aeronautical references and information resources such as the Chart Supplement, airport diagram, and Notices to Air Missions (NOTAMs).
+K3. Taxi instructions/clearances.
+K4. Airport/seaplane base markings, signs, and lights.
+K5. Visual indicators for wind.
+K6. Airplane lighting.
+K7. Procedures for:
+    a. Appropriate flight deck activities during taxiing or sailing
+    b. Radio communications at towered and nontowered seaplane bases
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Activities and distractions.
+R2. Porpoising and skipping.
+R3. Low visibility taxi and sailing operations.
+R4. Other aircraft, vessels, and hazards.
+R5. Confirmation or expectation bias as related to taxi instructions.
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Receive and correctly read back clearances/instructions, if applicable.
+S2. Use an appropriate airport diagram or taxi chart, if published.
+S3. Comply with seaplane base/airport/taxiway markings, signals, and signs.
+S4. Depart the dock/mooring buoy or beach/ramp in a safe manner, considering wind, current, traffic, and hazards.
+S5. Complete the appropriate checklist(s).
+S6. Position the flight controls, flaps, doors, water rudders, and power correctly for the existing conditions to follow the desired course while sailing and to prevent or correct for porpoising and skipping during step taxi.
+S7. Exhibit procedures for steering and maneuvering while maintaining proper situational awareness and desired orientation, path, and position while taxiing using idle, plow, or step taxi technique, as appropriate.
+S8. Plan and follow the most favorable taxi or sailing course for current conditions.
+S9. Abide by right-of-way rules, maintain positive airplane control, proper speed, and separation between other aircraft, vessels, and persons.
+S10. Comply with applicable taxi elements in Task D if the practical test is conducted in an amphibious airplane.
+
+
+Procedures for various types of taxiing and sailing.
+
+What are the considerations when taxiing in low-visibility conditions?
+Exercise caution and reduce taxi speed to maintain situational awareness and avoid collisions. Use taxiway centerline markings and ground guidance systems, if available, to maintain orientation. Keep communication with ground control or other aircraft to ensure awareness of surrounding traffic. Use wing walkers or marshaller guidance when available to assist in navigation and avoiding obstacles.
+
+Describe the procedures for conducting a turn during taxiing.
+• Initiate the turn by smoothly applying rudder in the desired direction.
+• Coordinate with aileron input to prevent excessive banking and maintain control.
+• Use differential braking as needed to assist in the turn, ensuring smooth and coordinated movement.
+• Monitor the turn to maintain alignment with the taxiway and avoid encroaching on other aircraft or objects.
+
+What are the key considerations and procedures for conducting a straight-line taxi?
+• Maintain a straight path by using rudder pedals to keep the aircraft aligned with the taxiway centerline.
+• Use differential braking, if necessary, to control the direction of the turn during a straight-line taxi.
+• Maintain a safe speed, typically walking pace or slower, to ensure control and awareness of surroundings.
+
+Current airport aeronautical references and information resources such as the Chart Supplement, airport diagram, and Notices to Air Missions (NOTAMs).
+
+What are the key components of the Chart Supplement (formerly Airport/Facility Directory) relevant to pre-flight planning?
+Airport data:
+Includes information on airport location, elevation, runway characteristics, lighting, and services available.
+Communication frequencies:
+Lists frequencies for air traffic control, ground control, ATIS, UNICOM, and other relevant communications.
+Airspace information:
+Provides details on nearby airspace restrictions, control zones, and other airspace-related information.
+Navigation aids:
+Lists navigational aids available at or near the airport, such as VORs, NDBs, and GPS waypoints.
+Operating hours:
+Indicates hours of operation for airport services, such as fueling, maintenance, and airport operations.
+
+Taxi instructions/clearances.
+
+Explain the importance of reading back taxi instructions or clearances.
+Reading back taxi instructions or clearances confirms mutual understanding between the pilot and air traffic control (ATC), reducing the risk of miscommunication. It helps to ensure that the pilot correctly understands the assigned taxi route, runway, hold short instructions, and any other relevant information. By reading back instructions, the pilot confirms compliance with ATC instructions, enhancing safety and efficiency in ground operations.
+
+What should a pilot include in the readback of taxi instructions or clearances?
+The aircraft call sign to confirm identity. The instruction or clearance received from ATC, including taxi route, runway assignment, hold short instructions, and any other relevant information. Confirmation of compliance or any necessary clarification if the instruction is not fully understood.
+
+Describe the procedure for requesting clarification on taxi instructions or clearances.
+If any part of the taxi instruction or clearance is unclear or ambiguous, the pilot should promptly request clarification from ATC. Use proper radio phraseology and procedures to request clarification, ensuring clear communication. If necessary, repeat the instruction back to ATC for confirmation, ensuring mutual understanding before proceeding. Prioritize safety and adherence to ATC instructions during all ground operations.
+
+Airport/seaplane base markings, signs, and lights.
+
+Explain the purpose of airport base markings and their significance for pilots during ground operations.
+Airport base markings provide visual guidance to pilots for safe and efficient ground operations. They delineate the boundaries of movement areas, such as taxiways, runways, and aprons, helping pilots maintain proper positioning and avoid encroachment into restricted areas. Base markings also assist pilots in identifying critical areas, such as hold lines, designated taxi routes, and runway thresholds, enhancing situational awareness and reducing the risk of runway incursions or ground collisions.
+
+Visual indicators for wind.
+
+Explain the purpose and significance of windsocks at airports.
+• Windsocks serve as visual indicators of wind direction and intensity for pilots and ground personnel.
+• They consist of a fabric tube open at both ends, mounted on a pole or mast, with the narrow end pointing into the wind.
+• Wind direction is indicated by the direction the windsock is pointing, while wind intensity is depicted by the degree of extension or inflation of the windsock.
+• Pilots use windsocks to determine the most suitable runway for takeoff and landing, as well as to assess crosswind components and wind shear during critical phases of flight.
+
+The applicant exhibits the skill to: Receive and correctly read back clearances/instructions, if applicable. Use an appropriate airport diagram or taxi chart, if published. Comply with seaplane base/airport/taxiway markings, signals, and signs. Depart the dock/mooring buoy or beach/ramp in a safe manner, considering wind, current, traffic, and hazards. Complete the appropriate checklist(s). Position the flight controls, flaps, doors, water rudders, and power correctly for the existing conditions to follow the desired course while sailing and to prevent or correct for porpoising and skipping during step taxi. Exhibit procedures for steering and maneuvering while maintaining proper situational awareness and desired orientation, path, and position while taxiing using idle, plow, or step taxi technique, as appropriate. Plan and follow the most favorable taxi or sailing course for current conditions. Abide by right-of-way rules, maintain positive airplane control, proper speed, and separation between other aircraft, vessels, and persons.Comply with applicable taxi elements in Task D if the practical test is conducted in an amphibious airplane.

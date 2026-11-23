@@ -1,0 +1,151 @@
+II.E Aircraft Flight Controls and Operation of Systems
+
+Task E. Aircraft Flight Controls and Operation of Systems
+Note: If K1 is selected, the evaluator must assess the applicant's knowledge of all sub elements.
+References: FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-23, FAA-H-8083-25; POH/AFM
+Objective: To determine the applicant understands flight controls and systems on the airplane provided for the flight test, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Airplane systems, including:
+    a. Primary flight controls
+    b. Secondary flight controls
+    c. Powerplant and propeller
+    d. Landing gear
+    e. Fuel, oil, and hydraulic
+    f. Electrical
+    g. Avionics
+    h. Pitot-static, vacuum/pressure, and associated flight instruments
+    i. Environmental
+    j. Deicing and anti-icing
+    k. Water rudders (ASES, AMES)
+    l. Oxygen system
+K2. Indications of and procedures for managing system abnormalities or failures.
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Detection of system malfunctions or failures.
+R2. Management of a system failure.
+R3. Monitoring and management of automated systems.
+R4. Providing instruction in unfamiliar aircraft or operating with unfamiliar flight display systems and avionics.
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Operate at least three of the systems listed in K1a through K1l appropriately.
+
+
+Airplane systems - Primary flight controls
+
+What are the primary flight controls of an airplane, and how do they function to control the aircraft's attitude? PHAK (6-3)
+The three primary flight controls of an aircraft are the ailerons, elevator, and the rudder.
+Elevator:
+The elevator controls pitch by moving the aircraft's nose up or down. Pulling the control column back raises the elevator's trailing edge (up-elevator), decreasing its camber and generating a downward force on the tail, which lifts the nose. This pitching effect occurs around the aircraft's center of gravity (CG), influenced by the CG's distance from the horizontal tail and the elevator's aerodynamic effectiveness. Pushing the control column forward has the opposite effect, raising the tail and lowering the nose, still pivoting around the CG.
+Ailerons:
+Ailerons control the roll of an aircraft along its longitudinal axis. Positioned on the outboard trailing edge of each wing, they move in opposite directions. Linkages such as cables and pulleys connect them to the control wheel or stick. When the control wheel or stick is moved to the right, the right aileron moves upward while the left aileron moves downward. This action decreases the camber and lift on the right wing while increasing camber and lift on the left wing. As a result, the aircraft rolls to the right due to the differential lift between the wings.
+Rudder:
+The rudder controls yaw, the aircraft's movement around its vertical axis. It's hinged to the vertical stabilizer and operated by left and right pedals. Moving the rudder into airflow generates a horizontal force opposite to its direction. Pressing the left pedal moves the rudder left, altering airflow to create sideward lift. This moves the tail rightward, yawing the nose left. Rudder effectiveness increases with speed, requiring larger deflections at lower speeds and smaller at higher speeds.
+
+Airplane systems - Secondary flight controls
+
+What are the secondary flight controls in an airplane, and how do they contribute to the aircraft's performance? PHAK (6-8)
+Secondary flight controls in an airplane complement the primary flight controls (ailerons, elevator, and rudder) and contribute to the overall performance and handling characteristics of the aircraft. The secondary flight controls consist of wing flaps, leading edge devices, spoilers, and trim systems.
+Flaps:
+Flaps, common high-lift devices on aircraft, are attached to the trailing edge of the wing. They increase both lift and induced drag at any given angle of attack (AOA). Flaps enable a compromise between high cruising speed and low landing speed by extending when necessary and retracting into the wing's structure when not in use. Common types include plain, split, slotted, and Fowler flaps.
+Leading edge devices:
+Leading edge devices are crucial for enhancing lift on aircraft. These devices, which include fixed slots, movable slats, leading edge flaps, and cuffs, are positioned at the front edge of the airfoil. Leading edge flaps, similar to their counterparts on the trailing edge, serve to increase both the maximum lift coefficient (CL-MAX) and the camber of the wings. They are often employed in conjunction with trailing edge flaps to counteract the nose-down pitching effect that trailing edge flaps can induce. One of the key advantages of leading edge flaps is their ability to provide a significant increase in lift with only a minor increase in drag. However, it's important to note that as flaps are extended, the increase in drag is proportionally greater than the increase in lift, affecting the overall aerodynamic efficiency of the aircraft.
+Spoilers:
+Spoilers are high drag devices found on some fixed-wing aircraft. When deployed from the wings, they disrupt smooth airflow, reducing lift and increasing drag. Deploying spoilers simultaneously on both wings enables controlled descent without gaining speed. After landing, spoilers are used to reduce ground roll by decreasing lift, thereby enhancing braking effectiveness as weight transfers to the wheels.
+Trim systems:
+Trim systems are employed to alleviate the pilot from continually holding pressure on the flight controls. They typically include controls in the cockpit and small movable devices at the trailing edge of primary flight control surfaces. These systems are designed to reduce pilot workload by aerodynamically adjusting the position of attached flight control surfaces. Types of trim systems include trim tabs, balance tabs, antiservo tabs, ground adjustable tabs, and adjustable stabilizers.
+
+Airplane systems - Powerplant and propeller
+
+What are the primary components of an aircraft powerplant system, and how does the propeller contribute to an airplane's propulsion?
+An aircraft powerplant system comprises several components that work together to generate thrust and propel the aircraft through the air.
+Engine:
+• The engine is the primary power source of the aircraft.
+• Types: Most aircraft use piston engines (reciprocating engines) or gas turbine engines (jet engines or turboprop engines).
+• Function: Converts fuel into mechanical power to drive the propeller or generate thrust directly.
+Propeller:
+• Function: Converts the rotational power from the engine into thrust that propels the aircraft forward.
+• Role: The propeller acts like a rotating wing and generates thrust.
+• Blade Design: Propeller blades are aerodynamically shaped to efficiently convert engine power into thrust.
+• Pitch Control: Adjustable pitch allows the pilot to optimize propeller efficiency across different flight conditions (cruise, climb, descent).
+Engine Controls:
+• Throttle: Controls engine power output by regulating fuel flow to the engine.
+• Mixture Control: Adjusts the ratio of fuel to air for optimal combustion efficiency.
+• Propeller Control: Manages propeller pitch to control engine RPM and optimize performance.
+Contribution of the Propeller to Aircraft Propulsion:
+• Thrust Generation: The propeller accelerates a large mass of air backwards, generating thrust according to Newton's third law of motion (action-reaction principle). The thrust produced moves the aircraft forward.
+• Efficiency: Propellers are highly efficient at lower speeds and altitudes compared to jet engines, making them suitable for general aviation, regional aircraft, and certain military applications.
+• Variable Pitch: Adjustable pitch allows the propeller to maintain optimal efficiency across a range of flight conditions. In climb or cruise, the pitch can be adjusted to maximize thrust or efficiency as required.
+• Control: Propeller control allows the pilot to fine-tune engine performance and optimize fuel consumption and speed control during different phases of flight.
+• Sound: Propeller-driven aircraft typically produce a distinctive sound characterized by the rotation of the propeller blades through the air, which can vary based on RPM and blade design.
+The propeller is a critical component of an aircraft's powerplant system, converting engine power into thrust that propels the aircraft forward. Together with the engine and associated controls, the powerplant system ensures efficient and effective propulsion to meet the aircraft's operational requirements.
+
+Airplane systems - Landing gear
+
+What are the primary types of landing gear configurations used in aircraft, and how do they function? PHAK (7-33)
+Small aircraft landing gear comes in two main configurations: Conventional and tricycle.
+• Conventional landing gear, often referred to as tailwheel, features two main wheels positioned on each side of the fuselage, with a rear-mounted wheel. Aircraft with this setup are known as tailwheel airplanes.
+• In contrast, tricycle gear includes a nosewheel located at the front of the aircraft. Steering is accomplished through the nosewheel or tailwheel per each respective configuration.
+Tailwheel:
+Tailwheel landing gear positions two main wheels ahead of the center of gravity (CG) and a rear tailwheel. This setup allows for larger propeller clearance and is suited for rough airstrips. However, it makes ground control challenging at low speeds due to the CG placement, increasing the risk of ground loops. Limited forward visibility with the tailwheel near the ground adds to these challenges, necessitating specialized training for pilots.
+Tricycle:
+Tricycle landing gear provides advantages such as improved braking without nosing over, better forward visibility for pilots, and enhanced ground stability to prevent swerving. Nosewheels can be either steerable, controlled by rudder inputs, or castering, which swivel freely, requiring independent use of rudder and brakes for steering in some cases.
+Fixed and Retractable gear:
+Landing gear can be categorized as fixed or retractable. Fixed landing gear remains permanently extended, offering simplicity and low maintenance. Retractable landing gear, on the other hand, is designed to streamline the airplane by retracting into the structure during cruising flight.
+
+Airplane systems - Fuel, oil, and hydraulic
+
+What are the primary functions of the fuel, oil, and hydraulic systems in an airplane? PHAK (7-25)
+Fuel System:
+The fuel system ensures a continuous supply of clean fuel from the tanks to the engine. It must reliably deliver fuel to the engine under all power settings, altitudes, orientations, and during all authorized flight maneuvers.
+Oil System:
+The engine oil system fulfills several vital functions: lubricating the engine's moving parts, cooling by reducing friction, removing heat from the cylinders, maintaining a seal between cylinder walls and pistons, and carrying away contaminants.
+Hydraulic System:
+Hydraulic systems are employed across different aircraft based on their complexity. In small airplanes, they manage tasks like operating wheel brakes, retractable landing gear, and certain constant-speed propellers. On larger aircraft, hydraulic systems are crucial for controlling flight surfaces, wing flaps, spoilers, and other essential systems.
+
+Airplane systems - Electrical
+
+What are the primary components of an airplane's electrical system? PHAK (7-31)
+Most aircraft are equipped with either a 14- or 28-volt DC electrical system comprising essential components: alternator/generator, battery, master/battery switch, alternator/generator switch, bus bar, fuses/circuit breakers, voltage regulator, ammeter/load-meter, and associated wiring.
+Engine-driven alternators or generators supply electrical current and maintain the battery charge. The battery provides power for engine starting and as backup if the generator fails. Alternators offer advantages over generators by producing sufficient current throughout a wide range of engine speeds, converting AC to DC for stable output.
+Some aircraft feature receptacles for connecting external ground power units (GPUs) are useful for cold weather starts when following manufacturer guidelines. The master switch controls all electrical circuits except ignition, powering various equipment like lights, radios, instruments, and fuel systems.
+Aircraft often include a battery switch for similar control and an alternator switch to isolate it in case of failure. A bus bar simplifies wiring and distributes voltage across the system. Fuses or circuit breakers protect against overload, with spares carried onboard. Ammeters monitor system performance, showing battery charge status.
+Some aircraft use warning lights instead of ammeters for generator/alternator issues, requiring reference to the aircraft's manuals for corrective actions. A loadmeter indicates the electrical load placed on the system by accessories and battery, reflecting charging demands when all components are off.
+A voltage regulator maintains battery charge by stabilizing generator/alternator output, ensuring it exceeds battery voltage to sustain power. For instance, a 12-volt battery would be charged by a 14-volt generator/alternator system.
+
+Airplane systems - Avionics
+
+What are the primary functions of avionics systems in an airplane?
+Avionics systems in an airplane serve crucial functions including navigation, communication, and surveillance. These systems provide pilots with essential data such as aircraft position, weather information, and communication with air traffic control, enhancing situational awareness and safety during flight.
+
+Airplane systems - Pitot-static, vacuum/pressure, and associated flight instruments
+
+What are Pitot-static systems, vacuum/pressure systems, and their associated flight instruments used for in aviation? PHAK (8-2, 8-15)
+Pitot-static systems are used to measure airspeed, altitude, and vertical speed by utilizing dynamic and static air pressure differentials. Vacuum/pressure systems power crucial flight instruments such as the attitude indicator, heading indicator, and altitude indicator by using vacuum or pressure to drive gyroscopes or diaphragms, providing pilots with vital information for navigation and control of the aircraft.
+
+Airplane systems - Environmental
+
+What are the primary components of an airplane's environmental system, and how do they contribute to the comfort and safety of passengers and crew?
+An airplane's environmental system consists of components such as the air conditioning and pressurization systems, ventilation systems, and anti-icing systems. These systems work together to regulate cabin temperature, maintain adequate pressure, ensure proper airflow, and prevent ice buildup on critical surfaces, thus enhancing passenger comfort and safety throughout the flight.
+
+Airplane systems - Deicing and anti-icing
+
+What are the primary components of an airplane's deicing and anti-icing systems? PHAK (7-40)
+Anti-icing and deicing systems serve critical roles in preventing and removing ice from aircraft components. These systems protect wing and tail leading edges, pitot/static ports, fuel vents, stall-warning devices, windshields, and propeller blades.
+Light aircraft typically have a heated pitot tube but aren't certified for flight in icing conditions, limiting their use in cooler climates. In contrast, aircraft equipped with deicing boots use inflatable rubber boots on leading edges. Controlled by a switch, these boots crack ice buildup when inflated with engine bleed air or pneumatic pumps. Modern systems prevent ice "bridging," allowing immediate cycling upon ice detection.
+Thermal anti-ice systems use engine compressor air to heat leading edges, while advanced systems like ThermaWing employ electrically heated graphite foil for precise ice control. Weeping wings, using antifreeze pumped through small holes in leading edges, also prevent and remove ice.
+Windscreen anti-ice methods include alcohol flow systems or electric heating elements embedded in the windscreen. Alcohol flow prevents ice buildup when managed correctly, while electrical heating must be used cautiously due to potential compass deviation. Propeller anti-ice systems employ alcohol or electrical heating elements to prevent ice formation. Some propellers have grooved boots directing alcohol flow to the blades' leading edges. Monitoring systems ensure propeller boots function properly to prevent vibration. Additional aircraft components like pitot/static ports and fuel vents may also use electrical heating. Operational checks before encountering ice conditions are crucial as anti-icing and deicing equipment isn't intended for prolonged flight in icing conditions.
+
+Airplane systems - Oxygen system
+
+What is the purpose of the oxygen system in an airplane? PHAK (7-37)
+Crew and passengers rely on oxygen systems to prevent hypoxia, especially in conjunction with pressurization systems. Regulations mandate flight crews use supplemental oxygen after 30 minutes at cabin pressure altitudes between 12,500 and 14,000 feet, and immediately above 14,000 feet. All occupants must have supplemental oxygen above 15,000 feet. However, individuals can experience oxygen deprivation effects at lower altitudes. Some may feel disoriented above 10,000 feet during the day and as low as 5,000 feet at night or when fatigued. Pilots are advised to use supplemental oxygen above 10,000 feet during the day and above 5,000 feet at night for optimal safety.
+
+Indications of and procedures for managing system abnormalities or failures
+
+What are some indications of system abnormalities or failures in an aircraft, and what procedures should a pilot follow to manage them?
+Indications of system abnormalities or failures in an aircraft can include warning lights, abnormal instrument readings, or unusual sounds. When faced with such indications, pilots should refer to the aircraft's emergency procedures checklist, troubleshoot the issue using available resources and backup systems if applicable, and consider declaring an emergency if necessary to prioritize safe resolution of the situation.
+
+The applicant exhibits the skill to: Operate at least three of the systems listed in K1a through K1l appropriately.
+
+This should be self explanatory.

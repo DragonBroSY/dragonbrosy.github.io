@@ -1,0 +1,172 @@
+II.K Endorsements and Logbook Entries
+
+Task K. Endorsements and Logbook Entries
+References: 14 CFR part 61; AC 61-65; FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-25
+Objective: To determine the applicant understands logbook entries and endorsements, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Required logbook entries for instruction given.
+K2. Required student pilot pre-solo knowledge test, solo endorsements, and logbook entries.
+K3. Other required pilot logbook endorsements (e.g., Class B Airspace, Special Federal Aviation Regulation (SFAR)).
+K4. Preparation of a recommendation for a pilot practical test, including appropriate logbook entry and relevant certificate/rating application for:
+    a. Initial pilot certification
+    b. Additional pilot certification
+    c. Additional aircraft qualification
+K5. Endorsement of a pilot logbook for the satisfactory completion of an FAA flight review.
+K6. Required flight instructor records.
+K7. Flight instructor renewal and reinstatement requirements.
+
+Risk Management: The applicant is able to identify, assess, and mitigate risk associated with:
+R1. Endorsements without appropriate limitations or expiration dates.
+
+Skills: The applicant demonstrates how to:
+S1. Describe and prepare logbook entries/endorsements required for at least two of the events specified in the elements or sub-elements of K1 through K5.
+
+
+Required logbook entries for instruction given (14 CFR 61.51, 61.189)
+
+When must instructors log “instruction given” in their students’ logbooks?
+Always, to include both ground and flight instruction.
+
+What information must instructors log in their students’ logbooks?
+The following information must be logged, and it must be legible:
+• Description of training.
+• Training duration.
+• IP’s signature, cert #, and expiration date.
+
+When are pilots required to log their flight time?
+When flying to meet FAA certification or currency requirements.
+
+When logging a flight, what information must pilots record?
+This information is captured by the columns comprising each line in a pilot logbook:
+• General:
+    • Date, total time, location, type and ID of aircraft, name of safety pilot if required.
+• Type of pilot experience or training:
+    • Solo, PIC, SIC, training received.
+• Conditions of flight:
+    • Day or night, actual instrument, simulated instrument.
+
+When can a flight instructor log PIC time?
+Whenever they are providing flight instruction (must be in an aircraft in which they are certified to instruct).
+
+When can a pilot log PIC time? Provide an example of each.
+These are the 3 primary ways pilots may log PIC time:
+• When the pilot is the sole manipulator of the controls and rated in the airplane.
+    • For example: 2 private ASEL pilots are at the controls of a CE-172 - they take turns flying and each ends up flying half of a 2.0 flight. Each pilot may log 1 hour of PIC.
+• When the pilot - or student pilot, provided they are endorsed and undergoing training for a pilot certificate - is the sole occupant in the aircraft.
+    • For example: A solo student, despite not yet being rated in the airplane, may log PIC time.
+• When the pilot is acting as PIC of an aircraft for which more than one pilot is required under the type certification of the aircraft or the regulations under which the flight is conducted.
+    • For example: A safety pilot, who has agreed to act as PIC on an instrument currency flight, may log PIC time for the duration that the pilot flying is wearing a view limiting device.
+
+When can a pilot log SIC time?
+Generally when an appropriately qualified pilot is occupying a crewmember station in an aircraft that requires more than one pilot per the type certificate.
+
+When can a pilot log night time?
+Between evening civil twilight and morning civil twilight, as published in the Air Almanac.
+
+When can a pilot log instrument time?
+For flight time when the pilot operates solely by reference to the instruments.
+
+Required student pilot pre-solo knowledge test, solo endorsements, and logbook entries (14 CFR Part 61)
+
+What is the purpose of the Required Student Pilot Pre-Solo Knowledge Test, and what topics does it cover?
+The purpose of a pre-solo knowledge test is to ensure that a student pilot has the necessary aeronautical knowledge to safely conduct a solo flight. The test must cover several key areas:
+• Applicable Regulations: The test must assess the student's understanding of relevant sections of FAA regulations, specifically parts 61 and 91, which govern pilot certification and general operating rules.
+• Airspace Rules and Procedures: The test must include questions about the airspace rules and procedures specific to the airport where the student will perform their solo flight. This ensures the student is familiar with the operational environment and any special considerations at that location.
+• Flight Characteristics and Operational Limitations: The test must evaluate the student’s knowledge of the flight characteristics and operational limitations of the specific make and model of aircraft they will be flying. This includes understanding how the aircraft handles under different conditions and its performance limitations.
+After the test, the student’s authorized instructor must review any incorrect answers with the student to ensure they fully understand the material before granting authorization for the student to conduct a solo flight.
+
+What endorsements are required before a student pilot can solo, and what is the purpose of each?
+Before a student pilot can solo, several specific endorsements from an authorized instructor are required, each with a distinct purpose:
+• Pre-Solo Aeronautical Knowledge (§ 61.87(b)): The instructor must endorse the student's logbook after the student passes a knowledge test covering applicable regulations, airspace rules, and the specific aircraft to be flown. This endorsement ensures the student has the necessary theoretical knowledge for safe solo flight.
+• Pre-Solo Flight Training (§ 61.87(c)(1) and (2)): The instructor must provide and endorse the student’s logbook after completing and logging the required flight training of (in the case of single-engine airplanes) 61.87(d). This endorsement confirms that the student has demonstrated satisfactory proficiency and safety in those maneuvers and procedures, appropriate to the make and model of aircraft to be flown..
+• Ninety Calendar-Day Endorsement (§ 61.87(n)): This endorsement certifies the instructor's confidence in the student's ability to safely conduct solo flights under specified conditions for 90 days. This includes any subsequent cross-country solos. After 90 days, this endorsement must be updated with a 61.87(p) endorsement. These endorsements ensure that the student has the required knowledge, training, and instructor approval to safely operate an aircraft solo.
+(Reference AC 61-65H for endorsement templates)
+
+What information should be included in a student pilot's logbook entry following a solo flight?
+A student pilot's logbook entry following solo flight should include the flight time logged as total time, PIC time, and solo time, which can only be recorded when the student is the sole occupant of the aircraft. The exception to this is if the student pilot is performing duties as pilot in command of an airship that requires more than one pilot.
+
+Other required pilot logbook endorsements (e.g., Class B Airspace, Special Federal Aviation Regulation (SFAR))
+
+What endorsements might a pilot need in their logbook beyond those related to specific ratings or certifications?
+Beyond endorsements related to specific ratings or certifications, a pilot might need several other endorsements in their logbook to authorize various types of solo flight operations:
+• Additional 90-Day Solo Endorsement (§ 61.87(p)): After the initial solo endorsement, a student pilot needs a new endorsement every 90 days to continue solo flying. This endorsement confirms that the pilot’s skills and knowledge are still adequate for solo flight.
+• Solo Flight at Night (§ 61.87(o)): If a student pilot intends to fly solo at night, they must receive an endorsement that confirms they have completed the necessary night training and are proficient in night operations.
+• Solo Takeoffs and Landings at an Airport Within 25 Nautical Miles (§ 61.93(b)(1)): For conducting solo takeoffs and landings at another airport within 25 nautical miles of the home airport, the student pilot must have an endorsement specific to that airport. This ensures familiarity with the procedures and safety considerations at that location.
+• Solo Flight in Class B Airspace (§ 61.95(a)): To fly solo in Class B airspace, a pilot needs an endorsement indicating they have received the required training for operations in such complex airspace and have demonstrated the necessary competence.
+• Solo Flight To, From, or At a Class B Airport (§ 61.95(b)): To takeoff, land or operate at a Class B airport, a student pilot needs an endorsement indicating they have received the required ground and flight training for the specific Class B airport for which solo flight is authorized.
+These endorsements are crucial for authorizing different types of solo operations and ensuring that the pilot is adequately trained and prepared for the specific conditions or environments they will encounter.
+
+Preparation of a recommendation for a pilot practical test, including appropriate logbook entry and relevant certificate/rating application for - Initial pilot certification (14 CFR Part 61, AC 61-65H)
+
+What are the key elements a CFI must verify before recommending a student for an initial pilot certification practical test?
+Before recommending a student for an initial pilot certification practical test, a CFI must verify that the student has met all the requirements outlined in 14 CFR Part 61 (minimum age as applicable, 3rd class medical). This includes ensuring the student has completed the required flight hours, received instruction in all areas of operation listed in the Airman Certification Standards (ACS) and 14 CFR Part 61, and passed the FAA knowledge test. The CFI must also confirm that the student’s logbook entries are accurate and complete, documenting all required training and endorsements. Finally, the CFI must ensure the student is proficient and safe in the practical test maneuvers.
+
+What should a CFI include in the logbook entry when recommending a student for an initial pilot certification practical test?
+When recommending a student for an initial pilot certification practical test, the CFI should include a logbook endorsement stating that the student has met all training requirements, is proficient in the required areas of operation, and is prepared for the practical test.
+Private Pilot Checkride Endorsements:
+• 14 CFR § 61.39(a)(6)(i) and (ii) - Prerequisites for practical tests, which outline the requirements a student must meet before taking a practical test, including receiving an endorsement from their instructor stating they are prepared for the test, and that they have received and logged training time within the preceding 2 calendar months.
+• 
+• 14 CFR § 61.39(a)(6)(iii) - Review of deficiencies identified on the knowledge test (PAR).
+    • 
+• 14 CFR § 61.103 - Eligibility requirements for a private pilot certificate, which include the training and endorsement requirements.
+• 14 CFR § 61.107 - Flight proficiency requirements, detailing the areas of operation that must be covered in training.
+• 14 CFR § 61.109 - Aeronautical experience requirements for a private pilot certificate.
+Commercial Pilot Checkride Endorsements:
+• 14 CFR § 61.39(a)(6)(i) and (ii) - Prerequisites for practical tests, which outline the requirements a student must meet before taking a practical test, including receiving an endorsement from their instructor stating they are prepared for the test, and that they have received and logged training time within the preceding 2 calendar months.
+• 14 CFR § 61.39(a)(6)(iii) - Review of deficiencies identified on the knowledge test (CAX).
+• 14 CFR § 61.123 - Eligibility requirements for a commercial pilot certificate, which include age, knowledge, and training requirements.
+• 14 CFR § 61.127 - Flight proficiency requirements for a commercial pilot certificate, detailing the areas of operation that must be covered in training.
+• 14 CFR § 61.129 - Aeronautical experience requirements for a commercial pilot certificate, specifying the flight time and experience needed.
+The endorsement must be signed and dated by the CFI, including their instructor certificate number and expiration date. This endorsement is typically provided using the language specified in Advisory Circular (AC) 61-65.
+
+What is the process for completing the relevant certificate/rating application when a CFI recommends a student for an initial pilot certification practical test?
+When recommending a student for an initial pilot certification practical test, the CFI must assist the student in completing the FAA Form 8710-1, also known as the Airman Certificate and/or Rating Application. The CFI must verify that all information is accurate and matches the student’s training records. Additionally, the CFI must sign the recommendation section of the form, affirming that the student is qualified and ready for the test. The application must then be submitted through the Integrated Airman Certification and Rating Application (IACRA) system or as a paper form, depending on the specific circumstances.
+
+Preparation of a recommendation for a pilot practical test, including appropriate logbook entry and relevant certificate/rating application for - Additional pilot certification (14 CFR Part 61, AC 61-65H)
+
+What must a CFI do to prepare a pilot for an additional certification practical test, and what are the required steps for the logbook entry and certificate/rating application?
+Similar to an initial certificate applicant, to prepare a pilot for an additional certification practical test, a CFI must first verify that the pilot has completed the necessary training and meets all experience requirements outlined in 14 CFR Part 61 for the new certification. The CFI should then provide a logbook endorsement confirming that the pilot has demonstrated proficiency in the required areas of operation and is prepared for the practical test. This endorsement must include the CFI’s signature, certificate number, and expiration date, following the format in Advisory Circular (AC) 61-65.
+Additionally, the CFI must assist the pilot in completing the FAA Form 8710-1 (Airman Certificate and/or Rating Application). The CFI should ensure that all information on the form is accurate and consistent with the pilot’s logbook entries. The CFI must sign the recommendation section of the form to confirm the pilot’s readiness for the practical test. This form can be submitted through the Integrated Airman Certification and Rating Application (IACRA) system or as a paper form.
+
+Preparation of a recommendation for a pilot practical test, including appropriate logbook entry and relevant certificate/rating application for - Additional aircraft qualification (14 CFR Part 61, AC 61-65H)
+
+How does the process for preparing a pilot for an additional aircraft qualification differ from preparing a pilot for an initial pilot certification, specifically regarding logbook endorsements and the certificate/rating application?
+Preparing a pilot for an additional aircraft qualification falls into two buckets: 1) Adding a class (ASEL, AMEL, ASES, AMES) to an existing pilot certificate (PVT, COM, ATP), or 2) adding a category (airplane, rotorcraft, glider, etc.) to an existing pilot certificate. These check rides are often referred to as “add-ons.” The certification process here differs from initial pilot certification in several key ways.
+• Adding a class, 61.63(c): Provided the certificate level is not increasing, there is no minimum required flight experience (think, flight time) that applies. Instead, train to proficiency on the procedures listed in 61.107 for PVT, 61.127 for COM, and 61.157 for ATP - and more specifically, refer to the add-on table in the back of the relevant ACS to determine what maneuvers must be included on the add-on check ride. Furthermore, because the certificate level is not increasing, no knowledge test is involved (unless the check ride involves transitioning from a non-powered to powered aircraft).
+• Adding a category, 61.63(b): Unlike when adding a class to an existing pilot certificate, when adding a category, the flight experience requirements - i.e., flight time minimums listed under 61.109, 61.129, or 61.159, as appropriate - must be met. Additionally, same as with the added class requirements, refer to the add-on table in the back of the relevant ACS to determine what maneuvers must be trained and tested on the added-category check ride. And as always, because the certificate level is not increasing, no knowledge test is required (except when the check ride involves transitioning from a non-powered to powered aircraft).
+• Logbook endorsements: When adding a new class or category to an existing pilot certificate, provide the 61.63(c) or 61.61(b) endorsement, respectively, in addition to the 61.39(a)(6)(i) and (ii) endorsement (aka the “2 calendar month endorsement”). As appropriate, remember to add any other endorsements commonly associated with add-on training and check rides, such as the complex, high performance, high altitude, type rating, or solo endorsements, all found under 61.31.
+• Certificate/Rating Application: When applying for an additional aircraft qualification, the FAA Form 8710-1 (Airman Certificate and/or Rating Application) must reflect the pilot’s existing certifications and qualifications, with a focus on the new aircraft qualification being sought. In contrast, for an initial certification, the application addresses all foundational requirements, including total flight time, knowledge test results, and overall eligibility. The CFI’s role in both processes includes verifying the accuracy of the application and ensuring it aligns with the pilot’s logbook entries, but for an additional qualification, the emphasis is on the specific aircraft and related training. These differences highlight the more focused nature of endorsements and applications when dealing with additional aircraft qualifications versus the broader scope of requirements for an initial pilot certification.
+
+Endorsement of a pilot logbook for the satisfactory completion of an FAA flight review (14 CFR 61.51, AC 61-65H)
+
+What are the requirements for endorsement of a pilot's logbook following the satisfactory completion of an FAA flight review?
+To endorse a pilot's logbook following the satisfactory completion of an FAA flight review, the review must consist of at least 1 hour of flight training and 1 hour of ground training. The review must cover current general operating and flight rules under part 91, as well as maneuvers and procedures deemed necessary by the instructor to ensure the pilot can safely exercise the privileges of their certificate.
+Exceptions to this requirement include pilots who have recently completed certain proficiency checks, practical tests, or FAA-sponsored pilot proficiency programs. Flight instructors who have recently renewed their certificate are also exempt from the 1 hour of ground training. Student pilots with a current solo endorsement are not required to complete a flight review. The endorsement must be provided by an authorized instructor who certifies that the pilot has satisfactorily completed the review. The requirements for the flight review can also be met using a flight simulator or flight training device under specific conditions, including that the simulator is part of an approved course and represents an aircraft for which the pilot is rated.
+
+Required flight instructor records (14 CFR 61.189, 49 CFR 1552.15)
+
+What records are required for a flight instructor to maintain, and for how long should these records be kept?
+A flight instructor is required to sign the logbook of each student they have provided flight or ground training to. Additionally, the instructor must maintain a separate record that includes the name of each student they have endorsed for solo flight privileges, knowledge tests, or practical tests, along with the date and results of these endorsements. These records must be retained for at least 3 years.
+
+Flight instructor renewal and reinstatement requirements (14 CFR 61.197)
+
+What are the renewal requirements for a flight instructor certificate?
+A flight instructor certificate that has not expired can be renewed by:
+Passing a Practical Test:
+• For one of the ratings on the current flight instructor certificate, or
+• For an additional flight instructor rating.
+Completing One of the Following Renewal Requirements:
+• Student Endorsement Record: Within the preceding 24 months, the instructor has endorsed at least 5 students for a practical test for a certificate or rating, and at least 80% of those students passed on the first attempt.
+• Service Record: Within the preceding 24 months, the instructor has served as a company check pilot, chief flight instructor, company check airman, or flight instructor in a part 121 or part 135 operation, or in a position involving regular pilot evaluation.
+• Refresher Course Certificate: Within the preceding 3 months, the instructor has completed an approved flight instructor refresher course consisting of ground and/or flight training.
+• Military Proficiency Check: Within the preceding 24 months, the instructor has passed a U.S. Armed Forces military instructor pilot or pilot examiner proficiency check in an aircraft for which they hold a rating or for an additional rating.
+• The expiration month of a renewed flight instructor certificate is 24 calendar months from either the month the renewal requirements are completed or the expiration month of the current certificate if renewal is within the 3 months before expiration. If renewed by completing a refresher course, the course must also be within the 3 months before expiration. Additionally, the practical test for renewal can be accomplished in a full flight simulator or flight training device if done through an approved course by a part 142 training center.
+
+What are the reinstatement requirements for a flight instructor certificate?
+To reinstate an expired flight instructor certificate, a holder who has not met the renewal requirements must file a completed application with the FAA and complete one of the following reinstatement options:
+• Pass a Practical Test: Complete a flight instructor certification practical test for one of the ratings held on the expired certificate.
+• Obtain an Additional Rating: Pass a flight instructor certification practical test for an additional rating.
+Military Instructor Pilots: Provide documentation showing that within the preceding 6 months, the individual either passed a U.S. Armed Forces instructor pilot or pilot examiner proficiency check or completed a U.S. Armed Forces' instructor pilot or pilot examiner training course, earning an additional aircraft rating qualification relevant to the flight instructor rating sought. Additionally, flight instructor ratings or limited flight instructor ratings on a pilot certificate are no longer valid and cannot be exchanged for similar ratings or a flight instructor certificate. To obtain a new flight instructor certificate with current ratings, the individual must pass the required knowledge and practical tests specified by the FAA for the issuance of the current flight instructor certificate and ratings.
+
+The applicant exhibits the skill to: Describe and prepare logbook entries/endorsements required for at least two of the events specified in the elements or sub-elements of K1 through K5.

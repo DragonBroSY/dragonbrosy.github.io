@@ -1,0 +1,109 @@
+II.C Runway Incursion Avoidance
+
+Task C. Runway Incursion Avoidance
+References: AC 91-73; AIM; Chart Supplements; FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-25
+Objective: To determine the applicant understands runway incursion avoidance, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Runway incursion definition.
+K2. Taxi instructions/clearances.
+K3. The importance of recording taxi instructions and reviewing taxi routes on the airport diagram.
+K4. Airport markings, signs, and lights including the importance of hold lines associated with runways.
+K5. Appropriate flight deck activities during taxiing, including taxi route planning, briefing the location of Hot Spots, communicating and coordinating with ATC.
+K6. Communication and operational procedures at uncontrolled airports.
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Distractions, task prioritization, loss of situational awareness, or disorientation.
+R2. Confirmation or expectation bias as related to taxi instructions.
+R3. Entering or crossing runways.
+R4. Night taxi operations.
+R5. Low visibility taxi operations.
+R6. Runway incursion after landing.
+R7. Operating on taxiways between parallel runways.
+
+Skills: The applicant demonstrates how to:
+S1. Deliver instruction on the elements and techniques for runway incursion avoidance.
+
+
+Runway incursion definition
+
+What is the definition of a runway incursion according to the Federal Aviation Administration (FAA)? PHAK (14-31)
+According to the FAA, a runway incursion is any incident at an airport involving an aircraft, vehicle, person, or object on the ground that poses a collision risk or causes insufficient separation with an aircraft that is taking off, about to take off, landing, or about to land.
+
+Taxi instructions/clearances
+
+What are the essential components that a pilot must verify in taxi instructions or clearances before beginning to taxi an aircraft? PHAK (14-33)
+Before taxiing an aircraft, a pilot must confirm several key elements in the taxi instructions or clearances:
+Aircraft Call Sign:
+Verify that the clearance is intended for the correct aircraft.
+Taxi Route:
+Understand the precise path to follow on the ground, which may include specific runways, taxiways, or intersections.
+Specific Instructions or Restrictions:
+These could involve speed limits, areas to avoid, or conditional clearances based on other traffic.
+Hold Short Instructions:
+Crucial for safety, these indicate where a pilot must stop and wait, typically at runway intersections, to prevent conflicts with other aircraft.
+Adhering to and comprehending these components ensures safe and effective ground operations.
+
+The importance of recording taxi instructions and reviewing taxi routes on the airport diagram
+
+Why is it important for a flight instructor to teach students to record taxi instructions and review taxi routes on the airport diagram? PHAK (14-33)
+It's crucial for flight instructors to teach students to record taxi instructions and review taxi routes on airport diagrams for several reasons:
+Safety:
+Ensures pilots understand and follow assigned routes, reducing the risk of errors like runway incursions.
+Compliance:
+Helps pilots adhere to ATC instructions accurately and promptly.
+Efficiency:
+Enhances operational smoothness by reducing confusion and delays.
+Familiarization:
+Provides situational awareness, especially at unfamiliar airports.
+These practices promote safe, efficient, and professional conduct in airport operations.
+
+Airport markings, signs, and lights including the importance of hold lines associated with runways
+
+How do airport markings, signs, and lights, particularly hold lines associated with runways, contribute to the overall safety and efficiency of ground operations at airports? PHAK (14-5)
+Safety:
+Hold lines provide clear visual indicators to pilots on where to stop and wait before entering a runway. This prevents runway incursions and ensures that aircraft do not inadvertently cross active runways, reducing the risk of collisions.
+Clear Guidance:
+Markings, signs, and lights guide pilots along designated taxi routes, helping them navigate the airport safely and efficiently. They indicate taxiway paths, runway entrances, and other critical areas, minimizing confusion and potential errors.
+Operational Efficiency:
+By clearly delineating taxi routes and runway entry points, airport markings, signs, and lights help optimize ground movements. Pilots can taxi swiftly and precisely to their intended destinations, reducing taxi times and overall airport congestion.
+Standardization:
+These visual aids adhere to standardized international guidelines, ensuring consistency across different airports. Pilots familiar with these markings can confidently navigate any airport, regardless of location or size.
+Enhanced Situational Awareness:
+Airport markings, signs, and lights improve pilots' situational awareness by providing visual cues about their position relative to critical areas such as runways, taxiways, and aprons. This awareness is essential for safe maneuvering in complex airport environments.
+
+Appropriate flight deck activities during taxiing, including taxi route planning, briefing the location of Hot Spots, communicating and coordinating with ATC
+
+What flight deck activities are crucial for pilots to ensure safe taxi operations, including planning taxi routes, briefing Hot Spot locations, and effectively communicating with and coordinating instructions from ATC? (AC 91-73B)
+Before taxiing, the pilot in command should engage in comprehensive taxi route planning. This involves reviewing airport diagrams and planning the taxi route before Taxi. It is crucial to brief the crew on the locations of hotspots (areas on the airport surface with a history of potential risk of collision or confusion)to enhance situational awareness. Effective communication and coordination with Air Traffic Control (ATC) are essential throughout the taxi process to ensure adherence to clearances and instructions, maintain situational awareness, and prevent runway incursions.
+
+Communication and operational procedures at uncontrolled airports
+
+What are the essential communication procedures a pilot should follow when operating at an uncontrolled airport?
+At an uncontrolled airport, pilots must self-announce their positions and intentions on the Common Traffic Advisory Frequency (CTAF) to coordinate with other aircraft in the vicinity. This includes broadcasting when taxiing, crossing runways, entering the runway, taking off, and landing. Pilots should also listen carefully to the communications of other aircraft to maintain situational awareness and avoid conflicts.
+
+The applicant exhibits the skill to: Deliver instruction on the elements and techniques for runway incursion avoidance.
+
+What are the key elements and techniques for runway incursion avoidance that aviation instructors should deliver in their instruction? PHAK (14-5)
+Regulatory Knowledge:
+Instruct learners on relevant regulations and guidelines regarding runway operations, including taxiway markings, signs, and clearance procedures prescribed by the FAA.
+Situational Awareness:
+Teach learners to maintain situational awareness by constantly scanning for traffic, monitoring radio communications, and verifying clearances while taxiing and crossing runways.
+Proper Communication:
+Emphasize the importance of effective radio communication with air traffic control (ATC) and other aircraft to request and acknowledge clearances, instructions, and intentions on the airport surface.
+Clearance Confirmation:
+Instruct learners to always confirm clearances from ATC and visually verify runway entry or crossing clearances before proceeding onto or across any runway.
+Use of Taxi Diagrams:
+Familiarize learners with airport taxi diagrams and charts to identify taxi routes, runway crossings, and hotspots, aiding in navigation and situational awareness.
+Standard Operating Procedures (SOPs):
+Train learners to adhere to standard operating procedures (SOPs) for taxiing, holding short of runways, and conducting before takeoff checks to minimize the risk of runway incursions.
+Visual Scanning Techniques:
+Teach learners effective visual scanning techniques, including scanning left and right, checking blind spots, and using peripheral vision to detect approaching traffic while taxiing.
+Clearance Readback:
+Stress the importance of accurate readback of ATC instructions and clearances to confirm understanding and avoid misinterpretations or errors that could lead to runway incursions.
+Risk Management:
+Educate learners on risk factors contributing to runway incursions, such as fatigue, distractions, complacency, and environmental conditions, and strategies for mitigating these risks.
+Simulation Training:
+Utilize flight simulation or scenario-based training to simulate runway incursion scenarios and practice proper response techniques, decision-making, and effective communication under realistic conditions.
+Continuous Review and Reinforcement:
+Provide ongoing review and reinforcement of runway incursion avoidance techniques throughout flight training, emphasizing the importance of vigilance, communication, and adherence to procedures for safe operations on the airport surface.

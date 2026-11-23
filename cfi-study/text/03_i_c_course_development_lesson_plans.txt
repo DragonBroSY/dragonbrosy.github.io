@@ -1,0 +1,228 @@
+I.C Course Development, Lesson Plans, and Classroom Training Techniques
+
+Task C. Course Development, Lesson Plans, and Classroom Training Techniques
+References: FAA-H-8083-2, FAA-H-8083-9, FAA-H-8083-25
+Objective: To determine the applicant understands the teaching process, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant understands and explains:
+K1. Teaching, including:
+    a. Process
+    b. Essential skills
+K2. Course of training.
+K3. Preparation of a lesson, including:
+    a. Training objectives and completion standards
+    b. Performance-based objectives
+    c. Importance of Airman Certification Standards (ACS) in aviation training curricula
+    d. Decision-based objectives
+K4. Organization of material.
+K5. Training delivery methods, including:
+    a. Lecture
+    b. Discussion
+    c. Guided discussion
+    d. Cooperative or group learning
+    e. Demonstration-performance
+    f. Drill and practice
+K6. Electronic learning (e-Learning).
+K7. Instructional aids and training technologies, including:
+    a. Characteristics of effective instructional aids
+    b. Reasons for use
+    c. Guidelines for use
+    d. Types
+K8. Integrated flight instruction.
+K9. Problem-based instruction.
+K10. Planning instructional activity, including:
+    a. Blocks of learning
+    b. Training syllabus
+    c. Lesson plans
+
+Risk Management: The applicant is able to identify, assess, and mitigate risk associated with:
+R1. Selection of teaching method.
+
+Skills: The applicant exhibits the skill to:
+S1. Prepare an instructional lesson plan using teaching methods and materials appropriate for Task and learner characteristics, including:
+    a. Aeronautical knowledge ground lesson applicable for a classroom
+    b. Maneuver introduction and ground lesson
+
+
+Teaching - Process (AIH 5-1)
+
+What is Teaching?
+Teaching is to instruct or train. Teachers often complete some type of formal training, have specialized knowledge, have been certified or validated in some way, and adhere to a set of standards of performance.
+
+Teaching - Essential skills (AIH 5-1)
+
+What are the four essential teaching skills?
+People skills
+Effective instructors relate to people well, interact respectfully, provide motivation, challenge their learners, and adapt to their needs. Technical knowledge is useless if the two-way communication process is ineffective and the instructor lacks enthusiasm.
+Subject matter expertise
+This occurs when a person possesses a high level of expertise, knowledge, or skill. Can be developed through joining professional development organizations, networking, and attending conventions or seminars.
+Assessment skills
+Effective instructors continuously assess learners before training, during training, and after training.
+Management skills
+Effective instructors need to be able to plan, organize, and carry out a lesson while ensuring that time is managed effectively and learners are accomplishing the tasks correctly.
+
+Course of training (AIH 5-4)
+
+What is a course of training?
+A complete series of studies leading to attainment of a specific goal, such as a certificate or rating.
+Often consists of a curriculum, syllabus, and lesson plans. The curriculum includes courses for the various pilot certificates and ratings. The syllabus outlines the individual course and contains multiple lessons. A lesson plan is a detailed plan for how a specific lesson will be conducted and build in a step-by-step progression.
+
+Preparation of a lesson - Training objectives and completion standards (AIH 5-5)
+
+How are objectives used in aviation training?
+There are two types of objectives in aviation: performance-based and decision-based objectives.
+• Performance-based objectives help define exactly what needs to be done and how during each lesson.
+• Decision-based objectives are assessed through scenario-based training and are meant to achieve higher levels of performance and develop risk management skills. Training Objectives apply to all three domains of learning: cognitive (knowledge), affective (attitudes, beliefs, values), and psychomotor (skills). Clearly defined objectives are essential.
+
+How are standards used in aviation training?
+Standards are objectives with specific criteria of the desired knowledge, behavior, or skill to help instructors and learners see evidence of learning. Standards are outlined in various publications such as the airman certification standards (ACS).
+
+Preparation of a lesson - Performance-based objectives (AIH 5-5)
+
+What are the three elements of performance based objectives?
+Description of the skill or behavior
+The articulation of the skill or behavior outlines the intended outcome of the instruction, aiming for a transformation in knowledge, skill, or attitude.
+The conditions
+Conditions provide the framework and stipulations for showcasing the skill, offering clarity on the necessary circumstances and rules governing its demonstration.
+The criteria
+Criteria represent the metrics by which the attainment of the objective is assessed. Well-defined criteria establish performance standards, leaving no doubt as to whether the performance aligns with the objective.
+
+Preparation of a lesson - Importance of Airman Certification Standards (ACS) in aviation training curricula (AIH 5-6)
+
+Explain the role of the Airman Certification Standards (ACS) in developing effective aviation training curricula. Discuss how ACS can enhance both instructor delivery and student learning outcomes.
+The Airman Certification Standards (ACS) are essential in developing aviation training curricula as they provide a comprehensive framework that outlines the necessary knowledge, skills, and risk management elements for pilots. For instructors, ACS offers clear guidelines for lesson planning and student assessment, ensuring consistency in training. For students, ACS clarifies the expectations and criteria for success, focusing their learning on crucial areas and incorporating risk management to prepare them for real-world flying scenarios.
+
+Preparation of a lesson - Decision-based objectives (AIH 5-7)
+
+What is the primary focus of decision-based objectives in flight training?
+The implementation of decision-based objectives is tailored to cultivate pilot judgment and ADM (Aeronautical Decision Making) skills. These objectives are structured to promote advanced learning and practical application. Through the utilization of dynamic and relevant scenarios, the instructor guides the learner in acquiring the ability to gather pertinent information and execute well-informed, safe, and timely decisions.
+
+Organization of material (AIH 5-9)
+
+What is an important aspect of organizing material for a flight training lesson?
+Organizing flight training material involves arranging it logically to match the learner's progress and lesson goals, ensuring better understanding. Using varied teaching methods like demonstrations enhances engagement and effectiveness.
+
+Training Delivery Methods (AIH 5-10 to 5-22)
+
+What are the different types of training delivery methods and how are they best used?
+Ways to present instructional material include:
+• Lecture
+• Discussion
+• Guided discussion
+• Problem based
+• Group learning
+• Drill and practice method
+• Demonstration-performance
+• E-learning
+The methods of delivery are best used in combination and it is the instructor’s responsibility to determine which method best conveys the information.
+
+Training delivery methods - Lecture (AIH 5-10)
+
+What is the lecture method and the advantages/disadvantages of it?
+For the lecture method, the instructor delivers information to learners who are silent participants. The instructor can convey a general understanding of a subject. This may introduce new subjects, summarize ideas, show relationships between theory and practice, and emphasize main points. The main advantages of this method is that a large group can be taught a concept in a relatively short amount of time, and can be used to present information that would otherwise be difficult for learners to get in other ways. The main disadvantage of this method is that the student's retention rate drops 10-15 minutes after the start of the lecture and will only pick back up near the end.
+
+Training delivery methods - Discussion (AIH 5-13)
+
+What are the primary considerations for selecting training delivery methods?
+Primary considerations for selecting training delivery methods include alignment with learning objectives, catering to student needs, providing practical application opportunities, prioritizing safety, incorporating feedback and assessment, considering resource availability, and embracing continuous improvement.
+
+Training delivery methods - Guided discussion (AIH 5-13)
+
+What factors are most important when implementing guided discussions as a training delivery method?
+The instructor's role as a facilitator is crucial in fostering discussions among students. Additionally, it's essential for the instructor to verify that students possess some prior knowledge of the subject, rather than encountering the material for the first time.
+
+Training delivery methods - Cooperative or group learning (AIH 5-21)
+
+What is a key benefit of cooperative or group learning as a training delivery method?
+Students engaged in cooperative (group) learning often achieve improved test scores, see a rise in self-esteem, enhance their social skills, and deepen their understanding of the subject matter. A notable characteristic of this approach is its continual requirement for active participation throughout the learning process.
+
+Training delivery methods - Demonstration-performance (AIH 5-21)
+
+What is the primary purpose of the demonstration-performance training delivery method?
+Offering hands-on practice opportunities following the instructor's demonstration of the task.
+
+Training delivery methods - Drill and practice (AIH 5-22)
+
+What is the primary focus of the "drill and practice" training delivery method?
+Repeating tasks enhances learning and proficiency through practice and refinement, aiding in skill internalization and improvement.
+
+Electronic learning (e-Learning) (AIH 5-18)
+
+What are the advantages of electronic learning (e-Learning) as a training delivery method?
+Adaptable to varying schedules, economically competitive, prioritizing learner needs, readily updated, accessible across diverse locations and timeframes.
+
+Instructional aids and training technologies - Characteristics of effective instructional aids (AIH 5-23)
+
+What are some characteristics of effective instructional aids?
+Thoughtfully chosen visual aids such as charts, graphs, and well-organized images play a crucial role in facilitating learner comprehension and retention of vital information. Ideally, these instructional aids should encapsulate key points and concepts in a clear and factual manner, making it effortless for learners to recall and remember. In general, simplicity is key when it comes to instructional aids, as straightforward visuals tend to be the most effective.
+
+Instructional aids and training technologies - Reasons for use (AIH 5-23)
+
+What will proper use of instructional aids do?
+Proper use of instructional aids enhances learner comprehension, retention of information, and engagement with the material.
+
+Instructional aids and training technologies - Guidelines for use (AIH 5-24)
+
+What are the steps involved with picking if and where an instructional aid should be used?
+Acronym: CGOS
+Clearly establish lesson objectives
+Gather necessary data by researching
+Organize the material into an outline
+Select the ideas to be supported with instructional aids
+
+What are some of the desired qualities of an instructional aid?
+• Supports the learning objective.
+• Are learner centered.
+• Builds on previous learning.
+• Contain useful and meaningful content that is consistent with sound principles of learning.
+• Appeal to learners.
+• Maintain learner attention and interest.
+
+Instructional aids and training technologies - Types (AIH 5-25)
+
+What are the common instructional aids?
+Common instructional aids include marker boards, supplemental print material, enhanced training materials, projected material, videos, interactive systems, computer-assisted learning, models, mock-ups, and cut-aways.
+
+Integrated flight instruction (AIH 9-10)
+
+What is integrated flight instruction?
+Integrated flight instruction entails teaching learners how to execute flight maneuvers by utilizing both external visual cues and flight instruments. To maximize its effectiveness, instructors should introduce the utilization of instrument references right from the initial introduction of each new maneuver.
+
+Problem-based instruction (AIH 5-17)
+
+What are the three types of problem–based instructions?
+• Scenario-Based Training (SBT)
+    • Employs a meticulously crafted script of real-life scenarios to target aviation training goals within an operational setting. It provides authentic situations that enable learners to mentally rehearse and explore the practical application of different pieces of knowledge.
+• Collaborative Problem-Solving
+    • In a group setting, the instructor introduces a problem for collaborative resolution. While offering guidance as required, the instructor recognizes the importance of allowing learners to independently navigate the problem-solving process as part of their learning experience.
+• Case Study Method
+    • Presented by the instructor, a story pertinent to the learner's context immerses them in real-life scenarios. Learners then analyze the case, draw conclusions, and propose solutions. The effectiveness of case studies hinges on learners' utilization of critical thinking skills.
+
+Planning instructional activity - Blocks of learning (AIH 7-2)
+
+What happens if these blocks of learning cover too large of a topic?
+It may detract from, rather than assist in, the completion of the final objective.
+
+Planning instructional activity - Training syllabus (AIH 7-3)
+
+What are characteristics in a good syllabus plan?
+To ensure efficiency, the syllabus should organize learning blocks in the most effective sequence. Acting as a concise overview of the training course, it should encompass essential information comprehensively yet succinctly. Generally outlined in a lesson-by-lesson format, the syllabus may also incorporate tables detailing recommended training durations for each lesson and overall minimum time requirements.
+
+Planning instructional activity - Lesson plans (AIH 7-8)
+
+What are characteristics in a good lesson plan?
+• Unity: Ensure each lesson focuses on specific learning objectives, guiding all teaching methods and materials towards achieving these outcomes.
+• Content: Introduce new material in each lesson while building upon previously covered topics. Brief reviews of prior lessons, especially in flight training, are typically necessary.
+• Scope: Cover a reasonable amount of material that learners can grasp within the given timeframe. Overloading with information leads to confusion, while providing too little results in inefficiency.
+• Practicality: Consider the training environment when planning lessons, whether it's in an airplane, ground trainer, or classroom. Available instructional aids also influence planning and instructional methods.
+• Flexibility: Allow for adjustments in the lesson plan as needed. Blank spaces can accommodate additional material if required.
+• Relation to course objectives: Ensure each lesson aligns with the overall objectives of the training course, ensuring learners understand its relevance. For instance, a lesson on short-field takeoffs and landings should tie into both certification and safety goals.
+• Instructional steps: Develop lessons following the four stages of the teaching process: preparation, presentation, application, and review and evaluation.
+
+The applicant exhibits the skill to: Prepare an instructional lesson plan using teaching methods and materials appropriate for Task and learner characteristics, including Aeronautical knowledge ground lesson applicable for a classroom.
+
+The applicant produces a lesson plan exemplified in the Aviation instructor’s handbook incorporating all key points listed in the ACS.
+
+Prepare an instructional lesson plan using teaching methods and materials appropriate for Task and learner characteristics, including Maneuver introduction and ground lesson.
+
+The applicant produces a lesson plan exemplified in the Aviation instructor’s handbook incorporating all key points listed in the ACS.

@@ -1,0 +1,109 @@
+II.G National Airspace System
+
+Task G. National Airspace System
+References: 14 CFR parts 71, 91, 93; AIM; FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-9, FAA-H-8083-25; VFR Navigation Charts
+Objective: To determine the applicant understands the National Airspace System, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Airspace classes and associated requirements and limitations.
+K2. Chart symbols.
+K3. Special use airspace (SUA), special flight rules areas (SFRA), temporary flight restrictions (TFR), and other airspace areas.
+K4. Currency of publications.
+K5. Special visual flight rules (VFR) requirements.
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Various classes and types of airspace.
+
+Skills: The applicant demonstrates and simultaneously explains how to:
+S1. Identify and comply with the requirements for basic VFR weather minimums and flying in particular classes of airspace.
+S2. Correctly identify airspace and operate in accordance with associated communication and equipment requirements.
+S3. Identify the requirements for operating in SUA or within a TFR. Identify and comply with special air traffic rules (SATR) and SFRA operations, if applicable.
+
+
+Airspace classes and associated requirements and limitations
+
+What are the different airspace classes and their associated requirements and limitations?
+Airspace classes categorize the airspace based on the level of control and regulations applied to aircraft flying in those areas. Here are the different airspace classes commonly used in many countries, including the United States, along with their associated requirements and limitations:
+• Class A:
+    • Altitude: From 18,000 feet MSL (Mean Sea Level) up to and including FL600 (Flight Level 600, which is 60,000 feet).
+    • Purpose: Controlled airspace where all flights are under IFR (Instrument Flight Rules) and are provided with ATC (Air Traffic Control) services.
+    • Equipment: Aircraft must be equipped with two-way radio communications and Mode C transponder.
+• Class B:
+    • Altitude: Generally from the surface to 10,000 feet MSL around the busiest airports.
+    • Purpose: Designed to manage air traffic in congested areas.
+    • Requirements: ATC clearance, two-way radio communications, and Mode C transponder.
+    • Limitations: Pilots must receive ATC clearance before entering.
+• Class C:
+    • Altitude: Generally from the surface to 4,000 feet above the airport elevation (charted in MSL).
+    • Purpose: Designed to provide control services to pilots flying under IFR or VFR (Visual Flight Rules) in the vicinity of airports with moderate traffic.
+    • Requirements: Two-way radio communications and Mode C transponder.
+    • Limitations: ATC clearance is required to enter the airspace.
+• Class D:
+    • Altitude: Generally from the surface to 2,500 feet above the airport elevation (charted in MSL).
+    • Purpose: Control services are provided to IFR and VFR flights arriving and departing from the airport.
+    • Requirements: Two-way radio communications.
+    • Limitations: Pilots must establish two-way radio communications with ATC before entering.
+• Class E:
+    • Altitude: Typically starts at either the surface or at 700 or 1,200 feet AGL (Above Ground Level) and extends upwards to the base of the overlying Class A airspace.
+    • Purpose: Controlled airspace where ATC services are provided to IFR flights only.
+    • Requirements: None for VFR flights unless otherwise specified.
+    • Limitations: VFR flights are not required to communicate with ATC but are encouraged to do so for traffic advisories.
+• Class G:
+    • Altitude: Generally starts at the surface and extends up to but not including the base of the overlying Class E airspace.
+    • Purpose: Uncontrolled airspace where ATC has no authority or responsibility.
+    • Requirements and Limitations: No specific requirements for communication or equipment, except for operations in certain controlled airspace extensions and other designated areas.
+
+Chart symbols
+
+Where on the sectional chart can I find the definitions of each chart symbol?
+Chart symbol definitions can be found in the “legend” section of the sectional chart.
+
+What does the symbol "CTAF" represent on a VFR sectional chart?
+On a VFR sectional chart, the symbol "CTAF" represents the Common Traffic Advisory Frequency.
+CTAF is a designated radio frequency used at uncontrolled airports and other locations where pilots communicate their intentions and coordinate with other aircraft in the vicinity. The purpose of CTAF is to enhance safety by allowing pilots to self-announce their positions and intentions to other aircraft in the area.
+Here's what the symbol looks like on a VFR sectional chart:
+• It typically appears as "CTAF" followed by a frequency (e.g., CTAF 122.8).
+Key points about CTAF:
+• Usage: Pilots use the CTAF to make position reports, announce their intentions (such as takeoffs, landings, and pattern work), and listen for traffic advisories from other pilots.
+• Uncontrolled Airports: CTAF is particularly important at airports without an operating control tower (uncontrolled airports), where pilots rely on self-announced procedures.
+• Monitoring: Pilots are expected to monitor and broadcast on the CTAF frequency when operating within the designated airspace associated with an airport.
+• Safety: CTAF helps pilots coordinate their movements and avoid conflicts, especially in busy airspace near airports without air traffic control towers.
+
+Special use airspace (SUA), special flight rules areas (SFRA), temporary flight restrictions (TFR), and other airspace areas
+
+When teaching special use airspace to a learner use the acronym “MCPRAWNSTT”
+M-MOA-Military operations area
+C-CFA-Controlled firing area
+P-Prohibited
+R-Restricted
+A-Alert area
+W-Warning area
+N-National security airspace
+S-SFRA-Special flight rules area
+T-TRSA-Terminal radar service area
+T-TFR-Temporary flight restriction (use the acronym “VANSS” {VIP’s, Airshows, National disasters, Space launches and Sporting events} to describe what situations result in a TFR.)
+
+Where can I find the restricted area controlling agency and active time information?
+This can be found in the “legend” section of the sectional chart.
+
+What is the primary purpose of a Controlled Firing Area (CFA)?
+To designate airspace where military training exercises involving live munitions are conducted.
+
+Why is it important for pilots to ensure that their aeronautical charts and publications are current?
+Safety: Current charts and publications provide pilots with accurate and up-to-date information about airspace structures, navigation aids, airports, obstacles, and terrain features. This information is essential for safe navigation and flight planning.
+Regulatory Compliance: Aviation regulations require pilots to use current charts and publications when conducting flights. This ensures that pilots have access to the latest airspace classifications, procedures, and other relevant information necessary to comply with air traffic control instructions and operational requirements.
+Changes in Airspace: Airspace can change due to various reasons such as temporary flight restrictions (TFRs), airspace re-designations, or new airspace configurations. Pilots need current charts to be aware of any changes that may affect their flight paths and operational plans.
+Navigation Accuracy: Navigation aids (such as VORs, NDBs, and GPS waypoints) can be updated or decommissioned over time. Current charts provide pilots with accurate information about the availability and status of these aids, ensuring precise navigation during flights.
+Airport Information: Runway configurations, taxiway layouts, services available at airports, and other operational details can change. Pilots rely on current charts to have the latest information about airports they intend to use, facilitating safe and efficient operations.
+Weather Reporting and Forecasting: Aeronautical charts often include weather reporting stations, VFR checkpoints, and other weather-related information. Accurate weather information is crucial for flight planning and decision-making, and current charts provide pilots with the most recent weather reporting points and data.
+Legal and Insurance Considerations: Using outdated charts and publications could potentially lead to legal issues if regulatory compliance is compromised. It could also impact insurance coverage in case of an incident or accident if it is found that the pilot did not adhere to the requirement of using current charts and publications.
+
+Special visual flight rules (SVFR) requirements
+
+What is special VFR (SVFR)?
+Special VFR (SVFR) refers to a specific type of visual flight rules (VFR) clearance granted by air traffic control (ATC) to operate an aircraft within controlled airspace under meteorological conditions that are below basic VFR minimums.
+
+What is the minimum flight visibility and cloud clearance required for a pilot to request and be granted Special VFR (SVFR) clearance within controlled airspace?
+A pilot must have 1 statute mile visibility and remain clear of clouds.
+
+The applicant exhibits the skill to: Identify and comply with the requirements for basic VFR weather minimums and flying in particular classes of airspace. AI.II.G.S2 Correctly identify airspace and operate in accordance with associated communication and equipment requirements. AI.II.G.S3 Identify the requirements for operating in SUA or within a TFR. Identify and comply with special air traffic rules (SATR) and SFRA operations, if applicable.

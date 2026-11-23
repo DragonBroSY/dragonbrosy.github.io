@@ -1,0 +1,48 @@
+III.A Pilot Qualifications
+
+Area of Operation III. Preflight Preparation
+Note: The evaluator must select at least one Task from this Area of Operation.
+Task A. Pilot Qualifications
+References: 14 CFR parts 61, 68, 91; AC 60-28, AC 68-1; FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-23, FAA-H-8083-25; POH/AFM
+Objective: To determine the applicant understands pilot training and qualification requirements for different levels of pilot certificate including student pilot, sport pilot, recreational pilot, private pilot, commercial pilot, and flight instructor; can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. Certification, currency, and recordkeeping requirements, including training and logbook entries.
+K2. Privileges and limitations of pilot certificates and ratings at student pilot, sport, recreational, private, commercial, and flight instructor levels.
+K3. Medical certificates: class, expiration, privileges, temporary disqualifications, and operations under BasicMed.
+K4. Documents pilots must possess to exercise privileges of the specified certificate(s) and rating(s).
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Proficiency versus currency.
+R2. Flying unfamiliar aircraft or operating with unfamiliar flight display systems and avionics.
+
+Skills: The applicant demonstrates how to:
+S1. Deliver instruction on at least two of the elements specified in K1 through K4.
+
+
+Certification, currency, and recordkeeping requirements, including training and logbook entries
+
+What are the certification, currency, and recordkeeping requirements for pilots, including training and logbook entries?
+Pilots must hold a valid certification appropriate for the type of flying they intend to do, maintain currency through regular training and proficiency checks, and maintain accurate logbook entries documenting their flight experience, training, and any endorsements or ratings.
+
+Privileges and limitations of pilot certificates and ratings at student pilot, sport, recreational, private, commercial, and flight instructor levels
+
+What are the privileges and limitations of pilot certificates and ratings at the student pilot, sport, recreational, private, commercial, and flight instructor levels?
+• Student Pilot: Student pilots can only fly under the supervision of a certified flight instructor (CFI) and are limited to specific airspace and weather conditions.
+• Sport Pilot: Sport pilots can fly light-sport aircraft during the day, in visual flight conditions, and are restricted from flying in certain airspace and performing certain operations.
+• Recreational Pilot: Recreational pilots can fly aircraft with certain limitations on passengers, distance, and airspace, and are restricted from certain operations such as flying for compensation or hire.
+• Private Pilot: Private pilots can fly for personal or business reasons, but cannot fly for compensation or hire, nor can they operate in certain commercial capacities.
+• Commercial Pilot: Commercial pilots can fly for hire and are eligible to be paid for their services as long as they meet the specific requirements for the operation.
+• Flight Instructor: Flight instructors can provide flight training for various pilot certificates and ratings, but are limited by the endorsements they hold and the aircraft they are authorized to instruct in.
+
+Medical certificates: class, expiration, privileges, temporary disqualifications, and operations under BasicMed
+
+What are the key differences between medical certificates and BasicMed regarding class, expiration, privileges, temporary disqualifications, and allowed operations?
+Medical certificates are issued by an aviation medical examiner (AME) and come in three classes: First, Second, and Third. They have varying durations of validity: First Class is valid for 12 months for pilots under 40, and 6 months for pilots over 40; Second Class is valid for 12 months regardless of age; Third Class is valid for 60 months for pilots under 40, and 24 months for pilots over 40. The privileges granted depend on the class of certificate, with First Class allowing the broadest range of operations, followed by Second and Third Class. BasicMed, on the other hand, allows certain pilots to fly without holding an FAA medical certificate. It requires a valid driver's license, completion of a medical education course, a physical examination by a state-licensed physician, and compliance with certain health requirements. BasicMed certification is valid for 48 months, and it allows pilots to operate aircraft weighing up to 6,000 pounds, carrying up to 5 passengers, for non-commercial flights within the United States. Temporary disqualifications under BasicMed include certain medical conditions, medications, and treatments that can render a pilot ineligible until they meet specific requirements outlined in the regulations.
+
+Documents pilots must possess to exercise privileges of the specified certificate(s) and rating(s)
+
+What documents must a pilot possess to exercise the privileges of their specified certificate(s) and rating(s)?
+To exercise the privileges of their specified certificate(s) and rating(s), a pilot must possess Pilot Certificate, Photo Identification, Medical Certificate, Logbook with appropriate endorsements for specific ratings or privileges (Student Pilot).
+
+The applicant exhibits the skill to: Deliver instruction on at least two of the elements specified in K1 through K4.

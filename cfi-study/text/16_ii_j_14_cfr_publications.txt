@@ -1,0 +1,56 @@
+II.J 14 CFR and Publications
+
+Task J. 14 CFR and Publications
+References: 14 CFR parts 1, 61, 91; 49 CFR part 830; AIM; Chart Supplements; FAA-H-8083-2, FAA-H-8083-3, FAA-H-8083-25; POH/AFM
+Objective: To determine the applicant understands the Code of Federal Regulations and other relevant publications, can apply that knowledge, manage associated risks, demonstrate appropriate skills, and provide effective instruction.
+
+Knowledge: The applicant demonstrates instructional knowledge by describing and explaining:
+K1. 14 CFR parts 1, 61, and 91.
+K2. 49 CFR part 830.
+K3. Advisory Circulars, INFOs, and SAFOs.
+K4. Airman Certification Standards or Practical Test Standards.
+K5. Pilot's Operating Handbooks or flight manuals.
+K6. Aeronautical Information Manual (AIM).
+
+Risk Management: The applicant explains and teaches how to identify and manage risk associated with:
+R1. Use of expired charts, manuals, or publications without current updates.
+
+Skills: The applicant demonstrates how to:
+S1. Teach at least one of the elements listed in K1 through K6.
+
+
+14 CFR parts 1, 61, and 91
+
+How would you explain the relationship between 14 CFR parts 1, 61, and 91 to a student pilot, and why is it important for a pilot to understand these regulations?
+The relationship between 14 CFR parts 1, 61, and 91 is crucial for any pilot to understand as it forms the foundation of aviation regulations in the United States
+    • Part 1 Defines important terms and acronyms used throughout the Federal Aviation Regulations (FARs), ensuring pilots have a clear understanding of the language used in regulations.
+    • Part 61 Outlines the requirements for pilot certification, including the different types of pilot certificates, ratings, and privileges. It specifies the eligibility criteria, training requirements, and testing standards for pilots seeking various levels of certification.
+    • Part 91 Lays out the general operating and flight rules for all civil aircraft in the United States, covering areas such as flight rules, airspace, maintenance, and inspections.
+
+49 CFR part 830
+
+What is the purpose of 49 CFR Part 830, and how does it relate to aviation safety and accident investigation?
+The purpose of 49 CFR Part 830, also known as the National Transportation Safety Board (NTSB) Regulations, is to establish procedures for the notification, investigation, and reporting of aviation accidents and incidents within the United States. These regulations outline the responsibilities of various entities, including pilots, operators, and air traffic control personnel, in reporting accidents and preserving evidence for investigation. Part 830 requires immediate notification to the NTSB of any aircraft accident or certain incidents, such as substantial damage or fatalities. It also outlines the procedures for preserving evidence, conducting investigations, and reporting findings to the NTSB.
+Understanding and complying with Part 830 is essential for all aviation personnel to ensure prompt and thorough investigation of accidents and incidents, leading to improved aviation safety through the identification of contributing factors and implementation of preventive measures.
+
+Advisory Circulars, INFOs and SAFOs
+
+What are Advisory Circulars (ACs), Information for Operators (INFOs), and Safety Alerts for Operators (SAFOs), and how do they contribute to aviation safety and regulatory compliance?
+Advisory Circulars (ACs) provide guidance and information on regulatory compliance, operational procedures, and safety practices issued by aviation authorities. Information for Operators (INFOs) offer non-regulatory information and recommendations to enhance operational safety and efficiency. Safety Alerts for Operators (SAFOs) notify operators about critical safety concerns, recommended actions, or potential hazards identified by regulatory authorities. These documents serve as valuable resources for operators, pilots, and maintenance personnel, promoting compliance with regulations, enhancing safety awareness, and mitigating risks in aviation operations.
+
+Airman Certification Standards or Practical Test Standards
+
+What are the Airman Certification Standards (ACS) or Practical Test Standards (PTS), and how do they influence pilot training and evaluation?
+The Airman Certification Standards (ACS) and Practical Test Standards (PTS) outline the knowledge, skills, and risk management aspects required for various pilot certificates and ratings. ACS replaces the traditional PTS and integrates risk management and scenario-based training into the testing process. ACS or PTS serve as guides for both instructors and students, providing clear objectives and expectations for training and evaluation. Pilots are evaluated based on their ability to demonstrate proficiency in areas outlined by the ACS or PTS during practical tests, ensuring they meet the standards required for safe and competent flight.
+
+Pilot's Operating Handbooks or flight manuals
+
+What is the Pilot's Operating Handbook (POH), and why is it an essential document for pilots?
+The Pilot's Operating Handbook (POH) is a comprehensive manual provided by the aircraft manufacturer that contains vital information for operating a specific aircraft model. It includes details such as aircraft performance data, operating limitations, procedures, emergency protocols, and systems descriptions. Pilots rely on the POH to understand the capabilities and limitations of their aircraft, plan flights, and adhere to regulatory requirements. It serves as a crucial reference for conducting pre-flight planning, calculating performance parameters, and responding to in-flight emergencies. Ultimately, the POH ensures that pilots have access to accurate and pertinent information needed to operate the aircraft safely and effectively.
+
+Aeronautical Information Manual (AIM)
+
+What is the Aeronautical Information Manual (AIM), and why is it important for pilots?
+The Aeronautical Information Manual (AIM) is an official FAA publication that provides essential information and guidance for pilots, air traffic controllers, and other aviation personnel. It covers a wide range of topics, including airspace rules and procedures, communication protocols, airport operations, flight planning, and aircraft performance. The AIM serves as a comprehensive reference for understanding and complying with regulations and best practices within the National Airspace System (NAS). Pilots rely on the AIM to enhance situational awareness, ensure regulatory compliance, and promote safe and efficient flight operations. By providing standardized procedures and pertinent information, the AIM contributes to the overall safety and professionalism of aviation.
+
+The applicant exhibits the skill to: Teach at least one of the elements listed in K1 through K6.
