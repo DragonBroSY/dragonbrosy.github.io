@@ -123,6 +123,46 @@
     .fd-move:disabled, .fd-del:disabled { opacity: 0.4; cursor: not-allowed; }
     .fd-del { margin-left: 0.35rem; font: inherit; font-size: 0.62rem; font-weight: 700; padding: 0.12rem 0.45rem; border-radius: 3px; border: 1px solid #b3261e; background: #fff; color: #b3261e; cursor: pointer; white-space: nowrap; }
     .fd-del:hover:not(:disabled) { background: #b3261e; color: #fff; }
+    /* Per-file notes (Markdown) */
+    .fd-note { margin-left: 0.45rem; font: inherit; font-size: 0.6rem; font-weight: 700; padding: 0.08rem 0.4rem; border-radius: 3px; border: 1px solid #c9d6e6; background: #fff; color: #6a8aaa; cursor: pointer; white-space: nowrap; vertical-align: 1px; }
+    .fd-note.has { border-color: #c8a400; color: #7a6200; background: #fffbea; }
+    .fd-note:hover, .fd-note.open { border-color: #1a3a6b; color: #1a3a6b; }
+    .fd-note-row > td { background: #f8fafc; padding: 0.8rem 1rem 0.9rem !important; border-bottom: 1px solid #dde5ef; }
+    .fd-note-empty { font-size: 0.74rem; color: #9ab0c8; font-style: italic; }
+    .fd-note-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-top: 0.6rem; font-size: 0.66rem; color: #9a7d00; }
+    .fd-note-actions button { font: inherit; font-size: 0.66rem; font-weight: 700; padding: 0.25rem 0.7rem; border-radius: 4px; border: 1px solid #1a3a6b; background: #fff; color: #1a3a6b; cursor: pointer; }
+    .fd-note-actions button.primary { background: #1a3a6b; color: #fff; }
+    .fd-note-actions button:disabled { opacity: 0.5; cursor: wait; }
+    .fd-note-edit-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 210px; gap: 0.9rem; align-items: start; }
+    @media (max-width: 720px) { .fd-note-edit-wrap { grid-template-columns: 1fr; } }
+    .fd-md-toolbar { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-bottom: 0.3rem; }
+    .fd-md-toolbar button { font: inherit; font-size: 0.66rem; font-weight: 700; min-width: 1.9rem; padding: 0.2rem 0.45rem; border-radius: 3px; border: 1px solid #c9d6e6; background: #fff; color: #1a3a6b; cursor: pointer; }
+    .fd-md-toolbar button:hover { border-color: #1a3a6b; }
+    .fd-note-text { display: block; width: 100%; min-height: 8.5rem; resize: vertical; font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 0.74rem; line-height: 1.5; padding: 0.55rem 0.65rem; border: 1px solid #c9d6e6; border-radius: 4px; color: #1a2a3a; background: #fff; }
+    .fd-note-text:focus { outline: none; border-color: #1a3a6b; box-shadow: 0 0 0 2px rgba(26,58,107,0.15); }
+    .fd-note-label { font-size: 0.56rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #9ab0c8; margin: 0.6rem 0 0.25rem; }
+    .fd-note-preview { border: 1px dashed #dde5ef; border-radius: 4px; padding: 0.5rem 0.65rem; background: #fff; min-height: 2.2rem; }
+    .fd-md-cheat { border: 1px solid #dde5ef; border-left: 3px solid #c8a400; border-radius: 4px; background: #fff; padding: 0.5rem 0.55rem 0.4rem; font-size: 0.66rem; color: #4a6a8a; }
+    .fd-md-cheat h4 { font-size: 0.56rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #1a3a6b; margin: 0 0 0.35rem; }
+    .fd-md-cheat button { display: grid; grid-template-columns: 1fr auto; gap: 0.4rem; width: 100%; text-align: left; font: inherit; padding: 0.22rem 0.3rem; border: 0; border-radius: 3px; background: none; color: inherit; cursor: pointer; }
+    .fd-md-cheat button:hover { background: #f0f4f9; }
+    .fd-md-cheat code { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 0.64rem; color: #1a2a3a; white-space: nowrap; }
+    .fd-md-cheat .r { color: #6a8aaa; text-align: right; }
+    .fd-md-cheat .tip { margin-top: 0.4rem; padding-top: 0.35rem; border-top: 1px solid #edf1f6; color: #9ab0c8; font-size: 0.6rem; line-height: 1.45; }
+    .md { font-size: 0.78rem; line-height: 1.55; color: #1a2a3a; word-break: break-word; }
+    .md > :first-child { margin-top: 0; } .md > :last-child { margin-bottom: 0; }
+    .md p, .md ul, .md ol, .md blockquote, .md pre { margin: 0.35rem 0; }
+    .md h4, .md h5, .md h6 { margin: 0.55rem 0 0.25rem; color: #1a3a6b; font-weight: 800; }
+    .md h4 { font-size: 0.92rem; } .md h5 { font-size: 0.84rem; } .md h6 { font-size: 0.78rem; }
+    .md ul, .md ol { padding-left: 1.3rem; }
+    .md li.task { list-style: none; margin-left: -1.1rem; }
+    .md li.task input { margin-right: 0.35rem; accent-color: #1a3a6b; vertical-align: -1px; }
+    .md code { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 0.72rem; background: #f0f4f9; padding: 0.05rem 0.25rem; border-radius: 3px; }
+    .md pre { background: #f0f4f9; padding: 0.5rem 0.65rem; border-radius: 4px; overflow-x: auto; }
+    .md pre code { background: none; padding: 0; }
+    .md blockquote { border-left: 3px solid #c8a400; padding-left: 0.6rem; color: #4a6a8a; }
+    .md hr { border: 0; border-top: 1px solid #dde5ef; margin: 0.6rem 0; }
+    .md a { color: #1a3a6b; text-decoration: underline; word-break: break-all; }
 
     footer { background: #1a3a6b; border-top: 3px solid #c8a400; text-align: center; font-size: 0.6rem; color: rgba(255,255,255,0.45); padding: 1.4rem; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 1rem; }
     footer .freq { color: rgba(255,255,255,0.3); }
@@ -430,11 +470,13 @@ git log --oneline -3</pre>
           return;
         }
         body.innerHTML = list.map(function(f) {
-          var d = new Date(f.date);
+          var d = new Date(f.date), key = f.vis + '|' + f.path, isOpen = noteOpen === key;
+          var noteBtn = '<button class="fd-note' + (f.notes ? ' has' : '') + (isOpen ? ' open' : '') + '" data-key="' + esc(key) + '" title="' +
+            (f.notes ? 'Show notes' : 'Add notes') + '">' + (f.notes ? '&#128221; Notes' : '+ Note') + '</button>';
           var link = f.vis === 'public'
             ? '<a href="' + esc(enc(f.path)) + '" target="_blank" rel="noopener">' + esc(f.name) + '</a>'
             : '<a href="#" data-path="' + esc(f.path) + '" data-name="' + esc(f.name) + '">' + esc(f.name) + '</a>';
-          return '<tr><td>' + link + '</td>' +
+          return '<tr><td>' + link + noteBtn + '</td>' +
             '<td style="white-space:nowrap;">' + (f.vis === 'private' ? '&#128274; Private' : '&#127760; Public') +
               (access.private && access.public
                 ? '<button class="fd-move" data-vis="' + f.vis + '" data-name="' + esc(f.name) + '">Make ' + (f.vis === 'private' ? 'public' : 'private') + '</button>'
@@ -442,9 +484,196 @@ git log --oneline -3</pre>
               (access[f.vis] ? '<button class="fd-del" data-vis="' + f.vis + '" data-name="' + esc(f.name) + '">Delete</button>' : '') + '</td>' +
             '<td>' + esc(ext(f.name)) + '</td><td>' + fmtSize(f.size) + '</td>' +
             '<td>' + d.toLocaleDateString([], { year: 'numeric', month: 'short', day: 'numeric' }) + ' ' +
-            d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + '</td></tr>';
+            d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + '</td></tr>' +
+            (isOpen ? noteRow(f) : '');
         }).join('');
       }
+
+      // ---- Notes: Markdown text stored as "notes" on the file's entry in uploads/index.json ----
+      var noteOpen = null, noteEditing = false, noteDraft = '', noteSaving = false;
+      var MD_CHEAT = [
+        ['h', '## Heading', 'Heading'], ['b', '**bold**', 'bold'], ['i', '*italic*', 'italic'],
+        ['ul', '- item', 'Bullet list'], ['ol', '1. item', 'Numbered list'], ['task', '- [ ] to do', 'Checklist'],
+        ['link', '[text](https://…)', 'Link'], ['code', '`code`', 'Inline code'], ['pre', '```', 'Code block'],
+        ['quote', '> quote', 'Quote'], ['hr', '---', 'Divider']
+      ];
+      function noteRow(f) {
+        var pub = f.vis === 'public' ? '<span>&#127760; Notes on public files are readable by anyone (stored in the public repo).</span>' : '';
+        if (!noteEditing) {
+          return '<tr class="fd-note-row"><td colspan="5">' +
+            (f.notes ? '<div class="md">' + md(f.notes) + '</div>' : '<div class="fd-note-empty">No notes yet.</div>') +
+            '<div class="fd-note-actions">' + (access[f.vis] ? '<button class="primary" data-note-act="edit">' + (f.notes ? 'Edit notes' : 'Write notes') + '</button>' : '') +
+            '<button data-note-act="close">Close</button>' + pub + '</div></td></tr>';
+        }
+        return '<tr class="fd-note-row"><td colspan="5"><div class="fd-note-edit-wrap"><div>' +
+          '<div class="fd-md-toolbar" role="toolbar" aria-label="Formatting">' +
+            '<button data-md="b" title="Bold (Cmd+B)"><b>B</b></button><button data-md="i" title="Italic (Cmd+I)"><i>I</i></button>' +
+            '<button data-md="h" title="Heading">H</button><button data-md="ul" title="Bullet list">&bull; List</button>' +
+            '<button data-md="ol" title="Numbered list">1. List</button><button data-md="task" title="Checklist item">&#9744; Task</button>' +
+            '<button data-md="link" title="Link (Cmd+K)">Link</button><button data-md="code" title="Inline code">&lt;/&gt;</button>' +
+            '<button data-md="quote" title="Quote">&ldquo; Quote</button></div>' +
+          '<textarea class="fd-note-text" placeholder="Write notes in Markdown — see the cheat sheet on the right.">' + esc(noteDraft) + '</textarea>' +
+          '<div class="fd-note-label">Preview</div><div class="fd-note-preview md">' + (noteDraft.trim() ? md(noteDraft) : '<span class="fd-note-empty">Nothing to preview yet.</span>') + '</div>' +
+          '<div class="fd-note-actions"><button class="primary" data-note-act="save"' + (noteSaving ? ' disabled' : '') + '>' + (noteSaving ? 'Saving…' : 'Save notes') + '</button>' +
+            '<button data-note-act="cancel"' + (noteSaving ? ' disabled' : '') + '>Cancel</button><span style="color:#9ab0c8">Cmd+Enter to save &middot; Esc to cancel</span>' + pub + '</div>' +
+          '</div><aside class="fd-md-cheat" aria-label="Markdown cheat sheet"><h4>Markdown cheat sheet</h4>' +
+            MD_CHEAT.map(function(c){ return '<button data-md="' + c[0] + '" title="Insert ' + c[2].toLowerCase() + '"><code>' + esc(c[1]) + '</code><span class="r">' + c[2] + '</span></button>'; }).join('') +
+            '<div class="tip">Click a row to insert it at the cursor. Select text first to wrap it. Leave a blank line between paragraphs.</div>' +
+          '</aside></div></td></tr>';
+      }
+
+      // Small, safe Markdown renderer: everything is HTML-escaped first; links allow http(s)/mailto only.
+      function md(src) {
+        function inline(t) {
+          var codes = [];
+          t = esc(t).replace(/`([^`]+)`/g, function(_, c){ codes.push(c); return '\u0000' + (codes.length - 1) + '\u0000'; });
+          t = t.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function(m, txt, url) {
+            var u = url.replace(/&#38;/g, '&');
+            return /^(https?:\/\/|mailto:)/i.test(u) ? '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + txt + '</a>' : m;
+          });
+          t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+               .replace(/(^|[^*\w])\*([^*\s](?:[^*]*[^*\s])?)\*(?!\w)/g, '$1<em>$2</em>')
+               .replace(/~~([^~]+)~~/g, '<del>$1</del>');
+          return t.replace(/\u0000(\d+)\u0000/g, function(_, n){ return '<code>' + codes[n] + '</code>'; });
+        }
+        var lines = String(src).replace(/\r/g, '').split('\n'), out = [], para = [], list = null;
+        function flushPara() { if (para.length) { out.push('<p>' + para.map(inline).join('<br>') + '</p>'); para = []; } }
+        function flushList() { if (list) { out.push('<' + list.tag + '>' + list.items.join('') + '</' + list.tag + '>'); list = null; } }
+        for (var i = 0; i < lines.length; i++) {
+          var l = lines[i], m;
+          if (/^\s*```/.test(l)) {
+            flushPara(); flushList();
+            var code = [];
+            for (i++; i < lines.length && !/^\s*```/.test(lines[i]); i++) code.push(lines[i]);
+            out.push('<pre><code>' + esc(code.join('\n')) + '</code></pre>'); continue;
+          }
+          if (!l.trim()) { flushPara(); flushList(); continue; }
+          if ((m = l.match(/^(#{1,3})\s+(.*)$/))) { flushPara(); flushList(); var h = 'h' + (m[1].length + 3); out.push('<' + h + '>' + inline(m[2]) + '</' + h + '>'); continue; }
+          if (/^\s*(-{3,}|\*{3,})\s*$/.test(l)) { flushPara(); flushList(); out.push('<hr>'); continue; }
+          if ((m = l.match(/^>\s?(.*)$/))) {
+            flushPara(); flushList();
+            var q = [m[1]];
+            while (i + 1 < lines.length && (m = lines[i + 1].match(/^>\s?(.*)$/))) { q.push(m[1]); i++; }
+            out.push('<blockquote>' + q.map(inline).join('<br>') + '</blockquote>'); continue;
+          }
+          var ul = l.match(/^\s*[-*+]\s+(?:\[([ xX])\]\s+)?(.*)$/), ol = l.match(/^\s*\d+[.)]\s+(.*)$/);
+          if (ul || ol) {
+            flushPara();
+            var tag = ul ? 'ul' : 'ol';
+            if (!list || list.tag !== tag) { flushList(); list = { tag: tag, items: [] }; }
+            if (ul && ul[1] !== undefined) list.items.push('<li class="task"><input type="checkbox" disabled' + (ul[1] !== ' ' ? ' checked' : '') + '>' + inline(ul[2]) + '</li>');
+            else list.items.push('<li>' + inline(ul ? ul[2] : ol[1]) + '</li>');
+            continue;
+          }
+          flushList(); para.push(l);
+        }
+        flushPara(); flushList();
+        return out.join('');
+      }
+
+      // Insert Markdown at the cursor (wrapping the selection where that makes sense).
+      function insertMd(ta, kind) {
+        var v = ta.value, a = ta.selectionStart, b = ta.selectionEnd, sel = v.slice(a, b);
+        var lineStart = v.lastIndexOf('\n', a - 1) + 1;
+        function wrap(pre, post, placeholder) {
+          var text = sel || placeholder;
+          ta.setRangeText(pre + text + post, a, b, 'end');
+          if (!sel) ta.setSelectionRange(a + pre.length, a + pre.length + text.length);
+        }
+        function prefix(p) {
+          var blockEnd = b > a ? b : a, block = v.slice(lineStart, blockEnd);
+          var lines = (block || '').split('\n');
+          var n = 0, done = lines.map(function(x){ return (typeof p === 'function' ? p(n++) : p) + x; }).join('\n');
+          ta.setRangeText(done, lineStart, blockEnd, 'end');
+        }
+        switch (kind) {
+          case 'b': wrap('**', '**', 'bold text'); break;
+          case 'i': wrap('*', '*', 'italic text'); break;
+          case 'code': wrap('`', '`', 'code'); break;
+          case 'link':
+            if (/^https?:\/\//.test(sel)) { ta.setRangeText('[link text](' + sel + ')', a, b, 'end'); ta.setSelectionRange(a + 1, a + 10); }
+            else { var t = sel || 'link text'; ta.setRangeText('[' + t + '](https://)', a, b, 'end'); var u = a + t.length + 3; ta.setSelectionRange(u, u + 8); }
+            break;
+          case 'h': prefix('## '); break;
+          case 'ul': prefix('- '); break;
+          case 'ol': prefix(function(n){ return (n + 1) + '. '; }); break;
+          case 'task': prefix('- [ ] '); break;
+          case 'quote': prefix('> '); break;
+          case 'pre': ta.setRangeText((a === lineStart ? '' : '\n') + '```\n' + (sel || 'code') + '\n```\n', a, b, 'end'); break;
+          case 'hr': ta.setRangeText((a === lineStart ? '' : '\n') + '\n---\n\n', a, b, 'end'); break;
+        }
+        ta.focus();
+        ta.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+
+      function openFile(key) { return files.filter(function(x){ return x.vis + '|' + x.path === key; })[0]; }
+      function focusNote() {
+        var ta = body.querySelector('.fd-note-text');
+        if (ta) { ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length); }
+      }
+      async function saveNote() {
+        var f = openFile(noteOpen);
+        if (!f || noteSaving) return;
+        var text = noteDraft.replace(/\s+$/, '');
+        noteSaving = true; render();
+        try {
+          setStatus('Saving notes for ' + f.name + '…');
+          var found = false;
+          var list = await commitFile(f.vis, null, null, (text ? 'Update' : 'Clear') + ' notes for ' + f.name + ' via File Drop', function(list) {
+            return list.map(function(x) {
+              if (x.path !== f.path) return x;
+              found = true;
+              var y = Object.assign({}, x);
+              if (text) y.notes = text; else delete y.notes;
+              return y;
+            });
+          });
+          if (!found) throw new Error('this file is no longer in the uploads index. Reload the page.');
+          syncFiles(f.vis, list);
+          noteEditing = false;
+          setStatus('Notes saved for ' + f.name + '.', 'ok');
+        } catch (e) {
+          if (!e.expired) setStatus('Saving notes failed for ' + f.name + ': ' + e.message, 'err');
+        }
+        noteSaving = false;
+        render();
+      }
+
+      body.addEventListener('click', function(e) {
+        var nb = e.target.closest('.fd-note');
+        if (nb) {
+          if (noteEditing && noteOpen !== nb.dataset.key && !confirm('Discard your unsaved notes?')) return;
+          if (noteOpen === nb.dataset.key && !noteEditing) { noteOpen = null; }
+          else if (noteOpen !== nb.dataset.key) { noteOpen = nb.dataset.key; noteEditing = false; }
+          render(); return;
+        }
+        var mdb = e.target.closest('[data-md]');
+        if (mdb) { var ta = body.querySelector('.fd-note-text'); if (ta) insertMd(ta, mdb.dataset.md); return; }
+        var act = e.target.closest('[data-note-act]');
+        if (!act) return;
+        var f = openFile(noteOpen);
+        switch (act.dataset.noteAct) {
+          case 'edit': noteEditing = true; noteDraft = (f && f.notes) || ''; render(); focusNote(); break;
+          case 'close': noteOpen = null; render(); break;
+          case 'cancel':
+            if (noteDraft !== ((f && f.notes) || '') && !confirm('Discard your unsaved notes?')) return;
+            noteEditing = false; render(); break;
+          case 'save': saveNote(); break;
+        }
+      });
+      body.addEventListener('input', function(e) {
+        if (!e.target.classList.contains('fd-note-text')) return;
+        noteDraft = e.target.value;
+        var pv = body.querySelector('.fd-note-preview');
+        if (pv) pv.innerHTML = noteDraft.trim() ? md(noteDraft) : '<span class="fd-note-empty">Nothing to preview yet.</span>';
+      });
+      body.addEventListener('keydown', function(e) {
+        if (!e.target.classList.contains('fd-note-text')) return;
+        var mod = e.metaKey || e.ctrlKey;
+        if (mod && e.key === 'Enter') { e.preventDefault(); saveNote(); }
+        else if (mod && (e.key === 'b' || e.key === 'i' || e.key === 'k')) { e.preventDefault(); insertMd(e.target, e.key === 'k' ? 'link' : e.key); }
+        else if (e.key === 'Escape') { e.preventDefault(); body.querySelector('[data-note-act="cancel"]').click(); }
+      });
 
       // Commit one file plus its uploads index entry in a single commit, using the Git Data API.
       // The Contents API PUT runs a GitHub-side check that times out on some large binaries
@@ -464,7 +693,7 @@ git log --oneline -3</pre>
         // GitHub now and then rejects a large blob upload with a spurious 401 (the sign-in is still
         // valid; gh() already checked) or a 5xx/timeout. The blob is content-addressed, so just retry.
         var blob;
-        for (var tries = 0; ; tries++) {
+        for (var tries = 0; path; tries++) {
           try { blob = await gitJson(vis, 'blobs', 'POST', { content: b64, encoding: 'base64' }); break; }
           catch (e) {
             var transient = !e.expired && (!e.status || e.status === 401 || e.status === 403 || e.status === 408 || e.status >= 500);
@@ -487,9 +716,9 @@ git log --oneline -3</pre>
           }
           var base = (await gitJson(vis, 'commits/' + head)).tree.sha;
           list = editList(list);
-          var tree = await gitJson(vis, 'trees', 'POST', { base_tree: base, tree: [
-            { path: path, mode: '100644', type: 'blob', sha: blob.sha },
-            { path: MANIFEST, mode: '100644', type: 'blob', content: JSON.stringify(list, null, 2) + '\n' }] });
+          var entries = [{ path: MANIFEST, mode: '100644', type: 'blob', content: JSON.stringify(list, null, 2) + '\n' }];
+          if (path) entries.unshift({ path: path, mode: '100644', type: 'blob', sha: blob.sha });
+          var tree = await gitJson(vis, 'trees', 'POST', { base_tree: base, tree: entries });
           var commit = await gitJson(vis, 'commits', 'POST', { message: message, tree: tree.sha, parents: [head] });
           try {
             await gitJson(vis, 'refs/heads/' + BRANCH, 'PATCH', { sha: commit.sha });
