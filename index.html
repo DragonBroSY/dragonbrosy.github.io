@@ -394,8 +394,8 @@ git log --oneline -3</pre>
       function b64ToUtf8(b) { return decodeURIComponent(escape(atob(b.replace(/\n/g, '')))); }
       function utf8ToB64(s) { return btoa(unescape(encodeURIComponent(s))); }
 
-      async function loadManifest(vis) {
-        var res = await gh(api(vis, MANIFEST) + '?ref=' + BRANCH, { headers: headers() });
+      async function loadManifest(vis, ref) {
+        var res = await gh(api(vis, MANIFEST) + '?ref=' + (ref || BRANCH), { headers: headers() });
         if (!res.ok) return { sha: null, list: [] };
         var j = await res.json();
         return { sha: j.sha, list: JSON.parse(b64ToUtf8(j.content)) };
@@ -444,6 +444,30 @@ git log --oneline -3</pre>
             '<td>' + d.toLocaleDateString([], { year: 'numeric', month: 'short', day: 'numeric' }) + ' ' +
             d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + '</td></tr>';
         }).join('');
+      }
+
+      // Commit one file plus its uploads index entry in a single commit, using the Git Data API.
+      // The Contents API PUT runs a GitHub-side check that times out on some large binaries
+      // (403 "The rule did not run because of a timeout"); uploading a blob first avoids it.
+      async function gitJson(vis, path, method, bodyObj) {
+        var res = await gh(repoApi(vis) + '/git/' + path, { method: method || 'GET', headers: headers(),
+                                                            body: bodyObj ? JSON.stringify(bodyObj) : undefined });
+        if (!res.ok) { var err = new Error(path.split('/')[0] + ' ' + res.status + ' ' + (await res.text()).slice(0, 150)); err.status = res.status; throw err; }
+        return res.json();
+      }
+      async function commitFile(vis, path, b64, message, editList) {
+        var blob = await gitJson(vis, 'blobs', 'POST', { content: b64, encoding: 'base64' });
+        for (var attempt = 0; ; attempt++) {
+          var head = (await gitJson(vis, 'ref/heads/' + BRANCH)).object.sha;
+          var base = (await gitJson(vis, 'commits/' + head)).tree.sha;
+          var list = editList((await loadManifest(vis, head)).list);
+          var tree = await gitJson(vis, 'trees', 'POST', { base_tree: base, tree: [
+            { path: path, mode: '100644', type: 'blob', sha: blob.sha },
+            { path: MANIFEST, mode: '100644', type: 'blob', content: JSON.stringify(list, null, 2) + '\n' }] });
+          var commit = await gitJson(vis, 'commits', 'POST', { message: message, tree: tree.sha, parents: [head] });
+          try { await gitJson(vis, 'refs/heads/' + BRANCH, 'PATCH', { sha: commit.sha }); return list; }
+          catch (e) { if (e.status !== 422 || attempt >= 2) throw e; }  // branch moved underneath us: rebuild on the new head
+        }
       }
 
       async function putManifest(vis, list, sha, message) {
@@ -513,13 +537,9 @@ git log --oneline -3</pre>
           var content = await readBase64(await raw.blob());
 
           var newName = uniqueName(name, to), newPath = 'uploads/' + newName;
-          var res = await gh(api(to, newPath), { method: 'PUT', headers: headers(), body: JSON.stringify({
-            message: 'Move ' + newName + ' from ' + from + ' via File Drop', content: content, branch: BRANCH }) });
-          if (!res.ok) throw new Error('copy ' + res.status + ' ' + (await res.text()).slice(0, 150));
-          var mt = await loadManifest(to);
-          mt.list.push(Object.assign({}, f, { name: newName, path: newPath, vis: undefined }));
-          await putManifest(to, mt.list, mt.sha, 'Add ' + newName + ' to uploads index');
-          syncFiles(to, mt.list);
+          syncFiles(to, await commitFile(to, newPath, content, 'Move ' + newName + ' from ' + from + ' via File Drop', function(list) {
+            return list.concat([Object.assign({}, f, { name: newName, path: newPath, vis: undefined })]);
+          }));
 
           try { await removeFile(from, f, 'Move ' + name + ' to ' + to + ' via File Drop'); }
           catch (err) { throw new Error('copied, but removing the original failed (' + err.message + ')'); }
@@ -614,15 +634,9 @@ git log --oneline -3</pre>
             setStatus('Uploading ' + picked[i].rel + ' to ' + vis + ' (' + (i + 1) + '/' + picked.length + ')…');
             var name = uniqueName(picked[i].rel.split('/').map(function(s){ return s.replace(/\\/g, '_'); }).join('/'), vis);
             var path = 'uploads/' + name;
-            var res = await gh(api(vis, path), { method: 'PUT', headers: headers(), body: JSON.stringify({
-              message: 'Upload ' + name + ' via File Drop', content: await readBase64(file), branch: BRANCH }) });
-            if (!res.ok) throw new Error(res.status + ' ' + (await res.text()).slice(0, 150));
-
-            // Re-read the manifest right before writing so its sha is current.
-            var m = await loadManifest(vis);
-            m.list.push({ name: name, path: path, size: file.size, type: file.type || '', date: new Date().toISOString() });
-            await putManifest(vis, m.list, m.sha, 'Add ' + name + ' to uploads index');
-            syncFiles(vis, m.list);
+            var entry = { name: name, path: path, size: file.size, type: file.type || '', date: new Date().toISOString() };
+            syncFiles(vis, await commitFile(vis, path, await readBase64(file), 'Upload ' + name + ' via File Drop',
+                                            function(list) { return list.concat([entry]); }));
             render(); done++;
           } catch (e) {
             if (!e.expired) setStatus('Upload failed for ' + picked[i].rel + ': ' + e.message, 'err');
