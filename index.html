@@ -455,18 +455,41 @@ git log --oneline -3</pre>
         if (!res.ok) { var err = new Error(path.split('/')[0] + ' ' + res.status + ' ' + (await res.text()).slice(0, 150)); err.status = res.status; throw err; }
         return res.json();
       }
+      // Remember the commit and index we last wrote per repo: right after a commit GitHub's API can
+      // still report the previous head (and index) for a few seconds, which made the next commit a
+      // non-fast-forward (422) or could have rebuilt the index from a stale copy.
+      var lastCommit = {};
+      function wait(ms) { return new Promise(function(r){ setTimeout(r, ms); }); }
       async function commitFile(vis, path, b64, message, editList) {
         var blob = await gitJson(vis, 'blobs', 'POST', { content: b64, encoding: 'base64' });
         for (var attempt = 0; ; attempt++) {
-          var head = (await gitJson(vis, 'ref/heads/' + BRANCH)).object.sha;
+          var head, list, known = lastCommit[vis];
+          if (known && attempt === 0) { head = known.sha; list = known.list.slice(); }
+          else {
+            head = (await gitJson(vis, 'ref/heads/' + BRANCH)).object.sha;
+            list = (await loadManifest(vis, head)).list;
+            // An empty index while we know this repo has files means GitHub served a stale/missing copy.
+            if (!list.length && files.some(function(f){ return f.vis === vis; })) {
+              if (attempt >= 6) throw new Error('GitHub returned an empty uploads index; not overwriting it. Reload and try again.');
+              await wait(1500 * (attempt + 1)); continue;
+            }
+          }
           var base = (await gitJson(vis, 'commits/' + head)).tree.sha;
-          var list = editList((await loadManifest(vis, head)).list);
+          list = editList(list);
           var tree = await gitJson(vis, 'trees', 'POST', { base_tree: base, tree: [
             { path: path, mode: '100644', type: 'blob', sha: blob.sha },
             { path: MANIFEST, mode: '100644', type: 'blob', content: JSON.stringify(list, null, 2) + '\n' }] });
           var commit = await gitJson(vis, 'commits', 'POST', { message: message, tree: tree.sha, parents: [head] });
-          try { await gitJson(vis, 'refs/heads/' + BRANCH, 'PATCH', { sha: commit.sha }); return list; }
-          catch (e) { if (e.status !== 422 || attempt >= 2) throw e; }  // branch moved underneath us: rebuild on the new head
+          try {
+            await gitJson(vis, 'refs/heads/' + BRANCH, 'PATCH', { sha: commit.sha });
+            lastCommit[vis] = { sha: commit.sha, list: list };
+            return list;
+          } catch (e) {
+            // 422 = the branch moved (another commit landed, or our view was stale): rebuild on the real head.
+            delete lastCommit[vis];
+            if (e.status !== 422 || attempt >= 6) throw e;
+            await wait(1500 * (attempt + 1));
+          }
         }
       }
 
@@ -491,6 +514,7 @@ git log --oneline -3</pre>
           if (!res.ok) throw new Error('delete ' + res.status);
         } else if (meta.status !== 404) throw new Error('read ' + meta.status);
         // A 404 means the file is already gone (e.g. deleted on GitHub) — still clean up the index.
+        delete lastCommit[vis];
         var m = await loadManifest(vis);
         m.list = m.list.filter(function(x){ return x.path !== f.path; });
         await putManifest(vis, m.list, m.sha, 'Remove ' + f.name + ' from uploads index');
@@ -625,11 +649,14 @@ git log --oneline -3</pre>
       // GitHub rejects files over 100 MB (and the API sends them base64, a third bigger).
       var MAX_BYTES = 100 * 1024 * 1024;
       async function upload(picked) {
-        var vis = target, skipped = [], done = 0;
+        var vis = target, skipped = [], already = 0, done = 0;
         if (!picked.length) { setStatus('Nothing to upload — the folder was empty.', 'err'); return; }
         for (var i = 0; i < picked.length; i++) {
           var file = picked[i].file;
           if (file.size > MAX_BYTES) { skipped.push(picked[i].rel + ' (' + fmtSize(file.size) + ')'); continue; }
+          // Re-dropping a folder after a failure: don't duplicate files that already made it.
+          var cleanRel = picked[i].rel.split('/').map(function(s){ return s.replace(/\\/g, '_'); }).join('/');
+          if (files.some(function(f){ return f.vis === vis && f.name === cleanRel && f.size === file.size; })) { already++; continue; }
           try {
             setStatus('Uploading ' + picked[i].rel + ' to ' + vis + ' (' + (i + 1) + '/' + picked.length + ')…');
             var name = uniqueName(picked[i].rel.split('/').map(function(s){ return s.replace(/\\/g, '_'); }).join('/'), vis);
@@ -645,6 +672,7 @@ git log --oneline -3</pre>
         }
         var msg = done ? 'Uploaded ' + done + (done === 1 ? ' file' : ' files') + '.' +
           (vis === 'public' ? ' Public links go live once GitHub Pages redeploys (about a minute).' : ' Saved to the private repo.') : '';
+        if (already) msg += (msg ? ' ' : '') + already + (already === 1 ? ' file was' : ' files were') + ' already uploaded, so skipped.';
         if (skipped.length) msg += (msg ? ' ' : '') + 'Skipped ' + skipped.length + ' over GitHub\'s 100 MB file limit: ' + skipped.join(', ') + '.';
         setStatus(msg || 'Nothing uploaded.', skipped.length ? 'err' : 'ok');
       }
