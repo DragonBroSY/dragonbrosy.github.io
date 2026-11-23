@@ -461,7 +461,18 @@ git log --oneline -3</pre>
       var lastCommit = {};
       function wait(ms) { return new Promise(function(r){ setTimeout(r, ms); }); }
       async function commitFile(vis, path, b64, message, editList) {
-        var blob = await gitJson(vis, 'blobs', 'POST', { content: b64, encoding: 'base64' });
+        // GitHub now and then rejects a large blob upload with a spurious 401 (the sign-in is still
+        // valid; gh() already checked) or a 5xx/timeout. The blob is content-addressed, so just retry.
+        var blob;
+        for (var tries = 0; ; tries++) {
+          try { blob = await gitJson(vis, 'blobs', 'POST', { content: b64, encoding: 'base64' }); break; }
+          catch (e) {
+            var transient = !e.expired && (!e.status || e.status === 401 || e.status === 403 || e.status === 408 || e.status >= 500);
+            if (!transient || tries >= 3) throw e;
+            setStatus(statusEl.textContent.replace(/ \(retry \d\)$/, '') + ' (retry ' + (tries + 1) + ')');
+            await wait(3000 * (tries + 1));
+          }
+        }
         for (var attempt = 0; ; attempt++) {
           var head, list, known = lastCommit[vis];
           if (known && attempt === 0) { head = known.sha; list = known.list.slice(); }
