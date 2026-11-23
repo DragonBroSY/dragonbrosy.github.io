@@ -369,6 +369,11 @@ git log --oneline -3</pre>
       var EXPIRED = 'Your GitHub sign-in expired (it lasts 8 hours). Sign in again, then retry.';
       async function gh(url, opts) {
         var res = token() ? await fetch(url, opts) : { status: 401 };
+        // GitHub also answers some oversized requests with 401, so confirm the token is really bad.
+        if (res.status === 401 && token()) {
+          var who = await fetch('https://api.github.com/user', { headers: headers() }).catch(function(){ return null; });
+          if (who && who.ok) return res;
+        }
         if (res.status === 401) {
           signedOut(EXPIRED);
           var err = new Error(EXPIRED); err.expired = true; throw err;
@@ -597,11 +602,14 @@ git log --oneline -3</pre>
         return out;
       }
 
+      // GitHub rejects files over 100 MB (and the API sends them base64, a third bigger).
+      var MAX_BYTES = 100 * 1024 * 1024;
       async function upload(picked) {
-        var vis = target;
+        var vis = target, skipped = [], done = 0;
         if (!picked.length) { setStatus('Nothing to upload — the folder was empty.', 'err'); return; }
         for (var i = 0; i < picked.length; i++) {
           var file = picked[i].file;
+          if (file.size > MAX_BYTES) { skipped.push(picked[i].rel + ' (' + fmtSize(file.size) + ')'); continue; }
           try {
             setStatus('Uploading ' + picked[i].rel + ' to ' + vis + ' (' + (i + 1) + '/' + picked.length + ')…');
             var name = uniqueName(picked[i].rel.split('/').map(function(s){ return s.replace(/\\/g, '_'); }).join('/'), vis);
@@ -615,14 +623,16 @@ git log --oneline -3</pre>
             m.list.push({ name: name, path: path, size: file.size, type: file.type || '', date: new Date().toISOString() });
             await putManifest(vis, m.list, m.sha, 'Add ' + name + ' to uploads index');
             syncFiles(vis, m.list);
-            render();
+            render(); done++;
           } catch (e) {
             if (!e.expired) setStatus('Upload failed for ' + picked[i].rel + ': ' + e.message, 'err');
             return;
           }
         }
-        setStatus(vis === 'public' ? 'Done. Public links go live once GitHub Pages redeploys (about a minute).'
-                                   : 'Done. Saved to the private repo.', 'ok');
+        var msg = done ? 'Uploaded ' + done + (done === 1 ? ' file' : ' files') + '.' +
+          (vis === 'public' ? ' Public links go live once GitHub Pages redeploys (about a minute).' : ' Saved to the private repo.') : '';
+        if (skipped.length) msg += (msg ? ' ' : '') + 'Skipped ' + skipped.length + ' over GitHub\'s 100 MB file limit: ' + skipped.join(', ') + '.';
+        setStatus(msg || 'Nothing uploaded.', skipped.length ? 'err' : 'ok');
       }
 
       zone.addEventListener('click', function(){ input.click(); });
