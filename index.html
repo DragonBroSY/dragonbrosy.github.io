@@ -120,7 +120,16 @@
     .logbook td a:hover { text-decoration: underline; }
     .fd-move { margin-left: 0.5rem; font: inherit; font-size: 0.62rem; font-weight: 700; padding: 0.12rem 0.45rem; border-radius: 3px; border: 1px solid #1a3a6b; background: #fff; color: #1a3a6b; cursor: pointer; white-space: nowrap; }
     .fd-move:hover { background: #1a3a6b; color: #fff; }
-    .fd-move:disabled, .fd-del:disabled { opacity: 0.4; cursor: not-allowed; }
+    .fd-move:disabled, .fd-del:disabled, .fd-ren:disabled { opacity: 0.4; cursor: not-allowed; }
+    .fd-ren { margin-left: 0.35rem; font: inherit; font-size: 0.62rem; font-weight: 700; padding: 0.12rem 0.45rem; border-radius: 3px; border: 1px solid #6a8aaa; background: #fff; color: #4a6a8a; cursor: pointer; white-space: nowrap; }
+    .fd-ren:hover:not(:disabled) { background: #4a6a8a; color: #fff; }
+    .fd-ren-form { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem; }
+    .fd-ren-input { flex: 1 1 14rem; min-width: 10rem; font: inherit; font-size: 0.74rem; padding: 0.2rem 0.4rem; border: 1px solid #1a3a6b; border-radius: 3px; color: #1a2a3a; }
+    .fd-ren-input:focus { outline: none; box-shadow: 0 0 0 2px rgba(26,58,107,0.15); }
+    .fd-ren-form button { font: inherit; font-size: 0.62rem; font-weight: 700; padding: 0.15rem 0.5rem; border-radius: 3px; border: 1px solid #1a3a6b; background: #fff; color: #1a3a6b; cursor: pointer; }
+    .fd-ren-form button.primary { background: #1a3a6b; color: #fff; }
+    .fd-ren-form button:disabled { opacity: 0.5; cursor: wait; }
+    .fd-ren-hint { flex-basis: 100%; font-size: 0.62rem; color: #9ab0c8; }
     .fd-del { margin-left: 0.35rem; font: inherit; font-size: 0.62rem; font-weight: 700; padding: 0.12rem 0.45rem; border-radius: 3px; border: 1px solid #b3261e; background: #fff; color: #b3261e; cursor: pointer; white-space: nowrap; }
     .fd-del:hover:not(:disabled) { background: #b3261e; color: #fff; }
     /* Per-file notes (Markdown) */
@@ -476,11 +485,19 @@ git log --oneline -3</pre>
           var link = f.vis === 'public'
             ? '<a href="' + esc(enc(f.path)) + '" target="_blank" rel="noopener">' + esc(f.name) + '</a>'
             : '<a href="#" data-path="' + esc(f.path) + '" data-name="' + esc(f.name) + '">' + esc(f.name) + '</a>';
-          return '<tr><td>' + link + noteBtn + '</td>' +
+          var nameCell = renameKey === key
+            ? '<div class="fd-ren-form"><input class="fd-ren-input" value="' + esc(renameDraft) + '" aria-label="New file name"' + (renameSaving ? ' disabled' : '') + '>' +
+                '<button class="primary" data-ren-act="save"' + (renameSaving ? ' disabled' : '') + '>' + (renameSaving ? 'Renaming…' : 'Save') + '</button>' +
+                '<button data-ren-act="cancel"' + (renameSaving ? ' disabled' : '') + '>Cancel</button>' +
+                '<span class="fd-ren-hint">Enter to save &middot; Esc to cancel &middot; use / for folders' +
+                  (f.vis === 'public' ? ' &middot; the old public link will stop working' : '') + '</span></div>'
+            : link + noteBtn;
+          return '<tr><td>' + nameCell + '</td>' +
             '<td style="white-space:nowrap;">' + (f.vis === 'private' ? '&#128274; Private' : '&#127760; Public') +
               (access.private && access.public
                 ? '<button class="fd-move" data-vis="' + f.vis + '" data-name="' + esc(f.name) + '">Make ' + (f.vis === 'private' ? 'public' : 'private') + '</button>'
                 : '') +
+              (access[f.vis] ? '<button class="fd-ren" data-key="' + esc(key) + '"' + (busy ? ' disabled' : '') + '>Rename</button>' : '') +
               (access[f.vis] ? '<button class="fd-del" data-vis="' + f.vis + '" data-name="' + esc(f.name) + '">Delete</button>' : '') + '</td>' +
             '<td>' + esc(ext(f.name)) + '</td><td>' + fmtSize(f.size) + '</td>' +
             '<td>' + d.toLocaleDateString([], { year: 'numeric', month: 'short', day: 'numeric' }) + ' ' +
@@ -689,7 +706,8 @@ git log --oneline -3</pre>
       // non-fast-forward (422) or could have rebuilt the index from a stale copy.
       var lastCommit = {};
       function wait(ms) { return new Promise(function(r){ setTimeout(r, ms); }); }
-      async function commitFile(vis, path, b64, message, editList) {
+      // extra: more tree entries for the same commit (e.g. a rename's new path and the old one removed).
+      async function commitFile(vis, path, b64, message, editList, extra) {
         // GitHub now and then rejects a large blob upload with a spurious 401 (the sign-in is still
         // valid; gh() already checked) or a 5xx/timeout. The blob is content-addressed, so just retry.
         var blob;
@@ -718,6 +736,7 @@ git log --oneline -3</pre>
           list = editList(list);
           var entries = [{ path: MANIFEST, mode: '100644', type: 'blob', content: JSON.stringify(list, null, 2) + '\n' }];
           if (path) entries.unshift({ path: path, mode: '100644', type: 'blob', sha: blob.sha });
+          if (extra) entries = extra.concat(entries);
           var tree = await gitJson(vis, 'trees', 'POST', { base_tree: base, tree: entries });
           var commit = await gitJson(vis, 'commits', 'POST', { message: message, tree: tree.sha, parents: [head] });
           try {
@@ -763,7 +782,7 @@ git log --oneline -3</pre>
 
       function lockRows(on) {
         busy = on;
-        body.querySelectorAll('.fd-move, .fd-del').forEach(function(b){ b.disabled = on; });
+        body.querySelectorAll('.fd-move, .fd-del, .fd-ren').forEach(function(b){ b.disabled = on; });
       }
 
       var busy = false;
@@ -814,6 +833,82 @@ git log --oneline -3</pre>
         lockRows(false);
         render();
       }
+
+      // ---- Rename: same repo, one commit that points the new path at the existing blob,
+      // removes the old path, and updates the index entry (notes and date are kept). ----
+      var renameKey = null, renameDraft = '', renameSaving = false;
+      function cleanName(s) {
+        return s.trim().replace(/\\/g, '_').split('/').map(function(p){ return p.trim(); }).join('/');
+      }
+      function focusRename() {
+        var inp = body.querySelector('.fd-ren-input');
+        if (!inp) return;
+        inp.focus();
+        // Select the part after any folder and before the extension, like Finder does.
+        var v = inp.value, slash = v.lastIndexOf('/') + 1, dot = v.lastIndexOf('.');
+        inp.setSelectionRange(slash, dot > slash ? dot : v.length);
+      }
+      async function renameFile() {
+        var f = openFile(renameKey);
+        if (!f || renameSaving || busy) return;
+        var newName = cleanName(renameDraft);
+        if (newName === f.name) { renameKey = null; render(); return; }
+        var problem = !newName ? 'enter a name.'
+          : /(^|\/)\.{0,2}(\/|$)/.test(newName) ? 'the name can\'t have empty, "." or ".." folder parts, or start/end with /.'
+          : newName.split('/').some(function(p){ return p.charAt(0) === '.'; }) ? 'names starting with "." are hidden; pick another.'
+          : files.some(function(x){ return x !== f && x.vis === f.vis && x.name.toLowerCase() === newName.toLowerCase(); }) ? '"' + newName + '" already exists in the ' + f.vis + ' repo.'
+          : '';
+        if (problem) { setStatus('Can\'t rename ' + f.name + ': ' + problem, 'err'); return; }
+        var oldExt = ext(f.name), newExt = ext(newName);
+        if (oldExt !== newExt && !confirm('Change the file type from .' + oldExt.toLowerCase() + ' to ' +
+            (newExt === '—' ? 'no extension' : '.' + newExt.toLowerCase()) + '?\n\nThe file may not open correctly.')) { focusRename(); return; }
+        renameSaving = true; lockRows(true); render();
+        try {
+          setStatus('Renaming ' + f.name + ' to ' + newName + '…');
+          var meta = await gh(api(f.vis, f.path) + '?ref=' + BRANCH, { headers: headers() });
+          if (!meta.ok) throw new Error(meta.status === 404 ? 'the file is no longer in the repo. Reload the page.' : 'read ' + meta.status);
+          var blobSha = (await meta.json()).sha, newPath = 'uploads/' + newName, found = false;
+          var list = await commitFile(f.vis, null, null, 'Rename ' + f.name + ' to ' + newName + ' via File Drop', function(list) {
+            return list.map(function(x) {
+              if (x.path !== f.path) return x;
+              found = true;
+              return Object.assign({}, x, { name: newName, path: newPath });
+            });
+          }, [{ path: newPath, mode: '100644', type: 'blob', sha: blobSha },
+              { path: f.path, mode: '100644', type: 'blob', sha: null }]);
+          if (!found) throw new Error('this file is no longer in the uploads index. Reload the page.');
+          syncFiles(f.vis, list);
+          if (noteOpen === renameKey) noteOpen = f.vis + '|' + newPath;
+          renameKey = null;
+          setStatus('Renamed ' + f.name + ' to ' + newName + '.' +
+            (f.vis === 'public' ? ' The new link goes live once GitHub Pages redeploys (about a minute); the old link stops working.' : ''), 'ok');
+        } catch (e) {
+          if (!e.expired) setStatus('Rename failed for ' + f.name + ': ' + e.message, 'err');
+        }
+        renameSaving = false; lockRows(false); render();
+        if (renameKey) focusRename();
+      }
+      body.addEventListener('click', function(e) {
+        var rb = e.target.closest('.fd-ren');
+        if (rb) {
+          if (busy || renameSaving) return;
+          var f = openFile(rb.dataset.key);
+          if (!f) return;
+          renameKey = rb.dataset.key; renameDraft = f.name; render(); focusRename(); return;
+        }
+        var ra = e.target.closest('[data-ren-act]');
+        if (!ra) return;
+        if (ra.dataset.renAct === 'save') renameFile();
+        else { renameKey = null; render(); }
+      });
+      body.addEventListener('input', function(e) {
+        if (e.target.classList.contains('fd-ren-input')) renameDraft = e.target.value;
+      });
+      body.addEventListener('keydown', function(e) {
+        if (!e.target.classList.contains('fd-ren-input')) return;
+        if (e.key === 'Enter') { e.preventDefault(); renameFile(); }
+        else if (e.key === 'Escape') { e.preventDefault(); renameKey = null; render(); }
+      });
 
       body.addEventListener('click', function(e) {
         var b = e.target.closest('.fd-move');
