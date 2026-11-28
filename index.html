@@ -130,6 +130,8 @@
     .fd-ren-form button.primary { background: #1a3a6b; color: #fff; }
     .fd-ren-form button:disabled { opacity: 0.5; cursor: wait; }
     .fd-ren-hint { flex-basis: 100%; font-size: 0.62rem; color: #9ab0c8; }
+    .fd-ren-err { flex-basis: 100%; font-size: 0.68rem; font-weight: 600; color: #c0392b; }
+    .fd-ren-busy { flex-basis: 100%; font-size: 0.68rem; color: #4a6a8a; }
     .fd-del { margin-left: 0.35rem; font: inherit; font-size: 0.62rem; font-weight: 700; padding: 0.12rem 0.45rem; border-radius: 3px; border: 1px solid #b3261e; background: #fff; color: #b3261e; cursor: pointer; white-space: nowrap; }
     .fd-del:hover:not(:disabled) { background: #b3261e; color: #fff; }
     /* Per-file notes (Markdown) */
@@ -489,6 +491,8 @@ git log --oneline -3</pre>
             ? '<div class="fd-ren-form"><input class="fd-ren-input" value="' + esc(renameDraft) + '" aria-label="New file name"' + (renameSaving ? ' disabled' : '') + '>' +
                 '<button class="primary" data-ren-act="save"' + (renameSaving ? ' disabled' : '') + '>' + (renameSaving ? 'Renaming…' : 'Save') + '</button>' +
                 '<button data-ren-act="cancel"' + (renameSaving ? ' disabled' : '') + '>Cancel</button>' +
+                (renameError ? '<span class="fd-ren-err" role="alert">' + esc(renameError) + '</span>' : '') +
+                (renameSaving ? '<span class="fd-ren-busy">' + esc(statusEl.textContent) + '</span>' : '') +
                 '<span class="fd-ren-hint">Enter to save &middot; Esc to cancel &middot; use / for folders' +
                   (f.vis === 'public' ? ' &middot; the old public link will stop working' : '') + '</span></div>'
             : link + noteBtn;
@@ -836,7 +840,9 @@ git log --oneline -3</pre>
 
       // ---- Rename: same repo, one commit that points the new path at the existing blob,
       // removes the old path, and updates the index entry (notes and date are kept). ----
-      var renameKey = null, renameDraft = '', renameSaving = false;
+      var renameKey = null, renameDraft = '', renameSaving = false, renameError = '';
+      // The status line sits under the whole table, often off-screen, so rename messages also show in the row.
+      function renameFail(msg) { renameError = msg; setStatus(msg, 'err'); render(); focusRename(); }
       function cleanName(s) {
         return s.trim().replace(/\\/g, '_').split('/').map(function(p){ return p.trim(); }).join('/');
       }
@@ -858,13 +864,14 @@ git log --oneline -3</pre>
           : newName.split('/').some(function(p){ return p.charAt(0) === '.'; }) ? 'names starting with "." are hidden; pick another.'
           : files.some(function(x){ return x !== f && x.vis === f.vis && x.name.toLowerCase() === newName.toLowerCase(); }) ? '"' + newName + '" already exists in the ' + f.vis + ' repo.'
           : '';
-        if (problem) { setStatus('Can\'t rename ' + f.name + ': ' + problem, 'err'); return; }
+        if (problem) { renameFail('Can\'t rename ' + f.name + ': ' + problem); return; }
         var oldExt = ext(f.name), newExt = ext(newName);
         if (oldExt !== newExt && !confirm('Change the file type from .' + oldExt.toLowerCase() + ' to ' +
             (newExt === '—' ? 'no extension' : '.' + newExt.toLowerCase()) + '?\n\nThe file may not open correctly.')) { focusRename(); return; }
+        renameError = '';
+        setStatus('Renaming ' + f.name + ' to ' + newName + '…');
         renameSaving = true; lockRows(true); render();
         try {
-          setStatus('Renaming ' + f.name + ' to ' + newName + '…');
           var meta = await gh(api(f.vis, f.path) + '?ref=' + BRANCH, { headers: headers() });
           if (!meta.ok) throw new Error(meta.status === 404 ? 'the file is no longer in the repo. Reload the page.' : 'read ' + meta.status);
           var blobSha = (await meta.json()).sha, newPath = 'uploads/' + newName, found = false;
@@ -883,7 +890,7 @@ git log --oneline -3</pre>
           setStatus('Renamed ' + f.name + ' to ' + newName + '.' +
             (f.vis === 'public' ? ' The new link goes live once GitHub Pages redeploys (about a minute); the old link stops working.' : ''), 'ok');
         } catch (e) {
-          if (!e.expired) setStatus('Rename failed for ' + f.name + ': ' + e.message, 'err');
+          if (!e.expired) { renameError = 'Rename failed: ' + e.message; setStatus(renameError, 'err'); }
         }
         renameSaving = false; lockRows(false); render();
         if (renameKey) focusRename();
@@ -894,7 +901,7 @@ git log --oneline -3</pre>
           if (busy || renameSaving) return;
           var f = openFile(rb.dataset.key);
           if (!f) return;
-          renameKey = rb.dataset.key; renameDraft = f.name; render(); focusRename(); return;
+          renameKey = rb.dataset.key; renameDraft = f.name; renameError = ''; render(); focusRename(); return;
         }
         var ra = e.target.closest('[data-ren-act]');
         if (!ra) return;
